@@ -22,8 +22,10 @@ jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out repository
+      - name: Check out latest main
         uses: actions/checkout@v6
+        with:
+          ref: main
 
       - name: Set up Python
         uses: actions/setup-python@v6
