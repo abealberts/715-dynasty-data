@@ -1,0 +1,1010 @@
+{
+  "generated_at": "2026-08-31T02:03:53.995627+00:00",
+  "league_position_averages": {
+    "QB": 5.0,
+    "RB": 7.42,
+    "TE": 3.75,
+    "WR": 10.75
+  },
+  "methodology": "Roster-shape heuristic only. Needs/surpluses compare position counts with league averages and practical depth targets; player quality is not included.",
+  "targets": {
+    "QB": 3,
+    "RB": 5,
+    "TE": 2,
+    "WR": 7
+  },
+  "teams": {
+    "1": {
+      "faab_remaining": 75,
+      "manager": "austinamelse",
+      "needs": [],
+      "pick_summary": {
+        "by_round": {
+          "1": 0,
+          "2": 1,
+          "3": 0,
+          "4": 1,
+          "5": 0
+        },
+        "by_year": {
+          "2026": 1,
+          "2027": 1
+        },
+        "early_picks": 1,
+        "firsts": 0,
+        "seconds": 1,
+        "total": 2
+      },
+      "positions": {
+        "QB": {
+          "count": 5,
+          "delta_vs_average": 0.0,
+          "label": "balanced",
+          "league_average": 5.0,
+          "need_strength": 0.0,
+          "starters": 2,
+          "surplus_strength": 0.0,
+          "target": 3
+        },
+        "RB": {
+          "count": 7,
+          "delta_vs_average": -0.42,
+          "label": "balanced",
+          "league_average": 7.42,
+          "need_strength": 0.42,
+          "starters": 2,
+          "surplus_strength": 0.0,
+          "target": 5
+        },
+        "TE": {
+          "count": 4,
+          "delta_vs_average": 0.25,
+          "label": "balanced",
+          "league_average": 3.75,
+          "need_strength": 0.0,
+          "starters": 1,
+          "surplus_strength": 0.25,
+          "target": 2
+        },
+        "WR": {
+          "count": 11,
+          "delta_vs_average": 0.25,
+          "label": "balanced",
+          "league_average": 10.75,
+          "need_strength": 0.0,
+          "starters": 4,
+          "surplus_strength": 0.25,
+          "target": 7
+        }
+      },
+      "roster_id": 1,
+      "surpluses": [],
+      "team_name": null
+    },
+    "10": {
+      "faab_remaining": 101,
+      "manager": "Ebro51",
+      "needs": [
+        {
+          "label": "thin",
+          "position": "RB",
+          "strength": 2.42
+        },
+        {
+          "label": "thin",
+          "position": "QB",
+          "strength": 1.0
+        }
+      ],
+      "pick_summary": {
+        "by_round": {
+          "1": 5,
+          "2": 4,
+          "3": 4,
+          "4": 2,
+          "5": 3
+        },
+        "by_year": {
+          "2026": 6,
+          "2027": 5,
+          "2028": 2,
+          "2029": 5
+        },
+        "early_picks": 9,
+        "firsts": 5,
+        "seconds": 4,
+        "total": 18
+      },
+      "positions": {
+        "QB": {
+          "count": 4,
+          "delta_vs_average": -1.0,
+          "label": "thin",
+          "league_average": 5.0,
+          "need_strength": 1.0,
+          "starters": 2,
+          "surplus_strength": 0.0,
+          "target": 3
+        },
+        "RB": {
+          "count": 5,
+          "delta_vs_average": -2.42,
+          "label": "thin",
+          "league_average": 7.42,
+          "need_strength": 2.42,
+          "starters": 3,
+          "surplus_strength": 0.0,
+          "target": 5
+        },
+        "TE": {
+          "count": 4,
+          "delta_vs_average": 0.25,
+          "label": "balanced",
+          "league_average": 3.75,
+          "need_strength": 0.0,
+          "starters": 1,
+          "surplus_strength": 0.25,
+          "target": 2
+        },
+        "WR": {
+          "count": 14,
+          "delta_vs_average": 3.25,
+          "label": "deep",
+          "league_average": 10.75,
+          "need_strength": 0.0,
+          "starters": 3,
+          "surplus_strength": 3.25,
+          "target": 7
+        }
+      },
+      "roster_id": 10,
+      "surpluses": [
+        {
+          "label": "deep",
+          "position": "WR",
+          "strength": 3.25
+        }
+      ],
+      "team_name": "2026 New York Jets"
+    },
+    "11": {
+      "faab_remaining": 95,
+      "manager": "Waldo23",
+      "needs": [
+        {
+          "label": "thin",
+          "position": "WR",
+          "strength": 2.75
+        }
+      ],
+      "pick_summary": {
+        "by_round": {
+          "1": 3,
+          "2": 3,
+          "3": 2,
+          "4": 4,
+          "5": 5
+        },
+        "by_year": {
+          "2026": 5,
+          "2027": 3,
+          "2028": 4,
+          "2029": 5
+        },
+        "early_picks": 6,
+        "firsts": 3,
+        "seconds": 3,
+        "total": 17
+      },
+      "positions": {
+        "QB": {
+          "count": 6,
+          "delta_vs_average": 1.0,
+          "label": "above avg",
+          "league_average": 5.0,
+          "need_strength": 0.0,
+          "starters": 2,
+          "surplus_strength": 1.0,
+          "target": 3
+        },
+        "RB": {
+          "count": 9,
+          "delta_vs_average": 1.58,
+          "label": "deep",
+          "league_average": 7.42,
+          "need_strength": 0.0,
+          "starters": 2,
+          "surplus_strength": 1.58,
+          "target": 5
+        },
+        "TE": {
+          "count": 4,
+          "delta_vs_average": 0.25,
+          "label": "balanced",
+          "league_average": 3.75,
+          "need_strength": 0.0,
+          "starters": 1,
+          "surplus_strength": 0.25,
+          "target": 2
+        },
+        "WR": {
+          "count": 8,
+          "delta_vs_average": -2.75,
+          "label": "thin",
+          "league_average": 10.75,
+          "need_strength": 2.75,
+          "starters": 4,
+          "surplus_strength": 0.0,
+          "target": 7
+        }
+      },
+      "roster_id": 11,
+      "surpluses": [
+        {
+          "label": "deep",
+          "position": "RB",
+          "strength": 1.58
+        },
+        {
+          "label": "above avg",
+          "position": "QB",
+          "strength": 1.0
+        }
+      ],
+      "team_name": "I Cam, I Saw, I Conquered"
+    },
+    "12": {
+      "faab_remaining": 100,
+      "manager": "Butler2142",
+      "needs": [
+        {
+          "label": "thin",
+          "position": "QB",
+          "strength": 2.0
+        },
+        {
+          "label": "below avg",
+          "position": "TE",
+          "strength": 0.75
+        }
+      ],
+      "pick_summary": {
+        "by_round": {
+          "1": 0,
+          "2": 3,
+          "3": 4,
+          "4": 4,
+          "5": 4
+        },
+        "by_year": {
+          "2026": 6,
+          "2027": 2,
+          "2028": 3,
+          "2029": 4
+        },
+        "early_picks": 3,
+        "firsts": 0,
+        "seconds": 3,
+        "total": 15
+      },
+      "positions": {
+        "QB": {
+          "count": 3,
+          "delta_vs_average": -2.0,
+          "label": "thin",
+          "league_average": 5.0,
+          "need_strength": 2.0,
+          "starters": 2,
+          "surplus_strength": 0.0,
+          "target": 3
+        },
+        "RB": {
+          "count": 9,
+          "delta_vs_average": 1.58,
+          "label": "deep",
+          "league_average": 7.42,
+          "need_strength": 0.0,
+          "starters": 2,
+          "surplus_strength": 1.58,
+          "target": 5
+        },
+        "TE": {
+          "count": 3,
+          "delta_vs_average": -0.75,
+          "label": "below avg",
+          "league_average": 3.75,
+          "need_strength": 0.75,
+          "starters": 1,
+          "surplus_strength": 0.0,
+          "target": 2
+        },
+        "WR": {
+          "count": 11,
+          "delta_vs_average": 0.25,
+          "label": "balanced",
+          "league_average": 10.75,
+          "need_strength": 0.0,
+          "starters": 4,
+          "surplus_strength": 0.25,
+          "target": 7
+        }
+      },
+      "roster_id": 12,
+      "surpluses": [
+        {
+          "label": "deep",
+          "position": "RB",
+          "strength": 1.58
+        }
+      ],
+      "team_name": null
+    },
+    "2": {
+      "faab_remaining": 130,
+      "manager": "NolanFarts",
+      "needs": [
+        {
+          "label": "thin",
+          "position": "QB",
+          "strength": 1.0
+        },
+        {
+          "label": "below avg",
+          "position": "WR",
+          "strength": 0.75
+        }
+      ],
+      "pick_summary": {
+        "by_round": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 4,
+          "5": 3
+        },
+        "by_year": {
+          "2026": 2,
+          "2027": 2,
+          "2028": 1,
+          "2029": 5
+        },
+        "early_picks": 2,
+        "firsts": 1,
+        "seconds": 1,
+        "total": 10
+      },
+      "positions": {
+        "QB": {
+          "count": 4,
+          "delta_vs_average": -1.0,
+          "label": "thin",
+          "league_average": 5.0,
+          "need_strength": 1.0,
+          "starters": 2,
+          "surplus_strength": 0.0,
+          "target": 3
+        },
+        "RB": {
+          "count": 8,
+          "delta_vs_average": 0.58,
+          "label": "above avg",
+          "league_average": 7.42,
+          "need_strength": 0.0,
+          "starters": 2,
+          "surplus_strength": 0.58,
+          "target": 5
+        },
+        "TE": {
+          "count": 5,
+          "delta_vs_average": 1.25,
+          "label": "deep",
+          "league_average": 3.75,
+          "need_strength": 0.0,
+          "starters": 1,
+          "surplus_strength": 1.25,
+          "target": 2
+        },
+        "WR": {
+          "count": 10,
+          "delta_vs_average": -0.75,
+          "label": "below avg",
+          "league_average": 10.75,
+          "need_strength": 0.75,
+          "starters": 4,
+          "surplus_strength": 0.0,
+          "target": 7
+        }
+      },
+      "roster_id": 2,
+      "surpluses": [
+        {
+          "label": "deep",
+          "position": "TE",
+          "strength": 1.25
+        }
+      ],
+      "team_name": "Njigbas In Paris"
+    },
+    "3": {
+      "faab_remaining": 100,
+      "manager": "abewav",
+      "needs": [
+        {
+          "label": "thin",
+          "position": "WR",
+          "strength": 1.75
+        },
+        {
+          "label": "below avg",
+          "position": "TE",
+          "strength": 0.75
+        }
+      ],
+      "pick_summary": {
+        "by_round": {
+          "1": 2,
+          "2": 4,
+          "3": 4,
+          "4": 3,
+          "5": 1
+        },
+        "by_year": {
+          "2026": 5,
+          "2027": 3,
+          "2028": 2,
+          "2029": 4
+        },
+        "early_picks": 6,
+        "firsts": 2,
+        "seconds": 4,
+        "total": 14
+      },
+      "positions": {
+        "QB": {
+          "count": 7,
+          "delta_vs_average": 2.0,
+          "label": "deep",
+          "league_average": 5.0,
+          "need_strength": 0.0,
+          "starters": 2,
+          "surplus_strength": 2.0,
+          "target": 3
+        },
+        "RB": {
+          "count": 8,
+          "delta_vs_average": 0.58,
+          "label": "above avg",
+          "league_average": 7.42,
+          "need_strength": 0.0,
+          "starters": 3,
+          "surplus_strength": 0.58,
+          "target": 5
+        },
+        "TE": {
+          "count": 3,
+          "delta_vs_average": -0.75,
+          "label": "below avg",
+          "league_average": 3.75,
+          "need_strength": 0.75,
+          "starters": 1,
+          "surplus_strength": 0.0,
+          "target": 2
+        },
+        "WR": {
+          "count": 9,
+          "delta_vs_average": -1.75,
+          "label": "thin",
+          "league_average": 10.75,
+          "need_strength": 1.75,
+          "starters": 3,
+          "surplus_strength": 0.0,
+          "target": 7
+        }
+      },
+      "roster_id": 3,
+      "surpluses": [
+        {
+          "label": "deep",
+          "position": "QB",
+          "strength": 2.0
+        }
+      ],
+      "team_name": "Baskerville Bilge Rats"
+    },
+    "4": {
+      "faab_remaining": 75,
+      "manager": "MayaHuskies",
+      "needs": [
+        {
+          "label": "thin",
+          "position": "QB",
+          "strength": 2.0
+        },
+        {
+          "label": "below avg",
+          "position": "TE",
+          "strength": 0.75
+        }
+      ],
+      "pick_summary": {
+        "by_round": {
+          "1": 7,
+          "2": 9,
+          "3": 8,
+          "4": 6,
+          "5": 1
+        },
+        "by_year": {
+          "2026": 7,
+          "2027": 10,
+          "2028": 8,
+          "2029": 6
+        },
+        "early_picks": 16,
+        "firsts": 7,
+        "seconds": 9,
+        "total": 31
+      },
+      "positions": {
+        "QB": {
+          "count": 3,
+          "delta_vs_average": -2.0,
+          "label": "thin",
+          "league_average": 5.0,
+          "need_strength": 2.0,
+          "starters": 2,
+          "surplus_strength": 0.0,
+          "target": 3
+        },
+        "RB": {
+          "count": 8,
+          "delta_vs_average": 0.58,
+          "label": "above avg",
+          "league_average": 7.42,
+          "need_strength": 0.0,
+          "starters": 3,
+          "surplus_strength": 0.58,
+          "target": 5
+        },
+        "TE": {
+          "count": 3,
+          "delta_vs_average": -0.75,
+          "label": "below avg",
+          "league_average": 3.75,
+          "need_strength": 0.75,
+          "starters": 1,
+          "surplus_strength": 0.0,
+          "target": 2
+        },
+        "WR": {
+          "count": 13,
+          "delta_vs_average": 2.25,
+          "label": "deep",
+          "league_average": 10.75,
+          "need_strength": 0.0,
+          "starters": 3,
+          "surplus_strength": 2.25,
+          "target": 7
+        }
+      },
+      "roster_id": 4,
+      "surpluses": [
+        {
+          "label": "deep",
+          "position": "WR",
+          "strength": 2.25
+        }
+      ],
+      "team_name": null
+    },
+    "5": {
+      "faab_remaining": 100,
+      "manager": "nathanhoglund",
+      "needs": [
+        {
+          "label": "thin",
+          "position": "QB",
+          "strength": 1.0
+        }
+      ],
+      "pick_summary": {
+        "by_round": {
+          "1": 11,
+          "2": 5,
+          "3": 7,
+          "4": 4,
+          "5": 6
+        },
+        "by_year": {
+          "2026": 6,
+          "2027": 11,
+          "2028": 9,
+          "2029": 7
+        },
+        "early_picks": 16,
+        "firsts": 11,
+        "seconds": 5,
+        "total": 33
+      },
+      "positions": {
+        "QB": {
+          "count": 4,
+          "delta_vs_average": -1.0,
+          "label": "thin",
+          "league_average": 5.0,
+          "need_strength": 1.0,
+          "starters": 0,
+          "surplus_strength": 0.0,
+          "target": 3
+        },
+        "RB": {
+          "count": 8,
+          "delta_vs_average": 0.58,
+          "label": "above avg",
+          "league_average": 7.42,
+          "need_strength": 0.0,
+          "starters": 0,
+          "surplus_strength": 0.58,
+          "target": 5
+        },
+        "TE": {
+          "count": 4,
+          "delta_vs_average": 0.25,
+          "label": "balanced",
+          "league_average": 3.75,
+          "need_strength": 0.0,
+          "starters": 0,
+          "surplus_strength": 0.25,
+          "target": 2
+        },
+        "WR": {
+          "count": 11,
+          "delta_vs_average": 0.25,
+          "label": "balanced",
+          "league_average": 10.75,
+          "need_strength": 0.0,
+          "starters": 0,
+          "surplus_strength": 0.25,
+          "target": 7
+        }
+      },
+      "roster_id": 5,
+      "surpluses": [],
+      "team_name": "Michael Trigg Sucks Ass"
+    },
+    "6": {
+      "faab_remaining": 2,
+      "manager": "Amelse",
+      "needs": [
+        {
+          "label": "thin",
+          "position": "RB",
+          "strength": 4.42
+        }
+      ],
+      "pick_summary": {
+        "by_round": {
+          "1": 11,
+          "2": 10,
+          "3": 13,
+          "4": 13,
+          "5": 20
+        },
+        "by_year": {
+          "2026": 14,
+          "2027": 17,
+          "2028": 24,
+          "2029": 12
+        },
+        "early_picks": 21,
+        "firsts": 11,
+        "seconds": 10,
+        "total": 67
+      },
+      "positions": {
+        "QB": {
+          "count": 7,
+          "delta_vs_average": 2.0,
+          "label": "deep",
+          "league_average": 5.0,
+          "need_strength": 0.0,
+          "starters": 2,
+          "surplus_strength": 2.0,
+          "target": 3
+        },
+        "RB": {
+          "count": 3,
+          "delta_vs_average": -4.42,
+          "label": "thin",
+          "league_average": 7.42,
+          "need_strength": 4.42,
+          "starters": 2,
+          "surplus_strength": 0.0,
+          "target": 5
+        },
+        "TE": {
+          "count": 4,
+          "delta_vs_average": 0.25,
+          "label": "balanced",
+          "league_average": 3.75,
+          "need_strength": 0.0,
+          "starters": 2,
+          "surplus_strength": 0.25,
+          "target": 2
+        },
+        "WR": {
+          "count": 13,
+          "delta_vs_average": 2.25,
+          "label": "deep",
+          "league_average": 10.75,
+          "need_strength": 0.0,
+          "starters": 3,
+          "surplus_strength": 2.25,
+          "target": 7
+        }
+      },
+      "roster_id": 6,
+      "surpluses": [
+        {
+          "label": "deep",
+          "position": "WR",
+          "strength": 2.25
+        },
+        {
+          "label": "deep",
+          "position": "QB",
+          "strength": 2.0
+        }
+      ],
+      "team_name": null
+    },
+    "7": {
+      "faab_remaining": 108,
+      "manager": "SORY9",
+      "needs": [
+        {
+          "label": "thin",
+          "position": "RB",
+          "strength": 1.42
+        }
+      ],
+      "pick_summary": {
+        "by_round": {
+          "1": 2,
+          "2": 2,
+          "3": 1,
+          "4": 2,
+          "5": 1
+        },
+        "by_year": {
+          "2026": 3,
+          "2029": 5
+        },
+        "early_picks": 4,
+        "firsts": 2,
+        "seconds": 2,
+        "total": 8
+      },
+      "positions": {
+        "QB": {
+          "count": 6,
+          "delta_vs_average": 1.0,
+          "label": "above avg",
+          "league_average": 5.0,
+          "need_strength": 0.0,
+          "starters": 2,
+          "surplus_strength": 1.0,
+          "target": 3
+        },
+        "RB": {
+          "count": 6,
+          "delta_vs_average": -1.42,
+          "label": "thin",
+          "league_average": 7.42,
+          "need_strength": 1.42,
+          "starters": 3,
+          "surplus_strength": 0.0,
+          "target": 5
+        },
+        "TE": {
+          "count": 4,
+          "delta_vs_average": 0.25,
+          "label": "balanced",
+          "league_average": 3.75,
+          "need_strength": 0.0,
+          "starters": 1,
+          "surplus_strength": 0.25,
+          "target": 2
+        },
+        "WR": {
+          "count": 11,
+          "delta_vs_average": 0.25,
+          "label": "balanced",
+          "league_average": 10.75,
+          "need_strength": 0.0,
+          "starters": 3,
+          "surplus_strength": 0.25,
+          "target": 7
+        }
+      },
+      "roster_id": 7,
+      "surpluses": [
+        {
+          "label": "above avg",
+          "position": "QB",
+          "strength": 1.0
+        }
+      ],
+      "team_name": "TEAM MIKE ALSTOTT"
+    },
+    "8": {
+      "faab_remaining": 94,
+      "manager": "hoglundcory2",
+      "needs": [
+        {
+          "label": "thin",
+          "position": "WR",
+          "strength": 3.75
+        }
+      ],
+      "pick_summary": {
+        "by_round": {
+          "1": 6,
+          "2": 6,
+          "3": 4,
+          "4": 4,
+          "5": 4
+        },
+        "by_year": {
+          "2026": 5,
+          "2027": 6,
+          "2028": 7,
+          "2029": 6
+        },
+        "early_picks": 12,
+        "firsts": 6,
+        "seconds": 6,
+        "total": 24
+      },
+      "positions": {
+        "QB": {
+          "count": 7,
+          "delta_vs_average": 2.0,
+          "label": "deep",
+          "league_average": 5.0,
+          "need_strength": 0.0,
+          "starters": 2,
+          "surplus_strength": 2.0,
+          "target": 3
+        },
+        "RB": {
+          "count": 9,
+          "delta_vs_average": 1.58,
+          "label": "deep",
+          "league_average": 7.42,
+          "need_strength": 0.0,
+          "starters": 3,
+          "surplus_strength": 1.58,
+          "target": 5
+        },
+        "TE": {
+          "count": 4,
+          "delta_vs_average": 0.25,
+          "label": "balanced",
+          "league_average": 3.75,
+          "need_strength": 0.0,
+          "starters": 1,
+          "surplus_strength": 0.25,
+          "target": 2
+        },
+        "WR": {
+          "count": 7,
+          "delta_vs_average": -3.75,
+          "label": "thin",
+          "league_average": 10.75,
+          "need_strength": 3.75,
+          "starters": 3,
+          "surplus_strength": 0.0,
+          "target": 7
+        }
+      },
+      "roster_id": 8,
+      "surpluses": [
+        {
+          "label": "deep",
+          "position": "QB",
+          "strength": 2.0
+        },
+        {
+          "label": "deep",
+          "position": "RB",
+          "strength": 1.58
+        }
+      ],
+      "team_name": "I Chase Brown Kids"
+    },
+    "9": {
+      "faab_remaining": 14,
+      "manager": "ryansorensen8",
+      "needs": [
+        {
+          "label": "thin",
+          "position": "QB",
+          "strength": 1.0
+        },
+        {
+          "label": "below avg",
+          "position": "TE",
+          "strength": 0.75
+        }
+      ],
+      "pick_summary": {
+        "by_round": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 1,
+          "5": 0
+        },
+        "by_year": {
+          "2029": 1
+        },
+        "early_picks": 0,
+        "firsts": 0,
+        "seconds": 0,
+        "total": 1
+      },
+      "positions": {
+        "QB": {
+          "count": 4,
+          "delta_vs_average": -1.0,
+          "label": "thin",
+          "league_average": 5.0,
+          "need_strength": 1.0,
+          "starters": 2,
+          "surplus_strength": 0.0,
+          "target": 3
+        },
+        "RB": {
+          "count": 9,
+          "delta_vs_average": 1.58,
+          "label": "deep",
+          "league_average": 7.42,
+          "need_strength": 0.0,
+          "starters": 2,
+          "surplus_strength": 1.58,
+          "target": 5
+        },
+        "TE": {
+          "count": 3,
+          "delta_vs_average": -0.75,
+          "label": "below avg",
+          "league_average": 3.75,
+          "need_strength": 0.75,
+          "starters": 1,
+          "surplus_strength": 0.0,
+          "target": 2
+        },
+        "WR": {
+          "count": 11,
+          "delta_vs_average": 0.25,
+          "label": "balanced",
+          "league_average": 10.75,
+          "need_strength": 0.0,
+          "starters": 4,
+          "surplus_strength": 0.25,
+          "target": 7
+        }
+      },
+      "roster_id": 9,
+      "surpluses": [
+        {
+          "label": "deep",
+          "position": "RB",
+          "strength": 1.58
+        }
+      ],
+      "team_name": "Matt Prater"
+    }
+  }
+}
