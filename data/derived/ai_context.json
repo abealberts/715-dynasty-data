@@ -1,0 +1,1993 @@
+{
+  "data_health": {
+    "derived": {
+      "generated_at": "2026-08-31T05:14:27.979593+00:00",
+      "status": "ok"
+    },
+    "dynasty_dealer": {
+      "external_sync_generated_at": "2026-08-31T04:36:21.570201+00:00",
+      "players": 964,
+      "status": "ok"
+    },
+    "generated_at": "2026-08-31T05:14:31.638138+00:00",
+    "latest_completed_week": null,
+    "nflverse": {
+      "current_season_snaps": "expected_preseason",
+      "current_season_stats": "expected_preseason",
+      "note": "Current-season nflverse files are not expected before regular-season data is published. Prior-season performance remains labeled as prior.",
+      "snap_rows": null,
+      "stats_rows": null
+    },
+    "overall": "healthy",
+    "player_intel_coverage": {
+      "market_values": 643,
+      "performance_samples": 620,
+      "relevant_players": 3116
+    },
+    "season": "2026",
+    "sleeper": {
+      "authoritative": true,
+      "files": {
+        "free_agents.json": {
+          "bytes": 1233428,
+          "status": "ok"
+        },
+        "league.json": {
+          "bytes": 2901,
+          "status": "ok"
+        },
+        "matchups.json": {
+          "bytes": 328624,
+          "status": "ok"
+        },
+        "nfl_state.json": {
+          "bytes": 253,
+          "status": "ok"
+        },
+        "pick_ownership.json": {
+          "bytes": 29289,
+          "status": "ok"
+        },
+        "players_active.json": {
+          "bytes": 1376259,
+          "status": "ok"
+        },
+        "roster_index.json": {
+          "bytes": 10885,
+          "status": "ok"
+        },
+        "rosters.json": {
+          "bytes": 10713,
+          "status": "ok"
+        },
+        "transactions.json": {
+          "bytes": 119332,
+          "status": "ok"
+        }
+      },
+      "status": "ok"
+    },
+    "warnings": []
+  },
+  "generated_at": "2026-08-31T05:14:31.987806+00:00",
+  "history": {
+    "first_date": "2026-08-31",
+    "latest_date": "2026-08-31",
+    "tracked_days": 1
+  },
+  "league": {
+    "draft_rounds": 5,
+    "faab_budget": 100,
+    "full_ppr": true,
+    "league_id": "1312115903088852992",
+    "league_median_match": true,
+    "name": "715 Dynasty",
+    "season": "2026",
+    "starter_slots": [
+      "QB",
+      "RB",
+      "RB",
+      "WR",
+      "WR",
+      "WR",
+      "TE",
+      "FLEX",
+      "SUPER_FLEX"
+    ],
+    "superflex": true,
+    "teams": 12
+  },
+  "league_leaders": {
+    "all_time_power": [
+      {
+        "all_play": {
+          "losses": 27,
+          "pct": 0.8112,
+          "ties": 0,
+          "wins": 116
+        },
+        "average_score": 146.09,
+        "components": {
+          "all_play": 81.1,
+          "career_scoring": 96.4,
+          "h2h_record": 76.9,
+          "lineup_efficiency": 87.4,
+          "median": 100.0
+        },
+        "h2h": {
+          "losses": 3,
+          "pct": 0.7692,
+          "ties": 0,
+          "wins": 10
+        },
+        "identity_id": "446892006564687872",
+        "lineup_efficiency": 87.4,
+        "lineup_weeks": 13,
+        "luck_index": -4.2,
+        "manager": "ryansorensen8",
+        "median": {
+          "losses": 0,
+          "pct": 1.0,
+          "ties": 0,
+          "wins": 13
+        },
+        "movement": 0,
+        "owner_id": "446892006564687872",
+        "points_for": 1899.15,
+        "points_left_on_bench": 272.9,
+        "power_score": 89.8,
+        "previous_rank": 1,
+        "rank": 1,
+        "recent_3_average": 131.92,
+        "roster_id": 9,
+        "seasons": [
+          "2025"
+        ],
+        "team_name": "Matt Prater",
+        "weeks": 13
+      },
+      {
+        "all_play": {
+          "losses": 36,
+          "pct": 0.7483,
+          "ties": 0,
+          "wins": 107
+        },
+        "average_score": 148.7,
+        "components": {
+          "all_play": 74.8,
+          "career_scoring": 100.0,
+          "h2h_record": 69.2,
+          "lineup_efficiency": 85.9,
+          "median": 84.6
+        },
+        "h2h": {
+          "losses": 4,
+          "pct": 0.6923,
+          "ties": 0,
+          "wins": 9
+        },
+        "identity_id": "988277931761786880",
+        "lineup_efficiency": 85.9,
+        "lineup_weeks": 13,
+        "luck_index": -5.6,
+        "manager": "NolanFarts",
+        "median": {
+          "losses": 2,
+          "pct": 0.8462,
+          "ties": 0,
+          "wins": 11
+        },
+        "movement": 0,
+        "owner_id": "988277931761786880",
+        "points_for": 1933.15,
+        "points_left_on_bench": 316.55,
+        "power_score": 86.2,
+        "previous_rank": 2,
+        "rank": 2,
+        "recent_3_average": 152.12,
+        "roster_id": 2,
+        "seasons": [
+          "2025"
+        ],
+        "team_name": "Njigbas Can’t Reed",
+        "weeks": 13
+      },
+      {
+        "all_play": {
+          "losses": 42,
+          "pct": 0.7063,
+          "ties": 0,
+          "wins": 101
+        },
+        "average_score": 133.97,
+        "components": {
+          "all_play": 70.6,
+          "career_scoring": 79.9,
+          "h2h_record": 69.2,
+          "lineup_efficiency": 86.3,
+          "median": 92.3
+        },
+        "h2h": {
+          "losses": 4,
+          "pct": 0.6923,
+          "ties": 0,
+          "wins": 9
+        },
+        "identity_id": "1001624178866429952",
+        "lineup_efficiency": 86.3,
+        "lineup_weeks": 13,
+        "luck_index": -1.4,
+        "manager": "abewav",
+        "median": {
+          "losses": 1,
+          "pct": 0.9231,
+          "ties": 0,
+          "wins": 12
+        },
+        "movement": 0,
+        "owner_id": "1001624178866429952",
+        "points_for": 1741.55,
+        "points_left_on_bench": 276.1,
+        "power_score": 79.3,
+        "previous_rank": 3,
+        "rank": 3,
+        "recent_3_average": 125.65,
+        "roster_id": 3,
+        "seasons": [
+          "2025"
+        ],
+        "team_name": "Baskerville Bilge Rats",
+        "weeks": 13
+      },
+      {
+        "all_play": {
+          "losses": 46,
+          "pct": 0.6783,
+          "ties": 0,
+          "wins": 97
+        },
+        "average_score": 137.77,
+        "components": {
+          "all_play": 67.8,
+          "career_scoring": 85.1,
+          "h2h_record": 69.2,
+          "lineup_efficiency": 80.6,
+          "median": 76.9
+        },
+        "h2h": {
+          "losses": 4,
+          "pct": 0.6923,
+          "ties": 0,
+          "wins": 9
+        },
+        "identity_id": "1136159156404502528",
+        "lineup_efficiency": 80.6,
+        "lineup_weeks": 13,
+        "luck_index": 1.4,
+        "manager": "Butler2142",
+        "median": {
+          "losses": 3,
+          "pct": 0.7692,
+          "ties": 0,
+          "wins": 10
+        },
+        "movement": 0,
+        "owner_id": "1136159156404502528",
+        "points_for": 1791.0,
+        "points_left_on_bench": 432.15,
+        "power_score": 77.3,
+        "previous_rank": 4,
+        "rank": 4,
+        "recent_3_average": 145.87,
+        "roster_id": 12,
+        "seasons": [
+          "2025"
+        ],
+        "team_name": null,
+        "weeks": 13
+      },
+      {
+        "all_play": {
+          "losses": 56,
+          "pct": 0.6084,
+          "ties": 0,
+          "wins": 87
+        },
+        "average_score": 132.0,
+        "components": {
+          "all_play": 60.8,
+          "career_scoring": 77.2,
+          "h2h_record": 76.9,
+          "lineup_efficiency": 86.7,
+          "median": 76.9
+        },
+        "h2h": {
+          "losses": 3,
+          "pct": 0.7692,
+          "ties": 0,
+          "wins": 10
+        },
+        "identity_id": "846844677612212224",
+        "lineup_efficiency": 86.7,
+        "lineup_weeks": 13,
+        "luck_index": 16.1,
+        "manager": "SORY9",
+        "median": {
+          "losses": 3,
+          "pct": 0.7692,
+          "ties": 0,
+          "wins": 10
+        },
+        "movement": 0,
+        "owner_id": "846844677612212224",
+        "points_for": 1716.05,
+        "points_left_on_bench": 262.75,
+        "power_score": 74.4,
+        "previous_rank": 5,
+        "rank": 5,
+        "recent_3_average": 115.92,
+        "roster_id": 7,
+        "seasons": [
+          "2025"
+        ],
+        "team_name": "TEAM MIKE ALSTOTT",
+        "weeks": 13
+      }
+    ],
+    "current_power": [
+      {
+        "all_play": {
+          "losses": 36,
+          "pct": 0.7483,
+          "ties": 0,
+          "wins": 107
+        },
+        "average_score": 148.7,
+        "components": {
+          "current_performance": null,
+          "historical_prior": 86.2,
+          "roster_market": 91.5
+        },
+        "h2h": {
+          "losses": 4,
+          "pct": 0.6923,
+          "ties": 0,
+          "wins": 9
+        },
+        "historical_prior_score": 86.2,
+        "identity_id": "988277931761786880",
+        "lineup_efficiency": 85.9,
+        "lineup_weeks": 13,
+        "live_performance_score": null,
+        "luck_index": -5.6,
+        "manager": "NolanFarts",
+        "market_strength": 91.5,
+        "median": {
+          "losses": 2,
+          "pct": 0.8462,
+          "ties": 0,
+          "wins": 11
+        },
+        "movement": 0,
+        "owner_id": "988277931761786880",
+        "points_for": 1933.15,
+        "points_left_on_bench": 316.55,
+        "power_score": 89.9,
+        "previous_rank": 2,
+        "rank": 1,
+        "recent_3_average": 152.12,
+        "roster_id": 2,
+        "seasons": [
+          "2025"
+        ],
+        "starter_market_value": 65236,
+        "team_name": "Njigbas In Paris",
+        "total_market_value": 112716,
+        "weeks": 13
+      },
+      {
+        "all_play": {
+          "losses": 27,
+          "pct": 0.8112,
+          "ties": 0,
+          "wins": 116
+        },
+        "average_score": 146.09,
+        "components": {
+          "current_performance": null,
+          "historical_prior": 89.8,
+          "roster_market": 69.9
+        },
+        "h2h": {
+          "losses": 3,
+          "pct": 0.7692,
+          "ties": 0,
+          "wins": 10
+        },
+        "historical_prior_score": 89.8,
+        "identity_id": "446892006564687872",
+        "lineup_efficiency": 87.4,
+        "lineup_weeks": 13,
+        "live_performance_score": null,
+        "luck_index": -4.2,
+        "manager": "ryansorensen8",
+        "market_strength": 69.9,
+        "median": {
+          "losses": 0,
+          "pct": 1.0,
+          "ties": 0,
+          "wins": 13
+        },
+        "movement": 0,
+        "owner_id": "446892006564687872",
+        "points_for": 1899.15,
+        "points_left_on_bench": 272.9,
+        "power_score": 75.9,
+        "previous_rank": 1,
+        "rank": 2,
+        "recent_3_average": 131.92,
+        "roster_id": 9,
+        "seasons": [
+          "2025"
+        ],
+        "starter_market_value": 57598,
+        "team_name": "Matt Prater",
+        "total_market_value": 108778,
+        "weeks": 13
+      },
+      {
+        "all_play": {
+          "losses": 46,
+          "pct": 0.6783,
+          "ties": 0,
+          "wins": 97
+        },
+        "average_score": 137.77,
+        "components": {
+          "current_performance": null,
+          "historical_prior": 77.3,
+          "roster_market": 71.9
+        },
+        "h2h": {
+          "losses": 4,
+          "pct": 0.6923,
+          "ties": 0,
+          "wins": 9
+        },
+        "historical_prior_score": 77.3,
+        "identity_id": "1136159156404502528",
+        "lineup_efficiency": 80.6,
+        "lineup_weeks": 13,
+        "live_performance_score": null,
+        "luck_index": 1.4,
+        "manager": "Butler2142",
+        "market_strength": 71.9,
+        "median": {
+          "losses": 3,
+          "pct": 0.7692,
+          "ties": 0,
+          "wins": 10
+        },
+        "movement": 0,
+        "owner_id": "1136159156404502528",
+        "points_for": 1791.0,
+        "points_left_on_bench": 432.15,
+        "power_score": 73.5,
+        "previous_rank": 4,
+        "rank": 3,
+        "recent_3_average": 145.87,
+        "roster_id": 12,
+        "seasons": [
+          "2025"
+        ],
+        "starter_market_value": 56786,
+        "team_name": null,
+        "total_market_value": 112580,
+        "weeks": 13
+      },
+      {
+        "all_play": {
+          "losses": 42,
+          "pct": 0.7063,
+          "ties": 0,
+          "wins": 101
+        },
+        "average_score": 133.97,
+        "components": {
+          "current_performance": null,
+          "historical_prior": 79.3,
+          "roster_market": 67.7
+        },
+        "h2h": {
+          "losses": 4,
+          "pct": 0.6923,
+          "ties": 0,
+          "wins": 9
+        },
+        "historical_prior_score": 79.3,
+        "identity_id": "1001624178866429952",
+        "lineup_efficiency": 86.3,
+        "lineup_weeks": 13,
+        "live_performance_score": null,
+        "luck_index": -1.4,
+        "manager": "abewav",
+        "market_strength": 67.7,
+        "median": {
+          "losses": 1,
+          "pct": 0.9231,
+          "ties": 0,
+          "wins": 12
+        },
+        "movement": 0,
+        "owner_id": "1001624178866429952",
+        "points_for": 1741.55,
+        "points_left_on_bench": 276.1,
+        "power_score": 71.2,
+        "previous_rank": 3,
+        "rank": 4,
+        "recent_3_average": 125.65,
+        "roster_id": 3,
+        "seasons": [
+          "2025"
+        ],
+        "starter_market_value": 55923,
+        "team_name": "Baskerville Bilge Rats",
+        "total_market_value": 110488,
+        "weeks": 13
+      },
+      {
+        "all_play": {
+          "losses": 56,
+          "pct": 0.6084,
+          "ties": 0,
+          "wins": 87
+        },
+        "average_score": 132.0,
+        "components": {
+          "current_performance": null,
+          "historical_prior": 74.4,
+          "roster_market": 67.8
+        },
+        "h2h": {
+          "losses": 3,
+          "pct": 0.7692,
+          "ties": 0,
+          "wins": 10
+        },
+        "historical_prior_score": 74.4,
+        "identity_id": "846844677612212224",
+        "lineup_efficiency": 86.7,
+        "lineup_weeks": 13,
+        "live_performance_score": null,
+        "luck_index": 16.1,
+        "manager": "SORY9",
+        "market_strength": 67.8,
+        "median": {
+          "losses": 3,
+          "pct": 0.7692,
+          "ties": 0,
+          "wins": 10
+        },
+        "movement": 0,
+        "owner_id": "846844677612212224",
+        "points_for": 1716.05,
+        "points_left_on_bench": 262.75,
+        "power_score": 69.8,
+        "previous_rank": 5,
+        "rank": 5,
+        "recent_3_average": 115.92,
+        "roster_id": 7,
+        "seasons": [
+          "2025"
+        ],
+        "starter_market_value": 57670,
+        "team_name": "TEAM MIKE ALSTOTT",
+        "total_market_value": 106657,
+        "weeks": 13
+      }
+    ],
+    "market": [
+      {
+        "depth_market_score": 65.9,
+        "depth_market_value": 47480,
+        "manager": "NolanFarts",
+        "market_rank": 1,
+        "optimal_starter_market_value": 65236,
+        "position_scores": {
+          "QB": 32.8,
+          "RB": 81.4,
+          "TE": 100.0,
+          "WR": 85.0
+        },
+        "position_values": {
+          "QB": 16877,
+          "RB": 32246,
+          "TE": 18561,
+          "WR": 45032
+        },
+        "roster_id": 2,
+        "roster_market_score": 91.5,
+        "starter_market_score": 100.0,
+        "submitted_starter_market_value": 65132,
+        "team_name": "Njigbas In Paris",
+        "total_market_score": 100.0,
+        "total_market_value": 112716
+      },
+      {
+        "depth_market_score": 87.6,
+        "depth_market_value": 52758,
+        "manager": "Waldo23",
+        "market_rank": 2,
+        "optimal_starter_market_value": 57946,
+        "position_scores": {
+          "QB": 100.0,
+          "RB": 100.0,
+          "TE": 52.0,
+          "WR": 18.8
+        },
+        "position_values": {
+          "QB": 28087,
+          "RB": 38455,
+          "TE": 13588,
+          "WR": 30574
+        },
+        "roster_id": 11,
+        "roster_market_score": 72.6,
+        "starter_market_score": 67.7,
+        "submitted_starter_market_value": 53027,
+        "team_name": "I Cam, I Saw, I Conquered",
+        "total_market_score": 94.6,
+        "total_market_value": 110704
+      },
+      {
+        "depth_market_score": 100.0,
+        "depth_market_value": 55794,
+        "manager": "Butler2142",
+        "market_rank": 3,
+        "optimal_starter_market_value": 56786,
+        "position_scores": {
+          "QB": 57.9,
+          "RB": 85.7,
+          "TE": 12.9,
+          "WR": 100.0
+        },
+        "position_values": {
+          "QB": 21065,
+          "RB": 33680,
+          "TE": 9530,
+          "WR": 48305
+        },
+        "roster_id": 12,
+        "roster_market_score": 71.9,
+        "starter_market_score": 62.5,
+        "submitted_starter_market_value": 56588,
+        "team_name": null,
+        "total_market_score": 99.6,
+        "total_market_value": 112580
+      },
+      {
+        "depth_market_score": 81.1,
+        "depth_market_value": 51180,
+        "manager": "ryansorensen8",
+        "market_rank": 4,
+        "optimal_starter_market_value": 57598,
+        "position_scores": {
+          "QB": 59.3,
+          "RB": 80.0,
+          "TE": 41.1,
+          "WR": 76.8
+        },
+        "position_values": {
+          "QB": 21289,
+          "RB": 31790,
+          "TE": 12451,
+          "WR": 43248
+        },
+        "roster_id": 9,
+        "roster_market_score": 69.9,
+        "starter_market_score": 66.1,
+        "submitted_starter_market_value": 57598,
+        "team_name": "Matt Prater",
+        "total_market_score": 89.4,
+        "total_market_value": 108778
+      },
+      {
+        "depth_market_score": 72.1,
+        "depth_market_value": 48987,
+        "manager": "SORY9",
+        "market_rank": 5,
+        "optimal_starter_market_value": 57670,
+        "position_scores": {
+          "QB": 88.3,
+          "RB": 67.5,
+          "TE": 62.3,
+          "WR": 53.9
+        },
+        "position_values": {
+          "QB": 26137,
+          "RB": 27631,
+          "TE": 14658,
+          "WR": 38231
+        },
+        "roster_id": 7,
+        "roster_market_score": 67.8,
+        "starter_market_score": 66.4,
+        "submitted_starter_market_value": 57302,
+        "team_name": "TEAM MIKE ALSTOTT",
+        "total_market_score": 83.8,
+        "total_market_value": 106657
+      }
+    ],
+    "playoffs": [
+      {
+        "actual_points_for": 0.0,
+        "actual_standings_losses": 0,
+        "actual_standings_wins": 0,
+        "current_mean": null,
+        "current_sd": null,
+        "current_weeks": 0,
+        "manager": "ryansorensen8",
+        "market_model_mean": 121.28,
+        "market_strength": 69.9,
+        "market_weight": 0.45,
+        "model_mean": 134.93,
+        "model_sd": 18.79,
+        "one_seed_odds": 32.2,
+        "owner_id": "446892006564687872",
+        "playoff_odds": 87.9,
+        "prior_mean": 146.09,
+        "prior_sd": 18.79,
+        "prior_weeks": 13,
+        "projected_standings_losses": 7.2,
+        "projected_standings_wins": 18.8,
+        "roster_id": 9,
+        "strength_score": 92.3,
+        "team_name": "Matt Prater",
+        "title_odds": 29.5
+      },
+      {
+        "actual_points_for": 0.0,
+        "actual_standings_losses": 0,
+        "actual_standings_wins": 0,
+        "current_mean": null,
+        "current_sd": null,
+        "current_weeks": 0,
+        "manager": "NolanFarts",
+        "market_model_mean": 126.68,
+        "market_strength": 91.5,
+        "market_weight": 0.45,
+        "model_mean": 138.79,
+        "model_sd": 28.34,
+        "one_seed_odds": 35.4,
+        "owner_id": "988277931761786880",
+        "playoff_odds": 86.6,
+        "prior_mean": 148.7,
+        "prior_sd": 28.34,
+        "prior_weeks": 13,
+        "projected_standings_losses": 7.3,
+        "projected_standings_wins": 18.7,
+        "roster_id": 2,
+        "strength_score": 100.0,
+        "team_name": "Njigbas In Paris",
+        "title_odds": 35.9
+      },
+      {
+        "actual_points_for": 0.0,
+        "actual_standings_losses": 0,
+        "actual_standings_wins": 0,
+        "current_mean": null,
+        "current_sd": null,
+        "current_weeks": 0,
+        "manager": "Butler2142",
+        "market_model_mean": 121.78,
+        "market_strength": 71.9,
+        "market_weight": 0.45,
+        "model_mean": 130.57,
+        "model_sd": 16.33,
+        "one_seed_odds": 14.5,
+        "owner_id": "1136159156404502528",
+        "playoff_odds": 73.2,
+        "prior_mean": 137.77,
+        "prior_sd": 16.33,
+        "prior_weeks": 13,
+        "projected_standings_losses": 8.6,
+        "projected_standings_wins": 17.4,
+        "roster_id": 12,
+        "strength_score": 83.6,
+        "team_name": null,
+        "title_odds": 15.1
+      },
+      {
+        "actual_points_for": 0.0,
+        "actual_standings_losses": 0,
+        "actual_standings_wins": 0,
+        "current_mean": null,
+        "current_sd": null,
+        "current_weeks": 0,
+        "manager": "abewav",
+        "market_model_mean": 120.73,
+        "market_strength": 67.7,
+        "market_weight": 0.45,
+        "model_mean": 128.01,
+        "model_sd": 16.26,
+        "one_seed_odds": 8.1,
+        "owner_id": "1001624178866429952",
+        "playoff_odds": 57.9,
+        "prior_mean": 133.97,
+        "prior_sd": 16.26,
+        "prior_weeks": 13,
+        "projected_standings_losses": 9.6,
+        "projected_standings_wins": 16.4,
+        "roster_id": 3,
+        "strength_score": 78.5,
+        "team_name": "Baskerville Bilge Rats",
+        "title_odds": 9.3
+      },
+      {
+        "actual_points_for": 0.0,
+        "actual_standings_losses": 0,
+        "actual_standings_wins": 0,
+        "current_mean": null,
+        "current_sd": null,
+        "current_weeks": 0,
+        "manager": "SORY9",
+        "market_model_mean": 120.76,
+        "market_strength": 67.8,
+        "market_weight": 0.45,
+        "model_mean": 126.94,
+        "model_sd": 16.54,
+        "one_seed_odds": 7.2,
+        "owner_id": "846844677612212224",
+        "playoff_odds": 55.8,
+        "prior_mean": 132.0,
+        "prior_sd": 16.54,
+        "prior_weeks": 13,
+        "projected_standings_losses": 9.7,
+        "projected_standings_wins": 16.3,
+        "roster_id": 7,
+        "strength_score": 76.3,
+        "team_name": "TEAM MIKE ALSTOTT",
+        "title_odds": 6.9
+      }
+    ],
+    "profiles": [
+      {
+        "average_roster_age": 26.6,
+        "early_picks": 2,
+        "first_round_picks": 1,
+        "franchise_score": 74.3,
+        "manager": "NolanFarts",
+        "metrics": {
+          "draft_capital": 9.4,
+          "lineup_management": 94.3,
+          "market_value": 91.5,
+          "performance_prior": 100.0,
+          "roster_balance": 100.0,
+          "stability": 67.8,
+          "youth": 19.0
+        },
+        "model_mean": 138.79,
+        "model_sd": 28.34,
+        "owner_id": "988277931761786880",
+        "pick_count": 10,
+        "playoff_odds": 86.6,
+        "risks": [
+          "Draft Capital",
+          "Youth"
+        ],
+        "roster_id": 2,
+        "strengths": [
+          "Performance Prior",
+          "Roster Balance"
+        ],
+        "team_name": "Njigbas In Paris",
+        "title_odds": 35.9,
+        "window": "Contender",
+        "young_player_share": 40.7
+      },
+      {
+        "average_roster_age": 26.2,
+        "early_picks": 0,
+        "first_round_picks": 0,
+        "franchise_score": 67.4,
+        "manager": "ryansorensen8",
+        "metrics": {
+          "draft_capital": 0.0,
+          "lineup_management": 100.0,
+          "market_value": 69.9,
+          "performance_prior": 92.3,
+          "roster_balance": 100.0,
+          "stability": 93.2,
+          "youth": 25.4
+        },
+        "model_mean": 134.93,
+        "model_sd": 18.79,
+        "owner_id": "446892006564687872",
+        "pick_count": 1,
+        "playoff_odds": 87.9,
+        "risks": [
+          "Draft Capital",
+          "Youth"
+        ],
+        "roster_id": 9,
+        "strengths": [
+          "Roster Balance",
+          "Lineup Management"
+        ],
+        "team_name": "Matt Prater",
+        "title_odds": 29.5,
+        "window": "Contender",
+        "young_player_share": 44.4
+      },
+      {
+        "average_roster_age": 26.9,
+        "early_picks": 6,
+        "first_round_picks": 2,
+        "franchise_score": 65.3,
+        "manager": "abewav",
+        "metrics": {
+          "draft_capital": 24.8,
+          "lineup_management": 95.8,
+          "market_value": 67.7,
+          "performance_prior": 78.5,
+          "roster_balance": 100.0,
+          "stability": 100.0,
+          "youth": 12.7
+        },
+        "model_mean": 128.01,
+        "model_sd": 16.26,
+        "owner_id": "1001624178866429952",
+        "pick_count": 14,
+        "playoff_odds": 57.9,
+        "risks": [
+          "Youth",
+          "Draft Capital"
+        ],
+        "roster_id": 3,
+        "strengths": [
+          "Roster Balance",
+          "Stability"
+        ],
+        "team_name": "Baskerville Bilge Rats",
+        "title_odds": 9.3,
+        "window": "Playoff Hunt",
+        "young_player_share": 37.0
+      },
+      {
+        "average_roster_age": 27.6,
+        "early_picks": 4,
+        "first_round_picks": 2,
+        "franchise_score": 62.0,
+        "manager": "SORY9",
+        "metrics": {
+          "draft_capital": 15.9,
+          "lineup_management": 97.3,
+          "market_value": 67.8,
+          "performance_prior": 76.3,
+          "roster_balance": 100.0,
+          "stability": 99.3,
+          "youth": 0.0
+        },
+        "model_mean": 126.94,
+        "model_sd": 16.54,
+        "owner_id": "846844677612212224",
+        "pick_count": 8,
+        "playoff_odds": 55.8,
+        "risks": [
+          "Youth",
+          "Draft Capital"
+        ],
+        "roster_id": 7,
+        "strengths": [
+          "Roster Balance",
+          "Stability"
+        ],
+        "team_name": "TEAM MIKE ALSTOTT",
+        "title_odds": 6.9,
+        "window": "Playoff Hunt",
+        "young_player_share": 29.6
+      },
+      {
+        "average_roster_age": 26.8,
+        "early_picks": 3,
+        "first_round_picks": 0,
+        "franchise_score": 60.5,
+        "manager": "Butler2142",
+        "metrics": {
+          "draft_capital": 15.0,
+          "lineup_management": 74.0,
+          "market_value": 71.9,
+          "performance_prior": 83.6,
+          "roster_balance": 50.0,
+          "stability": 99.8,
+          "youth": 15.1
+        },
+        "model_mean": 130.57,
+        "model_sd": 16.33,
+        "owner_id": "1136159156404502528",
+        "pick_count": 15,
+        "playoff_odds": 73.2,
+        "risks": [
+          "Draft Capital",
+          "Youth"
+        ],
+        "roster_id": 12,
+        "strengths": [
+          "Stability",
+          "Performance Prior"
+        ],
+        "team_name": null,
+        "title_odds": 15.1,
+        "window": "Contender",
+        "young_player_share": 38.5
+      }
+    ]
+  },
+  "my_team": {
+    "current_power": {
+      "all_play": {
+        "losses": 42,
+        "pct": 0.7063,
+        "ties": 0,
+        "wins": 101
+      },
+      "average_score": 133.97,
+      "components": {
+        "current_performance": null,
+        "historical_prior": 79.3,
+        "roster_market": 67.7
+      },
+      "h2h": {
+        "losses": 4,
+        "pct": 0.6923,
+        "ties": 0,
+        "wins": 9
+      },
+      "historical_prior_score": 79.3,
+      "identity_id": "1001624178866429952",
+      "lineup_efficiency": 86.3,
+      "lineup_weeks": 13,
+      "live_performance_score": null,
+      "luck_index": -1.4,
+      "manager": "abewav",
+      "market_strength": 67.7,
+      "median": {
+        "losses": 1,
+        "pct": 0.9231,
+        "ties": 0,
+        "wins": 12
+      },
+      "movement": 0,
+      "owner_id": "1001624178866429952",
+      "points_for": 1741.55,
+      "points_left_on_bench": 276.1,
+      "power_score": 71.2,
+      "previous_rank": 3,
+      "rank": 4,
+      "recent_3_average": 125.65,
+      "roster_id": 3,
+      "seasons": [
+        "2025"
+      ],
+      "starter_market_value": 55923,
+      "team_name": "Baskerville Bilge Rats",
+      "total_market_value": 110488,
+      "weeks": 13
+    },
+    "manager": "abewav",
+    "market": {
+      "depth_market_score": 95.0,
+      "depth_market_value": 54565,
+      "manager": "abewav",
+      "market_rank": 6,
+      "optimal_starter_market_value": 55923,
+      "position_scores": {
+        "QB": 96.4,
+        "RB": 74.3,
+        "TE": 50.5,
+        "WR": 60.5
+      },
+      "position_values": {
+        "QB": 27493,
+        "RB": 29885,
+        "TE": 13426,
+        "WR": 39684
+      },
+      "roster_id": 3,
+      "roster_market_score": 67.7,
+      "starter_market_score": 58.7,
+      "submitted_starter_market_value": 53495,
+      "team_name": "Baskerville Bilge Rats",
+      "total_market_score": 94.0,
+      "total_market_value": 110488
+    },
+    "needs": {
+      "faab_remaining": 100,
+      "manager": "abewav",
+      "market": {
+        "depth_market_score": 95.0,
+        "depth_market_value": 54565,
+        "manager": "abewav",
+        "market_rank": 6,
+        "optimal_starter_market_value": 55923,
+        "position_scores": {
+          "QB": 96.4,
+          "RB": 74.3,
+          "TE": 50.5,
+          "WR": 60.5
+        },
+        "position_values": {
+          "QB": 27493,
+          "RB": 29885,
+          "TE": 13426,
+          "WR": 39684
+        },
+        "roster_id": 3,
+        "roster_market_score": 67.7,
+        "starter_market_score": 58.7,
+        "submitted_starter_market_value": 53495,
+        "team_name": "Baskerville Bilge Rats",
+        "total_market_score": 94.0,
+        "total_market_value": 110488
+      },
+      "needs": [
+        {
+          "label": "thin",
+          "position": "WR",
+          "strength": 1.75
+        },
+        {
+          "label": "below avg",
+          "position": "TE",
+          "strength": 0.75
+        }
+      ],
+      "pick_summary": {
+        "by_round": {
+          "1": 2,
+          "2": 4,
+          "3": 4,
+          "4": 3,
+          "5": 1
+        },
+        "by_year": {
+          "2026": 5,
+          "2027": 3,
+          "2028": 2,
+          "2029": 4
+        },
+        "early_picks": 6,
+        "firsts": 2,
+        "seconds": 4,
+        "total": 14
+      },
+      "positions": {
+        "QB": {
+          "count": 7,
+          "delta_vs_average": 2.0,
+          "label": "deep",
+          "league_average": 5.0,
+          "market_score": 96.4,
+          "market_value": 27493,
+          "need_strength": 0.0,
+          "quality_label": "market-deep",
+          "starters": 2,
+          "surplus_strength": 2.0,
+          "target": 4
+        },
+        "RB": {
+          "count": 8,
+          "delta_vs_average": 0.58,
+          "label": "above avg",
+          "league_average": 7.42,
+          "market_score": 74.3,
+          "market_value": 29885,
+          "need_strength": 0.0,
+          "quality_label": "market-deep",
+          "starters": 3,
+          "surplus_strength": 0.58,
+          "target": 5
+        },
+        "TE": {
+          "count": 3,
+          "delta_vs_average": -0.75,
+          "label": "below avg",
+          "league_average": 3.75,
+          "market_score": 50.5,
+          "market_value": 13426,
+          "need_strength": 0.75,
+          "quality_label": "market-balanced",
+          "starters": 1,
+          "surplus_strength": 0.0,
+          "target": 2
+        },
+        "WR": {
+          "count": 9,
+          "delta_vs_average": -1.75,
+          "label": "thin",
+          "league_average": 10.75,
+          "market_score": 60.5,
+          "market_value": 39684,
+          "need_strength": 1.75,
+          "quality_label": "market-balanced",
+          "starters": 3,
+          "surplus_strength": 0.0,
+          "target": 7
+        }
+      },
+      "roster_id": 3,
+      "surpluses": [
+        {
+          "label": "market-deep",
+          "position": "QB",
+          "strength": 3.71
+        },
+        {
+          "label": "market-deep",
+          "position": "RB",
+          "strength": 1.94
+        }
+      ],
+      "team_name": "Baskerville Bilge Rats"
+    },
+    "playoff": {
+      "actual_points_for": 0.0,
+      "actual_standings_losses": 0,
+      "actual_standings_wins": 0,
+      "current_mean": null,
+      "current_sd": null,
+      "current_weeks": 0,
+      "manager": "abewav",
+      "market_model_mean": 120.73,
+      "market_strength": 67.7,
+      "market_weight": 0.45,
+      "model_mean": 128.01,
+      "model_sd": 16.26,
+      "one_seed_odds": 8.1,
+      "owner_id": "1001624178866429952",
+      "playoff_odds": 57.9,
+      "prior_mean": 133.97,
+      "prior_sd": 16.26,
+      "prior_weeks": 13,
+      "projected_standings_losses": 9.6,
+      "projected_standings_wins": 16.4,
+      "roster_id": 3,
+      "strength_score": 78.5,
+      "team_name": "Baskerville Bilge Rats",
+      "title_odds": 9.3
+    },
+    "profile": {
+      "average_roster_age": 26.9,
+      "early_picks": 6,
+      "first_round_picks": 2,
+      "franchise_score": 65.3,
+      "manager": "abewav",
+      "metrics": {
+        "draft_capital": 24.8,
+        "lineup_management": 95.8,
+        "market_value": 67.7,
+        "performance_prior": 78.5,
+        "roster_balance": 100.0,
+        "stability": 100.0,
+        "youth": 12.7
+      },
+      "model_mean": 128.01,
+      "model_sd": 16.26,
+      "owner_id": "1001624178866429952",
+      "pick_count": 14,
+      "playoff_odds": 57.9,
+      "risks": [
+        "Youth",
+        "Draft Capital"
+      ],
+      "roster_id": 3,
+      "strengths": [
+        "Roster Balance",
+        "Stability"
+      ],
+      "team_name": "Baskerville Bilge Rats",
+      "title_odds": 9.3,
+      "window": "Playoff Hunt",
+      "young_player_share": 37.0
+    },
+    "team_name": "Baskerville Bilge Rats"
+  },
+  "purpose": "Compact first-pass context for ChatGPT. Authoritative ownership/roster/pick/free-agent facts still come from data/current.",
+  "top_opportunities": [
+    {
+      "age": 30,
+      "depth": 2,
+      "injury_status": null,
+      "market_position_rank": 102,
+      "market_rank": 377,
+      "market_value": 1426,
+      "name": "Samaje Perine",
+      "opportunity_score": 75.6,
+      "performance": {
+        "air_yards_share": -0.9,
+        "basis": "prior",
+        "basis_label": "2025",
+        "carries_per_game": 5.6,
+        "games": 15,
+        "last3_opportunities_per_game": 8.67,
+        "last3_ppg_715": 9.53,
+        "offense_snap_pct": 35.1,
+        "opportunities_per_game": 7.0,
+        "ppg_715": 5.19,
+        "target_share": 4.1,
+        "targets_per_game": 1.4,
+        "touches_per_game": 6.73
+      },
+      "player_id": "4147",
+      "position": "RB",
+      "reasons": [
+        "Dynasty Dealer market value 1,426 adds insulation/upside signal.",
+        "2025 prior usage: 7.0 opportunities/game, 35% offensive snaps, 5.2 715 PPG.",
+        "Currently on an NFL roster (CIN).",
+        "Depth-chart No. 2: direct contingent path to usage.",
+        "RB contingent value can rise quickly with one depth-chart change."
+      ],
+      "team": "CIN",
+      "tier": "Priority",
+      "trending_adds_24h": 7560
+    },
+    {
+      "age": 26,
+      "depth": 2,
+      "injury_status": null,
+      "market_position_rank": 54,
+      "market_rank": 356,
+      "market_value": 1783,
+      "name": "Tyson Bagent",
+      "opportunity_score": 75.2,
+      "performance": {
+        "air_yards_share": 0.0,
+        "basis": "prior",
+        "basis_label": "2025",
+        "carries_per_game": 0.67,
+        "games": 3,
+        "last3_opportunities_per_game": 2.0,
+        "last3_ppg_715": 1.02,
+        "offense_snap_pct": 6.7,
+        "opportunities_per_game": 2.0,
+        "ppg_715": 1.02,
+        "target_share": 0.0,
+        "targets_per_game": 0.0,
+        "touches_per_game": 0.67
+      },
+      "player_id": "11256",
+      "position": "QB",
+      "reasons": [
+        "Dynasty Dealer market value 1,783 adds insulation/upside signal.",
+        "2025 prior usage: 2.0 opportunities/game, 7% offensive snaps, 1.0 715 PPG.",
+        "Currently on an NFL roster (CHI).",
+        "Depth-chart No. 2: direct contingent path to usage.",
+        "Superflex format raises the value of any QB with a path to starts."
+      ],
+      "team": "CHI",
+      "tier": "Priority",
+      "trending_adds_24h": 7206
+    },
+    {
+      "age": 23,
+      "depth": 2,
+      "injury_status": null,
+      "market_position_rank": null,
+      "market_rank": null,
+      "market_value": null,
+      "name": "Kyle McCord",
+      "opportunity_score": 73.5,
+      "performance": null,
+      "player_id": "12494",
+      "position": "QB",
+      "reasons": [
+        "Currently on an NFL roster (MIA).",
+        "Depth-chart No. 2: direct contingent path to usage.",
+        "Age supports long-term value growth.",
+        "Superflex format raises the value of any QB with a path to starts.",
+        "Sleeper market heat: 38,020 adds in the 24h trend window."
+      ],
+      "team": "MIA",
+      "tier": "Priority",
+      "trending_adds_24h": 38020
+    },
+    {
+      "age": 31,
+      "depth": 2,
+      "injury_status": null,
+      "market_position_rank": 59,
+      "market_rank": 330,
+      "market_value": 1942,
+      "name": "Jonnu Smith",
+      "opportunity_score": 72.2,
+      "performance": {
+        "air_yards_share": 6.6,
+        "basis": "prior",
+        "basis_label": "2025",
+        "carries_per_game": 0.53,
+        "games": 17,
+        "last3_opportunities_per_game": 4.33,
+        "last3_ppg_715": 3.97,
+        "offense_snap_pct": 52.7,
+        "opportunities_per_game": 3.71,
+        "ppg_715": 5.01,
+        "target_share": 10.6,
+        "targets_per_game": 3.18,
+        "touches_per_game": 2.76
+      },
+      "player_id": "4144",
+      "position": "TE",
+      "reasons": [
+        "Dynasty Dealer market value 1,942 adds insulation/upside signal.",
+        "2025 prior usage: 3.7 opportunities/game, 53% offensive snaps, 5.0 715 PPG.",
+        "Currently on an NFL roster (GB).",
+        "Depth-chart No. 2: direct contingent path to usage.",
+        "Sleeper market heat: 17,290 adds in the 24h trend window."
+      ],
+      "team": "GB",
+      "tier": "Priority",
+      "trending_adds_24h": 17290
+    },
+    {
+      "age": 23,
+      "depth": 3,
+      "injury_status": null,
+      "market_position_rank": 62,
+      "market_rank": 351,
+      "market_value": 1810,
+      "name": "Marlin Klein",
+      "opportunity_score": 68.9,
+      "performance": null,
+      "player_id": "13307",
+      "position": "TE",
+      "reasons": [
+        "Dynasty Dealer market value 1,810 adds insulation/upside signal.",
+        "Currently on an NFL roster (HOU).",
+        "Depth-chart No. 3: plausible contingent upside.",
+        "Age supports long-term value growth.",
+        "Sleeper market heat: 27,825 adds in the 24h trend window."
+      ],
+      "team": "HOU",
+      "tier": "Strong stash",
+      "trending_adds_24h": 27825
+    },
+    {
+      "age": 33,
+      "depth": 1,
+      "injury_status": null,
+      "market_position_rank": 61,
+      "market_rank": 342,
+      "market_value": 1866,
+      "name": "Darren Waller",
+      "opportunity_score": 68.2,
+      "performance": {
+        "air_yards_share": 22.1,
+        "basis": "prior",
+        "basis_label": "2025",
+        "carries_per_game": 0.11,
+        "games": 9,
+        "last3_opportunities_per_game": 5.33,
+        "last3_ppg_715": 11.2,
+        "offense_snap_pct": 45.0,
+        "opportunities_per_game": 3.89,
+        "ppg_715": 9.86,
+        "target_share": 14.6,
+        "targets_per_game": 3.78,
+        "touches_per_game": 2.78
+      },
+      "player_id": "2505",
+      "position": "TE",
+      "reasons": [
+        "Dynasty Dealer market value 1,866 adds insulation/upside signal.",
+        "2025 prior usage: 3.9 opportunities/game, 45% offensive snaps, 9.9 715 PPG.",
+        "Currently on an NFL roster (CAR).",
+        "Listed first on the Sleeper depth chart.",
+        "Sleeper market heat: 75,825 adds in the 24h trend window."
+      ],
+      "team": "CAR",
+      "tier": "Strong stash",
+      "trending_adds_24h": 75825
+    },
+    {
+      "age": 24,
+      "depth": 4,
+      "injury_status": null,
+      "market_position_rank": 98,
+      "market_rank": 360,
+      "market_value": 1729,
+      "name": "Kendre Miller",
+      "opportunity_score": 67.9,
+      "performance": {
+        "air_yards_share": -0.1,
+        "basis": "prior",
+        "basis_label": "2025",
+        "carries_per_game": 6.71,
+        "games": 7,
+        "last3_opportunities_per_game": 7.0,
+        "last3_ppg_715": 3.6,
+        "offense_snap_pct": 24.3,
+        "opportunities_per_game": 7.43,
+        "ppg_715": 4.76,
+        "target_share": 2.1,
+        "targets_per_game": 0.71,
+        "touches_per_game": 7.43
+      },
+      "player_id": "9757",
+      "position": "RB",
+      "reasons": [
+        "Dynasty Dealer market value 1,729 adds insulation/upside signal.",
+        "2025 prior usage: 7.4 opportunities/game, 24% offensive snaps, 4.8 715 PPG.",
+        "Currently on an NFL roster (NO).",
+        "Depth-chart No. 4: deeper path to touches.",
+        "Age supports long-term value growth."
+      ],
+      "team": "NO",
+      "tier": "Strong stash",
+      "trending_adds_24h": 6918
+    },
+    {
+      "age": 28,
+      "depth": 2,
+      "injury_status": null,
+      "market_position_rank": 103,
+      "market_rank": 381,
+      "market_value": 1385,
+      "name": "Justice Hill",
+      "opportunity_score": 67.7,
+      "performance": {
+        "air_yards_share": -0.6,
+        "basis": "prior",
+        "basis_label": "2025",
+        "carries_per_game": 1.8,
+        "games": 10,
+        "last3_opportunities_per_game": 2.0,
+        "last3_ppg_715": 3.93,
+        "offense_snap_pct": 37.1,
+        "opportunities_per_game": 4.5,
+        "ppg_715": 6.52,
+        "target_share": 10.0,
+        "targets_per_game": 2.7,
+        "touches_per_game": 3.9
+      },
+      "player_id": "5995",
+      "position": "RB",
+      "reasons": [
+        "Dynasty Dealer market value 1,385 adds insulation/upside signal.",
+        "2025 prior usage: 4.5 opportunities/game, 37% offensive snaps, 6.5 715 PPG.",
+        "Currently on an NFL roster (BAL).",
+        "Depth-chart No. 2: direct contingent path to usage.",
+        "RB contingent value can rise quickly with one depth-chart change."
+      ],
+      "team": "BAL",
+      "tier": "Strong stash",
+      "trending_adds_24h": 50535
+    },
+    {
+      "age": 27,
+      "depth": 2,
+      "injury_status": null,
+      "market_position_rank": 53,
+      "market_rank": 347,
+      "market_value": 1830,
+      "name": "Davis Mills",
+      "opportunity_score": 67.1,
+      "performance": {
+        "air_yards_share": 0.0,
+        "basis": "prior",
+        "basis_label": "2025",
+        "carries_per_game": 2.17,
+        "games": 6,
+        "last3_opportunities_per_game": 28.33,
+        "last3_ppg_715": 12.72,
+        "offense_snap_pct": 70.5,
+        "opportunities_per_game": 28.67,
+        "ppg_715": 12.96,
+        "target_share": 0.0,
+        "targets_per_game": 0.0,
+        "touches_per_game": 2.17
+      },
+      "player_id": "7585",
+      "position": "QB",
+      "reasons": [
+        "Dynasty Dealer market value 1,830 adds insulation/upside signal.",
+        "2025 prior usage: 28.7 opportunities/game, 70% offensive snaps, 13.0 715 PPG.",
+        "Currently on an NFL roster (HOU).",
+        "Depth-chart No. 2: direct contingent path to usage.",
+        "Superflex format raises the value of any QB with a path to starts."
+      ],
+      "team": "HOU",
+      "tier": "Strong stash",
+      "trending_adds_24h": 0
+    },
+    {
+      "age": 27,
+      "depth": 2,
+      "injury_status": null,
+      "market_position_rank": 96,
+      "market_rank": 355,
+      "market_value": 1786,
+      "name": "Emari Demercado",
+      "opportunity_score": 66.0,
+      "performance": {
+        "air_yards_share": 0.5,
+        "basis": "prior",
+        "basis_label": "2025",
+        "carries_per_game": 3.67,
+        "games": 12,
+        "last3_opportunities_per_game": 5.67,
+        "last3_ppg_715": 4.57,
+        "offense_snap_pct": 25.2,
+        "opportunities_per_game": 5.33,
+        "ppg_715": 4.86,
+        "target_share": 4.3,
+        "targets_per_game": 1.67,
+        "touches_per_game": 4.75
+      },
+      "player_id": "11199",
+      "position": "RB",
+      "reasons": [
+        "Dynasty Dealer market value 1,786 adds insulation/upside signal.",
+        "2025 prior usage: 5.3 opportunities/game, 25% offensive snaps, 4.9 715 PPG.",
+        "Currently on an NFL roster (KC).",
+        "Depth-chart No. 2: direct contingent path to usage.",
+        "RB contingent value can rise quickly with one depth-chart change."
+      ],
+      "team": "KC",
+      "tier": "Strong stash",
+      "trending_adds_24h": 0
+    },
+    {
+      "age": 37,
+      "depth": 2,
+      "injury_status": null,
+      "market_position_rank": 49,
+      "market_rank": 308,
+      "market_value": 2068,
+      "name": "Tyrod Taylor",
+      "opportunity_score": 66.0,
+      "performance": {
+        "air_yards_share": 0.0,
+        "basis": "prior",
+        "basis_label": "2025",
+        "carries_per_game": 4.5,
+        "games": 6,
+        "last3_opportunities_per_game": 26.0,
+        "last3_ppg_715": 12.1,
+        "offense_snap_pct": 67.0,
+        "opportunities_per_game": 26.83,
+        "ppg_715": 11.21,
+        "target_share": 0.0,
+        "targets_per_game": 0.0,
+        "touches_per_game": 4.5
+      },
+      "player_id": "827",
+      "position": "QB",
+      "reasons": [
+        "Dynasty Dealer market value 2,068 adds insulation/upside signal.",
+        "2025 prior usage: 26.8 opportunities/game, 67% offensive snaps, 11.2 715 PPG.",
+        "Currently on an NFL roster (GB).",
+        "Depth-chart No. 2: direct contingent path to usage.",
+        "Superflex format raises the value of any QB with a path to starts."
+      ],
+      "team": "GB",
+      "tier": "Strong stash",
+      "trending_adds_24h": 0
+    },
+    {
+      "age": 25,
+      "depth": 2,
+      "injury_status": null,
+      "market_position_rank": 73,
+      "market_rank": 451,
+      "market_value": 66,
+      "name": "Daniel Bellinger",
+      "opportunity_score": 63.8,
+      "performance": {
+        "air_yards_share": 5.4,
+        "basis": "prior",
+        "basis_label": "2025",
+        "carries_per_game": 0.0,
+        "games": 16,
+        "last3_opportunities_per_game": 1.67,
+        "last3_ppg_715": 4.97,
+        "offense_snap_pct": 49.9,
+        "opportunities_per_game": 1.62,
+        "ppg_715": 3.73,
+        "target_share": 5.1,
+        "targets_per_game": 1.62,
+        "touches_per_game": 1.19
+      },
+      "player_id": "8225",
+      "position": "TE",
+      "reasons": [
+        "2025 prior usage: 1.6 opportunities/game, 50% offensive snaps, 3.7 715 PPG.",
+        "Currently on an NFL roster (TEN).",
+        "Depth-chart No. 2: direct contingent path to usage.",
+        "Sleeper market heat: 11,354 adds in the 24h trend window."
+      ],
+      "team": "TEN",
+      "tier": "Strong stash",
+      "trending_adds_24h": 11354
+    },
+    {
+      "age": 28,
+      "depth": 2,
+      "injury_status": null,
+      "market_position_rank": 67,
+      "market_rank": 394,
+      "market_value": 1094,
+      "name": "Tyler Huntley",
+      "opportunity_score": 61.4,
+      "performance": {
+        "air_yards_share": 0.0,
+        "basis": "prior",
+        "basis_label": "2025",
+        "carries_per_game": 4.8,
+        "games": 5,
+        "last3_opportunities_per_game": 14.33,
+        "last3_ppg_715": 6.17,
+        "offense_snap_pct": 59.4,
+        "opportunities_per_game": 18.2,
+        "ppg_715": 8.88,
+        "target_share": 0.0,
+        "targets_per_game": 0.0,
+        "touches_per_game": 4.8
+      },
+      "player_id": "7083",
+      "position": "QB",
+      "reasons": [
+        "Dynasty Dealer market value 1,094 adds insulation/upside signal.",
+        "2025 prior usage: 18.2 opportunities/game, 59% offensive snaps, 8.9 715 PPG.",
+        "Currently on an NFL roster (BAL).",
+        "Depth-chart No. 2: direct contingent path to usage.",
+        "Superflex format raises the value of any QB with a path to starts."
+      ],
+      "team": "BAL",
+      "tier": "Strong stash",
+      "trending_adds_24h": 0
+    },
+    {
+      "age": 25,
+      "depth": 2,
+      "injury_status": null,
+      "market_position_rank": 50,
+      "market_rank": 290,
+      "market_value": 2154,
+      "name": "Erick All",
+      "opportunity_score": 61.0,
+      "performance": null,
+      "player_id": "11592",
+      "position": "TE",
+      "reasons": [
+        "Dynasty Dealer market value 2,154 adds insulation/upside signal.",
+        "Currently on an NFL roster (CIN).",
+        "Depth-chart No. 2: direct contingent path to usage.",
+        "Recently dropped by nathanhoglund; worth checking for a league-specific market reset."
+      ],
+      "team": "CIN",
+      "tier": "Strong stash",
+      "trending_adds_24h": 0
+    },
+    {
+      "age": 27,
+      "depth": 3,
+      "injury_status": null,
+      "market_position_rank": 64,
+      "market_rank": 358,
+      "market_value": 1751,
+      "name": "Charlie Kolar",
+      "opportunity_score": 60.8,
+      "performance": {
+        "air_yards_share": 2.8,
+        "basis": "prior",
+        "basis_label": "2025",
+        "carries_per_game": 0.0,
+        "games": 17,
+        "last3_opportunities_per_game": 0.67,
+        "last3_ppg_715": 0.93,
+        "offense_snap_pct": 40.4,
+        "opportunities_per_game": 0.88,
+        "ppg_715": 2.13,
+        "target_share": 3.5,
+        "targets_per_game": 0.88,
+        "touches_per_game": 0.59
+      },
+      "player_id": "8127",
+      "position": "TE",
+      "reasons": [
+        "Dynasty Dealer market value 1,751 adds insulation/upside signal.",
+        "2025 prior usage: 0.9 opportunities/game, 40% offensive snaps, 2.1 715 PPG.",
+        "Currently on an NFL roster (LAC).",
+        "Depth-chart No. 3: plausible contingent upside.",
+        "Sleeper market heat: 6,834 adds in the 24h trend window."
+      ],
+      "team": "LAC",
+      "tier": "Strong stash",
+      "trending_adds_24h": 6834
+    },
+    {
+      "age": 23,
+      "depth": 3,
+      "injury_status": null,
+      "market_position_rank": 50,
+      "market_rank": 333,
+      "market_value": 1919,
+      "name": "Riley Leonard",
+      "opportunity_score": 60.0,
+      "performance": {
+        "air_yards_share": 0.0,
+        "basis": "prior",
+        "basis_label": "2025",
+        "carries_per_game": 1.2,
+        "games": 5,
+        "last3_opportunities_per_game": 13.0,
+        "last3_ppg_715": 7.77,
+        "offense_snap_pct": 39.4,
+        "opportunities_per_game": 14.6,
+        "ppg_715": 7.03,
+        "target_share": 0.0,
+        "targets_per_game": 0.0,
+        "touches_per_game": 1.2
+      },
+      "player_id": "12470",
+      "position": "QB",
+      "reasons": [
+        "Dynasty Dealer market value 1,919 adds insulation/upside signal.",
+        "2025 prior usage: 14.6 opportunities/game, 39% offensive snaps, 7.0 715 PPG.",
+        "Currently on an NFL roster (IND).",
+        "Depth-chart No. 3: plausible contingent upside.",
+        "Age supports long-term value growth."
+      ],
+      "team": "IND",
+      "tier": "Strong stash",
+      "trending_adds_24h": 0
+    },
+    {
+      "age": 31,
+      "depth": 2,
+      "injury_status": null,
+      "market_position_rank": 64,
+      "market_rank": 383,
+      "market_value": 1347,
+      "name": "Mason Rudolph",
+      "opportunity_score": 57.0,
+      "performance": {
+        "air_yards_share": 0.0,
+        "basis": "prior",
+        "basis_label": "2025",
+        "carries_per_game": 1.4,
+        "games": 5,
+        "last3_opportunities_per_game": 18.0,
+        "last3_ppg_715": 5.83,
+        "offense_snap_pct": 33.8,
+        "opportunities_per_game": 11.8,
+        "ppg_715": 3.62,
+        "target_share": 0.0,
+        "targets_per_game": 0.0,
+        "touches_per_game": 1.4
+      },
+      "player_id": "4972",
+      "position": "QB",
+      "reasons": [
+        "Dynasty Dealer market value 1,347 adds insulation/upside signal.",
+        "2025 prior usage: 11.8 opportunities/game, 34% offensive snaps, 3.6 715 PPG.",
+        "Currently on an NFL roster (PIT).",
+        "Depth-chart No. 2: direct contingent path to usage.",
+        "Superflex format raises the value of any QB with a path to starts."
+      ],
+      "team": "PIT",
+      "tier": "Strong stash",
+      "trending_adds_24h": 0
+    },
+    {
+      "age": 24,
+      "depth": 3,
+      "injury_status": null,
+      "market_position_rank": 88,
+      "market_rank": 321,
+      "market_value": 1986,
+      "name": "Tahj Brooks",
+      "opportunity_score": 57.0,
+      "performance": {
+        "air_yards_share": -0.2,
+        "basis": "prior",
+        "basis_label": "2025",
+        "carries_per_game": 2.29,
+        "games": 7,
+        "last3_opportunities_per_game": 2.67,
+        "last3_ppg_715": 1.2,
+        "offense_snap_pct": 10.3,
+        "opportunities_per_game": 2.57,
+        "ppg_715": 0.91,
+        "target_share": 0.9,
+        "targets_per_game": 0.29,
+        "touches_per_game": 2.43
+      },
+      "player_id": "12543",
+      "position": "RB",
+      "reasons": [
+        "Dynasty Dealer market value 1,986 adds insulation/upside signal.",
+        "2025 prior usage: 2.6 opportunities/game, 10% offensive snaps, 0.9 715 PPG.",
+        "Currently on an NFL roster (CIN).",
+        "Depth-chart No. 3: plausible contingent upside.",
+        "Age supports long-term value growth."
+      ],
+      "team": "CIN",
+      "tier": "Strong stash",
+      "trending_adds_24h": 0
+    },
+    {
+      "age": 30,
+      "depth": 1,
+      "injury_status": null,
+      "market_position_rank": 52,
+      "market_rank": 293,
+      "market_value": 2146,
+      "name": "Mike Gesicki",
+      "opportunity_score": 56.6,
+      "performance": {
+        "air_yards_share": 12.1,
+        "basis": "prior",
+        "basis_label": "2025",
+        "carries_per_game": 0.0,
+        "games": 13,
+        "last3_opportunities_per_game": 2.67,
+        "last3_ppg_715": 7.5,
+        "offense_snap_pct": 38.5,
+        "opportunities_per_game": 3.23,
+        "ppg_715": 5.44,
+        "target_share": 9.5,
+        "targets_per_game": 3.23,
+        "touches_per_game": 2.15
+      },
+      "player_id": "4993",
+      "position": "TE",
+      "reasons": [
+        "Dynasty Dealer market value 2,146 adds insulation/upside signal.",
+        "2025 prior usage: 3.2 opportunities/game, 38% offensive snaps, 5.4 715 PPG.",
+        "Currently on an NFL roster (CIN).",
+        "Listed first on the Sleeper depth chart."
+      ],
+      "team": "CIN",
+      "tier": "Strong stash",
+      "trending_adds_24h": 0
+    },
+    {
+      "age": 25,
+      "depth": 2,
+      "injury_status": null,
+      "market_position_rank": 48,
+      "market_rank": 287,
+      "market_value": 2173,
+      "name": "Darnell Washington",
+      "opportunity_score": 56.3,
+      "performance": {
+        "air_yards_share": 9.6,
+        "basis": "prior",
+        "basis_label": "2025",
+        "carries_per_game": 0.0,
+        "games": 16,
+        "last3_opportunities_per_game": 3.33,
+        "last3_ppg_715": 4.53,
+        "offense_snap_pct": 57.2,
+        "opportunities_per_game": 2.69,
+        "ppg_715": 4.59,
+        "target_share": 9.1,
+        "targets_per_game": 2.69,
+        "touches_per_game": 1.94
+      },
+      "player_id": "9479",
+      "position": "TE",
+      "reasons": [
+        "Dynasty Dealer market value 2,173 adds insulation/upside signal.",
+        "2025 prior usage: 2.7 opportunities/game, 57% offensive snaps, 4.6 715 PPG.",
+        "Currently on an NFL roster (PIT).",
+        "Depth-chart No. 2: direct contingent path to usage."
+      ],
+      "team": "PIT",
+      "tier": "Strong stash",
+      "trending_adds_24h": 0
+    }
+  ]
+}
