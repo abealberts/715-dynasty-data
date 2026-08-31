@@ -6,13 +6,17 @@
 
 (() => {
   const COLORS = {
-    lime: "#d7ff47",
-    cyan: "#42d9ff",
-    coral: "#ff6b57",
-    violet: "#a987ff",
-    amber: "#ffc857",
-    mint: "#70e3aa",
-    slate: "#708090",
+    // Muted ink palette: intentionally closer to vintage scorecards,
+    // pennants and newspaper spot-color printing than neon UI colors.
+    lime: "#7c8250",
+    cyan: "#52758a",
+    coral: "#a34b3e",
+    violet: "#76657d",
+    amber: "#b48a3e",
+    mint: "#647b60",
+    slate: "#6c7374",
+    paper: "#e4dac0",
+    ink: "#1b1914",
   };
 
   const q = (sel, root = document) => root.querySelector(sel);
@@ -223,7 +227,8 @@
     const metrics = team.metrics || {};
     const metricRows = [
       ["Performance", metrics.performance_prior, COLORS.cyan],
-      ["Draft Capital", metrics.draft_capital, COLORS.violet],
+      ["Market Value", metrics.market_value, COLORS.violet],
+      ["Draft Capital", metrics.draft_capital, COLORS.amber],
       ["Youth", metrics.youth, COLORS.mint],
       ["Roster Balance", metrics.roster_balance, COLORS.lime],
       ["Management", metrics.lineup_management, COLORS.amber],
@@ -302,6 +307,428 @@
     );
   }
 
+
+  function posColor(pos) {
+    return ({
+      QB: COLORS.cyan,
+      RB: COLORS.coral,
+      WR: COLORS.violet,
+      TE: COLORS.amber,
+    })[pos] || COLORS.slate;
+  }
+
+  function fmtValue(value) {
+    const n = Number(value || 0);
+    if (!Number.isFinite(n)) return "—";
+    return Math.round(n).toLocaleString();
+  }
+
+  function installPressControls() {
+    const host = q(".topbar-right");
+    if (!host || q(".press-controls")) return;
+    const wrap = document.createElement("div");
+    wrap.className = "press-controls";
+    wrap.innerHTML = `
+      <div class="press-edition"><span>VOL. II</span><strong>715 • 2026</strong></div>
+      <button type="button" class="print-board" data-print-board title="Print the current dashboard view">PRINT BOARD</button>
+    `;
+    host.prepend(wrap);
+  }
+
+  function scatterPlot(rows, options = {}) {
+    const {
+      x = r => Number(r.x || 0),
+      y = r => Number(r.y || 0),
+      xLabel = "X →",
+      yLabel = "Y ↑",
+      name = r => r.name || shortName(r),
+      color = r => posColor(r.position),
+      mine = r => String(r?.ownership?.roster_id ?? r?.roster_id) === "3",
+      available = r => r.available === true,
+      clickable = false,
+      maxPoints = 220,
+      xFloor = null,
+      yFloor = null,
+      size = () => 10,
+    } = options;
+
+    let clean = rows
+      .filter(r => Number.isFinite(x(r)) && Number.isFinite(y(r)))
+      .slice(0, maxPoints);
+
+    if (!clean.length) return `<div class="empty">Not enough matched data for this chart yet.</div>`;
+
+    const xs = clean.map(x);
+    const ys = clean.map(y);
+    let xMin = xFloor == null ? Math.min(...xs) : xFloor;
+    let yMin = yFloor == null ? Math.min(...ys) : yFloor;
+    let xMax = Math.max(...xs);
+    let yMax = Math.max(...ys);
+
+    if (Math.abs(xMax - xMin) < 0.001) xMax = xMin + 1;
+    if (Math.abs(yMax - yMin) < 0.001) yMax = yMin + 1;
+
+    const xPad = (xMax - xMin) * .04;
+    const yPad = (yMax - yMin) * .06;
+    xMin -= xPad; xMax += xPad;
+    yMin -= yPad; yMax += yPad;
+
+    const dots = clean.map(r => {
+      const xv = x(r), yv = y(r);
+      const left = ((xv - xMin) / (xMax - xMin)) * 100;
+      const bottom = ((yv - yMin) / (yMax - yMin)) * 100;
+      const px = Math.max(8, Math.min(18, Number(size(r) || 10)));
+      const classes = [
+        "intel-dot",
+        mine(r) ? "mine" : "",
+        available(r) ? "available" : "",
+        clickable ? "clickable" : "",
+      ].filter(Boolean).join(" ");
+      const perf = r.performance || {};
+      const title = [
+        name(r),
+        r.position || "",
+        `Market ${fmtValue(r.market_value ?? r.current_value ?? 0)}`,
+        perf.ppg_715 != null ? `${perf.ppg_715} PPG` : "",
+        perf.opportunities_per_game != null ? `${perf.opportunities_per_game} opp/g` : "",
+      ].filter(Boolean).join(" · ");
+      return `<button type="button" class="${classes}"
+        ${clickable && r.player_id ? `data-intel-player="${escapeHtml(r.player_id)}"` : ""}
+        aria-label="${escapeHtml(title)}"
+        title="${escapeHtml(title)}"
+        style="left:${left.toFixed(2)}%;bottom:${bottom.toFixed(2)}%;--dot-color:${color(r)};--dot-size:${px}px"></button>`;
+    }).join("");
+
+    return `<div class="intel-scatter">
+      <span class="axis-label y">${escapeHtml(yLabel)}</span>
+      <span class="axis-label x">${escapeHtml(xLabel)}</span>
+      ${dots}
+    </div>`;
+  }
+
+  function playerDossier(player) {
+    if (!player) return `<div class="player-dossier empty-dossier">Select a point to inspect a player.</div>`;
+    const perf = player.performance || {};
+    const owner = player.ownership?.team_name || player.ownership?.manager || "FREE AGENT";
+    const basis = perf.basis ? `${perf.basis_label} ${perf.basis === "prior" ? "PRIOR" : "CURRENT"}` : "NO PERF SAMPLE";
+    return `<div class="player-dossier" data-player-dossier>
+      <div class="dossier-topline">
+        <span class="dossier-stamp">${escapeHtml(player.available ? "FREE AGENT" : owner)}</span>
+        <span class="dossier-basis">${escapeHtml(basis)}</span>
+      </div>
+      <div class="dossier-name">${escapeHtml(player.name)}</div>
+      <div class="dossier-meta">
+        <span class="position-tag pos-${escapeHtml(player.position || "OTHER")}">${escapeHtml(player.position || "—")}</span>
+        <span>${escapeHtml(player.team || "FA")}</span>
+        <span>Age ${escapeHtml(player.age ?? "—")}</span>
+      </div>
+      <div class="dossier-grid">
+        <div><span>MARKET</span><strong>${player.market_value ? fmtValue(player.market_value) : "—"}</strong><small>${player.market_position_rank ? `#${escapeHtml(player.market_position_rank)} ${escapeHtml(player.position)}` : ""}</small></div>
+        <div><span>715 PPG</span><strong>${escapeHtml(perf.ppg_715 ?? "—")}</strong><small>${escapeHtml(perf.games ?? "—")} games</small></div>
+        <div><span>OPP / G</span><strong>${escapeHtml(perf.opportunities_per_game ?? "—")}</strong><small>last 3: ${escapeHtml(perf.last3_opportunities_per_game ?? "—")}</small></div>
+        <div><span>SNAP %</span><strong>${perf.offense_snap_pct != null ? `${escapeHtml(perf.offense_snap_pct)}%` : "—"}</strong><small>offensive</small></div>
+      </div>
+    </div>`;
+  }
+
+  function updateDossier(playerId) {
+    if (!playerId || !state.playerIntel?.players) return;
+    const player = state.playerIntel.players.find(x => String(x.player_id) === String(playerId));
+    const host = q("[data-player-dossier-host]");
+    if (!host || !player) return;
+    state._intelSelectedId = String(playerId);
+    host.innerHTML = playerDossier(player);
+    qa(".intel-dot[data-intel-player]").forEach(dot => {
+      dot.classList.toggle("selected", dot.dataset.intelPlayer === String(playerId));
+    });
+  }
+
+  function intelCharts() {
+    if (state.view !== "intel") return;
+    const rows = state.playerIntel?.players || [];
+    if (!rows.length) return;
+
+    const matched = rows
+      .filter(p => Number(p.market_value || 0) > 0 && p.performance?.ppg_715 != null)
+      .sort((a,b) => Number(b.market_value || 0) - Number(a.market_value || 0));
+
+    const skill = matched
+      .filter(p => ["RB","WR","TE"].includes(p.position) && p.performance?.opportunities_per_game != null);
+
+    const selected =
+      rows.find(x => String(x.player_id) === String(state._intelSelectedId || "")) ||
+      matched.find(x => x.available) ||
+      matched[0];
+
+    const production = scatterPlot(matched, {
+      x: p => Number(p.market_value || 0),
+      y: p => Number(p.performance?.ppg_715 || 0),
+      xLabel: "DYNASTY MARKET VALUE →",
+      yLabel: "715 PPG ↑",
+      clickable: true,
+      maxPoints: 240,
+      xFloor: 0,
+      yFloor: 0,
+      size: p => 8 + Math.min(8, Number(p.performance?.opportunities_per_game || 0) / 3),
+    });
+
+    const usage = scatterPlot(skill, {
+      x: p => Number(p.performance?.opportunities_per_game || 0),
+      y: p => Number(p.market_value || 0),
+      xLabel: "OPPORTUNITIES / GAME →",
+      yLabel: "MARKET VALUE ↑",
+      clickable: true,
+      maxPoints: 220,
+      xFloor: 0,
+      yFloor: 0,
+      size: p => 8 + Math.min(8, Number(p.performance?.offense_snap_pct || 0) / 15),
+    });
+
+    const html = `<div class="intel-chart-grid">
+      ${vizPanel("Market vs Production", "dot size ≈ opportunity volume", production, COLORS.cyan)}
+      ${vizPanel("Skill Usage vs Market", "RB / WR / TE · dot size ≈ snap share", usage, COLORS.violet)}
+    </div>
+    <div data-player-dossier-host>${playerDossier(selected)}</div>
+    <div class="chart-legend vintage-legend">
+      <span class="legend-key pos-legend-qb">QB</span>
+      <span class="legend-key pos-legend-rb">RB</span>
+      <span class="legend-key pos-legend-wr">WR</span>
+      <span class="legend-key pos-legend-te">TE</span>
+      <span class="legend-note">Ring = free agent · large outlined dot = your roster</span>
+    </div>`;
+
+    const anchor = qa(".stats-grid")[0];
+    insertAfter(anchor, html, "intel-markets");
+    if (selected) setTimeout(() => updateDossier(selected.player_id), 0);
+  }
+
+  function opportunityIntelScatter() {
+    if (state.view !== "opportunities") return;
+    const rows = (state.opportunities?.players || [])
+      .filter(p => Number(p.market_value || 0) > 0)
+      .sort((a,b) => Number(b.opportunity_score || 0) - Number(a.opportunity_score || 0));
+
+    if (!rows.length) return;
+    const scatter = scatterPlot(rows, {
+      x: p => Number(p.market_value || 0),
+      y: p => Number(p.opportunity_score || 0),
+      xLabel: "DYNASTY MARKET VALUE →",
+      yLabel: "715 OPPORTUNITY SCORE ↑",
+      name: p => p.name,
+      color: p => posColor(p.position),
+      available: () => true,
+      maxPoints: 110,
+      xFloor: 0,
+      yFloor: 0,
+      size: p => 9 + Math.min(7, Number(p.performance?.opportunities_per_game || 0) / 3),
+    });
+    const anchor = qa(".panel")[0];
+    insertAfter(anchor, vizPanel(
+      "Waiver Value Quadrant",
+      "upper-left = cheap signal · upper-right = market-backed signal",
+      scatter,
+      COLORS.amber
+    ), "opportunity-market");
+  }
+
+  function marketCompositionChart(teams) {
+    if (!teams.length) return "";
+    const maxTotal = Math.max(1, ...teams.map(t => Number(t.total_market_value || 0)));
+    return `<div class="market-stack-chart">${teams.map(t => {
+      const values = t.position_values || {};
+      const total = Math.max(1, Number(t.total_market_value || 0));
+      const width = (total / maxTotal) * 100;
+      return `<div class="market-stack-row">
+        <div class="market-stack-label" title="${escapeHtml(shortName(t))}">${escapeHtml(shortName(t))}</div>
+        <div class="market-stack-track">
+          <div class="market-stack-total" style="width:${width.toFixed(1)}%">
+            ${["QB","RB","WR","TE"].map(pos => {
+              const val = Number(values[pos] || 0);
+              return `<span class="market-segment market-${pos}" style="width:${((val/total)*100).toFixed(1)}%" title="${pos}: ${fmtValue(val)}"></span>`;
+            }).join("")}
+          </div>
+        </div>
+        <div class="market-stack-value">${fmtValue(total)}</div>
+      </div>`;
+    }).join("")}</div>`;
+  }
+
+  function starterDepthChart(teams) {
+    if (!teams.length) return "";
+    const maxTotal = Math.max(1, ...teams.map(t => Number(t.total_market_value || 0)));
+    return `<div class="market-stack-chart">${teams.map(t => {
+      const starter = Number(t.optimal_starter_market_value || 0);
+      const depth = Number(t.depth_market_value || 0);
+      const total = Math.max(1, starter + depth);
+      const width = (total / maxTotal) * 100;
+      return `<div class="market-stack-row">
+        <div class="market-stack-label" title="${escapeHtml(shortName(t))}">${escapeHtml(shortName(t))}</div>
+        <div class="market-stack-track">
+          <div class="market-stack-total" style="width:${width.toFixed(1)}%">
+            <span class="market-segment starter-segment" style="width:${((starter/total)*100).toFixed(1)}%" title="Optimal starters: ${fmtValue(starter)}"></span>
+            <span class="market-segment depth-segment" style="width:${((depth/total)*100).toFixed(1)}%" title="Depth: ${fmtValue(depth)}"></span>
+          </div>
+        </div>
+        <div class="market-stack-value">${fmtValue(total)}</div>
+      </div>`;
+    }).join("")}</div>`;
+  }
+
+  function leagueMarketCharts() {
+    if (state.view !== "league") return;
+    const teams = [...(state.marketSummary?.teams || [])]
+      .sort((a,b) => Number(b.total_market_value || 0) - Number(a.total_market_value || 0));
+    if (!teams.length) return;
+
+    const composition = marketCompositionChart(teams);
+    const depth = starterDepthChart(
+      [...teams].sort((a,b) => Number(b.optimal_starter_market_value || 0) - Number(a.optimal_starter_market_value || 0))
+    );
+
+    const anchor = qa(".stats-grid")[0] || qa(".panel")[0];
+    insertAfter(anchor, `<div class="viz-grid">
+      ${vizPanel("Roster Market Composition", "QB / RB / WR / TE · total bar length = roster value", composition, COLORS.violet)}
+      ${vizPanel("Starter vs Depth Capital", "optimal legal starter value vs remaining roster", depth, COLORS.amber)}
+    </div>
+    <div class="chart-legend vintage-legend">
+      <span class="legend-key pos-legend-qb">QB</span><span class="legend-key pos-legend-rb">RB</span>
+      <span class="legend-key pos-legend-wr">WR</span><span class="legend-key pos-legend-te">TE</span>
+      <span class="legend-key starter-legend">STARTERS</span><span class="legend-key depth-legend">DEPTH</span>
+    </div>`, "league-market");
+  }
+
+  function myTeamMarketCharts() {
+    if (state.view !== "team") return;
+    const me = state.teams?.["3"];
+    const players = [...(me?.players || [])]
+      .filter(p => Number(p.market_value || 0) > 0)
+      .sort((a,b) => Number(b.market_value || 0) - Number(a.market_value || 0))
+      .slice(0, 14);
+    if (!players.length) return;
+
+    const assets = barChart(players, {
+      label: p => p.name,
+      value: p => Number(p.market_value || 0),
+      color: COLORS.violet,
+      max: Math.max(1, ...players.map(p => Number(p.market_value || 0))),
+    });
+
+    const matched = players.filter(p => p.performance?.ppg_715 != null);
+    const scatter = scatterPlot(matched, {
+      x: p => Number(p.market_value || 0),
+      y: p => Number(p.performance?.ppg_715 || 0),
+      xLabel: "MARKET VALUE →",
+      yLabel: "715 PPG ↑",
+      name: p => p.name,
+      color: p => posColor(p.position),
+      mine: () => true,
+      xFloor: 0,
+      yFloor: 0,
+      maxPoints: 30,
+      size: p => 10 + Math.min(5, Number(p.performance?.opportunities_per_game || 0) / 4),
+    });
+
+    const anchor = qa(".stats-grid")[0];
+    insertAfter(anchor, `<div class="viz-grid">
+      ${vizPanel("Bilge Rat Asset Ledger", "top dynasty market values", assets, COLORS.violet)}
+      ${vizPanel("Market vs Prior Production", "2025 prior until 2026 data exists", scatter, COLORS.cyan)}
+    </div>`, "team-intel");
+  }
+
+  function profileLeagueQuadrant() {
+    if (state.view !== "profiles") return;
+    const teams = state.profiles?.teams || [];
+    if (!teams.length || !teams.some(t => t.metrics?.market_value != null)) return;
+
+    const scatter = scatterPlot(teams, {
+      x: t => Number(t.metrics?.market_value || 0),
+      y: t => Number(t.metrics?.performance_prior || 0),
+      xLabel: "CURRENT MARKET STRENGTH →",
+      yLabel: "PERFORMANCE MODEL ↑",
+      name: t => shortName(t),
+      color: t => String(t.roster_id) === "3" ? COLORS.lime : COLORS.cyan,
+      mine: t => String(t.roster_id) === "3",
+      available: () => false,
+      maxPoints: 20,
+      xFloor: 0,
+      yFloor: 0,
+      size: t => 9 + Math.min(8, Number(t.playoff_odds || 0) / 15),
+    });
+
+    const labels = `<div class="quadrant-key">
+      <span><strong>UPPER RIGHT</strong> proven + expensive</span>
+      <span><strong>UPPER LEFT</strong> productive discount</span>
+      <span><strong>LOWER RIGHT</strong> market betting forward</span>
+      <span><strong>LOWER LEFT</strong> rebuild / retool</span>
+    </div>`;
+
+    const anchor = q('[data-viz="profiles"]') || q(".profile-hero");
+    insertAfter(anchor, vizPanel(
+      "715 Franchise Market Map",
+      "bubble size ≈ playoff odds",
+      scatter + labels,
+      COLORS.cyan
+    ), "profile-league-market");
+  }
+
+  function powerInputLedger() {
+    if (state.view !== "power" || state.analyticsScope !== "current") return;
+    const rows = state.power?.scopes?.current?.rankings || [];
+    if (!rows.length || rows[0]?.market_strength == null) return;
+
+    const body = `<div class="power-input-ledger">${rows.map(r => {
+      const prior = Number(r.historical_prior_score || 0);
+      const market = Number(r.market_strength || 0);
+      const live = r.live_performance_score == null ? null : Number(r.live_performance_score);
+      return `<div class="power-input-row ${String(r.roster_id)==="3" ? "mine" : ""}">
+        <div class="power-input-team">${escapeHtml(shortName(r))}</div>
+        <div class="power-input-bars">
+          <span class="input-bar prior" style="width:${Math.max(0,Math.min(100,prior))}%" title="Historical prior ${prior}"></span>
+          <span class="input-bar market" style="width:${Math.max(0,Math.min(100,market))}%" title="Market ${market}"></span>
+          ${live == null ? "" : `<span class="input-bar live" style="width:${Math.max(0,Math.min(100,live))}%" title="2026 performance ${live}"></span>`}
+        </div>
+        <div class="power-input-score">${escapeHtml(r.power_score)}</div>
+      </div>`;
+    }).join("")}</div>
+    <div class="chart-legend vintage-legend">
+      <span class="legend-key prior-legend">HISTORICAL PRIOR</span>
+      <span class="legend-key market-legend">CURRENT MARKET</span>
+      <span class="legend-key live-legend">2026 PERFORMANCE</span>
+    </div>`;
+
+    const existing = q('[data-viz="power"]');
+    insertAfter(existing || qa(".panel")[0], vizPanel(
+      "Current Power Inputs",
+      "preseason = 30% prior / 70% market",
+      body,
+      COLORS.violet
+    ), "power-inputs");
+  }
+
+  function playoffModelTicket() {
+    if (state.view !== "playoffs") return;
+    const data = state.playoffs;
+    const sample = data?.teams?.[0];
+    if (!data || !sample) return;
+
+    const hist = Number(data.model_blend?.historical_weight ?? 0);
+    const current = Number(data.model_blend?.current_season_weight ?? 0);
+    const market = Number(sample.market_weight ?? 0) * 100;
+
+    const ticket = `<div class="model-ticket">
+      <div class="ticket-number">715 / SIM MODEL / ${escapeHtml(data.current_season || "2026")}</div>
+      <div class="ticket-columns">
+        <div><span>PERFORMANCE ENGINE</span><strong>${hist.toFixed(0)}% HIST / ${current.toFixed(0)}% 2026</strong><small>Historical/current scoring distribution</small></div>
+        <div><span>ROSTER OVERLAY</span><strong>${market.toFixed(0)}% MARKET</strong><small>Adjustment inside scoring expectation</small></div>
+        <div><span>SIMULATIONS</span><strong>${Number(data.simulations || 0).toLocaleString()}</strong><small>H2H + league median each week</small></div>
+      </div>
+      <div class="ticket-note">The market overlay is applied inside the scoring expectation; it is separate from the historical/current performance blend and should not be added to those percentages.</div>
+    </div>`;
+
+    const anchor = qa(".stats-grid")[0];
+    insertAfter(anchor, ticket, "playoff-model-ticket");
+  }
+
   function opportunityTopStrip() {
     if (state.view !== "opportunities") return;
     const players = (state.opportunities?.players || []).slice(0, 10);
@@ -348,14 +775,22 @@
     toneStatCards();
     semanticPanels();
 
+    installPressControls();
     homeFun();
     powerCharts();
+    powerInputLedger();
     standingsScatter();
     playoffCharts();
+    playoffModelTicket();
     profileCharts();
+    profileLeagueQuadrant();
     draftCharts();
     managerCharts();
     opportunityTopStrip();
+    opportunityIntelScatter();
+    intelCharts();
+    leagueMarketCharts();
+    myTeamMarketCharts();
   }
 
   let scheduled = false;
@@ -374,6 +809,18 @@
   }
 
   document.addEventListener("click", evt => {
+    const printButton = evt.target.closest("[data-print-board]");
+    if (printButton) {
+      window.print();
+      return;
+    }
+
+    const playerDot = evt.target.closest("[data-intel-player]");
+    if (playerDot) {
+      updateDossier(playerDot.dataset.intelPlayer);
+      return;
+    }
+
     if (evt.target.closest(".nav-item, [data-scope], #profile-team")) {
       setTimeout(scheduleDecorate, 0);
     }
