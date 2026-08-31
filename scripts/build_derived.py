@@ -1075,13 +1075,20 @@ def history_datasets() -> list[dict[str, Any]]:
     return datasets
 
 
-def all_scored_weeks(matchups: dict[str, Any]) -> list[int]:
+def regular_season_scored_weeks(
+    matchups: dict[str, Any],
+    league: dict[str, Any],
+) -> list[int]:
+    playoff_start = int((league.get("settings") or {}).get("playoff_week_start") or 99)
     weeks = []
     for week_text, rows in (matchups or {}).items():
         if not str(week_text).isdigit():
             continue
+        week = int(week_text)
+        if week >= playoff_start:
+            continue
         if any(float((row or {}).get("points") or 0) != 0 for row in (rows or [])):
-            weeks.append(int(week_text))
+            weeks.append(week)
     return sorted(weeks)
 
 
@@ -1092,12 +1099,13 @@ def build_record_book(
     current_completed_weeks: list[int],
 ) -> dict[str, Any]:
     datasets = history_datasets()
+    current_playoff_start = int((league.get("settings") or {}).get("playoff_week_start") or 99)
     datasets.append({
         "league": league,
         "rosters": rosters,
         "matchups": matchups,
         "historical": False,
-        "completed_weeks": current_completed_weeks,
+        "completed_weeks": [week for week in current_completed_weeks if week < current_playoff_start],
     })
 
     weekly_scores = []
@@ -1114,7 +1122,7 @@ def build_record_book(
         season_matchups = data["matchups"]
         weeks = data.get("completed_weeks")
         if weeks is None:
-            weeks = all_scored_weeks(season_matchups)
+            weeks = regular_season_scored_weeks(season_matchups, season_league)
         seasons_loaded.append({
             "season": season,
             "league_id": season_league.get("league_id"),
@@ -1255,7 +1263,7 @@ def build_record_book(
         },
         "manager_careers": manager_rows,
         "head_to_head": h2h_rows,
-        "note": "Record book uses imported Sleeper league history plus completed weeks from the current season. Championship/bracket records can be added in a later phase.",
+        "note": "Record book uses regular-season Sleeper matchups only (through the week before each season's playoff_week_start), preventing inactive playoff-team rows from creating false games. Championship/bracket records can be added separately later.",
     }
 
 
