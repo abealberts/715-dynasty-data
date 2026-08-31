@@ -1,0 +1,636 @@
+const REPO = "abealberts/715-dynasty-data";
+const RAW = `https://raw.githubusercontent.com/${REPO}/main/data/derived`;
+const MY_ROSTER_ID = "3";
+
+const state = {
+  summary: null,
+  teams: null,
+  waivers: null,
+  changes: null,
+  transactions: null,
+  needs: null,
+  tradePartners: null,
+  opportunities: null,
+  power: null,
+  standings: null,
+  lineups: null,
+  recap: null,
+  draftCapital: null,
+  records: null,
+  view: "home",
+  tradePartnerId: null,
+};
+
+async function getJson(name) {
+  const res = await fetch(`${RAW}/${name}?t=${Date.now()}`, { cache: "no-store" });
+  if (!res.ok) throw new Error(`${name}: ${res.status}`);
+  return res.json();
+}
+
+function esc(value) {
+  return String(value ?? "")
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
+}
+
+function fmtTime(value) {
+  if (!value) return "Unknown";
+  try { return new Date(value).toLocaleString(); } catch { return value; }
+}
+
+function stat(label, value, note = "") {
+  return `<article class="stat-card"><div class="stat-label">${esc(label)}</div><div class="stat-value">${esc(value)}</div><div class="stat-note">${esc(note)}</div></article>`;
+}
+
+function playerTable(players) {
+  if (!players?.length) return `<div class="empty">No players found.</div>`;
+  return `<div class="table-wrap"><table>
+    <thead><tr><th>Player</th><th>Pos</th><th>NFL</th><th>Age</th><th>Depth</th><th>Status</th></tr></thead>
+    <tbody>${players.map(p => `<tr>
+      <td><span class="player-name">${esc(p.name)}</span> ${p.starter ? '<span class="starter-badge">START</span>' : ''}</td>
+      <td>${esc(p.position || "—")}</td>
+      <td>${esc(p.team || "FA")}</td>
+      <td>${esc(p.age ?? "—")}</td>
+      <td>${esc(p.depth ?? p.depth_chart_order ?? "—")}</td>
+      <td class="${p.injury_status ? 'injury' : 'muted'}">${esc(p.injury_status || p.status || "—")}</td>
+    </tr>`).join("")}</tbody>
+  </table></div>`;
+}
+
+function picksTable(picks) {
+  if (!picks?.length) return `<div class="empty">No picks found.</div>`;
+  return `<div class="table-wrap"><table>
+    <thead><tr><th>Year</th><th>Round</th><th>Originally</th></tr></thead>
+    <tbody>${picks.map(p => `<tr><td>${esc(p.season)}</td><td>R${esc(p.round)}</td><td>${esc(p.original_manager || `Roster ${p.original_roster_id}`)}</td></tr>`).join("")}</tbody>
+  </table></div>`;
+}
+
+function teamCard(team) {
+  const mine = String(team.roster_id) === MY_ROSTER_ID;
+  const counts = team.position_counts || {};
+  const profile = state.needs?.teams?.[String(team.roster_id)];
+  const need = profile?.needs?.[0]?.position;
+  const surplus = profile?.surpluses?.[0]?.position;
+  return `<article class="team-card ${mine ? 'mine' : ''}">
+    <div class="team-name">${esc(team.team_name || team.manager || `Roster ${team.roster_id}`)}</div>
+    <div class="team-meta">${esc(team.manager || "Unknown manager")} · ${team.record?.wins ?? 0}-${team.record?.losses ?? 0}</div>
+    <div class="position-line">
+      ${["QB","RB","WR","TE"].map(pos => `<span class="chip">${pos} ${counts[pos] || 0}</span>`).join("")}
+      <span class="chip accent">${team.picks?.length || 0} picks</span>
+      <span class="chip">$${team.waivers?.faab_remaining ?? "—"} FAAB</span>
+    </div>
+    ${(need || surplus) ? `<div class="team-signal">${need ? `Need: <strong>${esc(need)}</strong>` : ""}${need && surplus ? " · " : ""}${surplus ? `Depth: <strong>${esc(surplus)}</strong>` : ""}</div>` : ""}
+  </article>`;
+}
+
+function opportunityTable(players, limit = 100) {
+  if (!players?.length) return `<div class="empty">No matching opportunities.</div>`;
+  return `<div class="table-wrap"><table>
+    <thead><tr><th>Score</th><th>Player</th><th>Pos</th><th>NFL</th><th>Depth</th><th>24h Adds</th><th>Tier</th><th>Why</th></tr></thead>
+    <tbody>${players.slice(0, limit).map(p => `<tr>
+      <td><span class="score-badge score-${p.tier === "Priority" ? "high" : p.tier === "Strong stash" ? "mid" : "low"}">${esc(p.opportunity_score)}</span></td>
+      <td><span class="player-name">${esc(p.name)}</span><div class="table-note">Age ${esc(p.age ?? "—")}${p.injury_status ? ` · ${esc(p.injury_status)}` : ""}</div></td>
+      <td>${esc(p.position || "—")}</td>
+      <td>${esc(p.team || "FA")}</td>
+      <td>${esc(p.depth ?? "—")}</td>
+      <td>${p.trending_adds_24h ? esc(Number(p.trending_adds_24h).toLocaleString()) : "—"}</td>
+      <td>${esc(p.tier)}</td>
+      <td class="reason-cell">${esc((p.reasons || []).slice(0, 2).join(" "))}</td>
+    </tr>`).join("")}</tbody>
+  </table></div>`;
+}
+
+function renderHome() {
+  const s = state.summary;
+  const me = state.teams?.[MY_ROSTER_ID];
+  const recentChanges = state.changes?.changes || [];
+  const tx = state.transactions || [];
+  const topOps = (state.opportunities?.players || []).slice(0, 5);
+  const partners = state.tradePartners?.partners?.[MY_ROSTER_ID] || [];
+
+  return `
+    <div class="stats-grid">
+      ${stat("Format", s.superflex ? "Superflex" : "1QB", s.full_ppr ? "Full PPR" : "Custom scoring")}
+      ${stat("My FAAB", `$${me?.waivers?.faab_remaining ?? "—"}`, `Waiver priority ${me?.waivers?.waiver_position ?? "—"}`)}
+      ${stat("My Picks", me?.picks?.length ?? 0, "Current future picks")}
+      ${stat("League Median", s.league_median_match ? "ON" : "OFF", "Extra weekly matchup")}
+    </div>
+
+    <div class="grid-2">
+      <div>
+        <div class="panel">
+          <div class="panel-header"><div><h2>Opportunity Board</h2><div class="panel-sub">Top confirmed free-agent signals right now</div></div><button class="button ghost" data-go="opportunities">Open scanner</button></div>
+          ${opportunityTable(topOps, 5)}
+        </div>
+        <div class="panel">
+          <div class="panel-header"><div><h2>League Snapshot</h2><div class="panel-sub">All 12 teams at a glance</div></div></div>
+          <div class="team-grid">${Object.values(state.teams || {}).map(teamCard).join("")}</div>
+        </div>
+      </div>
+      <div>
+        <div class="panel">
+          <div class="panel-header"><div><h2>Best Trade Fits</h2><div class="panel-sub">Roster complementarity, not trade value</div></div></div>
+          ${partners.slice(0, 5).map(p => `<button class="partner-row" data-partner="${p.roster_id}">
+            <span><strong>${esc(p.team_name || p.manager)}</strong><small>${esc(p.manager)}</small></span>
+            <span class="fit-score">${esc(p.fit_score)}/10</span>
+          </button>`).join("") || '<div class="empty">No partner data yet.</div>'}
+        </div>
+        <div class="panel">
+          <div class="panel-header"><div><h2>Latest Changes</h2><div class="panel-sub">Detected between syncs</div></div></div>
+          ${renderChanges(recentChanges.slice(-8).reverse())}
+        </div>
+        <div class="panel">
+          <div class="panel-header"><div><h2>Recent Transactions</h2><div class="panel-sub">Latest Sleeper activity</div></div></div>
+          ${renderTransactions(tx.slice(0, 6))}
+        </div>
+      </div>
+    </div>`;
+}
+
+
+function movementLabel(value) {
+  if (value > 0) return `<span class="movement up">▲${value}</span>`;
+  if (value < 0) return `<span class="movement down">▼${Math.abs(value)}</span>`;
+  return `<span class="movement flat">—</span>`;
+}
+
+function recordText(record) {
+  if (!record) return "0-0";
+  return `${record.wins || 0}-${record.losses || 0}${record.ties ? `-${record.ties}` : ""}`;
+}
+
+function renderPower() {
+  const data = state.power;
+  if (!data || data.status !== "live" || !data.rankings?.length) {
+    return `<div class="notice-card">
+      <div class="notice-icon">⚡</div>
+      <div><h2>Power Rankings unlock after Week 1</h2>
+      <p>The model intentionally waits for completed games instead of inventing preseason talent grades. Once Week 1 closes, rankings will use recent scoring, all-play, median record, lineup efficiency and head-to-head results.</p></div>
+    </div>
+    <div class="panel"><div class="method-note">Formula: 35% recent scoring · 25% all-play · 15% league-median record · 15% lineup efficiency · 10% head-to-head record.</div></div>`;
+  }
+
+  return `<div class="panel">
+    <div class="panel-header"><div><h2>715 Power Rankings</h2><div class="panel-sub">Through Week ${esc(data.latest_completed_week)}</div></div></div>
+    <div class="method-note">${esc(data.methodology)}</div>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Rank</th><th>Team</th><th>Power</th><th>3-Wk Avg</th><th>All-Play</th><th>Median</th><th>Efficiency</th><th>H2H</th></tr></thead>
+      <tbody>${data.rankings.map(r => `<tr class="${String(r.roster_id) === MY_ROSTER_ID ? "highlight-row" : ""}">
+        <td><span class="rank-number">${r.rank}</span> ${movementLabel(r.movement)}</td>
+        <td><span class="player-name">${esc(r.team_name || r.manager)}</span><div class="table-note">${esc(r.manager || "")}</div></td>
+        <td><span class="power-score">${esc(r.power_score)}</span></td>
+        <td>${esc(r.recent_3_average)}</td>
+        <td>${recordText(r.all_play)}</td>
+        <td>${recordText(r.median)}</td>
+        <td>${esc(r.lineup_efficiency)}%</td>
+        <td>${recordText(r.h2h)}</td>
+      </tr>`).join("")}</tbody>
+    </table></div>
+  </div>`;
+}
+
+function renderStandingsPlus() {
+  const data = state.standings;
+  if (!data || data.status !== "live" || !data.teams?.length) {
+    return `<div class="notice-card"><div class="notice-icon">📊</div><div><h2>Standings+ is waiting for completed games</h2><p>After Week 1 this page will compare head-to-head results with all-play, the league median, lineup efficiency and a luck index.</p></div></div>`;
+  }
+
+  const luckiest = [...data.teams].sort((a,b) => b.luck_index - a.luck_index)[0];
+  const cursed = [...data.teams].sort((a,b) => a.luck_index - b.luck_index)[0];
+
+  return `
+    <div class="stats-grid">
+      ${stat("Luckiest", luckiest?.team_name || luckiest?.manager || "—", `${luckiest?.luck_index > 0 ? "+" : ""}${luckiest?.luck_index ?? 0} luck index`)}
+      ${stat("Most Cursed", cursed?.team_name || cursed?.manager || "—", `${cursed?.luck_index > 0 ? "+" : ""}${cursed?.luck_index ?? 0} luck index`)}
+      ${stat("Weeks", data.latest_completed_week || 0, "Completed through")}
+      ${stat("Median Match", "ON", "Separate from H2H below")}
+    </div>
+    <div class="panel">
+      <div class="panel-header"><div><h2>Standings+</h2><div class="panel-sub">Performance behind the record</div></div></div>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Team</th><th>H2H</th><th>Median</th><th>All-Play</th><th>PF</th><th>Avg</th><th>Efficiency</th><th>Luck</th></tr></thead>
+        <tbody>${data.teams.map(t => `<tr class="${String(t.roster_id) === MY_ROSTER_ID ? "highlight-row" : ""}">
+          <td><span class="player-name">${esc(t.team_name || t.manager)}</span></td>
+          <td>${recordText(t.h2h)}</td>
+          <td>${recordText(t.median)}</td>
+          <td>${recordText(t.all_play)}</td>
+          <td>${esc(t.points_for)}</td>
+          <td>${esc(t.average_score)}</td>
+          <td>${esc(t.lineup_efficiency)}%</td>
+          <td class="${t.luck_index > 5 ? "luck-good" : t.luck_index < -5 ? "luck-bad" : "muted"}">${t.luck_index > 0 ? "+" : ""}${esc(t.luck_index)}</td>
+        </tr>`).join("")}</tbody>
+      </table></div>
+    </div>`;
+}
+
+function renderRecap() {
+  const data = state.recap;
+  if (!data || data.status !== "live" || !data.week_data) {
+    return `<div class="notice-card"><div class="notice-icon">📰</div><div><h2>The weekly paper starts after Week 1</h2><p>Top Dog, Pain, Highway Robbery, Coaching Disaster, Benchwarmer of the Week and more will populate automatically every week.</p></div></div>`;
+  }
+
+  const week = data.week_data;
+  return `
+    <div class="panel">
+      <div class="panel-header"><div><h2>Week ${esc(data.week)} Awards</h2><div class="panel-sub">The official unofficial 715 weekly recap</div></div></div>
+      <div class="award-grid">${(data.awards || []).map(a => `<article class="award-card">
+        <div class="award-emoji">${esc(a.emoji)}</div>
+        <div class="award-title">${esc(a.title)}</div>
+        <div class="award-team">${esc(a.team_name || a.manager)}</div>
+        <div class="award-detail">${esc(a.detail)}</div>
+      </article>`).join("")}</div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-header"><div><h2>Week ${esc(data.week)} Scoreboard+</h2><div class="panel-sub">Actual vs optimal lineup</div></div></div>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Team</th><th>Score</th><th>H2H</th><th>All-Play</th><th>Optimal</th><th>Efficiency</th><th>Bench Regret</th></tr></thead>
+        <tbody>${(week.teams || []).map(t => {
+          const star = t.lineup?.bench_star;
+          return `<tr class="${String(t.roster_id) === MY_ROSTER_ID ? "highlight-row" : ""}">
+            <td><span class="player-name">${esc(t.team_name || t.manager)}</span></td>
+            <td>${esc(t.score)}</td>
+            <td>${esc(t.h2h?.result || "—")}</td>
+            <td>${esc(t.all_play?.wins || 0)}-${esc(t.all_play?.losses || 0)}</td>
+            <td>${esc(t.lineup?.optimal_points ?? "—")}</td>
+            <td>${esc(t.lineup?.efficiency ?? "—")}%</td>
+            <td>${star ? `${esc(star.name)} (${esc(star.points)})` : "—"}</td>
+          </tr>`;
+        }).join("")}</tbody>
+      </table></div>
+    </div>`;
+}
+
+function pickCell(picks) {
+  if (!picks?.length) return `<span class="empty-cell">—</span>`;
+  return `<div class="pick-cell">${picks.map(p => `<span class="pick-pill ${p.own ? "own" : "acquired"}" title="${esc(p.own ? "Own pick" : `From ${p.original_manager || `Roster ${p.original_roster_id}`}`)}">R${esc(p.round)}${p.own ? "" : "*"}</span>`).join("")}</div>`;
+}
+
+function renderDraftCapital() {
+  const data = state.draftCapital;
+  if (!data?.teams?.length) return `<div class="loading-card">Draft-capital data is not ready.</div>`;
+  return `
+    <div class="panel">
+      <div class="panel-header"><div><h2>Draft Capital Matrix</h2><div class="panel-sub">* = acquired pick · hover for original owner</div></div></div>
+      <div class="table-wrap draft-wrap"><table class="draft-matrix">
+        <thead><tr><th>Team</th>${(data.years || []).map(y => `<th>${esc(y)}</th>`).join("")}<th>1sts</th><th>1st+2nd</th></tr></thead>
+        <tbody>${data.teams.map(t => `<tr class="${String(t.roster_id) === MY_ROSTER_ID ? "highlight-row" : ""}">
+          <td><span class="player-name">${esc(t.team_name || t.manager)}</span><div class="table-note">${esc(t.manager || "")}</div></td>
+          ${(data.years || []).map(y => `<td>${pickCell(t.years?.[y])}</td>`).join("")}
+          <td><strong>${esc(t.summary?.firsts ?? 0)}</strong></td>
+          <td>${esc(t.summary?.early_picks ?? 0)}</td>
+        </tr>`).join("")}</tbody>
+      </table></div>
+    </div>
+    <div class="method-note">Own picks are outlined normally; acquired picks use an asterisk. This page reads current Sleeper pick ownership, not projected draft position.</div>`;
+}
+
+function gameLabel(game) {
+  if (!game) return "Waiting for games";
+  const a = game.a, b = game.b;
+  return `${a.manager} ${Number(a.points).toFixed(2)} – ${Number(b.points).toFixed(2)} ${b.manager}`;
+}
+
+function renderRecords() {
+  const data = state.records;
+  if (!data) return `<div class="loading-card">Record-book data is not ready.</div>`;
+  const r = data.records || {};
+  const seasons = data.seasons_loaded || [];
+  const hasGames = !!r.highest_week;
+
+  return `
+    <div class="panel">
+      <div class="panel-header"><div><h2>715 Record Book</h2><div class="panel-sub">${seasons.length} season${seasons.length === 1 ? "" : "s"} loaded · ${seasons.map(x => esc(x.season)).join(", ") || "current season only"}</div></div></div>
+      ${!hasGames ? `<div class="empty">No completed games are available yet. Run the new Sync Sleeper History workflow to populate previous seasons immediately.</div>` : `
+      <div class="record-grid">
+        <article class="record-card"><span>🔥 Highest Week</span><strong>${esc(r.highest_week?.points)}</strong><small>${esc(r.highest_week?.manager)} · ${esc(r.highest_week?.season)} W${esc(r.highest_week?.week)}</small></article>
+        <article class="record-card"><span>🧊 Lowest Score</span><strong>${esc(r.lowest_nonzero_week?.points)}</strong><small>${esc(r.lowest_nonzero_week?.manager)} · ${esc(r.lowest_nonzero_week?.season)} W${esc(r.lowest_nonzero_week?.week)}</small></article>
+        <article class="record-card"><span>🤏 Closest Game</span><strong>${esc(r.closest_game?.margin)}</strong><small>${esc(gameLabel(r.closest_game))}</small></article>
+        <article class="record-card"><span>💥 Biggest Blowout</span><strong>${esc(r.biggest_blowout?.margin)}</strong><small>${esc(gameLabel(r.biggest_blowout))}</small></article>
+      </div>`}
+    </div>
+
+    <div class="panel">
+      <div class="panel-header"><div><h2>All-Time Manager Board</h2><div class="panel-sub">Head-to-head Sleeper matchups across imported seasons</div></div></div>
+      ${(data.manager_careers || []).length ? `<div class="table-wrap"><table>
+        <thead><tr><th>Manager</th><th>W</th><th>L</th><th>T</th><th>Win%</th><th>Points</th><th>Avg</th><th>Seasons</th></tr></thead>
+        <tbody>${data.manager_careers.map(m => `<tr>
+          <td><span class="player-name">${esc(m.manager)}</span></td>
+          <td>${esc(m.wins)}</td><td>${esc(m.losses)}</td><td>${esc(m.ties)}</td>
+          <td>${(Number(m.win_pct || 0) * 100).toFixed(1)}%</td>
+          <td>${esc(m.points_for)}</td><td>${esc(m.average_score)}</td>
+          <td>${esc((m.seasons || []).join(", "))}</td>
+        </tr>`).join("")}</tbody>
+      </table></div>` : `<div class="empty">Run Sync Sleeper History once to import prior seasons.</div>`}
+    </div>
+    <div class="method-note">${esc(data.note || "")}</div>`;
+}
+
+
+function renderTeam() {
+  const me = state.teams?.[MY_ROSTER_ID];
+  const profile = state.needs?.teams?.[MY_ROSTER_ID];
+  if (!me) return `<div class="loading-card">Roster 3 was not found.</div>`;
+
+  const signals = ["QB","RB","WR","TE"].map(pos => {
+    const x = profile?.positions?.[pos];
+    return `<div class="shape-card"><span>${pos}</span><strong>${x?.count ?? 0}</strong><small>${esc(x?.label || "")} · avg ${esc(x?.league_average ?? "—")}</small></div>`;
+  }).join("");
+
+  return `
+    <div class="stats-grid">
+      ${stat("Record", `${me.record?.wins ?? 0}-${me.record?.losses ?? 0}`, me.team_name || me.manager)}
+      ${stat("FAAB", `$${me.waivers?.faab_remaining ?? "—"}`, `$${me.waivers?.faab_used ?? 0} used`)}
+      ${stat("Rostered", me.players?.length ?? 0, "Players")}
+      ${stat("Picks", me.picks?.length ?? 0, "Future draft assets")}
+    </div>
+    <div class="panel"><div class="panel-header"><div><h2>Roster Shape</h2><div class="panel-sub">Count vs league average; this does not grade player quality</div></div></div><div class="shape-grid">${signals}</div></div>
+    <div class="grid-2">
+      <div class="panel"><div class="panel-header"><div><h2>Roster</h2><div class="panel-sub">Starters highlighted</div></div></div>${playerTable(me.players)}</div>
+      <div class="panel"><div class="panel-header"><div><h2>Draft Capital</h2><div class="panel-sub">Picks currently owned</div></div></div>${picksTable(me.picks)}</div>
+    </div>`;
+}
+
+function partnerOptions() {
+  const partners = state.tradePartners?.partners?.[MY_ROSTER_ID] || [];
+  return partners.map(p => `<option value="${p.roster_id}" ${String(p.roster_id) === String(state.tradePartnerId) ? "selected" : ""}>${esc(p.team_name || p.manager)} — ${esc(p.fit_score)}/10 fit</option>`).join("");
+}
+
+function renderTradeFinder() {
+  const partners = state.tradePartners?.partners?.[MY_ROSTER_ID] || [];
+  if (!state.tradePartnerId && partners.length) state.tradePartnerId = String(partners[0].roster_id);
+  const partner = partners.find(p => String(p.roster_id) === String(state.tradePartnerId));
+  const me = state.teams?.[MY_ROSTER_ID];
+  const them = partner ? state.teams?.[String(partner.roster_id)] : null;
+  const myProfile = state.needs?.teams?.[MY_ROSTER_ID];
+  const theirProfile = partner ? state.needs?.teams?.[String(partner.roster_id)] : null;
+
+  if (!partner || !them) return `<div class="loading-card">Trade partner data is not ready.</div>`;
+
+  const posRows = ["QB","RB","WR","TE"].map(pos => {
+    const mine = myProfile?.positions?.[pos];
+    const theirs = theirProfile?.positions?.[pos];
+    return `<tr>
+      <td><strong>${pos}</strong></td>
+      <td>${mine?.count ?? 0} <span class="table-note">${esc(mine?.label || "")}</span></td>
+      <td>${esc(mine?.league_average ?? "—")}</td>
+      <td>${theirs?.count ?? 0} <span class="table-note">${esc(theirs?.label || "")}</span></td>
+    </tr>`;
+  }).join("");
+
+  const prompt = `Analyze trade opportunities between my 715 Dynasty roster (abewav, roster 3) and ${partner.manager || partner.team_name}, roster ${partner.roster_id}. First read the latest GitHub league data. Identify realistic targets from their roster that fit my team, what they are likely to want from me, and give 3 realistic offer ladders. Verify current NFL news and dynasty market values before recommending a deal.`;
+
+  return `
+    <div class="panel trade-toolbar">
+      <div><h2>Choose a manager</h2><div class="panel-sub">Fit score measures roster complementarity only—not fairness or KTC value.</div></div>
+      <div class="toolbar">
+        <select id="trade-partner">${partnerOptions()}</select>
+        <button class="button" data-copy="${esc(prompt)}">Copy ChatGPT analysis prompt</button>
+      </div>
+    </div>
+
+    <div class="stats-grid">
+      ${stat("Partner Fit", `${partner.fit_score}/10`, "Roster/pick complementarity")}
+      ${stat("Their 1sts", partner.pick_summary?.firsts ?? 0, `${partner.pick_summary?.early_picks ?? 0} total 1sts + 2nds`)}
+      ${stat("Their Picks", them.picks?.length ?? 0, "Future draft assets")}
+      ${stat("Their FAAB", `$${them.waivers?.faab_remaining ?? "—"}`, them.team_name || them.manager)}
+    </div>
+
+    <div class="grid-2 even">
+      <div class="panel">
+        <div class="panel-header"><div><h2>Why this fit</h2><div class="panel-sub">${esc(partner.team_name || partner.manager)}</div></div></div>
+        <div class="reason-list">${(partner.reasons || []).map(r => `<div class="reason">${esc(r)}</div>`).join("")}</div>
+      </div>
+      <div class="panel">
+        <div class="panel-header"><div><h2>Roster Shape Comparison</h2><div class="panel-sub">Counts, not talent grades</div></div></div>
+        <div class="table-wrap"><table><thead><tr><th>Pos</th><th>Me</th><th>Lg Avg</th><th>Them</th></tr></thead><tbody>${posRows}</tbody></table></div>
+      </div>
+    </div>
+
+    <div class="grid-2 even">
+      <div class="panel"><div class="panel-header"><div><h2>Their Roster</h2><div class="panel-sub">Targets to research</div></div></div>${playerTable(them.players)}</div>
+      <div class="panel"><div class="panel-header"><div><h2>Their Draft Capital</h2><div class="panel-sub">Current ownership</div></div></div>${picksTable(them.picks)}</div>
+    </div>`;
+}
+
+function renderOpportunities() {
+  return `
+    <div class="panel">
+      <div class="panel-header">
+        <div><h2>Opportunity Scanner</h2><div class="panel-sub">Confirmed free agents ranked by asymmetric-upside signals; not a dynasty value ranking</div></div>
+        <div class="toolbar">
+          <select id="opp-pos"><option value="ALL">All</option><option value="RB" selected>RB</option><option value="WR">WR</option><option value="TE">TE</option><option value="QB">QB</option></select>
+          <select id="opp-tier"><option value="ALL">All tiers</option><option>Priority</option><option>Strong stash</option><option>Watch</option><option>Deep</option></select>
+          <input id="opp-search" class="search" type="search" placeholder="Search player or NFL team" />
+          <button class="button" id="copy-opp">Copy top-opportunities prompt</button>
+        </div>
+      </div>
+      <div class="method-note">${esc(state.opportunities?.methodology || "")}</div>
+      <div id="opp-results"></div>
+      <div class="attribution">Trending add/drop data provided by Sleeper.</div>
+    </div>`;
+}
+
+function filteredOpportunities() {
+  const pos = document.querySelector("#opp-pos")?.value || "RB";
+  const tier = document.querySelector("#opp-tier")?.value || "ALL";
+  const q = (document.querySelector("#opp-search")?.value || "").trim().toLowerCase();
+  let players = state.opportunities?.players || [];
+  if (pos !== "ALL") players = players.filter(p => p.position === pos);
+  if (tier !== "ALL") players = players.filter(p => p.tier === tier);
+  if (q) players = players.filter(p => `${p.name} ${p.team || ""}`.toLowerCase().includes(q));
+  return players;
+}
+
+function updateOpportunities() {
+  const target = document.querySelector("#opp-results");
+  if (target) target.innerHTML = opportunityTable(filteredOpportunities(), 250);
+}
+
+function renderWaivers() {
+  const all = state.waivers || {};
+  return `
+    <div class="panel">
+      <div class="panel-header">
+        <div><h2>Available Players</h2><div class="panel-sub">Raw confirmed availability; use Opportunities for the signal-ranked board</div></div>
+        <div class="toolbar">
+          <select id="pos-filter"><option>RB</option><option>WR</option><option>TE</option><option>QB</option></select>
+          <input id="waiver-search" class="search" type="search" placeholder="Search player or NFL team" />
+        </div>
+      </div>
+      <div id="waiver-results"></div>
+    </div>`;
+}
+
+function updateWaivers() {
+  const pos = document.querySelector("#pos-filter")?.value || "RB";
+  const q = (document.querySelector("#waiver-search")?.value || "").trim().toLowerCase();
+  let players = state.waivers?.[pos] || [];
+  if (q) players = players.filter(p => `${p.name} ${p.team || ""}`.toLowerCase().includes(q));
+  const target = document.querySelector("#waiver-results");
+  if (target) target.innerHTML = playerTable(players.slice(0, 250));
+}
+
+function renderLeague() {
+  return `<div class="panel"><div class="panel-header"><div><h2>League Assets</h2><div class="panel-sub">Roster construction, FAAB and pick inventory</div></div></div>
+    <div class="team-grid">${Object.values(state.teams || {}).map(teamCard).join("")}</div>
+  </div>`;
+}
+
+function renderChanges(changes) {
+  if (!changes?.length) return `<div class="empty">No changes detected in the latest sync window.</div>`;
+  return `<div class="change-list">${changes.map(c => {
+    let text = c.type;
+    if (c.type === "roster_add") text = `${c.manager || `Roster ${c.roster_id}`} added ${c.player?.name || "a player"}`;
+    if (c.type === "roster_drop") text = `${c.manager || `Roster ${c.roster_id}`} dropped ${c.player?.name || "a player"}`;
+    if (c.type === "starter_change") text = `${c.manager || `Roster ${c.roster_id}`} changed starters`;
+    if (c.type === "pick_owner_change") text = `${c.season} R${c.round} pick moved to ${c.new_owner_manager || `Roster ${c.new_owner_roster_id}`}`;
+    return `<div class="change"><div>${esc(text)}</div><div class="change-time">${esc(fmtTime(c.detected_at))}</div></div>`;
+  }).join("")}</div>`;
+}
+
+function renderTransactions(items) {
+  if (!items?.length) return `<div class="empty">No transactions found.</div>`;
+  return `<div class="change-list">${items.map(tx => {
+    const adds = (tx.adds || []).map(x => x.player?.name).filter(Boolean).join(", ");
+    const drops = (tx.drops || []).map(x => x.player?.name).filter(Boolean).join(", ");
+    const bits = [adds ? `+ ${adds}` : "", drops ? `− ${drops}` : ""].filter(Boolean).join(" · ");
+    return `<div class="change"><div><strong>${esc(tx.type || "transaction")}</strong>${bits ? ` — ${esc(bits)}` : ""}</div><div class="change-time">Week ${esc(tx.week)} · ${esc(tx.status || "")}</div></div>`;
+  }).join("")}</div>`;
+}
+
+function renderActivity() {
+  return `<div class="grid-2">
+    <div class="panel"><div class="panel-header"><div><h2>Recent Transactions</h2><div class="panel-sub">Sleeper transaction feed</div></div></div>${renderTransactions((state.transactions || []).slice(0, 50))}</div>
+    <div class="panel"><div class="panel-header"><div><h2>Detected Asset Changes</h2><div class="panel-sub">Roster, starter and pick changes</div></div></div>${renderChanges((state.changes?.changes || []).slice().reverse())}</div>
+  </div>`;
+}
+
+async function copyText(text, button) {
+  try {
+    await navigator.clipboard.writeText(text);
+    const old = button.textContent;
+    button.textContent = "Copied";
+    setTimeout(() => button.textContent = old, 1300);
+  } catch {
+    window.prompt("Copy this prompt:", text);
+  }
+}
+
+function wireViewControls() {
+  document.querySelectorAll("[data-go]").forEach(btn => btn.addEventListener("click", () => {
+    state.view = btn.dataset.go;
+    setActiveNav();
+    render();
+  }));
+
+  document.querySelectorAll(".partner-row").forEach(btn => btn.addEventListener("click", () => {
+    state.tradePartnerId = btn.dataset.partner;
+    state.view = "trades";
+    setActiveNav();
+    render();
+  }));
+
+  document.querySelector("#trade-partner")?.addEventListener("change", e => {
+    state.tradePartnerId = e.target.value;
+    render();
+  });
+
+  document.querySelectorAll("[data-copy]").forEach(btn => btn.addEventListener("click", () => copyText(btn.dataset.copy, btn)));
+
+  if (state.view === "waivers") {
+    document.querySelector("#pos-filter")?.addEventListener("change", updateWaivers);
+    document.querySelector("#waiver-search")?.addEventListener("input", updateWaivers);
+    updateWaivers();
+  }
+
+  if (state.view === "opportunities") {
+    ["#opp-pos", "#opp-tier"].forEach(sel => document.querySelector(sel)?.addEventListener("change", updateOpportunities));
+    document.querySelector("#opp-search")?.addEventListener("input", updateOpportunities);
+    document.querySelector("#copy-opp")?.addEventListener("click", e => {
+      const top = filteredOpportunities().slice(0, 10).map(p => `${p.name} (${p.position}, ${p.team || "NFL FA"})`).join(", ");
+      const prompt = `Evaluate these currently available 715 Dynasty waiver/stash options using the latest GitHub league data and current web research: ${top}. Rank them specifically for my roster and competitive window, identify likely cuts, and flag any asymmetric upside.`;
+      copyText(prompt, e.currentTarget);
+    });
+    updateOpportunities();
+  }
+}
+
+function setActiveNav() {
+  document.querySelectorAll(".nav-item").forEach(x => x.classList.toggle("active", x.dataset.view === state.view));
+}
+
+function render() {
+  const app = document.querySelector("#app");
+  const titles = {
+    home: ["Overview", "Live 715 Dynasty league state"],
+    team: ["My Team", "Baskerville Bilge Rats"],
+    trades: ["Trade Finder", "Find roster-construction matches before doing market research"],
+    opportunities: ["Opportunities", "Signal-ranked, confirmed free agents"],
+    power: ["Power Rankings", "Performance-based 715 Power Score"],
+    recap: ["Weekly Recap", "Awards, lineup decisions and bench regret"],
+    standings: ["Standings+", "All-play, median record and luck index"],
+    draft: ["Draft Capital", "Future pick ownership across the league"],
+    records: ["Records", "715 Dynasty history and all-time marks"],
+    waivers: ["Waivers", "Confirmed available players"],
+    league: ["League", "Roster and asset map"],
+    activity: ["Activity", "Adds, drops, trades and detected changes"],
+  };
+  document.querySelector("#page-title").textContent = titles[state.view][0];
+  document.querySelector("#page-subtitle").textContent = titles[state.view][1];
+
+  if (state.view === "home") app.innerHTML = renderHome();
+  if (state.view === "team") app.innerHTML = renderTeam();
+  if (state.view === "trades") app.innerHTML = renderTradeFinder();
+  if (state.view === "opportunities") app.innerHTML = renderOpportunities();
+  if (state.view === "power") app.innerHTML = renderPower();
+  if (state.view === "recap") app.innerHTML = renderRecap();
+  if (state.view === "standings") app.innerHTML = renderStandingsPlus();
+  if (state.view === "draft") app.innerHTML = renderDraftCapital();
+  if (state.view === "records") app.innerHTML = renderRecords();
+  if (state.view === "waivers") app.innerHTML = renderWaivers();
+  if (state.view === "league") app.innerHTML = renderLeague();
+  if (state.view === "activity") app.innerHTML = renderActivity();
+
+  wireViewControls();
+}
+
+async function boot() {
+  try {
+    const [summary, teams, waivers, changes, transactions, needs, tradePartners, opportunities, power, standings, lineups, recap, draftCapital, records] = await Promise.all([
+      getJson("league_summary.json"),
+      getJson("team_assets.json"),
+      getJson("free_agents_by_position.json"),
+      getJson("league_changes.json"),
+      getJson("recent_transactions.json"),
+      getJson("team_needs.json"),
+      getJson("trade_partners.json"),
+      getJson("opportunity_scanner.json"),
+      getJson("power_rankings.json"),
+      getJson("standings_plus.json"),
+      getJson("lineup_efficiency.json"),
+      getJson("weekly_recap.json"),
+      getJson("draft_capital_matrix.json"),
+      getJson("record_book.json"),
+    ]);
+    Object.assign(state, { summary, teams, waivers, changes, transactions, needs, tradePartners, opportunities, power, standings, lineups, recap, draftCapital, records });
+    document.querySelector("#updated-at").textContent = `Derived data: ${fmtTime(summary.generated_at)}`;
+    render();
+  } catch (err) {
+    document.querySelector("#app").innerHTML = `<div class="loading-card"><strong>Phase 2 data is not ready yet.</strong><br><br>${esc(err.message)}<br><br>Run Sync Sleeper Players once after installing the Phase 2 scripts.</div>`;
+    console.error(err);
+  }
+}
+
+document.querySelectorAll(".nav-item").forEach(btn => {
+  btn.addEventListener("click", () => {
+    state.view = btn.dataset.view;
+    setActiveNav();
+    render();
+  });
+});
+
+boot();
