@@ -10,6 +10,15 @@ from pathlib import Path
 from typing import Any
 
 from phase4 import build_phase4_outputs
+from external_intel import (
+    attach_player_intel,
+    build_market_summary,
+    build_player_intel,
+    enrich_current_power,
+    enrich_opportunities,
+    enrich_team_needs,
+    enrich_trade_partners,
+)
 
 ROOT = Path(__file__).resolve().parents[1]
 CURRENT = ROOT / "data" / "current"
@@ -1751,6 +1760,26 @@ def main() -> None:
         team_assets,
     )
 
+    # Phase 4.6 — shared Player Intelligence layer.
+    # External feeds are optional. If the first external sync has not run yet,
+    # these helpers simply attach empty market/performance fields and preserve
+    # all pre-existing algorithms.
+    player_intel = build_player_intel(
+        ROOT, team_assets, free_agents, players, league
+    )
+    team_assets = attach_player_intel(
+        team_assets, free_by_pos, player_intel, rosters, league
+    )
+    market_summary = build_market_summary(team_assets, league)
+    team_needs = enrich_team_needs(team_needs, market_summary)
+    trade_partners = enrich_trade_partners(trade_partners, market_summary)
+    opportunities = enrich_opportunities(opportunities, player_intel)
+    phase3["power_rankings"] = enrich_current_power(
+        phase3["power_rankings"],
+        market_summary,
+        phase3.get("completed_weeks") or [],
+    )
+
     # Compact analysis bundle for ChatGPT. Raw current/ files remain the
     # source of truth; this file is only a fast, derived decision-support view.
     opportunity_players = opportunities.get("players") or []
@@ -1777,6 +1806,15 @@ def main() -> None:
         "lineup_efficiency": phase3["lineup_efficiency"].get("scopes"),
         "latest_weekly_recap": phase3["weekly_recap"].get("latest_available"),
         "draft_capital": phase3["draft_capital"],
+        "player_intel_sources": {
+            "market": player_intel.get("market_source"),
+            "performance": player_intel.get("performance_source"),
+            "coverage": player_intel.get("coverage"),
+        },
+        "my_market_profile": next(
+            (x for x in (market_summary.get("teams") or []) if str(x.get("roster_id")) == MY_ROSTER_ID),
+            None,
+        ),
     }
 
     write_json("league_summary.json", league_summary)
@@ -1802,6 +1840,8 @@ def main() -> None:
         "sleeper_attribution": opportunities.get("sleeper_attribution"),
         "players": (opportunities.get("players") or [])[:50],
     })
+    write_json("player_intel.json", player_intel)
+    write_json("roster_market_values.json", market_summary)
     write_json("chatgpt_context.json", chatgpt_context)
 
     # Phase 3 — League Lab
