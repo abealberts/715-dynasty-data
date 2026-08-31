@@ -33,7 +33,7 @@ jobs:
       - name: Commit changes if needed
         shell: bash
         run: |
-          if git diff --quiet -- data/current; then
+          if [[ -z "$(git status --porcelain -- data/current)" ]]; then
             echo "No Sleeper changes detected."
             exit 0
           fi
