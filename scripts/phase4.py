@@ -146,6 +146,7 @@ def build_model_parameters(
     current_matchups: dict[str, Any],
     nfl_state: dict[str, Any],
     datasets: list[dict[str, Any]],
+    market_by_roster: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
     completed = completed_current_weeks(current_matchups, nfl_state)
     current_samples = score_samples(
@@ -159,6 +160,7 @@ def build_model_parameters(
     league_prior_mean = safe_mean(league_history_values, 120.0)
     league_prior_sd = safe_stdev(league_history_values, 25.0)
     current_weight = min(1.0, len(completed) / float(TRANSITION_WEEKS))
+    market_by_roster = market_by_roster or {}
 
     models = {}
     for rid, roster in current_rosters.items():
@@ -172,10 +174,23 @@ def build_model_parameters(
         current_sd = safe_stdev(current, prior_sd) if len(current) >= 2 else prior_sd
 
         if current:
-            mean = (prior_mean * (1.0 - current_weight)) + (current_mean * current_weight)
+            performance_mean = (prior_mean * (1.0 - current_weight)) + (current_mean * current_weight)
             sd = (prior_sd * (1.0 - current_weight)) + (current_sd * current_weight)
         else:
-            mean, sd = prior_mean, prior_sd
+            performance_mean, sd = prior_mean, prior_sd
+
+        market = market_by_roster.get(str(rid)) or {}
+        market_score = market.get("roster_market_score")
+        market_weight = 0.45 - (0.30 * current_weight)  # 45% preseason -> 15% after Week 6
+        if isinstance(market_score, (int, float)):
+            # Translate league-relative 0–100 market strength into a scoring
+            # expectation centered on the historical league mean.
+            market_mean = league_prior_mean + ((float(market_score) - 50.0) * 0.25)
+            mean = performance_mean * (1.0 - market_weight) + market_mean * market_weight
+        else:
+            market_mean = None
+            market_weight = 0.0
+            mean = performance_mean
 
         models[str(rid)] = {
             "roster_id": int(rid),
@@ -190,6 +205,9 @@ def build_model_parameters(
             "current_sd": round(current_sd, 2) if len(current) >= 2 else None,
             "model_mean": round(mean, 2),
             "model_sd": round(max(12.0, sd), 2),
+            "market_strength": round(float(market_score), 1) if isinstance(market_score, (int, float)) else None,
+            "market_model_mean": round(float(market_mean), 2) if isinstance(market_mean, (int, float)) else None,
+            "market_weight": round(market_weight, 4),
         }
 
     mean_norm = normalize_map({rid: float(m["model_mean"]) for rid, m in models.items()})
@@ -309,9 +327,12 @@ def build_playoff_simulator(
     matchups: dict[str, Any],
     nfl_state: dict[str, Any],
     history: list[dict[str, Any]],
+    market_by_roster: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
     generated_at = datetime.now(timezone.utc).isoformat()
-    model = build_model_parameters(league, rosters, matchups, nfl_state, history)
+    model = build_model_parameters(
+        league, rosters, matchups, nfl_state, history, market_by_roster=market_by_roster
+    )
     models = model["models"]
     completed = model["completed_weeks"]
     actual = current_standings(rosters, matchups, completed)
@@ -426,7 +447,7 @@ def build_playoff_simulator(
         "playoff_teams": playoff_teams,
         "playoff_round_weeks": round_weeks,
         "average_fourth_seed_standings_wins": round(statistics.mean(fourth_seed_wins), 1) if fourth_seed_wins else None,
-        "methodology": "Historical-performance simulator, not a player-projection model. Before 2026 games, each manager's 2025 regular-season scoring distribution is the prior. Completed 2026 weeks phase in linearly and fully replace the prior after six completed weeks. Each simulated regular-season week awards both scheduled H2H and league-median results; playoff seeding uses standings wins with points-for as tiebreaker. Title odds use the league's configured playoff round length.",
+        "methodology": "Hybrid performance/market simulator. Historical and current 715 scoring distributions provide the performance baseline; current Dynasty Dealer roster-market strength contributes 45% of the preseason scoring expectation and fades to 15% after six completed 2026 weeks so roster turnover, injuries, and trades are reflected before enough new scoring data exists. Each simulated regular-season week awards both scheduled H2H and league-median results; playoff seeding uses standings wins with points-for as tiebreaker. Title odds use the league's configured playoff round length.",
         "teams": teams,
     }
 
@@ -451,6 +472,12 @@ def build_team_profiles(
     picks = read_json(current / "pick_ownership.json", []) or []
     team_needs = read_json(derived / "team_needs.json", {}) or {}
     lineups = read_json(derived / "lineup_efficiency.json", {}) or {}
+    market_summary = read_json(derived / "roster_market_values.json", {}) or {}
+    market_available = bool(market_summary.get("available"))
+    market_by_rid = (
+        {str(x.get("roster_id")): x for x in (market_summary.get("teams") or [])}
+        if market_available else {}
+    )
     current_year = int(league.get("season") or 2026)
 
     model_by_rid = {str(x["roster_id"]): x for x in playoff.get("teams") or []}
@@ -521,10 +548,18 @@ def build_team_profiles(
         balance = balance_scores.get(str(rid), 50.0)
         management = management_scores.get(str(rid), 50.0)
         stability = stability_scores.get(str(rid), 50.0)
-        franchise_score = (
-            perf * 0.40 + capital * 0.20 + youth * 0.15 +
-            balance * 0.10 + management * 0.10 + stability * 0.05
-        )
+        market = float((market_by_rid.get(str(rid)) or {}).get("roster_market_score") or 50.0)
+        if market_available:
+            franchise_score = (
+                perf * 0.30 + market * 0.25 + capital * 0.15 + youth * 0.10 +
+                balance * 0.10 + management * 0.05 + stability * 0.05
+            )
+        else:
+            # Exact Phase 4 pre-external formula.
+            franchise_score = (
+                perf * 0.40 + capital * 0.20 + youth * 0.15 +
+                balance * 0.10 + management * 0.10 + stability * 0.05
+            )
         playoff_odds = float(model.get("playoff_odds") or 0)
 
         if playoff_odds >= 65:
@@ -545,6 +580,7 @@ def build_team_profiles(
 
         metrics = {
             "performance_prior": round(perf, 1),
+            "market_value": round(market, 1) if market_available else None,
             "draft_capital": round(capital, 1),
             "youth": round(youth, 1),
             "roster_balance": round(balance, 1),
@@ -583,7 +619,8 @@ def build_team_profiles(
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "model_status": playoff.get("model_status"),
         "model_blend": playoff.get("model_blend"),
-        "methodology": "Current franchise profile combining the historical/current scoring model with today's roster age, roster-shape balance, current draft capital, historical lineup efficiency, and scoring stability. It is a decision-support profile, not a dynasty market-value ranking.",
+        "methodology": "Current franchise profile: 30% performance model, 25% current Dynasty Dealer roster-market strength, 15% draft capital, 10% youth, 10% roster balance, 5% historical lineup management, and 5% scoring stability. It is a decision-support profile rather than a direct trade calculator.",
+        "market_attribution": "Values by Dynasty Dealer — https://www.dynastydealer.com/",
         "teams": profiles,
     }
 
@@ -832,8 +869,15 @@ def build_phase4_outputs(root: Path) -> None:
     matchups = read_json(current / "matchups.json", {}) or {}
     nfl_state = read_json(current / "nfl_state.json", {}) or {}
     history = history_datasets(root / "data" / "history")
+    market_summary = read_json(derived / "roster_market_values.json", {}) or {}
+    market_by_roster = (
+        {str(x.get("roster_id")): x for x in (market_summary.get("teams") or [])}
+        if market_summary.get("available") else {}
+    )
 
-    playoff = build_playoff_simulator(league, rosters, matchups, nfl_state, history)
+    playoff = build_playoff_simulator(
+        league, rosters, matchups, nfl_state, history, market_by_roster=market_by_roster
+    )
     profiles = build_team_profiles(root, playoff)
     tendencies = build_manager_tendencies(root)
 
