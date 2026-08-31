@@ -1,0 +1,43 @@
+name: Sync Sleeper History
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sleeper-data-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Import previous Sleeper seasons
+        run: python scripts/sync_history.py
+
+      - name: Rebuild derived analytics
+        run: python scripts/build_derived.py
+
+      - name: Commit history and analytics if needed
+        shell: bash
+        run: |
+          if [[ -z "$(git status --porcelain -- data/history data/derived)" ]]; then
+            echo "No history changes detected."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/history data/derived
+          git commit -m "Import Sleeper league history"
+          git push
