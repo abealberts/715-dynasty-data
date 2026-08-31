@@ -598,6 +598,8 @@ def optimal_lineup(
             variable_slots.append(["QB", "RB", "WR", "TE"])
 
     points_by_pos: dict[str, list[tuple[float, str]]] = {pos: [] for pos in POSITIONS}
+    total_player_rows = len(row.get("players_points") or {})
+    recognized_player_rows = 0
     for pid, raw_points in (row.get("players_points") or {}).items():
         p = players.get(str(pid), {}) or {}
         pos = p.get("position")
@@ -606,6 +608,7 @@ def optimal_lineup(
             pos = next((x for x in fantasy if x in POSITIONS), None)
         if pos not in POSITIONS:
             continue
+        recognized_player_rows += 1
         try:
             points = float(raw_points or 0)
         except (TypeError, ValueError):
@@ -641,9 +644,9 @@ def optimal_lineup(
             best_ids = [x[1] for x in selected]
 
     actual = float(row.get("points") or 0)
+    lineup_valid = best_points is not None
     if best_points is None:
-        best_points = actual
-        best_ids = [str(x) for x in (row.get("starters") or []) if str(x) != "0"]
+        best_ids = []
 
     starter_set = {str(x) for x in (row.get("starters") or []) if str(x) != "0"}
     bench = []
@@ -666,13 +669,24 @@ def optimal_lineup(
             "points": round(points, 2),
         }
 
-    efficiency = 100.0 if best_points <= 0 else max(0.0, min(100.0, (actual / best_points) * 100))
+    coverage = 100.0 if total_player_rows <= 0 else (recognized_player_rows / total_player_rows) * 100
+    if lineup_valid and best_points is not None:
+        efficiency = 100.0 if best_points <= 0 else max(0.0, min(100.0, (actual / best_points) * 100))
+        optimal_points = round(best_points, 2)
+        points_left = round(max(0.0, best_points - actual), 2)
+        efficiency_value = round(efficiency, 1)
+    else:
+        optimal_points = None
+        points_left = None
+        efficiency_value = None
 
     return {
         "actual_points": round(actual, 2),
-        "optimal_points": round(best_points, 2),
-        "points_left": round(max(0.0, best_points - actual), 2),
-        "efficiency": round(efficiency, 1),
+        "optimal_points": optimal_points,
+        "points_left": points_left,
+        "efficiency": efficiency_value,
+        "valid": lineup_valid,
+        "metadata_coverage": round(coverage, 1),
         "optimal_player_ids": best_ids,
         "bench_star": bench_star,
     }
@@ -684,6 +698,7 @@ def build_week_metrics(
     rosters: dict[str, Any],
     players: dict[str, Any],
     league: dict[str, Any],
+    season: str | None = None,
 ) -> dict[str, Any]:
     score_rows = [row for row in (rows or []) if row.get("roster_id") is not None]
     scores = [float(row.get("points") or 0) for row in score_rows]
@@ -731,6 +746,7 @@ def build_week_metrics(
         roster = rosters.get(rid) or {}
         teams.append({
             "roster_id": int(rid),
+            "owner_id": str(roster.get("owner_id") or f"{season or league.get('season')}:{rid}"),
             "manager": roster.get("display_name"),
             "team_name": roster.get("team_name"),
             "score": round(score, 2),
@@ -744,6 +760,7 @@ def build_week_metrics(
 
     teams.sort(key=lambda x: x["score"], reverse=True)
     return {
+        "season": str(season or league.get("season") or ""),
         "week": week,
         "league_average": round(average, 2),
         "league_median": round(median, 2),
@@ -751,15 +768,24 @@ def build_week_metrics(
     }
 
 
-def aggregate_season_metrics(week_metrics: list[dict[str, Any]]) -> dict[str, Any]:
+def aggregate_metrics(
+    week_metrics: list[dict[str, Any]],
+    identity: str = "roster",
+    current_owner_to_roster: dict[str, int] | None = None,
+) -> dict[str, Any]:
     accum: dict[str, dict[str, Any]] = {}
+    current_owner_to_roster = current_owner_to_roster or {}
 
     for week in week_metrics:
+        season = str(week.get("season") or "")
         for team in week.get("teams") or []:
-            rid = str(team["roster_id"])
-            if rid not in accum:
-                accum[rid] = {
-                    "roster_id": team["roster_id"],
+            owner_id = str(team.get("owner_id") or "")
+            key = owner_id if identity == "owner" else str(team["roster_id"])
+            if key not in accum:
+                accum[key] = {
+                    "identity_id": key,
+                    "owner_id": owner_id,
+                    "roster_id": current_owner_to_roster.get(owner_id, team["roster_id"]),
                     "manager": team.get("manager"),
                     "team_name": team.get("team_name"),
                     "scores": [],
@@ -774,9 +800,18 @@ def aggregate_season_metrics(week_metrics: list[dict[str, Any]]) -> dict[str, An
                     "median_ties": 0,
                     "actual_points": 0.0,
                     "optimal_points": 0.0,
+                    "valid_lineup_weeks": 0,
+                    "seasons": set(),
                 }
-            a = accum[rid]
+            a = accum[key]
+            a["owner_id"] = owner_id or a.get("owner_id")
+            a["roster_id"] = current_owner_to_roster.get(owner_id, a["roster_id"])
+            a["manager"] = team.get("manager") or a.get("manager")
+            a["team_name"] = team.get("team_name") or a.get("team_name")
             a["scores"].append(float(team["score"]))
+            if season:
+                a["seasons"].add(season)
+
             result = (team.get("h2h") or {}).get("result")
             if result == "W":
                 a["h2h_wins"] += 1
@@ -799,23 +834,35 @@ def aggregate_season_metrics(week_metrics: list[dict[str, Any]]) -> dict[str, An
                 a["median_ties"] += 1
 
             lineup = team.get("lineup") or {}
-            a["actual_points"] += float(lineup.get("actual_points") or 0)
-            a["optimal_points"] += float(lineup.get("optimal_points") or 0)
+            if lineup.get("valid") and lineup.get("optimal_points") is not None:
+                a["actual_points"] += float(lineup.get("actual_points") or 0)
+                a["optimal_points"] += float(lineup.get("optimal_points") or 0)
+                a["valid_lineup_weeks"] += 1
 
     result = {}
-    for rid, a in accum.items():
+    for key, a in accum.items():
         h2h_games = a["h2h_wins"] + a["h2h_losses"] + a["h2h_ties"]
         ap_games = a["all_play_wins"] + a["all_play_losses"] + a["all_play_ties"]
         median_games = a["median_wins"] + a["median_losses"] + a["median_ties"]
         h2h_pct = pct(a["h2h_wins"], a["h2h_ties"], h2h_games)
         ap_pct = pct(a["all_play_wins"], a["all_play_ties"], ap_games)
         median_pct = pct(a["median_wins"], a["median_ties"], median_games)
-        efficiency = 100.0 if a["optimal_points"] <= 0 else (a["actual_points"] / a["optimal_points"]) * 100
-        result[rid] = {
+
+        if a["valid_lineup_weeks"] and a["optimal_points"] > 0:
+            efficiency = (a["actual_points"] / a["optimal_points"]) * 100
+            points_left = max(0.0, a["optimal_points"] - a["actual_points"])
+        else:
+            efficiency = None
+            points_left = None
+
+        result[key] = {
+            "identity_id": key,
+            "owner_id": a["owner_id"],
             "roster_id": a["roster_id"],
             "manager": a.get("manager"),
             "team_name": a.get("team_name"),
             "weeks": len(a["scores"]),
+            "seasons": sorted(a["seasons"]),
             "points_for": round(sum(a["scores"]), 2),
             "average_score": round(statistics.mean(a["scores"]), 2) if a["scores"] else 0.0,
             "recent_3_average": round(statistics.mean(a["scores"][-3:]), 2) if a["scores"] else 0.0,
@@ -831,11 +878,16 @@ def aggregate_season_metrics(week_metrics: list[dict[str, Any]]) -> dict[str, An
                 "wins": a["median_wins"], "losses": a["median_losses"], "ties": a["median_ties"],
                 "pct": round(median_pct, 4),
             },
-            "lineup_efficiency": round(efficiency, 1),
-            "points_left_on_bench": round(max(0.0, a["optimal_points"] - a["actual_points"]), 2),
+            "lineup_efficiency": round(efficiency, 1) if efficiency is not None else None,
+            "lineup_weeks": a["valid_lineup_weeks"],
+            "points_left_on_bench": round(points_left, 2) if points_left is not None else None,
             "luck_index": round((h2h_pct - ap_pct) * 100, 1),
         }
     return result
+
+
+def aggregate_season_metrics(week_metrics: list[dict[str, Any]]) -> dict[str, Any]:
+    return aggregate_metrics(week_metrics, identity="roster")
 
 
 def minmax(values: dict[str, float]) -> dict[str, float]:
@@ -847,24 +899,53 @@ def minmax(values: dict[str, float]) -> dict[str, float]:
     return {key: ((value - low) / (high - low)) * 100 for key, value in values.items()}
 
 
-def power_rows(metrics: dict[str, Any]) -> list[dict[str, Any]]:
-    recent_norm = minmax({rid: float(x.get("recent_3_average") or 0) for rid, x in metrics.items()})
+def power_rows(
+    metrics: dict[str, Any],
+    scoring_field: str = "recent_3_average",
+    scoring_component_name: str = "recent_scoring",
+) -> list[dict[str, Any]]:
+    scoring_norm = minmax({key: float(x.get(scoring_field) or 0) for key, x in metrics.items()})
     rows = []
-    for rid, x in metrics.items():
-        components = {
-            "recent_scoring": round(recent_norm.get(rid, 0), 1),
-            "all_play": round(float((x.get("all_play") or {}).get("pct") or 0) * 100, 1),
-            "median": round(float((x.get("median") or {}).get("pct") or 0) * 100, 1),
-            "lineup_efficiency": round(float(x.get("lineup_efficiency") or 0), 1),
-            "h2h_record": round(float((x.get("h2h") or {}).get("pct") or 0) * 100, 1),
-        }
-        score = (
-            components["recent_scoring"] * 0.35
-            + components["all_play"] * 0.25
-            + components["median"] * 0.15
-            + components["lineup_efficiency"] * 0.15
-            + components["h2h_record"] * 0.10
-        )
+    for key, x in metrics.items():
+        efficiency = x.get("lineup_efficiency")
+        # If lineup metadata is incomplete, redistribute that 15% across the
+        # four fully available performance signals rather than treating it as 0.
+        if efficiency is None:
+            weights = {
+                "scoring": 0.4118,
+                "all_play": 0.2941,
+                "median": 0.1765,
+                "h2h_record": 0.1176,
+            }
+            components = {
+                scoring_component_name: round(scoring_norm.get(key, 0), 1),
+                "all_play": round(float((x.get("all_play") or {}).get("pct") or 0) * 100, 1),
+                "median": round(float((x.get("median") or {}).get("pct") or 0) * 100, 1),
+                "lineup_efficiency": None,
+                "h2h_record": round(float((x.get("h2h") or {}).get("pct") or 0) * 100, 1),
+            }
+            score = (
+                components[scoring_component_name] * weights["scoring"]
+                + components["all_play"] * weights["all_play"]
+                + components["median"] * weights["median"]
+                + components["h2h_record"] * weights["h2h_record"]
+            )
+        else:
+            components = {
+                scoring_component_name: round(scoring_norm.get(key, 0), 1),
+                "all_play": round(float((x.get("all_play") or {}).get("pct") or 0) * 100, 1),
+                "median": round(float((x.get("median") or {}).get("pct") or 0) * 100, 1),
+                "lineup_efficiency": round(float(efficiency), 1),
+                "h2h_record": round(float((x.get("h2h") or {}).get("pct") or 0) * 100, 1),
+            }
+            score = (
+                components[scoring_component_name] * 0.35
+                + components["all_play"] * 0.25
+                + components["median"] * 0.15
+                + components["lineup_efficiency"] * 0.15
+                + components["h2h_record"] * 0.10
+            )
+
         rows.append({
             **x,
             "power_score": round(score, 1),
@@ -876,26 +957,50 @@ def power_rows(metrics: dict[str, Any]) -> list[dict[str, Any]]:
     return rows
 
 
-def build_power_rankings(week_metrics: list[dict[str, Any]]) -> dict[str, Any]:
+def build_power_rankings(
+    week_metrics: list[dict[str, Any]],
+    scope: str = "season",
+    identity: str = "roster",
+    current_owner_to_roster: dict[str, int] | None = None,
+) -> dict[str, Any]:
     generated_at = datetime.now(timezone.utc).isoformat()
+    all_time = scope == "all_time"
+    methodology = (
+        "35% career average scoring, 25% all-play, 15% median record, 15% lineup efficiency, 10% head-to-head record."
+        if all_time else
+        "35% recent scoring, 25% all-play, 15% median record, 15% lineup efficiency, 10% head-to-head record."
+    )
     if not week_metrics:
         return {
             "generated_at": generated_at,
             "status": "awaiting_results",
             "latest_completed_week": None,
-            "methodology": "35% recent scoring, 25% all-play, 15% median record, 15% lineup efficiency, 10% head-to-head record.",
+            "latest_season": None,
+            "methodology": methodology,
             "rankings": [],
         }
 
-    current_metrics = aggregate_season_metrics(week_metrics)
-    current = power_rows(current_metrics)
+    metrics = aggregate_metrics(week_metrics, identity=identity, current_owner_to_roster=current_owner_to_roster)
+    scoring_field = "average_score" if all_time else "recent_3_average"
+    component_name = "career_scoring" if all_time else "recent_scoring"
+    current = power_rows(metrics, scoring_field=scoring_field, scoring_component_name=component_name)
+
     previous_rank = {}
     if len(week_metrics) > 1:
-        previous = power_rows(aggregate_season_metrics(week_metrics[:-1]))
-        previous_rank = {str(row["roster_id"]): row["rank"] for row in previous}
+        previous_metrics = aggregate_metrics(
+            week_metrics[:-1],
+            identity=identity,
+            current_owner_to_roster=current_owner_to_roster,
+        )
+        previous = power_rows(
+            previous_metrics,
+            scoring_field=scoring_field,
+            scoring_component_name=component_name,
+        )
+        previous_rank = {str(row["identity_id"]): row["rank"] for row in previous}
 
     for row in current:
-        prev = previous_rank.get(str(row["roster_id"]))
+        prev = previous_rank.get(str(row["identity_id"]))
         row["previous_rank"] = prev
         row["movement"] = 0 if prev is None else prev - row["rank"]
 
@@ -903,14 +1008,27 @@ def build_power_rankings(week_metrics: list[dict[str, Any]]) -> dict[str, Any]:
         "generated_at": generated_at,
         "status": "live",
         "latest_completed_week": week_metrics[-1]["week"],
-        "methodology": "35% recent scoring, 25% all-play, 15% median record, 15% lineup efficiency, 10% head-to-head record. Recent scoring is normalized within the league.",
+        "latest_season": week_metrics[-1].get("season"),
+        "methodology": methodology + (
+            " Career scoring is normalized across all loaded regular-season weeks."
+            if all_time else
+            " Recent scoring is the last three completed weeks and is normalized within the league."
+        ),
         "rankings": current,
     }
 
 
-def build_standings_plus(week_metrics: list[dict[str, Any]]) -> dict[str, Any]:
+def build_standings_plus(
+    week_metrics: list[dict[str, Any]],
+    identity: str = "roster",
+    current_owner_to_roster: dict[str, int] | None = None,
+) -> dict[str, Any]:
     generated_at = datetime.now(timezone.utc).isoformat()
-    metrics = aggregate_season_metrics(week_metrics) if week_metrics else {}
+    metrics = aggregate_metrics(
+        week_metrics,
+        identity=identity,
+        current_owner_to_roster=current_owner_to_roster,
+    ) if week_metrics else {}
     teams = list(metrics.values())
     teams.sort(
         key=lambda x: (
@@ -923,21 +1041,38 @@ def build_standings_plus(week_metrics: list[dict[str, Any]]) -> dict[str, Any]:
         "generated_at": generated_at,
         "status": "live" if week_metrics else "awaiting_results",
         "latest_completed_week": week_metrics[-1]["week"] if week_metrics else None,
+        "latest_season": week_metrics[-1].get("season") if week_metrics else None,
         "teams": teams,
     }
 
 
-def build_lineup_efficiency(week_metrics: list[dict[str, Any]]) -> dict[str, Any]:
+def build_lineup_efficiency(
+    week_metrics: list[dict[str, Any]],
+    identity: str = "roster",
+    current_owner_to_roster: dict[str, int] | None = None,
+) -> dict[str, Any]:
     generated_at = datetime.now(timezone.utc).isoformat()
-    metrics = aggregate_season_metrics(week_metrics) if week_metrics else {}
-    season = sorted(metrics.values(), key=lambda x: (-x["lineup_efficiency"], x.get("manager") or ""))
+    metrics = aggregate_metrics(
+        week_metrics,
+        identity=identity,
+        current_owner_to_roster=current_owner_to_roster,
+    ) if week_metrics else {}
+    rows = list(metrics.values())
+    rows.sort(
+        key=lambda x: (
+            x.get("lineup_efficiency") is None,
+            -(x.get("lineup_efficiency") or 0),
+            x.get("manager") or "",
+        )
+    )
     latest = week_metrics[-1] if week_metrics else None
     return {
         "generated_at": generated_at,
         "status": "live" if latest else "awaiting_results",
         "latest_completed_week": latest["week"] if latest else None,
+        "latest_season": latest.get("season") if latest else None,
         "latest_week": latest,
-        "season": season,
+        "season": rows,
     }
 
 
@@ -1267,6 +1402,74 @@ def build_record_book(
     }
 
 
+def analytics_datasets(
+    league: dict[str, Any],
+    rosters: dict[str, Any],
+    matchups: dict[str, Any],
+    current_completed_weeks: list[int],
+) -> list[dict[str, Any]]:
+    datasets = history_datasets()
+    current_playoff_start = int((league.get("settings") or {}).get("playoff_week_start") or 99)
+    datasets.append({
+        "league": league,
+        "rosters": rosters,
+        "matchups": matchups,
+        "historical": False,
+        "completed_weeks": [week for week in current_completed_weeks if week < current_playoff_start],
+    })
+    return sorted(datasets, key=lambda x: str((x.get("league") or {}).get("season") or ""))
+
+
+def season_week_metrics(
+    datasets: list[dict[str, Any]],
+    players: dict[str, Any],
+) -> dict[str, list[dict[str, Any]]]:
+    result: dict[str, list[dict[str, Any]]] = {}
+    for data in datasets:
+        season_league = data["league"]
+        season = str(season_league.get("season") or "")
+        season_rosters = data["rosters"]
+        season_matchups = data["matchups"]
+        weeks = data.get("completed_weeks")
+        if weeks is None:
+            weeks = regular_season_scored_weeks(season_matchups, season_league)
+        result[season] = [
+            build_week_metrics(
+                week,
+                season_matchups.get(str(week)) or [],
+                season_rosters,
+                players,
+                season_league,
+                season=season,
+            )
+            for week in weeks
+        ]
+    return result
+
+
+def recap_archive(seasons: dict[str, list[dict[str, Any]]]) -> dict[str, Any]:
+    archive = {}
+    latest = None
+    for season in sorted(seasons):
+        week_metrics = seasons[season]
+        weeks = {}
+        for metric in week_metrics:
+            recap = build_weekly_recap([metric])
+            recap["season"] = season
+            weeks[str(metric["week"])] = recap
+            latest = recap
+        archive[season] = {
+            "season": season,
+            "weeks": weeks,
+            "available_weeks": [x["week"] for x in week_metrics],
+        }
+    return {
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "seasons": archive,
+        "latest_available": latest,
+    }
+
+
 def build_phase3(
     league: dict[str, Any],
     rosters: dict[str, Any],
@@ -1276,16 +1479,91 @@ def build_phase3(
     team_assets: dict[str, Any],
 ) -> dict[str, Any]:
     completed_weeks = completed_current_weeks(matchups, nfl_state)
-    week_metrics = [
-        build_week_metrics(week, matchups.get(str(week)) or [], rosters, players, league)
-        for week in completed_weeks
+    datasets = analytics_datasets(league, rosters, matchups, completed_weeks)
+    seasons = season_week_metrics(datasets, players)
+    current_season = str(league.get("season") or "")
+    current_metrics = seasons.get(current_season, [])
+    all_metrics = [
+        metric
+        for season in sorted(seasons)
+        for metric in seasons[season]
     ]
+
+    current_owner_to_roster = {
+        str(roster.get("owner_id")): int(rid)
+        for rid, roster in rosters.items()
+        if roster.get("owner_id") is not None
+    }
+
+    season_power = {
+        season: build_power_rankings(metrics, scope="season")
+        for season, metrics in seasons.items()
+    }
+    season_standings = {
+        season: build_standings_plus(metrics)
+        for season, metrics in seasons.items()
+    }
+    season_lineups = {
+        season: build_lineup_efficiency(metrics)
+        for season, metrics in seasons.items()
+    }
+
+    power = {
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "current_season": current_season,
+        "available_seasons": sorted(seasons),
+        "scopes": {
+            "current": season_power.get(current_season) or build_power_rankings([]),
+            "all_time": build_power_rankings(
+                all_metrics,
+                scope="all_time",
+                identity="owner",
+                current_owner_to_roster=current_owner_to_roster,
+            ),
+        },
+        "seasons": season_power,
+    }
+    standings = {
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "current_season": current_season,
+        "available_seasons": sorted(seasons),
+        "scopes": {
+            "current": season_standings.get(current_season) or build_standings_plus([]),
+            "all_time": build_standings_plus(
+                all_metrics,
+                identity="owner",
+                current_owner_to_roster=current_owner_to_roster,
+            ),
+        },
+        "seasons": season_standings,
+    }
+    lineups = {
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "current_season": current_season,
+        "available_seasons": sorted(seasons),
+        "scopes": {
+            "current": season_lineups.get(current_season) or build_lineup_efficiency([]),
+            "all_time": build_lineup_efficiency(
+                all_metrics,
+                identity="owner",
+                current_owner_to_roster=current_owner_to_roster,
+            ),
+        },
+        "seasons": season_lineups,
+    }
+    recaps = recap_archive(seasons)
+    recaps["current_season"] = current_season
+    recaps["latest_current"] = (
+        build_weekly_recap(current_metrics) if current_metrics
+        else build_weekly_recap([])
+    )
+
     return {
         "completed_weeks": completed_weeks,
-        "power_rankings": build_power_rankings(week_metrics),
-        "standings_plus": build_standings_plus(week_metrics),
-        "lineup_efficiency": build_lineup_efficiency(week_metrics),
-        "weekly_recap": build_weekly_recap(week_metrics),
+        "power_rankings": power,
+        "standings_plus": standings,
+        "lineup_efficiency": lineups,
+        "weekly_recap": recaps,
         "draft_capital": build_draft_capital_matrix(team_assets),
         "record_book": build_record_book(league, rosters, matchups, completed_weeks),
     }
@@ -1297,6 +1575,7 @@ def main() -> None:
     rosters = read_json(CURRENT / "roster_index.json", {}) or {}
     picks = read_json(CURRENT / "pick_ownership.json", []) or []
     players = read_json(CURRENT / "players_active.json", {}) or {}
+    known_players = read_json(CURRENT / "players_known.json", {}) or players
     free_agents = read_json(CURRENT / "free_agents.json", {}) or {}
     transactions = read_json(CURRENT / "transactions.json", {}) or {}
     matchups = read_json(CURRENT / "matchups.json", {}) or {}
@@ -1448,7 +1727,7 @@ def main() -> None:
     phase3 = build_phase3(
         league,
         rosters,
-        players,
+        known_players,
         matchups,
         nfl_state,
         team_assets,
@@ -1475,9 +1754,10 @@ def main() -> None:
         "top_opportunities_by_position": opportunity_by_position,
         "latest_detected_changes": latest_changes[-30:],
         "recent_transactions": recent_transactions[:30],
-        "power_rankings": phase3["power_rankings"],
-        "standings_plus": phase3["standings_plus"],
-        "latest_weekly_recap": phase3["weekly_recap"],
+        "power_rankings": phase3["power_rankings"].get("scopes"),
+        "standings_plus": phase3["standings_plus"].get("scopes"),
+        "lineup_efficiency": phase3["lineup_efficiency"].get("scopes"),
+        "latest_weekly_recap": phase3["weekly_recap"].get("latest_available"),
         "draft_capital": phase3["draft_capital"],
     }
 
