@@ -19,6 +19,9 @@ const state = {
   records: null,
   view: "home",
   tradePartnerId: null,
+  analyticsScope: "current",
+  recapSeason: null,
+  recapWeek: null,
 };
 
 async function getJson(name) {
@@ -162,30 +165,54 @@ function recordText(record) {
   return `${record.wins || 0}-${record.losses || 0}${record.ties ? `-${record.ties}` : ""}`;
 }
 
+function isMe(row) {
+  return String(row?.roster_id) === MY_ROSTER_ID || row?.manager === "abewav";
+}
+
+function scopeData(bundle) {
+  return bundle?.scopes?.[state.analyticsScope] || null;
+}
+
+function scopeToggle() {
+  return `<div class="scope-toggle" role="group" aria-label="Analytics scope">
+    <button class="scope-button ${state.analyticsScope === "current" ? "active" : ""}" data-scope="current">Current Season</button>
+    <button class="scope-button ${state.analyticsScope === "all_time" ? "active" : ""}" data-scope="all_time">All Time</button>
+  </div>`;
+}
+
+function scopeLabel(data) {
+  if (state.analyticsScope === "all_time") {
+    const seasons = data?.rankings?.[0]?.seasons || data?.teams?.[0]?.seasons || [];
+    return seasons.length ? `All Time · ${seasons.join(" + ")}` : "All Time";
+  }
+  return data?.latest_season ? `${data.latest_season} Season` : "Current Season";
+}
+
 function renderPower() {
-  const data = state.power;
+  const data = scopeData(state.power);
+  const header = `<div class="panel scope-panel"><div><h2>715 Power Rankings</h2><div class="panel-sub">${esc(scopeLabel(data))}</div></div>${scopeToggle()}</div>`;
+
   if (!data || data.status !== "live" || !data.rankings?.length) {
-    return `<div class="notice-card">
+    return `${header}<div class="notice-card">
       <div class="notice-icon">⚡</div>
-      <div><h2>Power Rankings unlock after Week 1</h2>
-      <p>The model intentionally waits for completed games instead of inventing preseason talent grades. Once Week 1 closes, rankings will use recent scoring, all-play, median record, lineup efficiency and head-to-head results.</p></div>
+      <div><h2>Current-season rankings unlock after Week 1</h2>
+      <p>Switch to <strong>All Time</strong> to see the historical ranking immediately. Current-season rankings use recent scoring; all-time rankings use career scoring average.</p></div>
     </div>
-    <div class="panel"><div class="method-note">Formula: 35% recent scoring · 25% all-play · 15% league-median record · 15% lineup efficiency · 10% head-to-head record.</div></div>`;
+    <div class="panel"><div class="method-note">${esc(data?.methodology || "")}</div></div>`;
   }
 
-  return `<div class="panel">
-    <div class="panel-header"><div><h2>715 Power Rankings</h2><div class="panel-sub">Through Week ${esc(data.latest_completed_week)}</div></div></div>
+  return `${header}<div class="panel">
     <div class="method-note">${esc(data.methodology)}</div>
     <div class="table-wrap"><table>
-      <thead><tr><th>Rank</th><th>Team</th><th>Power</th><th>3-Wk Avg</th><th>All-Play</th><th>Median</th><th>Efficiency</th><th>H2H</th></tr></thead>
-      <tbody>${data.rankings.map(r => `<tr class="${String(r.roster_id) === MY_ROSTER_ID ? "highlight-row" : ""}">
+      <thead><tr><th>Rank</th><th>Team</th><th>Power</th><th>${state.analyticsScope === "all_time" ? "Career Avg" : "3-Wk Avg"}</th><th>All-Play</th><th>Median</th><th>Efficiency</th><th>H2H</th></tr></thead>
+      <tbody>${data.rankings.map(r => `<tr class="${isMe(r) ? "highlight-row" : ""}">
         <td><span class="rank-number">${r.rank}</span> ${movementLabel(r.movement)}</td>
-        <td><span class="player-name">${esc(r.team_name || r.manager)}</span><div class="table-note">${esc(r.manager || "")}</div></td>
+        <td><span class="player-name">${esc(r.team_name || r.manager)}</span><div class="table-note">${esc(r.manager || "")}${r.seasons?.length ? ` · ${esc(r.seasons.join(", "))}` : ""}</div></td>
         <td><span class="power-score">${esc(r.power_score)}</span></td>
-        <td>${esc(r.recent_3_average)}</td>
+        <td>${esc(state.analyticsScope === "all_time" ? r.average_score : r.recent_3_average)}</td>
         <td>${recordText(r.all_play)}</td>
         <td>${recordText(r.median)}</td>
-        <td>${esc(r.lineup_efficiency)}%</td>
+        <td>${r.lineup_efficiency == null ? "—" : `${esc(r.lineup_efficiency)}%`}</td>
         <td>${recordText(r.h2h)}</td>
       </tr>`).join("")}</tbody>
     </table></div>
@@ -193,49 +220,119 @@ function renderPower() {
 }
 
 function renderStandingsPlus() {
-  const data = state.standings;
+  const data = scopeData(state.standings);
+  const header = `<div class="panel scope-panel"><div><h2>Standings+</h2><div class="panel-sub">${esc(scopeLabel(data))}</div></div>${scopeToggle()}</div>`;
+
   if (!data || data.status !== "live" || !data.teams?.length) {
-    return `<div class="notice-card"><div class="notice-icon">📊</div><div><h2>Standings+ is waiting for completed games</h2><p>After Week 1 this page will compare head-to-head results with all-play, the league median, lineup efficiency and a luck index.</p></div></div>`;
+    return `${header}<div class="notice-card"><div class="notice-icon">📊</div><div><h2>Current Standings+ is waiting for Week 1</h2><p>Switch to All Time to compare the 2025 historical performance already imported.</p></div></div>`;
   }
 
   const luckiest = [...data.teams].sort((a,b) => b.luck_index - a.luck_index)[0];
   const cursed = [...data.teams].sort((a,b) => a.luck_index - b.luck_index)[0];
 
-  return `
+  return `${header}
     <div class="stats-grid">
       ${stat("Luckiest", luckiest?.team_name || luckiest?.manager || "—", `${luckiest?.luck_index > 0 ? "+" : ""}${luckiest?.luck_index ?? 0} luck index`)}
       ${stat("Most Cursed", cursed?.team_name || cursed?.manager || "—", `${cursed?.luck_index > 0 ? "+" : ""}${cursed?.luck_index ?? 0} luck index`)}
-      ${stat("Weeks", data.latest_completed_week || 0, "Completed through")}
-      ${stat("Median Match", "ON", "Separate from H2H below")}
+      ${stat("Weeks", data.teams?.[0]?.weeks || 0, state.analyticsScope === "all_time" ? "Career regular-season weeks" : "Completed this season")}
+      ${stat("Scope", state.analyticsScope === "all_time" ? "ALL TIME" : "CURRENT", scopeLabel(data))}
     </div>
     <div class="panel">
-      <div class="panel-header"><div><h2>Standings+</h2><div class="panel-sub">Performance behind the record</div></div></div>
       <div class="table-wrap"><table>
         <thead><tr><th>Team</th><th>H2H</th><th>Median</th><th>All-Play</th><th>PF</th><th>Avg</th><th>Efficiency</th><th>Luck</th></tr></thead>
-        <tbody>${data.teams.map(t => `<tr class="${String(t.roster_id) === MY_ROSTER_ID ? "highlight-row" : ""}">
-          <td><span class="player-name">${esc(t.team_name || t.manager)}</span></td>
+        <tbody>${data.teams.map(t => `<tr class="${isMe(t) ? "highlight-row" : ""}">
+          <td><span class="player-name">${esc(t.team_name || t.manager)}</span><div class="table-note">${esc(t.manager || "")}</div></td>
           <td>${recordText(t.h2h)}</td>
           <td>${recordText(t.median)}</td>
           <td>${recordText(t.all_play)}</td>
           <td>${esc(t.points_for)}</td>
           <td>${esc(t.average_score)}</td>
-          <td>${esc(t.lineup_efficiency)}%</td>
+          <td>${t.lineup_efficiency == null ? "—" : `${esc(t.lineup_efficiency)}%`}</td>
           <td class="${t.luck_index > 5 ? "luck-good" : t.luck_index < -5 ? "luck-bad" : "muted"}">${t.luck_index > 0 ? "+" : ""}${esc(t.luck_index)}</td>
         </tr>`).join("")}</tbody>
       </table></div>
     </div>`;
 }
 
+function renderLineups() {
+  const data = scopeData(state.lineups);
+  const header = `<div class="panel scope-panel"><div><h2>Lineup Lab</h2><div class="panel-sub">${esc(scopeLabel(data))} · optimal legal lineup analysis</div></div>${scopeToggle()}</div>`;
+
+  if (!data || data.status !== "live" || !data.season?.length) {
+    return `${header}<div class="notice-card"><div class="notice-icon">🧠</div><div><h2>Current Lineup Lab is waiting for Week 1</h2><p>All-Time mode reconstructs 2025 legal lineups using historical player IDs and Sleeper player-position metadata.</p></div></div>`;
+  }
+
+  const valid = data.season.filter(x => x.lineup_efficiency != null);
+  const best = [...valid].sort((a,b) => b.lineup_efficiency - a.lineup_efficiency)[0];
+  const regret = [...valid].sort((a,b) => (b.points_left_on_bench || 0) - (a.points_left_on_bench || 0))[0];
+
+  return `${header}
+    <div class="stats-grid">
+      ${stat("Best Manager", best?.team_name || best?.manager || "—", best ? `${best.lineup_efficiency}% efficiency` : "No valid data")}
+      ${stat("Most Bench Regret", regret?.team_name || regret?.manager || "—", regret ? `${regret.points_left_on_bench} points left` : "No valid data")}
+      ${stat("Valid Weeks", valid.reduce((n,x) => n + (x.lineup_weeks || 0), 0), "Manager-week samples")}
+      ${stat("Scope", state.analyticsScope === "all_time" ? "ALL TIME" : "CURRENT", scopeLabel(data))}
+    </div>
+    <div class="panel">
+      <div class="table-wrap"><table>
+        <thead><tr><th>Team</th><th>Efficiency</th><th>Points Left</th><th>Lineup Weeks</th><th>Avg Score</th><th>H2H</th></tr></thead>
+        <tbody>${data.season.map(t => `<tr class="${isMe(t) ? "highlight-row" : ""}">
+          <td><span class="player-name">${esc(t.team_name || t.manager)}</span><div class="table-note">${esc(t.manager || "")}</div></td>
+          <td>${t.lineup_efficiency == null ? "—" : `${esc(t.lineup_efficiency)}%`}</td>
+          <td>${t.points_left_on_bench == null ? "—" : esc(t.points_left_on_bench)}</td>
+          <td>${esc(t.lineup_weeks || 0)} / ${esc(t.weeks || 0)}</td>
+          <td>${esc(t.average_score)}</td>
+          <td>${recordText(t.h2h)}</td>
+        </tr>`).join("")}</tbody>
+      </table></div>
+    </div>`;
+}
+
+function selectedRecap() {
+  const seasons = state.recap?.seasons || {};
+  const seasonKeys = Object.keys(seasons).sort().reverse();
+
+  if (!state.recapSeason || !seasons[state.recapSeason]) {
+    const current = state.recap?.current_season;
+    if (current && seasons[current]?.available_weeks?.length) {
+      state.recapSeason = current;
+    } else {
+      state.recapSeason = seasonKeys.find(s => seasons[s]?.available_weeks?.length) || seasonKeys[0] || null;
+    }
+  }
+
+  const seasonData = seasons[state.recapSeason];
+  const available = seasonData?.available_weeks || [];
+  if (!state.recapWeek || !available.includes(Number(state.recapWeek))) {
+    state.recapWeek = available.length ? available[available.length - 1] : null;
+  }
+  return state.recapWeek != null ? seasonData?.weeks?.[String(state.recapWeek)] : null;
+}
+
+function recapControls() {
+  const seasons = state.recap?.seasons || {};
+  const seasonKeys = Object.keys(seasons).sort().reverse();
+  const seasonData = state.recapSeason ? seasons[state.recapSeason] : null;
+  const weeks = seasonData?.available_weeks || [];
+  return `<div class="toolbar">
+    <select id="recap-season">${seasonKeys.map(s => `<option value="${esc(s)}" ${s === state.recapSeason ? "selected" : ""}>${esc(s)} Season</option>`).join("")}</select>
+    <select id="recap-week">${weeks.map(w => `<option value="${esc(w)}" ${Number(w) === Number(state.recapWeek) ? "selected" : ""}>Week ${esc(w)}</option>`).join("")}</select>
+  </div>`;
+}
+
 function renderRecap() {
-  const data = state.recap;
+  const data = selectedRecap();
+  const controls = recapControls();
   if (!data || data.status !== "live" || !data.week_data) {
-    return `<div class="notice-card"><div class="notice-icon">📰</div><div><h2>The weekly paper starts after Week 1</h2><p>Top Dog, Pain, Highway Robbery, Coaching Disaster, Benchwarmer of the Week and more will populate automatically every week.</p></div></div>`;
+    return `<div class="panel scope-panel"><div><h2>Weekly Replay</h2><div class="panel-sub">Browse imported league weeks</div></div>${controls}</div>
+      <div class="notice-card"><div class="notice-icon">📰</div><div><h2>No completed week selected</h2><p>The 2025 regular season is available now; 2026 weeks will appear automatically as they complete.</p></div></div>`;
   }
 
   const week = data.week_data;
   return `
+    <div class="panel scope-panel"><div><h2>${esc(data.season)} Week ${esc(data.week)} Replay</h2><div class="panel-sub">The official unofficial 715 weekly paper</div></div>${controls}</div>
     <div class="panel">
-      <div class="panel-header"><div><h2>Week ${esc(data.week)} Awards</h2><div class="panel-sub">The official unofficial 715 weekly recap</div></div></div>
+      <div class="panel-header"><div><h2>Weekly Awards</h2><div class="panel-sub">Generated from the selected historical week</div></div></div>
       <div class="award-grid">${(data.awards || []).map(a => `<article class="award-card">
         <div class="award-emoji">${esc(a.emoji)}</div>
         <div class="award-title">${esc(a.title)}</div>
@@ -245,22 +342,23 @@ function renderRecap() {
     </div>
 
     <div class="panel">
-      <div class="panel-header"><div><h2>Week ${esc(data.week)} Scoreboard+</h2><div class="panel-sub">Actual vs optimal lineup</div></div></div>
+      <div class="panel-header"><div><h2>Scoreboard+</h2><div class="panel-sub">Actual vs reconstructed optimal lineup</div></div></div>
       <div class="table-wrap"><table>
         <thead><tr><th>Team</th><th>Score</th><th>H2H</th><th>All-Play</th><th>Optimal</th><th>Efficiency</th><th>Bench Regret</th></tr></thead>
         <tbody>${(week.teams || []).map(t => {
           const star = t.lineup?.bench_star;
-          return `<tr class="${String(t.roster_id) === MY_ROSTER_ID ? "highlight-row" : ""}">
+          return `<tr class="${isMe(t) ? "highlight-row" : ""}">
             <td><span class="player-name">${esc(t.team_name || t.manager)}</span></td>
             <td>${esc(t.score)}</td>
             <td>${esc(t.h2h?.result || "—")}</td>
             <td>${esc(t.all_play?.wins || 0)}-${esc(t.all_play?.losses || 0)}</td>
-            <td>${esc(t.lineup?.optimal_points ?? "—")}</td>
-            <td>${esc(t.lineup?.efficiency ?? "—")}%</td>
+            <td>${t.lineup?.optimal_points == null ? "—" : esc(t.lineup.optimal_points)}</td>
+            <td>${t.lineup?.efficiency == null ? "—" : `${esc(t.lineup.efficiency)}%`}</td>
             <td>${star ? `${esc(star.name)} (${esc(star.points)})` : "—"}</td>
           </tr>`;
         }).join("")}</tbody>
       </table></div>
+      <div class="method-note">Historical optimal-lineup calculations depend on Sleeper retaining position metadata for the players used that season. Missing metadata is shown as unavailable rather than treated as 100% efficiency.</div>
     </div>`;
 }
 
@@ -274,10 +372,10 @@ function renderDraftCapital() {
   if (!data?.teams?.length) return `<div class="loading-card">Draft-capital data is not ready.</div>`;
   return `
     <div class="panel">
-      <div class="panel-header"><div><h2>Draft Capital Matrix</h2><div class="panel-sub">* = acquired pick · hover for original owner</div></div></div>
+      <div class="panel-header"><div><h2>Draft Capital Matrix</h2><div class="panel-sub">Current ownership · * = acquired pick · hover for original owner</div></div></div>
       <div class="table-wrap draft-wrap"><table class="draft-matrix">
         <thead><tr><th>Team</th>${(data.years || []).map(y => `<th>${esc(y)}</th>`).join("")}<th>1sts</th><th>1st+2nd</th></tr></thead>
-        <tbody>${data.teams.map(t => `<tr class="${String(t.roster_id) === MY_ROSTER_ID ? "highlight-row" : ""}">
+        <tbody>${data.teams.map(t => `<tr class="${isMe(t) ? "highlight-row" : ""}">
           <td><span class="player-name">${esc(t.team_name || t.manager)}</span><div class="table-note">${esc(t.manager || "")}</div></td>
           ${(data.years || []).map(y => `<td>${pickCell(t.years?.[y])}</td>`).join("")}
           <td><strong>${esc(t.summary?.firsts ?? 0)}</strong></td>
@@ -285,7 +383,7 @@ function renderDraftCapital() {
         </tr>`).join("")}</tbody>
       </table></div>
     </div>
-    <div class="method-note">Own picks are outlined normally; acquired picks use an asterisk. This page reads current Sleeper pick ownership, not projected draft position.</div>`;
+    <div class="method-note">Draft Capital is intentionally current-only: it represents assets available to trade today, not historical pick ownership.</div>`;
 }
 
 function gameLabel(game) {
@@ -303,8 +401,8 @@ function renderRecords() {
 
   return `
     <div class="panel">
-      <div class="panel-header"><div><h2>715 Record Book</h2><div class="panel-sub">${seasons.length} season${seasons.length === 1 ? "" : "s"} loaded · ${seasons.map(x => esc(x.season)).join(", ") || "current season only"}</div></div></div>
-      ${!hasGames ? `<div class="empty">No completed games are available yet. Run the new Sync Sleeper History workflow to populate previous seasons immediately.</div>` : `
+      <div class="panel-header"><div><h2>715 Record Book</h2><div class="panel-sub">All Time · ${seasons.map(x => esc(x.season)).join(", ") || "current season only"}</div></div></div>
+      ${!hasGames ? `<div class="empty">No completed games are available yet.</div>` : `
       <div class="record-grid">
         <article class="record-card"><span>🔥 Highest Week</span><strong>${esc(r.highest_week?.points)}</strong><small>${esc(r.highest_week?.manager)} · ${esc(r.highest_week?.season)} W${esc(r.highest_week?.week)}</small></article>
         <article class="record-card"><span>🧊 Lowest Score</span><strong>${esc(r.lowest_nonzero_week?.points)}</strong><small>${esc(r.lowest_nonzero_week?.manager)} · ${esc(r.lowest_nonzero_week?.season)} W${esc(r.lowest_nonzero_week?.week)}</small></article>
@@ -314,17 +412,17 @@ function renderRecords() {
     </div>
 
     <div class="panel">
-      <div class="panel-header"><div><h2>All-Time Manager Board</h2><div class="panel-sub">Head-to-head Sleeper matchups across imported seasons</div></div></div>
+      <div class="panel-header"><div><h2>All-Time Manager Board</h2><div class="panel-sub">Regular-season head-to-head history</div></div></div>
       ${(data.manager_careers || []).length ? `<div class="table-wrap"><table>
         <thead><tr><th>Manager</th><th>W</th><th>L</th><th>T</th><th>Win%</th><th>Points</th><th>Avg</th><th>Seasons</th></tr></thead>
-        <tbody>${data.manager_careers.map(m => `<tr>
+        <tbody>${data.manager_careers.map(m => `<tr class="${m.manager === "abewav" ? "highlight-row" : ""}">
           <td><span class="player-name">${esc(m.manager)}</span></td>
           <td>${esc(m.wins)}</td><td>${esc(m.losses)}</td><td>${esc(m.ties)}</td>
           <td>${(Number(m.win_pct || 0) * 100).toFixed(1)}%</td>
           <td>${esc(m.points_for)}</td><td>${esc(m.average_score)}</td>
           <td>${esc((m.seasons || []).join(", "))}</td>
         </tr>`).join("")}</tbody>
-      </table></div>` : `<div class="empty">Run Sync Sleeper History once to import prior seasons.</div>`}
+      </table></div>` : `<div class="empty">No historical regular-season games found.</div>`}
     </div>
     <div class="method-note">${esc(data.note || "")}</div>`;
 }
@@ -521,6 +619,23 @@ async function copyText(text, button) {
 }
 
 function wireViewControls() {
+  document.querySelectorAll("[data-scope]").forEach(btn => btn.addEventListener("click", () => {
+    state.analyticsScope = btn.dataset.scope;
+    render();
+  }));
+
+  document.querySelector("#recap-season")?.addEventListener("change", e => {
+    state.recapSeason = e.target.value;
+    const available = state.recap?.seasons?.[state.recapSeason]?.available_weeks || [];
+    state.recapWeek = available.length ? available[available.length - 1] : null;
+    render();
+  });
+
+  document.querySelector("#recap-week")?.addEventListener("change", e => {
+    state.recapWeek = Number(e.target.value);
+    render();
+  });
+
   document.querySelectorAll("[data-go]").forEach(btn => btn.addEventListener("click", () => {
     state.view = btn.dataset.go;
     setActiveNav();
@@ -573,6 +688,7 @@ function render() {
     power: ["Power Rankings", "Performance-based 715 Power Score"],
     recap: ["Weekly Recap", "Awards, lineup decisions and bench regret"],
     standings: ["Standings+", "All-play, median record and luck index"],
+    lineups: ["Lineup Lab", "Optimal lineups and bench regret"],
     draft: ["Draft Capital", "Future pick ownership across the league"],
     records: ["Records", "715 Dynasty history and all-time marks"],
     waivers: ["Waivers", "Confirmed available players"],
@@ -589,6 +705,7 @@ function render() {
   if (state.view === "power") app.innerHTML = renderPower();
   if (state.view === "recap") app.innerHTML = renderRecap();
   if (state.view === "standings") app.innerHTML = renderStandingsPlus();
+  if (state.view === "lineups") app.innerHTML = renderLineups();
   if (state.view === "draft") app.innerHTML = renderDraftCapital();
   if (state.view === "records") app.innerHTML = renderRecords();
   if (state.view === "waivers") app.innerHTML = renderWaivers();
@@ -617,6 +734,9 @@ async function boot() {
       getJson("record_book.json"),
     ]);
     Object.assign(state, { summary, teams, waivers, changes, transactions, needs, tradePartners, opportunities, power, standings, lineups, recap, draftCapital, records });
+    if (power?.scopes?.current?.status !== "live" && power?.scopes?.all_time?.status === "live") {
+      state.analyticsScope = "all_time";
+    }
     document.querySelector("#updated-at").textContent = `Derived data: ${fmtTime(summary.generated_at)}`;
     render();
   } catch (err) {
