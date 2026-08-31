@@ -10,6 +10,7 @@ from pathlib import Path
 from typing import Any
 
 from phase4 import build_phase4_outputs
+from ai_bridge import build_ai_outputs
 from external_intel import (
     attach_player_intel,
     build_market_summary,
@@ -1854,6 +1855,9 @@ def main() -> None:
 
     # Phase 4 — Forecasting + franchise intelligence
     build_phase4_outputs(ROOT)
+
+    # Phase 4.8 — compact AI bridge, data health and daily intelligence history.
+    build_ai_outputs(ROOT)
 
 
 if __name__ == "__main__":
