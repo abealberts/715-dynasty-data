@@ -1110,8 +1110,24 @@ def build_weekly_recap(week_metrics: list[dict[str, Any]]) -> dict[str, Any]:
     nuclear = max(teams, key=lambda x: x["score_vs_average"], default=None)
     pain = max(losers, key=lambda x: x["score"], default=None)
     robbery = min(winners, key=lambda x: x["score"], default=None)
-    perfect = max(teams, key=lambda x: (x.get("lineup") or {}).get("efficiency", 0), default=None)
-    disaster = min(teams, key=lambda x: (x.get("lineup") or {}).get("efficiency", 100), default=None)
+    # Historical lineup reconstruction can legitimately be unavailable when
+    # Sleeper no longer exposes enough position metadata for an old player.
+    # Exclude those samples from lineup-efficiency awards rather than trying
+    # to compare None with numeric efficiency values.
+    lineup_candidates = [
+        x for x in teams
+        if isinstance((x.get("lineup") or {}).get("efficiency"), (int, float))
+    ]
+    perfect = max(
+        lineup_candidates,
+        key=lambda x: (x.get("lineup") or {}).get("efficiency"),
+        default=None,
+    )
+    disaster = min(
+        lineup_candidates,
+        key=lambda x: (x.get("lineup") or {}).get("efficiency"),
+        default=None,
+    )
 
     bench_candidates = [
         x for x in teams
@@ -1128,8 +1144,8 @@ def build_weekly_recap(week_metrics: list[dict[str, Any]]) -> dict[str, Any]:
         award("nuclear_week", "Nuclear Week", "💣", nuclear, f"{nuclear['score_vs_average']:+.2f} vs league average" if nuclear else ""),
         award("pain", "Pain", "☠️", pain, f"Lost despite scoring {pain['score']:.2f}" if pain else ""),
         award("highway_robbery", "Highway Robbery", "🍀", robbery, f"Won with only {robbery['score']:.2f}" if robbery else ""),
-        award("perfect_manager", "Galaxy Brain", "🧠", perfect, f"{(perfect.get('lineup') or {}).get('efficiency', 0):.1f}% lineup efficiency" if perfect else ""),
-        award("coaching_disaster", "Coaching Disaster", "🤡", disaster, f"{(disaster.get('lineup') or {}).get('points_left', 0):.2f} points left on bench" if disaster else ""),
+        award("perfect_manager", "Galaxy Brain", "🧠", perfect, f"{float((perfect.get('lineup') or {}).get('efficiency')):.1f}% lineup efficiency" if perfect else ""),
+        award("coaching_disaster", "Coaching Disaster", "🤡", disaster, f"{float((disaster.get('lineup') or {}).get('points_left') or 0):.2f} points left on bench" if disaster else ""),
     ]
 
     if benchwarmer:
