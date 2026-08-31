@@ -1437,3 +1437,193 @@ tbody tr:hover td { background: rgba(228,218,192,.025); }
   .dossier-name { font-size:22px; }
   .legend-note { width:100%; margin-left:0; }
 }
+
+
+/* ==========================================================================
+   PHASE 4.8 — FINAL READABILITY + MOBILE PASS
+   Vintage material language stays in the shell; analytical surfaces are dark.
+   One sans-serif family is used everywhere.
+   ========================================================================== */
+
+:root {
+  --font-ui: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  --chart-bg: #12110e;
+  --chart-bg-2: #181610;
+  --chart-border: #51483a;
+  --chart-text: #eee5d0;
+  --chart-muted: #988f7e;
+}
+
+html, body, button, input, select, table,
+h1, h2, h3, h4, p, span, strong, small, label,
+.brand-title, .team-name, .stat-value, .power-score,
+.record-card strong, .profile-odds strong, .roster-player-name,
+.panel h2, .scope-panel h2, .viz-title, .dossier-name,
+.eyebrow, .nav-label, .stat-label, .panel-sub, th, .small-label,
+.pulse-item, .season-stamp, .slot-badge, .roster-player-meta,
+.roster-player-data, .market-number, .position-tag, .source-line,
+.axis-label, .chart-legend, .metric-strip, .fun-badge, .data-footnote,
+.press-edition, .print-board, .market-stack-label, .market-stack-value,
+.power-input-team, .power-input-score, .ticket-number, .ticket-columns,
+.ticket-note, .dossier-stamp, .dossier-basis, .dossier-grid span,
+.dossier-grid small {
+  font-family: var(--font-ui) !important;
+}
+
+/* Dark analytical cards: no cream/paper chart backgrounds. */
+.viz-panel,
+.player-dossier,
+.model-ticket {
+  color: var(--chart-text) !important;
+  background:
+    radial-gradient(circle at 17% 23%, rgba(229,218,192,.025) .55px, transparent .8px),
+    repeating-linear-gradient(0deg, rgba(255,255,255,.008) 0 1px, transparent 1px 7px),
+    var(--chart-bg) !important;
+  background-size: 9px 9px, auto, auto !important;
+  border-color: var(--chart-border) !important;
+  box-shadow: 4px 4px 0 rgba(0,0,0,.38) !important;
+}
+
+.viz-panel::after { border-color: rgba(226,215,188,.13) !important; }
+.viz-title, .dossier-name { color: var(--chart-text) !important; }
+.viz-kicker, .viz-panel .bar-label, .viz-panel .bar-value,
+.viz-panel .chart-legend, .viz-panel .data-footnote,
+.viz-panel .axis-label, .dossier-basis, .dossier-meta,
+.dossier-grid span, .dossier-grid small,
+.ticket-columns span, .ticket-columns small, .ticket-note,
+.market-stack-label, .quadrant-key, .power-input-team {
+  color: var(--chart-muted) !important;
+}
+
+.viz-panel .bar-value, .dossier-grid strong, .market-stack-value,
+.power-input-score, .ticket-columns strong { color: var(--chart-text) !important; }
+
+.viz-panel .bar-track,
+.market-stack-track,
+.metric-strip-track {
+  background: #27231b !important;
+  border-color: #5d5343 !important;
+}
+
+.scatter-wrap, .intel-scatter {
+  background:
+    linear-gradient(to right, rgba(234,223,199,.055) 1px, transparent 1px),
+    linear-gradient(to top, rgba(234,223,199,.055) 1px, transparent 1px),
+    #15130f !important;
+  background-size: 25% 25% !important;
+  border-left-color: #615746 !important;
+  border-bottom-color: #615746 !important;
+}
+
+.donut::before {
+  background: var(--chart-bg) !important;
+  border-color: #5b5141 !important;
+}
+.donut { box-shadow: 0 0 0 1px #5b5141 !important; }
+.donut-center strong { color: var(--chart-text) !important; }
+.donut-center span { color: var(--chart-muted) !important; }
+
+.player-dossier { border-left-color: var(--brick) !important; }
+.player-dossier::before { color: rgba(195,98,83,.62) !important; }
+.dossier-grid div {
+  background: #191711 !important;
+  border-top-color: #5f5544 !important;
+}
+
+.model-ticket { border-left-color: var(--brick) !important; }
+.model-ticket::after {
+  background: radial-gradient(circle at 100% 8px, var(--ink) 0 4px, transparent 4.5px) 0 0/10px 16px repeat-y !important;
+}
+.ticket-number { color: #c16b5e !important; }
+.ticket-columns div { border-top-color: #655a48 !important; }
+.ticket-note { border-top-color: #5b5140 !important; }
+
+.market-stack-label, .market-stack-value,
+.power-input-team, .power-input-score,
+.quadrant-key strong { color: var(--chart-text) !important; }
+.quadrant-key { color: var(--chart-muted) !important; }
+
+/* Data health + historical trend tape. */
+.final-ops-grid {
+  display:grid; grid-template-columns:1fr 1fr; gap:18px; margin-bottom:18px;
+}
+.ops-card {
+  border:1px solid #494134; border-top:3px solid #75657d;
+  background:
+    repeating-linear-gradient(0deg, rgba(255,255,255,.007) 0 1px, transparent 1px 7px),
+    #14120e;
+  padding:15px;
+}
+.ops-card:nth-child(2) { border-top-color:#52758a; }
+.ops-head { display:flex; align-items:center; justify-content:space-between; gap:10px; margin-bottom:12px; }
+.ops-head span { color:#9b927f; font-size:9px; font-weight:900; letter-spacing:.11em; }
+.ops-head strong { color:#e8dfca; font-size:10px; text-transform:uppercase; }
+.overall-health.healthy { color:#8c9b7f; }
+.overall-health.degraded { color:#c09a55; }
+.overall-health.error { color:#c2695b; }
+.health-grid { display:grid; grid-template-columns:1fr 1fr; gap:7px; }
+.health-source { display:grid; gap:2px; border:1px solid #3e382e; padding:8px; background:#17150f; }
+.health-source span { color:#8d8473; font-size:9px; }
+.health-source strong { color:#b7ad99; font-size:10px; text-transform:capitalize; }
+.health-source small { color:#6f685c; font-size:8px; line-height:1.35; }
+.health-source.ok { border-left:3px solid #647b60; }
+.health-source.expected { border-left:3px solid #b48a3e; }
+.health-source.warn { border-left:3px solid #a34b3e; }
+.trend-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:8px; }
+.trend-grid > div { display:grid; gap:6px; min-width:0; border:1px solid #3e382e; background:#17150f; padding:8px; }
+.trend-grid span { color:#887f6f; font-size:8px; font-weight:800; letter-spacing:.06em; }
+.trend-grid strong { color:#e5dcc7; font-size:12px; }
+.micro-spark { width:100%; height:38px; overflow:visible; }
+.trend-waiting { display:flex; min-height:38px; align-items:center; color:#6c6559 !important; font-size:8px !important; line-height:1.25; }
+
+/* PWA/mobile: compact sticky command ribbon instead of a tall sidebar. */
+body { padding-bottom: env(safe-area-inset-bottom); }
+.sidebar { padding-top: max(14px, env(safe-area-inset-top)); }
+
+@media (max-width: 720px) {
+  .shell { display:block !important; }
+  .sidebar {
+    position:sticky !important; top:0; z-index:80; height:auto !important;
+    padding: max(7px, env(safe-area-inset-top)) 9px 7px !important;
+    border-right:0 !important; border-bottom:1px solid #4b4235 !important;
+    background:rgba(11,10,8,.97) !important;
+    backdrop-filter:blur(10px);
+  }
+  .brand { padding:0 2px 7px !important; gap:8px !important; }
+  .brand-mark { width:31px !important; height:31px !important; font-size:12px !important; box-shadow:2px 2px 0 #4d251f !important; }
+  .brand-title { font-size:12px !important; }
+  .brand-sub { font-size:9px !important; }
+  .season-stamp, .sidebar-footer { display:none !important; }
+  #nav, nav {
+    display:flex !important; align-items:center; gap:5px !important;
+    overflow-x:auto !important; scroll-snap-type:x proximity;
+    padding-bottom:2px; scrollbar-width:none;
+  }
+  #nav::-webkit-scrollbar, nav::-webkit-scrollbar { display:none; }
+  .nav-section { display:flex !important; gap:5px !important; margin:0 !important; flex:0 0 auto; }
+  .nav-label { display:none !important; }
+  .nav-item {
+    flex:0 0 auto; min-width:auto !important; padding:7px 9px !important;
+    font-size:10px !important; scroll-snap-align:start; white-space:nowrap;
+  }
+  .topbar { min-height:auto !important; padding:13px 14px !important; }
+  .topbar h1 { font-size:25px !important; }
+  .topbar p { font-size:10px !important; }
+  .topbar-right { gap:5px !important; }
+  .updated { font-size:9px !important; }
+  .press-controls { display:none !important; }
+  .content { padding:14px 12px calc(28px + env(safe-area-inset-bottom)) !important; }
+  .pulse-inner { min-height:31px !important; }
+  .pulse-label { font-size:8px !important; padding:0 9px !important; }
+  .pulse-item { padding:8px 10px !important; font-size:9px !important; }
+  .final-ops-grid, .intel-chart-grid, .viz-grid { grid-template-columns:1fr !important; }
+  .health-grid, .trend-grid { grid-template-columns:1fr !important; }
+  .viz-panel { padding:13px !important; }
+  .intel-scatter, .scatter-wrap { height:250px !important; }
+  .dossier-grid { grid-template-columns:1fr 1fr !important; }
+}
+
+/* Keep paper only where it is actually useful: physical print output. */
+@media screen {
+  .viz-panel, .player-dossier, .model-ticket { --paper-local: var(--chart-bg); }
+}
