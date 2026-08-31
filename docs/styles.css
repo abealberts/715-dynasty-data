@@ -229,3 +229,24 @@ select, input {
   .nav-section { grid-template-columns: repeat(5, minmax(115px, 1fr)); overflow-x: auto; }
   .nav-label { grid-column: 1 / -1; }
 }
+
+
+/* Phase 3.2 — historical analytics scopes */
+.scope-panel {
+  display: flex; align-items: center; justify-content: space-between; gap: 18px;
+}
+.scope-toggle {
+  display: inline-flex; border: 1px solid var(--border); border-radius: 10px;
+  padding: 3px; background: #10151b; flex-shrink: 0;
+}
+.scope-button {
+  border: 0; background: transparent; color: var(--muted); border-radius: 7px;
+  padding: 7px 11px; cursor: pointer; font-size: 11px; font-weight: 750;
+}
+.scope-button.active { background: var(--accent-dim); color: var(--accent); }
+.scope-button:hover { color: var(--text); }
+@media (max-width: 720px) {
+  .scope-panel { align-items: flex-start; flex-direction: column; }
+  .scope-toggle { width: 100%; }
+  .scope-button { flex: 1; }
+}
