@@ -20,6 +20,8 @@ const state = {
   playoffs: null,
   profiles: null,
   managerTendencies: null,
+  playerIntel: null,
+  marketSummary: null,
   profileRosterId: MY_ROSTER_ID,
   view: "home",
   tradePartnerId: null,
@@ -32,6 +34,10 @@ async function getJson(name) {
   const res = await fetch(`${RAW}/${name}?t=${Date.now()}`, { cache: "no-store" });
   if (!res.ok) throw new Error(`${name}: ${res.status}`);
   return res.json();
+}
+
+async function getOptionalJson(name, fallback = null) {
+  try { return await getJson(name); } catch { return fallback; }
 }
 
 function esc(value) {
@@ -52,20 +58,84 @@ function stat(label, value, note = "") {
   return `<article class="stat-card"><div class="stat-label">${esc(label)}</div><div class="stat-value">${esc(value)}</div><div class="stat-note">${esc(note)}</div></article>`;
 }
 
+function sourceAttribution(showMarket = true, showPerformance = true) {
+  const bits = [];
+  if (showMarket) bits.push(`Market values by <a href="https://www.dynastydealer.com/" target="_blank" rel="noopener">Dynasty Dealer</a>`);
+  if (showPerformance) bits.push(`NFL performance via <a href="https://nflverse.com/" target="_blank" rel="noopener">nflverse</a>`);
+  return `<div class="source-line">${bits.join(" · ")}</div>`;
+}
+
+function perfLabel(player) {
+  const p = player?.performance;
+  if (!p) return "—";
+  const basis = p.basis === "current" ? p.basis_label : `${p.basis_label} prior`;
+  return `${p.ppg_715 ?? "—"} PPG · ${p.opportunities_per_game ?? "—"} opp/g · ${basis}`;
+}
+
 function playerTable(players) {
   if (!players?.length) return `<div class="empty">No players found.</div>`;
+  const enriched = players.some(p => p.market_value || p.performance);
   return `<div class="table-wrap"><table>
-    <thead><tr><th>Player</th><th>Pos</th><th>NFL</th><th>Age</th><th>Depth</th><th>Status</th></tr></thead>
+    <thead><tr><th>Player</th><th>Pos</th><th>NFL</th><th>Age</th><th>Depth</th><th>Status</th>${enriched ? "<th>Market</th><th>Performance</th>" : ""}</tr></thead>
     <tbody>${players.map(p => `<tr>
       <td><span class="player-name">${esc(p.name)}</span> ${p.starter ? '<span class="starter-badge">START</span>' : ''}</td>
-      <td>${esc(p.position || "—")}</td>
+      <td><span class="position-tag pos-${esc(p.position || "OTHER")}">${esc(p.position || "—")}</span></td>
       <td>${esc(p.team || "FA")}</td>
       <td>${esc(p.age ?? "—")}</td>
       <td>${esc(p.depth ?? p.depth_chart_order ?? "—")}</td>
       <td class="${p.injury_status ? 'injury' : 'muted'}">${esc(p.injury_status || p.status || "—")}</td>
+      ${enriched ? `<td>${p.market_value ? `<strong>${Number(p.market_value).toLocaleString()}</strong><span class="table-note">#${esc(p.market_position_rank ?? "—")} ${esc(p.position || "")}</span>` : "—"}</td><td>${esc(perfLabel(p))}</td>` : ""}
     </tr>`).join("")}</tbody>
-  </table></div>`;
+  </table></div>${enriched ? sourceAttribution(true, true) : ""}`;
 }
+
+function rosterPlayerCard(player, slotLabel = null) {
+  if (!player) {
+    return `<div class="roster-player empty-slot"><div class="slot-badge">${esc(slotLabel || "OPEN")}</div><div><strong>Open slot</strong><small>No starter submitted</small></div></div>`;
+  }
+  const perf = player.performance;
+  const market = Number(player.market_value || 0);
+  return `<div class="roster-player pos-card-${esc(player.position || "OTHER")}">
+    <div class="slot-badge">${esc(slotLabel || player.position || "BN")}</div>
+    <div class="roster-player-main">
+      <div class="roster-player-name">${esc(player.name)}</div>
+      <div class="roster-player-meta">
+        <span class="position-tag pos-${esc(player.position || "OTHER")}">${esc(player.position || "—")}</span>
+        <span>${esc(player.team || "FA")}</span>
+        ${player.age != null ? `<span>Age ${esc(player.age)}</span>` : ""}
+        ${player.injury_status ? `<span class="injury">${esc(player.injury_status)}</span>` : ""}
+      </div>
+    </div>
+    <div class="roster-player-data">
+      <strong class="market-number">${market ? market.toLocaleString() : "—"}</strong>
+      <small>${perf ? `${esc(perf.ppg_715)} PPG · ${esc(perf.opportunities_per_game)} opp/g` : "No performance sample"}</small>
+    </div>
+  </div>`;
+}
+
+function rosterBoard(team) {
+  if (!team) return `<div class="empty">Roster unavailable.</div>`;
+  const lineup = team.lineup || [];
+  const bench = team.bench_by_position || {};
+  const posOrder = ["QB","RB","WR","TE","OTHER"];
+
+  return `<div class="roster-board">
+    <section class="roster-section">
+      <div class="roster-section-title"><span>STARTING LINEUP</span><small>${lineup.filter(x => x.player).length}/${lineup.length || 9} filled</small></div>
+      <div class="starter-board">${lineup.map(x => rosterPlayerCard(x.player, x.slot_label)).join("")}</div>
+    </section>
+    <section class="roster-section">
+      <div class="roster-section-title"><span>BENCH</span><small>Grouped by position</small></div>
+      <div class="bench-groups">${posOrder.filter(pos => (bench[pos] || []).length).map(pos => `
+        <div class="bench-group">
+          <div class="bench-group-head"><span class="position-tag pos-${pos}">${pos}</span><strong>${(bench[pos] || []).length}</strong></div>
+          <div class="bench-player-list">${(bench[pos] || []).map(p => rosterPlayerCard(p, "BN")).join("")}</div>
+        </div>`).join("")}</div>
+    </section>
+    ${sourceAttribution(true, true)}
+  </div>`;
+}
+
 
 function picksTable(picks) {
   if (!picks?.length) return `<div class="empty">No picks found.</div>`;
@@ -208,16 +278,22 @@ function renderPower() {
   return `${header}<div class="panel">
     <div class="method-note">${esc(data.methodology)}</div>
     <div class="table-wrap"><table>
-      <thead><tr><th>Rank</th><th>Team</th><th>Power</th><th>${state.analyticsScope === "all_time" ? "Career Avg" : "3-Wk Avg"}</th><th>All-Play</th><th>Median</th><th>Efficiency</th><th>H2H</th></tr></thead>
+      <thead><tr><th>Rank</th><th>Team</th><th>Power</th>${state.analyticsScope === "all_time" ? "<th>Career Avg</th><th>All-Play</th><th>Median</th><th>Efficiency</th><th>H2H</th>" : "<th>Market</th><th>Starter Value</th><th>Historical Prior</th><th>Live Perf</th><th>H2H</th>"}</tr></thead>
       <tbody>${data.rankings.map(r => `<tr class="${isMe(r) ? "highlight-row" : ""}">
         <td><span class="rank-number">${r.rank}</span> ${movementLabel(r.movement)}</td>
         <td><span class="player-name">${esc(r.team_name || r.manager)}</span><div class="table-note">${esc(r.manager || "")}${r.seasons?.length ? ` · ${esc(r.seasons.join(", "))}` : ""}</div></td>
         <td><span class="power-score">${esc(r.power_score)}</span></td>
-        <td>${esc(state.analyticsScope === "all_time" ? r.average_score : r.recent_3_average)}</td>
-        <td>${recordText(r.all_play)}</td>
-        <td>${recordText(r.median)}</td>
-        <td>${r.lineup_efficiency == null ? "—" : `${esc(r.lineup_efficiency)}%`}</td>
-        <td>${recordText(r.h2h)}</td>
+        ${state.analyticsScope === "all_time" ? `
+          <td>${esc(r.average_score)}</td>
+          <td>${recordText(r.all_play)}</td>
+          <td>${recordText(r.median)}</td>
+          <td>${r.lineup_efficiency == null ? "—" : `${esc(r.lineup_efficiency)}%`}</td>
+          <td>${recordText(r.h2h)}</td>` : `
+          <td>${r.market_strength != null ? `${esc(r.market_strength)}/100` : "—"}</td>
+          <td>${r.starter_market_value ? Number(r.starter_market_value).toLocaleString() : "—"}</td>
+          <td>${esc(r.historical_prior_score ?? "—")}</td>
+          <td>${esc(r.live_performance_score ?? "—")}</td>
+          <td>${recordText(r.h2h)}</td>`}
       </tr>`).join("")}</tbody>
     </table></div>
   </div>`;
@@ -543,6 +619,68 @@ function renderManagerTendencies() {
 }
 
 
+function renderPlayerIntel() {
+  const data = state.playerIntel;
+  if (!data?.players?.length) {
+    return `<div class="notice-card"><div class="notice-icon">📡</div><div><h2>Player Intelligence feed is waiting for its first sync</h2><p>Run <strong>Sync External Player Intelligence</strong> once. The rest of the dashboard continues to work without it.</p></div></div>`;
+  }
+  const c = data.coverage || {};
+  return `
+    <div class="stats-grid">
+      ${stat("Market Coverage", c.market_values ?? 0, `${c.relevant_players ?? 0} relevant players`)}
+      ${stat("Performance Samples", c.performance_samples ?? 0, "Current or prior-season nflverse")}
+      ${stat("Market Source", "Dynasty Dealer", "Daily trade-derived values")}
+      ${stat("Performance", "nflverse", "715 scoring + usage")}
+    </div>
+    <div class="panel">
+      <div class="panel-header">
+        <div><h2>Player Intelligence Feed</h2><div class="panel-sub">Market value + actual NFL usage and production</div></div>
+        <div class="toolbar">
+          <select id="intel-pos"><option value="ALL">All positions</option><option>QB</option><option>RB</option><option>WR</option><option>TE</option></select>
+          <select id="intel-owner"><option value="ALL">All players</option><option value="ROSTERED">Rostered</option><option value="AVAILABLE">Available</option></select>
+          <input id="intel-search" class="search" type="search" placeholder="Search player or NFL team" />
+        </div>
+      </div>
+      <div id="intel-results"></div>
+      ${sourceAttribution(true, true)}
+    </div>`;
+}
+
+function filteredIntel() {
+  const pos = document.querySelector("#intel-pos")?.value || "ALL";
+  const owner = document.querySelector("#intel-owner")?.value || "ALL";
+  const q = (document.querySelector("#intel-search")?.value || "").trim().toLowerCase();
+  let rows = state.playerIntel?.players || [];
+  if (pos !== "ALL") rows = rows.filter(x => x.position === pos);
+  if (owner === "ROSTERED") rows = rows.filter(x => !!x.ownership);
+  if (owner === "AVAILABLE") rows = rows.filter(x => !x.ownership);
+  if (q) rows = rows.filter(x => `${x.name} ${x.team || ""} ${x.ownership?.manager || ""}`.toLowerCase().includes(q));
+  return rows;
+}
+
+function updateIntel() {
+  const target = document.querySelector("#intel-results");
+  if (!target) return;
+  const rows = filteredIntel().slice(0, 300);
+  target.innerHTML = `<div class="table-wrap"><table>
+    <thead><tr><th>Player</th><th>Owner</th><th>Market</th><th>Market Rank</th><th>715 PPG</th><th>Opp/G</th><th>Snap%</th><th>Basis</th></tr></thead>
+    <tbody>${rows.map(x => {
+      const p = x.performance || {};
+      return `<tr class="${String(x.ownership?.roster_id) === MY_ROSTER_ID ? "highlight-row" : ""}">
+        <td><span class="player-name">${esc(x.name)}</span><div class="table-note"><span class="position-tag pos-${esc(x.position || "OTHER")}">${esc(x.position || "—")}</span> ${esc(x.team || "FA")} · age ${esc(x.age ?? "—")}</div></td>
+        <td>${esc(x.ownership?.team_name || x.ownership?.manager || "FREE AGENT")}</td>
+        <td><strong>${x.market_value ? Number(x.market_value).toLocaleString() : "—"}</strong></td>
+        <td>${x.market_rank ? `#${esc(x.market_rank)} · #${esc(x.market_position_rank)} ${esc(x.position)}` : "—"}</td>
+        <td>${esc(p.ppg_715 ?? "—")}</td>
+        <td>${esc(p.opportunities_per_game ?? "—")}</td>
+        <td>${p.offense_snap_pct != null ? `${esc(p.offense_snap_pct)}%` : "—"}</td>
+        <td>${p.basis ? `${esc(p.basis_label)} ${p.basis === "prior" ? "prior" : "current"}` : "—"}</td>
+      </tr>`;
+    }).join("")}</tbody>
+  </table></div>`;
+}
+
+
 function renderTeam() {
   const me = state.teams?.[MY_ROSTER_ID];
   const profile = state.needs?.teams?.[MY_ROSTER_ID];
@@ -562,7 +700,7 @@ function renderTeam() {
     </div>
     <div class="panel"><div class="panel-header"><div><h2>Roster Shape</h2><div class="panel-sub">Count vs league average; this does not grade player quality</div></div></div><div class="shape-grid">${signals}</div></div>
     <div class="grid-2">
-      <div class="panel"><div class="panel-header"><div><h2>Roster</h2><div class="panel-sub">Starters highlighted</div></div></div>${playerTable(me.players)}</div>
+      <div class="panel"><div class="panel-header"><div><h2>Roster</h2><div class="panel-sub">Starters highlighted</div></div></div>${rosterBoard(me)}</div>
       <div class="panel"><div class="panel-header"><div><h2>Draft Capital</h2><div class="panel-sub">Picks currently owned</div></div></div>${picksTable(me.picks)}</div>
     </div>`;
 }
@@ -624,7 +762,7 @@ function renderTradeFinder() {
     </div>
 
     <div class="grid-2 even">
-      <div class="panel"><div class="panel-header"><div><h2>Their Roster</h2><div class="panel-sub">Targets to research</div></div></div>${playerTable(them.players)}</div>
+      <div class="panel"><div class="panel-header"><div><h2>Their Roster</h2><div class="panel-sub">Targets to research</div></div></div>${rosterBoard(them)}</div>
       <div class="panel"><div class="panel-header"><div><h2>Their Draft Capital</h2><div class="panel-sub">Current ownership</div></div></div>${picksTable(them.picks)}</div>
     </div>`;
 }
@@ -781,6 +919,12 @@ function wireViewControls() {
     updateWaivers();
   }
 
+  if (state.view === "intel") {
+    ["#intel-pos", "#intel-owner"].forEach(sel => document.querySelector(sel)?.addEventListener("change", updateIntel));
+    document.querySelector("#intel-search")?.addEventListener("input", updateIntel);
+    updateIntel();
+  }
+
   if (state.view === "opportunities") {
     ["#opp-pos", "#opp-tier"].forEach(sel => document.querySelector(sel)?.addEventListener("change", updateOpportunities));
     document.querySelector("#opp-search")?.addEventListener("input", updateOpportunities);
@@ -816,6 +960,7 @@ function render() {
     waivers: ["Waivers", "Confirmed available players"],
     league: ["League", "Roster and asset map"],
     activity: ["Activity", "Adds, drops, trades and detected changes"],
+    intel: ["Player Intel", "Dynasty market + NFL performance feed"],
   };
   document.querySelector("#page-title").textContent = titles[state.view][0];
   document.querySelector("#page-subtitle").textContent = titles[state.view][1];
@@ -836,13 +981,14 @@ function render() {
   if (state.view === "waivers") app.innerHTML = renderWaivers();
   if (state.view === "league") app.innerHTML = renderLeague();
   if (state.view === "activity") app.innerHTML = renderActivity();
+  if (state.view === "intel") app.innerHTML = renderPlayerIntel();
 
   wireViewControls();
 }
 
 async function boot() {
   try {
-    const [summary, teams, waivers, changes, transactions, needs, tradePartners, opportunities, power, standings, lineups, recap, draftCapital, records, playoffs, profiles, managerTendencies] = await Promise.all([
+    const [summary, teams, waivers, changes, transactions, needs, tradePartners, opportunities, power, standings, lineups, recap, draftCapital, records, playoffs, profiles, managerTendencies, playerIntel, marketSummary] = await Promise.all([
       getJson("league_summary.json"),
       getJson("team_assets.json"),
       getJson("free_agents_by_position.json"),
@@ -860,8 +1006,10 @@ async function boot() {
       getJson("playoff_simulator.json"),
       getJson("team_profiles.json"),
       getJson("manager_tendencies.json"),
+      getOptionalJson("player_intel.json", null),
+      getOptionalJson("roster_market_values.json", null),
     ]);
-    Object.assign(state, { summary, teams, waivers, changes, transactions, needs, tradePartners, opportunities, power, standings, lineups, recap, draftCapital, records, playoffs, profiles, managerTendencies });
+    Object.assign(state, { summary, teams, waivers, changes, transactions, needs, tradePartners, opportunities, power, standings, lineups, recap, draftCapital, records, playoffs, profiles, managerTendencies, playerIntel, marketSummary });
     if (power?.scopes?.current?.status !== "live" && power?.scopes?.all_time?.status === "live") {
       state.analyticsScope = "all_time";
     }
