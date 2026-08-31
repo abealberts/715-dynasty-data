@@ -17,6 +17,10 @@ const state = {
   recap: null,
   draftCapital: null,
   records: null,
+  playoffs: null,
+  profiles: null,
+  managerTendencies: null,
+  profileRosterId: MY_ROSTER_ID,
   view: "home",
   tradePartnerId: null,
   analyticsScope: "current",
@@ -428,6 +432,117 @@ function renderRecords() {
 }
 
 
+function oddsClass(value) {
+  const n = Number(value || 0);
+  if (n >= 65) return "luck-good";
+  if (n <= 25) return "luck-bad";
+  return "muted";
+}
+
+function renderPlayoffSimulator() {
+  const data = state.playoffs;
+  if (!data?.teams?.length) return `<div class="loading-card">Playoff model is not ready.</div>`;
+  const blend = data.model_blend || {};
+  const leader = data.teams[0];
+  const mine = data.teams.find(x => String(x.roster_id) === MY_ROSTER_ID);
+  return `
+    <div class="stats-grid">
+      ${stat("Model", data.model_status === "preseason_prior" ? "2025 PRIOR" : data.model_status === "blended" ? "BLENDED" : "2026 LIVE", `${blend.historical_weight ?? 0}% history / ${blend.current_season_weight ?? 0}% 2026`)}
+      ${stat("Favorite", leader?.team_name || leader?.manager || "—", `${leader?.playoff_odds ?? 0}% playoffs`)}
+      ${stat("Bilge Rats", `${mine?.playoff_odds ?? 0}%`, `${mine?.title_odds ?? 0}% simulated title odds`)}
+      ${stat("Playoff Cut", data.average_fourth_seed_standings_wins ?? "—", "Avg standings wins · H2H + median")}
+    </div>
+    <div class="panel">
+      <div class="panel-header"><div><h2>10,000-Season Playoff Simulator</h2><div class="panel-sub">${esc(data.completed_weeks?.length || 0)} completed 2026 weeks · ${esc(data.playoff_teams)} playoff spots</div></div></div>
+      <div class="model-blend"><div class="blend-history" style="width:${Number(blend.historical_weight || 0)}%"></div><div class="blend-current" style="width:${Number(blend.current_season_weight || 0)}%"></div></div>
+      <div class="blend-labels"><span>Historical prior ${esc(blend.historical_weight ?? 0)}%</span><span>2026 results ${esc(blend.current_season_weight ?? 0)}%</span></div>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Team</th><th>Playoffs</th><th>#1 Seed</th><th>Title</th><th>Proj Wins</th><th>Model Avg</th><th>Volatility</th></tr></thead>
+        <tbody>${data.teams.map(t => `<tr class="${isMe(t) ? "highlight-row" : ""}">
+          <td><span class="player-name">${esc(t.team_name || t.manager)}</span><div class="table-note">${esc(t.manager || "")}</div></td>
+          <td class="${oddsClass(t.playoff_odds)}"><strong>${esc(t.playoff_odds)}%</strong></td>
+          <td>${esc(t.one_seed_odds)}%</td>
+          <td>${esc(t.title_odds)}%</td>
+          <td>${esc(t.projected_standings_wins)}-${esc(t.projected_standings_losses)}</td>
+          <td>${esc(t.model_mean)}</td>
+          <td>±${esc(t.model_sd)}</td>
+        </tr>`).join("")}</tbody>
+      </table></div>
+      <div class="method-note">${esc(data.methodology)}</div>
+    </div>`;
+}
+
+function metricBar(label, value) {
+  const n = Math.max(0, Math.min(100, Number(value || 0)));
+  return `<div class="profile-metric"><div class="profile-metric-head"><span>${esc(label)}</span><strong>${n.toFixed(1)}</strong></div><div class="profile-bar"><span style="width:${n}%"></span></div></div>`;
+}
+
+function renderProfiles() {
+  const data = state.profiles;
+  if (!data?.teams?.length) return `<div class="loading-card">Team profiles are not ready.</div>`;
+  if (!data.teams.some(x => String(x.roster_id) === String(state.profileRosterId))) state.profileRosterId = String(data.teams[0].roster_id);
+  const team = data.teams.find(x => String(x.roster_id) === String(state.profileRosterId)) || data.teams[0];
+  const m = team.metrics || {};
+  return `
+    <div class="panel scope-panel"><div><h2>Franchise Profiles</h2><div class="panel-sub">Current roster construction + ${esc(data.model_status === "preseason_prior" ? "2025 performance prior" : "blended performance model")}</div></div>
+      <select id="profile-team">${data.teams.map(t => `<option value="${esc(t.roster_id)}" ${String(t.roster_id) === String(team.roster_id) ? "selected" : ""}>${esc(t.team_name || t.manager)}</option>`).join("")}</select>
+    </div>
+    <div class="profile-hero ${isMe(team) ? "mine-profile" : ""}">
+      <div><div class="profile-kicker">${esc(team.window)}</div><h2>${esc(team.team_name || team.manager)}</h2><div class="muted">${esc(team.manager)} · Franchise Score ${esc(team.franchise_score)}</div></div>
+      <div class="profile-odds"><strong>${esc(team.playoff_odds)}%</strong><span>playoff odds</span></div>
+    </div>
+    <div class="profile-layout">
+      <div class="panel">
+        <div class="panel-header"><div><h2>Profile</h2><div class="panel-sub">Relative 0–100 scores inside 715</div></div></div>
+        ${metricBar("Performance Prior", m.performance_prior)}
+        ${metricBar("Draft Capital", m.draft_capital)}
+        ${metricBar("Youth", m.youth)}
+        ${metricBar("Roster Balance", m.roster_balance)}
+        ${metricBar("Lineup Management", m.lineup_management)}
+        ${metricBar("Stability", m.stability)}
+      </div>
+      <div class="panel">
+        <div class="panel-header"><div><h2>Snapshot</h2><div class="panel-sub">Practical franchise context</div></div></div>
+        <div class="profile-facts">
+          <div><span>Avg roster age</span><strong>${esc(team.average_roster_age ?? "—")}</strong></div>
+          <div><span>Age ≤25</span><strong>${esc(team.young_player_share)}%</strong></div>
+          <div><span>Future picks</span><strong>${esc(team.pick_count)}</strong></div>
+          <div><span>Future 1sts</span><strong>${esc(team.first_round_picks)}</strong></div>
+          <div><span>Title odds</span><strong>${esc(team.title_odds)}%</strong></div>
+          <div><span>Scoring model</span><strong>${esc(team.model_mean)}</strong></div>
+        </div>
+        <div class="profile-notes"><div><span>Strengths</span><strong>${esc((team.strengths || []).join(" · ") || "No standout relative edge")}</strong></div><div><span>Risks</span><strong>${esc((team.risks || []).join(" · ") || "No major relative flag")}</strong></div></div>
+      </div>
+    </div>
+    <div class="method-note">${esc(data.methodology)}</div>`;
+}
+
+function renderManagerTendencies() {
+  const bundle = state.managerTendencies;
+  const data = bundle?.scopes?.[state.analyticsScope];
+  const managers = data?.managers || [];
+  return `
+    <div class="panel scope-panel"><div><h2>Manager Tendencies</h2><div class="panel-sub">Behavior from actual Sleeper transactions</div></div>${scopeToggle()}</div>
+    ${state.analyticsScope === "all_time" && !(bundle?.historical_transaction_seasons_loaded || []).length ? `<div class="notice-card"><div class="notice-icon">📦</div><div><h2>Historical transactions need one import</h2><p>Run Sync Sleeper History once after installing Phase 4. Current 2026 tendencies are already available.</p></div></div>` : ""}
+    <div class="panel">
+      <div class="table-wrap"><table>
+        <thead><tr><th>Manager</th><th>Style</th><th>Trades</th><th>Waivers</th><th>FAAB</th><th>Moves</th><th>Net 1sts</th><th>Waiver Hit%</th></tr></thead>
+        <tbody>${managers.map(m => `<tr class="${m.manager === "abewav" ? "highlight-row" : ""}">
+          <td><span class="player-name">${esc(m.manager)}</span><div class="table-note">${esc((m.tags || []).join(" · "))}</div></td>
+          <td><span class="tendency-pill">${esc(m.primary_tendency)}</span></td>
+          <td>${esc(m.trades)} <span class="table-note">(${esc(m.trades_initiated)} initiated)</span></td>
+          <td>${esc(m.waiver_successes)}/${esc(m.waiver_attempts)}</td>
+          <td>$${esc(m.faab_spent)}</td>
+          <td>${esc(m.roster_moves)}</td>
+          <td class="${Number(m.net_firsts) > 0 ? "luck-good" : Number(m.net_firsts) < 0 ? "luck-bad" : "muted"}">${Number(m.net_firsts) > 0 ? "+" : ""}${esc(m.net_firsts)}</td>
+          <td>${m.waiver_success_rate == null ? "—" : `${esc(m.waiver_success_rate)}%`}</td>
+        </tr>`).join("")}</tbody>
+      </table></div>
+      <div class="method-note">${esc(bundle?.methodology || "")}</div>
+    </div>`;
+}
+
+
 function renderTeam() {
   const me = state.teams?.[MY_ROSTER_ID];
   const profile = state.needs?.teams?.[MY_ROSTER_ID];
@@ -619,6 +734,10 @@ async function copyText(text, button) {
 }
 
 function wireViewControls() {
+  document.querySelector("#profile-team")?.addEventListener("change", e => {
+    state.profileRosterId = e.target.value;
+    render();
+  });
   document.querySelectorAll("[data-scope]").forEach(btn => btn.addEventListener("click", () => {
     state.analyticsScope = btn.dataset.scope;
     render();
@@ -689,6 +808,9 @@ function render() {
     recap: ["Weekly Recap", "Awards, lineup decisions and bench regret"],
     standings: ["Standings+", "All-play, median record and luck index"],
     lineups: ["Lineup Lab", "Optimal lineups and bench regret"],
+    playoffs: ["Playoff Simulator", "10,000 simulated 715 seasons"],
+    profiles: ["Team Profiles", "Franchise outlook and roster construction"],
+    managers: ["Manager Tendencies", "How 715 managers actually behave"],
     draft: ["Draft Capital", "Future pick ownership across the league"],
     records: ["Records", "715 Dynasty history and all-time marks"],
     waivers: ["Waivers", "Confirmed available players"],
@@ -706,6 +828,9 @@ function render() {
   if (state.view === "recap") app.innerHTML = renderRecap();
   if (state.view === "standings") app.innerHTML = renderStandingsPlus();
   if (state.view === "lineups") app.innerHTML = renderLineups();
+  if (state.view === "playoffs") app.innerHTML = renderPlayoffSimulator();
+  if (state.view === "profiles") app.innerHTML = renderProfiles();
+  if (state.view === "managers") app.innerHTML = renderManagerTendencies();
   if (state.view === "draft") app.innerHTML = renderDraftCapital();
   if (state.view === "records") app.innerHTML = renderRecords();
   if (state.view === "waivers") app.innerHTML = renderWaivers();
@@ -717,7 +842,7 @@ function render() {
 
 async function boot() {
   try {
-    const [summary, teams, waivers, changes, transactions, needs, tradePartners, opportunities, power, standings, lineups, recap, draftCapital, records] = await Promise.all([
+    const [summary, teams, waivers, changes, transactions, needs, tradePartners, opportunities, power, standings, lineups, recap, draftCapital, records, playoffs, profiles, managerTendencies] = await Promise.all([
       getJson("league_summary.json"),
       getJson("team_assets.json"),
       getJson("free_agents_by_position.json"),
@@ -732,15 +857,18 @@ async function boot() {
       getJson("weekly_recap.json"),
       getJson("draft_capital_matrix.json"),
       getJson("record_book.json"),
+      getJson("playoff_simulator.json"),
+      getJson("team_profiles.json"),
+      getJson("manager_tendencies.json"),
     ]);
-    Object.assign(state, { summary, teams, waivers, changes, transactions, needs, tradePartners, opportunities, power, standings, lineups, recap, draftCapital, records });
+    Object.assign(state, { summary, teams, waivers, changes, transactions, needs, tradePartners, opportunities, power, standings, lineups, recap, draftCapital, records, playoffs, profiles, managerTendencies });
     if (power?.scopes?.current?.status !== "live" && power?.scopes?.all_time?.status === "live") {
       state.analyticsScope = "all_time";
     }
     document.querySelector("#updated-at").textContent = `Derived data: ${fmtTime(summary.generated_at)}`;
     render();
   } catch (err) {
-    document.querySelector("#app").innerHTML = `<div class="loading-card"><strong>Phase 2 data is not ready yet.</strong><br><br>${esc(err.message)}<br><br>Run Sync Sleeper Players once after installing the Phase 2 scripts.</div>`;
+    document.querySelector("#app").innerHTML = `<div class="loading-card"><strong>Dashboard data is not ready yet.</strong><br><br>${esc(err.message)}<br><br>Run Sync Sleeper Players once after installing the Phase 2 scripts.</div>`;
     console.error(err);
   }
 }
