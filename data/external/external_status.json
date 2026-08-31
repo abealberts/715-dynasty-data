@@ -1,0 +1,35 @@
+{
+  "generated_at": "2026-08-31T04:34:27.678761+00:00",
+  "sources": {
+    "dynasty_dealer": {
+      "players": 964,
+      "status": "ok",
+      "url": "https://www.dynastydealer.com/api/player-values"
+    },
+    "nflverse_snaps_2025": {
+      "rows": 26612,
+      "status": "ok",
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/snap_counts/snap_counts_2025.csv"
+    },
+    "nflverse_snaps_2026": {
+      "error": "Failed to fetch https://github.com/nflverse/nflverse-data/releases/download/snap_counts/snap_counts_2026.csv: HTTP Error 404: Not Found",
+      "status": "unavailable",
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/snap_counts/snap_counts_2026.csv"
+    },
+    "nflverse_stats_2025": {
+      "rows": 19422,
+      "status": "ok",
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2025.csv"
+    },
+    "nflverse_stats_2026": {
+      "error": "Failed to fetch https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv: HTTP Error 404: Not Found",
+      "status": "unavailable",
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv"
+    },
+    "player_ids": {
+      "rows": 12484,
+      "status": "ok",
+      "url": "https://raw.githubusercontent.com/dynastyprocess/data/master/files/db_playerids.csv"
+    }
+  }
+}

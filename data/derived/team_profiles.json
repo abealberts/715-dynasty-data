@@ -1,6 +1,7 @@
 {
-  "generated_at": "2026-08-31T03:57:23.409781+00:00",
-  "methodology": "Current franchise profile combining the historical/current scoring model with today's roster age, roster-shape balance, current draft capital, historical lineup efficiency, and scoring stability. It is a decision-support profile, not a dynasty market-value ranking.",
+  "generated_at": "2026-08-31T04:34:42.474813+00:00",
+  "market_attribution": "Values by Dynasty Dealer — https://www.dynastydealer.com/",
+  "methodology": "Current franchise profile: 30% performance model, 25% current Dynasty Dealer roster-market strength, 15% draft capital, 10% youth, 10% roster balance, 5% historical lineup management, and 5% scoring stability. It is a decision-support profile rather than a direct trade calculator.",
   "model_blend": {
     "current_season_weight": 0.0,
     "full_transition_after_weeks": 6,
@@ -9,54 +10,25 @@
   "model_status": "preseason_prior",
   "teams": [
     {
-      "average_roster_age": 24.4,
-      "early_picks": 16,
-      "first_round_picks": 11,
-      "franchise_score": 77.8,
-      "manager": "nathanhoglund",
-      "metrics": {
-        "draft_capital": 75.0,
-        "lineup_management": 93.5,
-        "performance_prior": 76.6,
-        "roster_balance": 100.0,
-        "stability": 52.7,
-        "youth": 67.8
-      },
-      "model_mean": 131.6,
-      "model_sd": 34.0,
-      "owner_id": "871224307018289152",
-      "pick_count": 33,
-      "playoff_odds": 32.0,
-      "risks": [],
-      "roster_id": 5,
-      "strengths": [
-        "Roster Balance",
-        "Lineup Management"
-      ],
-      "team_name": "Michael Trigg Sucks Ass",
-      "title_odds": 3.7,
-      "window": "Middle",
-      "young_player_share": 69.2
-    },
-    {
       "average_roster_age": 26.6,
       "early_picks": 2,
       "first_round_picks": 1,
-      "franchise_score": 67.5,
+      "franchise_score": 74.3,
       "manager": "NolanFarts",
       "metrics": {
         "draft_capital": 9.4,
         "lineup_management": 94.3,
+        "market_value": 91.5,
         "performance_prior": 100.0,
         "roster_balance": 100.0,
         "stability": 67.8,
         "youth": 19.0
       },
-      "model_mean": 148.7,
+      "model_mean": 138.79,
       "model_sd": 28.34,
       "owner_id": "988277931761786880",
       "pick_count": 10,
-      "playoff_odds": 90.8,
+      "playoff_odds": 86.6,
       "risks": [
         "Draft Capital",
         "Youth"
@@ -67,7 +39,7 @@
         "Roster Balance"
       ],
       "team_name": "Njigbas In Paris",
-      "title_odds": 39.2,
+      "title_odds": 35.9,
       "window": "Contender",
       "young_player_share": 40.7
     },
@@ -75,21 +47,22 @@
       "average_roster_age": 26.2,
       "early_picks": 0,
       "first_round_picks": 0,
-      "franchise_score": 67.0,
+      "franchise_score": 67.4,
       "manager": "ryansorensen8",
       "metrics": {
         "draft_capital": 0.0,
         "lineup_management": 100.0,
-        "performance_prior": 96.4,
+        "market_value": 69.9,
+        "performance_prior": 92.3,
         "roster_balance": 100.0,
         "stability": 93.2,
         "youth": 25.4
       },
-      "model_mean": 146.09,
+      "model_mean": 134.93,
       "model_sd": 18.79,
       "owner_id": "446892006564687872",
       "pick_count": 1,
-      "playoff_odds": 95.8,
+      "playoff_odds": 87.9,
       "risks": [
         "Draft Capital",
         "Youth"
@@ -100,7 +73,7 @@
         "Lineup Management"
       ],
       "team_name": "Matt Prater",
-      "title_odds": 36.4,
+      "title_odds": 29.5,
       "window": "Contender",
       "young_player_share": 44.4
     },
@@ -108,21 +81,22 @@
       "average_roster_age": 26.9,
       "early_picks": 6,
       "first_round_picks": 2,
-      "franchise_score": 63.4,
+      "franchise_score": 65.3,
       "manager": "abewav",
       "metrics": {
         "draft_capital": 24.8,
         "lineup_management": 95.8,
-        "performance_prior": 79.9,
+        "market_value": 67.7,
+        "performance_prior": 78.5,
         "roster_balance": 100.0,
         "stability": 100.0,
         "youth": 12.7
       },
-      "model_mean": 133.97,
+      "model_mean": 128.01,
       "model_sd": 16.26,
       "owner_id": "1001624178866429952",
       "pick_count": 14,
-      "playoff_odds": 54.6,
+      "playoff_odds": 57.9,
       "risks": [
         "Youth",
         "Draft Capital"
@@ -133,93 +107,30 @@
         "Stability"
       ],
       "team_name": "Baskerville Bilge Rats",
-      "title_odds": 5.5,
+      "title_odds": 9.3,
       "window": "Playoff Hunt",
       "young_player_share": 37.0
-    },
-    {
-      "average_roster_age": 25.0,
-      "early_picks": 9,
-      "first_round_picks": 5,
-      "franchise_score": 61.8,
-      "manager": "Ebro51",
-      "metrics": {
-        "draft_capital": 40.8,
-        "lineup_management": 87.0,
-        "performance_prior": 53.1,
-        "roster_balance": 100.0,
-        "stability": 83.8,
-        "youth": 63.5
-      },
-      "model_mean": 114.38,
-      "model_sd": 22.34,
-      "owner_id": "1001623087835648000",
-      "pick_count": 18,
-      "playoff_odds": 0.4,
-      "risks": [
-        "Draft Capital"
-      ],
-      "roster_id": 10,
-      "strengths": [
-        "Roster Balance",
-        "Lineup Management"
-      ],
-      "team_name": "Get Me My Keys",
-      "title_odds": 0.0,
-      "window": "Rebuilder",
-      "young_player_share": 66.7
-    },
-    {
-      "average_roster_age": 24.4,
-      "early_picks": 12,
-      "first_round_picks": 6,
-      "franchise_score": 59.3,
-      "manager": "hoglundcory2",
-      "metrics": {
-        "draft_capital": 48.5,
-        "lineup_management": 86.3,
-        "performance_prior": 42.3,
-        "roster_balance": 100.0,
-        "stability": 71.7,
-        "youth": 69.8
-      },
-      "model_mean": 106.49,
-      "model_sd": 26.87,
-      "owner_id": "1118960388529344512",
-      "pick_count": 24,
-      "playoff_odds": 0.1,
-      "risks": [
-        "Performance Prior"
-      ],
-      "roster_id": 8,
-      "strengths": [
-        "Roster Balance",
-        "Lineup Management"
-      ],
-      "team_name": "I Chase Brown Kids",
-      "title_odds": 0.0,
-      "window": "Rebuilder",
-      "young_player_share": 70.4
     },
     {
       "average_roster_age": 27.6,
       "early_picks": 4,
       "first_round_picks": 2,
-      "franchise_score": 58.7,
+      "franchise_score": 62.0,
       "manager": "SORY9",
       "metrics": {
         "draft_capital": 15.9,
         "lineup_management": 97.3,
-        "performance_prior": 77.2,
+        "market_value": 67.8,
+        "performance_prior": 76.3,
         "roster_balance": 100.0,
         "stability": 99.3,
         "youth": 0.0
       },
-      "model_mean": 132.0,
+      "model_mean": 126.94,
       "model_sd": 16.54,
       "owner_id": "846844677612212224",
       "pick_count": 8,
-      "playoff_odds": 49.0,
+      "playoff_odds": 55.8,
       "risks": [
         "Youth",
         "Draft Capital"
@@ -230,7 +141,7 @@
         "Stability"
       ],
       "team_name": "TEAM MIKE ALSTOTT",
-      "title_odds": 3.6,
+      "title_odds": 6.9,
       "window": "Playoff Hunt",
       "young_player_share": 29.6
     },
@@ -238,21 +149,22 @@
       "average_roster_age": 26.8,
       "early_picks": 3,
       "first_round_picks": 0,
-      "franchise_score": 56.7,
+      "franchise_score": 60.5,
       "manager": "Butler2142",
       "metrics": {
         "draft_capital": 15.0,
         "lineup_management": 74.0,
-        "performance_prior": 85.1,
+        "market_value": 71.9,
+        "performance_prior": 83.6,
         "roster_balance": 50.0,
         "stability": 99.8,
         "youth": 15.1
       },
-      "model_mean": 137.77,
+      "model_mean": 130.57,
       "model_sd": 16.33,
       "owner_id": "1136159156404502528",
       "pick_count": 15,
-      "playoff_odds": 77.0,
+      "playoff_odds": 73.2,
       "risks": [
         "Draft Capital",
         "Youth"
@@ -263,29 +175,198 @@
         "Performance Prior"
       ],
       "team_name": null,
-      "title_odds": 11.7,
+      "title_odds": 15.1,
       "window": "Contender",
       "young_player_share": 38.5
+    },
+    {
+      "average_roster_age": 25.0,
+      "early_picks": 9,
+      "first_round_picks": 5,
+      "franchise_score": 60.2,
+      "manager": "Ebro51",
+      "metrics": {
+        "draft_capital": 40.8,
+        "lineup_management": 87.0,
+        "market_value": 52.6,
+        "performance_prior": 53.5,
+        "roster_balance": 100.0,
+        "stability": 83.8,
+        "youth": 63.5
+      },
+      "model_mean": 115.54,
+      "model_sd": 22.34,
+      "owner_id": "1001623087835648000",
+      "pick_count": 18,
+      "playoff_odds": 4.7,
+      "risks": [
+        "Draft Capital"
+      ],
+      "roster_id": 10,
+      "strengths": [
+        "Roster Balance",
+        "Lineup Management"
+      ],
+      "team_name": "Get Me My Keys",
+      "title_odds": 0.2,
+      "window": "Rebuilder",
+      "young_player_share": 66.7
+    },
+    {
+      "average_roster_age": 24.4,
+      "early_picks": 16,
+      "first_round_picks": 11,
+      "franchise_score": 59.5,
+      "manager": "nathanhoglund",
+      "metrics": {
+        "draft_capital": 75.0,
+        "lineup_management": 93.5,
+        "market_value": 18.8,
+        "performance_prior": 64.9,
+        "roster_balance": 100.0,
+        "stability": 52.7,
+        "youth": 67.8
+      },
+      "model_mean": 121.21,
+      "model_sd": 34.0,
+      "owner_id": "871224307018289152",
+      "pick_count": 33,
+      "playoff_odds": 23.5,
+      "risks": [
+        "Market Value"
+      ],
+      "roster_id": 5,
+      "strengths": [
+        "Roster Balance",
+        "Lineup Management"
+      ],
+      "team_name": "Michael Trigg Sucks Ass",
+      "title_odds": 2.6,
+      "window": "Rebuilder",
+      "young_player_share": 69.2
+    },
+    {
+      "average_roster_age": 24.4,
+      "early_picks": 12,
+      "first_round_picks": 6,
+      "franchise_score": 54.5,
+      "manager": "hoglundcory2",
+      "metrics": {
+        "draft_capital": 48.5,
+        "lineup_management": 86.3,
+        "market_value": 39.1,
+        "performance_prior": 41.8,
+        "roster_balance": 100.0,
+        "stability": 71.7,
+        "youth": 69.8
+      },
+      "model_mean": 109.68,
+      "model_sd": 26.87,
+      "owner_id": "1118960388529344512",
+      "pick_count": 24,
+      "playoff_odds": 2.1,
+      "risks": [
+        "Market Value",
+        "Performance Prior"
+      ],
+      "roster_id": 8,
+      "strengths": [
+        "Roster Balance",
+        "Lineup Management"
+      ],
+      "team_name": "I Chase Brown Kids",
+      "title_odds": 0.1,
+      "window": "Rebuilder",
+      "young_player_share": 70.4
+    },
+    {
+      "average_roster_age": 25.9,
+      "early_picks": 6,
+      "first_round_picks": 3,
+      "franchise_score": 54.3,
+      "manager": "Waldo23",
+      "metrics": {
+        "draft_capital": 26.4,
+        "lineup_management": 29.8,
+        "market_value": 72.6,
+        "performance_prior": 48.7,
+        "roster_balance": 100.0,
+        "stability": 58.4,
+        "youth": 31.7
+      },
+      "model_mean": 113.1,
+      "model_sd": 31.84,
+      "owner_id": "868747143425499136",
+      "pick_count": 17,
+      "playoff_odds": 5.9,
+      "risks": [
+        "Draft Capital",
+        "Lineup Management"
+      ],
+      "roster_id": 11,
+      "strengths": [
+        "Roster Balance",
+        "Market Value"
+      ],
+      "team_name": "I Cam, I Saw, I Conquered",
+      "title_odds": 0.4,
+      "window": "Retool Needed",
+      "young_player_share": 48.1
+    },
+    {
+      "average_roster_age": 24.1,
+      "early_picks": 1,
+      "first_round_picks": 0,
+      "franchise_score": 42.8,
+      "manager": "austinamelse",
+      "metrics": {
+        "draft_capital": 2.7,
+        "lineup_management": 34.7,
+        "market_value": 62.6,
+        "performance_prior": 16.4,
+        "roster_balance": 100.0,
+        "stability": 37.4,
+        "youth": 82.5
+      },
+      "model_mean": 96.93,
+      "model_sd": 39.73,
+      "owner_id": "446903954266124288",
+      "pick_count": 2,
+      "playoff_odds": 0.5,
+      "risks": [
+        "Draft Capital",
+        "Performance Prior"
+      ],
+      "roster_id": 1,
+      "strengths": [
+        "Roster Balance",
+        "Youth"
+      ],
+      "team_name": null,
+      "title_odds": 0.0,
+      "window": "Retool Needed",
+      "young_player_share": 77.8
     },
     {
       "average_roster_age": 23.6,
       "early_picks": 21,
       "first_round_picks": 11,
-      "franchise_score": 55.6,
+      "franchise_score": 41.4,
       "manager": "Amelse",
       "metrics": {
         "draft_capital": 100.0,
         "lineup_management": 6.1,
+        "market_value": 4.3,
         "performance_prior": 50.0,
         "roster_balance": 0.0,
         "stability": 0.0,
         "youth": 100.0
       },
-      "model_mean": 75.53,
+      "model_mean": 88.74,
       "model_sd": 53.74,
       "owner_id": "446896707632885760",
       "pick_count": 67,
-      "playoff_odds": 0.0,
+      "playoff_odds": 0.7,
       "risks": [
         "Roster Balance",
         "Stability"
@@ -301,57 +382,25 @@
       "young_player_share": 88.0
     },
     {
-      "average_roster_age": 25.9,
-      "early_picks": 6,
-      "first_round_picks": 3,
-      "franchise_score": 42.5,
-      "manager": "Waldo23",
-      "metrics": {
-        "draft_capital": 26.4,
-        "lineup_management": 29.8,
-        "performance_prior": 41.5,
-        "roster_balance": 100.0,
-        "stability": 58.4,
-        "youth": 31.7
-      },
-      "model_mean": 105.86,
-      "model_sd": 31.84,
-      "owner_id": "868747143425499136",
-      "pick_count": 17,
-      "playoff_odds": 0.2,
-      "risks": [
-        "Draft Capital",
-        "Lineup Management"
-      ],
-      "roster_id": 11,
-      "strengths": [
-        "Roster Balance",
-        "Stability"
-      ],
-      "team_name": "I Cam, I Saw, I Conquered",
-      "title_odds": 0.0,
-      "window": "Retool Needed",
-      "young_player_share": 48.1
-    },
-    {
       "average_roster_age": 24.8,
       "early_picks": 16,
       "first_round_picks": 7,
-      "franchise_score": 37.5,
+      "franchise_score": 31.5,
       "manager": "MayaHuskies",
       "metrics": {
         "draft_capital": 67.7,
         "lineup_management": 0.0,
-        "performance_prior": 12.7,
+        "market_value": 13.1,
+        "performance_prior": 12.1,
         "roster_balance": 50.0,
         "stability": 11.3,
         "youth": 88.8
       },
-      "model_mean": 84.79,
+      "model_mean": 94.82,
       "model_sd": 49.52,
       "owner_id": "974038899053883392",
       "pick_count": 31,
-      "playoff_odds": 0.0,
+      "playoff_odds": 1.2,
       "risks": [
         "Lineup Management",
         "Stability"
@@ -365,39 +414,6 @@
       "title_odds": 0.0,
       "window": "Rebuilder",
       "young_player_share": 81.5
-    },
-    {
-      "average_roster_age": 24.1,
-      "early_picks": 1,
-      "first_round_picks": 0,
-      "franchise_score": 29.9,
-      "manager": "austinamelse",
-      "metrics": {
-        "draft_capital": 2.7,
-        "lineup_management": 34.7,
-        "performance_prior": 4.1,
-        "roster_balance": 100.0,
-        "stability": 37.4,
-        "youth": 82.5
-      },
-      "model_mean": 78.5,
-      "model_sd": 39.73,
-      "owner_id": "446903954266124288",
-      "pick_count": 2,
-      "playoff_odds": 0.0,
-      "risks": [
-        "Draft Capital",
-        "Performance Prior"
-      ],
-      "roster_id": 1,
-      "strengths": [
-        "Roster Balance",
-        "Youth"
-      ],
-      "team_name": null,
-      "title_odds": 0.0,
-      "window": "Retool Needed",
-      "young_player_share": 77.8
     }
   ]
 }

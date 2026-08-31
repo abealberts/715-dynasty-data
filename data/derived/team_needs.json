@@ -1,12 +1,13 @@
 {
-  "generated_at": "2026-08-31T03:57:20.899145+00:00",
+  "generated_at": "2026-08-31T04:34:38.880950+00:00",
   "league_position_averages": {
     "QB": 5.0,
     "RB": 7.42,
     "TE": 3.75,
     "WR": 10.75
   },
-  "methodology": "Roster-shape heuristic only. Needs/surpluses compare position counts with league averages and practical depth targets; player quality is not included.",
+  "market_attribution": "Values by Dynasty Dealer — https://www.dynastydealer.com/",
+  "methodology": "Roster-shape heuristic only. Needs/surpluses compare position counts with league averages and practical depth targets; player quality is not included. Phase 4.6 also layers Dynasty Dealer position-market scores onto count-based needs/surpluses; low-value rooms can register as needs even when the raw player count is adequate.",
   "targets": {
     "QB": 4,
     "RB": 5,
@@ -17,7 +18,39 @@
     "1": {
       "faab_remaining": 75,
       "manager": "austinamelse",
-      "needs": [],
+      "market": {
+        "depth_market_score": 73.9,
+        "depth_market_value": 49421,
+        "manager": "austinamelse",
+        "market_rank": 7,
+        "optimal_starter_market_value": 55957,
+        "position_scores": {
+          "QB": 15.4,
+          "RB": 84.9,
+          "TE": 67.0,
+          "WR": 75.0
+        },
+        "position_values": {
+          "QB": 13965,
+          "RB": 33419,
+          "TE": 15142,
+          "WR": 42852
+        },
+        "roster_id": 1,
+        "roster_market_score": 62.6,
+        "starter_market_score": 58.8,
+        "submitted_starter_market_value": 53998,
+        "team_name": null,
+        "total_market_score": 80.3,
+        "total_market_value": 105378
+      },
+      "needs": [
+        {
+          "label": "market-thin",
+          "position": "QB",
+          "strength": 2.77
+        }
+      ],
       "pick_summary": {
         "by_round": {
           "1": 0,
@@ -41,7 +74,10 @@
           "delta_vs_average": 0.0,
           "label": "balanced",
           "league_average": 5.0,
+          "market_score": 15.4,
+          "market_value": 13965,
           "need_strength": 0.0,
+          "quality_label": "market-thin",
           "starters": 2,
           "surplus_strength": 0.0,
           "target": 4
@@ -51,7 +87,10 @@
           "delta_vs_average": -0.42,
           "label": "balanced",
           "league_average": 7.42,
+          "market_score": 84.9,
+          "market_value": 33419,
           "need_strength": 0.42,
+          "quality_label": "market-deep",
           "starters": 2,
           "surplus_strength": 0.0,
           "target": 5
@@ -61,7 +100,10 @@
           "delta_vs_average": 0.25,
           "label": "balanced",
           "league_average": 3.75,
+          "market_score": 67.0,
+          "market_value": 15142,
           "need_strength": 0.0,
+          "quality_label": "market-balanced",
           "starters": 1,
           "surplus_strength": 0.25,
           "target": 2
@@ -71,19 +113,59 @@
           "delta_vs_average": 0.25,
           "label": "balanced",
           "league_average": 10.75,
+          "market_score": 75.0,
+          "market_value": 42852,
           "need_strength": 0.0,
+          "quality_label": "market-deep",
           "starters": 4,
           "surplus_strength": 0.25,
           "target": 7
         }
       },
       "roster_id": 1,
-      "surpluses": [],
+      "surpluses": [
+        {
+          "label": "market-deep",
+          "position": "RB",
+          "strength": 2.79
+        },
+        {
+          "label": "market-deep",
+          "position": "WR",
+          "strength": 2.0
+        }
+      ],
       "team_name": null
     },
     "10": {
       "faab_remaining": 101,
       "manager": "Ebro51",
+      "market": {
+        "depth_market_score": 70.8,
+        "depth_market_value": 48662,
+        "manager": "Ebro51",
+        "market_rank": 8,
+        "optimal_starter_market_value": 53178,
+        "position_scores": {
+          "QB": 52.0,
+          "RB": 42.2,
+          "TE": 82.9,
+          "WR": 88.5
+        },
+        "position_values": {
+          "QB": 20082,
+          "RB": 19177,
+          "TE": 16793,
+          "WR": 45788
+        },
+        "roster_id": 10,
+        "roster_market_score": 52.6,
+        "starter_market_score": 46.5,
+        "submitted_starter_market_value": 50734,
+        "team_name": "Get Me My Keys",
+        "total_market_score": 70.8,
+        "total_market_value": 101840
+      },
       "needs": [
         {
           "label": "thin",
@@ -121,7 +203,10 @@
           "delta_vs_average": -1.0,
           "label": "thin",
           "league_average": 5.0,
+          "market_score": 52.0,
+          "market_value": 20082,
           "need_strength": 1.0,
+          "quality_label": "market-balanced",
           "starters": 2,
           "surplus_strength": 0.0,
           "target": 4
@@ -131,7 +216,10 @@
           "delta_vs_average": -2.42,
           "label": "thin",
           "league_average": 7.42,
+          "market_score": 42.2,
+          "market_value": 19177,
           "need_strength": 2.42,
+          "quality_label": "market-balanced",
           "starters": 3,
           "surplus_strength": 0.0,
           "target": 5
@@ -141,7 +229,10 @@
           "delta_vs_average": 0.25,
           "label": "balanced",
           "league_average": 3.75,
+          "market_score": 82.9,
+          "market_value": 16793,
           "need_strength": 0.0,
+          "quality_label": "market-deep",
           "starters": 1,
           "surplus_strength": 0.25,
           "target": 2
@@ -151,7 +242,10 @@
           "delta_vs_average": 3.25,
           "label": "deep",
           "league_average": 10.75,
+          "market_score": 88.5,
+          "market_value": 45788,
           "need_strength": 0.0,
+          "quality_label": "market-deep",
           "starters": 3,
           "surplus_strength": 3.25,
           "target": 7
@@ -163,6 +257,11 @@
           "label": "deep",
           "position": "WR",
           "strength": 3.25
+        },
+        {
+          "label": "market-deep",
+          "position": "TE",
+          "strength": 2.63
         }
       ],
       "team_name": "Get Me My Keys"
@@ -170,6 +269,32 @@
     "11": {
       "faab_remaining": 95,
       "manager": "Waldo23",
+      "market": {
+        "depth_market_score": 87.6,
+        "depth_market_value": 52758,
+        "manager": "Waldo23",
+        "market_rank": 2,
+        "optimal_starter_market_value": 57946,
+        "position_scores": {
+          "QB": 100.0,
+          "RB": 100.0,
+          "TE": 52.0,
+          "WR": 18.8
+        },
+        "position_values": {
+          "QB": 28087,
+          "RB": 38455,
+          "TE": 13588,
+          "WR": 30574
+        },
+        "roster_id": 11,
+        "roster_market_score": 72.6,
+        "starter_market_score": 67.7,
+        "submitted_starter_market_value": 53027,
+        "team_name": "I Cam, I Saw, I Conquered",
+        "total_market_score": 94.6,
+        "total_market_value": 110704
+      },
       "needs": [
         {
           "label": "thin",
@@ -202,7 +327,10 @@
           "delta_vs_average": 1.0,
           "label": "above avg",
           "league_average": 5.0,
+          "market_score": 100.0,
+          "market_value": 28087,
           "need_strength": 0.0,
+          "quality_label": "market-deep",
           "starters": 2,
           "surplus_strength": 1.0,
           "target": 4
@@ -212,7 +340,10 @@
           "delta_vs_average": 1.58,
           "label": "deep",
           "league_average": 7.42,
+          "market_score": 100.0,
+          "market_value": 38455,
           "need_strength": 0.0,
+          "quality_label": "market-deep",
           "starters": 2,
           "surplus_strength": 1.58,
           "target": 5
@@ -222,7 +353,10 @@
           "delta_vs_average": 0.25,
           "label": "balanced",
           "league_average": 3.75,
+          "market_score": 52.0,
+          "market_value": 13588,
           "need_strength": 0.0,
+          "quality_label": "market-balanced",
           "starters": 1,
           "surplus_strength": 0.25,
           "target": 2
@@ -232,7 +366,10 @@
           "delta_vs_average": -2.75,
           "label": "thin",
           "league_average": 10.75,
+          "market_score": 18.8,
+          "market_value": 30574,
           "need_strength": 2.75,
+          "quality_label": "market-thin",
           "starters": 4,
           "surplus_strength": 0.0,
           "target": 7
@@ -241,14 +378,14 @@
       "roster_id": 11,
       "surpluses": [
         {
-          "label": "deep",
+          "label": "market-deep",
           "position": "RB",
-          "strength": 1.58
+          "strength": 4.0
         },
         {
-          "label": "above avg",
+          "label": "market-deep",
           "position": "QB",
-          "strength": 1.0
+          "strength": 4.0
         }
       ],
       "team_name": "I Cam, I Saw, I Conquered"
@@ -256,16 +393,42 @@
     "12": {
       "faab_remaining": 100,
       "manager": "Butler2142",
+      "market": {
+        "depth_market_score": 100.0,
+        "depth_market_value": 55794,
+        "manager": "Butler2142",
+        "market_rank": 3,
+        "optimal_starter_market_value": 56786,
+        "position_scores": {
+          "QB": 57.9,
+          "RB": 85.7,
+          "TE": 12.9,
+          "WR": 100.0
+        },
+        "position_values": {
+          "QB": 21065,
+          "RB": 33680,
+          "TE": 9530,
+          "WR": 48305
+        },
+        "roster_id": 12,
+        "roster_market_score": 71.9,
+        "starter_market_score": 62.5,
+        "submitted_starter_market_value": 56588,
+        "team_name": null,
+        "total_market_score": 99.6,
+        "total_market_value": 112580
+      },
       "needs": [
+        {
+          "label": "market-thin",
+          "position": "TE",
+          "strength": 2.97
+        },
         {
           "label": "thin",
           "position": "QB",
           "strength": 2.0
-        },
-        {
-          "label": "below avg",
-          "position": "TE",
-          "strength": 0.75
         }
       ],
       "pick_summary": {
@@ -293,7 +456,10 @@
           "delta_vs_average": -2.0,
           "label": "thin",
           "league_average": 5.0,
+          "market_score": 57.9,
+          "market_value": 21065,
           "need_strength": 2.0,
+          "quality_label": "market-balanced",
           "starters": 2,
           "surplus_strength": 0.0,
           "target": 4
@@ -303,7 +469,10 @@
           "delta_vs_average": 1.58,
           "label": "deep",
           "league_average": 7.42,
+          "market_score": 85.7,
+          "market_value": 33680,
           "need_strength": 0.0,
+          "quality_label": "market-deep",
           "starters": 2,
           "surplus_strength": 1.58,
           "target": 5
@@ -313,7 +482,10 @@
           "delta_vs_average": -0.75,
           "label": "below avg",
           "league_average": 3.75,
+          "market_score": 12.9,
+          "market_value": 9530,
           "need_strength": 0.75,
+          "quality_label": "market-thin",
           "starters": 1,
           "surplus_strength": 0.0,
           "target": 2
@@ -323,7 +495,10 @@
           "delta_vs_average": 0.25,
           "label": "balanced",
           "league_average": 10.75,
+          "market_score": 100.0,
+          "market_value": 48305,
           "need_strength": 0.0,
+          "quality_label": "market-deep",
           "starters": 4,
           "surplus_strength": 0.25,
           "target": 7
@@ -332,9 +507,14 @@
       "roster_id": 12,
       "surpluses": [
         {
-          "label": "deep",
+          "label": "market-deep",
+          "position": "WR",
+          "strength": 4.0
+        },
+        {
+          "label": "market-deep",
           "position": "RB",
-          "strength": 1.58
+          "strength": 2.86
         }
       ],
       "team_name": null
@@ -342,6 +522,32 @@
     "2": {
       "faab_remaining": 130,
       "manager": "NolanFarts",
+      "market": {
+        "depth_market_score": 65.9,
+        "depth_market_value": 47480,
+        "manager": "NolanFarts",
+        "market_rank": 1,
+        "optimal_starter_market_value": 65236,
+        "position_scores": {
+          "QB": 32.8,
+          "RB": 81.4,
+          "TE": 100.0,
+          "WR": 85.0
+        },
+        "position_values": {
+          "QB": 16877,
+          "RB": 32246,
+          "TE": 18561,
+          "WR": 45032
+        },
+        "roster_id": 2,
+        "roster_market_score": 91.5,
+        "starter_market_score": 100.0,
+        "submitted_starter_market_value": 65132,
+        "team_name": "Njigbas In Paris",
+        "total_market_score": 100.0,
+        "total_market_value": 112716
+      },
       "needs": [
         {
           "label": "thin",
@@ -379,7 +585,10 @@
           "delta_vs_average": -1.0,
           "label": "thin",
           "league_average": 5.0,
+          "market_score": 32.8,
+          "market_value": 16877,
           "need_strength": 1.0,
+          "quality_label": "market-balanced",
           "starters": 2,
           "surplus_strength": 0.0,
           "target": 4
@@ -389,7 +598,10 @@
           "delta_vs_average": 0.58,
           "label": "above avg",
           "league_average": 7.42,
+          "market_score": 81.4,
+          "market_value": 32246,
           "need_strength": 0.0,
+          "quality_label": "market-deep",
           "starters": 2,
           "surplus_strength": 0.58,
           "target": 5
@@ -399,7 +611,10 @@
           "delta_vs_average": 1.25,
           "label": "deep",
           "league_average": 3.75,
+          "market_score": 100.0,
+          "market_value": 18561,
           "need_strength": 0.0,
+          "quality_label": "market-deep",
           "starters": 1,
           "surplus_strength": 1.25,
           "target": 2
@@ -409,7 +624,10 @@
           "delta_vs_average": -0.75,
           "label": "below avg",
           "league_average": 10.75,
+          "market_score": 85.0,
+          "market_value": 45032,
           "need_strength": 0.75,
+          "quality_label": "market-deep",
           "starters": 4,
           "surplus_strength": 0.0,
           "target": 7
@@ -418,9 +636,19 @@
       "roster_id": 2,
       "surpluses": [
         {
-          "label": "deep",
+          "label": "market-deep",
           "position": "TE",
-          "strength": 1.25
+          "strength": 4.0
+        },
+        {
+          "label": "market-deep",
+          "position": "WR",
+          "strength": 2.8
+        },
+        {
+          "label": "market-deep",
+          "position": "RB",
+          "strength": 2.51
         }
       ],
       "team_name": "Njigbas In Paris"
@@ -428,6 +656,32 @@
     "3": {
       "faab_remaining": 100,
       "manager": "abewav",
+      "market": {
+        "depth_market_score": 95.0,
+        "depth_market_value": 54565,
+        "manager": "abewav",
+        "market_rank": 6,
+        "optimal_starter_market_value": 55923,
+        "position_scores": {
+          "QB": 96.4,
+          "RB": 74.3,
+          "TE": 50.5,
+          "WR": 60.5
+        },
+        "position_values": {
+          "QB": 27493,
+          "RB": 29885,
+          "TE": 13426,
+          "WR": 39684
+        },
+        "roster_id": 3,
+        "roster_market_score": 67.7,
+        "starter_market_score": 58.7,
+        "submitted_starter_market_value": 53495,
+        "team_name": "Baskerville Bilge Rats",
+        "total_market_score": 94.0,
+        "total_market_value": 110488
+      },
       "needs": [
         {
           "label": "thin",
@@ -465,7 +719,10 @@
           "delta_vs_average": 2.0,
           "label": "deep",
           "league_average": 5.0,
+          "market_score": 96.4,
+          "market_value": 27493,
           "need_strength": 0.0,
+          "quality_label": "market-deep",
           "starters": 2,
           "surplus_strength": 2.0,
           "target": 4
@@ -475,7 +732,10 @@
           "delta_vs_average": 0.58,
           "label": "above avg",
           "league_average": 7.42,
+          "market_score": 74.3,
+          "market_value": 29885,
           "need_strength": 0.0,
+          "quality_label": "market-deep",
           "starters": 3,
           "surplus_strength": 0.58,
           "target": 5
@@ -485,7 +745,10 @@
           "delta_vs_average": -0.75,
           "label": "below avg",
           "league_average": 3.75,
+          "market_score": 50.5,
+          "market_value": 13426,
           "need_strength": 0.75,
+          "quality_label": "market-balanced",
           "starters": 1,
           "surplus_strength": 0.0,
           "target": 2
@@ -495,7 +758,10 @@
           "delta_vs_average": -1.75,
           "label": "thin",
           "league_average": 10.75,
+          "market_score": 60.5,
+          "market_value": 39684,
           "need_strength": 1.75,
+          "quality_label": "market-balanced",
           "starters": 3,
           "surplus_strength": 0.0,
           "target": 7
@@ -504,9 +770,14 @@
       "roster_id": 3,
       "surpluses": [
         {
-          "label": "deep",
+          "label": "market-deep",
           "position": "QB",
-          "strength": 2.0
+          "strength": 3.71
+        },
+        {
+          "label": "market-deep",
+          "position": "RB",
+          "strength": 1.94
         }
       ],
       "team_name": "Baskerville Bilge Rats"
@@ -514,16 +785,42 @@
     "4": {
       "faab_remaining": 75,
       "manager": "MayaHuskies",
+      "market": {
+        "depth_market_score": 52.3,
+        "depth_market_value": 44162,
+        "manager": "MayaHuskies",
+        "market_rank": 11,
+        "optimal_starter_market_value": 42698,
+        "position_scores": {
+          "QB": 0.0,
+          "RB": 62.2,
+          "TE": 0.0,
+          "WR": 68.4
+        },
+        "position_values": {
+          "QB": 11400,
+          "RB": 25850,
+          "TE": 8195,
+          "WR": 41415
+        },
+        "roster_id": 4,
+        "roster_market_score": 13.1,
+        "starter_market_score": 0.0,
+        "submitted_starter_market_value": 39888,
+        "team_name": null,
+        "total_market_score": 30.7,
+        "total_market_value": 86860
+      },
       "needs": [
         {
-          "label": "thin",
+          "label": "market-thin",
           "position": "QB",
-          "strength": 2.0
+          "strength": 4.0
         },
         {
-          "label": "below avg",
+          "label": "market-thin",
           "position": "TE",
-          "strength": 0.75
+          "strength": 4.0
         }
       ],
       "pick_summary": {
@@ -551,7 +848,10 @@
           "delta_vs_average": -2.0,
           "label": "thin",
           "league_average": 5.0,
+          "market_score": 0.0,
+          "market_value": 11400,
           "need_strength": 2.0,
+          "quality_label": "market-thin",
           "starters": 2,
           "surplus_strength": 0.0,
           "target": 4
@@ -561,7 +861,10 @@
           "delta_vs_average": 0.58,
           "label": "above avg",
           "league_average": 7.42,
+          "market_score": 62.2,
+          "market_value": 25850,
           "need_strength": 0.0,
+          "quality_label": "market-balanced",
           "starters": 3,
           "surplus_strength": 0.58,
           "target": 5
@@ -571,7 +874,10 @@
           "delta_vs_average": -0.75,
           "label": "below avg",
           "league_average": 3.75,
+          "market_score": 0.0,
+          "market_value": 8195,
           "need_strength": 0.75,
+          "quality_label": "market-thin",
           "starters": 1,
           "surplus_strength": 0.0,
           "target": 2
@@ -581,7 +887,10 @@
           "delta_vs_average": 2.25,
           "label": "deep",
           "league_average": 10.75,
+          "market_score": 68.4,
+          "market_value": 41415,
           "need_strength": 0.0,
+          "quality_label": "market-balanced",
           "starters": 3,
           "surplus_strength": 2.25,
           "target": 7
@@ -600,11 +909,37 @@
     "5": {
       "faab_remaining": 100,
       "manager": "nathanhoglund",
+      "market": {
+        "depth_market_score": 54.1,
+        "depth_market_value": 44592,
+        "manager": "nathanhoglund",
+        "market_rank": 10,
+        "optimal_starter_market_value": 44274,
+        "position_scores": {
+          "QB": 9.2,
+          "RB": 57.1,
+          "TE": 45.1,
+          "WR": 57.0
+        },
+        "position_values": {
+          "QB": 12927,
+          "RB": 24154,
+          "TE": 12866,
+          "WR": 38919
+        },
+        "roster_id": 5,
+        "roster_market_score": 18.8,
+        "starter_market_score": 7.0,
+        "submitted_starter_market_value": 0,
+        "team_name": "Michael Trigg Sucks Ass",
+        "total_market_score": 36.1,
+        "total_market_value": 88866
+      },
       "needs": [
         {
-          "label": "thin",
+          "label": "market-thin",
           "position": "QB",
-          "strength": 1.0
+          "strength": 3.26
         }
       ],
       "pick_summary": {
@@ -632,7 +967,10 @@
           "delta_vs_average": -1.0,
           "label": "thin",
           "league_average": 5.0,
+          "market_score": 9.2,
+          "market_value": 12927,
           "need_strength": 1.0,
+          "quality_label": "market-thin",
           "starters": 0,
           "surplus_strength": 0.0,
           "target": 4
@@ -642,7 +980,10 @@
           "delta_vs_average": 0.58,
           "label": "above avg",
           "league_average": 7.42,
+          "market_score": 57.1,
+          "market_value": 24154,
           "need_strength": 0.0,
+          "quality_label": "market-balanced",
           "starters": 0,
           "surplus_strength": 0.58,
           "target": 5
@@ -652,7 +993,10 @@
           "delta_vs_average": 0.25,
           "label": "balanced",
           "league_average": 3.75,
+          "market_score": 45.1,
+          "market_value": 12866,
           "need_strength": 0.0,
+          "quality_label": "market-balanced",
           "starters": 0,
           "surplus_strength": 0.25,
           "target": 2
@@ -662,7 +1006,10 @@
           "delta_vs_average": 0.25,
           "label": "balanced",
           "league_average": 10.75,
+          "market_score": 57.0,
+          "market_value": 38919,
           "need_strength": 0.0,
+          "quality_label": "market-balanced",
           "starters": 0,
           "surplus_strength": 0.25,
           "target": 7
@@ -675,6 +1022,32 @@
     "6": {
       "faab_remaining": 2,
       "manager": "Amelse",
+      "market": {
+        "depth_market_score": 0.0,
+        "depth_market_value": 31405,
+        "manager": "Amelse",
+        "market_rank": 12,
+        "optimal_starter_market_value": 44003,
+        "position_scores": {
+          "QB": 76.4,
+          "RB": 0.0,
+          "TE": 35.5,
+          "WR": 35.6
+        },
+        "position_values": {
+          "QB": 24157,
+          "RB": 5123,
+          "TE": 11880,
+          "WR": 34248
+        },
+        "roster_id": 6,
+        "roster_market_score": 4.3,
+        "starter_market_score": 5.8,
+        "submitted_starter_market_value": 42945,
+        "team_name": null,
+        "total_market_score": 0.0,
+        "total_market_value": 75408
+      },
       "needs": [
         {
           "label": "thin",
@@ -707,7 +1080,10 @@
           "delta_vs_average": 2.0,
           "label": "deep",
           "league_average": 5.0,
+          "market_score": 76.4,
+          "market_value": 24157,
           "need_strength": 0.0,
+          "quality_label": "market-deep",
           "starters": 2,
           "surplus_strength": 2.0,
           "target": 4
@@ -717,7 +1093,10 @@
           "delta_vs_average": -4.42,
           "label": "thin",
           "league_average": 7.42,
+          "market_score": 0.0,
+          "market_value": 5123,
           "need_strength": 4.42,
+          "quality_label": "market-thin",
           "starters": 2,
           "surplus_strength": 0.0,
           "target": 5
@@ -727,7 +1106,10 @@
           "delta_vs_average": 0.25,
           "label": "balanced",
           "league_average": 3.75,
+          "market_score": 35.5,
+          "market_value": 11880,
           "need_strength": 0.0,
+          "quality_label": "market-balanced",
           "starters": 2,
           "surplus_strength": 0.25,
           "target": 2
@@ -737,7 +1119,10 @@
           "delta_vs_average": 2.25,
           "label": "deep",
           "league_average": 10.75,
+          "market_score": 35.6,
+          "market_value": 34248,
           "need_strength": 0.0,
+          "quality_label": "market-balanced",
           "starters": 3,
           "surplus_strength": 2.25,
           "target": 7
@@ -751,9 +1136,9 @@
           "strength": 2.25
         },
         {
-          "label": "deep",
+          "label": "market-deep",
           "position": "QB",
-          "strength": 2.0
+          "strength": 2.11
         }
       ],
       "team_name": null
@@ -761,6 +1146,32 @@
     "7": {
       "faab_remaining": 108,
       "manager": "SORY9",
+      "market": {
+        "depth_market_score": 72.1,
+        "depth_market_value": 48987,
+        "manager": "SORY9",
+        "market_rank": 5,
+        "optimal_starter_market_value": 57670,
+        "position_scores": {
+          "QB": 88.3,
+          "RB": 67.5,
+          "TE": 62.3,
+          "WR": 53.9
+        },
+        "position_values": {
+          "QB": 26137,
+          "RB": 27631,
+          "TE": 14658,
+          "WR": 38231
+        },
+        "roster_id": 7,
+        "roster_market_score": 67.8,
+        "starter_market_score": 66.4,
+        "submitted_starter_market_value": 57302,
+        "team_name": "TEAM MIKE ALSTOTT",
+        "total_market_score": 83.8,
+        "total_market_value": 106657
+      },
       "needs": [
         {
           "label": "thin",
@@ -791,7 +1202,10 @@
           "delta_vs_average": 1.0,
           "label": "above avg",
           "league_average": 5.0,
+          "market_score": 88.3,
+          "market_value": 26137,
           "need_strength": 0.0,
+          "quality_label": "market-deep",
           "starters": 2,
           "surplus_strength": 1.0,
           "target": 4
@@ -801,7 +1215,10 @@
           "delta_vs_average": -1.42,
           "label": "thin",
           "league_average": 7.42,
+          "market_score": 67.5,
+          "market_value": 27631,
           "need_strength": 1.42,
+          "quality_label": "market-balanced",
           "starters": 3,
           "surplus_strength": 0.0,
           "target": 5
@@ -811,7 +1228,10 @@
           "delta_vs_average": 0.25,
           "label": "balanced",
           "league_average": 3.75,
+          "market_score": 62.3,
+          "market_value": 14658,
           "need_strength": 0.0,
+          "quality_label": "market-balanced",
           "starters": 1,
           "surplus_strength": 0.25,
           "target": 2
@@ -821,7 +1241,10 @@
           "delta_vs_average": 0.25,
           "label": "balanced",
           "league_average": 10.75,
+          "market_score": 53.9,
+          "market_value": 38231,
           "need_strength": 0.0,
+          "quality_label": "market-balanced",
           "starters": 3,
           "surplus_strength": 0.25,
           "target": 7
@@ -830,9 +1253,9 @@
       "roster_id": 7,
       "surpluses": [
         {
-          "label": "above avg",
+          "label": "market-deep",
           "position": "QB",
-          "strength": 1.0
+          "strength": 3.06
         }
       ],
       "team_name": "TEAM MIKE ALSTOTT"
@@ -840,11 +1263,37 @@
     "8": {
       "faab_remaining": 94,
       "manager": "hoglundcory2",
+      "market": {
+        "depth_market_score": 59.9,
+        "depth_market_value": 46024,
+        "manager": "hoglundcory2",
+        "market_rank": 9,
+        "optimal_starter_market_value": 49954,
+        "position_scores": {
+          "QB": 80.5,
+          "RB": 71.8,
+          "TE": 71.7,
+          "WR": 0.0
+        },
+        "position_values": {
+          "QB": 24839,
+          "RB": 29041,
+          "TE": 15627,
+          "WR": 26471
+        },
+        "roster_id": 8,
+        "roster_market_score": 39.1,
+        "starter_market_score": 32.2,
+        "submitted_starter_market_value": 48513,
+        "team_name": "I Chase Brown Kids",
+        "total_market_score": 55.1,
+        "total_market_value": 95978
+      },
       "needs": [
         {
-          "label": "thin",
+          "label": "market-thin",
           "position": "WR",
-          "strength": 3.75
+          "strength": 4.0
         }
       ],
       "pick_summary": {
@@ -872,7 +1321,10 @@
           "delta_vs_average": 2.0,
           "label": "deep",
           "league_average": 5.0,
+          "market_score": 80.5,
+          "market_value": 24839,
           "need_strength": 0.0,
+          "quality_label": "market-deep",
           "starters": 2,
           "surplus_strength": 2.0,
           "target": 4
@@ -882,7 +1334,10 @@
           "delta_vs_average": 1.58,
           "label": "deep",
           "league_average": 7.42,
+          "market_score": 71.8,
+          "market_value": 29041,
           "need_strength": 0.0,
+          "quality_label": "market-deep",
           "starters": 3,
           "surplus_strength": 1.58,
           "target": 5
@@ -892,7 +1347,10 @@
           "delta_vs_average": 0.25,
           "label": "balanced",
           "league_average": 3.75,
+          "market_score": 71.7,
+          "market_value": 15627,
           "need_strength": 0.0,
+          "quality_label": "market-deep",
           "starters": 1,
           "surplus_strength": 0.25,
           "target": 2
@@ -902,7 +1360,10 @@
           "delta_vs_average": -3.75,
           "label": "thin",
           "league_average": 10.75,
+          "market_score": 0.0,
+          "market_value": 26471,
           "need_strength": 3.75,
+          "quality_label": "market-thin",
           "starters": 3,
           "surplus_strength": 0.0,
           "target": 7
@@ -911,14 +1372,19 @@
       "roster_id": 8,
       "surpluses": [
         {
-          "label": "deep",
+          "label": "market-deep",
           "position": "QB",
-          "strength": 2.0
+          "strength": 2.44
         },
         {
-          "label": "deep",
+          "label": "market-deep",
           "position": "RB",
-          "strength": 1.58
+          "strength": 1.74
+        },
+        {
+          "label": "market-deep",
+          "position": "TE",
+          "strength": 1.74
         }
       ],
       "team_name": "I Chase Brown Kids"
@@ -926,6 +1392,32 @@
     "9": {
       "faab_remaining": 14,
       "manager": "ryansorensen8",
+      "market": {
+        "depth_market_score": 81.1,
+        "depth_market_value": 51180,
+        "manager": "ryansorensen8",
+        "market_rank": 4,
+        "optimal_starter_market_value": 57598,
+        "position_scores": {
+          "QB": 59.3,
+          "RB": 80.0,
+          "TE": 41.1,
+          "WR": 76.8
+        },
+        "position_values": {
+          "QB": 21289,
+          "RB": 31790,
+          "TE": 12451,
+          "WR": 43248
+        },
+        "roster_id": 9,
+        "roster_market_score": 69.9,
+        "starter_market_score": 66.1,
+        "submitted_starter_market_value": 57598,
+        "team_name": "Matt Prater",
+        "total_market_score": 89.4,
+        "total_market_value": 108778
+      },
       "needs": [
         {
           "label": "thin",
@@ -960,7 +1452,10 @@
           "delta_vs_average": -1.0,
           "label": "thin",
           "league_average": 5.0,
+          "market_score": 59.3,
+          "market_value": 21289,
           "need_strength": 1.0,
+          "quality_label": "market-balanced",
           "starters": 2,
           "surplus_strength": 0.0,
           "target": 4
@@ -970,7 +1465,10 @@
           "delta_vs_average": 1.58,
           "label": "deep",
           "league_average": 7.42,
+          "market_score": 80.0,
+          "market_value": 31790,
           "need_strength": 0.0,
+          "quality_label": "market-deep",
           "starters": 2,
           "surplus_strength": 1.58,
           "target": 5
@@ -980,7 +1478,10 @@
           "delta_vs_average": -0.75,
           "label": "below avg",
           "league_average": 3.75,
+          "market_score": 41.1,
+          "market_value": 12451,
           "need_strength": 0.75,
+          "quality_label": "market-balanced",
           "starters": 1,
           "surplus_strength": 0.0,
           "target": 2
@@ -990,7 +1491,10 @@
           "delta_vs_average": 0.25,
           "label": "balanced",
           "league_average": 10.75,
+          "market_score": 76.8,
+          "market_value": 43248,
           "need_strength": 0.0,
+          "quality_label": "market-deep",
           "starters": 4,
           "surplus_strength": 0.25,
           "target": 7
@@ -999,9 +1503,14 @@
       "roster_id": 9,
       "surpluses": [
         {
-          "label": "deep",
+          "label": "market-deep",
           "position": "RB",
-          "strength": 1.58
+          "strength": 2.4
+        },
+        {
+          "label": "market-deep",
+          "position": "WR",
+          "strength": 2.14
         }
       ],
       "team_name": "Matt Prater"
