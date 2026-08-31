@@ -3,10 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b0d10" />
   <title>715 Dynasty HQ</title>
   <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./theme.css" />
 </head>
 <body>
+  <div class="noise-layer" aria-hidden="true"></div>
   <div class="shell">
     <aside class="sidebar">
       <div class="brand">
@@ -15,6 +18,11 @@
           <div class="brand-title">Dynasty HQ</div>
           <div class="brand-sub">League Command Center</div>
         </div>
+      </div>
+
+      <div class="season-stamp">
+        <span>SEASON 02</span>
+        <strong>2026</strong>
       </div>
 
       <nav id="nav">
@@ -59,12 +67,18 @@
 
     <main>
       <header class="topbar">
-        <div>
+        <div class="title-lockup">
+          <div class="eyebrow">715 DYNASTY / LIVE DESK</div>
           <h1 id="page-title">Overview</h1>
           <p id="page-subtitle">Live 715 Dynasty league state</p>
         </div>
-        <div id="updated-at" class="updated">Loading…</div>
+        <div class="topbar-right">
+          <div class="status-pill"><span></span> LIVE DATA</div>
+          <div id="updated-at" class="updated">Loading…</div>
+        </div>
       </header>
+
+      <section id="league-pulse" class="league-pulse" aria-live="polite"></section>
 
       <section id="app" class="content">
         <div class="loading-card">Loading league data…</div>
@@ -73,5 +87,6 @@
   </div>
 
   <script src="./app.js"></script>
+  <script src="./theme.js"></script>
 </body>
 </html>
