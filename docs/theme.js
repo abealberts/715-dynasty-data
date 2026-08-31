@@ -743,6 +743,68 @@
     insertAfter(anchor, vizPanel("Top Signal Board", "scanner score ≠ dynasty value", chart, COLORS.amber), "opportunities");
   }
 
+
+  function registerPwa() {
+    if (!("serviceWorker" in navigator)) return;
+    window.addEventListener("load", () => {
+      navigator.serviceWorker.register("./service-worker.js").catch(() => {});
+    }, { once: true });
+  }
+
+  function sparkline(values, color = COLORS.cyan) {
+    const nums = values.map(Number).filter(Number.isFinite);
+    if (nums.length < 2) return `<span class="trend-waiting">Tracking starts with Phase 4.8</span>`;
+    const w = 150, h = 34, pad = 3;
+    let lo = Math.min(...nums), hi = Math.max(...nums);
+    if (Math.abs(hi - lo) < .001) { lo -= 1; hi += 1; }
+    const pts = nums.map((v, i) => {
+      const x = pad + (i / (nums.length - 1)) * (w - pad * 2);
+      const y = h - pad - ((v - lo) / (hi - lo)) * (h - pad * 2);
+      return `${x.toFixed(1)},${y.toFixed(1)}`;
+    }).join(" ");
+    return `<svg class="micro-spark" viewBox="0 0 ${w} ${h}" role="img" aria-label="Trend over ${nums.length} tracked days"><polyline points="${pts}" fill="none" stroke="${color}" stroke-width="2" vector-effect="non-scaling-stroke"/></svg>`;
+  }
+
+  function healthBadge(label, status, detail = "") {
+    const cls = status === "ok" || status === "healthy" ? "ok" : status === "expected_preseason" ? "expected" : status === "stale" ? "expected" : "warn";
+    return `<div class="health-source ${cls}"><span>${escapeHtml(label)}</span><strong>${escapeHtml(String(status || "unknown").replaceAll("_", " "))}</strong>${detail ? `<small>${escapeHtml(detail)}</small>` : ""}</div>`;
+  }
+
+  function healthAndTrends() {
+    if (state.view !== "home") return;
+    const health = state.dataHealth;
+    const history = state.intelligenceHistory?.entries || [];
+    if (!health && !history.length) return;
+
+    const mySeries = history.map(day => (day.teams || []).find(t => String(t.roster_id) === "3")).filter(Boolean);
+    const market = mySeries.map(x => x.market_score).filter(x => x != null);
+    const power = mySeries.map(x => x.power_score).filter(x => x != null);
+    const playoffs = mySeries.map(x => x.playoff_odds).filter(x => x != null);
+
+    const nfl = health?.nflverse || {};
+    const html = `<div class="final-ops-grid">
+      <section class="ops-card">
+        <div class="ops-head"><span>DATA HEALTH</span><strong class="overall-health ${escapeHtml(health?.overall || "unknown")}">${escapeHtml(health?.overall || "unknown")}</strong></div>
+        <div class="health-grid">
+          ${healthBadge("Sleeper", health?.sleeper?.status, "authoritative league state")}
+          ${healthBadge("Dynasty Dealer", health?.dynasty_dealer?.status, health?.dynasty_dealer?.players ? `${health.dynasty_dealer.players} players` : "market feed")}
+          ${healthBadge("nflverse Stats", nfl.current_season_stats, health?.latest_completed_week == null ? "prior-season fallback is expected" : "current season")}
+          ${healthBadge("nflverse Snaps", nfl.current_season_snaps, health?.latest_completed_week == null ? "prior-season fallback is expected" : "current season")}
+        </div>
+      </section>
+      <section class="ops-card">
+        <div class="ops-head"><span>BILGE RAT TREND TAPE</span><strong>${history.length} DAY${history.length === 1 ? "" : "S"}</strong></div>
+        <div class="trend-grid">
+          <div><span>MARKET STRENGTH</span>${sparkline(market, COLORS.violet)}<strong>${market.length ? market[market.length-1] : "—"}</strong></div>
+          <div><span>CURRENT POWER</span>${sparkline(power, COLORS.cyan)}<strong>${power.length ? power[power.length-1] : "—"}</strong></div>
+          <div><span>PLAYOFF ODDS</span>${sparkline(playoffs, COLORS.lime)}<strong>${playoffs.length ? `${playoffs[playoffs.length-1]}%` : "—"}</strong></div>
+        </div>
+      </section>
+    </div>`;
+    const anchor = q('[data-viz="home"]') || q("#app .stats-grid");
+    insertAfter(anchor, html, "health-trends");
+  }
+
   function homeFun() {
     if (state.view !== "home") return;
     const myPlayoff = state.playoffs?.teams?.find(x => String(x.roster_id) === "3");
@@ -777,6 +839,7 @@
 
     installPressControls();
     homeFun();
+    healthAndTrends();
     powerCharts();
     powerInputLedger();
     standingsScatter();
@@ -802,6 +865,8 @@
       decorate();
     });
   }
+
+  registerPwa();
 
   const app = q("#app");
   if (app) {
