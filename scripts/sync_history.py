@@ -39,6 +39,16 @@ def fetch_matchups(league_id: str) -> dict[str, Any]:
     return matchups
 
 
+def fetch_transactions(league_id: str) -> dict[str, Any]:
+    transactions = {}
+    for week in range(1, 19):
+        try:
+            transactions[str(week)] = fetch_json(f"/league/{league_id}/transactions/{week}")
+        except RuntimeError:
+            transactions[str(week)] = []
+    return transactions
+
+
 def main() -> None:
     config = load_config()
     current = fetch_json(f"/league/{config['league_id']}")
@@ -62,6 +72,7 @@ def main() -> None:
         rosters = normalize_rosters(raw_rosters)
         roster_index = build_roster_index(users, rosters)
         matchups = fetch_matchups(league_id)
+        transactions = fetch_transactions(league_id)
 
         season = str(league.get("season") or "unknown")
         folder_name = f"{season}_{league_id}"
@@ -72,6 +83,7 @@ def main() -> None:
         write_json(folder / "rosters.json", rosters)
         write_json(folder / "roster_index.json", roster_index)
         write_json(folder / "matchups.json", matchups)
+        write_json(folder / "transactions.json", transactions)
 
         seasons.append({
             "season": season,
