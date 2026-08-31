@@ -9,6 +9,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
+from phase4 import build_phase4_outputs
+
 ROOT = Path(__file__).resolve().parents[1]
 CURRENT = ROOT / "data" / "current"
 DERIVED = ROOT / "data" / "derived"
@@ -1809,6 +1811,9 @@ def main() -> None:
     write_json("weekly_recap.json", phase3["weekly_recap"])
     write_json("draft_capital_matrix.json", phase3["draft_capital"])
     write_json("record_book.json", phase3["record_book"])
+
+    # Phase 4 — Forecasting + franchise intelligence
+    build_phase4_outputs(ROOT)
 
 
 if __name__ == "__main__":
