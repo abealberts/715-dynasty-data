@@ -723,3 +723,717 @@ select, input {
   .pulse-label { position: sticky; left: 0; z-index: 2; }
   .bar-row { grid-template-columns: 85px 1fr 45px; }
 }
+
+
+/* ==========================================================================
+   PHASE 4.6 — ROSTER BOARD + PLAYER INTELLIGENCE
+   ========================================================================== */
+.roster-board { display:grid; gap:18px; }
+.roster-section { min-width:0; }
+.roster-section-title {
+  display:flex; align-items:center; justify-content:space-between; gap:12px;
+  border-bottom:1px solid #35404a; padding-bottom:8px; margin-bottom:10px;
+  font:900 9px monospace; letter-spacing:.11em; color:#8b96a1;
+}
+.roster-section-title small { color:#5f6b76; font-weight:600; letter-spacing:.03em; }
+
+.starter-board { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:8px; }
+.roster-player {
+  min-width:0; display:grid; grid-template-columns:58px minmax(0,1fr) auto;
+  align-items:center; gap:9px; padding:10px;
+  background:#11171d; border:1px solid #303a44; border-left:3px solid #56616c;
+}
+.roster-player:hover { background:#151c23; border-color:#45515d; }
+.roster-player.pos-card-QB { border-left-color:var(--cyan); }
+.roster-player.pos-card-RB { border-left-color:var(--coral); }
+.roster-player.pos-card-WR { border-left-color:var(--violet); }
+.roster-player.pos-card-TE { border-left-color:var(--amber); }
+.roster-player.empty-slot { opacity:.58; border-style:dashed; }
+
+.slot-badge {
+  display:grid; place-items:center; min-height:30px;
+  background:#202832; border:1px solid #3a4652;
+  color:#b9c0c6; font:900 9px monospace; letter-spacing:.03em;
+}
+.roster-player-name {
+  overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
+  font-family:"Arial Narrow","Roboto Condensed",Arial,sans-serif;
+  font-weight:900; font-size:13px;
+}
+.roster-player-meta { display:flex; align-items:center; gap:7px; flex-wrap:wrap; margin-top:4px; color:#75818c; font:9px monospace; }
+.roster-player-data { text-align:right; display:grid; gap:3px; min-width:82px; }
+.roster-player-data small { color:#6f7b85; font:8px monospace; white-space:nowrap; }
+.market-number { color:var(--violet); font:900 12px monospace; }
+
+.position-tag {
+  display:inline-flex; align-items:center; justify-content:center;
+  min-width:27px; padding:3px 5px; border:1px solid currentColor;
+  font:900 8px monospace; line-height:1;
+}
+.pos-QB { color:var(--cyan); background:rgba(66,217,255,.06); }
+.pos-RB { color:var(--coral); background:rgba(255,107,87,.06); }
+.pos-WR { color:var(--violet); background:rgba(169,135,255,.06); }
+.pos-TE { color:var(--amber); background:rgba(255,200,87,.06); }
+.pos-OTHER { color:#8b96a1; }
+
+.bench-groups { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; }
+.bench-group { min-width:0; border:1px solid #2e3741; background:#0f1419; padding:9px; }
+.bench-group-head {
+  display:flex; align-items:center; justify-content:space-between;
+  padding-bottom:8px; margin-bottom:8px; border-bottom:1px solid #2d3741;
+  color:#727e89; font:9px monospace;
+}
+.bench-player-list { display:grid; gap:6px; }
+.bench-player-list .roster-player { grid-template-columns:44px minmax(0,1fr) auto; padding:8px; }
+
+.source-line {
+  color:#66727d; font:9px monospace; line-height:1.5; text-align:right; padding-top:9px;
+}
+.source-line a { color:var(--violet); text-decoration:none; border-bottom:1px dotted currentColor; }
+.source-line a:hover { color:var(--lime); }
+
+#intel-results td { white-space:nowrap; }
+#intel-results td:first-child, #intel-results td:nth-child(2) { white-space:normal; }
+
+@media (max-width:1200px) {
+  .starter-board { grid-template-columns:repeat(2,minmax(0,1fr)); }
+}
+@media (max-width:820px) {
+  .starter-board, .bench-groups { grid-template-columns:1fr; }
+}
+@media (max-width:520px) {
+  .roster-player { grid-template-columns:45px minmax(0,1fr); }
+  .roster-player-data { grid-column:2; text-align:left; grid-template-columns:auto auto; justify-content:start; gap:8px; }
+}
+
+
+/* ==========================================================================
+   PHASE 4.7 — 715 SPORTING PRESS
+   Vintage Americana scorebook/newsprint materials over a modern data shell.
+   ========================================================================== */
+
+:root {
+  --ink: #0e0d0a;
+  --ink-2: #17140f;
+  --panel: #171510;
+  --panel-2: #1d1a14;
+  --border: #474035;
+  --text: #eee4cb;
+  --muted: #9e9584;
+
+  --paper: #e4dac0;
+  --paper-2: #d8cdb1;
+  --paper-3: #c9bda0;
+  --paper-ink: #211e17;
+  --paper-muted: #6f6655;
+
+  --lime: #7c8250;
+  --cyan: #52758a;
+  --coral: #a34b3e;
+  --violet: #76657d;
+  --amber: #b48a3e;
+  --mint: #647b60;
+
+  --brick: #934237;
+  --navy: #405d70;
+  --mustard: #aa8033;
+  --field: #66734a;
+  --plum: #6f6075;
+
+  --accent: #b69a51;
+  --accent-dim: rgba(182,154,81,.12);
+  --good: #708064;
+  --danger: #aa5144;
+  --warn: #b78d43;
+  --radius: 2px;
+}
+
+html { background: var(--ink); }
+
+body {
+  background:
+    radial-gradient(circle at 12% 7%, rgba(228,218,192,.025), transparent 24rem),
+    radial-gradient(circle at 78% 44%, rgba(147,66,55,.035), transparent 35rem),
+    repeating-linear-gradient(7deg, rgba(255,255,255,.006) 0 1px, transparent 1px 7px),
+    var(--ink);
+  color: var(--text);
+}
+
+/* Fine ink speckle, not digital glow. */
+.noise-layer {
+  opacity: .055;
+  background-image:
+    radial-gradient(circle, rgba(225,215,188,.45) .45px, transparent .6px),
+    radial-gradient(circle, rgba(0,0,0,.8) .45px, transparent .7px);
+  background-position: 0 0, 5px 4px;
+  background-size: 8px 8px, 11px 11px;
+  mix-blend-mode: soft-light;
+}
+
+/* Headlines: athletic-program / newspaper combination. */
+h1, .brand-title, .team-name, .stat-value, .power-score,
+.record-card strong, .profile-odds strong, .roster-player-name {
+  font-family: "Arial Narrow", "Helvetica Neue Condensed", "Franklin Gothic Medium", Arial, sans-serif;
+}
+
+.panel h2, .scope-panel h2, .viz-title, .dossier-name {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 900;
+}
+
+.eyebrow, .nav-label, .stat-label, .panel-sub, th, .small-label {
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* Dark shell with old scoreboard rules. */
+.sidebar {
+  background:
+    repeating-linear-gradient(0deg, rgba(228,218,192,.018) 0 1px, transparent 1px 5px),
+    #0b0a08;
+  border-right-color: #4a4031;
+}
+
+.brand-mark {
+  color: var(--brick);
+  background:
+    radial-gradient(circle at 20% 30%, rgba(70,55,30,.10) .6px, transparent .8px),
+    var(--paper);
+  background-size: 8px 8px;
+  border: 2px solid var(--brick);
+  box-shadow: 3px 3px 0 #4d251f;
+  font-family: Impact, "Arial Black", sans-serif;
+}
+
+.brand-title { color: var(--paper); }
+.brand-sub { color: #857d6c; }
+
+.season-stamp {
+  border-color: #534939;
+  background: rgba(228,218,192,.025);
+}
+.season-stamp span { color: #817767; }
+.season-stamp strong { color: var(--paper); }
+
+.nav-item { color: #978e7d; }
+.nav-item:hover {
+  background: rgba(228,218,192,.045);
+  border-left-color: var(--paper-3);
+  color: var(--paper);
+}
+.nav-item.active {
+  color: #211b10;
+  background:
+    radial-gradient(circle at 30% 20%, rgba(61,48,24,.12) .5px, transparent .8px),
+    var(--paper-2);
+  background-size: 7px 7px;
+  border-left-color: var(--brick);
+  box-shadow: 3px 3px 0 #30291f;
+}
+
+.topbar {
+  background:
+    linear-gradient(90deg, rgba(147,66,55,.08), transparent 34%),
+    repeating-linear-gradient(0deg, rgba(228,218,192,.012) 0 1px, transparent 1px 5px),
+    #100f0c;
+  border-bottom: 2px solid #6f4439;
+}
+.eyebrow { color: #c2a25a; }
+.topbar p, .updated { color: #8e8676; }
+
+.status-pill {
+  border-color: rgba(100,123,96,.55);
+  background: rgba(100,123,96,.09);
+  color: #9aab8e;
+}
+.status-pill span { background: #829376; box-shadow: none; }
+
+/* The pulse now reads like a newspaper results strip. */
+.pulse-inner {
+  border-bottom: 2px solid #7d6b4e;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(52,43,27,.08) .5px, transparent .8px),
+    var(--paper-2);
+  background-size: 8px 8px;
+}
+.pulse-label {
+  background: var(--brick);
+  color: #f1e4c5;
+  font-family: Georgia, serif;
+  letter-spacing: .08em;
+}
+.pulse-item {
+  color: #5e574a;
+  border-right-color: #b5a98c;
+}
+.pulse-item strong { color: var(--paper-ink); }
+.pulse-item.cyan strong { color: var(--navy); }
+.pulse-item.amber strong { color: #84631e; }
+.pulse-item.violet strong { color: var(--plum); }
+.pulse-item.coral strong { color: var(--brick); }
+
+/* Dark content panels feel like inked scorebook covers. */
+.panel, .stat-card, .loading-card, .notice-card {
+  border-color: #494134;
+  background:
+    radial-gradient(circle at 17% 21%, rgba(228,218,192,.02) .5px, transparent .7px),
+    repeating-linear-gradient(0deg, rgba(255,255,255,.008) 0 1px, transparent 1px 6px),
+    var(--panel);
+  background-size: 9px 9px, auto, auto;
+}
+.panel::before { background: #766b58; }
+.panel:hover::before { width: 86px; background: var(--amber); }
+
+.stat-card {
+  border-top: 2px solid #695e4d;
+}
+.stat-card::after { width: 5px; }
+.stat-card.tone-lime::after { background: var(--field); }
+.stat-card.tone-cyan::after { background: var(--navy); }
+.stat-card.tone-violet::after { background: var(--plum); }
+.stat-card.tone-amber::after { background: var(--mustard); }
+.stat-card.tone-coral::after { background: var(--brick); }
+.stat-card.tone-mint::after { background: var(--mint); }
+
+.stat-card.tone-lime .stat-value { color: #a3a773; }
+.stat-card.tone-cyan .stat-value { color: #7896a7; }
+.stat-card.tone-violet .stat-value { color: #9a86a2; }
+.stat-card.tone-amber .stat-value { color: #c4a15c; }
+.stat-card.tone-coral .stat-value { color: #c16b5e; }
+.stat-card.tone-mint .stat-value { color: #899d82; }
+
+.button {
+  color: #211b10;
+  background: var(--paper-2);
+  border-color: #a6946e;
+  box-shadow: 2px 2px 0 #382f23;
+}
+.button:hover { filter: sepia(.2) brightness(.98); }
+.button.ghost {
+  color: #c7b476;
+  border-color: #756745;
+  background: transparent;
+  box-shadow: none;
+}
+
+.scope-toggle {
+  background: #0f0e0b;
+  border-color: #51483a;
+}
+.scope-button { color: #8c8373; }
+.scope-button.active {
+  color: #f0e5cb;
+  background: var(--brick);
+}
+
+/* Scorebook table rules. */
+th {
+  color: #8d8372;
+  border-bottom: 2px solid #574d3d;
+}
+td { border-bottom-color: rgba(81,72,57,.68); }
+tbody tr:hover td { background: rgba(228,218,192,.025); }
+.highlight-row td { background: rgba(182,154,81,.06); }
+.highlight-row td:first-child { box-shadow: inset 3px 0 0 #b39950; }
+
+.power-score { color: #86a0af; }
+.injury, .luck-bad { color: #c56557; }
+.luck-good { color: #8da084; }
+
+.rank-number {
+  border-color: #554c3e;
+  background: #11100d;
+}
+.pick-pill.acquired {
+  color: #a390aa;
+  border-color: #76657d;
+  background: rgba(118,101,125,.08);
+}
+
+/* Position inks — muted spot colors. */
+.pos-QB { color: #7895a6; background: rgba(82,117,138,.07); }
+.pos-RB { color: #bd675b; background: rgba(163,75,62,.07); }
+.pos-WR { color: #9b88a2; background: rgba(118,101,125,.08); }
+.pos-TE { color: #c2a15c; background: rgba(180,138,62,.07); }
+.pos-OTHER { color: #9b9282; }
+
+/* Roster cards become clipped scouting-index cards without losing density. */
+.roster-section-title {
+  color: #a29a8a;
+  border-bottom: 2px solid #5c5140;
+}
+.roster-player {
+  background:
+    linear-gradient(90deg, rgba(228,218,192,.025), transparent 22%),
+    #15130f;
+  border-color: #443c31;
+}
+.roster-player:hover { background: #1b1812; border-color: #665b48; }
+.slot-badge {
+  color: #29241a;
+  background:
+    radial-gradient(circle at 25% 20%, rgba(60,45,20,.10) .5px, transparent .8px),
+    var(--paper-3);
+  background-size: 6px 6px;
+  border-color: #94876a;
+  font-family: "Courier New", monospace;
+}
+.roster-player-meta { color: #857d6e; }
+.roster-player-data small { color: #766e61; }
+.market-number { color: #a18ba9; }
+
+.bench-group {
+  background:
+    repeating-linear-gradient(0deg, rgba(228,218,192,.012) 0 1px, transparent 1px 7px),
+    #11100d;
+  border-color: #453d31;
+}
+.bench-group-head { border-bottom-color: #4d4436; }
+
+/* ==========================================================================
+   PAPER CLIPPINGS
+   Visualization panels use aged stock over the off-black application shell.
+   ========================================================================== */
+.viz-panel {
+  --paper-local: #e1d6ba;
+  color: var(--paper-ink);
+  border: 1px solid #a99b7b;
+  border-top: 3px solid var(--viz-accent, var(--brick));
+  background:
+    radial-gradient(circle at 11% 16%, rgba(45,35,20,.10) .45px, transparent .75px),
+    radial-gradient(circle at 72% 62%, rgba(255,255,255,.22) .55px, transparent .8px),
+    repeating-linear-gradient(0deg, rgba(75,56,29,.018) 0 1px, transparent 1px 5px),
+    var(--paper-local);
+  background-size: 7px 7px, 11px 11px, auto, auto;
+  box-shadow: 4px 5px 0 rgba(0,0,0,.38);
+}
+.viz-panel::after {
+  content: "";
+  position: absolute;
+  right: 9px; top: 8px;
+  width: 15px; height: 15px;
+  border-top: 1px solid rgba(80,58,30,.35);
+  border-right: 1px solid rgba(80,58,30,.35);
+}
+
+.viz-title { color: #282218; font-size: 15px; }
+.viz-kicker { color: #766b57; }
+.viz-panel .bar-label, .viz-panel .bar-value { color: #4b4438; }
+.viz-panel .bar-track {
+  background: #c8bda2;
+  border-color: #aa9c7e;
+}
+.viz-panel .chart-legend, .viz-panel .data-footnote { color: #746a58; }
+.viz-panel .profile-facts div {
+  color: #2b261c;
+  background: rgba(255,255,255,.12);
+  border-color: #b2a486;
+}
+.viz-panel .profile-facts span { color: #716653; }
+
+.scatter-wrap, .intel-scatter {
+  background:
+    linear-gradient(to right, rgba(64,51,30,.08) 1px, transparent 1px),
+    linear-gradient(to top, rgba(64,51,30,.08) 1px, transparent 1px),
+    rgba(255,255,255,.09);
+  background-size: 25% 25%;
+  border-left-color: #756a57;
+  border-bottom-color: #756a57;
+}
+.viz-panel .axis-label { color: #756b59; }
+
+.donut::before {
+  background:
+    radial-gradient(circle at 15% 18%, rgba(45,35,20,.08) .5px, transparent .8px),
+    var(--paper-local);
+  background-size: 7px 7px;
+  border-color: #aa9c7f;
+}
+.donut { box-shadow: 0 0 0 1px #a99b7b; }
+
+/* ==========================================================================
+   PRESS EDITION / PRINT
+   ========================================================================== */
+.press-controls {
+  display:flex; align-items:center; gap:8px;
+}
+.press-edition {
+  display:grid; gap:1px; min-width:84px; padding:5px 8px;
+  border-top:1px solid #756a55; border-bottom:1px solid #756a55;
+  text-align:right; font-family:"Courier New", monospace;
+}
+.press-edition span { color:#8c816e; font-size:7px; letter-spacing:.12em; }
+.press-edition strong { color:#cfc2a3; font-size:9px; letter-spacing:.04em; }
+
+.print-board {
+  min-height:34px; padding:0 10px;
+  border:1px solid #816e48; color:#cfba78;
+  background:transparent; cursor:pointer;
+  font:900 8px "Courier New", monospace; letter-spacing:.08em;
+}
+.print-board:hover { color:#221b10; background:var(--paper-2); }
+
+/* ==========================================================================
+   PLAYER INTELLIGENCE CHARTS
+   ========================================================================== */
+.intel-chart-grid {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:18px;
+  margin-bottom:18px;
+}
+
+.intel-scatter {
+  position:relative;
+  height:310px;
+  margin:20px 13px 30px 39px;
+  border-left:1px solid #756a57;
+  border-bottom:1px solid #756a57;
+}
+
+.intel-dot {
+  position:absolute;
+  width:var(--dot-size,10px);
+  height:var(--dot-size,10px);
+  padding:0;
+  border:1.5px solid #e1d6ba;
+  border-radius:50%;
+  background:var(--dot-color,#6c7374);
+  transform:translate(-50%,50%);
+  box-shadow:0 0 0 1px rgba(34,29,21,.35);
+  appearance:none;
+}
+.intel-dot.available {
+  box-shadow:0 0 0 2px #2d281f, 0 0 0 4px rgba(180,138,62,.7);
+}
+.intel-dot.mine {
+  box-shadow:0 0 0 2px #1b1812, 0 0 0 4px rgba(124,130,80,.88);
+}
+.intel-dot.clickable { cursor:pointer; }
+.intel-dot.clickable:hover, .intel-dot.selected {
+  z-index:3;
+  transform:translate(-50%,50%) scale(1.45);
+  outline:1px solid #241f17;
+  outline-offset:2px;
+}
+
+.player-dossier {
+  position:relative;
+  margin-bottom:18px;
+  padding:18px;
+  color:#262118;
+  border:1px solid #a99b7c;
+  border-left:6px solid var(--brick);
+  background:
+    radial-gradient(circle at 12% 20%, rgba(45,35,20,.10) .5px, transparent .8px),
+    repeating-linear-gradient(0deg, rgba(70,52,29,.025) 0 1px, transparent 1px 22px),
+    var(--paper);
+  background-size:8px 8px, auto, auto;
+  box-shadow:4px 4px 0 rgba(0,0,0,.35);
+}
+.player-dossier::before {
+  content:"SCOUTING FILE";
+  position:absolute; right:13px; top:10px;
+  color:rgba(147,66,55,.48);
+  font:900 9px "Courier New",monospace;
+  letter-spacing:.14em;
+  transform:rotate(-2deg);
+}
+.dossier-topline {
+  display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin-bottom:8px;
+}
+.dossier-stamp {
+  color:#f2e6c7; background:var(--brick); padding:4px 6px;
+  font:900 8px "Courier New",monospace; letter-spacing:.08em;
+}
+.dossier-basis { color:#6e6554; font:8px "Courier New",monospace; }
+.dossier-name {
+  color:#252017; font-size:26px; line-height:1; letter-spacing:-.04em;
+}
+.dossier-meta {
+  display:flex; align-items:center; gap:8px; margin:8px 0 16px;
+  color:#675e4e; font:9px "Courier New",monospace;
+}
+.dossier-grid {
+  display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:8px;
+}
+.dossier-grid div {
+  display:grid; gap:2px; padding:9px;
+  border-top:2px solid #887a60;
+  background:rgba(255,255,255,.10);
+}
+.dossier-grid span { color:#766b59; font:8px "Courier New",monospace; letter-spacing:.08em; }
+.dossier-grid strong { color:#272219; font-size:19px; }
+.dossier-grid small { color:#776d5c; font:8px "Courier New",monospace; }
+
+.vintage-legend {
+  color:#8f8573;
+  font-family:"Courier New",monospace;
+  margin:8px 0 18px;
+}
+.vintage-legend .legend-key { padding:3px 5px; border:1px solid currentColor; }
+.legend-note { margin-left:auto; }
+.pos-legend-qb { color:#7895a6; }
+.pos-legend-rb { color:#bd675b; }
+.pos-legend-wr { color:#9b88a2; }
+.pos-legend-te { color:#b28d43; }
+
+/* ==========================================================================
+   MARKET COMPOSITION / STARTER DEPTH LEDGERS
+   ========================================================================== */
+.market-stack-chart { display:grid; gap:7px; }
+.market-stack-row {
+  display:grid; grid-template-columns:minmax(90px,1.1fr) minmax(150px,3fr) 58px;
+  gap:8px; align-items:center;
+}
+.market-stack-label {
+  overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
+  color:#4f473a; font:9px "Courier New",monospace;
+}
+.market-stack-track {
+  height:12px; background:#c3b79a; border:1px solid #a99b7c; overflow:hidden;
+}
+.market-stack-total { display:flex; height:100%; min-width:1px; }
+.market-segment { display:block; height:100%; }
+.market-QB { background:#52758a; }
+.market-RB { background:#a34b3e; }
+.market-WR { background:#76657d; }
+.market-TE { background:#b48a3e; }
+.starter-segment { background:#405d70; }
+.depth-segment { background:#a99a78; }
+.market-stack-value {
+  text-align:right; color:#40392d; font:9px "Courier New",monospace; font-weight:900;
+}
+.starter-legend { color:#7895a6; }
+.depth-legend { color:#a99a78; }
+
+/* ==========================================================================
+   FRANCHISE QUADRANT / POWER INPUT LEDGER
+   ========================================================================== */
+.quadrant-key {
+  display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:5px 12px;
+  margin-top:10px; color:#6d6352; font:8px "Courier New",monospace;
+}
+.quadrant-key strong { color:#3b3428; }
+
+.power-input-ledger { display:grid; gap:8px; }
+.power-input-row {
+  display:grid; grid-template-columns:minmax(90px,1fr) minmax(180px,3fr) 42px;
+  align-items:center; gap:9px;
+}
+.power-input-row.mine .power-input-team { font-weight:900; text-decoration:underline; }
+.power-input-team {
+  overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
+  color:#4c4437; font:9px "Courier New",monospace;
+}
+.power-input-bars {
+  display:grid; grid-template-rows:repeat(3,4px); gap:2px;
+  background:rgba(65,52,29,.06);
+}
+.input-bar { display:block; height:4px; }
+.input-bar.prior { background:#52758a; }
+.input-bar.market { background:#76657d; }
+.input-bar.live { background:#66734a; }
+.power-input-score { text-align:right; color:#302a20; font:900 10px "Courier New",monospace; }
+.prior-legend { color:#52758a; }
+.market-legend { color:#76657d; }
+.live-legend { color:#66734a; }
+
+/* ==========================================================================
+   PLAYOFF SIM MODEL TICKET
+   ========================================================================== */
+.model-ticket {
+  position:relative;
+  margin-bottom:18px;
+  padding:14px 16px;
+  color:#262118;
+  border:1px solid #9f906f;
+  border-left:7px solid var(--brick);
+  background:
+    repeating-linear-gradient(90deg, transparent 0 12px, rgba(69,52,27,.025) 12px 13px),
+    radial-gradient(circle at 20% 20%, rgba(50,39,21,.09) .5px, transparent .8px),
+    var(--paper-2);
+  background-size:auto,8px 8px,auto;
+  box-shadow:4px 4px 0 rgba(0,0,0,.34);
+}
+.model-ticket::after {
+  content:"";
+  position:absolute; right:-1px; top:0; bottom:0; width:10px;
+  background:radial-gradient(circle at 100% 8px, var(--ink) 0 4px, transparent 4.5px) 0 0/10px 16px repeat-y;
+}
+.ticket-number {
+  color:#8b3e35; font:900 8px "Courier New",monospace; letter-spacing:.13em;
+  margin-bottom:10px;
+}
+.ticket-columns {
+  display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px;
+}
+.ticket-columns div { display:grid; gap:3px; border-top:2px solid #7b6f58; padding-top:7px; }
+.ticket-columns span { color:#766c59; font:8px "Courier New",monospace; }
+.ticket-columns strong { color:#282219; font-size:15px; }
+.ticket-columns small { color:#776d5b; font:8px "Courier New",monospace; line-height:1.4; }
+.ticket-note {
+  margin-top:10px; padding-top:8px; border-top:1px dashed #9e9073;
+  color:#706654; font:8px "Courier New",monospace; line-height:1.5;
+}
+
+/* ==========================================================================
+   PRINT THE CURRENT BOARD
+   ========================================================================== */
+@media print {
+  @page { margin: .45in; }
+  html, body {
+    background:#f0e6cb !important;
+    color:#211d15 !important;
+  }
+  .noise-layer, .sidebar, .topbar, .league-pulse,
+  .print-board, .toolbar, .button, .scope-toggle { display:none !important; }
+  .shell { display:block !important; }
+  main { width:100% !important; }
+  .content { max-width:none !important; padding:0 !important; }
+
+  .panel, .stat-card, .loading-card, .notice-card, .profile-hero,
+  .team-card, .roster-player, .bench-group {
+    color:#211d15 !important;
+    background:#f0e6cb !important;
+    border-color:#8c7c5e !important;
+    box-shadow:none !important;
+    break-inside:avoid;
+  }
+  .viz-panel, .player-dossier, .model-ticket {
+    box-shadow:none !important;
+    break-inside:avoid;
+  }
+  h1,h2,.player-name,.roster-player-name,.team-name,.stat-value {
+    color:#211d15 !important;
+  }
+  .muted,.panel-sub,.table-note,.roster-player-meta,.roster-player-data small {
+    color:#655b4a !important;
+  }
+  th,td { color:#211d15 !important; border-color:#aa9a79 !important; }
+  .source-line a { color:#4e6572 !important; }
+}
+
+/* ==========================================================================
+   RESPONSIVE
+   ========================================================================== */
+@media (max-width:1050px) {
+  .intel-chart-grid { grid-template-columns:1fr; }
+  .dossier-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .ticket-columns { grid-template-columns:1fr; }
+}
+
+@media (max-width:720px) {
+  .press-edition { display:none; }
+  .print-board { min-height:30px; }
+  .intel-scatter { height:270px; margin-left:34px; }
+  .market-stack-row, .power-input-row {
+    grid-template-columns:82px minmax(120px,1fr) 48px;
+  }
+  .quadrant-key { grid-template-columns:1fr; }
+}
+
+@media (max-width:500px) {
+  .dossier-grid { grid-template-columns:1fr 1fr; }
+  .dossier-name { font-size:22px; }
+  .legend-note { width:100%; margin-left:0; }
+}
