@@ -531,10 +531,15 @@ def build_team_profiles(
             window = "Contender"
         elif playoff_odds >= 40:
             window = "Playoff Hunt"
-        elif playoff_odds <= 25 and capital >= 65 and youth >= 55:
-            window = "Rebuilder"
-        elif playoff_odds <= 25 and capital < 40:
-            window = "Retool Needed"
+        elif playoff_odds <= 25:
+            # A team that is far outside the playoff picture should not be
+            # labeled "Middle" simply because its draft-capital score lands
+            # near league average. Separate intentional rebuild profiles from
+            # low-upside teams that need a retool.
+            if (capital >= 40 and youth >= 60) or capital >= 65:
+                window = "Rebuilder"
+            else:
+                window = "Retool Needed"
         else:
             window = "Middle"
 
