@@ -22,6 +22,8 @@ const state = {
   managerTendencies: null,
   playerIntel: null,
   marketSummary: null,
+  dataHealth: null,
+  intelligenceHistory: null,
   profileRosterId: MY_ROSTER_ID,
   view: "home",
   tradePartnerId: null,
@@ -988,7 +990,7 @@ function render() {
 
 async function boot() {
   try {
-    const [summary, teams, waivers, changes, transactions, needs, tradePartners, opportunities, power, standings, lineups, recap, draftCapital, records, playoffs, profiles, managerTendencies, playerIntel, marketSummary] = await Promise.all([
+    const [summary, teams, waivers, changes, transactions, needs, tradePartners, opportunities, power, standings, lineups, recap, draftCapital, records, playoffs, profiles, managerTendencies, playerIntel, marketSummary, dataHealth, intelligenceHistory] = await Promise.all([
       getJson("league_summary.json"),
       getJson("team_assets.json"),
       getJson("free_agents_by_position.json"),
@@ -1008,8 +1010,10 @@ async function boot() {
       getJson("manager_tendencies.json"),
       getOptionalJson("player_intel.json", null),
       getOptionalJson("roster_market_values.json", null),
+      getOptionalJson("data_health.json", null),
+      getOptionalJson("intelligence_history.json", null),
     ]);
-    Object.assign(state, { summary, teams, waivers, changes, transactions, needs, tradePartners, opportunities, power, standings, lineups, recap, draftCapital, records, playoffs, profiles, managerTendencies, playerIntel, marketSummary });
+    Object.assign(state, { summary, teams, waivers, changes, transactions, needs, tradePartners, opportunities, power, standings, lineups, recap, draftCapital, records, playoffs, profiles, managerTendencies, playerIntel, marketSummary, dataHealth, intelligenceHistory });
     if (power?.scopes?.current?.status !== "live" && power?.scopes?.all_time?.status === "live") {
       state.analyticsScope = "all_time";
     }
