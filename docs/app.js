@@ -846,6 +846,39 @@ function rosterIntelLineupColumn(title, subtitle, rows) {
   </section>`;
 }
 
+function rosterActionPrompt(action, report) {
+  const confidence = report?.data_confidence || {};
+  const coverage = report?.coverage || {};
+  return `Act as a skeptical dynasty fantasy football decision analyst. Evaluate this proposed action for my 715 Dynasty roster using the latest available information and current web research.
+
+PROPOSED ACTION
+Priority: ${action.priority ?? "—"}/10
+Category: ${action.category || "Unspecified"}
+Action: ${action.title || "Unspecified"}
+Recommendation: ${action.recommendation || "Not provided"}
+Current rationale: ${action.rationale || "Not provided"}
+Modeled advantage: ${action.projected_advantage ?? "Not quantified"}
+Upside: ${action.upside || "Not provided"}
+Risk: ${action.risk || "Not provided"}
+Cost or likely cut: ${action.cost_or_cut || "Not provided"}
+Urgency: ${action.urgency || "Not provided"}
+Model confidence: ${action.confidence || "Unrated"}
+
+REPORT CONTEXT
+Season/week: ${report?.season || "—"} / ${report?.week ?? "—"}
+Report generated: ${report?.generated_at || "Unknown"}
+Overall confidence: ${confidence.label || "Unrated"}
+Current-season performance samples: ${coverage.current_season_performance_samples ?? 0}
+Curated reports affecting my roster: ${coverage.curated_context_reports ?? 0}
+
+Please:
+1. Verify current injury, practice, depth-chart, coach-statement, beat-report, role and matchup information from reliable sources; cite and date every consequential source.
+2. Confirm the player is available or the lineup move is legal using the latest league data when applicable.
+3. Separate weekly lineup value, rest-of-season value and dynasty value. Do not treat dynasty market movement as a weekly projection.
+4. Identify assumptions, contradictory evidence, likely alternatives and the opportunity cost.
+5. Finish with one verdict—ACT, MONITOR or REJECT—plus a confidence rating and the specific evidence that would change it.`;
+}
+
 function renderRosterIntelligence() {
   const data = state.rosterIntelligence;
   if (!data) {
@@ -891,10 +924,10 @@ function renderRosterIntelligence() {
     <div class="grid-2 even ri-bottom-grid">
       <div class="panel">
         <div class="panel-header"><div><h2>Action Board</h2><div class="panel-sub">Recommended roster decisions, highest priority first</div></div></div>
-        <div class="ri-action-list">${(data.action_board || []).map(action => `<article class="ri-action-card priority-${Math.ceil(Number(action.priority || 0) / 3)}">
+        <div class="ri-action-list">${(data.action_board || []).map((action, actionIndex) => `<article class="ri-action-card priority-${Math.ceil(Number(action.priority || 0) / 3)}">
           <div class="ri-priority"><strong>${esc(action.priority)}</strong><span>/10</span></div>
           <div><small>${esc(action.category)} · ${esc(action.urgency || "No deadline")} · ${esc(action.confidence || "unknown")} confidence</small><h3>${esc(action.title)}</h3><p>${esc(action.recommendation)}</p><div>${esc(action.rationale || "No rationale available.")}</div>
-          <details class="ri-action-detail"><summary>Upside, risk & cost</summary><dl><dt>Upside</dt><dd>${esc(action.upside || "Not quantified")}</dd><dt>Risk</dt><dd>${esc(action.risk || "Not recorded")}</dd><dt>Cost / cut</dt><dd>${esc(action.cost_or_cut || "Not recorded")}</dd></dl></details></div>
+          <details class="ri-action-detail"><summary>Upside, risk & cost</summary><dl><dt>Upside</dt><dd>${esc(action.upside || "Not quantified")}</dd><dt>Risk</dt><dd>${esc(action.risk || "Not recorded")}</dd><dt>Cost / cut</dt><dd>${esc(action.cost_or_cut || "Not recorded")}</dd></dl></details><button type="button" class="button ghost ri-copy-action" data-action-index="${actionIndex}">Copy ChatGPT evaluation prompt</button></div>
         </article>`).join("") || '<div class="empty">No roster moves are recommended from the available evidence.</div>'}</div>
       </div>
       <div class="panel">
@@ -1137,6 +1170,10 @@ function wireViewControls() {
   });
 
   document.querySelectorAll("[data-copy]").forEach(btn => btn.addEventListener("click", () => copyText(btn.dataset.copy, btn)));
+  document.querySelectorAll("[data-action-index]").forEach(btn => btn.addEventListener("click", () => {
+    const action = state.rosterIntelligence?.action_board?.[Number(btn.dataset.actionIndex)];
+    if (action) copyText(rosterActionPrompt(action, state.rosterIntelligence), btn);
+  }));
 
   if (state.view === "waivers") {
     document.querySelector("#pos-filter")?.addEventListener("change", updateWaivers);
