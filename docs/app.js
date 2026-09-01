@@ -24,6 +24,8 @@ const state = {
   marketSummary: null,
   dataHealth: null,
   intelligenceHistory: null,
+  rosterIntelligence: null,
+  rosterIntelligenceHistory: null,
   profileRosterId: MY_ROSTER_ID,
   view: "home",
   tradePartnerId: null,
@@ -683,6 +685,140 @@ function updateIntel() {
 }
 
 
+function rosterIntelList(items, fallback) {
+  if (!items?.length) return `<div class="ri-unavailable">${esc(fallback)}</div>`;
+  return `<ul class="ri-list">${items.map(item => `<li>${esc(item)}</li>`).join("")}</ul>`;
+}
+
+function rosterIntelMovement(movement) {
+  if (!movement?.has_previous) return `<span class="ri-move flat">NEW BASELINE</span>`;
+  const value = Number(movement.value_change || 0);
+  const rank = Number(movement.position_rank_change || 0);
+  const direction = value > 0 || rank > 0 ? "up" : value < 0 || rank < 0 ? "down" : "flat";
+  const valueText = value ? `${value > 0 ? "+" : ""}${value.toLocaleString()} value` : "value flat";
+  const rankText = rank ? ` · ${rank > 0 ? "▲" : "▼"}${Math.abs(rank)} roster rank` : "";
+  const tierText = movement.tier_changed ? ` · T${esc(movement.tier_from)}→T${esc(movement.tier_to)}` : "";
+  return `<span class="ri-move ${direction}">${esc(valueText)}${rankText}${tierText}</span>`;
+}
+
+function rosterIntelPlayerCard(player) {
+  const value = player.current_fantasy_value || {};
+  const projection = value.projection || {};
+  const trends = player.trends || {};
+  const outlook = player.speculative_outlook || {};
+  const comparisons = player.app_data_comparisons || [];
+  return `<details class="ri-player-card">
+    <summary>
+      <span class="ri-player-rank">${esc(player.position_rank_on_roster)}</span>
+      <span class="ri-player-identity">
+        <strong>${esc(player.name)}</strong>
+        <small>${esc(player.team || "NFL FA")} · Age ${esc(player.age ?? "—")}${player.injury_status ? ` · <em>${esc(player.injury_status)}</em>` : ""}</small>
+      </span>
+      <span class="ri-player-value"><strong>${Number(value.market_value || 0).toLocaleString()}</strong><small>${esc(projection.points ?? "—")} proj</small></span>
+      ${rosterIntelMovement(player.movement)}
+      <span class="ri-expand" aria-hidden="true">＋</span>
+    </summary>
+    <div class="ri-player-body">
+      <div class="ri-detail-grid">
+        <section>
+          <h4>Current fantasy value</h4>
+          <div class="ri-value-line"><strong>${Number(value.market_value || 0).toLocaleString()}</strong><span>#${esc(value.market_position_rank ?? "—")} ${esc(player.position)} market · ${esc(projection.points ?? "—")} evidence pts</span></div>
+          <p>${esc(projection.basis || "Projection basis unavailable.")} <span class="ri-confidence">${esc(projection.confidence || "low")} confidence</span></p>
+        </section>
+        <section>
+          <h4>Speculative outlook</h4>
+          <div class="ri-outlook-label">${esc(outlook.label || "Unrated")}</div>
+          <p>${esc(outlook.summary || "No speculative outlook is available.")}</p>
+        </section>
+        <section>
+          <h4>Trends</h4>
+          <p>${esc(trends.summary || "Trend sample unavailable.")}</p>
+          <div class="ri-deltas"><span>PPG ${trends.ppg_delta == null ? "—" : `${trends.ppg_delta > 0 ? "+" : ""}${esc(trends.ppg_delta)}`}</span><span>Opp/G ${trends.opportunity_delta == null ? "—" : `${trends.opportunity_delta > 0 ? "+" : ""}${esc(trends.opportunity_delta)}`}</span></div>
+        </section>
+        <section>
+          <h4>App-data comparison</h4>
+          <div class="ri-comparisons">${comparisons.map(row => `<div><span>${esc(row.source)} · ${esc(row.label)}</span><strong>${esc(row.value)}</strong></div>`).join("") || '<div class="ri-unavailable">No app comparison is available.</div>'}</div>
+        </section>
+      </div>
+      <div class="ri-research-grid">
+        <section><h4>Key evidence</h4>${rosterIntelList(player.key_evidence, "No supporting evidence is available.")}</section>
+        <section><h4>News</h4>${rosterIntelList(player.news, "No verified player news is stored in this report.")}</section>
+        <section><h4>Coach / beat-reporter information</h4>${rosterIntelList(player.coach_beat_reporter_information, "No verified coach or beat-reporter note is stored in this report.")}</section>
+        <section><h4>Notable takeaways</h4>${rosterIntelList(player.notable_takeaways, "No additional takeaway is available.")}</section>
+      </div>
+    </div>
+  </details>`;
+}
+
+function rosterIntelLineupColumn(title, subtitle, rows) {
+  return `<section class="ri-lineup-column">
+    <div class="ri-lineup-head"><h3>${esc(title)}</h3><span>${esc(subtitle)}</span></div>
+    <div class="ri-lineup-list">${(rows || []).map(row => `<div class="ri-lineup-row">
+      <span class="slot-badge">${esc(row.slot_label)}</span>
+      <span><strong>${esc(row.name)}</strong><small>${esc(row.position || "—")} · ${esc(row.team || "NFL FA")} · ${esc(row.confidence || "low")} confidence</small></span>
+      <strong class="ri-projection">${esc(row.projected_points ?? "—")}</strong>
+    </div>`).join("")}</div>
+  </section>`;
+}
+
+function renderRosterIntelligence() {
+  const data = state.rosterIntelligence;
+  if (!data) {
+    return `<div class="notice-card"><div class="notice-icon">🧭</div><div><h2>Roster Intelligence is waiting for a report</h2><p>Run the derived-data build to create roster_intelligence.json. The rest of Dynasty HQ remains available.</p></div></div>`;
+  }
+  const coverage = data.coverage || {};
+  const lineup = data.lineup || {};
+  const changes = lineup.changes || [];
+  const movers = (data.movement || []).filter(row => row.has_previous);
+  const historyCount = state.rosterIntelligenceHistory?.entries?.length || 0;
+  return `
+    <div class="ri-report-strip">
+      <span>REPORT ${esc(data.season || "—")} · WEEK ${esc(data.week ?? "—")}</span>
+      <strong>${esc(data.roster?.team_name || data.roster?.manager || "My roster")}</strong>
+      <small>${esc(fmtTime(data.generated_at))}</small>
+    </div>
+    <div class="stats-grid ri-stats">
+      ${stat("Roster Coverage", `${coverage.roster_players ?? 0}/${data.roster?.player_count ?? 0}`, "Players on tier boards")}
+      ${stat("Evidence Projection", lineup.optimized_projected_points ?? "—", `${lineup.projected_advantage > 0 ? "+" : ""}${lineup.projected_advantage ?? 0} vs current lineup`)}
+      ${stat("Priority Actions", data.action_board?.length ?? 0, "Rated on a 1–10 scale")}
+      ${stat("Research Coverage", `${coverage.news_players ?? 0} news · ${coverage.coach_beat_reporter_players ?? 0} coach`, coverage.research_status === "available" ? "Verified research loaded" : "Unavailable fields degrade safely")}
+    </div>
+
+    <div class="panel ri-lineup-panel">
+      <div class="panel-header"><div><h2>Weekly Lineup Decision</h2><div class="panel-sub">Current submission beside the highest-scoring legal evidence lineup</div></div><div class="ri-advantage">${lineup.projected_advantage > 0 ? "+" : ""}${esc(lineup.projected_advantage ?? 0)}<small>projected advantage</small></div></div>
+      <div class="ri-lineup-grid">
+        ${rosterIntelLineupColumn("Current lineup", `${lineup.current_projected_points ?? "—"} evidence points`, lineup.current)}
+        ${rosterIntelLineupColumn("Optimized lineup", `${lineup.optimized_projected_points ?? "—"} evidence points`, lineup.optimized)}
+      </div>
+      <div class="ri-lineup-reasons">${changes.length ? changes.map(change => `<div><strong>${esc(change.start)} over ${esc(change.sit)}</strong><span>${esc(change.explanation)} Projected edge: ${change.projected_advantage > 0 ? "+" : ""}${esc(change.projected_advantage)}.</span></div>`).join("") : '<div><strong>No swap indicated</strong><span>The submitted starters already match the optimized player set.</span></div>'}</div>
+      <div class="method-note">${esc(lineup.methodology || "")}</div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-header"><div><h2>Positional Tier Boards</h2><div class="panel-sub">Every tracked roster player · expand any card for the full dossier</div></div></div>
+      <div class="ri-position-grid">${(data.position_boards || []).map(board => `<section class="ri-position-board">
+        <div class="ri-position-head"><span class="position-tag pos-${esc(board.position)}">${esc(board.position)}</span><strong>${esc(board.player_count)} players</strong></div>
+        ${(board.tiers || []).map(tier => `<div class="ri-tier-group tier-${esc(tier.number)}"><div class="ri-tier-head"><span>TIER ${esc(tier.number)}</span><strong>${esc(tier.label)}</strong><small>${tier.players?.length || 0}</small></div>${(tier.players || []).map(rosterIntelPlayerCard).join("")}</div>`).join("")}
+      </section>`).join("")}</div>
+    </div>
+
+    <div class="grid-2 even ri-bottom-grid">
+      <div class="panel">
+        <div class="panel-header"><div><h2>Action Board</h2><div class="panel-sub">Recommended roster decisions, highest priority first</div></div></div>
+        <div class="ri-action-list">${(data.action_board || []).map(action => `<article class="ri-action-card priority-${Math.ceil(Number(action.priority || 0) / 3)}">
+          <div class="ri-priority"><strong>${esc(action.priority)}</strong><span>/10</span></div>
+          <div><small>${esc(action.category)}</small><h3>${esc(action.title)}</h3><p>${esc(action.recommendation)}</p><div>${esc(action.rationale || "No rationale available.")}</div></div>
+        </article>`).join("") || '<div class="empty">No roster moves are recommended from the available evidence.</div>'}</div>
+      </div>
+      <div class="panel">
+        <div class="panel-header"><div><h2>Report Movement</h2><div class="panel-sub">Current report compared with ${data.previous_report?.available ? fmtTime(data.previous_report.generated_at) : "the first captured baseline"} · ${esc(historyCount)} snapshots retained</div></div></div>
+        <div class="ri-movement-list">${movers.length ? movers.map(row => `<div><span><strong>${esc(row.name)}</strong><small>${esc(row.position)}</small></span>${rosterIntelMovement(row)}</div>`).join("") : '<div class="empty">No previous report is available yet. This run establishes the baseline.</div>'}</div>
+      </div>
+    </div>
+    <div class="source-line">${(data.source_notes || []).map(esc).join(" · ")}</div>`;
+}
+
+
 function renderTeam() {
   const me = state.teams?.[MY_ROSTER_ID];
   const profile = state.needs?.teams?.[MY_ROSTER_ID];
@@ -948,6 +1084,7 @@ function render() {
   const titles = {
     home: ["Overview", "Live 715 Dynasty league state"],
     team: ["My Team", "Baskerville Bilge Rats"],
+    "roster-intelligence": ["Roster Intelligence", "Weekly tiers, lineup edge and roster actions"],
     trades: ["Trade Finder", "Find roster-construction matches before doing market research"],
     opportunities: ["Opportunities", "Signal-ranked, confirmed free agents"],
     power: ["Power Rankings", "Performance-based 715 Power Score"],
@@ -969,6 +1106,7 @@ function render() {
 
   if (state.view === "home") app.innerHTML = renderHome();
   if (state.view === "team") app.innerHTML = renderTeam();
+  if (state.view === "roster-intelligence") app.innerHTML = renderRosterIntelligence();
   if (state.view === "trades") app.innerHTML = renderTradeFinder();
   if (state.view === "opportunities") app.innerHTML = renderOpportunities();
   if (state.view === "power") app.innerHTML = renderPower();
@@ -990,7 +1128,7 @@ function render() {
 
 async function boot() {
   try {
-    const [summary, teams, waivers, changes, transactions, needs, tradePartners, opportunities, power, standings, lineups, recap, draftCapital, records, playoffs, profiles, managerTendencies, playerIntel, marketSummary, dataHealth, intelligenceHistory] = await Promise.all([
+    const [summary, teams, waivers, changes, transactions, needs, tradePartners, opportunities, power, standings, lineups, recap, draftCapital, records, playoffs, profiles, managerTendencies, playerIntel, marketSummary, dataHealth, intelligenceHistory, rosterIntelligence, rosterIntelligenceHistory] = await Promise.all([
       getJson("league_summary.json"),
       getJson("team_assets.json"),
       getJson("free_agents_by_position.json"),
@@ -1012,8 +1150,10 @@ async function boot() {
       getOptionalJson("roster_market_values.json", null),
       getOptionalJson("data_health.json", null),
       getOptionalJson("intelligence_history.json", null),
+      getOptionalJson("roster_intelligence.json", null),
+      getOptionalJson("roster_intelligence_history.json", null),
     ]);
-    Object.assign(state, { summary, teams, waivers, changes, transactions, needs, tradePartners, opportunities, power, standings, lineups, recap, draftCapital, records, playoffs, profiles, managerTendencies, playerIntel, marketSummary, dataHealth, intelligenceHistory });
+    Object.assign(state, { summary, teams, waivers, changes, transactions, needs, tradePartners, opportunities, power, standings, lineups, recap, draftCapital, records, playoffs, profiles, managerTendencies, playerIntel, marketSummary, dataHealth, intelligenceHistory, rosterIntelligence, rosterIntelligenceHistory });
     if (power?.scopes?.current?.status !== "live" && power?.scopes?.all_time?.status === "live") {
       state.analyticsScope = "all_time";
     }
