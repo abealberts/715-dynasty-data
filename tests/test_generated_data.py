@@ -18,6 +18,7 @@ class GeneratedDataQualityTests(unittest.TestCase):
         cls.teams = load("data/derived/team_assets.json")
         cls.opportunities = load("data/derived/opportunity_scanner.json")
         cls.report = load("data/derived/roster_intelligence.json")
+        cls.records = load("data/derived/record_book.json")
 
     def test_roster_players_are_unique_across_league(self) -> None:
         owners: dict[str, str] = {}
@@ -63,6 +64,12 @@ class GeneratedDataQualityTests(unittest.TestCase):
             if change["decision"] == "consider":
                 self.assertTrue(change["current_decision_evidence"])
                 self.assertGreaterEqual(change["projected_advantage"], 3)
+
+    def test_record_book_excludes_empty_matchups(self) -> None:
+        for key in ("closest_game", "biggest_blowout"):
+            game = self.records.get("records", {}).get(key)
+            if game:
+                self.assertGreater(float(game["a"]["points"]) + float(game["b"]["points"]), 0)
 
 
 if __name__ == "__main__":

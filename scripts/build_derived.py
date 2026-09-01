@@ -1299,7 +1299,20 @@ def build_record_book(
             rows = season_matchups.get(str(week)) or []
             by_matchup: dict[str, list[dict[str, Any]]] = defaultdict(list)
 
+            raw_matchups: dict[str, list[dict[str, Any]]] = defaultdict(list)
             for row in rows:
+                if row.get("matchup_id") is not None:
+                    raw_matchups[str(row.get("matchup_id"))].append(row)
+            valid_matchup_ids = {
+                matchup_id
+                for matchup_id, pair in raw_matchups.items()
+                if len(pair) == 2 and sum(float(item.get("points") or 0) for item in pair) > 0
+            }
+
+            for row in rows:
+                mid = row.get("matchup_id")
+                if mid is None or str(mid) not in valid_matchup_ids:
+                    continue
                 rid = str(row.get("roster_id"))
                 roster = season_rosters.get(rid) or {}
                 owner_id = str(roster.get("owner_id") or f"{season}:{rid}")
@@ -1329,14 +1342,12 @@ def build_record_book(
                 mt["games"] += 1
                 mt["seasons"].add(season)
 
-                mid = row.get("matchup_id")
-                if mid is not None:
-                    by_matchup[str(mid)].append({
-                        "owner_id": owner_id,
-                        "manager": manager,
-                        "points": points,
-                        "roster_id": int(rid),
-                    })
+                by_matchup[str(mid)].append({
+                    "owner_id": owner_id,
+                    "manager": manager,
+                    "points": points,
+                    "roster_id": int(rid),
+                })
 
             for pair in by_matchup.values():
                 if len(pair) != 2:

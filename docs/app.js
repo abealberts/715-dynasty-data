@@ -243,13 +243,6 @@ function renderHome() {
   const partners = state.tradePartners?.partners?.[MY_ROSTER_ID] || [];
 
   return `
-    <div class="stats-grid">
-      ${stat("Format", s.superflex ? "Superflex" : "1QB", s.full_ppr ? "Full PPR" : "Custom scoring")}
-      ${stat("My FAAB", `$${me?.waivers?.faab_remaining ?? "—"}`, `Waiver priority ${me?.waivers?.waiver_position ?? "—"}`)}
-      ${stat("My Picks", me?.picks?.length ?? 0, "Current future picks")}
-      ${stat("League Median", s.league_median_match ? "ON" : "OFF", "Extra weekly matchup")}
-    </div>
-
     <div class="home-decision-grid">
       <div class="panel">
         <div class="panel-header"><div><h2>What Matters Now</h2><div class="panel-sub">Highest-priority decisions for the Baskerville Bilge Rats</div></div><button class="button ghost" data-go="roster-intelligence">Open full report</button></div>
@@ -258,15 +251,18 @@ function renderHome() {
       ${renderConfidenceCard()}
     </div>
 
+    <div class="stats-grid">
+      ${stat("Format", s.superflex ? "Superflex" : "1QB", s.full_ppr ? "Full PPR" : "Custom scoring")}
+      ${stat("My FAAB", `$${me?.waivers?.faab_remaining ?? "—"}`, `Waiver priority ${me?.waivers?.waiver_position ?? "—"}`)}
+      ${stat("My Picks", me?.picks?.length ?? 0, "Current future picks")}
+      ${stat("League Median", s.league_median_match ? "ON" : "OFF", "Extra weekly matchup")}
+    </div>
+
     <div class="grid-2">
       <div>
         <div class="panel">
           <div class="panel-header"><div><h2>Opportunity Board</h2><div class="panel-sub">Top confirmed free-agent signals right now</div></div><button class="button ghost" data-go="opportunities">Open scanner</button></div>
           ${opportunityTable(topOps, 5)}
-        </div>
-        <div class="panel">
-          <div class="panel-header"><div><h2>League Snapshot</h2><div class="panel-sub">All 12 teams at a glance</div></div></div>
-          <div class="team-grid">${Object.values(state.teams || {}).map(teamCard).join("")}</div>
         </div>
       </div>
       <div>
@@ -723,7 +719,8 @@ function filteredIntel() {
 function updateIntel() {
   const target = document.querySelector("#intel-results");
   if (!target) return;
-  const rows = filteredIntel().slice(0, 300);
+  const allRows = filteredIntel();
+  const rows = allRows.slice(0, 150);
   target.innerHTML = `<div class="table-wrap"><table>
     <thead><tr><th>Player</th><th>Owner</th><th>Market</th><th>Market Rank</th><th>715 PPG</th><th>Opp/G</th><th>Snap%</th><th>Basis</th></tr></thead>
     <tbody>${rows.map(x => {
@@ -739,7 +736,7 @@ function updateIntel() {
         <td>${p.basis ? `${esc(p.basis_label)} ${p.basis === "prior" ? "prior" : "current"}` : "—"}</td>
       </tr>`;
     }).join("")}</tbody>
-  </table></div>`;
+  </table></div><div class="result-count">Showing ${rows.length.toLocaleString()} of ${allRows.length.toLocaleString()} matching players. Use filters or search to narrow the list.</div>`;
 }
 
 

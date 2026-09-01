@@ -78,7 +78,7 @@
     const myProfile = state.profiles?.teams?.find(x => String(x.roster_id) === "3");
 
     const items = [
-      `<span class="pulse-item cyan">POWER LEADER <strong>${escapeHtml(shortName(topPower))}</strong></span>`,
+      `<span class="pulse-item cyan">ALL-TIME POWER LEADER <strong>${escapeHtml(shortName(topPower))}</strong></span>`,
       `<span class="pulse-item violet">MY FUTURE PICKS <strong>${escapeHtml(me?.picks?.length ?? "—")}</strong></span>`,
       `<span class="pulse-item amber">TOP FA SIGNAL <strong>${escapeHtml(topOpp?.name || "—")}</strong></span>`,
       `<span class="pulse-item cyan">BILGE RAT PLAYOFF ODDS <strong>${escapeHtml(myPlayoff?.playoff_odds ?? "—")}%</strong></span>`,
@@ -212,7 +212,7 @@
       max: Math.max(1, ...teams.map(t => Number(t.title_odds || 0)))
     });
 
-    const anchor = qa(".stats-grid")[0];
+    const anchor = q(".shape-grid")?.closest(".panel") || q(".roster-evaluation-panel") || qa(".stats-grid")[0];
     insertAfter(anchor,
       `<div class="viz-grid">${vizPanel("Make Playoffs", "10,000 simulations", playoff, COLORS.cyan)}${vizPanel("Win The League", "simulated title share", title, COLORS.violet)}</div>`,
       "playoffs"
@@ -392,11 +392,10 @@
         perf.ppg_715 != null ? `${perf.ppg_715} PPG` : "",
         perf.opportunities_per_game != null ? `${perf.opportunities_per_game} opp/g` : "",
       ].filter(Boolean).join(" · ");
-      return `<button type="button" class="${classes}"
-        ${clickable && r.player_id ? `data-intel-player="${escapeHtml(r.player_id)}"` : ""}
-        aria-label="${escapeHtml(title)}"
-        title="${escapeHtml(title)}"
-        style="left:${left.toFixed(2)}%;bottom:${bottom.toFixed(2)}%;--dot-color:${color(r)};--dot-size:${px}px"></button>`;
+      const attributes = `class="${classes}" title="${escapeHtml(title)}" style="left:${left.toFixed(2)}%;bottom:${bottom.toFixed(2)}%;--dot-color:${color(r)};--dot-size:${px}px"`;
+      return clickable
+        ? `<button type="button" ${attributes} ${r.player_id ? `data-intel-player="${escapeHtml(r.player_id)}"` : ""} aria-label="${escapeHtml(title)}"></button>`
+        : `<span ${attributes} aria-hidden="true"></span>`;
     }).join("");
 
     return `<div class="intel-scatter">
@@ -466,7 +465,7 @@
       xLabel: "DYNASTY MARKET VALUE →",
       yLabel: "715 PPG ↑",
       clickable: true,
-      maxPoints: 240,
+      maxPoints: 140,
       xFloor: 0,
       yFloor: 0,
       size: p => 8 + Math.min(8, Number(p.performance?.opportunities_per_game || 0) / 3),
@@ -478,7 +477,7 @@
       xLabel: "OPPORTUNITIES / GAME →",
       yLabel: "MARKET VALUE ↑",
       clickable: true,
-      maxPoints: 220,
+      maxPoints: 110,
       xFloor: 0,
       yFloor: 0,
       size: p => 8 + Math.min(8, Number(p.performance?.offense_snap_pct || 0) / 15),
@@ -801,34 +800,8 @@
         </div>
       </section>
     </div>`;
-    const anchor = q('[data-viz="home"]') || q("#app .stats-grid");
+    const anchor = q("#app .stats-grid");
     insertAfter(anchor, html, "health-trends");
-  }
-
-  function homeFun() {
-    if (state.view !== "home") return;
-    const myPlayoff = state.playoffs?.teams?.find(x => String(x.roster_id) === "3");
-    const profile = state.profiles?.teams?.find(x => String(x.roster_id) === "3");
-    const myPower = state.power?.scopes?.all_time?.rankings?.find(x => String(x.roster_id) === "3");
-
-    const hero = `<section class="viz-panel" style="--viz-accent:${COLORS.lime}">
-      <div class="viz-title-row"><div class="viz-title">Bilge Rat Command Readout</div><div class="viz-kicker">PRESEASON 2026</div></div>
-      <div class="profile-facts">
-        <div><span>All-Time Power</span><strong style="color:${COLORS.cyan}">#${escapeHtml(myPower?.rank ?? "—")}</strong></div>
-        <div><span>Playoff Odds</span><strong style="color:${COLORS.lime}">${escapeHtml(myPlayoff?.playoff_odds ?? "—")}%</strong></div>
-        <div><span>Title Odds</span><strong style="color:${COLORS.violet}">${escapeHtml(myPlayoff?.title_odds ?? "—")}%</strong></div>
-        <div><span>Window</span><strong style="color:${COLORS.amber}">${escapeHtml(profile?.window ?? "—")}</strong></div>
-      </div>
-      <div class="data-footnote">Historical baseline will hand off to 2026 results over the first six completed weeks.</div>
-    </section>`;
-
-    const content = q("#app");
-    if (content && !q('[data-viz="home"]')) {
-      const wrap = document.createElement("div");
-      wrap.dataset.viz = "home";
-      wrap.innerHTML = hero;
-      content.prepend(wrap);
-    }
   }
 
   function decorate() {
@@ -838,7 +811,6 @@
     semanticPanels();
 
     installPressControls();
-    homeFun();
     healthAndTrends();
     powerCharts();
     powerInputLedger();

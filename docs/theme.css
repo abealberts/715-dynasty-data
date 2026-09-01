@@ -1842,5 +1842,7 @@ body { padding-bottom: env(safe-area-inset-bottom); }
   .ri-tier-toolbar { align-items:flex-start; flex-direction:column; }
   .ri-tier-toolbar .scope-toggle { width:100%; overflow-x:auto; }
   .ri-jump-nav { top:68px; margin-left:-3px; margin-right:-3px; }
+  .scope-button { min-height:40px; }
+  [data-viz="intel-markets"], [data-viz="opportunity-market"] { display:none !important; }
   .ri-position-board { padding:8px; }
 }
