@@ -65,6 +65,11 @@ class GeneratedDataQualityTests(unittest.TestCase):
                 self.assertTrue(change["current_decision_evidence"])
                 self.assertGreaterEqual(change["projected_advantage"], 3)
 
+    def test_action_board_excludes_automated_data_maintenance(self) -> None:
+        for action in self.report.get("action_board") or []:
+            self.assertNotEqual(action.get("category"), "Data check")
+            self.assertNotIn("refresh", str(action.get("title") or "").lower())
+
     def test_record_book_excludes_empty_matchups(self) -> None:
         for key in ("closest_game", "biggest_blowout"):
             game = self.records.get("records", {}).get(key)

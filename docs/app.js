@@ -766,6 +766,42 @@ function rosterIntelMovement(movement) {
   return `<span class="ri-move ${direction}">${esc(valueText)}${rankText}${tierText}</span>`;
 }
 
+function rosterIntelMarketHistory(playerId) {
+  return (state.rosterIntelligenceHistory?.entries || []).map(entry => {
+    const player = (entry.players || []).find(row => String(row.player_id) === String(playerId));
+    const marketValue = Number(player?.market_value);
+    return player && Number.isFinite(marketValue) ? { value: marketValue, generatedAt: entry.generated_at } : null;
+  }).filter(Boolean);
+}
+
+function rosterIntelMarketSparkline(player) {
+  const history = rosterIntelMarketHistory(player.player_id);
+  const currentValue = Number(player.current_fantasy_value?.market_value || 0);
+  if (!history.length || history[history.length - 1].value !== currentValue) {
+    history.push({ value: currentValue, generatedAt: state.rosterIntelligence?.generated_at });
+  }
+  const values = history.map(point => point.value);
+  const low = Math.min(...values);
+  const high = Math.max(...values);
+  const spread = high - low || 1;
+  const points = values.map((value, index) => {
+    const x = values.length === 1 ? 60 : 3 + (index * 114 / (values.length - 1));
+    const y = 27 - ((value - low) / spread * 22);
+    return `${x.toFixed(1)},${y.toFixed(1)}`;
+  }).join(" ");
+  const delta = values[values.length - 1] - values[0];
+  const direction = delta > 0 ? "up" : delta < 0 ? "down" : "flat";
+  const label = `${player.name} market value history: ${values[0].toLocaleString()} to ${values[values.length - 1].toLocaleString()}, ${delta > 0 ? "up " : delta < 0 ? "down " : "unchanged "}${Math.abs(delta).toLocaleString()} across ${values.length} captured report${values.length === 1 ? "" : "s"}.`;
+  return `<span class="ri-market-spark ${direction}" role="img" aria-label="${esc(label)}" title="${esc(label)}"><svg viewBox="0 0 120 32" aria-hidden="true" focusable="false"><polyline points="${points}"></polyline><circle cx="${points.split(" ").at(-1).split(",")[0]}" cy="${points.split(" ").at(-1).split(",")[1]}" r="2.5"></circle></svg></span>`;
+}
+
+function rosterIntelMarketExplanation(player) {
+  const movement = player.movement || {};
+  if (!movement.has_previous) return "Market move is established from captured report snapshots. This player has no prior snapshot yet, so the current value is the baseline.";
+  const delta = Number(movement.value_change || 0);
+  return `Market move compares the latest dynasty market value with the immediately previous Roster Intelligence report: ${delta > 0 ? "+" : ""}${delta.toLocaleString()}. It measures dynasty trade-market movement, not projected weekly points. The mini chart shows all ${rosterIntelMarketHistory(player.player_id).length} retained snapshots.`;
+}
+
 function rosterIntelPlayerCard(player) {
   const value = player.current_fantasy_value || {};
   const projection = value.projection || {};
@@ -788,7 +824,7 @@ function rosterIntelPlayerCard(player) {
         <strong>${esc(player.name)}</strong>
         <small>${esc(player.team || "NFL FA")} · Age ${esc(player.age ?? "—")}${player.injury_status ? ` · <em>${esc(player.injury_status)}</em>` : ""}</small>
       </span>
-      <span class="ri-player-value"><strong>${Number(value.market_value || 0).toLocaleString()}</strong><small>${esc(projection.points ?? "—")} proj</small></span>
+      <span class="ri-player-value"><span><strong>${Number(value.market_value || 0).toLocaleString()}</strong><small>${esc(projection.points ?? "—")} proj</small></span>${rosterIntelMarketSparkline(player)}</span>
       ${rosterIntelMovement(player.movement)}
       <span class="ri-expand" aria-hidden="true">＋</span>
     </summary>
@@ -798,6 +834,7 @@ function rosterIntelPlayerCard(player) {
           <h4>Current fantasy value</h4>
           <div class="ri-value-line"><strong>${Number(value.market_value || 0).toLocaleString()}</strong><span>#${esc(value.market_position_rank ?? "—")} ${esc(player.position)} market · ${esc(projection.points ?? "—")} evidence pts</span></div>
           <p>${esc(projection.basis || "Projection basis unavailable.")} <span class="ri-confidence">${esc(projection.confidence || "low")} confidence</span></p>
+          <p class="ri-market-explain">${esc(rosterIntelMarketExplanation(player))}</p>
         </section>
         <section class="ri-stance-summary">
           <h4>Decision stance</h4>
@@ -810,9 +847,10 @@ function rosterIntelPlayerCard(player) {
           <div class="ri-deltas"><span>PPG ${trends.ppg_delta == null ? "—" : `${trends.ppg_delta > 0 ? "+" : ""}${esc(trends.ppg_delta)}`}</span><span>Opp/G ${trends.opportunity_delta == null ? "—" : `${trends.opportunity_delta > 0 ? "+" : ""}${esc(trends.opportunity_delta)}`}</span></div>
         </section>
         <section class="ri-context-summary context-${esc(context.net_direction || "neutral")}">
-          <h4>Current context effect</h4>
-          <div class="ri-value-line"><strong>${Number(projection.context_adjustment_points || 0) > 0 ? "+" : ""}${esc(projection.context_adjustment_points ?? 0)}</strong><span>points · ${esc(context.actionable_signal_count ?? 0)} scored · ${esc(context.research_mention_count ?? 0)} reading-only</span></div>
-          <p>Availability ${Math.round(Number(context.availability_probability ?? 1) * 100)}% · workload multiplier ${Number(context.weekly_multiplier ?? 1).toFixed(3)} · ${esc(context.confidence || "low")} decision confidence.</p>
+          <h4>Weekly evidence adjustment</h4>
+          <div class="ri-value-line"><strong>${Number(projection.context_adjustment_points || 0) > 0 ? "+" : ""}${esc(projection.context_adjustment_points ?? 0)}</strong><span>${esc(projection.baseline_points ?? "—")} baseline → ${esc(projection.points ?? "—")} adjusted points</span></div>
+          <p>Decision-grade injury, availability, role and measured-usage evidence can adjust the baseline weekly estimate. ${esc(context.actionable_signal_count ?? 0)} scored signal(s) affected the model; ${esc(context.research_mention_count ?? 0)} reading-only report(s) are visible but add 0.</p>
+          <p>Availability estimate ${Math.round(Number(context.availability_probability ?? 1) * 100)}% · role/workload factor ${Number(context.weekly_multiplier ?? 1).toFixed(3)}× · ${esc(context.confidence || "low")} evidence confidence.</p>
         </section>
       </div>
       <div class="ri-lens-grid">
@@ -845,23 +883,21 @@ function rosterIntelLineupColumn(title, subtitle, rows) {
   </section>`;
 }
 
-function rosterActionPrompt(action, report) {
+function rosterActionBoardPrompt(actions, report) {
   const confidence = report?.data_confidence || {};
   const coverage = report?.coverage || {};
-  return `Act as a skeptical dynasty fantasy football decision analyst. Evaluate this proposed action for my 715 Dynasty roster using the latest available information and current web research.
-
-PROPOSED ACTION
-Priority: ${action.priority ?? "—"}/10
-Category: ${action.category || "Unspecified"}
-Action: ${action.title || "Unspecified"}
+  const actionText = (actions || []).map((action, index) => `${index + 1}. [${action.priority ?? "—"}/10] ${action.title || "Unspecified"}
+Category: ${action.category || "Unspecified"} | Urgency: ${action.urgency || "Not provided"} | Model confidence: ${action.confidence || "Unrated"}
 Recommendation: ${action.recommendation || "Not provided"}
 Current rationale: ${action.rationale || "Not provided"}
 Modeled advantage: ${action.projected_advantage ?? "Not quantified"}
 Upside: ${action.upside || "Not provided"}
 Risk: ${action.risk || "Not provided"}
-Cost or likely cut: ${action.cost_or_cut || "Not provided"}
-Urgency: ${action.urgency || "Not provided"}
-Model confidence: ${action.confidence || "Unrated"}
+Cost or likely cut: ${action.cost_or_cut || "Not provided"}`).join("\n\n");
+  return `Act as a skeptical dynasty fantasy football decision analyst. Evaluate my complete 715 Dynasty action board using the latest available information and current web research.
+
+ACTION BOARD
+${actionText || "No actions were generated."}
 
 REPORT CONTEXT
 Season/week: ${report?.season || "—"} / ${report?.week ?? "—"}
@@ -876,14 +912,15 @@ Please:
 2. Confirm the player is available or the lineup move is legal using the latest league data when applicable.
 3. Separate weekly lineup value, rest-of-season value and dynasty value. Do not treat dynasty market movement as a weekly projection.
 4. Identify assumptions, contradictory evidence, likely alternatives and the opportunity cost.
-5. Finish with one verdict—ACT, MONITOR or REJECT—plus a confidence rating and the specific evidence that would change it.`;
+5. Give every action one verdict—ACT, MONITOR or REJECT—with confidence and the evidence that would change it.
+6. Identify conflicts or dependencies between actions, then return one final ordered action plan with the highest-value next step first.`;
 }
 
 function rosterIntelActionBoard(data) {
-  return `<div class="ri-action-list">${(data.action_board || []).map((action, actionIndex) => `<article class="ri-action-card priority-${Math.ceil(Number(action.priority || 0) / 3)}">
+  return `<div class="ri-action-list">${(data.action_board || []).map(action => `<article class="ri-action-card priority-${Math.ceil(Number(action.priority || 0) / 3)}">
     <div class="ri-priority"><strong>${esc(action.priority)}</strong><span>/10</span></div>
     <div><small>${esc(action.category)} · ${esc(action.urgency || "No deadline")} · ${esc(action.confidence || "unknown")} confidence</small><h3>${esc(action.title)}</h3><p>${esc(action.recommendation)}</p><div>${esc(action.rationale || "No rationale available.")}</div>
-    <details class="ri-action-detail"><summary>Upside, risk & cost</summary><dl><dt>Upside</dt><dd>${esc(action.upside || "Not quantified")}</dd><dt>Risk</dt><dd>${esc(action.risk || "Not recorded")}</dd><dt>Cost / cut</dt><dd>${esc(action.cost_or_cut || "Not recorded")}</dd></dl></details><button type="button" class="button ghost ri-copy-action" data-action-index="${actionIndex}">Copy ChatGPT evaluation prompt</button></div>
+    <details class="ri-action-detail"><summary>Upside, risk & cost</summary><dl><dt>Upside</dt><dd>${esc(action.upside || "Not quantified")}</dd><dt>Risk</dt><dd>${esc(action.risk || "Not recorded")}</dd><dt>Cost / cut</dt><dd>${esc(action.cost_or_cut || "Not recorded")}</dd></dl></details></div>
   </article>`).join("") || '<div class="empty">No roster moves are recommended from the available evidence.</div>'}</div>`;
 }
 
@@ -915,7 +952,7 @@ function renderRosterIntelligence() {
     ${renderSourceFreshness(data)}
 
     <div class="panel" id="ri-actions">
-      <div class="panel-header"><div><h2>Action Board</h2><div class="panel-sub">What requires attention now · priority reflects urgency and evidence strength</div></div></div>
+      <div class="panel-header"><div><h2>Action Board</h2><div class="panel-sub">What requires attention now · priority reflects urgency and evidence strength</div></div><button type="button" class="button ghost ri-copy-board" id="copy-action-board">Copy all actions to ChatGPT</button></div>
       ${rosterIntelActionBoard(data)}
     </div>
 
@@ -1225,10 +1262,10 @@ function wireViewControls() {
     const team = state.teams?.[MY_ROSTER_ID];
     if (team) copyText(rosterEvaluationPrompt(team), e.currentTarget);
   });
-  document.querySelectorAll("[data-action-index]").forEach(btn => btn.addEventListener("click", () => {
-    const action = state.rosterIntelligence?.action_board?.[Number(btn.dataset.actionIndex)];
-    if (action) copyText(rosterActionPrompt(action, state.rosterIntelligence), btn);
-  }));
+  document.querySelector("#copy-action-board")?.addEventListener("click", e => {
+    const report = state.rosterIntelligence;
+    if (report) copyText(rosterActionBoardPrompt(report.action_board, report), e.currentTarget);
+  });
   document.querySelectorAll("[data-ri-position]").forEach(button => button.addEventListener("click", () => {
     const position = button.dataset.riPosition;
     document.querySelectorAll("[data-ri-position]").forEach(item => item.classList.toggle("active", item === button));

@@ -871,21 +871,6 @@ def action_board(
         if len(used_drop_ids) >= 2:
             break
 
-    if not research_available:
-        actions.append({
-            "priority": 7,
-            "category": "Data check",
-            "title": "Refresh news and matchup context before acting",
-            "recommendation": "Add verified player news and coach/beat-reporter notes before acting on low-confidence decisions.",
-            "rationale": "No structured roster-intelligence research file was available for this report.",
-            "projected_advantage": None,
-            "upside": "A current evidence pass can confirm, reverse or suppress tentative lineup and waiver calls.",
-            "risk": "Acting now would rely mostly on prior-season usage, market values and Sleeper status fields.",
-            "cost_or_cut": "No roster cost; information-gathering step.",
-            "urgency": "Before any Week 1 transaction or lineup change",
-            "confidence": "high",
-        })
-
     actions.sort(key=lambda action: (-int(action.get("priority") or 0), action.get("title") or ""))
     return actions[:10]
 
