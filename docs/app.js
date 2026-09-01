@@ -58,6 +58,20 @@ function fmtTime(value) {
   try { return new Date(value).toLocaleString(); } catch { return value; }
 }
 
+function freshnessMeta(value) {
+  const timestamp = Date.parse(value || "");
+  if (!Number.isFinite(timestamp)) return { label: "UNKNOWN", className: "unknown", detail: "Timestamp unavailable" };
+  const hours = Math.max(0, (Date.now() - timestamp) / 3600000);
+  if (hours <= 8) return { label: "FRESH", className: "fresh", detail: `${hours < 1 ? "<1" : Math.round(hours)}h old` };
+  if (hours <= 24) return { label: "RECENT", className: "recent", detail: `${Math.round(hours)}h old` };
+  return { label: "STALE", className: "stale", detail: `${Math.round(hours / 24)}d old` };
+}
+
+function safeWebLink(url, label) {
+  if (!/^https?:\/\//i.test(String(url || ""))) return esc(label);
+  return `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(label)}</a>`;
+}
+
 function stat(label, value, note = "") {
   return `<article class="stat-card"><div class="stat-label">${esc(label)}</div><div class="stat-value">${esc(value)}</div><div class="stat-note">${esc(note)}</div></article>`;
 }
@@ -172,7 +186,7 @@ function opportunityTable(players, limit = 100) {
   return `<div class="table-wrap"><table>
     <thead><tr><th>Score</th><th>Player</th><th>Pos</th><th>NFL</th><th>Depth</th><th>24h Adds</th><th>Tier</th><th>Why</th></tr></thead>
     <tbody>${players.slice(0, limit).map(p => `<tr>
-      <td><span class="score-badge score-${p.tier === "Priority" ? "high" : p.tier === "Strong stash" ? "mid" : "low"}">${esc(p.opportunity_score)}</span></td>
+      <td><span class="score-badge score-${p.tier === "Priority" ? "high" : p.tier === "Strong stash" ? "mid" : "low"}">${esc(p.opportunity_score)}</span>${p.context_adjustment ? `<div class="table-note context-${p.context_adjustment > 0 ? "positive" : "negative"}">${p.context_adjustment > 0 ? "+" : ""}${esc(p.context_adjustment)} context</div>` : ""}</td>
       <td><span class="player-name">${esc(p.name)}</span><div class="table-note">Age ${esc(p.age ?? "—")}${p.injury_status ? ` · ${esc(p.injury_status)}` : ""}</div></td>
       <td>${esc(p.position || "—")}</td>
       <td>${esc(p.team || "FA")}</td>
@@ -182,6 +196,42 @@ function opportunityTable(players, limit = 100) {
       <td class="reason-cell">${esc((p.reasons || []).slice(0, 2).join(" "))}</td>
     </tr>`).join("")}</tbody>
   </table></div>`;
+}
+
+function renderDecisionQueue() {
+  const report = state.rosterIntelligence;
+  const actions = (report?.action_board || []).slice(0, 5);
+  if (!actions.length) {
+    return `<div class="empty">No roster decisions are available yet. Open Roster Intelligence after the next derived-data build.</div>`;
+  }
+  return `<div class="decision-queue">${actions.map(action => `<article class="decision-row">
+    <div class="decision-priority"><strong>${esc(action.priority)}</strong><span>/10</span></div>
+    <div class="decision-copy"><small>${esc(action.category)} · ${esc(action.urgency || "No deadline")}</small><strong>${esc(action.title)}</strong><p>${esc(action.recommendation || action.rationale || "")}</p></div>
+    <span class="decision-confidence ${esc(action.confidence || "unknown")}">${esc(action.confidence || "unknown")}</span>
+  </article>`).join("")}</div>`;
+}
+
+function renderConfidenceCard() {
+  const report = state.rosterIntelligence;
+  const confidence = report?.data_confidence || {};
+  const health = state.dataHealth || {};
+  const freshness = freshnessMeta(report?.generated_at || state.summary?.generated_at);
+  const sources = report?.sources || [];
+  return `<div class="confidence-card status-${esc(confidence.status || "unknown")}">
+    <div class="confidence-head"><span>DECISION CONFIDENCE</span><strong>${esc(confidence.label || "Not rated")}</strong></div>
+    <div class="confidence-freshness"><strong>${esc(freshness.label)}</strong><span>${esc(freshness.detail)} · system ${esc(health.overall || "unknown")}</span></div>
+    <ul>${(confidence.reasons || ["Roster report confidence is not available."]).map(reason => `<li>${esc(reason)}</li>`).join("")}</ul>
+    <div class="confidence-sources">${sources.map(source => `<span class="source-status status-${esc(source.status || "unknown")}" title="${esc(source.checked_at ? fmtTime(source.checked_at) : "No timestamp")}">${esc(source.name)} · ${esc(source.status || "unknown")}</span>`).join("")}</div>
+  </div>`;
+}
+
+function renderSourceFreshness(report) {
+  const sources = report?.sources || [];
+  return `<div class="ri-source-grid">${sources.map(source => `<article class="ri-source-card status-${esc(source.status || "unknown")}">
+    <span>${esc(String(source.type || "source").replaceAll("_", " "))}</span>
+    <strong>${safeWebLink(source.url, source.name || "Unknown source")}</strong>
+    <small>${esc(source.status || "unknown")} · ${esc(source.checked_at ? fmtTime(source.checked_at) : "No refresh recorded")}</small>
+  </article>`).join("")}</div>`;
 }
 
 function renderHome() {
@@ -198,6 +248,14 @@ function renderHome() {
       ${stat("My FAAB", `$${me?.waivers?.faab_remaining ?? "—"}`, `Waiver priority ${me?.waivers?.waiver_position ?? "—"}`)}
       ${stat("My Picks", me?.picks?.length ?? 0, "Current future picks")}
       ${stat("League Median", s.league_median_match ? "ON" : "OFF", "Extra weekly matchup")}
+    </div>
+
+    <div class="home-decision-grid">
+      <div class="panel">
+        <div class="panel-header"><div><h2>What Matters Now</h2><div class="panel-sub">Highest-priority decisions for the Baskerville Bilge Rats</div></div><button class="button ghost" data-go="roster-intelligence">Open full report</button></div>
+        ${renderDecisionQueue()}
+      </div>
+      ${renderConfidenceCard()}
     </div>
 
     <div class="grid-2">
@@ -690,12 +748,22 @@ function rosterIntelList(items, fallback) {
   return `<ul class="ri-list">${items.map(item => `<li>${esc(item)}</li>`).join("")}</ul>`;
 }
 
+function rosterIntelResearchList(items, fallback) {
+  if (!items?.length) return `<div class="ri-unavailable">${esc(fallback)}</div>`;
+  return `<ul class="ri-list ri-research-list">${items.map(item => {
+    if (typeof item === "string") return `<li>${esc(item)}</li>`;
+    const source = item.source ? safeWebLink(item.url, item.source) : "Source not recorded";
+    const date = item.published_at ? fmtTime(item.published_at) : "Date not recorded";
+    return `<li><span>${esc(item.text || "")}</span><small>${source} · ${esc(date)}</small></li>`;
+  }).join("")}</ul>`;
+}
+
 function rosterIntelMovement(movement) {
   if (!movement?.has_previous) return `<span class="ri-move flat">NEW BASELINE</span>`;
   const value = Number(movement.value_change || 0);
   const rank = Number(movement.position_rank_change || 0);
   const direction = value > 0 || rank > 0 ? "up" : value < 0 || rank < 0 ? "down" : "flat";
-  const valueText = value ? `${value > 0 ? "+" : ""}${value.toLocaleString()} value` : "value flat";
+  const valueText = value ? `${value > 0 ? "+" : ""}${value.toLocaleString()} market move` : "market flat";
   const rankText = rank ? ` · ${rank > 0 ? "▲" : "▼"}${Math.abs(rank)} roster rank` : "";
   const tierText = movement.tier_changed ? ` · T${esc(movement.tier_from)}→T${esc(movement.tier_to)}` : "";
   return `<span class="ri-move ${direction}">${esc(valueText)}${rankText}${tierText}</span>`;
@@ -707,6 +775,8 @@ function rosterIntelPlayerCard(player) {
   const trends = player.trends || {};
   const outlook = player.speculative_outlook || {};
   const comparisons = player.app_data_comparisons || [];
+  const lenses = player.decision_lenses || {};
+  const context = player.context || {};
   return `<details class="ri-player-card">
     <summary>
       <span class="ri-player-rank">${esc(player.position_rank_on_roster)}</span>
@@ -735,16 +805,31 @@ function rosterIntelPlayerCard(player) {
           <p>${esc(trends.summary || "Trend sample unavailable.")}</p>
           <div class="ri-deltas"><span>PPG ${trends.ppg_delta == null ? "—" : `${trends.ppg_delta > 0 ? "+" : ""}${esc(trends.ppg_delta)}`}</span><span>Opp/G ${trends.opportunity_delta == null ? "—" : `${trends.opportunity_delta > 0 ? "+" : ""}${esc(trends.opportunity_delta)}`}</span></div>
         </section>
+        <section class="ri-context-summary context-${esc(context.net_direction || "neutral")}">
+          <h4>Current context effect</h4>
+          <div class="ri-value-line"><strong>${Number(projection.context_adjustment_points || 0) > 0 ? "+" : ""}${esc(projection.context_adjustment_points ?? 0)}</strong><span>points · ${esc(context.signal_count ?? 0)} signals · ${esc(context.confidence || "low")} confidence</span></div>
+          <p>Availability ${Math.round(Number(context.availability_probability ?? 1) * 100)}% · workload multiplier ${Number(context.weekly_multiplier ?? 1).toFixed(3)}. Expand the evidence sections to audit the inputs.</p>
+        </section>
         <section>
           <h4>App-data comparison</h4>
           <div class="ri-comparisons">${comparisons.map(row => `<div><span>${esc(row.source)} · ${esc(row.label)}</span><strong>${esc(row.value)}</strong></div>`).join("") || '<div class="ri-unavailable">No app comparison is available.</div>'}</div>
         </section>
       </div>
+      <div class="ri-lens-grid">
+        ${["weekly", "rest_of_season", "dynasty"].map(key => {
+          const lens = lenses[key] || {};
+          const label = key === "rest_of_season" ? "Rest of season" : key;
+          return `<section><h4>${esc(label)}</h4><strong>${esc(lens.label || "Unrated")}</strong><p>${esc(lens.summary || "Insufficient evidence.")}</p></section>`;
+        }).join("")}
+        <section class="ri-stance"><h4>Recommended stance</h4><strong>${esc(player.recommended_stance || lenses.recommended_stance || "Hold / monitor")}</strong><p>Update this stance when verified current research changes the baseline.</p></section>
+      </div>
       <div class="ri-research-grid">
         <section><h4>Key evidence</h4>${rosterIntelList(player.key_evidence, "No supporting evidence is available.")}</section>
-        <section><h4>News</h4>${rosterIntelList(player.news, "No verified player news is stored in this report.")}</section>
-        <section><h4>Coach / beat-reporter information</h4>${rosterIntelList(player.coach_beat_reporter_information, "No verified coach or beat-reporter note is stored in this report.")}</section>
+        <section><h4>News</h4>${rosterIntelResearchList(player.news, "No verified player news is stored in this report.")}</section>
+        <section><h4>Coach / beat-reporter information</h4>${rosterIntelResearchList(player.coach_beat_reporter_information, "No verified coach or beat-reporter note is stored in this report.")}</section>
         <section><h4>Notable takeaways</h4>${rosterIntelList(player.notable_takeaways, "No additional takeaway is available.")}</section>
+        <section><h4>Risk factors</h4>${rosterIntelList(player.risk_factors, "No additional risk factor is identified.")}</section>
+        <section><h4>Catalysts</h4>${rosterIntelList(player.catalysts, "No clear catalyst is identified.")}</section>
       </div>
     </div>
   </details>`;
@@ -755,7 +840,7 @@ function rosterIntelLineupColumn(title, subtitle, rows) {
     <div class="ri-lineup-head"><h3>${esc(title)}</h3><span>${esc(subtitle)}</span></div>
     <div class="ri-lineup-list">${(rows || []).map(row => `<div class="ri-lineup-row">
       <span class="slot-badge">${esc(row.slot_label)}</span>
-      <span><strong>${esc(row.name)}</strong><small>${esc(row.position || "—")} · ${esc(row.team || "NFL FA")} · ${esc(row.confidence || "low")} confidence</small></span>
+      <span><strong>${esc(row.name)}</strong><small>${esc(row.position || "—")} · ${esc(row.team || "NFL FA")} · range ${esc(row.projected_floor ?? "—")}–${esc(row.projected_ceiling ?? "—")} · ${esc(row.confidence || "low")}${row.injury_status ? ` · ${esc(row.injury_status)}` : ""}</small></span>
       <strong class="ri-projection">${esc(row.projected_points ?? "—")}</strong>
     </div>`).join("")}</div>
   </section>`;
@@ -775,22 +860,23 @@ function renderRosterIntelligence() {
     <div class="ri-report-strip">
       <span>REPORT ${esc(data.season || "—")} · WEEK ${esc(data.week ?? "—")}</span>
       <strong>${esc(data.roster?.team_name || data.roster?.manager || "My roster")}</strong>
-      <small>${esc(fmtTime(data.generated_at))}</small>
+      <small>${esc(data.data_confidence?.label || "Unrated")} · ${esc(fmtTime(data.generated_at))}</small>
     </div>
     <div class="stats-grid ri-stats">
       ${stat("Roster Coverage", `${coverage.roster_players ?? 0}/${data.roster?.player_count ?? 0}`, "Players on tier boards")}
-      ${stat("Evidence Projection", lineup.optimized_projected_points ?? "—", `${lineup.projected_advantage > 0 ? "+" : ""}${lineup.projected_advantage ?? 0} vs current lineup`)}
+      ${stat("Evidence Estimate", lineup.optimized_projected_points ?? "—", `${lineup.projected_advantage > 0 ? "+" : ""}${lineup.projected_advantage ?? 0} unconstrained model maximum`)}
       ${stat("Priority Actions", data.action_board?.length ?? 0, "Rated on a 1–10 scale")}
-      ${stat("Research Coverage", `${coverage.news_players ?? 0} news · ${coverage.coach_beat_reporter_players ?? 0} coach`, coverage.research_status === "available" ? "Verified research loaded" : "Unavailable fields degrade safely")}
+      ${stat("Context Coverage", `${coverage.context_signal_players ?? 0} players`, `${coverage.objective_context_signals ?? 0} objective · ${coverage.curated_context_reports ?? 0} curated reports`)}
     </div>
+    ${renderSourceFreshness(data)}
 
     <div class="panel ri-lineup-panel">
-      <div class="panel-header"><div><h2>Weekly Lineup Decision</h2><div class="panel-sub">Current submission beside the highest-scoring legal evidence lineup</div></div><div class="ri-advantage">${lineup.projected_advantage > 0 ? "+" : ""}${esc(lineup.projected_advantage ?? 0)}<small>projected advantage</small></div></div>
+      <div class="panel-header"><div><h2>Weekly Lineup Decision</h2><div class="panel-sub">Current submission beside the legal evidence-model lineup · provisional until current research loads</div></div><div class="ri-advantage">${lineup.actionable_projected_advantage > 0 ? "+" : ""}${esc(lineup.actionable_projected_advantage ?? 0)}<small>actionable evidence edge</small></div></div>
       <div class="ri-lineup-grid">
         ${rosterIntelLineupColumn("Current lineup", `${lineup.current_projected_points ?? "—"} evidence points`, lineup.current)}
-        ${rosterIntelLineupColumn("Optimized lineup", `${lineup.optimized_projected_points ?? "—"} evidence points`, lineup.optimized)}
+        ${rosterIntelLineupColumn("Unconstrained model lineup", `${lineup.optimized_projected_points ?? "—"} evidence points`, lineup.optimized)}
       </div>
-      <div class="ri-lineup-reasons">${changes.length ? changes.map(change => `<div><strong>${esc(change.start)} over ${esc(change.sit)}</strong><span>${esc(change.explanation)} Projected edge: ${change.projected_advantage > 0 ? "+" : ""}${esc(change.projected_advantage)}.</span></div>`).join("") : '<div><strong>No swap indicated</strong><span>The submitted starters already match the optimized player set.</span></div>'}</div>
+      <div class="ri-lineup-reasons">${changes.length ? changes.map(change => `<div class="decision-${esc(change.decision || "unknown")}"><strong>${esc(change.start)} vs ${esc(change.sit)}</strong><span class="ri-decision-label">${esc(String(change.decision || "review").replaceAll("_", " "))}</span><span>${esc(change.explanation)} ${esc(change.decision_reason || "")} Model edge: ${change.projected_advantage > 0 ? "+" : ""}${esc(change.projected_advantage)}.</span></div>`).join("") : '<div><strong>No swap indicated</strong><span>The submitted starters already match the model player set.</span></div>'}</div>
       <div class="method-note">${esc(lineup.methodology || "")}</div>
     </div>
 
@@ -807,7 +893,8 @@ function renderRosterIntelligence() {
         <div class="panel-header"><div><h2>Action Board</h2><div class="panel-sub">Recommended roster decisions, highest priority first</div></div></div>
         <div class="ri-action-list">${(data.action_board || []).map(action => `<article class="ri-action-card priority-${Math.ceil(Number(action.priority || 0) / 3)}">
           <div class="ri-priority"><strong>${esc(action.priority)}</strong><span>/10</span></div>
-          <div><small>${esc(action.category)}</small><h3>${esc(action.title)}</h3><p>${esc(action.recommendation)}</p><div>${esc(action.rationale || "No rationale available.")}</div></div>
+          <div><small>${esc(action.category)} · ${esc(action.urgency || "No deadline")} · ${esc(action.confidence || "unknown")} confidence</small><h3>${esc(action.title)}</h3><p>${esc(action.recommendation)}</p><div>${esc(action.rationale || "No rationale available.")}</div>
+          <details class="ri-action-detail"><summary>Upside, risk & cost</summary><dl><dt>Upside</dt><dd>${esc(action.upside || "Not quantified")}</dd><dt>Risk</dt><dd>${esc(action.risk || "Not recorded")}</dd><dt>Cost / cut</dt><dd>${esc(action.cost_or_cut || "Not recorded")}</dd></dl></details></div>
         </article>`).join("") || '<div class="empty">No roster moves are recommended from the available evidence.</div>'}</div>
       </div>
       <div class="panel">
@@ -1082,10 +1169,10 @@ function setActiveNav() {
 function render() {
   const app = document.querySelector("#app");
   const titles = {
-    home: ["Overview", "Live 715 Dynasty league state"],
+    home: ["Overview", "Latest synced 715 Dynasty decisions and league state"],
     team: ["My Team", "Baskerville Bilge Rats"],
     "roster-intelligence": ["Roster Intelligence", "Weekly tiers, lineup edge and roster actions"],
-    trades: ["Trade Finder", "Find roster-construction matches before doing market research"],
+    trades: ["Trade Fit Finder", "Roster-construction matches—not trade offers or fairness grades"],
     opportunities: ["Opportunities", "Signal-ranked, confirmed free agents"],
     power: ["Power Rankings", "Performance-based 715 Power Score"],
     recap: ["Weekly Recap", "Awards, lineup decisions and bench regret"],
@@ -1096,7 +1183,7 @@ function render() {
     managers: ["Manager Tendencies", "How 715 managers actually behave"],
     draft: ["Draft Capital", "Future pick ownership across the league"],
     records: ["Records", "715 Dynasty history and all-time marks"],
-    waivers: ["Waivers", "Confirmed available players"],
+    waivers: ["Free Agent Index", "Confirmed available players without recommendation scoring"],
     league: ["League", "Roster and asset map"],
     activity: ["Activity", "Adds, drops, trades and detected changes"],
     intel: ["Player Intel", "Dynasty market + NFL performance feed"],
@@ -1131,21 +1218,21 @@ async function boot() {
     const [summary, teams, waivers, changes, transactions, needs, tradePartners, opportunities, power, standings, lineups, recap, draftCapital, records, playoffs, profiles, managerTendencies, playerIntel, marketSummary, dataHealth, intelligenceHistory, rosterIntelligence, rosterIntelligenceHistory] = await Promise.all([
       getJson("league_summary.json"),
       getJson("team_assets.json"),
-      getJson("free_agents_by_position.json"),
-      getJson("league_changes.json"),
-      getJson("recent_transactions.json"),
-      getJson("team_needs.json"),
-      getJson("trade_partners.json"),
-      getJson("opportunity_scanner.json"),
-      getJson("power_rankings.json"),
-      getJson("standings_plus.json"),
-      getJson("lineup_efficiency.json"),
-      getJson("weekly_recap.json"),
-      getJson("draft_capital_matrix.json"),
-      getJson("record_book.json"),
-      getJson("playoff_simulator.json"),
-      getJson("team_profiles.json"),
-      getJson("manager_tendencies.json"),
+      getOptionalJson("free_agents_by_position.json", {}),
+      getOptionalJson("league_changes.json", { changes: [] }),
+      getOptionalJson("recent_transactions.json", []),
+      getOptionalJson("team_needs.json", { teams: {} }),
+      getOptionalJson("trade_partners.json", { partners: {} }),
+      getOptionalJson("opportunity_scanner.json", { players: [] }),
+      getOptionalJson("power_rankings.json", null),
+      getOptionalJson("standings_plus.json", null),
+      getOptionalJson("lineup_efficiency.json", null),
+      getOptionalJson("weekly_recap.json", null),
+      getOptionalJson("draft_capital_matrix.json", null),
+      getOptionalJson("record_book.json", null),
+      getOptionalJson("playoff_simulator.json", null),
+      getOptionalJson("team_profiles.json", null),
+      getOptionalJson("manager_tendencies.json", null),
       getOptionalJson("player_intel.json", null),
       getOptionalJson("roster_market_values.json", null),
       getOptionalJson("data_health.json", null),
@@ -1157,7 +1244,13 @@ async function boot() {
     if (power?.scopes?.current?.status !== "live" && power?.scopes?.all_time?.status === "live") {
       state.analyticsScope = "all_time";
     }
-    document.querySelector("#updated-at").textContent = `Derived data: ${fmtTime(summary.generated_at)}`;
+    const freshness = freshnessMeta(summary.generated_at);
+    const status = document.querySelector("#data-status");
+    if (status) {
+      status.className = `status-pill data-${freshness.className}`;
+      status.innerHTML = `<span></span> ${freshness.label} DATA`;
+    }
+    document.querySelector("#updated-at").textContent = `${freshness.detail} · ${fmtTime(summary.generated_at)}`;
     render();
   } catch (err) {
     document.querySelector("#app").innerHTML = `<div class="loading-card"><strong>Dashboard data is not ready yet.</strong><br><br>${esc(err.message)}<br><br>Run Sync Sleeper Players once after installing the Phase 2 scripts.</div>`;

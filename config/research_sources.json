@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0",
+  "sources": [
+    {
+      "id": "rotowire_nfl_rss",
+      "name": "RotoWire NFL Player News",
+      "url": "https://www.rotowire.com/rss/news.php?sport=NFL",
+      "format": "rss",
+      "source_type": "established_media",
+      "tier": 2,
+      "enabled": true,
+      "notes": "Public player-news RSS intended for blogs and personal use; headlines and source links only are retained."
+    },
+    {
+      "id": "fantasysp_nfl_rss",
+      "name": "FantasySP NFL Player News",
+      "url": "https://www.fantasysp.com/rss/nfl/allplayer/",
+      "format": "rss",
+      "source_type": "aggregator",
+      "tier": 3,
+      "enabled": false,
+      "notes": "The publisher documents this free non-commercial feed, but its NFL endpoint returned HTTP 404 during validation on 2026-09-01. Retained disabled for future health checks."
+    },
+    {
+      "id": "pff_nfl_rss",
+      "name": "PFF NFL News",
+      "url": "https://www.pff.com/feed",
+      "format": "rss",
+      "source_type": "established_media",
+      "tier": 3,
+      "enabled": true,
+      "notes": "Analysis and team news; never receives official-report weight."
+    },
+    {
+      "id": "fantasypros_api",
+      "name": "FantasyPros NFL News API",
+      "url": "https://api.fantasypros.com/public/v2/json/nfl/news?limit=100",
+      "format": "fantasypros_json",
+      "source_type": "aggregator",
+      "tier": 2,
+      "enabled": true,
+      "secret_env": "FANTASYPROS_API_KEY",
+      "notes": "Optional authenticated feed with structured news categories; skipped when no API key is configured."
+    }
+  ]
+}

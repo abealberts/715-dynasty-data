@@ -1,306 +1,429 @@
 {
   "action_board": [
     {
-      "category": "Lineup",
-      "priority": 10,
-      "projected_advantage": 8.03,
-      "rationale": "Jaylen Warren carries the stronger evidence projection (14.7 vs 6.67).",
-      "recommendation": "Make the swap before lineup lock, then recheck injuries and inactive reports.",
-      "title": "Start Jaylen Warren over MarShawn Lloyd"
-    },
-    {
-      "category": "Waiver review",
-      "priority": 8,
-      "projected_advantage": null,
-      "rationale": "Dynasty Dealer market value 1,845 adds insulation/upside signal. Currently on an NFL roster (HOU).",
-      "recommendation": "Verify role and current news before submitting an add/drop.",
-      "title": "Compare Marlin Klein with Elijah Arroyo"
-    },
-    {
-      "category": "Lineup",
-      "priority": 8,
-      "projected_advantage": 1.98,
-      "rationale": "Courtland Sutton carries the stronger evidence projection (11.91 vs 9.93).",
-      "recommendation": "Make the swap before lineup lock, then recheck injuries and inactive reports.",
-      "title": "Start Courtland Sutton over Jaylen Waddle"
-    },
-    {
-      "category": "Availability",
-      "priority": 8,
-      "projected_advantage": null,
-      "rationale": "Sleeper lists Sam LaPorta as Questionable",
-      "recommendation": "Confirm the official game designation and keep a legal pivot available.",
-      "title": "Verify Sam LaPorta before lock"
-    },
-    {
-      "category": "Availability",
-      "priority": 8,
-      "projected_advantage": null,
-      "rationale": "Sleeper lists Tyrone Tracy as Questionable",
-      "recommendation": "Confirm the official game designation and keep a legal pivot available.",
-      "title": "Verify Tyrone Tracy before lock"
-    },
-    {
-      "category": "Waiver review",
+      "category": "Data check",
+      "confidence": "high",
+      "cost_or_cut": "No roster cost; information-gathering step.",
       "priority": 7,
-      "projected_advantage": null,
-      "rationale": "Dynasty Dealer market value 1,830 adds insulation/upside signal. 2025 prior usage: 33.6 opportunities/game, 78% offensive snaps, 13.2 715 PPG.",
-      "recommendation": "Verify role and current news before submitting an add/drop.",
-      "title": "Compare Joe Flacco with Taylen Green"
-    },
-    {
-      "category": "Lineup",
-      "priority": 7,
-      "projected_advantage": 0.09,
-      "rationale": "Tyrone Tracy carries the stronger evidence projection (10.93 vs 10.84).",
-      "recommendation": "Make the swap before lineup lock, then recheck injuries and inactive reports.",
-      "title": "Start Tyrone Tracy over Terry McLaurin"
-    },
-    {
-      "category": "Research",
-      "priority": 6,
       "projected_advantage": null,
       "rationale": "No structured roster-intelligence research file was available for this report.",
       "recommendation": "Add verified player news and coach/beat-reporter notes before acting on low-confidence decisions.",
-      "title": "Run the pre-lock news and beat-report refresh"
+      "risk": "Acting now would rely mostly on prior-season usage, market values and Sleeper status fields.",
+      "title": "Refresh news and matchup context before acting",
+      "upside": "A current evidence pass can confirm, reverse or suppress tentative lineup and waiver calls.",
+      "urgency": "Before any Week 1 transaction or lineup change"
+    },
+    {
+      "category": "Lineup",
+      "confidence": "low",
+      "cost_or_cut": "Bench MarShawn Lloyd; no roster transaction required.",
+      "priority": 5,
+      "projected_advantage": 8.23,
+      "rationale": "Jaylen Warren carries the stronger evidence projection (15.08 vs 6.85). The model prefers this swap, but the incoming player's case relies on prior-season or proxy evidence and is not actionable without current confirmation.",
+      "recommendation": "Keep the submitted starter unless current role, matchup and availability evidence confirms the model preference.",
+      "risk": "The report does not yet contain verified current matchup or beat-report context.",
+      "title": "Research Jaylen Warren vs MarShawn Lloyd",
+      "upside": "The evidence model adds approximately 8.2 points if its role assumptions hold.",
+      "urgency": "Before lineup lock"
+    },
+    {
+      "category": "Availability",
+      "confidence": "medium",
+      "cost_or_cut": "No transaction required unless the final designation changes roster-slot options.",
+      "priority": 5,
+      "projected_advantage": null,
+      "rationale": "Sleeper lists Sam LaPorta as Questionable; no verified news item is attached.",
+      "recommendation": "Confirm the official game designation and keep a legal pivot available.",
+      "risk": "Sleeper status alone does not establish expected availability or workload.",
+      "title": "Verify Sam LaPorta before lock",
+      "upside": "A prepared pivot protects the lineup from a zero or limited role.",
+      "urgency": "Before lineup lock"
+    },
+    {
+      "category": "Availability",
+      "confidence": "medium",
+      "cost_or_cut": "No transaction required unless the final designation changes roster-slot options.",
+      "priority": 5,
+      "projected_advantage": null,
+      "rationale": "Sleeper lists Tyrone Tracy as Questionable; no verified news item is attached.",
+      "recommendation": "Confirm the official game designation and keep a legal pivot available.",
+      "risk": "Sleeper status alone does not establish expected availability or workload.",
+      "title": "Verify Tyrone Tracy before lock",
+      "upside": "A prepared pivot protects the lineup from a zero or limited role.",
+      "urgency": "Before lineup lock"
+    },
+    {
+      "category": "Waiver review",
+      "confidence": "low",
+      "cost_or_cut": "Likely cut: Taylen Green; verify lineup, taxi and IR constraints first.",
+      "priority": 4,
+      "projected_advantage": null,
+      "rationale": "Dynasty Dealer market value 1,830 adds insulation/upside signal. 2025 prior usage: 33.6 opportunities/game, 78% offensive snaps, 13.2 715 PPG.",
+      "recommendation": "Do not submit the move until role, current news and roster fit are verified.",
+      "risk": "Opportunity score is a discovery signal, not proof of future touches or trade value.",
+      "title": "Compare Joe Flacco with Taylen Green",
+      "upside": "Candidate market value 1,830 versus 1,703 for the likely cut.",
+      "urgency": "Monitor waiver window",
+      "verified_available": true
+    },
+    {
+      "category": "Waiver review",
+      "confidence": "low",
+      "cost_or_cut": "Likely cut: Samaje Perine; verify lineup, taxi and IR constraints first.",
+      "priority": 4,
+      "projected_advantage": null,
+      "rationale": "Dynasty Dealer market value 1,608 adds insulation/upside signal. 2025 prior usage: 4.9 opportunities/game, 30% offensive snaps, 5.9 715 PPG.",
+      "recommendation": "Do not submit the move until role, current news and roster fit are verified.",
+      "risk": "Opportunity score is a discovery signal, not proof of future touches or trade value.",
+      "title": "Compare Ty Johnson with Samaje Perine",
+      "upside": "Candidate market value 1,608 versus 1,508 for the likely cut.",
+      "urgency": "Monitor waiver window",
+      "verified_available": true
     }
   ],
   "coverage": {
     "coach_beat_reporter_players": 0,
+    "context_signal_players": 27,
+    "curated_context_reports": 0,
+    "current_season_performance_samples": 0,
     "market_values": 27,
-    "news_players": 0,
+    "news_players": 2,
+    "objective_context_signals": 29,
     "performance_samples": 24,
     "research_status": "not_available",
     "roster_players": 27
   },
-  "generated_at": "2026-09-01T20:04:30.750955+00:00",
+  "data_confidence": {
+    "label": "Provisional",
+    "reasons": [
+      "Verified news, matchup and coach/beat-reporter research is not attached.",
+      "NFL performance inputs are prior-season samples or market proxies.",
+      "Sleeper roster, lineup and availability fields are present."
+    ],
+    "status": "provisional"
+  },
+  "freshness": {
+    "external_sync_generated_at": "2026-09-01T15:09:22.231137+00:00",
+    "market_provider_timestamp": "2026-09-01T15:09:24.159Z",
+    "performance_basis": [
+      "2025"
+    ],
+    "player_context_generated_at": "2026-09-01T20:59:45.174321+00:00",
+    "research_generated_at": null,
+    "sleeper_data_checked_at": "2026-09-01T20:59:45.359133+00:00"
+  },
+  "generated_at": "2026-09-01T20:59:45.690482+00:00",
   "lineup": {
+    "actionable_projected_advantage": 0,
     "changes": [
       {
-        "explanation": "Jaylen Warren carries the stronger evidence projection (14.7 vs 6.67).",
-        "projected_advantage": 8.03,
+        "current_decision_evidence": false,
+        "decision": "research_required",
+        "decision_reason": "The model prefers this swap, but the incoming player's case relies on prior-season or proxy evidence and is not actionable without current confirmation.",
+        "explanation": "Jaylen Warren carries the stronger evidence projection (15.08 vs 6.85).",
+        "projected_advantage": 8.23,
         "sit": "MarShawn Lloyd",
-        "start": "Jaylen Warren"
+        "sit_confidence": "low",
+        "start": "Jaylen Warren",
+        "start_confidence": "medium"
       },
       {
-        "explanation": "Courtland Sutton carries the stronger evidence projection (11.91 vs 9.93).",
-        "projected_advantage": 1.98,
+        "current_decision_evidence": false,
+        "decision": "hold_current",
+        "decision_reason": "The modeled edge is below the two-point change threshold; keep the submitted starter.",
+        "explanation": "Courtland Sutton carries the stronger evidence projection (12.06 vs 10.19).",
+        "projected_advantage": 1.87,
         "sit": "Jaylen Waddle",
-        "start": "Courtland Sutton"
-      },
-      {
-        "explanation": "Tyrone Tracy carries the stronger evidence projection (10.93 vs 10.84).",
-        "projected_advantage": 0.09,
-        "sit": "Terry McLaurin",
-        "start": "Tyrone Tracy"
+        "sit_confidence": "medium",
+        "start": "Courtland Sutton",
+        "start_confidence": "medium"
       }
     ],
     "current": [
       {
         "confidence": "medium",
+        "current_decision_evidence": false,
+        "injury_status": null,
         "name": "Jayden Daniels",
         "player_id": "11566",
         "position": "QB",
-        "projected_points": 16.4,
-        "projection_basis": "2025 715 PPG blended with recent form",
+        "projected_ceiling": 22.3,
+        "projected_floor": 16.8,
+        "projected_points": 16.82,
+        "projection_basis": "2025 715 PPG blended with recent form; current context multiplier 1.026 applied",
         "slot": "QB",
         "slot_label": "QB",
         "team": "WAS"
       },
       {
         "confidence": "medium",
+        "current_decision_evidence": false,
+        "injury_status": null,
         "name": "James Cook",
         "player_id": "8138",
         "position": "RB",
-        "projected_points": 15.83,
-        "projection_basis": "2025 715 PPG blended with recent form",
+        "projected_ceiling": 23.1,
+        "projected_floor": 11.0,
+        "projected_points": 16.24,
+        "projection_basis": "2025 715 PPG blended with recent form; current context multiplier 1.026 applied",
         "slot": "RB",
         "slot_label": "RB1",
         "team": "BUF"
       },
       {
         "confidence": "low",
+        "current_decision_evidence": false,
+        "injury_status": null,
         "name": "MarShawn Lloyd",
         "player_id": "11581",
         "position": "RB",
-        "projected_points": 6.67,
-        "projection_basis": "Dynasty market-value proxy; no NFL performance sample",
+        "projected_ceiling": 8.8,
+        "projected_floor": 4.9,
+        "projected_points": 6.85,
+        "projection_basis": "Dynasty market-value proxy; no NFL performance sample; current context multiplier 1.026 applied",
         "slot": "RB",
         "slot_label": "RB2",
         "team": "GB"
       },
       {
         "confidence": "medium",
+        "current_decision_evidence": false,
+        "injury_status": null,
         "name": "Justin Jefferson",
         "player_id": "6794",
         "position": "WR",
-        "projected_points": 12.36,
-        "projection_basis": "2025 715 PPG blended with recent form",
+        "projected_ceiling": 15.2,
+        "projected_floor": 7.9,
+        "projected_points": 12.68,
+        "projection_basis": "2025 715 PPG blended with recent form; current context multiplier 1.026 applied",
         "slot": "WR",
         "slot_label": "WR1",
         "team": "MIN"
       },
       {
         "confidence": "medium",
+        "current_decision_evidence": false,
+        "injury_status": null,
         "name": "Nico Collins",
         "player_id": "7569",
         "position": "WR",
-        "projected_points": 14.71,
-        "projection_basis": "2025 715 PPG blended with recent form",
+        "projected_ceiling": 22.1,
+        "projected_floor": 10.2,
+        "projected_points": 15.1,
+        "projection_basis": "2025 715 PPG blended with recent form; current context multiplier 1.026 applied",
         "slot": "WR",
         "slot_label": "WR2",
         "team": "HOU"
       },
       {
         "confidence": "medium",
+        "current_decision_evidence": false,
+        "injury_status": null,
         "name": "Jaylen Waddle",
         "player_id": "7526",
         "position": "WR",
-        "projected_points": 9.93,
-        "projection_basis": "2025 715 PPG blended with recent form",
+        "projected_ceiling": 18.3,
+        "projected_floor": 7.2,
+        "projected_points": 10.19,
+        "projection_basis": "2025 715 PPG blended with recent form; current context multiplier 1.026 applied",
         "slot": "WR",
         "slot_label": "WR3",
         "team": "DEN"
       },
       {
         "confidence": "medium",
+        "current_decision_evidence": false,
+        "injury_status": null,
         "name": "Harold Fannin",
         "player_id": "12506",
         "position": "TE",
-        "projected_points": 12.53,
-        "projection_basis": "2025 715 PPG blended with recent form",
+        "projected_ceiling": 14.0,
+        "projected_floor": 8.6,
+        "projected_points": 12.86,
+        "projection_basis": "2025 715 PPG blended with recent form; current context multiplier 1.026 applied",
         "slot": "TE",
         "slot_label": "TE",
         "team": "CLE"
       },
       {
         "confidence": "medium",
+        "current_decision_evidence": false,
+        "injury_status": null,
         "name": "Terry McLaurin",
         "player_id": "5927",
         "position": "WR",
-        "projected_points": 10.84,
-        "projection_basis": "2025 715 PPG blended with recent form",
+        "projected_ceiling": 14.8,
+        "projected_floor": 8.5,
+        "projected_points": 11.12,
+        "projection_basis": "2025 715 PPG blended with recent form; current context multiplier 1.026 applied",
         "slot": "FLEX",
         "slot_label": "FLEX",
         "team": "WAS"
       },
       {
         "confidence": "medium",
+        "current_decision_evidence": false,
+        "injury_status": null,
         "name": "Baker Mayfield",
         "player_id": "4892",
         "position": "QB",
-        "projected_points": 17.68,
-        "projection_basis": "2025 715 PPG blended with recent form",
+        "projected_ceiling": 22.6,
+        "projected_floor": 14.5,
+        "projected_points": 18.14,
+        "projection_basis": "2025 715 PPG blended with recent form; current context multiplier 1.026 applied",
         "slot": "SUPER_FLEX",
         "slot_label": "SUPERFLEX",
         "team": "TB"
       }
     ],
-    "current_projected_points": 116.95,
-    "methodology": "Legal-lineup optimization using 715 PPG, recent form and a market proxy when performance is missing. This is decision support, not a sportsbook projection.",
+    "current_projected_points": 120.0,
+    "decision_thresholds": {
+      "availability_guardrail": true,
+      "close_call_below": 3,
+      "current_evidence_required": true,
+      "hold_current_below": 2
+    },
+    "methodology": "The unconstrained lineup maximizes the evidence estimate, but the action board requires a two-point edge plus current-season usage or verified current reporting before recommending a change. Dynasty tier and market movement are not weekly-start scores. This is decision support, not a sportsbook projection.",
     "optimized": [
       {
         "confidence": "medium",
+        "current_decision_evidence": false,
+        "injury_status": null,
         "name": "Jayden Daniels",
         "player_id": "11566",
         "position": "QB",
-        "projected_points": 16.4,
-        "projection_basis": "2025 715 PPG blended with recent form",
+        "projected_ceiling": 22.3,
+        "projected_floor": 16.8,
+        "projected_points": 16.82,
+        "projection_basis": "2025 715 PPG blended with recent form; current context multiplier 1.026 applied",
         "slot": "QB",
         "slot_label": "QB",
         "team": "WAS"
       },
       {
         "confidence": "medium",
+        "current_decision_evidence": false,
+        "injury_status": null,
+        "name": "James Cook",
+        "player_id": "8138",
+        "position": "RB",
+        "projected_ceiling": 23.1,
+        "projected_floor": 11.0,
+        "projected_points": 16.24,
+        "projection_basis": "2025 715 PPG blended with recent form; current context multiplier 1.026 applied",
+        "slot": "RB",
+        "slot_label": "RB1",
+        "team": "BUF"
+      },
+      {
+        "confidence": "medium",
+        "current_decision_evidence": false,
+        "injury_status": null,
         "name": "Jaylen Warren",
         "player_id": "8228",
         "position": "RB",
-        "projected_points": 14.7,
-        "projection_basis": "2025 715 PPG blended with recent form",
+        "projected_ceiling": 15.6,
+        "projected_floor": 9.5,
+        "projected_points": 15.08,
+        "projection_basis": "2025 715 PPG blended with recent form; current context multiplier 1.026 applied",
         "slot": "RB",
-        "slot_label": "RB1",
+        "slot_label": "RB2",
         "team": "PIT"
       },
       {
         "confidence": "medium",
-        "name": "Tyrone Tracy",
-        "player_id": "11655",
-        "position": "RB",
-        "projected_points": 10.93,
-        "projection_basis": "2025 715 PPG blended with recent form; questionable-status penalty applied",
-        "slot": "RB",
-        "slot_label": "RB2",
-        "team": "NYG"
-      },
-      {
-        "confidence": "medium",
+        "current_decision_evidence": false,
+        "injury_status": null,
         "name": "Nico Collins",
         "player_id": "7569",
         "position": "WR",
-        "projected_points": 14.71,
-        "projection_basis": "2025 715 PPG blended with recent form",
+        "projected_ceiling": 22.1,
+        "projected_floor": 10.2,
+        "projected_points": 15.1,
+        "projection_basis": "2025 715 PPG blended with recent form; current context multiplier 1.026 applied",
         "slot": "WR",
         "slot_label": "WR1",
         "team": "HOU"
       },
       {
         "confidence": "medium",
-        "name": "Justin Jefferson",
-        "player_id": "6794",
-        "position": "WR",
-        "projected_points": 12.36,
-        "projection_basis": "2025 715 PPG blended with recent form",
-        "slot": "WR",
-        "slot_label": "WR2",
-        "team": "MIN"
-      },
-      {
-        "confidence": "medium",
+        "current_decision_evidence": false,
+        "injury_status": null,
         "name": "Courtland Sutton",
         "player_id": "5045",
         "position": "WR",
-        "projected_points": 11.91,
-        "projection_basis": "2025 715 PPG blended with recent form",
+        "projected_ceiling": 18.3,
+        "projected_floor": 8.1,
+        "projected_points": 12.06,
+        "projection_basis": "2025 715 PPG blended with recent form; current context multiplier 1.013 applied",
         "slot": "WR",
-        "slot_label": "WR3",
+        "slot_label": "WR2",
         "team": "DEN"
       },
       {
         "confidence": "medium",
+        "current_decision_evidence": false,
+        "injury_status": null,
+        "name": "Terry McLaurin",
+        "player_id": "5927",
+        "position": "WR",
+        "projected_ceiling": 14.8,
+        "projected_floor": 8.5,
+        "projected_points": 11.12,
+        "projection_basis": "2025 715 PPG blended with recent form; current context multiplier 1.026 applied",
+        "slot": "WR",
+        "slot_label": "WR3",
+        "team": "WAS"
+      },
+      {
+        "confidence": "medium",
+        "current_decision_evidence": false,
+        "injury_status": null,
         "name": "Harold Fannin",
         "player_id": "12506",
         "position": "TE",
-        "projected_points": 12.53,
-        "projection_basis": "2025 715 PPG blended with recent form",
+        "projected_ceiling": 14.0,
+        "projected_floor": 8.6,
+        "projected_points": 12.86,
+        "projection_basis": "2025 715 PPG blended with recent form; current context multiplier 1.026 applied",
         "slot": "TE",
         "slot_label": "TE",
         "team": "CLE"
       },
       {
         "confidence": "medium",
-        "name": "James Cook",
-        "player_id": "8138",
-        "position": "RB",
-        "projected_points": 15.83,
-        "projection_basis": "2025 715 PPG blended with recent form",
+        "current_decision_evidence": false,
+        "injury_status": null,
+        "name": "Justin Jefferson",
+        "player_id": "6794",
+        "position": "WR",
+        "projected_ceiling": 15.2,
+        "projected_floor": 7.9,
+        "projected_points": 12.68,
+        "projection_basis": "2025 715 PPG blended with recent form; current context multiplier 1.026 applied",
         "slot": "FLEX",
         "slot_label": "FLEX",
-        "team": "BUF"
+        "team": "MIN"
       },
       {
         "confidence": "medium",
+        "current_decision_evidence": false,
+        "injury_status": null,
         "name": "Baker Mayfield",
         "player_id": "4892",
         "position": "QB",
-        "projected_points": 17.68,
-        "projection_basis": "2025 715 PPG blended with recent form",
+        "projected_ceiling": 22.6,
+        "projected_floor": 14.5,
+        "projected_points": 18.14,
+        "projection_basis": "2025 715 PPG blended with recent form; current context multiplier 1.026 applied",
         "slot": "SUPER_FLEX",
         "slot_label": "SUPERFLEX",
         "team": "TB"
       }
     ],
-    "optimized_projected_points": 127.05,
-    "projected_advantage": 10.1
+    "optimized_projected_points": 130.1,
+    "projected_advantage": 10.1,
+    "status": "provisional"
   },
   "movement": [
     {
@@ -629,18 +752,73 @@
                   "value": "18.13 PPG · 35.14 opp/g"
                 }
               ],
+              "catalysts": [
+                "A top-two depth-chart position creates a direct path to added opportunity."
+              ],
               "coach_beat_reporter_information": [],
+              "context": {
+                "availability_probability": 1.0,
+                "confidence": "medium",
+                "net_direction": "positive",
+                "signal_count": 1,
+                "signals": [
+                  {
+                    "corroboration_count": 1,
+                    "direction": 1,
+                    "event_date": null,
+                    "impact": "workload",
+                    "magnitude": 2,
+                    "origin": "sleeper",
+                    "player_id": "11566",
+                    "player_name": "Jayden Daniels",
+                    "published_at": "2026-09-01T20:59:45.174321+00:00",
+                    "reliability": 0.65,
+                    "signal_id": "sleeper-depth-11566",
+                    "source": "Sleeper depth chart",
+                    "source_type": "team",
+                    "summary": "Current Sleeper depth-chart order is 1.",
+                    "ttl_days": 3,
+                    "type": "depth_chart",
+                    "url": null,
+                    "weighted_score": 0.26
+                  }
+                ],
+                "weekly_multiplier": 1.026
+              },
               "current_fantasy_value": {
                 "market_position_rank": 4,
                 "market_rank": 14,
                 "market_value": 8162,
                 "projection": {
-                  "basis": "2025 715 PPG blended with recent form",
+                  "baseline_points": 16.4,
+                  "basis": "2025 715 PPG blended with recent form; current context multiplier 1.026 applied",
+                  "ceiling": 22.3,
                   "confidence": "medium",
-                  "points": 16.4
+                  "context_adjustment_points": 0.43,
+                  "context_multiplier": 1.026,
+                  "current_decision_evidence": false,
+                  "floor": 16.8,
+                  "model_type": "evidence_estimate",
+                  "performance_basis": "prior",
+                  "points": 16.82
                 }
               },
               "current_starter": true,
+              "decision_lenses": {
+                "dynasty": {
+                  "label": "Foundation asset",
+                  "summary": "Market value 8,162 and position rank #4; age 25 shapes the liquidity and time-horizon risk."
+                },
+                "recommended_stance": "Start / hold",
+                "rest_of_season": {
+                  "label": "Role supported",
+                  "summary": "The 2025 sample shows 35.14 opportunities/game and 90.3% snaps."
+                },
+                "weekly": {
+                  "label": "Starter",
+                  "summary": "Evidence range 16.8–22.3 with medium confidence; current matchup research is unavailable."
+                }
+              },
               "depth_chart_order": 1,
               "injury_body_part": null,
               "injury_status": null,
@@ -666,10 +844,12 @@
               "player_id": "11566",
               "position": "QB",
               "position_rank_on_roster": 1,
+              "recommended_stance": "Start / hold",
               "research_coverage": {
                 "coach_beat_reporter": false,
                 "news": false
               },
+              "risk_factors": [],
               "speculative_outlook": {
                 "label": "Stable",
                 "summary": "Current market and role indicators support a dependable hold unless a clear tier-up is available."
@@ -715,18 +895,73 @@
                   "value": "18.17 PPG · 35.18 opp/g"
                 }
               ],
+              "catalysts": [
+                "A top-two depth-chart position creates a direct path to added opportunity."
+              ],
               "coach_beat_reporter_information": [],
+              "context": {
+                "availability_probability": 1.0,
+                "confidence": "medium",
+                "net_direction": "positive",
+                "signal_count": 1,
+                "signals": [
+                  {
+                    "corroboration_count": 1,
+                    "direction": 1,
+                    "event_date": null,
+                    "impact": "workload",
+                    "magnitude": 2,
+                    "origin": "sleeper",
+                    "player_id": "4892",
+                    "player_name": "Baker Mayfield",
+                    "published_at": "2026-09-01T20:59:45.174321+00:00",
+                    "reliability": 0.65,
+                    "signal_id": "sleeper-depth-4892",
+                    "source": "Sleeper depth chart",
+                    "source_type": "team",
+                    "summary": "Current Sleeper depth-chart order is 1.",
+                    "ttl_days": 3,
+                    "type": "depth_chart",
+                    "url": null,
+                    "weighted_score": 0.26
+                  }
+                ],
+                "weekly_multiplier": 1.026
+              },
               "current_fantasy_value": {
                 "market_position_rank": 17,
                 "market_rank": 59,
                 "market_value": 5606,
                 "projection": {
-                  "basis": "2025 715 PPG blended with recent form",
+                  "baseline_points": 17.68,
+                  "basis": "2025 715 PPG blended with recent form; current context multiplier 1.026 applied",
+                  "ceiling": 22.6,
                   "confidence": "medium",
-                  "points": 17.68
+                  "context_adjustment_points": 0.46,
+                  "context_multiplier": 1.026,
+                  "current_decision_evidence": false,
+                  "floor": 14.5,
+                  "model_type": "evidence_estimate",
+                  "performance_basis": "prior",
+                  "points": 18.14
                 }
               },
               "current_starter": true,
+              "decision_lenses": {
+                "dynasty": {
+                  "label": "Strong hold",
+                  "summary": "Market value 5,606 and position rank #17; age 31 shapes the liquidity and time-horizon risk."
+                },
+                "recommended_stance": "Start / hold",
+                "rest_of_season": {
+                  "label": "Role supported",
+                  "summary": "The 2025 sample shows 35.18 opportunities/game and 97.1% snaps."
+                },
+                "weekly": {
+                  "label": "Starter",
+                  "summary": "Evidence range 14.5–22.6 with medium confidence; current matchup research is unavailable."
+                }
+              },
               "depth_chart_order": 1,
               "injury_body_part": null,
               "injury_status": null,
@@ -752,10 +987,14 @@
               "player_id": "4892",
               "position": "QB",
               "position_rank_on_roster": 2,
+              "recommended_stance": "Start / hold",
               "research_coverage": {
                 "coach_beat_reporter": false,
                 "news": false
               },
+              "risk_factors": [
+                "Age increases role-loss and market-liquidity risk."
+              ],
               "speculative_outlook": {
                 "label": "Volatile",
                 "summary": "Near-term production can still help, while age increases the risk of a fast market-value decline."
@@ -801,18 +1040,74 @@
                   "value": "13.85 PPG · 14.25 opp/g"
                 }
               ],
+              "catalysts": [
+                "A top-two depth-chart position creates a direct path to added opportunity.",
+                "Recent opportunity is up 3.75 per game against the broader sample."
+              ],
               "coach_beat_reporter_information": [],
+              "context": {
+                "availability_probability": 1.0,
+                "confidence": "medium",
+                "net_direction": "positive",
+                "signal_count": 1,
+                "signals": [
+                  {
+                    "corroboration_count": 1,
+                    "direction": 1,
+                    "event_date": null,
+                    "impact": "workload",
+                    "magnitude": 2,
+                    "origin": "sleeper",
+                    "player_id": "8161",
+                    "player_name": "Malik Willis",
+                    "published_at": "2026-09-01T20:59:45.174321+00:00",
+                    "reliability": 0.65,
+                    "signal_id": "sleeper-depth-8161",
+                    "source": "Sleeper depth chart",
+                    "source_type": "team",
+                    "summary": "Current Sleeper depth-chart order is 1.",
+                    "ttl_days": 3,
+                    "type": "depth_chart",
+                    "url": null,
+                    "weighted_score": 0.26
+                  }
+                ],
+                "weekly_multiplier": 1.026
+              },
               "current_fantasy_value": {
                 "market_position_rank": 26,
                 "market_rank": 88,
                 "market_value": 4506,
                 "projection": {
-                  "basis": "2025 715 PPG blended with recent form",
+                  "baseline_points": 14.78,
+                  "basis": "2025 715 PPG blended with recent form; current context multiplier 1.026 applied",
+                  "ceiling": 15.2,
                   "confidence": "medium",
-                  "points": 14.78
+                  "context_adjustment_points": 0.38,
+                  "context_multiplier": 1.026,
+                  "current_decision_evidence": false,
+                  "floor": 6.1,
+                  "model_type": "evidence_estimate",
+                  "performance_basis": "prior",
+                  "points": 15.16
                 }
               },
               "current_starter": false,
+              "decision_lenses": {
+                "dynasty": {
+                  "label": "Flexible depth asset",
+                  "summary": "Market value 4,506 and position rank #26; age 27 shapes the liquidity and time-horizon risk."
+                },
+                "recommended_stance": "Hold / monitor role",
+                "rest_of_season": {
+                  "label": "Role sensitive",
+                  "summary": "The 2025 sample shows 14.25 opportunities/game and 42.2% snaps."
+                },
+                "weekly": {
+                  "label": "Depth",
+                  "summary": "Evidence range 6.1–15.2 with medium confidence; current matchup research is unavailable."
+                }
+              },
               "depth_chart_order": 1,
               "injury_body_part": null,
               "injury_status": null,
@@ -837,10 +1132,12 @@
               "player_id": "8161",
               "position": "QB",
               "position_rank_on_roster": 3,
+              "recommended_stance": "Hold / monitor role",
               "research_coverage": {
                 "coach_beat_reporter": false,
                 "news": false
               },
+              "risk_factors": [],
               "speculative_outlook": {
                 "label": "Speculative",
                 "summary": "Depth-chart movement, usage growth or a market catalyst is needed for a meaningful value jump."
@@ -880,18 +1177,74 @@
                   "value": "12.36 PPG · 29.12 opp/g"
                 }
               ],
+              "catalysts": [
+                "Youth leaves room for role growth and market appreciation.",
+                "A top-two depth-chart position creates a direct path to added opportunity."
+              ],
               "coach_beat_reporter_information": [],
+              "context": {
+                "availability_probability": 1.0,
+                "confidence": "medium",
+                "net_direction": "neutral",
+                "signal_count": 1,
+                "signals": [
+                  {
+                    "corroboration_count": 1,
+                    "direction": 1,
+                    "event_date": null,
+                    "impact": "workload",
+                    "magnitude": 1,
+                    "origin": "sleeper",
+                    "player_id": "12524",
+                    "player_name": "Shedeur Sanders",
+                    "published_at": "2026-09-01T20:59:45.174321+00:00",
+                    "reliability": 0.65,
+                    "signal_id": "sleeper-depth-12524",
+                    "source": "Sleeper depth chart",
+                    "source_type": "team",
+                    "summary": "Current Sleeper depth-chart order is 2.",
+                    "ttl_days": 3,
+                    "type": "depth_chart",
+                    "url": null,
+                    "weighted_score": 0.13
+                  }
+                ],
+                "weekly_multiplier": 1.013
+              },
               "current_fantasy_value": {
                 "market_position_rank": 33,
                 "market_rank": 163,
                 "market_value": 3149,
                 "projection": {
-                  "basis": "2025 715 PPG blended with recent form",
+                  "baseline_points": 11.56,
+                  "basis": "2025 715 PPG blended with recent form; current context multiplier 1.013 applied",
+                  "ceiling": 12.5,
                   "confidence": "medium",
-                  "points": 11.56
+                  "context_adjustment_points": 0.15,
+                  "context_multiplier": 1.013,
+                  "current_decision_evidence": false,
+                  "floor": 6.2,
+                  "model_type": "evidence_estimate",
+                  "performance_basis": "prior",
+                  "points": 11.71
                 }
               },
               "current_starter": false,
+              "decision_lenses": {
+                "dynasty": {
+                  "label": "Development hold",
+                  "summary": "Market value 3,149 and position rank #33; age 24 shapes the liquidity and time-horizon risk."
+                },
+                "recommended_stance": "Hold for upside",
+                "rest_of_season": {
+                  "label": "Role supported",
+                  "summary": "The 2025 sample shows 29.12 opportunities/game and 91.6% snaps."
+                },
+                "weekly": {
+                  "label": "Depth",
+                  "summary": "Evidence range 6.2–12.5 with medium confidence; current matchup research is unavailable."
+                }
+              },
               "depth_chart_order": 2,
               "injury_body_part": null,
               "injury_status": null,
@@ -916,10 +1269,12 @@
               "player_id": "12524",
               "position": "QB",
               "position_rank_on_roster": 4,
+              "recommended_stance": "Hold for upside",
               "research_coverage": {
                 "coach_beat_reporter": false,
                 "news": false
               },
+              "risk_factors": [],
               "speculative_outlook": {
                 "label": "Developmental",
                 "summary": "Long-term upside remains, but role confirmation is needed before treating the player as a weekly starter."
@@ -965,18 +1320,75 @@
                   "value": "16.27 PPG · 32.44 opp/g"
                 }
               ],
+              "catalysts": [
+                "A top-two depth-chart position creates a direct path to added opportunity.",
+                "Recent opportunity is up 11.23 per game against the broader sample.",
+                "Market value increased 82 since the previous report."
+              ],
               "coach_beat_reporter_information": [],
+              "context": {
+                "availability_probability": 1.0,
+                "confidence": "medium",
+                "net_direction": "positive",
+                "signal_count": 1,
+                "signals": [
+                  {
+                    "corroboration_count": 1,
+                    "direction": 1,
+                    "event_date": null,
+                    "impact": "workload",
+                    "magnitude": 2,
+                    "origin": "sleeper",
+                    "player_id": "96",
+                    "player_name": "Aaron Rodgers",
+                    "published_at": "2026-09-01T20:59:45.174321+00:00",
+                    "reliability": 0.65,
+                    "signal_id": "sleeper-depth-96",
+                    "source": "Sleeper depth chart",
+                    "source_type": "team",
+                    "summary": "Current Sleeper depth-chart order is 1.",
+                    "ttl_days": 3,
+                    "type": "depth_chart",
+                    "url": null,
+                    "weighted_score": 0.26
+                  }
+                ],
+                "weekly_multiplier": 1.026
+              },
               "current_fantasy_value": {
                 "market_position_rank": 37,
                 "market_rank": 211,
                 "market_value": 2693,
                 "projection": {
-                  "basis": "2025 715 PPG blended with recent form",
+                  "baseline_points": 16.16,
+                  "basis": "2025 715 PPG blended with recent form; current context multiplier 1.026 applied",
+                  "ceiling": 20.4,
                   "confidence": "medium",
-                  "points": 16.16
+                  "context_adjustment_points": 0.42,
+                  "context_multiplier": 1.026,
+                  "current_decision_evidence": false,
+                  "floor": 12.8,
+                  "model_type": "evidence_estimate",
+                  "performance_basis": "prior",
+                  "points": 16.59
                 }
               },
               "current_starter": false,
+              "decision_lenses": {
+                "dynasty": {
+                  "label": "Market-sensitive veteran",
+                  "summary": "Market value 2,693 and position rank #37; age 42 shapes the liquidity and time-horizon risk."
+                },
+                "recommended_stance": "Shop if value holds",
+                "rest_of_season": {
+                  "label": "Role supported",
+                  "summary": "The 2025 sample shows 32.44 opportunities/game and 95.7% snaps."
+                },
+                "weekly": {
+                  "label": "Depth",
+                  "summary": "Evidence range 12.8–20.4 with medium confidence; current matchup research is unavailable."
+                }
+              },
               "depth_chart_order": 1,
               "injury_body_part": null,
               "injury_status": null,
@@ -1001,10 +1413,14 @@
               "player_id": "96",
               "position": "QB",
               "position_rank_on_roster": 5,
+              "recommended_stance": "Shop if value holds",
               "research_coverage": {
                 "coach_beat_reporter": false,
                 "news": false
               },
+              "risk_factors": [
+                "Age increases role-loss and market-liquidity risk."
+              ],
               "speculative_outlook": {
                 "label": "Volatile",
                 "summary": "Near-term production can still help, while age increases the risk of a fast market-value decline."
@@ -1044,18 +1460,73 @@
                   "value": "No matched sample"
                 }
               ],
+              "catalysts": [
+                "Youth leaves room for role growth and market appreciation."
+              ],
               "coach_beat_reporter_information": [],
+              "context": {
+                "availability_probability": 1.0,
+                "confidence": "medium",
+                "net_direction": "negative",
+                "signal_count": 1,
+                "signals": [
+                  {
+                    "corroboration_count": 1,
+                    "direction": -1,
+                    "event_date": null,
+                    "impact": "workload",
+                    "magnitude": 3,
+                    "origin": "sleeper",
+                    "player_id": "13306",
+                    "player_name": "Taylen Green",
+                    "published_at": "2026-09-01T20:59:45.174321+00:00",
+                    "reliability": 0.65,
+                    "signal_id": "sleeper-depth-13306",
+                    "source": "Sleeper depth chart",
+                    "source_type": "team",
+                    "summary": "Current Sleeper depth-chart order is 4.",
+                    "ttl_days": 3,
+                    "type": "depth_chart",
+                    "url": null,
+                    "weighted_score": -0.39
+                  }
+                ],
+                "weekly_multiplier": 0.961
+              },
               "current_fantasy_value": {
                 "market_position_rank": 62,
                 "market_rank": 364,
                 "market_value": 1703,
                 "projection": {
-                  "basis": "Dynasty market-value proxy; no NFL performance sample",
+                  "baseline_points": 9.96,
+                  "basis": "Dynasty market-value proxy; no NFL performance sample; current context multiplier 0.961 applied",
+                  "ceiling": 12.2,
                   "confidence": "low",
-                  "points": 9.96
+                  "context_adjustment_points": -0.39,
+                  "context_multiplier": 0.961,
+                  "current_decision_evidence": false,
+                  "floor": 6.9,
+                  "model_type": "evidence_estimate",
+                  "performance_basis": null,
+                  "points": 9.57
                 }
               },
               "current_starter": false,
+              "decision_lenses": {
+                "dynasty": {
+                  "label": "Development hold",
+                  "summary": "Market value 1,703 and position rank #62; age 23 shapes the liquidity and time-horizon risk."
+                },
+                "recommended_stance": "Hold / monitor role",
+                "rest_of_season": {
+                  "label": "Insufficient evidence",
+                  "summary": "No matched NFL performance sample is available; role must be verified before relying on weekly utility."
+                },
+                "weekly": {
+                  "label": "Unproven",
+                  "summary": "Evidence range 6.9–12.2 with low confidence; current matchup research is unavailable."
+                }
+              },
               "depth_chart_order": 4,
               "injury_body_part": null,
               "injury_status": null,
@@ -1081,10 +1552,15 @@
               "player_id": "13306",
               "position": "QB",
               "position_rank_on_roster": 6,
+              "recommended_stance": "Hold / monitor role",
               "research_coverage": {
                 "coach_beat_reporter": false,
                 "news": false
               },
+              "risk_factors": [
+                "The current depth-chart path requires movement ahead of the player.",
+                "No matched NFL performance sample supports the current weekly estimate."
+              ],
               "speculative_outlook": {
                 "label": "Developmental",
                 "summary": "Long-term upside remains, but role confirmation is needed before treating the player as a weekly starter."
@@ -1136,18 +1612,73 @@
                   "value": "17.78 PPG · 20.53 opp/g"
                 }
               ],
+              "catalysts": [
+                "A top-two depth-chart position creates a direct path to added opportunity."
+              ],
               "coach_beat_reporter_information": [],
+              "context": {
+                "availability_probability": 1.0,
+                "confidence": "medium",
+                "net_direction": "positive",
+                "signal_count": 1,
+                "signals": [
+                  {
+                    "corroboration_count": 1,
+                    "direction": 1,
+                    "event_date": null,
+                    "impact": "workload",
+                    "magnitude": 2,
+                    "origin": "sleeper",
+                    "player_id": "8138",
+                    "player_name": "James Cook",
+                    "published_at": "2026-09-01T20:59:45.174321+00:00",
+                    "reliability": 0.65,
+                    "signal_id": "sleeper-depth-8138",
+                    "source": "Sleeper depth chart",
+                    "source_type": "team",
+                    "summary": "Current Sleeper depth-chart order is 1.",
+                    "ttl_days": 3,
+                    "type": "depth_chart",
+                    "url": null,
+                    "weighted_score": 0.26
+                  }
+                ],
+                "weekly_multiplier": 1.026
+              },
               "current_fantasy_value": {
                 "market_position_rank": 8,
                 "market_rank": 26,
                 "market_value": 7242,
                 "projection": {
-                  "basis": "2025 715 PPG blended with recent form",
+                  "baseline_points": 15.83,
+                  "basis": "2025 715 PPG blended with recent form; current context multiplier 1.026 applied",
+                  "ceiling": 23.1,
                   "confidence": "medium",
-                  "points": 15.83
+                  "context_adjustment_points": 0.41,
+                  "context_multiplier": 1.026,
+                  "current_decision_evidence": false,
+                  "floor": 11.0,
+                  "model_type": "evidence_estimate",
+                  "performance_basis": "prior",
+                  "points": 16.24
                 }
               },
               "current_starter": true,
+              "decision_lenses": {
+                "dynasty": {
+                  "label": "Foundation asset",
+                  "summary": "Market value 7,242 and position rank #8; age 26 shapes the liquidity and time-horizon risk."
+                },
+                "recommended_stance": "Start / hold",
+                "rest_of_season": {
+                  "label": "Role sensitive",
+                  "summary": "The 2025 sample shows 20.53 opportunities/game and 57.2% snaps."
+                },
+                "weekly": {
+                  "label": "Starter",
+                  "summary": "Evidence range 11.0–23.1 with medium confidence; current matchup research is unavailable."
+                }
+              },
               "depth_chart_order": 1,
               "injury_body_part": null,
               "injury_status": null,
@@ -1173,10 +1704,12 @@
               "player_id": "8138",
               "position": "RB",
               "position_rank_on_roster": 1,
+              "recommended_stance": "Start / hold",
               "research_coverage": {
                 "coach_beat_reporter": false,
                 "news": false
               },
+              "risk_factors": [],
               "speculative_outlook": {
                 "label": "Stable",
                 "summary": "Current market and role indicators support a dependable hold unless a clear tier-up is available."
@@ -1222,18 +1755,73 @@
                   "value": "No matched sample"
                 }
               ],
+              "catalysts": [
+                "Youth leaves room for role growth and market appreciation."
+              ],
               "coach_beat_reporter_information": [],
+              "context": {
+                "availability_probability": 1.0,
+                "confidence": "medium",
+                "net_direction": "negative",
+                "signal_count": 1,
+                "signals": [
+                  {
+                    "corroboration_count": 1,
+                    "direction": -1,
+                    "event_date": null,
+                    "impact": "workload",
+                    "magnitude": 2,
+                    "origin": "sleeper",
+                    "player_id": "13345",
+                    "player_name": "Jonah Coleman",
+                    "published_at": "2026-09-01T20:59:45.174321+00:00",
+                    "reliability": 0.65,
+                    "signal_id": "sleeper-depth-13345",
+                    "source": "Sleeper depth chart",
+                    "source_type": "team",
+                    "summary": "Current Sleeper depth-chart order is 3.",
+                    "ttl_days": 3,
+                    "type": "depth_chart",
+                    "url": null,
+                    "weighted_score": -0.26
+                  }
+                ],
+                "weekly_multiplier": 0.974
+              },
               "current_fantasy_value": {
                 "market_position_rank": 26,
                 "market_rank": 106,
                 "market_value": 4019,
                 "projection": {
-                  "basis": "Dynasty market-value proxy; no NFL performance sample",
+                  "baseline_points": 7.02,
+                  "basis": "Dynasty market-value proxy; no NFL performance sample; current context multiplier 0.974 applied",
+                  "ceiling": 8.8,
                   "confidence": "low",
-                  "points": 7.02
+                  "context_adjustment_points": -0.18,
+                  "context_multiplier": 0.974,
+                  "current_decision_evidence": false,
+                  "floor": 4.9,
+                  "model_type": "evidence_estimate",
+                  "performance_basis": null,
+                  "points": 6.84
                 }
               },
               "current_starter": false,
+              "decision_lenses": {
+                "dynasty": {
+                  "label": "Development hold",
+                  "summary": "Market value 4,019 and position rank #26; age 23 shapes the liquidity and time-horizon risk."
+                },
+                "recommended_stance": "Hold / monitor role",
+                "rest_of_season": {
+                  "label": "Insufficient evidence",
+                  "summary": "No matched NFL performance sample is available; role must be verified before relying on weekly utility."
+                },
+                "weekly": {
+                  "label": "Unproven",
+                  "summary": "Evidence range 4.9–8.8 with low confidence; current matchup research is unavailable."
+                }
+              },
               "depth_chart_order": 3,
               "injury_body_part": null,
               "injury_status": null,
@@ -1259,10 +1847,15 @@
               "player_id": "13345",
               "position": "RB",
               "position_rank_on_roster": 2,
+              "recommended_stance": "Hold / monitor role",
               "research_coverage": {
                 "coach_beat_reporter": false,
                 "news": false
               },
+              "risk_factors": [
+                "The current depth-chart path requires movement ahead of the player.",
+                "No matched NFL performance sample supports the current weekly estimate."
+              ],
               "speculative_outlook": {
                 "label": "Developmental",
                 "summary": "Long-term upside remains, but role confirmation is needed before treating the player as a weekly starter."
@@ -1302,18 +1895,74 @@
                   "value": "12.72 PPG · 16.82 opp/g"
                 }
               ],
+              "catalysts": [
+                "A top-two depth-chart position creates a direct path to added opportunity.",
+                "Market value increased 7 since the previous report."
+              ],
               "coach_beat_reporter_information": [],
+              "context": {
+                "availability_probability": 1.0,
+                "confidence": "medium",
+                "net_direction": "neutral",
+                "signal_count": 1,
+                "signals": [
+                  {
+                    "corroboration_count": 1,
+                    "direction": 1,
+                    "event_date": null,
+                    "impact": "workload",
+                    "magnitude": 1,
+                    "origin": "sleeper",
+                    "player_id": "7021",
+                    "player_name": "Rico Dowdle",
+                    "published_at": "2026-09-01T20:59:45.174321+00:00",
+                    "reliability": 0.65,
+                    "signal_id": "sleeper-depth-7021",
+                    "source": "Sleeper depth chart",
+                    "source_type": "team",
+                    "summary": "Current Sleeper depth-chart order is 2.",
+                    "ttl_days": 3,
+                    "type": "depth_chart",
+                    "url": null,
+                    "weighted_score": 0.13
+                  }
+                ],
+                "weekly_multiplier": 1.013
+              },
               "current_fantasy_value": {
                 "market_position_rank": 33,
                 "market_rank": 117,
                 "market_value": 3821,
                 "projection": {
-                  "basis": "2025 715 PPG blended with recent form",
+                  "baseline_points": 10.67,
+                  "basis": "2025 715 PPG blended with recent form; current context multiplier 1.013 applied",
+                  "ceiling": 15.2,
                   "confidence": "medium",
-                  "points": 10.67
+                  "context_adjustment_points": 0.14,
+                  "context_multiplier": 1.013,
+                  "current_decision_evidence": false,
+                  "floor": 5.5,
+                  "model_type": "evidence_estimate",
+                  "performance_basis": "prior",
+                  "points": 10.81
                 }
               },
               "current_starter": false,
+              "decision_lenses": {
+                "dynasty": {
+                  "label": "Flexible depth asset",
+                  "summary": "Market value 3,821 and position rank #33; age 28 shapes the liquidity and time-horizon risk."
+                },
+                "recommended_stance": "Hold / monitor role",
+                "rest_of_season": {
+                  "label": "Role sensitive",
+                  "summary": "The 2025 sample shows 16.82 opportunities/game and 56.1% snaps."
+                },
+                "weekly": {
+                  "label": "Depth",
+                  "summary": "Evidence range 5.5–15.2 with medium confidence; current matchup research is unavailable."
+                }
+              },
               "depth_chart_order": 2,
               "injury_body_part": null,
               "injury_status": null,
@@ -1338,10 +1987,12 @@
               "player_id": "7021",
               "position": "RB",
               "position_rank_on_roster": 3,
+              "recommended_stance": "Hold / monitor role",
               "research_coverage": {
                 "coach_beat_reporter": false,
                 "news": false
               },
+              "risk_factors": [],
               "speculative_outlook": {
                 "label": "Speculative",
                 "summary": "Depth-chart movement, usage growth or a market catalyst is needed for a meaningful value jump."
@@ -1381,18 +2032,74 @@
                   "value": "13.57 PPG · 16.0 opp/g"
                 }
               ],
+              "catalysts": [
+                "A top-two depth-chart position creates a direct path to added opportunity.",
+                "Market value increased 10 since the previous report."
+              ],
               "coach_beat_reporter_information": [],
+              "context": {
+                "availability_probability": 1.0,
+                "confidence": "medium",
+                "net_direction": "positive",
+                "signal_count": 1,
+                "signals": [
+                  {
+                    "corroboration_count": 1,
+                    "direction": 1,
+                    "event_date": null,
+                    "impact": "workload",
+                    "magnitude": 2,
+                    "origin": "sleeper",
+                    "player_id": "8228",
+                    "player_name": "Jaylen Warren",
+                    "published_at": "2026-09-01T20:59:45.174321+00:00",
+                    "reliability": 0.65,
+                    "signal_id": "sleeper-depth-8228",
+                    "source": "Sleeper depth chart",
+                    "source_type": "team",
+                    "summary": "Current Sleeper depth-chart order is 1.",
+                    "ttl_days": 3,
+                    "type": "depth_chart",
+                    "url": null,
+                    "weighted_score": 0.26
+                  }
+                ],
+                "weekly_multiplier": 1.026
+              },
               "current_fantasy_value": {
                 "market_position_rank": 35,
                 "market_rank": 124,
                 "market_value": 3722,
                 "projection": {
-                  "basis": "2025 715 PPG blended with recent form",
+                  "baseline_points": 14.7,
+                  "basis": "2025 715 PPG blended with recent form; current context multiplier 1.026 applied",
+                  "ceiling": 15.6,
                   "confidence": "medium",
-                  "points": 14.7
+                  "context_adjustment_points": 0.38,
+                  "context_multiplier": 1.026,
+                  "current_decision_evidence": false,
+                  "floor": 9.5,
+                  "model_type": "evidence_estimate",
+                  "performance_basis": "prior",
+                  "points": 15.08
                 }
               },
               "current_starter": false,
+              "decision_lenses": {
+                "dynasty": {
+                  "label": "Flexible depth asset",
+                  "summary": "Market value 3,722 and position rank #35; age 27 shapes the liquidity and time-horizon risk."
+                },
+                "recommended_stance": "Hold / monitor role",
+                "rest_of_season": {
+                  "label": "Role sensitive",
+                  "summary": "The 2025 sample shows 16.0 opportunities/game and 50.8% snaps."
+                },
+                "weekly": {
+                  "label": "Depth",
+                  "summary": "Evidence range 9.5–15.6 with medium confidence; current matchup research is unavailable."
+                }
+              },
               "depth_chart_order": 1,
               "injury_body_part": null,
               "injury_status": null,
@@ -1417,10 +2124,12 @@
               "player_id": "8228",
               "position": "RB",
               "position_rank_on_roster": 4,
+              "recommended_stance": "Hold / monitor role",
               "research_coverage": {
                 "coach_beat_reporter": false,
                 "news": false
               },
+              "risk_factors": [],
               "speculative_outlook": {
                 "label": "Speculative",
                 "summary": "Depth-chart movement, usage growth or a market catalyst is needed for a meaningful value jump."
@@ -1460,18 +2169,74 @@
                   "value": "No matched sample"
                 }
               ],
+              "catalysts": [
+                "A top-two depth-chart position creates a direct path to added opportunity.",
+                "Market value increased 66 since the previous report."
+              ],
               "coach_beat_reporter_information": [],
+              "context": {
+                "availability_probability": 1.0,
+                "confidence": "medium",
+                "net_direction": "positive",
+                "signal_count": 1,
+                "signals": [
+                  {
+                    "corroboration_count": 1,
+                    "direction": 1,
+                    "event_date": null,
+                    "impact": "workload",
+                    "magnitude": 2,
+                    "origin": "sleeper",
+                    "player_id": "11581",
+                    "player_name": "MarShawn Lloyd",
+                    "published_at": "2026-09-01T20:59:45.174321+00:00",
+                    "reliability": 0.65,
+                    "signal_id": "sleeper-depth-11581",
+                    "source": "Sleeper depth chart",
+                    "source_type": "team",
+                    "summary": "Current Sleeper depth-chart order is 1.",
+                    "ttl_days": 3,
+                    "type": "depth_chart",
+                    "url": null,
+                    "weighted_score": 0.26
+                  }
+                ],
+                "weekly_multiplier": 1.026
+              },
               "current_fantasy_value": {
                 "market_position_rank": 36,
                 "market_rank": 126,
                 "market_value": 3672,
                 "projection": {
-                  "basis": "Dynasty market-value proxy; no NFL performance sample",
+                  "baseline_points": 6.67,
+                  "basis": "Dynasty market-value proxy; no NFL performance sample; current context multiplier 1.026 applied",
+                  "ceiling": 8.8,
                   "confidence": "low",
-                  "points": 6.67
+                  "context_adjustment_points": 0.17,
+                  "context_multiplier": 1.026,
+                  "current_decision_evidence": false,
+                  "floor": 4.9,
+                  "model_type": "evidence_estimate",
+                  "performance_basis": null,
+                  "points": 6.85
                 }
               },
               "current_starter": true,
+              "decision_lenses": {
+                "dynasty": {
+                  "label": "Flexible depth asset",
+                  "summary": "Market value 3,672 and position rank #36; age 25 shapes the liquidity and time-horizon risk."
+                },
+                "recommended_stance": "Hold / monitor role",
+                "rest_of_season": {
+                  "label": "Insufficient evidence",
+                  "summary": "No matched NFL performance sample is available; role must be verified before relying on weekly utility."
+                },
+                "weekly": {
+                  "label": "Unproven",
+                  "summary": "Evidence range 4.9–8.8 with low confidence; current matchup research is unavailable."
+                }
+              },
               "depth_chart_order": 1,
               "injury_body_part": null,
               "injury_status": null,
@@ -1498,10 +2263,14 @@
               "player_id": "11581",
               "position": "RB",
               "position_rank_on_roster": 5,
+              "recommended_stance": "Hold / monitor role",
               "research_coverage": {
                 "coach_beat_reporter": false,
                 "news": false
               },
+              "risk_factors": [
+                "No matched NFL performance sample supports the current weekly estimate."
+              ],
               "speculative_outlook": {
                 "label": "Speculative",
                 "summary": "Depth-chart movement, usage growth or a market catalyst is needed for a meaningful value jump."
@@ -1541,18 +2310,74 @@
                   "value": "9.07 PPG · 14.5 opp/g"
                 }
               ],
+              "catalysts": [
+                "A top-two depth-chart position creates a direct path to added opportunity.",
+                "Market value increased 18 since the previous report."
+              ],
               "coach_beat_reporter_information": [],
+              "context": {
+                "availability_probability": 1.0,
+                "confidence": "medium",
+                "net_direction": "neutral",
+                "signal_count": 1,
+                "signals": [
+                  {
+                    "corroboration_count": 1,
+                    "direction": 1,
+                    "event_date": null,
+                    "impact": "workload",
+                    "magnitude": 1,
+                    "origin": "sleeper",
+                    "player_id": "12474",
+                    "player_name": "Woody Marks",
+                    "published_at": "2026-09-01T20:59:45.174321+00:00",
+                    "reliability": 0.65,
+                    "signal_id": "sleeper-depth-12474",
+                    "source": "Sleeper depth chart",
+                    "source_type": "team",
+                    "summary": "Current Sleeper depth-chart order is 2.",
+                    "ttl_days": 3,
+                    "type": "depth_chart",
+                    "url": null,
+                    "weighted_score": 0.13
+                  }
+                ],
+                "weekly_multiplier": 1.013
+              },
               "current_fantasy_value": {
                 "market_position_rank": 40,
                 "market_rank": 142,
                 "market_value": 3473,
                 "projection": {
-                  "basis": "2025 715 PPG blended with recent form",
+                  "baseline_points": 8.24,
+                  "basis": "2025 715 PPG blended with recent form; current context multiplier 1.013 applied",
+                  "ceiling": 12.7,
                   "confidence": "medium",
-                  "points": 8.24
+                  "context_adjustment_points": 0.11,
+                  "context_multiplier": 1.013,
+                  "current_decision_evidence": false,
+                  "floor": 4.9,
+                  "model_type": "evidence_estimate",
+                  "performance_basis": "prior",
+                  "points": 8.35
                 }
               },
               "current_starter": false,
+              "decision_lenses": {
+                "dynasty": {
+                  "label": "Flexible depth asset",
+                  "summary": "Market value 3,473 and position rank #40; age 25 shapes the liquidity and time-horizon risk."
+                },
+                "recommended_stance": "Hold / monitor role",
+                "rest_of_season": {
+                  "label": "Role sensitive",
+                  "summary": "The 2025 sample shows 14.5 opportunities/game and 51.5% snaps."
+                },
+                "weekly": {
+                  "label": "Depth",
+                  "summary": "Evidence range 4.9–12.7 with medium confidence; current matchup research is unavailable."
+                }
+              },
               "depth_chart_order": 2,
               "injury_body_part": null,
               "injury_status": null,
@@ -1577,10 +2402,12 @@
               "player_id": "12474",
               "position": "RB",
               "position_rank_on_roster": 6,
+              "recommended_stance": "Hold / monitor role",
               "research_coverage": {
                 "coach_beat_reporter": false,
                 "news": false
               },
+              "risk_factors": [],
               "speculative_outlook": {
                 "label": "Speculative",
                 "summary": "Depth-chart movement, usage growth or a market catalyst is needed for a meaningful value jump."
@@ -1626,18 +2453,94 @@
                   "value": "10.72 PPG · 14.93 opp/g"
                 }
               ],
+              "catalysts": [
+                "A top-two depth-chart position creates a direct path to added opportunity.",
+                "Recent opportunity is up 5.4 per game against the broader sample."
+              ],
               "coach_beat_reporter_information": [],
+              "context": {
+                "availability_probability": 0.85,
+                "confidence": "medium",
+                "net_direction": "negative",
+                "signal_count": 2,
+                "signals": [
+                  {
+                    "corroboration_count": 1,
+                    "direction": -1,
+                    "event_date": null,
+                    "impact": "availability",
+                    "magnitude": 2,
+                    "origin": "sleeper",
+                    "player_id": "11655",
+                    "player_name": "Tyrone Tracy",
+                    "published_at": "2026-09-01T20:59:45.174321+00:00",
+                    "reliability": 0.82,
+                    "signal_id": "sleeper-injury-11655",
+                    "source": "Sleeper player status",
+                    "source_type": "official",
+                    "summary": "Sleeper lists Tyrone Tracy as Questionable.",
+                    "ttl_days": 2,
+                    "type": "injury",
+                    "url": null,
+                    "weighted_score": -0.328
+                  },
+                  {
+                    "corroboration_count": 1,
+                    "direction": 1,
+                    "event_date": null,
+                    "impact": "workload",
+                    "magnitude": 1,
+                    "origin": "sleeper",
+                    "player_id": "11655",
+                    "player_name": "Tyrone Tracy",
+                    "published_at": "2026-09-01T20:59:45.174321+00:00",
+                    "reliability": 0.65,
+                    "signal_id": "sleeper-depth-11655",
+                    "source": "Sleeper depth chart",
+                    "source_type": "team",
+                    "summary": "Current Sleeper depth-chart order is 2.",
+                    "ttl_days": 3,
+                    "type": "depth_chart",
+                    "url": null,
+                    "weighted_score": 0.13
+                  }
+                ],
+                "weekly_multiplier": 0.861
+              },
               "current_fantasy_value": {
                 "market_position_rank": 58,
                 "market_rank": 216,
                 "market_value": 2649,
                 "projection": {
-                  "basis": "2025 715 PPG blended with recent form; questionable-status penalty applied",
+                  "baseline_points": 12.15,
+                  "basis": "2025 715 PPG blended with recent form; current context multiplier 0.861 applied",
+                  "ceiling": 10.5,
                   "confidence": "medium",
-                  "points": 10.93
+                  "context_adjustment_points": -1.69,
+                  "context_multiplier": 0.861,
+                  "current_decision_evidence": false,
+                  "floor": 5.8,
+                  "model_type": "evidence_estimate",
+                  "performance_basis": "prior",
+                  "points": 10.46
                 }
               },
               "current_starter": false,
+              "decision_lenses": {
+                "dynasty": {
+                  "label": "Flexible depth asset",
+                  "summary": "Market value 2,649 and position rank #58; age 26 shapes the liquidity and time-horizon risk."
+                },
+                "recommended_stance": "Monitor availability",
+                "rest_of_season": {
+                  "label": "Role sensitive",
+                  "summary": "The 2025 sample shows 14.93 opportunities/game and 54.5% snaps."
+                },
+                "weekly": {
+                  "label": "Availability watch",
+                  "summary": "Evidence range 5.8–10.5 with medium confidence; current matchup research is unavailable."
+                }
+              },
               "depth_chart_order": 2,
               "injury_body_part": "Neck",
               "injury_status": "Questionable",
@@ -1656,17 +2559,31 @@
                 "value_change": -53
               },
               "name": "Tyrone Tracy",
-              "news": [],
+              "news": [
+                {
+                  "event_date": null,
+                  "published_at": "2026-09-01T20:59:45.174321+00:00",
+                  "signal_type": "injury",
+                  "source": "Sleeper player status",
+                  "text": "Sleeper lists Tyrone Tracy as Questionable.",
+                  "url": null,
+                  "weighted_score": -0.328
+                }
+              ],
               "notable_takeaways": [
                 "Market value lost 53 since the previous report."
               ],
               "player_id": "11655",
               "position": "RB",
               "position_rank_on_roster": 7,
+              "recommended_stance": "Monitor availability",
               "research_coverage": {
                 "coach_beat_reporter": false,
-                "news": false
+                "news": true
               },
+              "risk_factors": [
+                "Current Questionable designation creates availability risk."
+              ],
               "speculative_outlook": {
                 "label": "Monitor",
                 "summary": "Availability is the immediate swing factor (Questionable); recheck status before lineup lock."
@@ -1706,18 +2623,73 @@
                   "value": "3.77 PPG · 4.18 opp/g"
                 }
               ],
+              "catalysts": [
+                "Recent opportunity is up 5.82 per game against the broader sample."
+              ],
               "coach_beat_reporter_information": [],
+              "context": {
+                "availability_probability": 1.0,
+                "confidence": "medium",
+                "net_direction": "negative",
+                "signal_count": 1,
+                "signals": [
+                  {
+                    "corroboration_count": 1,
+                    "direction": -1,
+                    "event_date": null,
+                    "impact": "workload",
+                    "magnitude": 2,
+                    "origin": "sleeper",
+                    "player_id": "11575",
+                    "player_name": "Ray Davis",
+                    "published_at": "2026-09-01T20:59:45.174321+00:00",
+                    "reliability": 0.65,
+                    "signal_id": "sleeper-depth-11575",
+                    "source": "Sleeper depth chart",
+                    "source_type": "team",
+                    "summary": "Current Sleeper depth-chart order is 3.",
+                    "ttl_days": 3,
+                    "type": "depth_chart",
+                    "url": null,
+                    "weighted_score": -0.26
+                  }
+                ],
+                "weekly_multiplier": 0.974
+              },
               "current_fantasy_value": {
                 "market_position_rank": 93,
                 "market_rank": 335,
                 "market_value": 1931,
                 "projection": {
-                  "basis": "2025 715 PPG blended with recent form",
+                  "baseline_points": 6.35,
+                  "basis": "2025 715 PPG blended with recent form; current context multiplier 0.974 applied",
+                  "ceiling": 6.2,
                   "confidence": "medium",
-                  "points": 6.35
+                  "context_adjustment_points": -0.16,
+                  "context_multiplier": 0.974,
+                  "current_decision_evidence": false,
+                  "floor": 0.1,
+                  "model_type": "evidence_estimate",
+                  "performance_basis": "prior",
+                  "points": 6.18
                 }
               },
               "current_starter": false,
+              "decision_lenses": {
+                "dynasty": {
+                  "label": "Flexible depth asset",
+                  "summary": "Market value 1,931 and position rank #93; age 26 shapes the liquidity and time-horizon risk."
+                },
+                "recommended_stance": "Hold / monitor role",
+                "rest_of_season": {
+                  "label": "Role sensitive",
+                  "summary": "The 2025 sample shows 4.18 opportunities/game and 14.3% snaps."
+                },
+                "weekly": {
+                  "label": "Depth",
+                  "summary": "Evidence range 0.1–6.2 with medium confidence; current matchup research is unavailable."
+                }
+              },
               "depth_chart_order": 3,
               "injury_body_part": null,
               "injury_status": null,
@@ -1742,10 +2714,15 @@
               "player_id": "11575",
               "position": "RB",
               "position_rank_on_roster": 8,
+              "recommended_stance": "Hold / monitor role",
               "research_coverage": {
                 "coach_beat_reporter": false,
                 "news": false
               },
+              "risk_factors": [
+                "The current depth-chart path requires movement ahead of the player.",
+                "A 14.3% snap rate limits the demonstrated weekly floor."
+              ],
               "speculative_outlook": {
                 "label": "Speculative",
                 "summary": "Depth-chart movement, usage growth or a market catalyst is needed for a meaningful value jump."
@@ -1785,18 +2762,73 @@
                   "value": "5.19 PPG · 7.0 opp/g"
                 }
               ],
+              "catalysts": [
+                "A top-two depth-chart position creates a direct path to added opportunity."
+              ],
               "coach_beat_reporter_information": [],
+              "context": {
+                "availability_probability": 1.0,
+                "confidence": "medium",
+                "net_direction": "neutral",
+                "signal_count": 1,
+                "signals": [
+                  {
+                    "corroboration_count": 1,
+                    "direction": 1,
+                    "event_date": null,
+                    "impact": "workload",
+                    "magnitude": 1,
+                    "origin": "sleeper",
+                    "player_id": "4147",
+                    "player_name": "Samaje Perine",
+                    "published_at": "2026-09-01T20:59:45.174321+00:00",
+                    "reliability": 0.65,
+                    "signal_id": "sleeper-depth-4147",
+                    "source": "Sleeper depth chart",
+                    "source_type": "team",
+                    "summary": "Current Sleeper depth-chart order is 2.",
+                    "ttl_days": 3,
+                    "type": "depth_chart",
+                    "url": null,
+                    "weighted_score": 0.13
+                  }
+                ],
+                "weekly_multiplier": 1.013
+              },
               "current_fantasy_value": {
                 "market_position_rank": 102,
                 "market_rank": 383,
                 "market_value": 1508,
                 "projection": {
-                  "basis": "2025 715 PPG blended with recent form",
+                  "baseline_points": 6.71,
+                  "basis": "2025 715 PPG blended with recent form; current context multiplier 1.013 applied",
+                  "ceiling": 6.8,
                   "confidence": "medium",
-                  "points": 6.71
+                  "context_adjustment_points": 0.09,
+                  "context_multiplier": 1.013,
+                  "current_decision_evidence": false,
+                  "floor": 2.6,
+                  "model_type": "evidence_estimate",
+                  "performance_basis": "prior",
+                  "points": 6.8
                 }
               },
               "current_starter": false,
+              "decision_lenses": {
+                "dynasty": {
+                  "label": "Market-sensitive veteran",
+                  "summary": "Market value 1,508 and position rank #102; age 30 shapes the liquidity and time-horizon risk."
+                },
+                "recommended_stance": "Shop if value holds",
+                "rest_of_season": {
+                  "label": "Role sensitive",
+                  "summary": "The 2025 sample shows 7.0 opportunities/game and 35.1% snaps."
+                },
+                "weekly": {
+                  "label": "Depth",
+                  "summary": "Evidence range 2.6–6.8 with medium confidence; current matchup research is unavailable."
+                }
+              },
               "depth_chart_order": 2,
               "injury_body_part": null,
               "injury_status": null,
@@ -1821,10 +2853,15 @@
               "player_id": "4147",
               "position": "RB",
               "position_rank_on_roster": 9,
+              "recommended_stance": "Shop if value holds",
               "research_coverage": {
                 "coach_beat_reporter": false,
                 "news": false
               },
+              "risk_factors": [
+                "Age increases role-loss and market-liquidity risk.",
+                "A 35.1% snap rate limits the demonstrated weekly floor."
+              ],
               "speculative_outlook": {
                 "label": "Volatile",
                 "summary": "Near-term production can still help, while age increases the risk of a fast market-value decline."
@@ -1876,18 +2913,73 @@
                   "value": "11.85 PPG · 8.41 opp/g"
                 }
               ],
+              "catalysts": [
+                "A top-two depth-chart position creates a direct path to added opportunity."
+              ],
               "coach_beat_reporter_information": [],
+              "context": {
+                "availability_probability": 1.0,
+                "confidence": "medium",
+                "net_direction": "positive",
+                "signal_count": 1,
+                "signals": [
+                  {
+                    "corroboration_count": 1,
+                    "direction": 1,
+                    "event_date": null,
+                    "impact": "workload",
+                    "magnitude": 2,
+                    "origin": "sleeper",
+                    "player_id": "6794",
+                    "player_name": "Justin Jefferson",
+                    "published_at": "2026-09-01T20:59:45.174321+00:00",
+                    "reliability": 0.65,
+                    "signal_id": "sleeper-depth-6794",
+                    "source": "Sleeper depth chart",
+                    "source_type": "team",
+                    "summary": "Current Sleeper depth-chart order is 1.",
+                    "ttl_days": 3,
+                    "type": "depth_chart",
+                    "url": null,
+                    "weighted_score": 0.26
+                  }
+                ],
+                "weekly_multiplier": 1.026
+              },
               "current_fantasy_value": {
                 "market_position_rank": 7,
                 "market_rank": 19,
                 "market_value": 8030,
                 "projection": {
-                  "basis": "2025 715 PPG blended with recent form",
+                  "baseline_points": 12.36,
+                  "basis": "2025 715 PPG blended with recent form; current context multiplier 1.026 applied",
+                  "ceiling": 15.2,
                   "confidence": "medium",
-                  "points": 12.36
+                  "context_adjustment_points": 0.32,
+                  "context_multiplier": 1.026,
+                  "current_decision_evidence": false,
+                  "floor": 7.9,
+                  "model_type": "evidence_estimate",
+                  "performance_basis": "prior",
+                  "points": 12.68
                 }
               },
               "current_starter": true,
+              "decision_lenses": {
+                "dynasty": {
+                  "label": "Foundation asset",
+                  "summary": "Market value 8,030 and position rank #7; age 27 shapes the liquidity and time-horizon risk."
+                },
+                "recommended_stance": "Start / hold",
+                "rest_of_season": {
+                  "label": "Role supported",
+                  "summary": "The 2025 sample shows 8.41 opportunities/game and 94.2% snaps."
+                },
+                "weekly": {
+                  "label": "Starter",
+                  "summary": "Evidence range 7.9–15.2 with medium confidence; current matchup research is unavailable."
+                }
+              },
               "depth_chart_order": 1,
               "injury_body_part": null,
               "injury_status": null,
@@ -1913,10 +3005,12 @@
               "player_id": "6794",
               "position": "WR",
               "position_rank_on_roster": 1,
+              "recommended_stance": "Start / hold",
               "research_coverage": {
                 "coach_beat_reporter": false,
                 "news": false
               },
+              "risk_factors": [],
               "speculative_outlook": {
                 "label": "Stable",
                 "summary": "Current market and role indicators support a dependable hold unless a clear tier-up is available."
@@ -1962,18 +3056,73 @@
                   "value": "15.08 PPG · 8.13 opp/g"
                 }
               ],
+              "catalysts": [
+                "A top-two depth-chart position creates a direct path to added opportunity."
+              ],
               "coach_beat_reporter_information": [],
+              "context": {
+                "availability_probability": 1.0,
+                "confidence": "medium",
+                "net_direction": "positive",
+                "signal_count": 1,
+                "signals": [
+                  {
+                    "corroboration_count": 1,
+                    "direction": 1,
+                    "event_date": null,
+                    "impact": "workload",
+                    "magnitude": 2,
+                    "origin": "sleeper",
+                    "player_id": "7569",
+                    "player_name": "Nico Collins",
+                    "published_at": "2026-09-01T20:59:45.174321+00:00",
+                    "reliability": 0.65,
+                    "signal_id": "sleeper-depth-7569",
+                    "source": "Sleeper depth chart",
+                    "source_type": "team",
+                    "summary": "Current Sleeper depth-chart order is 1.",
+                    "ttl_days": 3,
+                    "type": "depth_chart",
+                    "url": null,
+                    "weighted_score": 0.26
+                  }
+                ],
+                "weekly_multiplier": 1.026
+              },
               "current_fantasy_value": {
                 "market_position_rank": 12,
                 "market_rank": 36,
                 "market_value": 6490,
                 "projection": {
-                  "basis": "2025 715 PPG blended with recent form",
+                  "baseline_points": 14.71,
+                  "basis": "2025 715 PPG blended with recent form; current context multiplier 1.026 applied",
+                  "ceiling": 22.1,
                   "confidence": "medium",
-                  "points": 14.71
+                  "context_adjustment_points": 0.38,
+                  "context_multiplier": 1.026,
+                  "current_decision_evidence": false,
+                  "floor": 10.2,
+                  "model_type": "evidence_estimate",
+                  "performance_basis": "prior",
+                  "points": 15.1
                 }
               },
               "current_starter": true,
+              "decision_lenses": {
+                "dynasty": {
+                  "label": "Strong hold",
+                  "summary": "Market value 6,490 and position rank #12; age 27 shapes the liquidity and time-horizon risk."
+                },
+                "recommended_stance": "Start / hold",
+                "rest_of_season": {
+                  "label": "Role supported",
+                  "summary": "The 2025 sample shows 8.13 opportunities/game and 77.2% snaps."
+                },
+                "weekly": {
+                  "label": "Starter",
+                  "summary": "Evidence range 10.2–22.1 with medium confidence; current matchup research is unavailable."
+                }
+              },
               "depth_chart_order": 1,
               "injury_body_part": null,
               "injury_status": null,
@@ -1999,10 +3148,12 @@
               "player_id": "7569",
               "position": "WR",
               "position_rank_on_roster": 2,
+              "recommended_stance": "Start / hold",
               "research_coverage": {
                 "coach_beat_reporter": false,
                 "news": false
               },
+              "risk_factors": [],
               "speculative_outlook": {
                 "label": "Stable",
                 "summary": "Current market and role indicators support a dependable hold unless a clear tier-up is available."
@@ -2042,18 +3193,74 @@
                   "value": "12.14 PPG · 6.38 opp/g"
                 }
               ],
+              "catalysts": [
+                "A top-two depth-chart position creates a direct path to added opportunity.",
+                "Market value increased 22 since the previous report."
+              ],
               "coach_beat_reporter_information": [],
+              "context": {
+                "availability_probability": 1.0,
+                "confidence": "medium",
+                "net_direction": "positive",
+                "signal_count": 1,
+                "signals": [
+                  {
+                    "corroboration_count": 1,
+                    "direction": 1,
+                    "event_date": null,
+                    "impact": "workload",
+                    "magnitude": 2,
+                    "origin": "sleeper",
+                    "player_id": "7526",
+                    "player_name": "Jaylen Waddle",
+                    "published_at": "2026-09-01T20:59:45.174321+00:00",
+                    "reliability": 0.65,
+                    "signal_id": "sleeper-depth-7526",
+                    "source": "Sleeper depth chart",
+                    "source_type": "team",
+                    "summary": "Current Sleeper depth-chart order is 1.",
+                    "ttl_days": 3,
+                    "type": "depth_chart",
+                    "url": null,
+                    "weighted_score": 0.26
+                  }
+                ],
+                "weekly_multiplier": 1.026
+              },
               "current_fantasy_value": {
                 "market_position_rank": 23,
                 "market_rank": 62,
                 "market_value": 5546,
                 "projection": {
-                  "basis": "2025 715 PPG blended with recent form",
+                  "baseline_points": 9.93,
+                  "basis": "2025 715 PPG blended with recent form; current context multiplier 1.026 applied",
+                  "ceiling": 18.3,
                   "confidence": "medium",
-                  "points": 9.93
+                  "context_adjustment_points": 0.26,
+                  "context_multiplier": 1.026,
+                  "current_decision_evidence": false,
+                  "floor": 7.2,
+                  "model_type": "evidence_estimate",
+                  "performance_basis": "prior",
+                  "points": 10.19
                 }
               },
               "current_starter": true,
+              "decision_lenses": {
+                "dynasty": {
+                  "label": "Strong hold",
+                  "summary": "Market value 5,546 and position rank #23; age 27 shapes the liquidity and time-horizon risk."
+                },
+                "recommended_stance": "Start / hold",
+                "rest_of_season": {
+                  "label": "Role supported",
+                  "summary": "The 2025 sample shows 6.38 opportunities/game and 77.6% snaps."
+                },
+                "weekly": {
+                  "label": "Starter",
+                  "summary": "Evidence range 7.2–18.3 with medium confidence; current matchup research is unavailable."
+                }
+              },
               "depth_chart_order": 1,
               "injury_body_part": null,
               "injury_status": null,
@@ -2079,10 +3286,12 @@
               "player_id": "7526",
               "position": "WR",
               "position_rank_on_roster": 3,
+              "recommended_stance": "Start / hold",
               "research_coverage": {
                 "coach_beat_reporter": false,
                 "news": false
               },
+              "risk_factors": [],
               "speculative_outlook": {
                 "label": "Stable",
                 "summary": "Current market and role indicators support a dependable hold unless a clear tier-up is available."
@@ -2128,18 +3337,73 @@
                   "value": "11.42 PPG · 6.0 opp/g"
                 }
               ],
+              "catalysts": [
+                "A top-two depth-chart position creates a direct path to added opportunity."
+              ],
               "coach_beat_reporter_information": [],
+              "context": {
+                "availability_probability": 1.0,
+                "confidence": "medium",
+                "net_direction": "positive",
+                "signal_count": 1,
+                "signals": [
+                  {
+                    "corroboration_count": 1,
+                    "direction": 1,
+                    "event_date": null,
+                    "impact": "workload",
+                    "magnitude": 2,
+                    "origin": "sleeper",
+                    "player_id": "5927",
+                    "player_name": "Terry McLaurin",
+                    "published_at": "2026-09-01T20:59:45.174321+00:00",
+                    "reliability": 0.65,
+                    "signal_id": "sleeper-depth-5927",
+                    "source": "Sleeper depth chart",
+                    "source_type": "team",
+                    "summary": "Current Sleeper depth-chart order is 1.",
+                    "ttl_days": 3,
+                    "type": "depth_chart",
+                    "url": null,
+                    "weighted_score": 0.26
+                  }
+                ],
+                "weekly_multiplier": 1.026
+              },
               "current_fantasy_value": {
                 "market_position_rank": 35,
                 "market_rank": 94,
                 "market_value": 4418,
                 "projection": {
-                  "basis": "2025 715 PPG blended with recent form",
+                  "baseline_points": 10.84,
+                  "basis": "2025 715 PPG blended with recent form; current context multiplier 1.026 applied",
+                  "ceiling": 14.8,
                   "confidence": "medium",
-                  "points": 10.84
+                  "context_adjustment_points": 0.28,
+                  "context_multiplier": 1.026,
+                  "current_decision_evidence": false,
+                  "floor": 8.5,
+                  "model_type": "evidence_estimate",
+                  "performance_basis": "prior",
+                  "points": 11.12
                 }
               },
               "current_starter": true,
+              "decision_lenses": {
+                "dynasty": {
+                  "label": "Market-sensitive veteran",
+                  "summary": "Market value 4,418 and position rank #35; age 30 shapes the liquidity and time-horizon risk."
+                },
+                "recommended_stance": "Start / hold",
+                "rest_of_season": {
+                  "label": "Role supported",
+                  "summary": "The 2025 sample shows 6.0 opportunities/game and 70.4% snaps."
+                },
+                "weekly": {
+                  "label": "Starter",
+                  "summary": "Evidence range 8.5–14.8 with medium confidence; current matchup research is unavailable."
+                }
+              },
               "depth_chart_order": 1,
               "injury_body_part": null,
               "injury_status": null,
@@ -2165,10 +3429,14 @@
               "player_id": "5927",
               "position": "WR",
               "position_rank_on_roster": 4,
+              "recommended_stance": "Start / hold",
               "research_coverage": {
                 "coach_beat_reporter": false,
                 "news": false
               },
+              "risk_factors": [
+                "Age increases role-loss and market-liquidity risk."
+              ],
               "speculative_outlook": {
                 "label": "Volatile",
                 "summary": "Near-term production can still help, while age increases the risk of a fast market-value decline."
@@ -2208,18 +3476,73 @@
                   "value": "6.93 PPG · 3.57 opp/g"
                 }
               ],
+              "catalysts": [
+                "A top-two depth-chart position creates a direct path to added opportunity."
+              ],
               "coach_beat_reporter_information": [],
+              "context": {
+                "availability_probability": 1.0,
+                "confidence": "medium",
+                "net_direction": "neutral",
+                "signal_count": 1,
+                "signals": [
+                  {
+                    "corroboration_count": 1,
+                    "direction": 1,
+                    "event_date": null,
+                    "impact": "workload",
+                    "magnitude": 1,
+                    "origin": "sleeper",
+                    "player_id": "10222",
+                    "player_name": "Jayden Reed",
+                    "published_at": "2026-09-01T20:59:45.174321+00:00",
+                    "reliability": 0.65,
+                    "signal_id": "sleeper-depth-10222",
+                    "source": "Sleeper depth chart",
+                    "source_type": "team",
+                    "summary": "Current Sleeper depth-chart order is 2.",
+                    "ttl_days": 3,
+                    "type": "depth_chart",
+                    "url": null,
+                    "weighted_score": 0.13
+                  }
+                ],
+                "weekly_multiplier": 1.013
+              },
               "current_fantasy_value": {
                 "market_position_rank": 44,
                 "market_rank": 110,
                 "market_value": 3955,
                 "projection": {
-                  "basis": "2025 715 PPG blended with recent form",
+                  "baseline_points": 6.28,
+                  "basis": "2025 715 PPG blended with recent form; current context multiplier 1.013 applied",
+                  "ceiling": 9.4,
                   "confidence": "medium",
-                  "points": 6.28
+                  "context_adjustment_points": 0.08,
+                  "context_multiplier": 1.013,
+                  "current_decision_evidence": false,
+                  "floor": 6.36,
+                  "model_type": "evidence_estimate",
+                  "performance_basis": "prior",
+                  "points": 6.36
                 }
               },
               "current_starter": false,
+              "decision_lenses": {
+                "dynasty": {
+                  "label": "Flexible depth asset",
+                  "summary": "Market value 3,955 and position rank #44; age 26 shapes the liquidity and time-horizon risk."
+                },
+                "recommended_stance": "Hold / monitor role",
+                "rest_of_season": {
+                  "label": "Role sensitive",
+                  "summary": "The 2025 sample shows 3.57 opportunities/game and 41.1% snaps."
+                },
+                "weekly": {
+                  "label": "Depth",
+                  "summary": "Evidence range 6.36–9.4 with medium confidence; current matchup research is unavailable."
+                }
+              },
               "depth_chart_order": 2,
               "injury_body_part": null,
               "injury_status": null,
@@ -2244,10 +3567,12 @@
               "player_id": "10222",
               "position": "WR",
               "position_rank_on_roster": 5,
+              "recommended_stance": "Hold / monitor role",
               "research_coverage": {
                 "coach_beat_reporter": false,
                 "news": false
               },
+              "risk_factors": [],
               "speculative_outlook": {
                 "label": "Speculative",
                 "summary": "Depth-chart movement, usage growth or a market catalyst is needed for a meaningful value jump."
@@ -2287,18 +3612,74 @@
                   "value": "8.22 PPG · 3.91 opp/g"
                 }
               ],
+              "catalysts": [
+                "Youth leaves room for role growth and market appreciation.",
+                "A top-two depth-chart position creates a direct path to added opportunity."
+              ],
               "coach_beat_reporter_information": [],
+              "context": {
+                "availability_probability": 1.0,
+                "confidence": "medium",
+                "net_direction": "neutral",
+                "signal_count": 1,
+                "signals": [
+                  {
+                    "corroboration_count": 1,
+                    "direction": 1,
+                    "event_date": null,
+                    "impact": "workload",
+                    "magnitude": 1,
+                    "origin": "sleeper",
+                    "player_id": "11646",
+                    "player_name": "Jalen Coker",
+                    "published_at": "2026-09-01T20:59:45.174321+00:00",
+                    "reliability": 0.65,
+                    "signal_id": "sleeper-depth-11646",
+                    "source": "Sleeper depth chart",
+                    "source_type": "team",
+                    "summary": "Current Sleeper depth-chart order is 2.",
+                    "ttl_days": 3,
+                    "type": "depth_chart",
+                    "url": null,
+                    "weighted_score": 0.13
+                  }
+                ],
+                "weekly_multiplier": 1.013
+              },
               "current_fantasy_value": {
                 "market_position_rank": 53,
                 "market_rank": 131,
                 "market_value": 3617,
                 "projection": {
-                  "basis": "2025 715 PPG blended with recent form",
+                  "baseline_points": 8.61,
+                  "basis": "2025 715 PPG blended with recent form; current context multiplier 1.013 applied",
+                  "ceiling": 14.2,
                   "confidence": "medium",
-                  "points": 8.61
+                  "context_adjustment_points": 0.11,
+                  "context_multiplier": 1.013,
+                  "current_decision_evidence": false,
+                  "floor": 3.6,
+                  "model_type": "evidence_estimate",
+                  "performance_basis": "prior",
+                  "points": 8.72
                 }
               },
               "current_starter": false,
+              "decision_lenses": {
+                "dynasty": {
+                  "label": "Development hold",
+                  "summary": "Market value 3,617 and position rank #53; age 24 shapes the liquidity and time-horizon risk."
+                },
+                "recommended_stance": "Hold for upside",
+                "rest_of_season": {
+                  "label": "Role supported",
+                  "summary": "The 2025 sample shows 3.91 opportunities/game and 69.4% snaps."
+                },
+                "weekly": {
+                  "label": "Depth",
+                  "summary": "Evidence range 3.6–14.2 with medium confidence; current matchup research is unavailable."
+                }
+              },
               "depth_chart_order": 2,
               "injury_body_part": null,
               "injury_status": null,
@@ -2323,10 +3704,12 @@
               "player_id": "11646",
               "position": "WR",
               "position_rank_on_roster": 6,
+              "recommended_stance": "Hold for upside",
               "research_coverage": {
                 "coach_beat_reporter": false,
                 "news": false
               },
+              "risk_factors": [],
               "speculative_outlook": {
                 "label": "Developmental",
                 "summary": "Long-term upside remains, but role confirmation is needed before treating the player as a weekly starter."
@@ -2366,18 +3749,73 @@
                   "value": "12.92 PPG · 7.29 opp/g"
                 }
               ],
+              "catalysts": [
+                "A top-two depth-chart position creates a direct path to added opportunity."
+              ],
               "coach_beat_reporter_information": [],
+              "context": {
+                "availability_probability": 1.0,
+                "confidence": "medium",
+                "net_direction": "neutral",
+                "signal_count": 1,
+                "signals": [
+                  {
+                    "corroboration_count": 1,
+                    "direction": 1,
+                    "event_date": null,
+                    "impact": "workload",
+                    "magnitude": 1,
+                    "origin": "sleeper",
+                    "player_id": "5045",
+                    "player_name": "Courtland Sutton",
+                    "published_at": "2026-09-01T20:59:45.174321+00:00",
+                    "reliability": 0.65,
+                    "signal_id": "sleeper-depth-5045",
+                    "source": "Sleeper depth chart",
+                    "source_type": "team",
+                    "summary": "Current Sleeper depth-chart order is 2.",
+                    "ttl_days": 3,
+                    "type": "depth_chart",
+                    "url": null,
+                    "weighted_score": 0.13
+                  }
+                ],
+                "weekly_multiplier": 1.013
+              },
               "current_fantasy_value": {
                 "market_position_rank": 57,
                 "market_rank": 140,
                 "market_value": 3493,
                 "projection": {
-                  "basis": "2025 715 PPG blended with recent form",
+                  "baseline_points": 11.91,
+                  "basis": "2025 715 PPG blended with recent form; current context multiplier 1.013 applied",
+                  "ceiling": 18.3,
                   "confidence": "medium",
-                  "points": 11.91
+                  "context_adjustment_points": 0.15,
+                  "context_multiplier": 1.013,
+                  "current_decision_evidence": false,
+                  "floor": 8.1,
+                  "model_type": "evidence_estimate",
+                  "performance_basis": "prior",
+                  "points": 12.06
                 }
               },
               "current_starter": false,
+              "decision_lenses": {
+                "dynasty": {
+                  "label": "Market-sensitive veteran",
+                  "summary": "Market value 3,493 and position rank #57; age 30 shapes the liquidity and time-horizon risk."
+                },
+                "recommended_stance": "Shop if value holds",
+                "rest_of_season": {
+                  "label": "Role supported",
+                  "summary": "The 2025 sample shows 7.29 opportunities/game and 85.4% snaps."
+                },
+                "weekly": {
+                  "label": "Depth",
+                  "summary": "Evidence range 8.1–18.3 with medium confidence; current matchup research is unavailable."
+                }
+              },
               "depth_chart_order": 2,
               "injury_body_part": null,
               "injury_status": null,
@@ -2402,10 +3840,14 @@
               "player_id": "5045",
               "position": "WR",
               "position_rank_on_roster": 7,
+              "recommended_stance": "Shop if value holds",
               "research_coverage": {
                 "coach_beat_reporter": false,
                 "news": false
               },
+              "risk_factors": [
+                "Age increases role-loss and market-liquidity risk."
+              ],
               "speculative_outlook": {
                 "label": "Volatile",
                 "summary": "Near-term production can still help, while age increases the risk of a fast market-value decline."
@@ -2451,18 +3893,73 @@
                   "value": "4.26 PPG · 2.92 opp/g"
                 }
               ],
+              "catalysts": [
+                "A top-two depth-chart position creates a direct path to added opportunity."
+              ],
               "coach_beat_reporter_information": [],
+              "context": {
+                "availability_probability": 1.0,
+                "confidence": "medium",
+                "net_direction": "neutral",
+                "signal_count": 1,
+                "signals": [
+                  {
+                    "corroboration_count": 1,
+                    "direction": 1,
+                    "event_date": null,
+                    "impact": "workload",
+                    "magnitude": 1,
+                    "origin": "sleeper",
+                    "player_id": "7571",
+                    "player_name": "Rashod Bateman",
+                    "published_at": "2026-09-01T20:59:45.174321+00:00",
+                    "reliability": 0.65,
+                    "signal_id": "sleeper-depth-7571",
+                    "source": "Sleeper depth chart",
+                    "source_type": "team",
+                    "summary": "Current Sleeper depth-chart order is 2.",
+                    "ttl_days": 3,
+                    "type": "depth_chart",
+                    "url": null,
+                    "weighted_score": 0.13
+                  }
+                ],
+                "weekly_multiplier": 1.013
+              },
               "current_fantasy_value": {
                 "market_position_rank": 107,
                 "market_rank": 265,
                 "market_value": 2310,
                 "projection": {
-                  "basis": "2025 715 PPG blended with recent form",
+                  "baseline_points": 3.47,
+                  "basis": "2025 715 PPG blended with recent form; current context multiplier 1.013 applied",
+                  "ceiling": 4.4,
                   "confidence": "medium",
-                  "points": 3.47
+                  "context_adjustment_points": 0.05,
+                  "context_multiplier": 1.013,
+                  "current_decision_evidence": false,
+                  "floor": 1.7,
+                  "model_type": "evidence_estimate",
+                  "performance_basis": "prior",
+                  "points": 3.51
                 }
               },
               "current_starter": false,
+              "decision_lenses": {
+                "dynasty": {
+                  "label": "Flexible depth asset",
+                  "summary": "Market value 2,310 and position rank #107; age 26 shapes the liquidity and time-horizon risk."
+                },
+                "recommended_stance": "Hold / monitor role",
+                "rest_of_season": {
+                  "label": "Role supported",
+                  "summary": "The 2025 sample shows 2.92 opportunities/game and 69.3% snaps."
+                },
+                "weekly": {
+                  "label": "Depth",
+                  "summary": "Evidence range 1.7–4.4 with medium confidence; current matchup research is unavailable."
+                }
+              },
               "depth_chart_order": 2,
               "injury_body_part": null,
               "injury_status": null,
@@ -2487,10 +3984,12 @@
               "player_id": "7571",
               "position": "WR",
               "position_rank_on_roster": 8,
+              "recommended_stance": "Hold / monitor role",
               "research_coverage": {
                 "coach_beat_reporter": false,
                 "news": false
               },
+              "risk_factors": [],
               "speculative_outlook": {
                 "label": "Speculative",
                 "summary": "Depth-chart movement, usage growth or a market catalyst is needed for a meaningful value jump."
@@ -2530,18 +4029,71 @@
                   "value": "5.29 PPG · 3.59 opp/g"
                 }
               ],
+              "catalysts": [],
               "coach_beat_reporter_information": [],
+              "context": {
+                "availability_probability": 1.0,
+                "confidence": "medium",
+                "net_direction": "negative",
+                "signal_count": 1,
+                "signals": [
+                  {
+                    "corroboration_count": 1,
+                    "direction": -1,
+                    "event_date": null,
+                    "impact": "workload",
+                    "magnitude": 2,
+                    "origin": "sleeper",
+                    "player_id": "10226",
+                    "player_name": "Andrei Iosivas",
+                    "published_at": "2026-09-01T20:59:45.174321+00:00",
+                    "reliability": 0.65,
+                    "signal_id": "sleeper-depth-10226",
+                    "source": "Sleeper depth chart",
+                    "source_type": "team",
+                    "summary": "Current Sleeper depth-chart order is 3.",
+                    "ttl_days": 3,
+                    "type": "depth_chart",
+                    "url": null,
+                    "weighted_score": -0.26
+                  }
+                ],
+                "weekly_multiplier": 0.974
+              },
               "current_fantasy_value": {
                 "market_position_rank": 129,
                 "market_rank": 321,
                 "market_value": 2003,
                 "projection": {
-                  "basis": "2025 715 PPG blended with recent form",
+                  "baseline_points": 5.09,
+                  "basis": "2025 715 PPG blended with recent form; current context multiplier 0.974 applied",
+                  "ceiling": 7.9,
                   "confidence": "medium",
-                  "points": 5.09
+                  "context_adjustment_points": -0.13,
+                  "context_multiplier": 0.974,
+                  "current_decision_evidence": false,
+                  "floor": 1.5,
+                  "model_type": "evidence_estimate",
+                  "performance_basis": "prior",
+                  "points": 4.96
                 }
               },
               "current_starter": false,
+              "decision_lenses": {
+                "dynasty": {
+                  "label": "Flexible depth asset",
+                  "summary": "Market value 2,003 and position rank #129; age 26 shapes the liquidity and time-horizon risk."
+                },
+                "recommended_stance": "Hold / monitor role",
+                "rest_of_season": {
+                  "label": "Role supported",
+                  "summary": "The 2025 sample shows 3.59 opportunities/game and 76.2% snaps."
+                },
+                "weekly": {
+                  "label": "Depth",
+                  "summary": "Evidence range 1.5–7.9 with medium confidence; current matchup research is unavailable."
+                }
+              },
               "depth_chart_order": 3,
               "injury_body_part": null,
               "injury_status": null,
@@ -2566,10 +4118,14 @@
               "player_id": "10226",
               "position": "WR",
               "position_rank_on_roster": 9,
+              "recommended_stance": "Hold / monitor role",
               "research_coverage": {
                 "coach_beat_reporter": false,
                 "news": false
               },
+              "risk_factors": [
+                "The current depth-chart path requires movement ahead of the player."
+              ],
               "speculative_outlook": {
                 "label": "Speculative",
                 "summary": "Depth-chart movement, usage growth or a market catalyst is needed for a meaningful value jump."
@@ -2621,18 +4177,75 @@
                   "value": "11.65 PPG · 7.12 opp/g"
                 }
               ],
+              "catalysts": [
+                "Youth leaves room for role growth and market appreciation.",
+                "A top-two depth-chart position creates a direct path to added opportunity.",
+                "Market value increased 9 since the previous report."
+              ],
               "coach_beat_reporter_information": [],
+              "context": {
+                "availability_probability": 1.0,
+                "confidence": "medium",
+                "net_direction": "positive",
+                "signal_count": 1,
+                "signals": [
+                  {
+                    "corroboration_count": 1,
+                    "direction": 1,
+                    "event_date": null,
+                    "impact": "workload",
+                    "magnitude": 2,
+                    "origin": "sleeper",
+                    "player_id": "12506",
+                    "player_name": "Harold Fannin",
+                    "published_at": "2026-09-01T20:59:45.174321+00:00",
+                    "reliability": 0.65,
+                    "signal_id": "sleeper-depth-12506",
+                    "source": "Sleeper depth chart",
+                    "source_type": "team",
+                    "summary": "Current Sleeper depth-chart order is 1.",
+                    "ttl_days": 3,
+                    "type": "depth_chart",
+                    "url": null,
+                    "weighted_score": 0.26
+                  }
+                ],
+                "weekly_multiplier": 1.026
+              },
               "current_fantasy_value": {
                 "market_position_rank": 7,
                 "market_rank": 67,
                 "market_value": 5451,
                 "projection": {
-                  "basis": "2025 715 PPG blended with recent form",
+                  "baseline_points": 12.53,
+                  "basis": "2025 715 PPG blended with recent form; current context multiplier 1.026 applied",
+                  "ceiling": 14.0,
                   "confidence": "medium",
-                  "points": 12.53
+                  "context_adjustment_points": 0.33,
+                  "context_multiplier": 1.026,
+                  "current_decision_evidence": false,
+                  "floor": 8.6,
+                  "model_type": "evidence_estimate",
+                  "performance_basis": "prior",
+                  "points": 12.86
                 }
               },
               "current_starter": true,
+              "decision_lenses": {
+                "dynasty": {
+                  "label": "Strong hold",
+                  "summary": "Market value 5,451 and position rank #7; age 22 shapes the liquidity and time-horizon risk."
+                },
+                "recommended_stance": "Start / hold",
+                "rest_of_season": {
+                  "label": "Role supported",
+                  "summary": "The 2025 sample shows 7.12 opportunities/game and 75.9% snaps."
+                },
+                "weekly": {
+                  "label": "Starter",
+                  "summary": "Evidence range 8.6–14.0 with medium confidence; current matchup research is unavailable."
+                }
+              },
               "depth_chart_order": 1,
               "injury_body_part": null,
               "injury_status": null,
@@ -2658,10 +4271,12 @@
               "player_id": "12506",
               "position": "TE",
               "position_rank_on_roster": 1,
+              "recommended_stance": "Start / hold",
               "research_coverage": {
                 "coach_beat_reporter": false,
                 "news": false
               },
+              "risk_factors": [],
               "speculative_outlook": {
                 "label": "Ascending",
                 "summary": "Youth, role and market support create a credible path to added dynasty value."
@@ -2701,18 +4316,93 @@
                   "value": "11.88 PPG · 5.44 opp/g"
                 }
               ],
+              "catalysts": [
+                "A top-two depth-chart position creates a direct path to added opportunity."
+              ],
               "coach_beat_reporter_information": [],
+              "context": {
+                "availability_probability": 0.85,
+                "confidence": "medium",
+                "net_direction": "negative",
+                "signal_count": 2,
+                "signals": [
+                  {
+                    "corroboration_count": 1,
+                    "direction": -1,
+                    "event_date": null,
+                    "impact": "availability",
+                    "magnitude": 2,
+                    "origin": "sleeper",
+                    "player_id": "10859",
+                    "player_name": "Sam LaPorta",
+                    "published_at": "2026-09-01T20:59:45.174321+00:00",
+                    "reliability": 0.82,
+                    "signal_id": "sleeper-injury-10859",
+                    "source": "Sleeper player status",
+                    "source_type": "official",
+                    "summary": "Sleeper lists Sam LaPorta as Questionable.",
+                    "ttl_days": 2,
+                    "type": "injury",
+                    "url": null,
+                    "weighted_score": -0.328
+                  },
+                  {
+                    "corroboration_count": 1,
+                    "direction": 1,
+                    "event_date": null,
+                    "impact": "workload",
+                    "magnitude": 2,
+                    "origin": "sleeper",
+                    "player_id": "10859",
+                    "player_name": "Sam LaPorta",
+                    "published_at": "2026-09-01T20:59:45.174321+00:00",
+                    "reliability": 0.65,
+                    "signal_id": "sleeper-depth-10859",
+                    "source": "Sleeper depth chart",
+                    "source_type": "team",
+                    "summary": "Current Sleeper depth-chart order is 1.",
+                    "ttl_days": 3,
+                    "type": "depth_chart",
+                    "url": null,
+                    "weighted_score": 0.26
+                  }
+                ],
+                "weekly_multiplier": 0.872
+              },
               "current_fantasy_value": {
                 "market_position_rank": 8,
                 "market_rank": 70,
                 "market_value": 5337,
                 "projection": {
-                  "basis": "2025 715 PPG blended with recent form; questionable-status penalty applied",
+                  "baseline_points": 11.98,
+                  "basis": "2025 715 PPG blended with recent form; current context multiplier 0.872 applied",
+                  "ceiling": 14.4,
                   "confidence": "medium",
-                  "points": 10.78
+                  "context_adjustment_points": -1.53,
+                  "context_multiplier": 0.872,
+                  "current_decision_evidence": false,
+                  "floor": 6.0,
+                  "model_type": "evidence_estimate",
+                  "performance_basis": "prior",
+                  "points": 10.45
                 }
               },
               "current_starter": false,
+              "decision_lenses": {
+                "dynasty": {
+                  "label": "Strong hold",
+                  "summary": "Market value 5,337 and position rank #8; age 25 shapes the liquidity and time-horizon risk."
+                },
+                "recommended_stance": "Monitor availability",
+                "rest_of_season": {
+                  "label": "Role supported",
+                  "summary": "The 2025 sample shows 5.44 opportunities/game and 90.7% snaps."
+                },
+                "weekly": {
+                  "label": "Availability watch",
+                  "summary": "Evidence range 6.0–14.4 with medium confidence; current matchup research is unavailable."
+                }
+              },
               "depth_chart_order": 1,
               "injury_body_part": "Hip",
               "injury_status": "Questionable",
@@ -2731,17 +4421,31 @@
                 "value_change": -43
               },
               "name": "Sam LaPorta",
-              "news": [],
+              "news": [
+                {
+                  "event_date": null,
+                  "published_at": "2026-09-01T20:59:45.174321+00:00",
+                  "signal_type": "injury",
+                  "source": "Sleeper player status",
+                  "text": "Sleeper lists Sam LaPorta as Questionable.",
+                  "url": null,
+                  "weighted_score": -0.328
+                }
+              ],
               "notable_takeaways": [
                 "Market value lost 43 since the previous report."
               ],
               "player_id": "10859",
               "position": "TE",
               "position_rank_on_roster": 2,
+              "recommended_stance": "Monitor availability",
               "research_coverage": {
                 "coach_beat_reporter": false,
-                "news": false
+                "news": true
               },
+              "risk_factors": [
+                "Current Questionable designation creates availability risk."
+              ],
               "speculative_outlook": {
                 "label": "Monitor",
                 "summary": "Availability is the immediate swing factor (Questionable); recheck status before lineup lock."
@@ -2787,18 +4491,74 @@
                   "value": "2.84 PPG · 2.0 opp/g"
                 }
               ],
+              "catalysts": [
+                "Youth leaves room for role growth and market appreciation.",
+                "A top-two depth-chart position creates a direct path to added opportunity."
+              ],
               "coach_beat_reporter_information": [],
+              "context": {
+                "availability_probability": 1.0,
+                "confidence": "medium",
+                "net_direction": "neutral",
+                "signal_count": 1,
+                "signals": [
+                  {
+                    "corroboration_count": 1,
+                    "direction": 1,
+                    "event_date": null,
+                    "impact": "workload",
+                    "magnitude": 1,
+                    "origin": "sleeper",
+                    "player_id": "12521",
+                    "player_name": "Elijah Arroyo",
+                    "published_at": "2026-09-01T20:59:45.174321+00:00",
+                    "reliability": 0.65,
+                    "signal_id": "sleeper-depth-12521",
+                    "source": "Sleeper depth chart",
+                    "source_type": "team",
+                    "summary": "Current Sleeper depth-chart order is 2.",
+                    "ttl_days": 3,
+                    "type": "depth_chart",
+                    "url": null,
+                    "weighted_score": 0.13
+                  }
+                ],
+                "weekly_multiplier": 1.013
+              },
               "current_fantasy_value": {
                 "market_position_rank": 38,
                 "market_rank": 241,
                 "market_value": 2452,
                 "projection": {
-                  "basis": "2025 715 PPG blended with recent form",
+                  "baseline_points": 2.02,
+                  "basis": "2025 715 PPG blended with recent form; current context multiplier 1.013 applied",
+                  "ceiling": 5.2,
                   "confidence": "medium",
-                  "points": 2.02
+                  "context_adjustment_points": 0.03,
+                  "context_multiplier": 1.013,
+                  "current_decision_evidence": false,
+                  "floor": 0.0,
+                  "model_type": "evidence_estimate",
+                  "performance_basis": "prior",
+                  "points": 2.05
                 }
               },
               "current_starter": false,
+              "decision_lenses": {
+                "dynasty": {
+                  "label": "Development hold",
+                  "summary": "Market value 2,452 and position rank #38; age 23 shapes the liquidity and time-horizon risk."
+                },
+                "recommended_stance": "Hold for upside",
+                "rest_of_season": {
+                  "label": "Role sensitive",
+                  "summary": "The 2025 sample shows 2.0 opportunities/game and 39.5% snaps."
+                },
+                "weekly": {
+                  "label": "Depth",
+                  "summary": "Evidence range 0.0–5.2 with medium confidence; current matchup research is unavailable."
+                }
+              },
               "depth_chart_order": 2,
               "injury_body_part": null,
               "injury_status": null,
@@ -2823,10 +4583,14 @@
               "player_id": "12521",
               "position": "TE",
               "position_rank_on_roster": 3,
+              "recommended_stance": "Hold for upside",
               "research_coverage": {
                 "coach_beat_reporter": false,
                 "news": false
               },
+              "risk_factors": [
+                "A 39.5% snap rate limits the demonstrated weekly floor."
+              ],
               "speculative_outlook": {
                 "label": "Developmental",
                 "summary": "Long-term upside remains, but role confirmation is needed before treating the player as a weekly starter."
@@ -2864,13 +4628,55 @@
     "roster_id": 3,
     "team_name": "Baskerville Bilge Rats"
   },
+  "schema_version": "2.0",
   "season": "2026",
   "source_notes": [
     "Sleeper is authoritative for roster, lineup, role and availability fields.",
     "Dynasty Dealer supplies market values; nflverse supplies 715-scored performance and usage.",
     "Player, roster-rank and tier movement is calculated from roster_intelligence_history.json.",
     "Lineup projections are evidence-weighted decision support and are not sportsbook projections.",
+    "Current context adjustments are capped, time-decayed and retain their source evidence.",
     "News and coach/beat-reporter sections remain empty unless verified structured research is supplied."
+  ],
+  "sources": [
+    {
+      "checked_at": "2026-09-01T20:59:45.359133+00:00",
+      "name": "Sleeper",
+      "status": "ok",
+      "type": "authoritative_roster_data",
+      "url": "https://sleeper.com/"
+    },
+    {
+      "checked_at": "2026-09-01T15:09:24.159Z",
+      "name": "Dynasty Dealer",
+      "status": "available",
+      "type": "market_context",
+      "url": "https://www.dynastydealer.com/"
+    },
+    {
+      "basis": [
+        "2025"
+      ],
+      "checked_at": "2026-09-01T15:09:22.231137+00:00",
+      "name": "nflverse",
+      "status": "available",
+      "type": "performance_context",
+      "url": "https://nflverse.com/"
+    },
+    {
+      "checked_at": "2026-09-01T20:59:45.174321+00:00",
+      "name": "Player context signals",
+      "status": "available",
+      "type": "availability_depth_usage_and_reporting",
+      "url": null
+    },
+    {
+      "checked_at": null,
+      "name": "Roster research",
+      "status": "not_available",
+      "type": "news_matchup_coach_reporting",
+      "url": null
+    }
   ],
   "week": 1
 }

@@ -12,6 +12,7 @@ POSITIONS = ("QB", "RB", "WR", "TE")
 FLEX_POSITIONS = {"RB", "WR", "TE"}
 SUPER_FLEX_POSITIONS = set(POSITIONS)
 MAX_HISTORY_REPORTS = 16
+SCHEMA_VERSION = "2.0"
 
 
 def read_json(path: Path, default: Any = None) -> Any:
@@ -72,18 +73,64 @@ def projection_for(player: dict[str, Any]) -> dict[str, Any]:
         basis = "Dynasty market-value proxy; no NFL performance sample"
         confidence = "low"
 
-    injury_status = str(player.get("injury_status") or "").lower()
-    if injury_status in {"out", "ir", "pup", "doubtful"}:
-        projected *= 0.4
-        basis += "; availability penalty applied"
-    elif injury_status == "questionable":
-        projected *= 0.9
-        basis += "; questionable-status penalty applied"
+    weekly_points = sorted(
+        value
+        for row in (performance.get("weekly") or [])
+        if isinstance(row, dict)
+        for value in [number(row.get("fantasy_points_715"))]
+        if value is not None
+    )
+    if len(weekly_points) >= 4:
+        floor = weekly_points[max(0, round((len(weekly_points) - 1) * 0.25))]
+        ceiling = weekly_points[min(len(weekly_points) - 1, round((len(weekly_points) - 1) * 0.75))]
+    else:
+        floor = projected * (0.72 if confidence == "low" else 0.8)
+        ceiling = projected * (1.28 if confidence == "low" else 1.2)
 
+    context = player.get("context") or {}
+    current_context_evidence = any(
+        signal.get("origin") == "curated_report" and abs(number(signal.get("weighted_score")) or 0) >= 0.2
+        for signal in context.get("signals") or []
+    )
+    context_multiplier = number(context.get("weekly_multiplier"))
+    baseline = projected
+    if context_multiplier is not None:
+        projected *= context_multiplier
+        floor *= context_multiplier
+        ceiling *= context_multiplier
+        if abs(context_multiplier - 1) >= 0.005:
+            basis += f"; current context multiplier {context_multiplier:.3f} applied"
+    else:
+        injury_status = str(player.get("injury_status") or "").lower()
+        if injury_status in {"out", "ir", "pup", "doubtful"}:
+            projected *= 0.4
+            floor *= 0.3
+            ceiling *= 0.5
+            basis += "; availability penalty applied"
+        elif injury_status == "questionable":
+            projected *= 0.9
+            floor *= 0.8
+            ceiling *= 0.9
+            basis += "; questionable-status penalty applied"
+
+    floor = min(floor, projected)
+    ceiling = max(ceiling, projected)
+
+    rounded_points = round(max(projected, 0), 2)
+    rounded_floor = min(round(max(floor, 0), 1), rounded_points)
+    rounded_ceiling = max(round(max(ceiling, 0), 1), rounded_points)
     return {
-        "points": round(max(projected, 0), 2),
+        "points": rounded_points,
+        "floor": rounded_floor,
+        "ceiling": rounded_ceiling,
         "basis": basis,
         "confidence": confidence,
+        "model_type": "evidence_estimate",
+        "baseline_points": round(max(baseline, 0), 2),
+        "context_multiplier": context_multiplier if context_multiplier is not None else 1.0,
+        "context_adjustment_points": round(projected - baseline, 2),
+        "performance_basis": performance.get("basis"),
+        "current_decision_evidence": performance.get("basis") == "current" or current_context_evidence,
     }
 
 
@@ -128,6 +175,94 @@ def string_list(value: Any) -> list[str]:
                 source = item.get("source")
                 result.append(f"{text.strip()} — {source}" if source else text.strip())
     return result
+
+
+def research_items(value: Any) -> list[dict[str, Any]]:
+    if isinstance(value, str):
+        value = [value]
+    if not isinstance(value, list):
+        return []
+    result = []
+    for item in value:
+        if isinstance(item, str) and item.strip():
+            result.append({"text": item.strip(), "source": None, "url": None, "published_at": None})
+            continue
+        if not isinstance(item, dict):
+            continue
+        text = item.get("summary") or item.get("text") or item.get("note")
+        if not isinstance(text, str) or not text.strip():
+            continue
+        result.append({
+            "text": text.strip(),
+            "source": item.get("source") or item.get("author"),
+            "url": item.get("url") or item.get("source_url"),
+            "published_at": item.get("published_at") or item.get("fetched_at"),
+            "event_date": item.get("event_date"),
+        })
+    return result
+
+
+def player_decision_lenses(player: dict[str, Any], projection: dict[str, Any]) -> dict[str, Any]:
+    performance = player.get("performance") or {}
+    market_value = int(number(player.get("market_value")) or 0)
+    age = number(player.get("age"))
+    depth = number(player.get("depth_chart_order"))
+    injury = player.get("injury_status")
+    starter = bool(player.get("starter"))
+
+    weekly_label = "Starter" if starter else "Depth"
+    if projection.get("confidence") == "low":
+        weekly_label = "Unproven"
+    if injury:
+        weekly_label = "Availability watch"
+    weekly_summary = (
+        f"Evidence range {projection.get('floor')}–{projection.get('ceiling')} with "
+        f"{projection.get('confidence')} confidence; current matchup research is unavailable."
+    )
+
+    if performance:
+        ros_label = "Role supported" if (number(performance.get("offense_snap_pct")) or 0) >= 60 else "Role sensitive"
+        ros_summary = (
+            f"The {performance.get('basis_label') or 'available'} sample shows "
+            f"{performance.get('opportunities_per_game') or '—'} opportunities/game and "
+            f"{performance.get('offense_snap_pct') or '—'}% snaps."
+        )
+    else:
+        ros_label = "Insufficient evidence"
+        ros_summary = "No matched NFL performance sample is available; role must be verified before relying on weekly utility."
+
+    if market_value >= 7000:
+        dynasty_label = "Foundation asset"
+    elif market_value >= 5000:
+        dynasty_label = "Strong hold"
+    elif age is not None and age <= 24:
+        dynasty_label = "Development hold"
+    elif age is not None and age >= 30:
+        dynasty_label = "Market-sensitive veteran"
+    else:
+        dynasty_label = "Flexible depth asset"
+    dynasty_summary = (
+        f"Market value {market_value:,} and position rank #{player.get('market_position_rank') or '—'}; "
+        f"age {player.get('age') or '—'} shapes the liquidity and time-horizon risk."
+    )
+
+    if injury:
+        stance = "Monitor availability"
+    elif starter and projection.get("confidence") != "low":
+        stance = "Start / hold"
+    elif age is not None and age <= 24 and (depth is None or depth <= 2):
+        stance = "Hold for upside"
+    elif age is not None and age >= 30 and not starter:
+        stance = "Shop if value holds"
+    else:
+        stance = "Hold / monitor role"
+
+    return {
+        "weekly": {"label": weekly_label, "summary": weekly_summary},
+        "rest_of_season": {"label": ros_label, "summary": ros_summary},
+        "dynasty": {"label": dynasty_label, "summary": dynasty_summary},
+        "recommended_stance": stance,
+    }
 
 
 def speculative_outlook(player: dict[str, Any]) -> dict[str, str]:
@@ -281,7 +416,9 @@ def player_card(
     research: dict[str, Any],
 ) -> dict[str, Any]:
     performance = player.get("performance") or {}
+    context = player.get("context") or {}
     projection = projection_for(player)
+    decision_lenses = player_decision_lenses(player, projection)
     tier = tier_for_value(player.get("market_value"))
     movement = movement_for(player, position_rank, previous_by_id)
     summary, ppg_delta, opportunity_delta = trend_summary(performance)
@@ -315,12 +452,26 @@ def player_card(
             f"Sleeper availability: {player.get('injury_status')}{injury_detail}."
         )
 
-    news = string_list(research_row.get("news"))
-    coach_reports = string_list(
+    news = research_items(research_row.get("news"))
+    coach_reports = research_items(
         research_row.get("coach_reports")
         or research_row.get("coach_beat_reporter")
         or research_row.get("beat_reporter_notes")
     )
+    for signal in context.get("signals") or []:
+        item = {
+            "text": signal.get("summary"),
+            "source": signal.get("source"),
+            "url": signal.get("url"),
+            "published_at": signal.get("published_at"),
+            "event_date": signal.get("event_date"),
+            "signal_type": signal.get("type"),
+            "weighted_score": signal.get("weighted_score"),
+        }
+        if signal.get("type") in {"coach_statement", "beat_report"}:
+            coach_reports.append(item)
+        elif signal.get("origin") == "curated_report" or signal.get("type") in {"injury", "practice", "inactive"}:
+            news.append(item)
     app_comparisons = [
         {
             "source": "Sleeper",
@@ -350,6 +501,30 @@ def player_card(
         direction = "gained" if movement["value_change"] > 0 else "lost"
         takeaways.append(f"Market value {direction} {abs(movement['value_change']):,} since the previous report.")
 
+    risks = string_list(research_row.get("risk_factors"))
+    catalysts = string_list(research_row.get("catalysts"))
+    age = number(player.get("age"))
+    depth = number(player.get("depth_chart_order"))
+    snaps = number(performance.get("offense_snap_pct"))
+    if player.get("injury_status"):
+        risks.append(f"Current {player.get('injury_status')} designation creates availability risk.")
+    if age is not None and age >= 30:
+        risks.append("Age increases role-loss and market-liquidity risk.")
+    if depth is not None and depth >= 3:
+        risks.append("The current depth-chart path requires movement ahead of the player.")
+    if not performance:
+        risks.append("No matched NFL performance sample supports the current weekly estimate.")
+    elif snaps is not None and snaps < 40:
+        risks.append(f"A {snaps}% snap rate limits the demonstrated weekly floor.")
+    if age is not None and age <= 24:
+        catalysts.append("Youth leaves room for role growth and market appreciation.")
+    if depth is not None and depth <= 2:
+        catalysts.append("A top-two depth-chart position creates a direct path to added opportunity.")
+    if opportunity_delta is not None and opportunity_delta >= 2:
+        catalysts.append(f"Recent opportunity is up {opportunity_delta} per game against the broader sample.")
+    if movement.get("value_change") and movement["value_change"] > 0:
+        catalysts.append(f"Market value increased {movement['value_change']:,} since the previous report.")
+
     return {
         "player_id": str(player.get("player_id")),
         "name": player.get("name"),
@@ -370,6 +545,7 @@ def player_card(
             "projection": projection,
         },
         "speculative_outlook": outlook,
+        "decision_lenses": decision_lenses,
         "key_evidence": evidence[:8],
         "trends": {
             "summary": summary,
@@ -384,6 +560,17 @@ def player_card(
         "coach_beat_reporter_information": coach_reports,
         "app_data_comparisons": app_comparisons,
         "notable_takeaways": takeaways[:6],
+        "risk_factors": risks[:5],
+        "catalysts": catalysts[:5],
+        "context": {
+            "net_direction": context.get("net_direction", "neutral"),
+            "weekly_multiplier": context.get("weekly_multiplier", 1.0),
+            "availability_probability": context.get("availability_probability", 1.0),
+            "confidence": context.get("confidence", "low"),
+            "signal_count": context.get("signal_count", 0),
+            "signals": context.get("signals") or [],
+        },
+        "recommended_stance": decision_lenses["recommended_stance"],
         "movement": movement,
         "research_coverage": {
             "news": bool(news),
@@ -461,9 +648,13 @@ def optimize_lineup(players: list[dict[str, Any]], slots: list[str]) -> list[dic
             "name": player.get("name") if player else "Open slot",
             "position": player.get("position") if player else None,
             "team": player.get("team") if player else None,
+            "injury_status": player.get("injury_status") if player else None,
             "projected_points": projections[str(player.get("player_id"))]["points"] if player else 0,
+            "projected_floor": projections[str(player.get("player_id"))]["floor"] if player else 0,
+            "projected_ceiling": projections[str(player.get("player_id"))]["ceiling"] if player else 0,
             "projection_basis": projections[str(player.get("player_id"))]["basis"] if player else "No eligible player",
             "confidence": projections[str(player.get("player_id"))]["confidence"] if player else "low",
+            "current_decision_evidence": projections[str(player.get("player_id"))]["current_decision_evidence"] if player else False,
         }
         for index, player in enumerate(best or [None] * len(slots))
     ]
@@ -484,7 +675,9 @@ def current_lineup(team: dict[str, Any], players_by_id: dict[str, dict[str, Any]
             starters[index] if index < len(starters) and starters[index] != "0" else None
         )
         player = players_by_id.get(player_id or "", {})
-        projection = projection_for(player) if player else {"points": 0, "basis": "Open slot", "confidence": "low"}
+        projection = projection_for(player) if player else {
+            "points": 0, "floor": 0, "ceiling": 0, "basis": "Open slot", "confidence": "low"
+        }
         rows.append({
             "slot": slot,
             "slot_label": lineup_row.get("slot_label") or labels[index],
@@ -492,9 +685,13 @@ def current_lineup(team: dict[str, Any], players_by_id: dict[str, dict[str, Any]
             "name": player.get("name") or "Open slot",
             "position": player.get("position"),
             "team": player.get("team"),
+            "injury_status": player.get("injury_status"),
             "projected_points": projection["points"],
+            "projected_floor": projection["floor"],
+            "projected_ceiling": projection["ceiling"],
             "projection_basis": projection["basis"],
             "confidence": projection["confidence"],
+            "current_decision_evidence": projection.get("current_decision_evidence", False),
         })
     return rows
 
@@ -512,10 +709,30 @@ def lineup_bundle(team: dict[str, Any], players: list[dict[str, Any]], slots: li
     changes = []
     for add, remove in itertools.zip_longest(incoming, outgoing, fillvalue={}):
         advantage = round(float(add.get("projected_points") or 0) - float(remove.get("projected_points") or 0), 2)
+        if add.get("injury_status"):
+            decision = "hold_current"
+            decision_reason = f"Do not make the swap without clearing {add.get('name')}'s {add.get('injury_status')} status."
+        elif advantage < 2:
+            decision = "hold_current"
+            decision_reason = "The modeled edge is below the two-point change threshold; keep the submitted starter."
+        elif not add.get("current_decision_evidence"):
+            decision = "research_required"
+            decision_reason = "The model prefers this swap, but the incoming player's case relies on prior-season or proxy evidence and is not actionable without current confirmation."
+        elif advantage < 3:
+            decision = "lean"
+            decision_reason = "This is a close call; matchup and late news should decide it."
+        else:
+            decision = "consider"
+            decision_reason = "The evidence gap is large enough to merit a lineup change after final availability checks."
         changes.append({
             "start": add.get("name"),
             "sit": remove.get("name"),
             "projected_advantage": advantage,
+            "decision": decision,
+            "decision_reason": decision_reason,
+            "start_confidence": add.get("confidence"),
+            "sit_confidence": remove.get("confidence"),
+            "current_decision_evidence": bool(add.get("current_decision_evidence")),
             "explanation": (
                 f"{add.get('name') or 'The replacement'} carries the stronger evidence projection "
                 f"({add.get('projected_points') or 0} vs {remove.get('projected_points') or 0})."
@@ -523,13 +740,26 @@ def lineup_bundle(team: dict[str, Any], players: list[dict[str, Any]], slots: li
         })
     current_total = round(sum(float(row.get("projected_points") or 0) for row in current), 2)
     optimized_total = round(sum(float(row.get("projected_points") or 0) for row in optimized), 2)
+    actionable_advantage = round(sum(
+        float(change.get("projected_advantage") or 0)
+        for change in changes
+        if change.get("decision") == "consider"
+    ), 2)
     return {
-        "methodology": "Legal-lineup optimization using 715 PPG, recent form and a market proxy when performance is missing. This is decision support, not a sportsbook projection.",
+        "status": "provisional",
+        "methodology": "The unconstrained lineup maximizes the evidence estimate, but the action board requires a two-point edge plus current-season usage or verified current reporting before recommending a change. Dynasty tier and market movement are not weekly-start scores. This is decision support, not a sportsbook projection.",
+        "decision_thresholds": {
+            "hold_current_below": 2,
+            "close_call_below": 3,
+            "availability_guardrail": True,
+            "current_evidence_required": True,
+        },
         "current": current,
         "optimized": optimized,
         "current_projected_points": current_total,
         "optimized_projected_points": optimized_total,
         "projected_advantage": round(optimized_total - current_total, 2),
+        "actionable_projected_advantage": actionable_advantage,
         "changes": changes,
     }
 
@@ -544,26 +774,58 @@ def action_board(
     for change in lineup.get("changes") or []:
         if not change.get("start") or not change.get("sit"):
             continue
+        if change.get("decision") == "hold_current":
+            continue
         advantage = float(change.get("projected_advantage") or 0)
+        needs_research = change.get("decision") == "research_required"
+        is_close = change.get("decision") == "lean"
+        priority = 5 if needs_research else 4 if is_close else max(6, min(8, round(6 + max(advantage, 0) / 4)))
+        if not research_available:
+            priority = min(priority, 7)
         actions.append({
-            "priority": max(7, min(10, round(7 + max(advantage, 0) / 2))),
+            "priority": priority,
             "category": "Lineup",
-            "title": f"Start {change['start']} over {change['sit']}",
-            "recommendation": "Make the swap before lineup lock, then recheck injuries and inactive reports.",
-            "rationale": change.get("explanation"),
+            "title": (
+                f"Research {change['start']} vs {change['sit']}"
+                if needs_research else
+                f"Recheck {change['start']} vs {change['sit']}"
+                if is_close else f"Consider {change['start']} over {change['sit']}"
+            ),
+            "recommendation": (
+                "Keep the submitted starter unless current role, matchup and availability evidence confirms the model preference."
+                if needs_research else
+                "Use matchup and late-news confirmation as the tiebreaker; keeping the submitted starter is reasonable."
+                if is_close else
+                "Treat this as provisional until current matchup, injury and inactive information is verified."
+            ),
+            "rationale": f"{change.get('explanation')} {change.get('decision_reason')}",
             "projected_advantage": advantage,
+            "upside": f"The evidence model adds approximately {advantage:.1f} points if its role assumptions hold.",
+            "risk": "The report does not yet contain verified current matchup or beat-report context.",
+            "cost_or_cut": f"Bench {change['sit']}; no roster transaction required.",
+            "urgency": "Before lineup lock",
+            "confidence": "low" if not research_available or "low" in {
+                change.get("start_confidence"), change.get("sit_confidence")
+            } else "medium",
         })
 
     for player in players:
         if not player.get("injury_status"):
             continue
+        severe = str(player.get("injury_status")).lower() in {"out", "ir", "doubtful"}
+        starter = bool(player.get("starter"))
         actions.append({
-            "priority": 9 if str(player.get("injury_status")).lower() in {"out", "ir", "doubtful"} else 8,
+            "priority": 9 if severe and starter else 7 if starter else 5,
             "category": "Availability",
             "title": f"Verify {player.get('name')} before lock",
             "recommendation": "Confirm the official game designation and keep a legal pivot available.",
-            "rationale": f"Sleeper lists {player.get('name')} as {player.get('injury_status')}",
+            "rationale": f"Sleeper lists {player.get('name')} as {player.get('injury_status')}; no verified news item is attached.",
             "projected_advantage": None,
+            "upside": "A prepared pivot protects the lineup from a zero or limited role.",
+            "risk": "Sleeper status alone does not establish expected availability or workload.",
+            "cost_or_cut": "No transaction required unless the final designation changes roster-slot options.",
+            "urgency": "Before lineup lock",
+            "confidence": "medium",
         })
 
     bench = sorted(
@@ -582,35 +844,80 @@ def action_board(
         )
         if not drop:
             continue
-        priority = max(4, min(8, round(float(candidate.get("opportunity_score") or 0) / 10)))
+        priority = max(3, min(6, round(float(candidate.get("opportunity_score") or 0) / 18)))
+        if not research_available:
+            priority = min(priority, 5)
         candidate_value = int(number(candidate.get("market_value")) or 0)
         drop_value = int(number(drop.get("market_value")) or 0)
-        if candidate_value <= drop_value and priority < 7:
+        if candidate_value <= drop_value and float(candidate.get("opportunity_score") or 0) < 80:
             continue
         used_drop_ids.add(str(drop.get("player_id")))
         actions.append({
             "priority": priority,
             "category": "Waiver review",
             "title": f"Compare {candidate.get('name')} with {drop.get('name')}",
-            "recommendation": "Verify role and current news before submitting an add/drop.",
+            "recommendation": "Do not submit the move until role, current news and roster fit are verified.",
             "rationale": " ".join((candidate.get("reasons") or [])[:2]) or "The app opportunity score flags a possible roster upgrade.",
             "projected_advantage": None,
+            "upside": f"Candidate market value {candidate_value:,} versus {drop_value:,} for the likely cut.",
+            "risk": "Opportunity score is a discovery signal, not proof of future touches or trade value.",
+            "cost_or_cut": f"Likely cut: {drop.get('name')}; verify lineup, taxi and IR constraints first.",
+            "urgency": "Monitor waiver window",
+            "confidence": "low" if not research_available else "medium",
+            "verified_available": True,
         })
         if len(used_drop_ids) >= 2:
             break
 
     if not research_available:
         actions.append({
-            "priority": 6,
-            "category": "Research",
-            "title": "Run the pre-lock news and beat-report refresh",
+            "priority": 7,
+            "category": "Data check",
+            "title": "Refresh news and matchup context before acting",
             "recommendation": "Add verified player news and coach/beat-reporter notes before acting on low-confidence decisions.",
             "rationale": "No structured roster-intelligence research file was available for this report.",
             "projected_advantage": None,
+            "upside": "A current evidence pass can confirm, reverse or suppress tentative lineup and waiver calls.",
+            "risk": "Acting now would rely mostly on prior-season usage, market values and Sleeper status fields.",
+            "cost_or_cut": "No roster cost; information-gathering step.",
+            "urgency": "Before any Week 1 transaction or lineup change",
+            "confidence": "high",
         })
 
     actions.sort(key=lambda action: (-int(action.get("priority") or 0), action.get("title") or ""))
     return actions[:10]
+
+
+def validate_report(
+    report: dict[str, Any],
+    history: dict[str, Any],
+    expected_player_ids: set[str],
+) -> None:
+    cards = [
+        player
+        for board in report.get("position_boards") or []
+        for tier in board.get("tiers") or []
+        for player in tier.get("players") or []
+    ]
+    card_ids = [str(player.get("player_id")) for player in cards]
+    errors = []
+    if report.get("schema_version") != SCHEMA_VERSION:
+        errors.append("unexpected schema version")
+    if set(card_ids) != expected_player_ids or len(card_ids) != len(set(card_ids)):
+        errors.append("tier boards must contain every roster player exactly once")
+    optimized = (report.get("lineup") or {}).get("optimized") or []
+    optimized_ids = [str(row.get("player_id")) for row in optimized if row.get("player_id")]
+    if len(optimized_ids) != len(set(optimized_ids)):
+        errors.append("optimized lineup contains a duplicate player")
+    for row in optimized:
+        if row.get("player_id") and not eligible(str(row.get("slot")), row.get("position")):
+            errors.append(f"illegal optimized lineup slot for {row.get('name')}")
+    if any(not 1 <= int(action.get("priority") or 0) <= 10 for action in report.get("action_board") or []):
+        errors.append("action priorities must be between 1 and 10")
+    if not isinstance(history.get("entries"), list):
+        errors.append("history entries must be a list")
+    if errors:
+        raise RuntimeError("Invalid roster intelligence report: " + "; ".join(errors))
 
 
 def build_roster_intelligence_outputs(root: Path) -> tuple[dict[str, Any], dict[str, Any]]:
@@ -621,8 +928,16 @@ def build_roster_intelligence_outputs(root: Path) -> tuple[dict[str, Any], dict[
     league = read_json(current / "league.json", {}) or {}
     nfl_state = read_json(current / "nfl_state.json", {}) or {}
     opportunities = read_json(derived / "opportunity_scanner.json", {}) or {}
+    player_intel = read_json(derived / "player_intel.json", {}) or {}
+    data_health = read_json(derived / "data_health.json", {}) or {}
+    player_context = read_json(derived / "player_context_signals.json", {}) or {}
+    context_by_id = player_context.get("players_by_id") or {}
     team = team_assets.get(MY_ROSTER_ID) or {}
-    players = [p for p in (team.get("players") or []) if p.get("position") in POSITIONS]
+    players = [
+        {**p, "context": context_by_id.get(str(p.get("player_id")), {})}
+        for p in (team.get("players") or [])
+        if p.get("position") in POSITIONS
+    ]
     if not team or not players:
         raise RuntimeError("Roster intelligence requires roster 3 in team_assets.json")
 
@@ -677,11 +992,19 @@ def build_roster_intelligence_outputs(root: Path) -> tuple[dict[str, Any], dict[
 
     starter_slots = [slot for slot in (league.get("roster_positions") or []) if slot != "BN"]
     lineup = lineup_bundle(team, players, starter_slots)
+    curated_context_count = int((player_context.get("coverage") or {}).get("curated_reports") or 0)
+    roster_curated_context_count = sum(
+        1
+        for player in players
+        for signal in (player.get("context") or {}).get("signals") or []
+        if signal.get("origin") == "curated_report"
+    )
+    contextual_research_available = bool(research) or roster_curated_context_count > 0
     actions = action_board(
         lineup,
         players,
         opportunities.get("players") or [],
-        bool(research),
+        contextual_research_available,
     )
     movement = [
         {
@@ -699,7 +1022,23 @@ def build_roster_intelligence_outputs(root: Path) -> tuple[dict[str, Any], dict[
         )
     )
 
+    performance_bases = sorted({
+        str((player.get("performance") or {}).get("basis_label"))
+        for player in players
+        if (player.get("performance") or {}).get("basis_label")
+    })
+    market_source = player_intel.get("market_source") or {}
+    performance_source = player_intel.get("performance_source") or {}
+    research_status = str(research_raw.get("status") or ("available" if research else "not_available"))
+    roster_contexts = [player.get("context") or {} for player in players]
+    roster_context_signal_count = sum(int(context.get("signal_count") or 0) for context in roster_contexts)
+    current_performance_count = sum(
+        1 for player in players if (player.get("performance") or {}).get("basis") == "current"
+    )
+    data_confidence = "decision_ready" if contextual_research_available and current_performance_count else "provisional"
+
     report = {
+        "schema_version": SCHEMA_VERSION,
         "generated_at": generated_at,
         "report_key": report_key,
         "season": season,
@@ -718,8 +1057,71 @@ def build_roster_intelligence_outputs(root: Path) -> tuple[dict[str, Any], dict[
             "coach_beat_reporter_players": sum(
                 1 for card in all_cards if card["research_coverage"]["coach_beat_reporter"]
             ),
-            "research_status": "available" if research else "not_available",
+            "current_season_performance_samples": current_performance_count,
+            "research_status": research_status,
+            "context_signal_players": sum(1 for context in roster_contexts if context.get("signal_count")),
+            "objective_context_signals": roster_context_signal_count - roster_curated_context_count,
+            "curated_context_reports": roster_curated_context_count,
         },
+        "data_confidence": {
+            "status": data_confidence,
+            "label": "Decision ready" if data_confidence == "decision_ready" else "Provisional",
+            "reasons": [
+                reason for reason in [
+                    None if contextual_research_available else "Verified news, matchup and coach/beat-reporter research is not attached.",
+                    None if current_performance_count else "NFL performance inputs are prior-season samples or market proxies.",
+                    "Sleeper roster, lineup and availability fields are present."
+                    if (data_health.get("sleeper") or {}).get("status") == "ok" else
+                    "Sleeper data health is not confirmed.",
+                ] if reason
+            ],
+        },
+        "freshness": {
+            "sleeper_data_checked_at": data_health.get("generated_at"),
+            "market_provider_timestamp": market_source.get("provider_timestamp"),
+            "external_sync_generated_at": (player_intel.get("external_status") or {}).get("generated_at"),
+            "research_generated_at": research_raw.get("generated_at"),
+            "player_context_generated_at": player_context.get("generated_at"),
+            "performance_basis": performance_bases,
+        },
+        "sources": [
+            {
+                "name": "Sleeper",
+                "type": "authoritative_roster_data",
+                "status": (data_health.get("sleeper") or {}).get("status") or "unknown",
+                "checked_at": data_health.get("generated_at"),
+                "url": "https://sleeper.com/",
+            },
+            {
+                "name": market_source.get("name") or "Dynasty Dealer",
+                "type": "market_context",
+                "status": "available" if market_source else "unavailable",
+                "checked_at": market_source.get("provider_timestamp"),
+                "url": market_source.get("url"),
+            },
+            {
+                "name": performance_source.get("name") or "nflverse",
+                "type": "performance_context",
+                "status": "available" if performance_bases else "unavailable",
+                "checked_at": (player_intel.get("external_status") or {}).get("generated_at"),
+                "url": performance_source.get("url"),
+                "basis": performance_bases,
+            },
+            {
+                "name": "Player context signals",
+                "type": "availability_depth_usage_and_reporting",
+                "status": "available" if player_context.get("players_by_id") else "unavailable",
+                "checked_at": player_context.get("generated_at"),
+                "url": None,
+            },
+            {
+                "name": "Roster research",
+                "type": "news_matchup_coach_reporting",
+                "status": research_status,
+                "checked_at": research_raw.get("generated_at"),
+                "url": research_raw.get("source_url"),
+            },
+        ],
         "position_boards": position_boards,
         "lineup": lineup,
         "action_board": actions,
@@ -734,6 +1136,7 @@ def build_roster_intelligence_outputs(root: Path) -> tuple[dict[str, Any], dict[
             "Dynasty Dealer supplies market values; nflverse supplies 715-scored performance and usage.",
             "Player, roster-rank and tier movement is calculated from roster_intelligence_history.json.",
             "Lineup projections are evidence-weighted decision support and are not sportsbook projections.",
+            "Current context adjustments are capped, time-decayed and retain their source evidence.",
             "News and coach/beat-reporter sections remain empty unless verified structured research is supplied.",
         ],
     }
@@ -742,10 +1145,12 @@ def build_roster_intelligence_outputs(root: Path) -> tuple[dict[str, Any], dict[
     entries.append(current_snapshot)
     entries.sort(key=lambda entry: entry.get("generated_at") or "")
     history_output = {
+        "schema_version": SCHEMA_VERSION,
         "generated_at": generated_at,
         "retention_reports": MAX_HISTORY_REPORTS,
         "entries": entries[-MAX_HISTORY_REPORTS:],
     }
+    validate_report(report, history_output, {str(player.get("player_id")) for player in players})
     write_json(derived / "roster_intelligence.json", report)
     write_json(history_path, history_output)
     return report, history_output

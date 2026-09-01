@@ -1,0 +1,49 @@
+name: Sync Player Research
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "23 */4 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sleeper-data-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out latest main
+        uses: actions/checkout@v6
+        with:
+          ref: main
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Collect recent player research
+        env:
+          FANTASYPROS_API_KEY: ${{ secrets.FANTASYPROS_API_KEY }}
+        run: python scripts/sync_research.py
+
+      - name: Rebuild derived analytics
+        run: python scripts/build_derived.py
+
+      - name: Commit research and analytics if needed
+        shell: bash
+        run: |
+          if [[ -z "$(git status --porcelain -- data/external data/derived)" ]]; then
+            echo "No research changes detected."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/external data/derived
+          git commit -m "Update player research signals"
+          git push

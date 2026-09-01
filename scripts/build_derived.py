@@ -12,6 +12,7 @@ from typing import Any
 from phase4 import build_phase4_outputs
 from ai_bridge import build_ai_outputs
 from roster_intelligence import build_roster_intelligence_outputs
+from player_context import build_player_context_outputs
 from external_intel import (
     attach_player_intel,
     build_market_summary,
@@ -1856,6 +1857,9 @@ def main() -> None:
 
     # Phase 4 — Forecasting + franchise intelligence
     build_phase4_outputs(ROOT)
+
+    # Current player context: availability, depth, usage trends and curated reports.
+    build_player_context_outputs(ROOT)
 
     # Phase 4.8 — compact AI bridge, data health and daily intelligence history.
     build_ai_outputs(ROOT)
