@@ -285,6 +285,18 @@ h1 {
   font-size: 10px;
 }
 
+.roster-evaluation-panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+@media (max-width: 680px) {
+  .roster-evaluation-panel { align-items: stretch; flex-direction: column; }
+  .roster-evaluation-panel .button { width: 100%; }
+}
+
 /* --- stat cards become editorial tiles --- */
 .stat-card {
   min-height: 112px;

@@ -939,6 +939,47 @@ function renderRosterIntelligence() {
 }
 
 
+function rosterEvaluationPrompt(team) {
+  const intelligence = state.rosterIntelligence;
+  const intelById = new Map((intelligence?.position_boards || []).flatMap(board =>
+    (board.tiers || []).flatMap(tier => (tier.players || []).map(player => [String(player.player_id), { ...player, tier: tier.number, tier_label: tier.label }]))
+  ));
+  const roster = (team.players || []).map(player => {
+    const intel = intelById.get(String(player.player_id)) || {};
+    const details = [
+      `${player.name} (${player.position || "?"}, ${player.team || "NFL FA"})`,
+      player.starter ? "current starter" : "bench",
+      `age ${player.age ?? "unknown"}`,
+      `app value ${player.market_value ?? "unavailable"}`,
+      `app positional rank ${player.market_position_rank ?? "unavailable"}`,
+      `depth ${player.depth_chart_order ?? "unknown"}`,
+      `injury ${player.injury_status || "none listed"}`,
+      intel.tier ? `current app tier ${intel.tier} (${intel.tier_label})` : "app tier unavailable",
+      intel.current_fantasy_value != null ? `roster-intelligence value ${intel.current_fantasy_value}` : null,
+    ].filter(Boolean);
+    return `- ${details.join("; ")}`;
+  }).join("\n");
+
+  return `Evaluate my complete current dynasty fantasy football roster below as of today.
+
+For every player, search the web for recent, credible information. Prioritize official team/NFL reports, coach statements, local beat reporters, current depth-chart and practice information, then established fantasy analysis. Include publication dates and links. Clearly distinguish verified reporting from analyst opinion, and do not treat an old or generic article as current news.
+
+Use the app values below as one input, not unquestioned truth. Reconcile them with current dynasty market value, role, health, age, recent usage/performance trends, competition, and near-term opportunity. Tell me the most notable positive and negative developments worth tracking. Flag where reliable recent reporting is missing rather than inventing a conclusion.
+
+Then produce:
+1. A short executive summary of the roster's biggest changes, risks, and opportunities.
+2. A concise player-by-player tracking table with current role/depth status, important recent evidence, trend, dynasty implication, and confidence.
+3. Position-specific dynasty tiers containing every player, with clear tier names and a brief explanation for each placement.
+4. A separate "watch this week" list for time-sensitive injuries, coach decisions, depth-chart battles, and usage changes.
+5. The five most decision-relevant takeaways, including any player whose current app value or tier appears materially wrong.
+
+Do not recommend transactions or a starting lineup unless the evidence directly supports mentioning one; this request is primarily a current-information roster evaluation.
+
+League/team: ${team.team_name || team.manager || "My Team"}
+Roster snapshot:
+${roster}`;
+}
+
 function renderTeam() {
   const me = state.teams?.[MY_ROSTER_ID];
   const profile = state.needs?.teams?.[MY_ROSTER_ID];
@@ -955,6 +996,10 @@ function renderTeam() {
       ${stat("FAAB", `$${me.waivers?.faab_remaining ?? "—"}`, `$${me.waivers?.faab_used ?? 0} used`)}
       ${stat("Rostered", me.players?.length ?? 0, "Players")}
       ${stat("Picks", me.picks?.length ?? 0, "Future draft assets")}
+    </div>
+    <div class="panel roster-evaluation-panel">
+      <div><h2>Roster Evaluation Prompt</h2><div class="panel-sub">Copies the full current roster, app values and research instructions for a fresh ChatGPT evaluation.</div></div>
+      <button type="button" class="button" id="copy-roster-evaluation">Copy Roster Evaluation Prompt</button>
     </div>
     <div class="panel"><div class="panel-header"><div><h2>Roster Shape</h2><div class="panel-sub">Count vs league average; this does not grade player quality</div></div></div><div class="shape-grid">${signals}</div></div>
     <div class="grid-2">
@@ -1170,6 +1215,10 @@ function wireViewControls() {
   });
 
   document.querySelectorAll("[data-copy]").forEach(btn => btn.addEventListener("click", () => copyText(btn.dataset.copy, btn)));
+  document.querySelector("#copy-roster-evaluation")?.addEventListener("click", e => {
+    const team = state.teams?.[MY_ROSTER_ID];
+    if (team) copyText(rosterEvaluationPrompt(team), e.currentTarget);
+  });
   document.querySelectorAll("[data-action-index]").forEach(btn => btn.addEventListener("click", () => {
     const action = state.rosterIntelligence?.action_board?.[Number(btn.dataset.actionIndex)];
     if (action) copyText(rosterActionPrompt(action, state.rosterIntelligence), btn);

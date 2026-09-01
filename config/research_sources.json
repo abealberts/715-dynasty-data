@@ -9,6 +9,8 @@
       "source_type": "established_media",
       "tier": 2,
       "enabled": true,
+      "retain_roster_mentions": true,
+      "max_items_per_player": 3,
       "notes": "Public player-news RSS intended for blogs and personal use; headlines and source links only are retained."
     },
     {
@@ -29,7 +31,61 @@
       "source_type": "established_media",
       "tier": 3,
       "enabled": true,
+      "retain_roster_mentions": true,
+      "max_items_per_player": 2,
       "notes": "Analysis and team news; never receives official-report weight."
+    },
+    {
+      "id": "espn_nfl_rss",
+      "name": "ESPN NFL Headlines",
+      "url": "https://www.espn.com/espn/rss/nfl/news",
+      "format": "rss",
+      "source_type": "established_media",
+      "tier": 3,
+      "enabled": true,
+      "retain_roster_mentions": true,
+      "max_items_per_player": 2,
+      "notes": "Official ESPN NFL RSS feed; matched roster mentions are retained but generic analysis is not scored."
+    },
+    {
+      "id": "cbs_nfl_rss",
+      "name": "CBS Sports NFL Headlines",
+      "url": "https://www.cbssports.com/rss/headlines/nfl",
+      "format": "rss",
+      "source_type": "established_media",
+      "tier": 3,
+      "enabled": true,
+      "retain_roster_mentions": true,
+      "max_items_per_player": 2,
+      "notes": "Official CBS Sports NFL RSS feed; matched roster mentions are retained but generic analysis is not scored."
+    },
+    {
+      "id": "google_news_roster",
+      "name": "Google News roster search",
+      "url_template": "https://news.google.com/rss/search?q={query}&hl=en-US&gl=US&ceid=US%3Aen",
+      "format": "targeted_rss",
+      "target_scope": "roster",
+      "source_type": "aggregator",
+      "tier": 3,
+      "enabled": true,
+      "allow_scoring": false,
+      "retain_roster_mentions": true,
+      "max_items_per_player": 4,
+      "notes": "Seven-day exact-name discovery for every player on roster 3; original publisher attribution is retained."
+    },
+    {
+      "id": "google_news_priority_opportunities",
+      "name": "Google News priority-opportunity search",
+      "url_template": "https://news.google.com/rss/search?q={query}&hl=en-US&gl=US&ceid=US%3Aen",
+      "format": "targeted_rss",
+      "target_scope": "priority_opportunity",
+      "source_type": "aggregator",
+      "tier": 3,
+      "enabled": true,
+      "allow_scoring": false,
+      "retain_target_mentions": true,
+      "max_items_per_player": 1,
+      "notes": "Surface-level exact-name discovery only for players currently in the Priority opportunity tier."
     },
     {
       "id": "fantasypros_api",
@@ -39,6 +95,8 @@
       "source_type": "aggregator",
       "tier": 2,
       "enabled": true,
+      "retain_roster_mentions": true,
+      "max_items_per_player": 4,
       "secret_env": "FANTASYPROS_API_KEY",
       "notes": "Optional authenticated feed with structured news categories; skipped when no API key is configured."
     }
