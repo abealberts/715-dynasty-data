@@ -1,26 +1,69 @@
 {
-  "generated_at": "2026-09-01T21:12:41.939628+00:00",
-  "methodology": "Headline-only collection. A report is scored only when exactly one relevant player and an explicit availability/workload phrase match. Ambiguous and opinion-only items are ignored.",
-  "relevant_players": 423,
-  "signals_retained": 6,
+  "generated_at": "2026-09-01T21:33:58.651984+00:00",
+  "methodology": "Every player on roster 3 receives exact-name targeted research. Only Priority opportunity players receive lighter targeted research. Explicit availability/workload reports may be scored; matched roster analysis without an actionable phrase is retained as unscored context and cannot change projections.",
+  "priority_opportunity_targets": 6,
+  "relevant_players": 33,
+  "roster_targets": 27,
+  "signals_retained": 112,
   "sources": [
     {
-      "accepted": 3,
+      "accepted": 0,
       "id": "rotowire_nfl_rss",
       "items": 5,
-      "status": "ok"
+      "scored": 0,
+      "status": "ok",
+      "target_errors": 0,
+      "unscored_mentions": 0
+    },
+    {
+      "accepted": 1,
+      "id": "pff_nfl_rss",
+      "items": 25,
+      "scored": 0,
+      "status": "ok",
+      "target_errors": 0,
+      "unscored_mentions": 1
+    },
+    {
+      "accepted": 1,
+      "id": "espn_nfl_rss",
+      "items": 25,
+      "scored": 0,
+      "status": "ok",
+      "target_errors": 0,
+      "unscored_mentions": 1
     },
     {
       "accepted": 0,
-      "id": "pff_nfl_rss",
-      "items": 25,
-      "status": "ok"
+      "id": "cbs_nfl_rss",
+      "items": 36,
+      "scored": 0,
+      "status": "ok",
+      "target_errors": 0,
+      "unscored_mentions": 0
     },
     {
-      "accepted": 3,
+      "accepted": 104,
+      "id": "google_news_roster",
+      "items": 1291,
+      "scored": 0,
+      "status": "ok",
+      "target_errors": 0,
+      "unscored_mentions": 104
+    },
+    {
+      "accepted": 6,
+      "id": "google_news_priority_opportunities",
+      "items": 185,
+      "scored": 0,
+      "status": "ok",
+      "target_errors": 0,
+      "unscored_mentions": 6
+    },
+    {
       "id": "fantasypros_api",
-      "items": 10,
-      "status": "ok"
+      "items": 0,
+      "status": "skipped_no_secret"
     }
   ]
 }

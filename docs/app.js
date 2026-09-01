@@ -774,9 +774,16 @@ function rosterIntelPlayerCard(player) {
   const projection = value.projection || {};
   const trends = player.trends || {};
   const outlook = player.speculative_outlook || {};
-  const comparisons = player.app_data_comparisons || [];
   const lenses = player.decision_lenses || {};
   const context = player.context || {};
+  const reporting = [
+    ...(player.news || []).map(item => ({ ...item, kind: "News" })),
+    ...(player.coach_beat_reporter_information || []).map(item => ({ ...item, kind: "Coach / beat" })),
+  ];
+  const decisionEvidence = [
+    ...(player.notable_takeaways || []).map(text => `Takeaway: ${text}`),
+    ...(player.key_evidence || []),
+  ];
   return `<details class="ri-player-card">
     <summary>
       <span class="ri-player-rank">${esc(player.position_rank_on_roster)}</span>
@@ -795,10 +802,10 @@ function rosterIntelPlayerCard(player) {
           <div class="ri-value-line"><strong>${Number(value.market_value || 0).toLocaleString()}</strong><span>#${esc(value.market_position_rank ?? "—")} ${esc(player.position)} market · ${esc(projection.points ?? "—")} evidence pts</span></div>
           <p>${esc(projection.basis || "Projection basis unavailable.")} <span class="ri-confidence">${esc(projection.confidence || "low")} confidence</span></p>
         </section>
-        <section>
-          <h4>Speculative outlook</h4>
-          <div class="ri-outlook-label">${esc(outlook.label || "Unrated")}</div>
-          <p>${esc(outlook.summary || "No speculative outlook is available.")}</p>
+        <section class="ri-stance-summary">
+          <h4>Decision stance</h4>
+          <div class="ri-outlook-label">${esc(player.recommended_stance || lenses.recommended_stance || "Hold / monitor")}</div>
+          <p><strong>${esc(outlook.label || "Unrated")}:</strong> ${esc(outlook.summary || "No speculative outlook is available.")}</p>
         </section>
         <section>
           <h4>Trends</h4>
@@ -807,12 +814,8 @@ function rosterIntelPlayerCard(player) {
         </section>
         <section class="ri-context-summary context-${esc(context.net_direction || "neutral")}">
           <h4>Current context effect</h4>
-          <div class="ri-value-line"><strong>${Number(projection.context_adjustment_points || 0) > 0 ? "+" : ""}${esc(projection.context_adjustment_points ?? 0)}</strong><span>points · ${esc(context.signal_count ?? 0)} signals · ${esc(context.confidence || "low")} confidence</span></div>
-          <p>Availability ${Math.round(Number(context.availability_probability ?? 1) * 100)}% · workload multiplier ${Number(context.weekly_multiplier ?? 1).toFixed(3)}. Expand the evidence sections to audit the inputs.</p>
-        </section>
-        <section>
-          <h4>App-data comparison</h4>
-          <div class="ri-comparisons">${comparisons.map(row => `<div><span>${esc(row.source)} · ${esc(row.label)}</span><strong>${esc(row.value)}</strong></div>`).join("") || '<div class="ri-unavailable">No app comparison is available.</div>'}</div>
+          <div class="ri-value-line"><strong>${Number(projection.context_adjustment_points || 0) > 0 ? "+" : ""}${esc(projection.context_adjustment_points ?? 0)}</strong><span>points · ${esc(context.actionable_signal_count ?? 0)} scored · ${esc(context.research_mention_count ?? 0)} reading-only</span></div>
+          <p>Availability ${Math.round(Number(context.availability_probability ?? 1) * 100)}% · workload multiplier ${Number(context.weekly_multiplier ?? 1).toFixed(3)} · ${esc(context.confidence || "low")} decision confidence.</p>
         </section>
       </div>
       <div class="ri-lens-grid">
@@ -821,16 +824,15 @@ function rosterIntelPlayerCard(player) {
           const label = key === "rest_of_season" ? "Rest of season" : key;
           return `<section><h4>${esc(label)}</h4><strong>${esc(lens.label || "Unrated")}</strong><p>${esc(lens.summary || "Insufficient evidence.")}</p></section>`;
         }).join("")}
-        <section class="ri-stance"><h4>Recommended stance</h4><strong>${esc(player.recommended_stance || lenses.recommended_stance || "Hold / monitor")}</strong><p>Update this stance when verified current research changes the baseline.</p></section>
       </div>
-      <div class="ri-research-grid">
-        <section><h4>Key evidence</h4>${rosterIntelList(player.key_evidence, "No supporting evidence is available.")}</section>
-        <section><h4>News</h4>${rosterIntelResearchList(player.news, "No verified player news is stored in this report.")}</section>
-        <section><h4>Coach / beat-reporter information</h4>${rosterIntelResearchList(player.coach_beat_reporter_information, "No verified coach or beat-reporter note is stored in this report.")}</section>
-        <section><h4>Notable takeaways</h4>${rosterIntelList(player.notable_takeaways, "No additional takeaway is available.")}</section>
-        <section><h4>Risk factors</h4>${rosterIntelList(player.risk_factors, "No additional risk factor is identified.")}</section>
-        <section><h4>Catalysts</h4>${rosterIntelList(player.catalysts, "No clear catalyst is identified.")}</section>
-      </div>
+      <details class="ri-evidence-drawer">
+        <summary>Open evidence, reporting, risks & catalysts</summary>
+        <div class="ri-research-grid">
+          <section><h4>Decision evidence</h4>${rosterIntelList(decisionEvidence, "No supporting evidence is available.")}</section>
+          <section><h4>Current reporting</h4>${rosterIntelResearchList(reporting.map(item => ({ ...item, text: `${item.kind}: ${item.text || ""}` })), "No current player reporting is stored in this report.")}</section>
+          <section><h4>Risk / catalyst balance</h4><h5>Risks</h5>${rosterIntelList(player.risk_factors, "No additional risk identified.")}<h5>Catalysts</h5>${rosterIntelList(player.catalysts, "No clear catalyst identified.")}</section>
+        </div>
+      </details>
     </div>
   </details>`;
 }
@@ -869,7 +871,8 @@ Season/week: ${report?.season || "—"} / ${report?.week ?? "—"}
 Report generated: ${report?.generated_at || "Unknown"}
 Overall confidence: ${confidence.label || "Unrated"}
 Current-season performance samples: ${coverage.current_season_performance_samples ?? 0}
-Curated reports affecting my roster: ${coverage.curated_context_reports ?? 0}
+Research mentions stored for my roster: ${coverage.research_mentions ?? coverage.curated_context_reports ?? 0}
+Decision-grade current reports: ${coverage.actionable_context_reports ?? 0}
 
 Please:
 1. Verify current injury, practice, depth-chart, coach-statement, beat-report, role and matchup information from reliable sources; cite and date every consequential source.
@@ -877,6 +880,14 @@ Please:
 3. Separate weekly lineup value, rest-of-season value and dynasty value. Do not treat dynasty market movement as a weekly projection.
 4. Identify assumptions, contradictory evidence, likely alternatives and the opportunity cost.
 5. Finish with one verdict—ACT, MONITOR or REJECT—plus a confidence rating and the specific evidence that would change it.`;
+}
+
+function rosterIntelActionBoard(data) {
+  return `<div class="ri-action-list">${(data.action_board || []).map((action, actionIndex) => `<article class="ri-action-card priority-${Math.ceil(Number(action.priority || 0) / 3)}">
+    <div class="ri-priority"><strong>${esc(action.priority)}</strong><span>/10</span></div>
+    <div><small>${esc(action.category)} · ${esc(action.urgency || "No deadline")} · ${esc(action.confidence || "unknown")} confidence</small><h3>${esc(action.title)}</h3><p>${esc(action.recommendation)}</p><div>${esc(action.rationale || "No rationale available.")}</div>
+    <details class="ri-action-detail"><summary>Upside, risk & cost</summary><dl><dt>Upside</dt><dd>${esc(action.upside || "Not quantified")}</dd><dt>Risk</dt><dd>${esc(action.risk || "Not recorded")}</dd><dt>Cost / cut</dt><dd>${esc(action.cost_or_cut || "Not recorded")}</dd></dl></details><button type="button" class="button ghost ri-copy-action" data-action-index="${actionIndex}">Copy ChatGPT evaluation prompt</button></div>
+  </article>`).join("") || '<div class="empty">No roster moves are recommended from the available evidence.</div>'}</div>`;
 }
 
 function renderRosterIntelligence() {
@@ -899,41 +910,39 @@ function renderRosterIntelligence() {
       ${stat("Roster Coverage", `${coverage.roster_players ?? 0}/${data.roster?.player_count ?? 0}`, "Players on tier boards")}
       ${stat("Evidence Estimate", lineup.optimized_projected_points ?? "—", `${lineup.projected_advantage > 0 ? "+" : ""}${lineup.projected_advantage ?? 0} unconstrained model maximum`)}
       ${stat("Priority Actions", data.action_board?.length ?? 0, "Rated on a 1–10 scale")}
-      ${stat("Context Coverage", `${coverage.context_signal_players ?? 0} players`, `${coverage.objective_context_signals ?? 0} objective · ${coverage.curated_context_reports ?? 0} curated reports`)}
+      ${stat("Research Coverage", `${coverage.news_players ?? 0} players`, `${coverage.actionable_context_reports ?? 0} scored · ${coverage.research_mentions ?? 0} reading-only`)}
     </div>
+    <nav class="ri-jump-nav" aria-label="Roster intelligence sections">
+      <a href="#ri-actions">Actions</a><a href="#ri-lineup">Lineup</a><a href="#ri-tiers">Tier boards</a><a href="#ri-movement">Movement</a>
+    </nav>
     ${renderSourceFreshness(data)}
 
-    <div class="panel ri-lineup-panel">
+    <div class="panel" id="ri-actions">
+      <div class="panel-header"><div><h2>Action Board</h2><div class="panel-sub">What requires attention now · priority reflects urgency and evidence strength</div></div></div>
+      ${rosterIntelActionBoard(data)}
+    </div>
+
+    <div class="panel ri-lineup-panel" id="ri-lineup">
       <div class="panel-header"><div><h2>Weekly Lineup Decision</h2><div class="panel-sub">Current submission beside the legal evidence-model lineup · provisional until current research loads</div></div><div class="ri-advantage">${lineup.actionable_projected_advantage > 0 ? "+" : ""}${esc(lineup.actionable_projected_advantage ?? 0)}<small>actionable evidence edge</small></div></div>
       <div class="ri-lineup-grid">
         ${rosterIntelLineupColumn("Current lineup", `${lineup.current_projected_points ?? "—"} evidence points`, lineup.current)}
-        ${rosterIntelLineupColumn("Unconstrained model lineup", `${lineup.optimized_projected_points ?? "—"} evidence points`, lineup.optimized)}
+        ${rosterIntelLineupColumn("Baseline comparison — not a recommendation", `${lineup.optimized_projected_points ?? "—"} evidence points`, lineup.optimized)}
       </div>
       <div class="ri-lineup-reasons">${changes.length ? changes.map(change => `<div class="decision-${esc(change.decision || "unknown")}"><strong>${esc(change.start)} vs ${esc(change.sit)}</strong><span class="ri-decision-label">${esc(String(change.decision || "review").replaceAll("_", " "))}</span><span>${esc(change.explanation)} ${esc(change.decision_reason || "")} Model edge: ${change.projected_advantage > 0 ? "+" : ""}${esc(change.projected_advantage)}.</span></div>`).join("") : '<div><strong>No swap indicated</strong><span>The submitted starters already match the model player set.</span></div>'}</div>
       <div class="method-note">${esc(lineup.methodology || "")}</div>
     </div>
 
-    <div class="panel">
-      <div class="panel-header"><div><h2>Positional Tier Boards</h2><div class="panel-sub">Every tracked roster player · expand any card for the full dossier</div></div></div>
-      <div class="ri-position-grid">${(data.position_boards || []).map(board => `<section class="ri-position-board">
+    <div class="panel" id="ri-tiers">
+      <div class="panel-header ri-tier-toolbar"><div><h2>Positional Tier Boards</h2><div class="panel-sub">Every roster player · tiers reflect dynasty market value, not weekly start rank</div></div><div class="scope-toggle" aria-label="Filter tier boards"><button class="scope-button active" data-ri-position="ALL">All</button>${(data.position_boards || []).map(board => `<button class="scope-button" data-ri-position="${esc(board.position)}">${esc(board.position)}</button>`).join("")}</div></div>
+      <div class="ri-position-grid">${(data.position_boards || []).map(board => `<section class="ri-position-board" data-ri-board="${esc(board.position)}">
         <div class="ri-position-head"><span class="position-tag pos-${esc(board.position)}">${esc(board.position)}</span><strong>${esc(board.player_count)} players</strong></div>
         ${(board.tiers || []).map(tier => `<div class="ri-tier-group tier-${esc(tier.number)}"><div class="ri-tier-head"><span>TIER ${esc(tier.number)}</span><strong>${esc(tier.label)}</strong><small>${tier.players?.length || 0}</small></div>${(tier.players || []).map(rosterIntelPlayerCard).join("")}</div>`).join("")}
       </section>`).join("")}</div>
     </div>
 
-    <div class="grid-2 even ri-bottom-grid">
-      <div class="panel">
-        <div class="panel-header"><div><h2>Action Board</h2><div class="panel-sub">Recommended roster decisions, highest priority first</div></div></div>
-        <div class="ri-action-list">${(data.action_board || []).map((action, actionIndex) => `<article class="ri-action-card priority-${Math.ceil(Number(action.priority || 0) / 3)}">
-          <div class="ri-priority"><strong>${esc(action.priority)}</strong><span>/10</span></div>
-          <div><small>${esc(action.category)} · ${esc(action.urgency || "No deadline")} · ${esc(action.confidence || "unknown")} confidence</small><h3>${esc(action.title)}</h3><p>${esc(action.recommendation)}</p><div>${esc(action.rationale || "No rationale available.")}</div>
-          <details class="ri-action-detail"><summary>Upside, risk & cost</summary><dl><dt>Upside</dt><dd>${esc(action.upside || "Not quantified")}</dd><dt>Risk</dt><dd>${esc(action.risk || "Not recorded")}</dd><dt>Cost / cut</dt><dd>${esc(action.cost_or_cut || "Not recorded")}</dd></dl></details><button type="button" class="button ghost ri-copy-action" data-action-index="${actionIndex}">Copy ChatGPT evaluation prompt</button></div>
-        </article>`).join("") || '<div class="empty">No roster moves are recommended from the available evidence.</div>'}</div>
-      </div>
-      <div class="panel">
+    <div class="panel ri-bottom-grid" id="ri-movement">
         <div class="panel-header"><div><h2>Report Movement</h2><div class="panel-sub">Current report compared with ${data.previous_report?.available ? fmtTime(data.previous_report.generated_at) : "the first captured baseline"} · ${esc(historyCount)} snapshots retained</div></div></div>
         <div class="ri-movement-list">${movers.length ? movers.map(row => `<div><span><strong>${esc(row.name)}</strong><small>${esc(row.position)}</small></span>${rosterIntelMovement(row)}</div>`).join("") : '<div class="empty">No previous report is available yet. This run establishes the baseline.</div>'}</div>
-      </div>
     </div>
     <div class="source-line">${(data.source_notes || []).map(esc).join(" · ")}</div>`;
 }
@@ -1223,6 +1232,13 @@ function wireViewControls() {
     const action = state.rosterIntelligence?.action_board?.[Number(btn.dataset.actionIndex)];
     if (action) copyText(rosterActionPrompt(action, state.rosterIntelligence), btn);
   }));
+  document.querySelectorAll("[data-ri-position]").forEach(button => button.addEventListener("click", () => {
+    const position = button.dataset.riPosition;
+    document.querySelectorAll("[data-ri-position]").forEach(item => item.classList.toggle("active", item === button));
+    document.querySelectorAll("[data-ri-board]").forEach(board => {
+      board.hidden = position !== "ALL" && board.dataset.riBoard !== position;
+    });
+  }));
 
   if (state.view === "waivers") {
     document.querySelector("#pos-filter")?.addEventListener("change", updateWaivers);
@@ -1250,6 +1266,8 @@ function wireViewControls() {
 
 function setActiveNav() {
   document.querySelectorAll(".nav-item").forEach(x => x.classList.toggle("active", x.dataset.view === state.view));
+  const mobileNav = document.querySelector("#mobile-nav");
+  if (mobileNav) mobileNav.value = state.view;
 }
 
 function render() {
@@ -1350,6 +1368,12 @@ document.querySelectorAll(".nav-item").forEach(btn => {
     setActiveNav();
     render();
   });
+});
+document.querySelector("#mobile-nav")?.addEventListener("change", event => {
+  state.view = event.target.value;
+  setActiveNav();
+  render();
+  window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
 boot();

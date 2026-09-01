@@ -35,4 +35,18 @@ Direction is `-1` to `1`; magnitude is `0` to `5`. Supported source types are `o
 
 The source registry is `config/research_sources.json`. RotoWire RSS and PFF RSS work without credentials. FantasyPros is supported when the repository secret `FANTASYPROS_API_KEY` is configured. FantasySP remains disabled because its documented NFL RSS endpoint returned HTTP 404 during validation.
 
-The collector ignores generic analysis, ambiguous multi-player items, and reports without an explicit availability or workload phrase. A report must match exactly one relevant player before it becomes a scored signal.
+The collector targets every player on roster 3 by exact name and performs a lighter pass only for players in the Priority opportunity tier. Discovery headlines are retained for reading but are never scored. A report must match exactly one relevant player and come through a scoring-enabled source before it can affect a lineup or opportunity calculation.
+
+## Quality checks
+
+Run the decision-model and generated-data checks after changing collectors or algorithms:
+
+```bash
+python -m unittest discover -s tests -v
+python scripts/build_derived.py
+python -m py_compile scripts/player_context.py scripts/roster_intelligence.py scripts/build_derived.py scripts/sync_research.py
+node --check docs/app.js
+git diff --check
+```
+
+The tests enforce legal, duplicate-free optimized lineups; current-evidence guardrails on recommendations; unrostered opportunity candidates; complete tier-board coverage; and the separation between reading-only research and scored reports.

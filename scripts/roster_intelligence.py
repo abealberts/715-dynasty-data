@@ -568,6 +568,8 @@ def player_card(
             "availability_probability": context.get("availability_probability", 1.0),
             "confidence": context.get("confidence", "low"),
             "signal_count": context.get("signal_count", 0),
+            "actionable_signal_count": context.get("actionable_signal_count", 0),
+            "research_mention_count": context.get("research_mention_count", 0),
             "signals": context.get("signals") or [],
         },
         "recommended_stance": decision_lenses["recommended_stance"],
@@ -819,7 +821,7 @@ def action_board(
             "category": "Availability",
             "title": f"Verify {player.get('name')} before lock",
             "recommendation": "Confirm the official game designation and keep a legal pivot available.",
-            "rationale": f"Sleeper lists {player.get('name')} as {player.get('injury_status')}; no verified news item is attached.",
+            "rationale": f"Sleeper lists {player.get('name')} as {player.get('injury_status')}; no decision-grade current availability report is attached.",
             "projected_advantage": None,
             "upside": "A prepared pivot protects the lineup from a zero or limited role.",
             "risk": "Sleeper status alone does not establish expected availability or workload.",
@@ -992,14 +994,21 @@ def build_roster_intelligence_outputs(root: Path) -> tuple[dict[str, Any], dict[
 
     starter_slots = [slot for slot in (league.get("roster_positions") or []) if slot != "BN"]
     lineup = lineup_bundle(team, players, starter_slots)
-    curated_context_count = int((player_context.get("coverage") or {}).get("curated_reports") or 0)
     roster_curated_context_count = sum(
         1
         for player in players
         for signal in (player.get("context") or {}).get("signals") or []
         if signal.get("origin") == "curated_report"
     )
-    contextual_research_available = bool(research) or roster_curated_context_count > 0
+    roster_actionable_context_count = sum(
+        1
+        for player in players
+        for signal in (player.get("context") or {}).get("signals") or []
+        if signal.get("origin") == "curated_report"
+        and abs(number(signal.get("weighted_score")) or 0) >= 0.0001
+    )
+    roster_research_mention_count = roster_curated_context_count - roster_actionable_context_count
+    contextual_research_available = bool(research) or roster_actionable_context_count > 0
     actions = action_board(
         lineup,
         players,
@@ -1029,7 +1038,9 @@ def build_roster_intelligence_outputs(root: Path) -> tuple[dict[str, Any], dict[
     })
     market_source = player_intel.get("market_source") or {}
     performance_source = player_intel.get("performance_source") or {}
-    research_status = str(research_raw.get("status") or ("available" if research else "not_available"))
+    research_status = str(research_raw.get("status") or (
+        "available" if roster_curated_context_count else "not_available"
+    ))
     roster_contexts = [player.get("context") or {} for player in players]
     roster_context_signal_count = sum(int(context.get("signal_count") or 0) for context in roster_contexts)
     current_performance_count = sum(
@@ -1062,13 +1073,15 @@ def build_roster_intelligence_outputs(root: Path) -> tuple[dict[str, Any], dict[
             "context_signal_players": sum(1 for context in roster_contexts if context.get("signal_count")),
             "objective_context_signals": roster_context_signal_count - roster_curated_context_count,
             "curated_context_reports": roster_curated_context_count,
+            "actionable_context_reports": roster_actionable_context_count,
+            "research_mentions": roster_research_mention_count,
         },
         "data_confidence": {
             "status": data_confidence,
             "label": "Decision ready" if data_confidence == "decision_ready" else "Provisional",
             "reasons": [
                 reason for reason in [
-                    None if contextual_research_available else "Verified news, matchup and coach/beat-reporter research is not attached.",
+                    None if contextual_research_available else "No decision-grade current news, matchup or coach/beat-reporter report is attached; discovery headlines remain reading-only.",
                     None if current_performance_count else "NFL performance inputs are prior-season samples or market proxies.",
                     "Sleeper roster, lineup and availability fields are present."
                     if (data_health.get("sleeper") or {}).get("status") == "ok" else
@@ -1080,7 +1093,7 @@ def build_roster_intelligence_outputs(root: Path) -> tuple[dict[str, Any], dict[
             "sleeper_data_checked_at": data_health.get("generated_at"),
             "market_provider_timestamp": market_source.get("provider_timestamp"),
             "external_sync_generated_at": (player_intel.get("external_status") or {}).get("generated_at"),
-            "research_generated_at": research_raw.get("generated_at"),
+            "research_generated_at": research_raw.get("generated_at") or player_context.get("generated_at"),
             "player_context_generated_at": player_context.get("generated_at"),
             "performance_basis": performance_bases,
         },
@@ -1118,7 +1131,7 @@ def build_roster_intelligence_outputs(root: Path) -> tuple[dict[str, Any], dict[
                 "name": "Roster research",
                 "type": "news_matchup_coach_reporting",
                 "status": research_status,
-                "checked_at": research_raw.get("generated_at"),
+                "checked_at": research_raw.get("generated_at") or player_context.get("generated_at"),
                 "url": research_raw.get("source_url"),
             },
         ],
@@ -1137,7 +1150,7 @@ def build_roster_intelligence_outputs(root: Path) -> tuple[dict[str, Any], dict[
             "Player, roster-rank and tier movement is calculated from roster_intelligence_history.json.",
             "Lineup projections are evidence-weighted decision support and are not sportsbook projections.",
             "Current context adjustments are capped, time-decayed and retain their source evidence.",
-            "News and coach/beat-reporter sections remain empty unless verified structured research is supplied.",
+            "Discovery headlines are shown as research context but do not change projections unless promoted to a scored, attributable report.",
         ],
     }
 

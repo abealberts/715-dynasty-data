@@ -117,7 +117,11 @@ def manual_signals(raw: dict[str, Any], players: dict[str, Any], now: datetime) 
             "corroboration_count": max(1, int(number(row.get("corroboration_count"), 1))),
             "summary": summary,
             "origin": "curated_report",
+            "scored": bool(row.get("scored", True)),
         }
+        if not signal["scored"]:
+            signal["direction"] = 0.0
+            signal["magnitude"] = 0.0
         signal["weighted_score"] = signal_score(signal, now)
         signals.append(signal)
     return signals
@@ -174,10 +178,14 @@ def objective_signals(players: dict[str, Any], intel: dict[str, Any], now: datet
 
 def aggregate_player(player_id: str, signals: list[dict[str, Any]]) -> dict[str, Any]:
     rows = [signal for signal in signals if signal["player_id"] == player_id]
-    narrative = sum(s["weighted_score"] for s in rows if s["origin"] == "curated_report")
-    workload = sum(s["weighted_score"] for s in rows if s["impact"] == "workload")
+    actionable_rows = [signal for signal in rows if abs(signal["weighted_score"]) >= 0.0001]
+    narrative = sum(
+        s["weighted_score"] for s in actionable_rows
+        if s["origin"] == "curated_report" and s["impact"] not in {"workload", "availability"}
+    )
+    workload = sum(s["weighted_score"] for s in actionable_rows if s["impact"] == "workload")
     availability = 1.0
-    for signal in rows:
+    for signal in actionable_rows:
         if signal["impact"] != "availability" or signal["direction"] >= 0:
             continue
         status = signal["summary"].lower()
@@ -189,14 +197,16 @@ def aggregate_player(player_id: str, signals: list[dict[str, Any]]) -> dict[str,
     # Opportunity Scanner already scores Sleeper depth and injury fields. Only
     # new measured usage or curated reporting may adjust that baseline here.
     opportunity_evidence = sum(
-        s["weighted_score"] for s in rows if s["origin"] in {"measured_usage", "curated_report"}
+        s["weighted_score"] for s in actionable_rows if s["origin"] in {"measured_usage", "curated_report"}
     )
     opportunity_adjustment = round(max(-12.0, min(12.0, opportunity_evidence * 10)), 1)
-    confidence = "high" if any(s["reliability"] >= 0.9 for s in rows) else "medium" if rows else "low"
+    confidence = "high" if any(s["reliability"] >= 0.9 for s in actionable_rows) else "medium" if actionable_rows else "low"
     net_direction = "positive" if weekly_multiplier > 1.015 else "negative" if weekly_multiplier < 0.985 else "neutral"
     return {
         "player_id": player_id,
         "signal_count": len(rows),
+        "actionable_signal_count": len(actionable_rows),
+        "research_mention_count": len(rows) - len(actionable_rows),
         "weekly_multiplier": weekly_multiplier,
         "availability_probability": availability,
         "opportunity_score_adjustment": opportunity_adjustment,
@@ -238,6 +248,14 @@ def build_player_context_outputs(root: Path) -> dict[str, Any]:
             "players_with_signals": len(by_id),
             "objective_signals": sum(1 for signal in signals if signal["origin"] != "curated_report"),
             "curated_reports": sum(1 for signal in signals if signal["origin"] == "curated_report"),
+            "actionable_curated_reports": sum(
+                1 for signal in signals
+                if signal["origin"] == "curated_report" and abs(signal["weighted_score"]) >= 0.0001
+            ),
+            "research_mentions": sum(
+                1 for signal in signals
+                if signal["origin"] == "curated_report" and abs(signal["weighted_score"]) < 0.0001
+            ),
             "expired_or_invalid_reports_ignored": max(0, len(reports.get("signals") or []) - sum(1 for signal in signals if signal["origin"] == "curated_report")),
         },
         "source_status": {
