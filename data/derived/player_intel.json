@@ -40,7 +40,7 @@
       }
     }
   },
-  "generated_at": "2026-09-02T14:40:25.143779+00:00",
+  "generated_at": "2026-09-02T16:33:53.739383+00:00",
   "market_source": {
     "attribution": "Values by Dynasty Dealer",
     "name": "Dynasty Dealer",
@@ -80074,7 +80074,7 @@
     },
     {
       "age": 31,
-      "available": false,
+      "available": true,
       "depth_chart_order": 4,
       "injury_status": "IR",
       "market": {
@@ -80095,11 +80095,7 @@
       "market_rank": 254,
       "market_value": 2387,
       "name": "James Conner",
-      "ownership": {
-        "manager": "ryansorensen8",
-        "roster_id": 9,
-        "team_name": "Matt Prater"
-      },
+      "ownership": null,
       "performance": {
         "air_yards_share": -1.9,
         "basis": "prior",
@@ -92155,7 +92151,7 @@
     },
     {
       "age": 26,
-      "available": false,
+      "available": true,
       "depth_chart_order": null,
       "injury_status": "Questionable",
       "market": {
@@ -92176,11 +92172,7 @@
       "market_rank": 299,
       "market_value": 2137,
       "name": "Cedric Tillman",
-      "ownership": {
-        "manager": "NolanFarts",
-        "roster_id": 2,
-        "team_name": "Njigbas In Paris"
-      },
+      "ownership": null,
       "performance": {
         "air_yards_share": 15.4,
         "basis": "prior",
@@ -98239,7 +98231,7 @@
     },
     {
       "age": 25,
-      "available": true,
+      "available": false,
       "depth_chart_order": 2,
       "injury_status": null,
       "market": {
@@ -98260,7 +98252,11 @@
       "market_rank": 325,
       "market_value": 2026,
       "name": "Jacob Saylors",
-      "ownership": null,
+      "ownership": {
+        "manager": "NolanFarts",
+        "roster_id": 2,
+        "team_name": "Njigbas In Paris"
+      },
       "performance": {
         "air_yards_share": 0.0,
         "basis": "prior",
@@ -101044,7 +101040,7 @@
     },
     {
       "age": 25,
-      "available": true,
+      "available": false,
       "depth_chart_order": 3,
       "injury_status": null,
       "market": {
@@ -101065,7 +101061,11 @@
       "market_rank": 341,
       "market_value": 1915,
       "name": "DeMario Douglas",
-      "ownership": null,
+      "ownership": {
+        "manager": "ryansorensen8",
+        "roster_id": 9,
+        "team_name": "Matt Prater"
+      },
       "performance": {
         "air_yards_share": 9.5,
         "basis": "prior",
@@ -107933,7 +107933,7 @@
     },
     {
       "age": 24,
-      "available": true,
+      "available": false,
       "depth_chart_order": 2,
       "injury_status": "Questionable",
       "market": {
@@ -107954,7 +107954,11 @@
       "market_rank": 369,
       "market_value": 1687,
       "name": "Kendre Miller",
-      "ownership": null,
+      "ownership": {
+        "manager": "abewav",
+        "roster_id": 3,
+        "team_name": "Baskerville Bilge Rats"
+      },
       "performance": {
         "air_yards_share": -0.1,
         "basis": "prior",
@@ -108565,7 +108569,7 @@
     },
     {
       "age": 30,
-      "available": false,
+      "available": true,
       "depth_chart_order": 2,
       "injury_status": null,
       "market": {
@@ -108586,11 +108590,7 @@
       "market_rank": 373,
       "market_value": 1657,
       "name": "Samaje Perine",
-      "ownership": {
-        "manager": "abewav",
-        "roster_id": 3,
-        "team_name": "Baskerville Bilge Rats"
-      },
+      "ownership": null,
       "performance": {
         "air_yards_share": -0.9,
         "basis": "prior",
@@ -114159,7 +114159,7 @@
     },
     {
       "age": null,
-      "available": false,
+      "available": true,
       "depth_chart_order": null,
       "injury_status": "Questionable",
       "market": {
@@ -114180,11 +114180,7 @@
       "market_rank": 398,
       "market_value": 1076,
       "name": "Jam Miller",
-      "ownership": {
-        "manager": "Amelse",
-        "roster_id": 6,
-        "team_name": null
-      },
+      "ownership": null,
       "performance": null,
       "player_id": "13403",
       "position": "RB",
@@ -136017,7 +136013,7 @@
     },
     {
       "age": 23,
-      "available": true,
+      "available": false,
       "depth_chart_order": 9,
       "injury_status": null,
       "market": {
@@ -136038,7 +136034,11 @@
       "market_rank": 525,
       "market_value": 14,
       "name": "J. Michael Sturdivant",
-      "ownership": null,
+      "ownership": {
+        "manager": "Amelse",
+        "roster_id": 6,
+        "team_name": null
+      },
       "performance": null,
       "player_id": "13770",
       "position": "WR",
@@ -156556,22 +156556,6 @@
       "team": null
     },
     {
-      "age": 24,
-      "available": true,
-      "depth_chart_order": null,
-      "injury_status": null,
-      "market": null,
-      "market_position_rank": null,
-      "market_rank": null,
-      "market_value": 0,
-      "name": "Austin Allen",
-      "ownership": null,
-      "performance": null,
-      "player_id": "8215",
-      "position": "TE",
-      "team": null
-    },
-    {
       "age": 27,
       "available": true,
       "depth_chart_order": null,
@@ -156585,6 +156569,22 @@
       "performance": null,
       "player_id": "5286",
       "position": "QB",
+      "team": null
+    },
+    {
+      "age": 24,
+      "available": true,
+      "depth_chart_order": null,
+      "injury_status": null,
+      "market": null,
+      "market_position_rank": null,
+      "market_rank": null,
+      "market_value": 0,
+      "name": "Austin Allen",
+      "ownership": null,
+      "performance": null,
+      "player_id": "8215",
+      "position": "TE",
       "team": null
     },
     {
@@ -168295,22 +168295,6 @@
       "team": null
     },
     {
-      "age": null,
-      "available": true,
-      "depth_chart_order": null,
-      "injury_status": null,
-      "market": null,
-      "market_position_rank": null,
-      "market_rank": null,
-      "market_value": 0,
-      "name": "Cody Chrest",
-      "ownership": null,
-      "performance": null,
-      "player_id": "11284",
-      "position": "WR",
-      "team": null
-    },
-    {
       "age": 25,
       "available": true,
       "depth_chart_order": null,
@@ -168323,6 +168307,22 @@
       "ownership": null,
       "performance": null,
       "player_id": "11523",
+      "position": "WR",
+      "team": null
+    },
+    {
+      "age": null,
+      "available": true,
+      "depth_chart_order": null,
+      "injury_status": null,
+      "market": null,
+      "market_position_rank": null,
+      "market_rank": null,
+      "market_value": 0,
+      "name": "Cody Chrest",
+      "ownership": null,
+      "performance": null,
+      "player_id": "11284",
       "position": "WR",
       "team": null
     },
@@ -192375,22 +192375,6 @@
       "team": null
     },
     {
-      "age": 27,
-      "available": true,
-      "depth_chart_order": null,
-      "injury_status": null,
-      "market": null,
-      "market_position_rank": null,
-      "market_rank": null,
-      "market_value": 0,
-      "name": "John Lovett",
-      "ownership": null,
-      "performance": null,
-      "player_id": "6231",
-      "position": "QB",
-      "team": null
-    },
-    {
       "age": 23,
       "available": true,
       "depth_chart_order": null,
@@ -192404,6 +192388,22 @@
       "performance": null,
       "player_id": "8568",
       "position": "RB",
+      "team": null
+    },
+    {
+      "age": 27,
+      "available": true,
+      "depth_chart_order": null,
+      "injury_status": null,
+      "market": null,
+      "market_position_rank": null,
+      "market_rank": null,
+      "market_value": 0,
+      "name": "John Lovett",
+      "ownership": null,
+      "performance": null,
+      "player_id": "6231",
+      "position": "QB",
       "team": null
     },
     {
@@ -194157,6 +194157,22 @@
       "team": null
     },
     {
+      "age": 23,
+      "available": true,
+      "depth_chart_order": null,
+      "injury_status": null,
+      "market": null,
+      "market_position_rank": null,
+      "market_rank": null,
+      "market_value": 0,
+      "name": "Josh Johnson",
+      "ownership": null,
+      "performance": null,
+      "player_id": "8222",
+      "position": "WR",
+      "team": null
+    },
+    {
       "age": 40,
       "available": true,
       "depth_chart_order": null,
@@ -194325,22 +194341,6 @@
       "performance": null,
       "player_id": "8051",
       "position": "RB",
-      "team": null
-    },
-    {
-      "age": 23,
-      "available": true,
-      "depth_chart_order": null,
-      "injury_status": null,
-      "market": null,
-      "market_position_rank": null,
-      "market_rank": null,
-      "market_value": 0,
-      "name": "Josh Johnson",
-      "ownership": null,
-      "performance": null,
-      "player_id": "8222",
-      "position": "WR",
       "team": null
     },
     {
@@ -203841,22 +203841,6 @@
       "team": null
     },
     {
-      "age": 25,
-      "available": true,
-      "depth_chart_order": null,
-      "injury_status": null,
-      "market": null,
-      "market_position_rank": null,
-      "market_rank": null,
-      "market_value": 0,
-      "name": "Malik Williams",
-      "ownership": null,
-      "performance": null,
-      "player_id": "5144",
-      "position": "RB",
-      "team": null
-    },
-    {
       "age": 24,
       "available": true,
       "depth_chart_order": null,
@@ -203870,6 +203854,22 @@
       "performance": null,
       "player_id": "8770",
       "position": "WR",
+      "team": null
+    },
+    {
+      "age": 25,
+      "available": true,
+      "depth_chart_order": null,
+      "injury_status": null,
+      "market": null,
+      "market_position_rank": null,
+      "market_rank": null,
+      "market_value": 0,
+      "name": "Malik Williams",
+      "ownership": null,
+      "performance": null,
+      "player_id": "5144",
+      "position": "RB",
       "team": null
     },
     {
@@ -209349,22 +209349,6 @@
       "team": null
     },
     {
-      "age": 32,
-      "available": true,
-      "depth_chart_order": null,
-      "injury_status": null,
-      "market": null,
-      "market_position_rank": null,
-      "market_rank": null,
-      "market_value": 0,
-      "name": "Nick Williams",
-      "ownership": null,
-      "performance": null,
-      "player_id": "1604",
-      "position": "WR",
-      "team": "DEN"
-    },
-    {
       "age": null,
       "available": true,
       "depth_chart_order": null,
@@ -209379,6 +209363,22 @@
       "player_id": "11530",
       "position": "WR",
       "team": null
+    },
+    {
+      "age": 32,
+      "available": true,
+      "depth_chart_order": null,
+      "injury_status": null,
+      "market": null,
+      "market_position_rank": null,
+      "market_rank": null,
+      "market_value": 0,
+      "name": "Nick Williams",
+      "ownership": null,
+      "performance": null,
+      "player_id": "1604",
+      "position": "WR",
+      "team": "DEN"
     },
     {
       "age": 25,
@@ -214283,22 +214283,6 @@
       "team": null
     },
     {
-      "age": 26,
-      "available": true,
-      "depth_chart_order": null,
-      "injury_status": null,
-      "market": null,
-      "market_position_rank": null,
-      "market_rank": null,
-      "market_value": 0,
-      "name": "Ronald Jones",
-      "ownership": null,
-      "performance": null,
-      "player_id": "5052",
-      "position": "RB",
-      "team": null
-    },
-    {
       "age": 27,
       "available": true,
       "depth_chart_order": null,
@@ -214311,6 +214295,22 @@
       "ownership": null,
       "performance": null,
       "player_id": "4955",
+      "position": "RB",
+      "team": null
+    },
+    {
+      "age": 26,
+      "available": true,
+      "depth_chart_order": null,
+      "injury_status": null,
+      "market": null,
+      "market_position_rank": null,
+      "market_rank": null,
+      "market_value": 0,
+      "name": "Ronald Jones",
+      "ownership": null,
+      "performance": null,
+      "player_id": "5052",
       "position": "RB",
       "team": null
     },
@@ -215027,8 +215027,8 @@
       "name": "Ryan Griffin",
       "ownership": null,
       "performance": null,
-      "player_id": "1550",
-      "position": "QB",
+      "player_id": "1425",
+      "position": "TE",
       "team": null
     },
     {
@@ -215043,8 +215043,8 @@
       "name": "Ryan Griffin",
       "ownership": null,
       "performance": null,
-      "player_id": "1425",
-      "position": "TE",
+      "player_id": "1550",
+      "position": "QB",
       "team": null
     },
     {
@@ -222469,22 +222469,6 @@
       "team": null
     },
     {
-      "age": 27,
-      "available": true,
-      "depth_chart_order": null,
-      "injury_status": null,
-      "market": null,
-      "market_position_rank": null,
-      "market_rank": null,
-      "market_value": 0,
-      "name": "Tony Jones",
-      "ownership": null,
-      "performance": null,
-      "player_id": "6984",
-      "position": "RB",
-      "team": null
-    },
-    {
       "age": 32,
       "available": true,
       "depth_chart_order": null,
@@ -222498,6 +222482,22 @@
       "performance": null,
       "player_id": "2639",
       "position": "WR",
+      "team": null
+    },
+    {
+      "age": 27,
+      "available": true,
+      "depth_chart_order": null,
+      "injury_status": null,
+      "market": null,
+      "market_position_rank": null,
+      "market_rank": null,
+      "market_value": 0,
+      "name": "Tony Jones",
+      "ownership": null,
+      "performance": null,
+      "player_id": "6984",
+      "position": "RB",
       "team": null
     },
     {
@@ -234997,7 +234997,7 @@
     },
     "10444": {
       "age": 26,
-      "available": false,
+      "available": true,
       "depth_chart_order": null,
       "injury_status": "Questionable",
       "market": {
@@ -235018,11 +235018,7 @@
       "market_rank": 299,
       "market_value": 2137,
       "name": "Cedric Tillman",
-      "ownership": {
-        "manager": "NolanFarts",
-        "roster_id": 2,
-        "team_name": "Njigbas In Paris"
-      },
+      "ownership": null,
       "performance": {
         "air_yards_share": 15.4,
         "basis": "prior",
@@ -240632,7 +240628,7 @@
     },
     "11237": {
       "age": 25,
-      "available": true,
+      "available": false,
       "depth_chart_order": 2,
       "injury_status": null,
       "market": {
@@ -240653,7 +240649,11 @@
       "market_rank": 325,
       "market_value": 2026,
       "name": "Jacob Saylors",
-      "ownership": null,
+      "ownership": {
+        "manager": "NolanFarts",
+        "roster_id": 2,
+        "team_name": "Njigbas In Paris"
+      },
       "performance": {
         "air_yards_share": 0.0,
         "basis": "prior",
@@ -308582,7 +308582,7 @@
     },
     "13403": {
       "age": null,
-      "available": false,
+      "available": true,
       "depth_chart_order": null,
       "injury_status": "Questionable",
       "market": {
@@ -308603,11 +308603,7 @@
       "market_rank": 398,
       "market_value": 1076,
       "name": "Jam Miller",
-      "ownership": {
-        "manager": "Amelse",
-        "roster_id": 6,
-        "team_name": null
-      },
+      "ownership": null,
       "performance": null,
       "player_id": "13403",
       "position": "RB",
@@ -311010,7 +311006,7 @@
     },
     "13770": {
       "age": 23,
-      "available": true,
+      "available": false,
       "depth_chart_order": 9,
       "injury_status": null,
       "market": {
@@ -311031,7 +311027,11 @@
       "market_rank": 525,
       "market_value": 14,
       "name": "J. Michael Sturdivant",
-      "ownership": null,
+      "ownership": {
+        "manager": "Amelse",
+        "roster_id": 6,
+        "team_name": null
+      },
       "performance": null,
       "player_id": "13770",
       "position": "WR",
@@ -337679,7 +337679,7 @@
     },
     "4137": {
       "age": 31,
-      "available": false,
+      "available": true,
       "depth_chart_order": 4,
       "injury_status": "IR",
       "market": {
@@ -337700,11 +337700,7 @@
       "market_rank": 254,
       "market_value": 2387,
       "name": "James Conner",
-      "ownership": {
-        "manager": "ryansorensen8",
-        "roster_id": 9,
-        "team_name": "Matt Prater"
-      },
+      "ownership": null,
       "performance": {
         "air_yards_share": -1.9,
         "basis": "prior",
@@ -338307,7 +338303,7 @@
     },
     "4147": {
       "age": 30,
-      "available": false,
+      "available": true,
       "depth_chart_order": 2,
       "injury_status": null,
       "market": {
@@ -338328,11 +338324,7 @@
       "market_rank": 373,
       "market_value": 1657,
       "name": "Samaje Perine",
-      "ownership": {
-        "manager": "abewav",
-        "roster_id": 3,
-        "team_name": "Baskerville Bilge Rats"
-      },
+      "ownership": null,
       "performance": {
         "air_yards_share": -0.9,
         "basis": "prior",
@@ -452086,7 +452078,7 @@
     },
     "9501": {
       "age": 25,
-      "available": true,
+      "available": false,
       "depth_chart_order": 3,
       "injury_status": null,
       "market": {
@@ -452107,7 +452099,11 @@
       "market_rank": 341,
       "market_value": 1915,
       "name": "DeMario Douglas",
-      "ownership": null,
+      "ownership": {
+        "manager": "ryansorensen8",
+        "roster_id": 9,
+        "team_name": "Matt Prater"
+      },
       "performance": {
         "air_yards_share": 9.5,
         "basis": "prior",
@@ -456272,7 +456268,7 @@
     },
     "9757": {
       "age": 24,
-      "available": true,
+      "available": false,
       "depth_chart_order": 2,
       "injury_status": "Questionable",
       "market": {
@@ -456293,7 +456289,11 @@
       "market_rank": 369,
       "market_value": 1687,
       "name": "Kendre Miller",
-      "ownership": null,
+      "ownership": {
+        "manager": "abewav",
+        "roster_id": 3,
+        "team_name": "Baskerville Bilge Rats"
+      },
       "performance": {
         "air_yards_share": -0.1,
         "basis": "prior",
