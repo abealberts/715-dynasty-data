@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-05T11:53:10.426225+00:00",
+  "generated_at": "2026-09-05T12:01:03.199906+00:00",
   "league_position_averages": {
     "QB": 4.92,
     "RB": 7.42,
     "TE": 3.75,
-    "WR": 10.83
+    "WR": 10.75
   },
   "market_attribution": "Values by Dynasty Dealer — https://www.dynastydealer.com/",
   "methodology": "Roster-shape heuristic only. Needs/surpluses compare position counts with league averages and practical depth targets; player quality is not included. Phase 4.6 also layers Dynasty Dealer position-market scores onto count-based needs/surpluses; low-value rooms can register as needs even when the raw player count is adequate.",
@@ -28,13 +28,13 @@
           "QB": 32.2,
           "RB": 84.6,
           "TE": 67.7,
-          "WR": 76.4
+          "WR": 60.1
         },
         "position_values": {
           "QB": 16969,
           "RB": 33452,
           "TE": 15568,
-          "WR": 42877
+          "WR": 39386
         },
         "roster_id": 1,
         "roster_market_score": 65.8,
@@ -44,7 +44,13 @@
         "total_market_score": 90.1,
         "total_market_value": 108866
       },
-      "needs": [],
+      "needs": [
+        {
+          "label": "below avg",
+          "position": "WR",
+          "strength": 0.75
+        }
+      ],
       "pick_summary": {
         "by_round": {
           "1": 0,
@@ -103,16 +109,16 @@
           "target": 2
         },
         "WR": {
-          "count": 11,
-          "delta_vs_average": 0.17,
-          "label": "balanced",
-          "league_average": 10.83,
-          "market_score": 76.4,
-          "market_value": 42877,
-          "need_strength": 0.0,
-          "quality_label": "market-deep",
+          "count": 10,
+          "delta_vs_average": -0.75,
+          "label": "below avg",
+          "league_average": 10.75,
+          "market_score": 60.1,
+          "market_value": 39386,
+          "need_strength": 0.75,
+          "quality_label": "market-balanced",
           "starters": 4,
-          "surplus_strength": 0.17,
+          "surplus_strength": 0.0,
           "target": 7
         }
       },
@@ -122,11 +128,6 @@
           "label": "market-deep",
           "position": "RB",
           "strength": 2.77
-        },
-        {
-          "label": "market-deep",
-          "position": "WR",
-          "strength": 2.11
         }
       ],
       "team_name": null
@@ -233,15 +234,15 @@
         },
         "WR": {
           "count": 14,
-          "delta_vs_average": 3.17,
+          "delta_vs_average": 3.25,
           "label": "deep",
-          "league_average": 10.83,
+          "league_average": 10.75,
           "market_score": 85.6,
           "market_value": 44844,
           "need_strength": 0.0,
           "quality_label": "market-deep",
           "starters": 3,
-          "surplus_strength": 3.17,
+          "surplus_strength": 3.25,
           "target": 7
         }
       },
@@ -250,7 +251,7 @@
         {
           "label": "deep",
           "position": "WR",
-          "strength": 3.17
+          "strength": 3.25
         },
         {
           "label": "market-deep",
@@ -293,7 +294,7 @@
         {
           "label": "thin",
           "position": "WR",
-          "strength": 2.83
+          "strength": 2.75
         }
       ],
       "pick_summary": {
@@ -357,12 +358,12 @@
         },
         "WR": {
           "count": 8,
-          "delta_vs_average": -2.83,
+          "delta_vs_average": -2.75,
           "label": "thin",
-          "league_average": 10.83,
+          "league_average": 10.75,
           "market_score": 20.7,
           "market_value": 30937,
-          "need_strength": 2.83,
+          "need_strength": 2.75,
           "quality_label": "market-thin",
           "starters": 4,
           "surplus_strength": 0.0,
@@ -486,15 +487,15 @@
         },
         "WR": {
           "count": 11,
-          "delta_vs_average": 0.17,
+          "delta_vs_average": 0.25,
           "label": "balanced",
-          "league_average": 10.83,
+          "league_average": 10.75,
           "market_score": 100.0,
           "market_value": 47944,
           "need_strength": 0.0,
           "quality_label": "market-deep",
           "starters": 4,
-          "surplus_strength": 0.17,
+          "surplus_strength": 0.25,
           "target": 7
         }
       },
@@ -546,7 +547,7 @@
         {
           "label": "thin",
           "position": "WR",
-          "strength": 1.83
+          "strength": 1.75
         },
         {
           "label": "below avg",
@@ -615,12 +616,12 @@
         },
         "WR": {
           "count": 9,
-          "delta_vs_average": -1.83,
+          "delta_vs_average": -1.75,
           "label": "thin",
-          "league_average": 10.83,
+          "league_average": 10.75,
           "market_score": 72.5,
           "market_value": 42044,
-          "need_strength": 1.83,
+          "need_strength": 1.75,
           "quality_label": "market-deep",
           "starters": 4,
           "surplus_strength": 0.0,
@@ -680,7 +681,7 @@
         {
           "label": "thin",
           "position": "WR",
-          "strength": 1.83
+          "strength": 1.75
         },
         {
           "label": "below avg",
@@ -749,12 +750,12 @@
         },
         "WR": {
           "count": 9,
-          "delta_vs_average": -1.83,
+          "delta_vs_average": -1.75,
           "label": "thin",
-          "league_average": 10.83,
+          "league_average": 10.75,
           "market_score": 63.4,
           "market_value": 40092,
-          "need_strength": 1.83,
+          "need_strength": 1.75,
           "quality_label": "market-balanced",
           "starters": 4,
           "surplus_strength": 0.0,
@@ -878,15 +879,15 @@
         },
         "WR": {
           "count": 13,
-          "delta_vs_average": 2.17,
+          "delta_vs_average": 2.25,
           "label": "deep",
-          "league_average": 10.83,
+          "league_average": 10.75,
           "market_score": 69.3,
           "market_value": 41357,
           "need_strength": 0.0,
           "quality_label": "market-balanced",
           "starters": 3,
-          "surplus_strength": 2.17,
+          "surplus_strength": 2.25,
           "target": 7
         }
       },
@@ -895,7 +896,7 @@
         {
           "label": "deep",
           "position": "WR",
-          "strength": 2.17
+          "strength": 2.25
         }
       ],
       "team_name": null
@@ -997,15 +998,15 @@
         },
         "WR": {
           "count": 11,
-          "delta_vs_average": 0.17,
+          "delta_vs_average": 0.25,
           "label": "balanced",
-          "league_average": 10.83,
+          "league_average": 10.75,
           "market_score": 56.6,
           "market_value": 38637,
           "need_strength": 0.0,
           "quality_label": "market-balanced",
           "starters": 0,
-          "surplus_strength": 0.17,
+          "surplus_strength": 0.25,
           "target": 7
         }
       },
@@ -1110,15 +1111,15 @@
         },
         "WR": {
           "count": 14,
-          "delta_vs_average": 3.17,
+          "delta_vs_average": 3.25,
           "label": "deep",
-          "league_average": 10.83,
+          "league_average": 10.75,
           "market_score": 37.0,
           "market_value": 34437,
           "need_strength": 0.0,
           "quality_label": "market-balanced",
           "starters": 3,
-          "surplus_strength": 3.17,
+          "surplus_strength": 3.25,
           "target": 7
         }
       },
@@ -1127,7 +1128,7 @@
         {
           "label": "deep",
           "position": "WR",
-          "strength": 3.17
+          "strength": 3.25
         },
         {
           "label": "market-deep",
@@ -1232,15 +1233,15 @@
         },
         "WR": {
           "count": 11,
-          "delta_vs_average": 0.17,
+          "delta_vs_average": 0.25,
           "label": "balanced",
-          "league_average": 10.83,
+          "league_average": 10.75,
           "market_score": 52.9,
           "market_value": 37836,
           "need_strength": 0.0,
           "quality_label": "market-balanced",
           "starters": 3,
-          "surplus_strength": 0.17,
+          "surplus_strength": 0.25,
           "target": 7
         }
       },
@@ -1351,12 +1352,12 @@
         },
         "WR": {
           "count": 7,
-          "delta_vs_average": -3.83,
+          "delta_vs_average": -3.75,
           "label": "thin",
-          "league_average": 10.83,
+          "league_average": 10.75,
           "market_score": 0.0,
           "market_value": 26488,
-          "need_strength": 3.83,
+          "need_strength": 3.75,
           "quality_label": "market-thin",
           "starters": 3,
           "surplus_strength": 0.0,
@@ -1477,15 +1478,15 @@
         },
         "WR": {
           "count": 12,
-          "delta_vs_average": 1.17,
-          "label": "above avg",
-          "league_average": 10.83,
+          "delta_vs_average": 1.25,
+          "label": "deep",
+          "league_average": 10.75,
           "market_score": 89.9,
           "market_value": 45767,
           "need_strength": 0.0,
           "quality_label": "market-deep",
           "starters": 4,
-          "surplus_strength": 1.17,
+          "surplus_strength": 1.25,
           "target": 7
         }
       },
