@@ -28,42 +28,16 @@
       "urgency": "Before lineup lock"
     },
     {
-      "category": "Availability",
+      "category": "Lineup",
       "confidence": "medium",
-      "cost_or_cut": "No transaction required unless the final designation changes roster-slot options.",
+      "cost_or_cut": "Bench Jaylen Waddle; no roster transaction required.",
       "priority": 5,
-      "projected_advantage": null,
-      "rationale": "Sleeper lists Kendre Miller as Questionable; no decision-grade current availability report is attached.",
-      "recommendation": "Confirm the official game designation and keep a legal pivot available.",
-      "risk": "Sleeper status alone does not establish expected availability or workload.",
-      "title": "Verify Kendre Miller before lock",
-      "upside": "A prepared pivot protects the lineup from a zero or limited role.",
-      "urgency": "Before lineup lock"
-    },
-    {
-      "category": "Availability",
-      "confidence": "medium",
-      "cost_or_cut": "No transaction required unless the final designation changes roster-slot options.",
-      "priority": 5,
-      "projected_advantage": null,
-      "rationale": "Sleeper lists Sam LaPorta as Questionable; no decision-grade current availability report is attached.",
-      "recommendation": "Confirm the official game designation and keep a legal pivot available.",
-      "risk": "Sleeper status alone does not establish expected availability or workload.",
-      "title": "Verify Sam LaPorta before lock",
-      "upside": "A prepared pivot protects the lineup from a zero or limited role.",
-      "urgency": "Before lineup lock"
-    },
-    {
-      "category": "Availability",
-      "confidence": "medium",
-      "cost_or_cut": "No transaction required unless the final designation changes roster-slot options.",
-      "priority": 5,
-      "projected_advantage": null,
-      "rationale": "Sleeper lists Tyrone Tracy as Questionable; no decision-grade current availability report is attached.",
-      "recommendation": "Confirm the official game designation and keep a legal pivot available.",
-      "risk": "Sleeper status alone does not establish expected availability or workload.",
-      "title": "Verify Tyrone Tracy before lock",
-      "upside": "A prepared pivot protects the lineup from a zero or limited role.",
+      "projected_advantage": 2.1,
+      "rationale": "Sam LaPorta carries the stronger evidence projection (12.29 vs 10.19). The model prefers this swap, but the incoming player's case relies on prior-season or proxy evidence and is not actionable without current confirmation.",
+      "recommendation": "Keep the submitted starter unless current role, matchup and availability evidence confirms the model preference.",
+      "risk": "The report does not yet contain verified current matchup or beat-report context.",
+      "title": "Research Sam LaPorta vs Jaylen Waddle",
+      "upside": "The evidence model adds approximately 2.1 points if its role assumptions hold.",
       "urgency": "Before lineup lock"
     },
     {
@@ -89,7 +63,7 @@
     "current_season_performance_samples": 0,
     "market_values": 27,
     "news_players": 27,
-    "objective_context_signals": 30,
+    "objective_context_signals": 27,
     "performance_samples": 24,
     "research_mentions": 295,
     "research_status": "available",
@@ -109,11 +83,11 @@
     "performance_basis": [
       "2025"
     ],
-    "player_context_generated_at": "2026-09-10T12:58:46.952012+00:00",
-    "research_generated_at": "2026-09-10T12:58:46.952012+00:00",
-    "sleeper_data_checked_at": "2026-09-10T12:58:47.290716+00:00"
+    "player_context_generated_at": "2026-09-10T13:06:05.857177+00:00",
+    "research_generated_at": "2026-09-10T13:06:05.857177+00:00",
+    "sleeper_data_checked_at": "2026-09-10T13:06:06.199466+00:00"
   },
-  "generated_at": "2026-09-10T12:58:47.877554+00:00",
+  "generated_at": "2026-09-10T13:06:06.799422+00:00",
   "lineup": {
     "actionable_projected_advantage": 0,
     "changes": [
@@ -130,11 +104,22 @@
       },
       {
         "current_decision_evidence": false,
+        "decision": "research_required",
+        "decision_reason": "The model prefers this swap, but the incoming player's case relies on prior-season or proxy evidence and is not actionable without current confirmation.",
+        "explanation": "Sam LaPorta carries the stronger evidence projection (12.29 vs 10.19).",
+        "projected_advantage": 2.1,
+        "sit": "Jaylen Waddle",
+        "sit_confidence": "medium",
+        "start": "Sam LaPorta",
+        "start_confidence": "medium"
+      },
+      {
+        "current_decision_evidence": false,
         "decision": "hold_current",
         "decision_reason": "The modeled edge is below the two-point change threshold; keep the submitted starter.",
-        "explanation": "Courtland Sutton carries the stronger evidence projection (12.06 vs 10.19).",
-        "projected_advantage": 1.87,
-        "sit": "Jaylen Waddle",
+        "explanation": "Courtland Sutton carries the stronger evidence projection (12.06 vs 11.12).",
+        "projected_advantage": 0.94,
+        "sit": "Terry McLaurin",
         "sit_confidence": "medium",
         "start": "Courtland Sutton",
         "start_confidence": "medium"
@@ -350,6 +335,21 @@
         "confidence": "medium",
         "current_decision_evidence": false,
         "injury_status": null,
+        "name": "Justin Jefferson",
+        "player_id": "6794",
+        "position": "WR",
+        "projected_ceiling": 15.2,
+        "projected_floor": 7.9,
+        "projected_points": 12.68,
+        "projection_basis": "2025 715 PPG blended with recent form; current context multiplier 1.026 applied",
+        "slot": "WR",
+        "slot_label": "WR2",
+        "team": "MIN"
+      },
+      {
+        "confidence": "medium",
+        "current_decision_evidence": false,
+        "injury_status": null,
         "name": "Courtland Sutton",
         "player_id": "5045",
         "position": "WR",
@@ -358,23 +358,23 @@
         "projected_points": 12.06,
         "projection_basis": "2025 715 PPG blended with recent form; current context multiplier 1.013 applied",
         "slot": "WR",
-        "slot_label": "WR2",
+        "slot_label": "WR3",
         "team": "DEN"
       },
       {
         "confidence": "medium",
         "current_decision_evidence": false,
         "injury_status": null,
-        "name": "Terry McLaurin",
-        "player_id": "5927",
-        "position": "WR",
-        "projected_ceiling": 14.8,
-        "projected_floor": 8.5,
-        "projected_points": 11.12,
+        "name": "Sam LaPorta",
+        "player_id": "10859",
+        "position": "TE",
+        "projected_ceiling": 16.9,
+        "projected_floor": 7.1,
+        "projected_points": 12.29,
         "projection_basis": "2025 715 PPG blended with recent form; current context multiplier 1.026 applied",
-        "slot": "WR",
-        "slot_label": "WR3",
-        "team": "WAS"
+        "slot": "TE",
+        "slot_label": "TE",
+        "team": "DET"
       },
       {
         "confidence": "medium",
@@ -387,24 +387,9 @@
         "projected_floor": 8.6,
         "projected_points": 12.86,
         "projection_basis": "2025 715 PPG blended with recent form; current context multiplier 1.026 applied",
-        "slot": "TE",
-        "slot_label": "TE",
-        "team": "CLE"
-      },
-      {
-        "confidence": "medium",
-        "current_decision_evidence": false,
-        "injury_status": null,
-        "name": "Justin Jefferson",
-        "player_id": "6794",
-        "position": "WR",
-        "projected_ceiling": 15.2,
-        "projected_floor": 7.9,
-        "projected_points": 12.68,
-        "projection_basis": "2025 715 PPG blended with recent form; current context multiplier 1.026 applied",
         "slot": "FLEX",
         "slot_label": "FLEX",
-        "team": "MIN"
+        "team": "CLE"
       },
       {
         "confidence": "medium",
@@ -422,8 +407,8 @@
         "team": "TB"
       }
     ],
-    "optimized_projected_points": 130.1,
-    "projected_advantage": 11.13,
+    "optimized_projected_points": 131.27,
+    "projected_advantage": 12.3,
     "status": "provisional"
   },
   "movement": [
@@ -774,7 +759,7 @@
                     "origin": "sleeper",
                     "player_id": "11566",
                     "player_name": "Jayden Daniels",
-                    "published_at": "2026-09-10T12:58:46.952012+00:00",
+                    "published_at": "2026-09-10T13:06:05.857177+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-11566",
                     "source": "Sleeper depth chart",
@@ -1309,7 +1294,7 @@
                     "origin": "sleeper",
                     "player_id": "4892",
                     "player_name": "Baker Mayfield",
-                    "published_at": "2026-09-10T12:58:46.952012+00:00",
+                    "published_at": "2026-09-10T13:06:05.857177+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-4892",
                     "source": "Sleeper depth chart",
@@ -1967,7 +1952,7 @@
                     "origin": "sleeper",
                     "player_id": "8161",
                     "player_name": "Malik Willis",
-                    "published_at": "2026-09-10T12:58:46.952012+00:00",
+                    "published_at": "2026-09-10T13:06:05.857177+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-8161",
                     "source": "Sleeper depth chart",
@@ -2434,7 +2419,7 @@
                     "origin": "sleeper",
                     "player_id": "12524",
                     "player_name": "Shedeur Sanders",
-                    "published_at": "2026-09-10T12:58:46.952012+00:00",
+                    "published_at": "2026-09-10T13:06:05.857177+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-12524",
                     "source": "Sleeper depth chart",
@@ -2850,7 +2835,7 @@
                     "origin": "sleeper",
                     "player_id": "96",
                     "player_name": "Aaron Rodgers",
-                    "published_at": "2026-09-10T12:58:46.952012+00:00",
+                    "published_at": "2026-09-10T13:06:05.857177+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-96",
                     "source": "Sleeper depth chart",
@@ -3349,7 +3334,7 @@
                     "origin": "sleeper",
                     "player_id": "13306",
                     "player_name": "Taylen Green",
-                    "published_at": "2026-09-10T12:58:46.952012+00:00",
+                    "published_at": "2026-09-10T13:06:05.857177+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-13306",
                     "source": "Sleeper depth chart",
@@ -3893,7 +3878,7 @@
                     "origin": "sleeper",
                     "player_id": "8138",
                     "player_name": "James Cook",
-                    "published_at": "2026-09-10T12:58:46.952012+00:00",
+                    "published_at": "2026-09-10T13:06:05.857177+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-8138",
                     "source": "Sleeper depth chart",
@@ -4308,7 +4293,7 @@
                     "origin": "sleeper",
                     "player_id": "13345",
                     "player_name": "Jonah Coleman",
-                    "published_at": "2026-09-10T12:58:46.952012+00:00",
+                    "published_at": "2026-09-10T13:06:05.857177+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-13345",
                     "source": "Sleeper depth chart",
@@ -4750,7 +4735,7 @@
                     "origin": "sleeper",
                     "player_id": "8228",
                     "player_name": "Jaylen Warren",
-                    "published_at": "2026-09-10T12:58:46.952012+00:00",
+                    "published_at": "2026-09-10T13:06:05.857177+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-8228",
                     "source": "Sleeper depth chart",
@@ -5337,7 +5322,7 @@
                     "origin": "sleeper",
                     "player_id": "7021",
                     "player_name": "Rico Dowdle",
-                    "published_at": "2026-09-10T12:58:46.952012+00:00",
+                    "published_at": "2026-09-10T13:06:05.857177+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-7021",
                     "source": "Sleeper depth chart",
@@ -5804,7 +5789,7 @@
                     "origin": "sleeper",
                     "player_id": "11581",
                     "player_name": "MarShawn Lloyd",
-                    "published_at": "2026-09-10T12:58:46.952012+00:00",
+                    "published_at": "2026-09-10T13:06:05.857177+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-11581",
                     "source": "Sleeper depth chart",
@@ -5834,7 +5819,7 @@
                     "ttl_days": 7,
                     "type": "injury",
                     "url": "https://www.rotowire.com//football/player/marshawn-lloyd-17795",
-                    "weighted_score": -0.1964
+                    "weighted_score": -0.1962
                   },
                   {
                     "corroboration_count": 1,
@@ -6045,7 +6030,7 @@
                   "source": "RotoWire NFL Player News / Weston Hodkiewicz of the Packers' official site",
                   "text": "MarShawn Lloyd: Set to be included in committee",
                   "url": "https://www.rotowire.com//football/player/marshawn-lloyd-17795",
-                  "weighted_score": -0.1964
+                  "weighted_score": -0.1962
                 },
                 {
                   "event_date": null,
@@ -6186,7 +6171,7 @@
                     "origin": "sleeper",
                     "player_id": "12474",
                     "player_name": "Woody Marks",
-                    "published_at": "2026-09-10T12:58:46.952012+00:00",
+                    "published_at": "2026-09-10T13:06:05.857177+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-12474",
                     "source": "Sleeper depth chart",
@@ -6595,7 +6580,7 @@
                 {
                   "label": "Role",
                   "source": "Sleeper",
-                  "value": "Depth 2 · NYG"
+                  "value": "Depth 3 · NYG"
                 },
                 {
                   "label": "Market",
@@ -6609,57 +6594,36 @@
                 }
               ],
               "catalysts": [
-                "A top-two depth-chart position creates a direct path to added opportunity.",
                 "Recent opportunity is up 5.4 per game against the broader sample."
               ],
               "coach_beat_reporter_information": [],
               "context": {
-                "actionable_signal_count": 2,
-                "availability_probability": 0.85,
+                "actionable_signal_count": 1,
+                "availability_probability": 1.0,
                 "confidence": "medium",
                 "net_direction": "negative",
                 "research_mention_count": 12,
-                "signal_count": 14,
+                "signal_count": 13,
                 "signals": [
                   {
                     "corroboration_count": 1,
                     "direction": -1,
                     "event_date": null,
-                    "impact": "availability",
+                    "impact": "workload",
                     "magnitude": 2,
                     "origin": "sleeper",
                     "player_id": "11655",
                     "player_name": "Tyrone Tracy",
-                    "published_at": "2026-09-10T12:58:46.952012+00:00",
-                    "reliability": 0.82,
-                    "signal_id": "sleeper-injury-11655",
-                    "source": "Sleeper player status",
-                    "source_type": "official",
-                    "summary": "Sleeper lists Tyrone Tracy as Questionable.",
-                    "ttl_days": 2,
-                    "type": "injury",
-                    "url": null,
-                    "weighted_score": -0.328
-                  },
-                  {
-                    "corroboration_count": 1,
-                    "direction": 1,
-                    "event_date": null,
-                    "impact": "workload",
-                    "magnitude": 1,
-                    "origin": "sleeper",
-                    "player_id": "11655",
-                    "player_name": "Tyrone Tracy",
-                    "published_at": "2026-09-10T12:58:46.952012+00:00",
+                    "published_at": "2026-09-10T13:06:05.857177+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-11655",
                     "source": "Sleeper depth chart",
                     "source_type": "team",
-                    "summary": "Current Sleeper depth-chart order is 2.",
+                    "summary": "Current Sleeper depth-chart order is 3.",
                     "ttl_days": 3,
                     "type": "depth_chart",
                     "url": null,
-                    "weighted_score": 0.13
+                    "weighted_score": -0.26
                   },
                   {
                     "corroboration_count": 1,
@@ -6914,7 +6878,7 @@
                     "weighted_score": 0.0
                   }
                 ],
-                "weekly_multiplier": 0.861
+                "weekly_multiplier": 0.974
               },
               "current_fantasy_value": {
                 "market_position_rank": 58,
@@ -6922,16 +6886,16 @@
                 "market_value": 2628,
                 "projection": {
                   "baseline_points": 12.15,
-                  "basis": "2025 715 PPG blended with recent form; current context multiplier 0.861 applied",
-                  "ceiling": 10.5,
+                  "basis": "2025 715 PPG blended with recent form; current context multiplier 0.974 applied",
+                  "ceiling": 11.83,
                   "confidence": "medium",
-                  "context_adjustment_points": -1.69,
-                  "context_multiplier": 0.861,
+                  "context_adjustment_points": -0.32,
+                  "context_multiplier": 0.974,
                   "current_decision_evidence": false,
-                  "floor": 5.8,
+                  "floor": 6.5,
                   "model_type": "evidence_estimate",
                   "performance_basis": "prior",
-                  "points": 10.46
+                  "points": 11.83
                 }
               },
               "current_starter": false,
@@ -6940,24 +6904,23 @@
                   "label": "Flexible depth asset",
                   "summary": "Market value 2,628 and position rank #58; age 26 shapes the liquidity and time-horizon risk."
                 },
-                "recommended_stance": "Monitor availability",
+                "recommended_stance": "Hold / monitor role",
                 "rest_of_season": {
                   "label": "Role sensitive",
                   "summary": "The 2025 sample shows 14.93 opportunities/game and 54.5% snaps."
                 },
                 "weekly": {
-                  "label": "Availability watch",
-                  "summary": "Evidence range 5.8–10.5 with medium confidence; current matchup research is unavailable."
+                  "label": "Depth",
+                  "summary": "Evidence range 6.5–11.83 with medium confidence; current matchup research is unavailable."
                 }
               },
-              "depth_chart_order": 2,
-              "injury_body_part": "Neck",
-              "injury_status": "Questionable",
+              "depth_chart_order": 3,
+              "injury_body_part": null,
+              "injury_status": null,
               "key_evidence": [
                 "Dynasty Dealer value 2,628; position rank #58.",
                 "2025 sample: 10.72 PPG, 14.93 opportunities/game, 54.5% snaps.",
-                "Sleeper depth-chart order: 2.",
-                "Sleeper availability: Questionable (Neck)."
+                "Sleeper depth-chart order: 3."
               ],
               "movement": {
                 "has_previous": true,
@@ -6969,15 +6932,6 @@
               },
               "name": "Tyrone Tracy",
               "news": [
-                {
-                  "event_date": null,
-                  "published_at": "2026-09-10T12:58:46.952012+00:00",
-                  "signal_type": "injury",
-                  "source": "Sleeper player status",
-                  "text": "Sleeper lists Tyrone Tracy as Questionable.",
-                  "url": null,
-                  "weighted_score": -0.328
-                },
                 {
                   "event_date": null,
                   "published_at": "2026-09-05T16:00:05+00:00",
@@ -7091,17 +7045,17 @@
               "player_id": "11655",
               "position": "RB",
               "position_rank_on_roster": 7,
-              "recommended_stance": "Monitor availability",
+              "recommended_stance": "Hold / monitor role",
               "research_coverage": {
                 "coach_beat_reporter": false,
                 "news": true
               },
               "risk_factors": [
-                "Current Questionable designation creates availability risk."
+                "The current depth-chart path requires movement ahead of the player."
               ],
               "speculative_outlook": {
-                "label": "Monitor",
-                "summary": "Availability is the immediate swing factor (Questionable); recheck status before lineup lock."
+                "label": "Speculative",
+                "summary": "Depth-chart movement, usage growth or a market catalyst is needed for a meaningful value jump."
               },
               "status": "Active",
               "team": "NYG",
@@ -7159,7 +7113,7 @@
                     "origin": "sleeper",
                     "player_id": "11575",
                     "player_name": "Ray Davis",
-                    "published_at": "2026-09-10T12:58:46.952012+00:00",
+                    "published_at": "2026-09-10T13:06:05.857177+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-11575",
                     "source": "Sleeper depth chart",
@@ -7625,7 +7579,7 @@
                 {
                   "label": "Role",
                   "source": "Sleeper",
-                  "value": "Depth 2 · NO"
+                  "value": "Depth 3 · NO"
                 },
                 {
                   "label": "Market",
@@ -7639,57 +7593,36 @@
                 }
               ],
               "catalysts": [
-                "Youth leaves room for role growth and market appreciation.",
-                "A top-two depth-chart position creates a direct path to added opportunity."
+                "Youth leaves room for role growth and market appreciation."
               ],
               "coach_beat_reporter_information": [],
               "context": {
-                "actionable_signal_count": 2,
-                "availability_probability": 0.85,
+                "actionable_signal_count": 1,
+                "availability_probability": 1.0,
                 "confidence": "medium",
                 "net_direction": "negative",
                 "research_mention_count": 6,
-                "signal_count": 8,
+                "signal_count": 7,
                 "signals": [
                   {
                     "corroboration_count": 1,
                     "direction": -1,
                     "event_date": null,
-                    "impact": "availability",
+                    "impact": "workload",
                     "magnitude": 2,
                     "origin": "sleeper",
                     "player_id": "9757",
                     "player_name": "Kendre Miller",
-                    "published_at": "2026-09-10T12:58:46.952012+00:00",
-                    "reliability": 0.82,
-                    "signal_id": "sleeper-injury-9757",
-                    "source": "Sleeper player status",
-                    "source_type": "official",
-                    "summary": "Sleeper lists Kendre Miller as Questionable.",
-                    "ttl_days": 2,
-                    "type": "injury",
-                    "url": null,
-                    "weighted_score": -0.328
-                  },
-                  {
-                    "corroboration_count": 1,
-                    "direction": 1,
-                    "event_date": null,
-                    "impact": "workload",
-                    "magnitude": 1,
-                    "origin": "sleeper",
-                    "player_id": "9757",
-                    "player_name": "Kendre Miller",
-                    "published_at": "2026-09-10T12:58:46.952012+00:00",
+                    "published_at": "2026-09-10T13:06:05.857177+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-9757",
                     "source": "Sleeper depth chart",
                     "source_type": "team",
-                    "summary": "Current Sleeper depth-chart order is 2.",
+                    "summary": "Current Sleeper depth-chart order is 3.",
                     "ttl_days": 3,
                     "type": "depth_chart",
                     "url": null,
-                    "weighted_score": 0.13
+                    "weighted_score": -0.26
                   },
                   {
                     "corroboration_count": 1,
@@ -7818,7 +7751,7 @@
                     "weighted_score": 0.0
                   }
                 ],
-                "weekly_multiplier": 0.861
+                "weekly_multiplier": 0.974
               },
               "current_fantasy_value": {
                 "market_position_rank": 98,
@@ -7826,16 +7759,16 @@
                 "market_value": 1832,
                 "projection": {
                   "baseline_points": 4.35,
-                  "basis": "2025 715 PPG blended with recent form; current context multiplier 0.861 applied",
-                  "ceiling": 4.8,
+                  "basis": "2025 715 PPG blended with recent form; current context multiplier 0.974 applied",
+                  "ceiling": 5.5,
                   "confidence": "medium",
-                  "context_adjustment_points": -0.61,
-                  "context_multiplier": 0.861,
+                  "context_adjustment_points": -0.11,
+                  "context_multiplier": 0.974,
                   "current_decision_evidence": false,
-                  "floor": 2.1,
+                  "floor": 2.3,
                   "model_type": "evidence_estimate",
                   "performance_basis": "prior",
-                  "points": 3.75
+                  "points": 4.24
                 }
               },
               "current_starter": false,
@@ -7844,24 +7777,23 @@
                   "label": "Development hold",
                   "summary": "Market value 1,832 and position rank #98; age 24 shapes the liquidity and time-horizon risk."
                 },
-                "recommended_stance": "Monitor availability",
+                "recommended_stance": "Hold / monitor role",
                 "rest_of_season": {
                   "label": "Role sensitive",
                   "summary": "The 2025 sample shows 7.43 opportunities/game and 24.3% snaps."
                 },
                 "weekly": {
-                  "label": "Availability watch",
-                  "summary": "Evidence range 2.1–4.8 with medium confidence; current matchup research is unavailable."
+                  "label": "Depth",
+                  "summary": "Evidence range 2.3–5.5 with medium confidence; current matchup research is unavailable."
                 }
               },
-              "depth_chart_order": 2,
-              "injury_body_part": "Undisclosed",
-              "injury_status": "Questionable",
+              "depth_chart_order": 3,
+              "injury_body_part": null,
+              "injury_status": null,
               "key_evidence": [
                 "Dynasty Dealer value 1,832; position rank #98.",
                 "2025 sample: 4.76 PPG, 7.43 opportunities/game, 24.3% snaps.",
-                "Sleeper depth-chart order: 2.",
-                "Sleeper availability: Questionable (Undisclosed)."
+                "Sleeper depth-chart order: 3."
               ],
               "movement": {
                 "has_previous": true,
@@ -7873,15 +7805,6 @@
               },
               "name": "Kendre Miller",
               "news": [
-                {
-                  "event_date": null,
-                  "published_at": "2026-09-10T12:58:46.952012+00:00",
-                  "signal_type": "injury",
-                  "source": "Sleeper player status",
-                  "text": "Sleeper lists Kendre Miller as Questionable.",
-                  "url": null,
-                  "weighted_score": -0.328
-                },
                 {
                   "event_date": null,
                   "published_at": "2026-09-05T07:00:00+00:00",
@@ -7941,18 +7864,18 @@
               "player_id": "9757",
               "position": "RB",
               "position_rank_on_roster": 9,
-              "recommended_stance": "Monitor availability",
+              "recommended_stance": "Hold / monitor role",
               "research_coverage": {
                 "coach_beat_reporter": false,
                 "news": true
               },
               "risk_factors": [
-                "Current Questionable designation creates availability risk.",
+                "The current depth-chart path requires movement ahead of the player.",
                 "A 24.3% snap rate limits the demonstrated weekly floor."
               ],
               "speculative_outlook": {
-                "label": "Monitor",
-                "summary": "Availability is the immediate swing factor (Questionable); recheck status before lineup lock."
+                "label": "Developmental",
+                "summary": "Long-term upside remains, but role confirmation is needed before treating the player as a weekly starter."
               },
               "status": "Active",
               "team": "NO",
@@ -8022,7 +7945,7 @@
                     "origin": "sleeper",
                     "player_id": "6794",
                     "player_name": "Justin Jefferson",
-                    "published_at": "2026-09-10T12:58:46.952012+00:00",
+                    "published_at": "2026-09-10T13:06:05.857177+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-6794",
                     "source": "Sleeper depth chart",
@@ -8557,7 +8480,7 @@
                     "origin": "sleeper",
                     "player_id": "7569",
                     "player_name": "Nico Collins",
-                    "published_at": "2026-09-10T12:58:46.952012+00:00",
+                    "published_at": "2026-09-10T13:06:05.857177+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-7569",
                     "source": "Sleeper depth chart",
@@ -9116,7 +9039,7 @@
                     "origin": "sleeper",
                     "player_id": "7526",
                     "player_name": "Jaylen Waddle",
-                    "published_at": "2026-09-10T12:58:46.952012+00:00",
+                    "published_at": "2026-09-10T13:06:05.857177+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-7526",
                     "source": "Sleeper depth chart",
@@ -9591,7 +9514,7 @@
                     "origin": "sleeper",
                     "player_id": "5927",
                     "player_name": "Terry McLaurin",
-                    "published_at": "2026-09-10T12:58:46.952012+00:00",
+                    "published_at": "2026-09-10T13:06:05.857177+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-5927",
                     "source": "Sleeper depth chart",
@@ -10092,7 +10015,7 @@
                     "origin": "sleeper",
                     "player_id": "10222",
                     "player_name": "Jayden Reed",
-                    "published_at": "2026-09-10T12:58:46.952012+00:00",
+                    "published_at": "2026-09-10T13:06:05.857177+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-10222",
                     "source": "Sleeper depth chart",
@@ -10499,7 +10422,7 @@
                     "origin": "sleeper",
                     "player_id": "5045",
                     "player_name": "Courtland Sutton",
-                    "published_at": "2026-09-10T12:58:46.952012+00:00",
+                    "published_at": "2026-09-10T13:06:05.857177+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-5045",
                     "source": "Sleeper depth chart",
@@ -11089,7 +11012,7 @@
                     "origin": "sleeper",
                     "player_id": "11646",
                     "player_name": "Jalen Coker",
-                    "published_at": "2026-09-10T12:58:46.952012+00:00",
+                    "published_at": "2026-09-10T13:06:05.857177+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-11646",
                     "source": "Sleeper depth chart",
@@ -11472,7 +11395,7 @@
                     "origin": "sleeper",
                     "player_id": "7571",
                     "player_name": "Rashod Bateman",
-                    "published_at": "2026-09-10T12:58:46.952012+00:00",
+                    "published_at": "2026-09-10T13:06:05.857177+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-7571",
                     "source": "Sleeper depth chart",
@@ -11787,7 +11710,7 @@
                     "origin": "sleeper",
                     "player_id": "10226",
                     "player_name": "Andrei Iosivas",
-                    "published_at": "2026-09-10T12:58:46.952012+00:00",
+                    "published_at": "2026-09-10T13:06:05.857177+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-10226",
                     "source": "Sleeper depth chart",
@@ -12299,7 +12222,7 @@
                     "origin": "sleeper",
                     "player_id": "12506",
                     "player_name": "Harold Fannin",
-                    "published_at": "2026-09-10T12:58:46.952012+00:00",
+                    "published_at": "2026-09-10T13:06:05.857177+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-12506",
                     "source": "Sleeper depth chart",
@@ -12692,33 +12615,13 @@
               ],
               "coach_beat_reporter_information": [],
               "context": {
-                "actionable_signal_count": 2,
-                "availability_probability": 0.85,
+                "actionable_signal_count": 1,
+                "availability_probability": 1.0,
                 "confidence": "medium",
-                "net_direction": "negative",
+                "net_direction": "positive",
                 "research_mention_count": 15,
-                "signal_count": 17,
+                "signal_count": 16,
                 "signals": [
-                  {
-                    "corroboration_count": 1,
-                    "direction": -1,
-                    "event_date": null,
-                    "impact": "availability",
-                    "magnitude": 2,
-                    "origin": "sleeper",
-                    "player_id": "10859",
-                    "player_name": "Sam LaPorta",
-                    "published_at": "2026-09-10T12:58:46.952012+00:00",
-                    "reliability": 0.82,
-                    "signal_id": "sleeper-injury-10859",
-                    "source": "Sleeper player status",
-                    "source_type": "official",
-                    "summary": "Sleeper lists Sam LaPorta as Questionable.",
-                    "ttl_days": 2,
-                    "type": "injury",
-                    "url": null,
-                    "weighted_score": -0.328
-                  },
                   {
                     "corroboration_count": 1,
                     "direction": 1,
@@ -12728,7 +12631,7 @@
                     "origin": "sleeper",
                     "player_id": "10859",
                     "player_name": "Sam LaPorta",
-                    "published_at": "2026-09-10T12:58:46.952012+00:00",
+                    "published_at": "2026-09-10T13:06:05.857177+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-10859",
                     "source": "Sleeper depth chart",
@@ -13055,7 +12958,7 @@
                     "weighted_score": 0.0
                   }
                 ],
-                "weekly_multiplier": 0.872
+                "weekly_multiplier": 1.026
               },
               "current_fantasy_value": {
                 "market_position_rank": 8,
@@ -13063,16 +12966,16 @@
                 "market_value": 5450,
                 "projection": {
                   "baseline_points": 11.98,
-                  "basis": "2025 715 PPG blended with recent form; current context multiplier 0.872 applied",
-                  "ceiling": 14.4,
+                  "basis": "2025 715 PPG blended with recent form; current context multiplier 1.026 applied",
+                  "ceiling": 16.9,
                   "confidence": "medium",
-                  "context_adjustment_points": -1.53,
-                  "context_multiplier": 0.872,
+                  "context_adjustment_points": 0.31,
+                  "context_multiplier": 1.026,
                   "current_decision_evidence": false,
-                  "floor": 6.0,
+                  "floor": 7.1,
                   "model_type": "evidence_estimate",
                   "performance_basis": "prior",
-                  "points": 10.45
+                  "points": 12.29
                 }
               },
               "current_starter": false,
@@ -13081,24 +12984,23 @@
                   "label": "Strong hold",
                   "summary": "Market value 5,450 and position rank #8; age 25 shapes the liquidity and time-horizon risk."
                 },
-                "recommended_stance": "Monitor availability",
+                "recommended_stance": "Hold / monitor role",
                 "rest_of_season": {
                   "label": "Role supported",
                   "summary": "The 2025 sample shows 5.44 opportunities/game and 90.7% snaps."
                 },
                 "weekly": {
-                  "label": "Availability watch",
-                  "summary": "Evidence range 6.0–14.4 with medium confidence; current matchup research is unavailable."
+                  "label": "Depth",
+                  "summary": "Evidence range 7.1–16.9 with medium confidence; current matchup research is unavailable."
                 }
               },
               "depth_chart_order": 1,
-              "injury_body_part": "Hip",
-              "injury_status": "Questionable",
+              "injury_body_part": null,
+              "injury_status": null,
               "key_evidence": [
                 "Dynasty Dealer value 5,450; position rank #8.",
                 "2025 sample: 11.88 PPG, 5.44 opportunities/game, 90.7% snaps.",
-                "Sleeper depth-chart order: 1.",
-                "Sleeper availability: Questionable (Hip)."
+                "Sleeper depth-chart order: 1."
               ],
               "movement": {
                 "has_previous": true,
@@ -13110,15 +13012,6 @@
               },
               "name": "Sam LaPorta",
               "news": [
-                {
-                  "event_date": null,
-                  "published_at": "2026-09-10T12:58:46.952012+00:00",
-                  "signal_type": "injury",
-                  "source": "Sleeper player status",
-                  "text": "Sleeper lists Sam LaPorta as Questionable.",
-                  "url": null,
-                  "weighted_score": -0.328
-                },
                 {
                   "event_date": null,
                   "published_at": "2026-09-07T16:07:58+00:00",
@@ -13259,17 +13152,15 @@
               "player_id": "10859",
               "position": "TE",
               "position_rank_on_roster": 2,
-              "recommended_stance": "Monitor availability",
+              "recommended_stance": "Hold / monitor role",
               "research_coverage": {
                 "coach_beat_reporter": false,
                 "news": true
               },
-              "risk_factors": [
-                "Current Questionable designation creates availability risk."
-              ],
+              "risk_factors": [],
               "speculative_outlook": {
-                "label": "Monitor",
-                "summary": "Availability is the immediate swing factor (Questionable); recheck status before lineup lock."
+                "label": "Stable",
+                "summary": "Current market and role indicators support a dependable hold unless a clear tier-up is available."
               },
               "status": "Active",
               "team": "DET",
@@ -13334,7 +13225,7 @@
                     "origin": "sleeper",
                     "player_id": "12521",
                     "player_name": "Elijah Arroyo",
-                    "published_at": "2026-09-10T12:58:46.952012+00:00",
+                    "published_at": "2026-09-10T13:06:05.857177+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-12521",
                     "source": "Sleeper depth chart",
@@ -13582,7 +13473,7 @@
   ],
   "sources": [
     {
-      "checked_at": "2026-09-10T12:58:47.290716+00:00",
+      "checked_at": "2026-09-10T13:06:06.199466+00:00",
       "name": "Sleeper",
       "status": "ok",
       "type": "authoritative_roster_data",
@@ -13606,14 +13497,14 @@
       "url": "https://nflverse.com/"
     },
     {
-      "checked_at": "2026-09-10T12:58:46.952012+00:00",
+      "checked_at": "2026-09-10T13:06:05.857177+00:00",
       "name": "Player context signals",
       "status": "available",
       "type": "availability_depth_usage_and_reporting",
       "url": null
     },
     {
-      "checked_at": "2026-09-10T12:58:46.952012+00:00",
+      "checked_at": "2026-09-10T13:06:05.857177+00:00",
       "name": "Roster research",
       "status": "available",
       "type": "news_matchup_coach_reporting",
