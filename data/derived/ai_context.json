@@ -1,7 +1,7 @@
 {
   "data_health": {
     "derived": {
-      "generated_at": "2026-09-11T12:53:43.084069+00:00",
+      "generated_at": "2026-09-11T12:59:58.333878+00:00",
       "status": "ok"
     },
     "dynasty_dealer": {
@@ -9,7 +9,7 @@
       "players": 964,
       "status": "ok"
     },
-    "generated_at": "2026-09-11T12:53:47.136079+00:00",
+    "generated_at": "2026-09-11T13:00:02.320219+00:00",
     "latest_completed_week": null,
     "nflverse": {
       "current_season_snaps": "expected_preseason",
@@ -20,7 +20,7 @@
     },
     "overall": "healthy",
     "player_intel_coverage": {
-      "market_values": 621,
+      "market_values": 622,
       "performance_samples": 623,
       "relevant_players": 3117
     },
@@ -29,7 +29,7 @@
       "authoritative": true,
       "files": {
         "free_agents.json": {
-          "bytes": 1233194,
+          "bytes": 1233254,
           "status": "ok"
         },
         "league.json": {
@@ -49,7 +49,7 @@
           "status": "ok"
         },
         "players_active.json": {
-          "bytes": 1375887,
+          "bytes": 1375989,
           "status": "ok"
         },
         "roster_index.json": {
@@ -69,7 +69,7 @@
     },
     "warnings": []
   },
-  "generated_at": "2026-09-11T12:53:47.528249+00:00",
+  "generated_at": "2026-09-11T13:00:02.694039+00:00",
   "history": {
     "first_date": "2026-08-31",
     "latest_date": "2026-09-11",
@@ -856,7 +856,7 @@
         "average_roster_age": 26.6,
         "early_picks": 2,
         "first_round_picks": 1,
-        "franchise_score": 74.8,
+        "franchise_score": 75.3,
         "manager": "NolanFarts",
         "metrics": {
           "draft_capital": 9.4,
@@ -865,7 +865,7 @@
           "performance_prior": 100.0,
           "roster_balance": 100.0,
           "stability": 67.8,
-          "youth": 25.2
+          "youth": 29.6
         },
         "model_mean": 138.76,
         "model_sd": 28.34,
@@ -890,7 +890,7 @@
         "average_roster_age": 26.0,
         "early_picks": 0,
         "first_round_picks": 0,
-        "franchise_score": 67.7,
+        "franchise_score": 68.1,
         "manager": "ryansorensen8",
         "metrics": {
           "draft_capital": 0.0,
@@ -899,7 +899,7 @@
           "performance_prior": 92.6,
           "roster_balance": 100.0,
           "stability": 93.2,
-          "youth": 25.2
+          "youth": 29.6
         },
         "model_mean": 135.03,
         "model_sd": 18.79,
@@ -924,7 +924,7 @@
         "average_roster_age": 26.5,
         "early_picks": 6,
         "first_round_picks": 2,
-        "franchise_score": 66.5,
+        "franchise_score": 67.0,
         "manager": "abewav",
         "metrics": {
           "draft_capital": 24.8,
@@ -933,7 +933,7 @@
           "performance_prior": 79.1,
           "roster_balance": 100.0,
           "stability": 100.0,
-          "youth": 18.9
+          "youth": 23.7
         },
         "model_mean": 128.22,
         "model_sd": 16.26,
@@ -953,6 +953,40 @@
         "title_odds": 9.5,
         "window": "Playoff Hunt",
         "young_player_share": 40.7
+      },
+      {
+        "average_roster_age": 26.8,
+        "early_picks": 3,
+        "first_round_picks": 0,
+        "franchise_score": 62.4,
+        "manager": "Butler2142",
+        "metrics": {
+          "draft_capital": 15.0,
+          "lineup_management": 74.0,
+          "market_value": 71.6,
+          "performance_prior": 83.7,
+          "roster_balance": 66.7,
+          "stability": 99.8,
+          "youth": 17.8
+        },
+        "model_mean": 130.54,
+        "model_sd": 16.33,
+        "owner_id": "1136159156404502528",
+        "pick_count": 15,
+        "playoff_odds": 72.8,
+        "risks": [
+          "Draft Capital",
+          "Youth"
+        ],
+        "roster_id": 12,
+        "strengths": [
+          "Stability",
+          "Performance Prior"
+        ],
+        "team_name": "Henry given sunday",
+        "title_odds": 14.9,
+        "window": "Contender",
+        "young_player_share": 37.0
       },
       {
         "average_roster_age": 27.7,
@@ -986,41 +1020,7 @@
         "team_name": "TEAM MIKE ALSTOTT",
         "title_odds": 7.0,
         "window": "Playoff Hunt",
-        "young_player_share": 29.6
-      },
-      {
-        "average_roster_age": 26.8,
-        "early_picks": 3,
-        "first_round_picks": 0,
-        "franchise_score": 61.9,
-        "manager": "Butler2142",
-        "metrics": {
-          "draft_capital": 15.0,
-          "lineup_management": 74.0,
-          "market_value": 71.6,
-          "performance_prior": 83.7,
-          "roster_balance": 66.7,
-          "stability": 99.8,
-          "youth": 12.6
-        },
-        "model_mean": 130.54,
-        "model_sd": 16.33,
-        "owner_id": "1136159156404502528",
-        "pick_count": 15,
-        "playoff_odds": 72.8,
-        "risks": [
-          "Youth",
-          "Draft Capital"
-        ],
-        "roster_id": 12,
-        "strengths": [
-          "Stability",
-          "Performance Prior"
-        ],
-        "team_name": "Henry given sunday",
-        "title_odds": 14.9,
-        "window": "Contender",
-        "young_player_share": 37.0
+        "young_player_share": 25.9
       }
     ]
   },
@@ -1261,7 +1261,7 @@
       "average_roster_age": 26.5,
       "early_picks": 6,
       "first_round_picks": 2,
-      "franchise_score": 66.5,
+      "franchise_score": 67.0,
       "manager": "abewav",
       "metrics": {
         "draft_capital": 24.8,
@@ -1270,7 +1270,7 @@
         "performance_prior": 79.1,
         "roster_balance": 100.0,
         "stability": 100.0,
-        "youth": 18.9
+        "youth": 23.7
       },
       "model_mean": 128.22,
       "model_sd": 16.26,
@@ -1330,7 +1330,7 @@
       ],
       "team": "CIN",
       "tier": "Priority",
-      "trending_adds_24h": 12060
+      "trending_adds_24h": 11708
     },
     {
       "age": 29,
@@ -1340,7 +1340,7 @@
       "market_rank": 465,
       "market_value": 46,
       "name": "Drew Lock",
-      "opportunity_score": 80.2,
+      "opportunity_score": 80.1,
       "performance": {
         "air_yards_share": 0.0,
         "basis": "current",
@@ -1363,11 +1363,11 @@
         "Currently on an NFL roster (SEA).",
         "Depth-chart No. 2: direct contingent path to usage.",
         "Superflex format raises the value of any QB with a path to starts.",
-        "Sleeper market heat: 36,659 adds in the 24h trend window."
+        "Sleeper market heat: 33,694 adds in the 24h trend window."
       ],
       "team": "SEA",
       "tier": "Priority",
-      "trending_adds_24h": 36659
+      "trending_adds_24h": 33694
     },
     {
       "age": 28,
@@ -1400,11 +1400,11 @@
         "2025 prior usage: 4.8 opportunities/game, 82% offensive snaps, 5.5 715 PPG.",
         "Currently on an NFL roster (NYG).",
         "Depth-chart No. 2: direct contingent path to usage.",
-        "Sleeper market heat: 14,553 adds in the 24h trend window."
+        "Sleeper market heat: 14,256 adds in the 24h trend window."
       ],
       "team": "NYG",
       "tier": "Priority",
-      "trending_adds_24h": 14553
+      "trending_adds_24h": 14256
     },
     {
       "age": 32,
@@ -1451,7 +1451,7 @@
       "market_rank": 527,
       "market_value": 9,
       "name": "Cooper Rush",
-      "opportunity_score": 72.7,
+      "opportunity_score": 72.8,
       "performance": {
         "air_yards_share": 0.0,
         "basis": "prior",
@@ -1474,11 +1474,11 @@
         "Currently on an NFL roster (ATL).",
         "Depth-chart No. 2: direct contingent path to usage.",
         "Superflex format raises the value of any QB with a path to starts.",
-        "Sleeper market heat: 35,234 adds in the 24h trend window."
+        "Sleeper market heat: 36,636 adds in the 24h trend window."
       ],
       "team": "ATL",
       "tier": "Priority",
-      "trending_adds_24h": 35234
+      "trending_adds_24h": 36636
     },
     {
       "age": 28,
@@ -1515,7 +1515,7 @@
       ],
       "team": "BAL",
       "tier": "Strong stash",
-      "trending_adds_24h": 16461
+      "trending_adds_24h": 16308
     },
     {
       "age": 33,
@@ -1548,11 +1548,11 @@
         "2025 prior usage: 3.9 opportunities/game, 45% offensive snaps, 9.9 715 PPG.",
         "Currently on an NFL roster (CAR).",
         "Listed first on the Sleeper depth chart.",
-        "Sleeper market heat: 83,538 adds in the 24h trend window."
+        "Sleeper market heat: 82,008 adds in the 24h trend window."
       ],
       "team": "CAR",
       "tier": "Strong stash",
-      "trending_adds_24h": 83538
+      "trending_adds_24h": 82008
     },
     {
       "age": 27,
@@ -1769,11 +1769,11 @@
         "2025 prior usage: 1.6 opportunities/game, 50% offensive snaps, 3.7 715 PPG.",
         "Currently on an NFL roster (TEN).",
         "Depth-chart No. 2: direct contingent path to usage.",
-        "Sleeper market heat: 7,833 adds in the 24h trend window."
+        "Sleeper market heat: 7,756 adds in the 24h trend window."
       ],
       "team": "TEN",
       "tier": "Strong stash",
-      "trending_adds_24h": 7833
+      "trending_adds_24h": 7756
     },
     {
       "age": 27,
@@ -1806,11 +1806,11 @@
         "2025 prior usage: 0.9 opportunities/game, 40% offensive snaps, 2.1 715 PPG.",
         "Currently on an NFL roster (LAC).",
         "Depth-chart No. 3: plausible contingent upside.",
-        "Sleeper market heat: 12,699 adds in the 24h trend window."
+        "Sleeper market heat: 11,988 adds in the 24h trend window."
       ],
       "team": "LAC",
       "tier": "Strong stash",
-      "trending_adds_24h": 12699
+      "trending_adds_24h": 11988
     },
     {
       "age": 23,
@@ -1956,44 +1956,7 @@
       ],
       "team": "CHI",
       "tier": "Strong stash",
-      "trending_adds_24h": 37512
-    },
-    {
-      "age": 27,
-      "depth": 3,
-      "injury_status": null,
-      "market_position_rank": 92,
-      "market_rank": 338,
-      "market_value": 1926,
-      "name": "Emari Demercado",
-      "opportunity_score": 58.0,
-      "performance": {
-        "air_yards_share": 0.5,
-        "basis": "prior",
-        "basis_label": "2025",
-        "carries_per_game": 3.67,
-        "games": 12,
-        "last3_opportunities_per_game": 5.67,
-        "last3_ppg_715": 4.57,
-        "offense_snap_pct": 25.2,
-        "opportunities_per_game": 5.33,
-        "ppg_715": 4.86,
-        "target_share": 4.3,
-        "targets_per_game": 1.67,
-        "touches_per_game": 4.75
-      },
-      "player_id": "11199",
-      "position": "RB",
-      "reasons": [
-        "Dynasty Dealer market value 1,926 adds insulation/upside signal.",
-        "2025 prior usage: 5.3 opportunities/game, 25% offensive snaps, 4.9 715 PPG.",
-        "Currently on an NFL roster (DAL).",
-        "Depth-chart No. 3: plausible contingent upside.",
-        "RB contingent value can rise quickly with one depth-chart change."
-      ],
-      "team": "DAL",
-      "tier": "Strong stash",
-      "trending_adds_24h": 0
+      "trending_adds_24h": 35056
     },
     {
       "age": 25,
@@ -2014,6 +1977,43 @@
         "Superflex format raises the value of any QB with a path to starts."
       ],
       "team": "DAL",
+      "tier": "Strong stash",
+      "trending_adds_24h": 0
+    },
+    {
+      "age": 23,
+      "depth": 3,
+      "injury_status": null,
+      "market_position_rank": 73,
+      "market_rank": 287,
+      "market_value": 2183,
+      "name": "Brashard Smith",
+      "opportunity_score": 57.0,
+      "performance": {
+        "air_yards_share": -2.1,
+        "basis": "prior",
+        "basis_label": "2025",
+        "carries_per_game": 2.59,
+        "games": 17,
+        "last3_opportunities_per_game": 7.0,
+        "last3_ppg_715": 6.23,
+        "offense_snap_pct": 16.7,
+        "opportunities_per_game": 4.65,
+        "ppg_715": 3.72,
+        "target_share": 6.6,
+        "targets_per_game": 2.06,
+        "touches_per_game": 4.06
+      },
+      "player_id": "12455",
+      "position": "RB",
+      "reasons": [
+        "Dynasty Dealer market value 2,183 adds insulation/upside signal.",
+        "2025 prior usage: 4.7 opportunities/game, 17% offensive snaps, 3.7 715 PPG.",
+        "Currently on an NFL roster (KC).",
+        "Depth-chart No. 3: plausible contingent upside.",
+        "Age supports long-term value growth."
+      ],
+      "team": "KC",
       "tier": "Strong stash",
       "trending_adds_24h": 0
     }
