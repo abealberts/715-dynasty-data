@@ -535,7 +535,7 @@
     "total_market_value": 113663,
     "weeks": 13
   },
-  "generated_at": "2026-09-12T18:31:10.370501+00:00",
+  "generated_at": "2026-09-12T20:32:20.221849+00:00",
   "lineup": [
     {
       "player": {
@@ -827,7 +827,7 @@
     "starter_market_score": 60.4,
     "submitted_starter_market_value": 55120,
     "team_name": "Beef Cylinder",
-    "total_market_score": 99.2,
+    "total_market_score": 98.3,
     "total_market_value": 113663
   },
   "needs": {
@@ -856,7 +856,7 @@
       "starter_market_score": 60.4,
       "submitted_starter_market_value": 55120,
       "team_name": "Beef Cylinder",
-      "total_market_score": 99.2,
+      "total_market_score": 98.3,
       "total_market_value": 113663
     },
     "needs": [
@@ -1086,7 +1086,7 @@
     "market_weight": 0.45,
     "model_mean": 128.3,
     "model_sd": 16.26,
-    "one_seed_odds": 8.6,
+    "one_seed_odds": 8.5,
     "owner_id": "1001624178866429952",
     "playoff_odds": 58.6,
     "prior_mean": 133.97,
@@ -1139,7 +1139,54 @@
     "window": "Playoff Hunt",
     "young_player_share": 40.7
   },
-  "recent_changes": [],
+  "recent_changes": [
+    {
+      "detected_at": "2026-09-12T20:32:16.968530+00:00",
+      "manager": "NolanFarts",
+      "player": {
+        "age": 32,
+        "depth_chart_order": 1,
+        "depth_chart_position": "QB",
+        "fantasy_positions": [
+          "QB"
+        ],
+        "injury_body_part": null,
+        "injury_notes": null,
+        "injury_status": null,
+        "name": "Cooper Rush",
+        "player_id": "4574",
+        "position": "QB",
+        "status": "Active",
+        "team": "ATL",
+        "years_exp": 9
+      },
+      "roster_id": 2,
+      "type": "roster_add"
+    },
+    {
+      "detected_at": "2026-09-12T20:32:16.968530+00:00",
+      "manager": "NolanFarts",
+      "player": {
+        "age": 23,
+        "depth_chart_order": 4,
+        "depth_chart_position": "QB",
+        "fantasy_positions": [
+          "QB"
+        ],
+        "injury_body_part": null,
+        "injury_notes": null,
+        "injury_status": null,
+        "name": "Cole Payton",
+        "player_id": "13335",
+        "position": "QB",
+        "status": "Active",
+        "team": "PHI",
+        "years_exp": 0
+      },
+      "roster_id": 2,
+      "type": "roster_drop"
+    }
+  ],
   "record": {
     "fpts": 0,
     "fpts_decimal": 0,
@@ -1348,14 +1395,14 @@
       "manager": "NolanFarts",
       "market": {
         "position_scores": {
-          "QB": 29.2,
+          "QB": 32.1,
           "RB": 90.7,
           "TE": 100.0,
           "WR": 66.1
         },
         "their_market_rank": 1,
         "their_starter_value": 65765,
-        "their_total_value": 113843
+        "their_total_value": 114322
       },
       "market_fit_score": 4.0,
       "pick_summary": {
@@ -1813,6 +1860,6 @@
     "faab_budget": 100,
     "faab_remaining": 67,
     "faab_used": 33,
-    "waiver_position": 10
+    "waiver_position": 9
   }
 }
