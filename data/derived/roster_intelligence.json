@@ -3,20 +3,6 @@
     {
       "category": "Waiver review",
       "confidence": "medium",
-      "cost_or_cut": "Likely cut: Aaron Rodgers; verify lineup, taxi and IR constraints first.",
-      "priority": 5,
-      "projected_advantage": null,
-      "rationale": "Dynasty Dealer market value 1,129 adds insulation/upside signal. 2025 prior usage: 36.0 opportunities/game, 93% offensive snaps, 16.5 715 PPG.",
-      "recommendation": "Do not submit the move until role, current news and roster fit are verified.",
-      "risk": "Opportunity score is a discovery signal, not proof of future touches or trade value.",
-      "title": "Compare Carson Wentz with Aaron Rodgers",
-      "upside": "Candidate market value 1,129 versus 2,993 for the likely cut.",
-      "urgency": "Monitor waiver window",
-      "verified_available": true
-    },
-    {
-      "category": "Waiver review",
-      "confidence": "medium",
       "cost_or_cut": "Likely cut: Taylen Green; verify lineup, taxi and IR constraints first.",
       "priority": 5,
       "projected_advantage": null,
@@ -33,12 +19,12 @@
       "confidence": "low",
       "cost_or_cut": "Bench MarShawn Lloyd; no roster transaction required.",
       "priority": 5,
-      "projected_advantage": 6.91,
-      "rationale": "Harold Fannin carries the stronger evidence projection (12.86 vs 5.95). The model prefers this swap, but the incoming player's case relies on prior-season or proxy evidence and is not actionable without current confirmation.",
+      "projected_advantage": 6.98,
+      "rationale": "Harold Fannin carries the stronger evidence projection (12.86 vs 5.88). The model prefers this swap, but the incoming player's case relies on prior-season or proxy evidence and is not actionable without current confirmation.",
       "recommendation": "Keep the submitted starter unless current role, matchup and availability evidence confirms the model preference.",
       "risk": "The report does not yet contain verified current matchup or beat-report context.",
       "title": "Research Harold Fannin vs MarShawn Lloyd",
-      "upside": "The evidence model adds approximately 6.9 points if its role assumptions hold.",
+      "upside": "The evidence model adds approximately 7.0 points if its role assumptions hold.",
       "urgency": "Before lineup lock"
     },
     {
@@ -53,6 +39,33 @@
       "title": "Research Tyrone Tracy vs Jaylen Waddle",
       "upside": "The evidence model adds approximately 2.1 points if its role assumptions hold.",
       "urgency": "Before lineup lock"
+    },
+    {
+      "category": "Availability",
+      "confidence": "medium",
+      "cost_or_cut": "No transaction required unless the final designation changes roster-slot options.",
+      "priority": 5,
+      "projected_advantage": null,
+      "rationale": "Sleeper lists Taylen Green as Out; no decision-grade current availability report is attached.",
+      "recommendation": "Confirm the official game designation and keep a legal pivot available.",
+      "risk": "Sleeper status alone does not establish expected availability or workload.",
+      "title": "Verify Taylen Green before lock",
+      "upside": "A prepared pivot protects the lineup from a zero or limited role.",
+      "urgency": "Before lineup lock"
+    },
+    {
+      "category": "Waiver review",
+      "confidence": "medium",
+      "cost_or_cut": "Likely cut: Andrei Iosivas; verify lineup, taxi and IR constraints first.",
+      "priority": 4,
+      "projected_advantage": null,
+      "rationale": "Dynasty Dealer market value 2,932 adds insulation/upside signal. current-season usage: 5.0 opportunities/game, 70% offensive snaps, 9.1 715 PPG.",
+      "recommendation": "Do not submit the move until role, current news and roster fit are verified.",
+      "risk": "Opportunity score is a discovery signal, not proof of future touches or trade value.",
+      "title": "Compare Mack Hollins with Andrei Iosivas",
+      "upside": "Candidate market value 2,932 versus 2,040 for the likely cut.",
+      "urgency": "Monitor waiver window",
+      "verified_available": true
     }
   ],
   "coverage": {
@@ -63,7 +76,7 @@
     "current_season_performance_samples": 1,
     "market_values": 27,
     "news_players": 27,
-    "objective_context_signals": 27,
+    "objective_context_signals": 28,
     "performance_samples": 24,
     "research_mentions": 305,
     "research_status": "available",
@@ -83,11 +96,11 @@
       "2025",
       "2026"
     ],
-    "player_context_generated_at": "2026-09-14T15:06:12.628149+00:00",
-    "research_generated_at": "2026-09-14T15:06:12.628149+00:00",
-    "sleeper_data_checked_at": "2026-09-14T15:06:12.945434+00:00"
+    "player_context_generated_at": "2026-09-14T15:13:30.421504+00:00",
+    "research_generated_at": "2026-09-14T15:13:30.421504+00:00",
+    "sleeper_data_checked_at": "2026-09-14T15:13:30.752878+00:00"
   },
-  "generated_at": "2026-09-14T15:06:13.492705+00:00",
+  "generated_at": "2026-09-14T15:13:31.323315+00:00",
   "lineup": {
     "actionable_projected_advantage": 0,
     "changes": [
@@ -95,8 +108,8 @@
         "current_decision_evidence": false,
         "decision": "research_required",
         "decision_reason": "The model prefers this swap, but the incoming player's case relies on prior-season or proxy evidence and is not actionable without current confirmation.",
-        "explanation": "Harold Fannin carries the stronger evidence projection (12.86 vs 5.95).",
-        "projected_advantage": 6.91,
+        "explanation": "Harold Fannin carries the stronger evidence projection (12.86 vs 5.88).",
+        "projected_advantage": 6.98,
         "sit": "MarShawn Lloyd",
         "sit_confidence": "low",
         "start": "Harold Fannin",
@@ -163,10 +176,10 @@
         "name": "MarShawn Lloyd",
         "player_id": "11581",
         "position": "RB",
-        "projected_ceiling": 7.6,
-        "projected_floor": 4.3,
-        "projected_points": 5.95,
-        "projection_basis": "Dynasty market-value proxy; no NFL performance sample; current context multiplier 0.872 applied",
+        "projected_ceiling": 7.5,
+        "projected_floor": 4.2,
+        "projected_points": 5.88,
+        "projection_basis": "Dynasty market-value proxy; no NFL performance sample; current context multiplier 0.861 applied",
         "slot": "RB",
         "slot_label": "RB2",
         "team": "GB"
@@ -262,7 +275,7 @@
         "team": "TB"
       }
     ],
-    "current_projected_points": 122.49,
+    "current_projected_points": 122.42,
     "decision_thresholds": {
       "availability_guardrail": true,
       "close_call_below": 3,
@@ -408,7 +421,7 @@
       }
     ],
     "optimized_projected_points": 131.29,
-    "projected_advantage": 8.8,
+    "projected_advantage": 8.87,
     "status": "provisional"
   },
   "movement": [
@@ -759,7 +772,7 @@
                     "origin": "sleeper",
                     "player_id": "11566",
                     "player_name": "Jayden Daniels",
-                    "published_at": "2026-09-14T15:06:12.628149+00:00",
+                    "published_at": "2026-09-14T15:13:30.421504+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-11566",
                     "source": "Sleeper depth chart",
@@ -1234,7 +1247,7 @@
                     "origin": "sleeper",
                     "player_id": "4892",
                     "player_name": "Baker Mayfield",
-                    "published_at": "2026-09-14T15:06:12.628149+00:00",
+                    "published_at": "2026-09-14T15:13:30.421504+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-4892",
                     "source": "Sleeper depth chart",
@@ -1892,7 +1905,7 @@
                     "origin": "sleeper",
                     "player_id": "8161",
                     "player_name": "Malik Willis",
-                    "published_at": "2026-09-14T15:06:12.628149+00:00",
+                    "published_at": "2026-09-14T15:13:30.421504+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-8161",
                     "source": "Sleeper depth chart",
@@ -2355,7 +2368,7 @@
                 {
                   "label": "Role",
                   "source": "Sleeper",
-                  "value": "Depth 3 · CLE"
+                  "value": "Depth 2 · CLE"
                 },
                 {
                   "label": "Market",
@@ -2369,36 +2382,37 @@
                 }
               ],
               "catalysts": [
-                "Youth leaves room for role growth and market appreciation."
+                "Youth leaves room for role growth and market appreciation.",
+                "A top-two depth-chart position creates a direct path to added opportunity."
               ],
               "coach_beat_reporter_information": [],
               "context": {
                 "actionable_signal_count": 1,
                 "availability_probability": 1.0,
                 "confidence": "medium",
-                "net_direction": "negative",
+                "net_direction": "neutral",
                 "research_mention_count": 11,
                 "signal_count": 12,
                 "signals": [
                   {
                     "corroboration_count": 1,
-                    "direction": -1,
+                    "direction": 1,
                     "event_date": null,
                     "impact": "workload",
-                    "magnitude": 2,
+                    "magnitude": 1,
                     "origin": "sleeper",
                     "player_id": "12524",
                     "player_name": "Shedeur Sanders",
-                    "published_at": "2026-09-14T15:06:12.628149+00:00",
+                    "published_at": "2026-09-14T15:13:30.421504+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-12524",
                     "source": "Sleeper depth chart",
                     "source_type": "team",
-                    "summary": "Current Sleeper depth-chart order is 3.",
+                    "summary": "Current Sleeper depth-chart order is 2.",
                     "ttl_days": 3,
                     "type": "depth_chart",
                     "url": null,
-                    "weighted_score": -0.26
+                    "weighted_score": 0.13
                   },
                   {
                     "corroboration_count": 1,
@@ -2632,7 +2646,7 @@
                     "weighted_score": 0.0
                   }
                 ],
-                "weekly_multiplier": 0.974
+                "weekly_multiplier": 1.013
               },
               "current_fantasy_value": {
                 "market_position_rank": 34,
@@ -2640,16 +2654,16 @@
                 "market_value": 3161,
                 "projection": {
                   "baseline_points": 11.56,
-                  "basis": "2025 715 PPG blended with recent form; current context multiplier 0.974 applied",
-                  "ceiling": 12.0,
+                  "basis": "2025 715 PPG blended with recent form; current context multiplier 1.013 applied",
+                  "ceiling": 12.5,
                   "confidence": "medium",
-                  "context_adjustment_points": -0.3,
-                  "context_multiplier": 0.974,
+                  "context_adjustment_points": 0.15,
+                  "context_multiplier": 1.013,
                   "current_decision_evidence": false,
-                  "floor": 6.0,
+                  "floor": 6.2,
                   "model_type": "evidence_estimate",
                   "performance_basis": "prior",
-                  "points": 11.26
+                  "points": 11.71
                 }
               },
               "current_starter": false,
@@ -2658,23 +2672,23 @@
                   "label": "Development hold",
                   "summary": "Market value 3,161 and position rank #34; age 24 shapes the liquidity and time-horizon risk."
                 },
-                "recommended_stance": "Hold / monitor role",
+                "recommended_stance": "Hold for upside",
                 "rest_of_season": {
                   "label": "Role supported",
                   "summary": "The 2025 sample shows 29.12 opportunities/game and 91.6% snaps."
                 },
                 "weekly": {
                   "label": "Depth",
-                  "summary": "Evidence range 6.0–12.0 with medium confidence; current matchup research is unavailable."
+                  "summary": "Evidence range 6.2–12.5 with medium confidence; current matchup research is unavailable."
                 }
               },
-              "depth_chart_order": 3,
+              "depth_chart_order": 2,
               "injury_body_part": null,
               "injury_status": null,
               "key_evidence": [
                 "Dynasty Dealer value 3,161; position rank #34.",
                 "2025 sample: 12.36 PPG, 29.12 opportunities/game, 91.6% snaps.",
-                "Sleeper depth-chart order: 3."
+                "Sleeper depth-chart order: 2."
               ],
               "movement": {
                 "has_previous": true,
@@ -2790,14 +2804,12 @@
               "player_id": "12524",
               "position": "QB",
               "position_rank_on_roster": 4,
-              "recommended_stance": "Hold / monitor role",
+              "recommended_stance": "Hold for upside",
               "research_coverage": {
                 "coach_beat_reporter": false,
                 "news": true
               },
-              "risk_factors": [
-                "The current depth-chart path requires movement ahead of the player."
-              ],
+              "risk_factors": [],
               "speculative_outlook": {
                 "label": "Developmental",
                 "summary": "Long-term upside remains, but role confirmation is needed before treating the player as a weekly starter."
@@ -2865,7 +2877,7 @@
                     "origin": "sleeper",
                     "player_id": "96",
                     "player_name": "Aaron Rodgers",
-                    "published_at": "2026-09-14T15:06:12.628149+00:00",
+                    "published_at": "2026-09-14T15:13:30.421504+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-96",
                     "source": "Sleeper depth chart",
@@ -3480,7 +3492,7 @@
                 {
                   "label": "Role",
                   "source": "Sleeper",
-                  "value": "Depth 4 · CLE"
+                  "value": "Depth 3 · CLE"
                 },
                 {
                   "label": "Market",
@@ -3498,32 +3510,52 @@
               ],
               "coach_beat_reporter_information": [],
               "context": {
-                "actionable_signal_count": 1,
-                "availability_probability": 1.0,
+                "actionable_signal_count": 2,
+                "availability_probability": 0.0,
                 "confidence": "medium",
                 "net_direction": "negative",
                 "research_mention_count": 16,
-                "signal_count": 17,
+                "signal_count": 18,
                 "signals": [
                   {
                     "corroboration_count": 1,
                     "direction": -1,
                     "event_date": null,
-                    "impact": "workload",
-                    "magnitude": 3,
+                    "impact": "availability",
+                    "magnitude": 5,
                     "origin": "sleeper",
                     "player_id": "13306",
                     "player_name": "Taylen Green",
-                    "published_at": "2026-09-14T15:06:12.628149+00:00",
+                    "published_at": "2026-09-14T15:13:30.421504+00:00",
+                    "reliability": 0.82,
+                    "signal_id": "sleeper-injury-13306",
+                    "source": "Sleeper player status",
+                    "source_type": "official",
+                    "summary": "Sleeper lists Taylen Green as Out.",
+                    "ttl_days": 2,
+                    "type": "injury",
+                    "url": null,
+                    "weighted_score": -0.82
+                  },
+                  {
+                    "corroboration_count": 1,
+                    "direction": -1,
+                    "event_date": null,
+                    "impact": "workload",
+                    "magnitude": 2,
+                    "origin": "sleeper",
+                    "player_id": "13306",
+                    "player_name": "Taylen Green",
+                    "published_at": "2026-09-14T15:13:30.421504+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-13306",
                     "source": "Sleeper depth chart",
                     "source_type": "team",
-                    "summary": "Current Sleeper depth-chart order is 4.",
+                    "summary": "Current Sleeper depth-chart order is 3.",
                     "ttl_days": 3,
                     "type": "depth_chart",
                     "url": null,
-                    "weighted_score": -0.39
+                    "weighted_score": -0.26
                   },
                   {
                     "corroboration_count": 1,
@@ -3862,7 +3894,7 @@
                     "weighted_score": 0.0
                   }
                 ],
-                "weekly_multiplier": 0.961
+                "weekly_multiplier": 0.0
               },
               "current_fantasy_value": {
                 "market_position_rank": 62,
@@ -3870,16 +3902,16 @@
                 "market_value": 1913,
                 "projection": {
                   "baseline_points": 10.2,
-                  "basis": "Dynasty market-value proxy; no NFL performance sample; current context multiplier 0.961 applied",
-                  "ceiling": 12.5,
+                  "basis": "Dynasty market-value proxy; no NFL performance sample; current context multiplier 0.000 applied",
+                  "ceiling": 0.0,
                   "confidence": "low",
-                  "context_adjustment_points": -0.4,
-                  "context_multiplier": 0.961,
+                  "context_adjustment_points": -10.2,
+                  "context_multiplier": 0.0,
                   "current_decision_evidence": false,
-                  "floor": 7.1,
+                  "floor": 0.0,
                   "model_type": "evidence_estimate",
                   "performance_basis": null,
-                  "points": 9.8
+                  "points": 0.0
                 }
               },
               "current_starter": false,
@@ -3888,23 +3920,24 @@
                   "label": "Development hold",
                   "summary": "Market value 1,913 and position rank #62; age 23 shapes the liquidity and time-horizon risk."
                 },
-                "recommended_stance": "Hold / monitor role",
+                "recommended_stance": "Monitor availability",
                 "rest_of_season": {
                   "label": "Insufficient evidence",
                   "summary": "No matched NFL performance sample is available; role must be verified before relying on weekly utility."
                 },
                 "weekly": {
-                  "label": "Unproven",
-                  "summary": "Evidence range 7.1–12.5 with low confidence; current matchup research is unavailable."
+                  "label": "Availability watch",
+                  "summary": "Evidence range 0.0–0.0 with low confidence; current matchup research is unavailable."
                 }
               },
-              "depth_chart_order": 4,
-              "injury_body_part": null,
-              "injury_status": null,
+              "depth_chart_order": 3,
+              "injury_body_part": "Coach's Decision",
+              "injury_status": "Out",
               "key_evidence": [
                 "Dynasty Dealer value 1,913; position rank #62.",
                 "No nflverse performance sample is currently matched to this player.",
-                "Sleeper depth-chart order: 4."
+                "Sleeper depth-chart order: 3.",
+                "Sleeper availability: Out (Coach's Decision)."
               ],
               "movement": {
                 "has_previous": true,
@@ -3916,6 +3949,15 @@
               },
               "name": "Taylen Green",
               "news": [
+                {
+                  "event_date": null,
+                  "published_at": "2026-09-14T15:13:30.421504+00:00",
+                  "signal_type": "injury",
+                  "source": "Sleeper player status",
+                  "text": "Sleeper lists Taylen Green as Out.",
+                  "url": null,
+                  "weighted_score": -0.82
+                },
                 {
                   "event_date": null,
                   "published_at": "2026-09-07T21:29:53+00:00",
@@ -4067,18 +4109,19 @@
               "player_id": "13306",
               "position": "QB",
               "position_rank_on_roster": 6,
-              "recommended_stance": "Hold / monitor role",
+              "recommended_stance": "Monitor availability",
               "research_coverage": {
                 "coach_beat_reporter": false,
                 "news": true
               },
               "risk_factors": [
+                "Current Out designation creates availability risk.",
                 "The current depth-chart path requires movement ahead of the player.",
                 "No matched NFL performance sample supports the current weekly estimate."
               ],
               "speculative_outlook": {
-                "label": "Developmental",
-                "summary": "Long-term upside remains, but role confirmation is needed before treating the player as a weekly starter."
+                "label": "Monitor",
+                "summary": "Availability is the immediate swing factor (Out); recheck status before lineup lock."
               },
               "status": "Active",
               "team": "CLE",
@@ -4148,7 +4191,7 @@
                     "origin": "sleeper",
                     "player_id": "8138",
                     "player_name": "James Cook",
-                    "published_at": "2026-09-14T15:06:12.628149+00:00",
+                    "published_at": "2026-09-14T15:13:30.421504+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-8138",
                     "source": "Sleeper depth chart",
@@ -4743,7 +4786,7 @@
                     "origin": "sleeper",
                     "player_id": "13345",
                     "player_name": "Jonah Coleman",
-                    "published_at": "2026-09-14T15:06:12.628149+00:00",
+                    "published_at": "2026-09-14T15:13:30.421504+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-13345",
                     "source": "Sleeper depth chart",
@@ -5125,7 +5168,7 @@
                     "origin": "sleeper",
                     "player_id": "8228",
                     "player_name": "Jaylen Warren",
-                    "published_at": "2026-09-14T15:06:12.628149+00:00",
+                    "published_at": "2026-09-14T15:13:30.421504+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-8228",
                     "source": "Sleeper depth chart",
@@ -5564,7 +5607,7 @@
                     "origin": "sleeper",
                     "player_id": "7021",
                     "player_name": "Rico Dowdle",
-                    "published_at": "2026-09-14T15:06:12.628149+00:00",
+                    "published_at": "2026-09-14T15:13:30.421504+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-7021",
                     "source": "Sleeper depth chart",
@@ -5997,7 +6040,7 @@
                 {
                   "label": "Role",
                   "source": "Sleeper",
-                  "value": "Depth 1 · GB"
+                  "value": "Depth 2 · GB"
                 },
                 {
                   "label": "Market",
@@ -6027,20 +6070,20 @@
                     "direction": 1,
                     "event_date": null,
                     "impact": "workload",
-                    "magnitude": 2,
+                    "magnitude": 1,
                     "origin": "sleeper",
                     "player_id": "11581",
                     "player_name": "MarShawn Lloyd",
-                    "published_at": "2026-09-14T15:06:12.628149+00:00",
+                    "published_at": "2026-09-14T15:13:30.421504+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-11581",
                     "source": "Sleeper depth chart",
                     "source_type": "team",
-                    "summary": "Current Sleeper depth-chart order is 1.",
+                    "summary": "Current Sleeper depth-chart order is 2.",
                     "ttl_days": 3,
                     "type": "depth_chart",
                     "url": null,
-                    "weighted_score": 0.26
+                    "weighted_score": 0.13
                   },
                   {
                     "corroboration_count": 1,
@@ -6061,7 +6104,7 @@
                     "ttl_days": 7,
                     "type": "injury",
                     "url": "https://www.rotowire.com//football/player/marshawn-lloyd-17795",
-                    "weighted_score": -0.0329
+                    "weighted_score": -0.0327
                   },
                   {
                     "corroboration_count": 1,
@@ -6400,7 +6443,7 @@
                     "weighted_score": 0.0
                   }
                 ],
-                "weekly_multiplier": 0.872
+                "weekly_multiplier": 0.861
               },
               "current_fantasy_value": {
                 "market_position_rank": 33,
@@ -6408,16 +6451,16 @@
                 "market_value": 3829,
                 "projection": {
                   "baseline_points": 6.83,
-                  "basis": "Dynasty market-value proxy; no NFL performance sample; current context multiplier 0.872 applied",
-                  "ceiling": 7.6,
+                  "basis": "Dynasty market-value proxy; no NFL performance sample; current context multiplier 0.861 applied",
+                  "ceiling": 7.5,
                   "confidence": "low",
-                  "context_adjustment_points": -0.87,
-                  "context_multiplier": 0.872,
+                  "context_adjustment_points": -0.95,
+                  "context_multiplier": 0.861,
                   "current_decision_evidence": false,
-                  "floor": 4.3,
+                  "floor": 4.2,
                   "model_type": "evidence_estimate",
                   "performance_basis": null,
-                  "points": 5.95
+                  "points": 5.88
                 }
               },
               "current_starter": true,
@@ -6433,16 +6476,16 @@
                 },
                 "weekly": {
                   "label": "Unproven",
-                  "summary": "Evidence range 4.3–7.6 with low confidence; current matchup research is unavailable."
+                  "summary": "Evidence range 4.2–7.5 with low confidence; current matchup research is unavailable."
                 }
               },
-              "depth_chart_order": 1,
+              "depth_chart_order": 2,
               "injury_body_part": null,
               "injury_status": null,
               "key_evidence": [
                 "Dynasty Dealer value 3,829; position rank #33.",
                 "No nflverse performance sample is currently matched to this player.",
-                "Sleeper depth-chart order: 1."
+                "Sleeper depth-chart order: 2."
               ],
               "movement": {
                 "has_previous": true,
@@ -6461,7 +6504,7 @@
                   "source": "RotoWire NFL Player News / Weston Hodkiewicz of the Packers' official site",
                   "text": "MarShawn Lloyd: Set to be included in committee",
                   "url": "https://www.rotowire.com//football/player/marshawn-lloyd-17795",
-                  "weighted_score": -0.0329
+                  "weighted_score": -0.0327
                 },
                 {
                   "event_date": null,
@@ -6683,7 +6726,7 @@
                     "origin": "sleeper",
                     "player_id": "12474",
                     "player_name": "Woody Marks",
-                    "published_at": "2026-09-14T15:06:12.628149+00:00",
+                    "published_at": "2026-09-14T15:13:30.421504+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-12474",
                     "source": "Sleeper depth chart",
@@ -7217,7 +7260,7 @@
                     "origin": "sleeper",
                     "player_id": "11655",
                     "player_name": "Tyrone Tracy",
-                    "published_at": "2026-09-14T15:06:12.628149+00:00",
+                    "published_at": "2026-09-14T15:13:30.421504+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-11655",
                     "source": "Sleeper depth chart",
@@ -7620,7 +7663,7 @@
                 {
                   "label": "Role",
                   "source": "Sleeper",
-                  "value": "Depth 2 · BUF"
+                  "value": "Depth 3 · BUF"
                 },
                 {
                   "label": "Market",
@@ -7634,7 +7677,6 @@
                 }
               ],
               "catalysts": [
-                "A top-two depth-chart position creates a direct path to added opportunity.",
                 "Recent opportunity is up 5.82 per game against the broader sample."
               ],
               "coach_beat_reporter_information": [],
@@ -7642,29 +7684,29 @@
                 "actionable_signal_count": 1,
                 "availability_probability": 1.0,
                 "confidence": "medium",
-                "net_direction": "neutral",
+                "net_direction": "negative",
                 "research_mention_count": 8,
                 "signal_count": 9,
                 "signals": [
                   {
                     "corroboration_count": 1,
-                    "direction": 1,
+                    "direction": -1,
                     "event_date": null,
                     "impact": "workload",
-                    "magnitude": 1,
+                    "magnitude": 2,
                     "origin": "sleeper",
                     "player_id": "11575",
                     "player_name": "Ray Davis",
-                    "published_at": "2026-09-14T15:06:12.628149+00:00",
+                    "published_at": "2026-09-14T15:13:30.421504+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-11575",
                     "source": "Sleeper depth chart",
                     "source_type": "team",
-                    "summary": "Current Sleeper depth-chart order is 2.",
+                    "summary": "Current Sleeper depth-chart order is 3.",
                     "ttl_days": 3,
                     "type": "depth_chart",
                     "url": null,
-                    "weighted_score": 0.13
+                    "weighted_score": -0.26
                   },
                   {
                     "corroboration_count": 1,
@@ -7835,7 +7877,7 @@
                     "weighted_score": 0.0
                   }
                 ],
-                "weekly_multiplier": 1.013
+                "weekly_multiplier": 0.974
               },
               "current_fantasy_value": {
                 "market_position_rank": 81,
@@ -7843,16 +7885,16 @@
                 "market_value": 2135,
                 "projection": {
                   "baseline_points": 6.35,
-                  "basis": "2025 715 PPG blended with recent form; current context multiplier 1.013 applied",
-                  "ceiling": 6.43,
+                  "basis": "2025 715 PPG blended with recent form; current context multiplier 0.974 applied",
+                  "ceiling": 6.2,
                   "confidence": "medium",
-                  "context_adjustment_points": 0.08,
-                  "context_multiplier": 1.013,
+                  "context_adjustment_points": -0.16,
+                  "context_multiplier": 0.974,
                   "current_decision_evidence": false,
                   "floor": 0.1,
                   "model_type": "evidence_estimate",
                   "performance_basis": "prior",
-                  "points": 6.43
+                  "points": 6.18
                 }
               },
               "current_starter": false,
@@ -7868,16 +7910,16 @@
                 },
                 "weekly": {
                   "label": "Depth",
-                  "summary": "Evidence range 0.1–6.43 with medium confidence; current matchup research is unavailable."
+                  "summary": "Evidence range 0.1–6.2 with medium confidence; current matchup research is unavailable."
                 }
               },
-              "depth_chart_order": 2,
+              "depth_chart_order": 3,
               "injury_body_part": null,
               "injury_status": null,
               "key_evidence": [
                 "Dynasty Dealer value 2,135; position rank #81.",
                 "2025 sample: 3.77 PPG, 4.18 opportunities/game, 14.3% snaps.",
-                "Sleeper depth-chart order: 2."
+                "Sleeper depth-chart order: 3."
               ],
               "movement": {
                 "has_previous": true,
@@ -7972,6 +8014,7 @@
                 "news": true
               },
               "risk_factors": [
+                "The current depth-chart path requires movement ahead of the player.",
                 "A 14.3% snap rate limits the demonstrated weekly floor."
               ],
               "speculative_outlook": {
@@ -8034,7 +8077,7 @@
                     "origin": "sleeper",
                     "player_id": "9757",
                     "player_name": "Kendre Miller",
-                    "published_at": "2026-09-14T15:06:12.628149+00:00",
+                    "published_at": "2026-09-14T15:13:30.421504+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-9757",
                     "source": "Sleeper depth chart",
@@ -8486,7 +8529,7 @@
                     "origin": "sleeper",
                     "player_id": "6794",
                     "player_name": "Justin Jefferson",
-                    "published_at": "2026-09-14T15:06:12.628149+00:00",
+                    "published_at": "2026-09-14T15:13:30.421504+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-6794",
                     "source": "Sleeper depth chart",
@@ -9081,7 +9124,7 @@
                     "origin": "sleeper",
                     "player_id": "7569",
                     "player_name": "Nico Collins",
-                    "published_at": "2026-09-14T15:06:12.628149+00:00",
+                    "published_at": "2026-09-14T15:13:30.421504+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-7569",
                     "source": "Sleeper depth chart",
@@ -9460,7 +9503,7 @@
                     "origin": "sleeper",
                     "player_id": "7526",
                     "player_name": "Jaylen Waddle",
-                    "published_at": "2026-09-14T15:06:12.628149+00:00",
+                    "published_at": "2026-09-14T15:13:30.421504+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-7526",
                     "source": "Sleeper depth chart",
@@ -9815,7 +9858,7 @@
                     "origin": "sleeper",
                     "player_id": "5927",
                     "player_name": "Terry McLaurin",
-                    "published_at": "2026-09-14T15:06:12.628149+00:00",
+                    "published_at": "2026-09-14T15:13:30.421504+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-5927",
                     "source": "Sleeper depth chart",
@@ -10344,7 +10387,7 @@
                     "origin": "sleeper",
                     "player_id": "10222",
                     "player_name": "Jayden Reed",
-                    "published_at": "2026-09-14T15:06:12.628149+00:00",
+                    "published_at": "2026-09-14T15:13:30.421504+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-10222",
                     "source": "Sleeper depth chart",
@@ -10842,7 +10885,7 @@
                     "origin": "sleeper",
                     "player_id": "11646",
                     "player_name": "Jalen Coker",
-                    "published_at": "2026-09-14T15:06:12.628149+00:00",
+                    "published_at": "2026-09-14T15:13:30.421504+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-11646",
                     "source": "Sleeper depth chart",
@@ -11339,7 +11382,7 @@
                     "origin": "sleeper",
                     "player_id": "5045",
                     "player_name": "Courtland Sutton",
-                    "published_at": "2026-09-14T15:06:12.628149+00:00",
+                    "published_at": "2026-09-14T15:13:30.421504+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-5045",
                     "source": "Sleeper depth chart",
@@ -11754,7 +11797,7 @@
                     "origin": "sleeper",
                     "player_id": "7571",
                     "player_name": "Rashod Bateman",
-                    "published_at": "2026-09-14T15:06:12.628149+00:00",
+                    "published_at": "2026-09-14T15:13:30.421504+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-7571",
                     "source": "Sleeper depth chart",
@@ -12129,7 +12172,7 @@
                     "origin": "sleeper",
                     "player_id": "10226",
                     "player_name": "Andrei Iosivas",
-                    "published_at": "2026-09-14T15:06:12.628149+00:00",
+                    "published_at": "2026-09-14T15:13:30.421504+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-10226",
                     "source": "Sleeper depth chart",
@@ -12521,7 +12564,7 @@
                     "origin": "sleeper",
                     "player_id": "12506",
                     "player_name": "Harold Fannin",
-                    "published_at": "2026-09-14T15:06:12.628149+00:00",
+                    "published_at": "2026-09-14T15:13:30.421504+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-12506",
                     "source": "Sleeper depth chart",
@@ -13108,7 +13151,7 @@
                     "origin": "sleeper",
                     "player_id": "10859",
                     "player_name": "Sam LaPorta",
-                    "published_at": "2026-09-14T15:06:12.628149+00:00",
+                    "published_at": "2026-09-14T15:13:30.421504+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-10859",
                     "source": "Sleeper depth chart",
@@ -13584,7 +13627,7 @@
                     "origin": "sleeper",
                     "player_id": "12521",
                     "player_name": "Elijah Arroyo",
-                    "published_at": "2026-09-14T15:06:12.628149+00:00",
+                    "published_at": "2026-09-14T15:13:30.421504+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-12521",
                     "source": "Sleeper depth chart",
@@ -13772,7 +13815,7 @@
   ],
   "sources": [
     {
-      "checked_at": "2026-09-14T15:06:12.945434+00:00",
+      "checked_at": "2026-09-14T15:13:30.752878+00:00",
       "name": "Sleeper",
       "status": "ok",
       "type": "authoritative_roster_data",
@@ -13797,14 +13840,14 @@
       "url": "https://nflverse.com/"
     },
     {
-      "checked_at": "2026-09-14T15:06:12.628149+00:00",
+      "checked_at": "2026-09-14T15:13:30.421504+00:00",
       "name": "Player context signals",
       "status": "available",
       "type": "availability_depth_usage_and_reporting",
       "url": null
     },
     {
-      "checked_at": "2026-09-14T15:06:12.628149+00:00",
+      "checked_at": "2026-09-14T15:13:30.421504+00:00",
       "name": "Roster research",
       "status": "available",
       "type": "news_matchup_coach_reporting",
