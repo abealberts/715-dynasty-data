@@ -1,6 +1,6 @@
 {
   "context_methodology": "Time-decayed, source-weighted context. Narrative effects are capped at ±8%, combined workload context at ±12%, and availability remains a separate guardrail. Every adjustment retains its source and explanation.",
-  "generated_at": "2026-09-17T19:46:40.950282+00:00",
+  "generated_at": "2026-09-17T21:20:46.627984+00:00",
   "methodology": "Signal score, not dynasty market value. Uses confirmed league availability, NFL roster status, depth chart, age, league format, Sleeper 24h add/drop trends, recent 715 drops, and injury/IR-slot context. Phase 4.6 adds Dynasty Dealer market value plus nflverse offensive snap share, opportunities, 715-scoring production, and current usage trend. Prior-season performance is deliberately discounted until current-season data exists.",
   "players": [
     {
@@ -75,13 +75,13 @@
         "Currently on an NFL roster (MIN).",
         "Listed first on the Sleeper depth chart.",
         "Superflex format raises the value of any QB with a path to starts.",
-        "Sleeper market heat: 213,438 adds in the 24h trend window."
+        "Sleeper market heat: 167,802 adds in the 24h trend window."
       ],
       "recent_715_drop": null,
       "status": "Active",
       "team": "MIN",
       "tier": "Priority",
-      "trending_adds_24h": 213438,
+      "trending_adds_24h": 167802,
       "trending_drops_24h": 0,
       "years_exp": 10
     },
@@ -100,7 +100,7 @@
       "market_rank": 361,
       "market_value": 1895,
       "name": "Joe Flacco",
-      "opportunity_score": 86.1,
+      "opportunity_score": 85.6,
       "performance": {
         "air_yards_share": 0.0,
         "basis": "prior",
@@ -433,13 +433,13 @@
         "Currently on an NFL roster (CIN).",
         "Depth-chart No. 2: direct contingent path to usage.",
         "Superflex format raises the value of any QB with a path to starts.",
-        "Sleeper market heat: 24,786 adds in the 24h trend window."
+        "Sleeper market heat: 16,983 adds in the 24h trend window."
       ],
       "recent_715_drop": null,
       "status": "Active",
       "team": "CIN",
       "tier": "Priority",
-      "trending_adds_24h": 24786,
+      "trending_adds_24h": 16983,
       "trending_drops_24h": 0,
       "years_exp": 18
     },
@@ -514,15 +514,15 @@
         "current-season usage: 7.0 opportunities/game, 33% offensive snaps, 18.8 715 PPG.",
         "Currently on an NFL roster (CIN).",
         "Listed first on the Sleeper depth chart.",
-        "Sleeper market heat: 117,168 adds in the 24h trend window.",
-        "Market headwind: 29,468 drops in the 24h trend window."
+        "Sleeper market heat: 97,552 adds in the 24h trend window.",
+        "Market headwind: 26,792 drops in the 24h trend window."
       ],
       "recent_715_drop": null,
       "status": "Active",
       "team": "CIN",
       "tier": "Priority",
-      "trending_adds_24h": 117168,
-      "trending_drops_24h": 29468,
+      "trending_adds_24h": 97552,
+      "trending_drops_24h": 26792,
       "years_exp": 8
     },
     {
@@ -557,7 +557,7 @@
             "ttl_days": 4,
             "type": "practice",
             "url": "https://www.fantasypros.com/nfl/news/608627/cooper-rush-back-logs-full-practice-thursday.php",
-            "weighted_score": 0.27
+            "weighted_score": 0.2655
           },
           {
             "corroboration_count": 1,
@@ -568,7 +568,7 @@
             "origin": "sleeper",
             "player_id": "4574",
             "player_name": "Cooper Rush",
-            "published_at": "2026-09-17T19:46:43.797581+00:00",
+            "published_at": "2026-09-17T21:20:49.629028+00:00",
             "reliability": 0.65,
             "signal_id": "sleeper-depth-4574",
             "source": "Sleeper depth chart",
@@ -678,13 +678,94 @@
         "Recently dropped by NolanFarts; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 3.7,
+        "age_days": 3.8,
         "manager": "NolanFarts"
       },
       "status": "Active",
       "team": "ATL",
       "tier": "Priority",
       "trending_adds_24h": 0,
+      "trending_drops_24h": 0,
+      "years_exp": 9
+    },
+    {
+      "age": 31,
+      "depth": 2,
+      "depth_chart_order": 2,
+      "depth_chart_position": "TE",
+      "fantasy_positions": [
+        "TE"
+      ],
+      "injury_body_part": null,
+      "injury_notes": null,
+      "injury_status": null,
+      "market_position_rank": 42,
+      "market_rank": 250,
+      "market_value": 2523,
+      "name": "Jonnu Smith",
+      "opportunity_score": 75.8,
+      "performance": {
+        "air_yards_share": 5.1,
+        "basis": "current",
+        "basis_label": "2026",
+        "carries_per_game": 0.0,
+        "fantasy_points_715": 7.0,
+        "games": 1,
+        "gsis_id": "00-0033858",
+        "last3_opportunities_per_game": 3.0,
+        "last3_ppg_715": 7.0,
+        "name": "Jonnu Smith",
+        "offense_snap_pct": 47.0,
+        "opportunities": 3.0,
+        "opportunities_per_game": 3.0,
+        "pfr_id": "SmitJo01",
+        "position": "TE",
+        "ppg_715": 7.0,
+        "season": 2026,
+        "sleeper_id": "4144",
+        "target_share": 7.5,
+        "targets_per_game": 3.0,
+        "touches_per_game": 2.0,
+        "weekly": [
+          {
+            "air_yards_share": 0.0511727078891258,
+            "attempts": 0.0,
+            "carries": 0.0,
+            "fantasy_points_715": 7.0,
+            "offense_snap_pct": 47.0,
+            "offense_snaps": 32.0,
+            "opponent": "MIN",
+            "opportunities": 3.0,
+            "passing_interceptions": 0.0,
+            "passing_tds": 0.0,
+            "passing_yards": 0.0,
+            "receiving_tds": 0.0,
+            "receiving_yards": 50.0,
+            "receptions": 2.0,
+            "rushing_tds": 0.0,
+            "rushing_yards": 0.0,
+            "target_share": 0.075,
+            "targets": 3.0,
+            "team": "GB",
+            "touches": 2.0,
+            "week": 1
+          }
+        ]
+      },
+      "player_id": "4144",
+      "position": "TE",
+      "reasons": [
+        "Dynasty Dealer market value 2,523 adds insulation/upside signal.",
+        "current-season usage: 3.0 opportunities/game, 47% offensive snaps, 7.0 715 PPG.",
+        "Currently on an NFL roster (GB).",
+        "Depth-chart No. 2: direct contingent path to usage.",
+        "Sleeper market heat: 11,851 adds in the 24h trend window."
+      ],
+      "recent_715_drop": null,
+      "status": "Active",
+      "team": "GB",
+      "tier": "Priority",
+      "trending_adds_24h": 11851,
       "trending_drops_24h": 0,
       "years_exp": 9
     },
@@ -703,7 +784,7 @@
       "market_rank": 500,
       "market_value": 10,
       "name": "DeeJay Dallas",
-      "opportunity_score": 70.1,
+      "opportunity_score": 70.3,
       "performance": {
         "air_yards_share": 0.6,
         "basis": "current",
@@ -759,13 +840,13 @@
         "Currently on an NFL roster (MIN).",
         "Depth-chart No. 2: direct contingent path to usage.",
         "RB contingent value can rise quickly with one depth-chart change.",
-        "Sleeper market heat: 79,344 adds in the 24h trend window."
+        "Sleeper market heat: 75,783 adds in the 24h trend window."
       ],
       "recent_715_drop": null,
       "status": "Active",
       "team": "MIN",
       "tier": "Priority",
-      "trending_adds_24h": 79344,
+      "trending_adds_24h": 75783,
       "trending_drops_24h": 0,
       "years_exp": 6
     },
@@ -1539,13 +1620,13 @@
         "current-season usage: 2.0 opportunities/game, 71% offensive snaps, 3.9 715 PPG.",
         "Currently on an NFL roster (SF).",
         "Depth-chart No. 2: direct contingent path to usage.",
-        "Sleeper market heat: 12,025 adds in the 24h trend window."
+        "Sleeper market heat: 10,545 adds in the 24h trend window."
       ],
       "recent_715_drop": null,
       "status": "Active",
       "team": "SF",
       "tier": "Strong stash",
-      "trending_adds_24h": 12025,
+      "trending_adds_24h": 10545,
       "trending_drops_24h": 0,
       "years_exp": 5
     },
@@ -2467,86 +2548,6 @@
       "years_exp": 7
     },
     {
-      "age": 31,
-      "depth": 2,
-      "depth_chart_order": 2,
-      "depth_chart_position": "TE",
-      "fantasy_positions": [
-        "TE"
-      ],
-      "injury_body_part": null,
-      "injury_notes": null,
-      "injury_status": null,
-      "market_position_rank": 42,
-      "market_rank": 250,
-      "market_value": 2523,
-      "name": "Jonnu Smith",
-      "opportunity_score": 58.0,
-      "performance": {
-        "air_yards_share": 5.1,
-        "basis": "current",
-        "basis_label": "2026",
-        "carries_per_game": 0.0,
-        "fantasy_points_715": 7.0,
-        "games": 1,
-        "gsis_id": "00-0033858",
-        "last3_opportunities_per_game": 3.0,
-        "last3_ppg_715": 7.0,
-        "name": "Jonnu Smith",
-        "offense_snap_pct": 47.0,
-        "opportunities": 3.0,
-        "opportunities_per_game": 3.0,
-        "pfr_id": "SmitJo01",
-        "position": "TE",
-        "ppg_715": 7.0,
-        "season": 2026,
-        "sleeper_id": "4144",
-        "target_share": 7.5,
-        "targets_per_game": 3.0,
-        "touches_per_game": 2.0,
-        "weekly": [
-          {
-            "air_yards_share": 0.0511727078891258,
-            "attempts": 0.0,
-            "carries": 0.0,
-            "fantasy_points_715": 7.0,
-            "offense_snap_pct": 47.0,
-            "offense_snaps": 32.0,
-            "opponent": "MIN",
-            "opportunities": 3.0,
-            "passing_interceptions": 0.0,
-            "passing_tds": 0.0,
-            "passing_yards": 0.0,
-            "receiving_tds": 0.0,
-            "receiving_yards": 50.0,
-            "receptions": 2.0,
-            "rushing_tds": 0.0,
-            "rushing_yards": 0.0,
-            "target_share": 0.075,
-            "targets": 3.0,
-            "team": "GB",
-            "touches": 2.0,
-            "week": 1
-          }
-        ]
-      },
-      "player_id": "4144",
-      "position": "TE",
-      "reasons": [
-        "Dynasty Dealer market value 2,523 adds insulation/upside signal.",
-        "current-season usage: 3.0 opportunities/game, 47% offensive snaps, 7.0 715 PPG.",
-        "Currently on an NFL roster (GB).",
-        "Depth-chart No. 2: direct contingent path to usage."
-      ],
-      "recent_715_drop": null,
-      "status": "Active",
-      "team": "GB",
-      "tier": "Strong stash",
-      "trending_adds_24h": 0,
-      "trending_drops_24h": 0,
-      "years_exp": 9
-    },
-    {
       "age": 26,
       "depth": 2,
       "depth_chart_order": 2,
@@ -3348,7 +3349,7 @@
         "Recently dropped by ryansorensen8; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 1.7,
+        "age_days": 1.8,
         "manager": "ryansorensen8"
       },
       "status": "Active",
@@ -4767,7 +4768,7 @@
         "Recently dropped by Amelse; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 1.6,
+        "age_days": 1.7,
         "manager": "Amelse"
       },
       "status": "Active",
@@ -5114,7 +5115,7 @@
         "Recently dropped by MayaHuskies; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 4.8,
+        "age_days": 4.9,
         "manager": "MayaHuskies"
       },
       "status": "Active",
