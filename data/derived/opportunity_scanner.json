@@ -1,6 +1,6 @@
 {
   "context_methodology": "Time-decayed, source-weighted context. Narrative effects are capped at ±8%, combined workload context at ±12%, and availability remains a separate guardrail. Every adjustment retains its source and explanation.",
-  "generated_at": "2026-09-17T16:58:56.467110+00:00",
+  "generated_at": "2026-09-17T19:46:40.950282+00:00",
   "market_attribution": "Values by Dynasty Dealer — https://www.dynastydealer.com/",
   "methodology": "Signal score, not dynasty market value. Uses confirmed league availability, NFL roster status, depth chart, age, league format, Sleeper 24h add/drop trends, recent 715 drops, and injury/IR-slot context. Phase 4.6 adds Dynasty Dealer market value plus nflverse offensive snap share, opportunities, 715-scoring production, and current usage trend. Prior-season performance is deliberately discounted until current-season data exists.",
   "performance_attribution": "NFL performance data via nflverse — https://nflverse.com/",
@@ -529,6 +529,83 @@
     },
     {
       "age": 32,
+      "base_opportunity_score": 74.0,
+      "context": {
+        "actionable_signal_count": 2,
+        "availability_probability": 1.0,
+        "confidence": "medium",
+        "net_direction": "negative",
+        "opportunity_score_adjustment": 2.7,
+        "player_id": "4574",
+        "research_mention_count": 3,
+        "signal_count": 5,
+        "signals": [
+          {
+            "corroboration_count": 1,
+            "direction": 1.0,
+            "event_date": null,
+            "impact": "availability",
+            "magnitude": 3.0,
+            "origin": "curated_report",
+            "player_id": "4574",
+            "player_name": "Cooper Rush",
+            "published_at": "2026-09-17T19:45:40+00:00",
+            "reliability": 0.45,
+            "scored": true,
+            "signal_id": "c8e3cd1ab55ca448e8fa",
+            "source": "FantasyPros",
+            "source_type": "aggregator",
+            "summary": "Cooper Rush (back) logs full practice Thursday",
+            "ttl_days": 4,
+            "type": "practice",
+            "url": "https://www.fantasypros.com/nfl/news/608627/cooper-rush-back-logs-full-practice-thursday.php",
+            "weighted_score": 0.27
+          },
+          {
+            "corroboration_count": 1,
+            "direction": -1,
+            "event_date": null,
+            "impact": "workload",
+            "magnitude": 2,
+            "origin": "sleeper",
+            "player_id": "4574",
+            "player_name": "Cooper Rush",
+            "published_at": "2026-09-17T19:46:43.797581+00:00",
+            "reliability": 0.65,
+            "signal_id": "sleeper-depth-4574",
+            "source": "Sleeper depth chart",
+            "source_type": "team",
+            "summary": "Current Sleeper depth-chart order is 3.",
+            "ttl_days": 3,
+            "type": "depth_chart",
+            "url": null,
+            "weighted_score": -0.26
+          },
+          {
+            "corroboration_count": 1,
+            "direction": 0.0,
+            "event_date": null,
+            "impact": "context",
+            "magnitude": 0.0,
+            "origin": "curated_report",
+            "player_id": "4574",
+            "player_name": "Cooper Rush",
+            "published_at": "2026-09-11T18:03:00+00:00",
+            "reliability": 0.45,
+            "scored": false,
+            "signal_id": "357cc0cc823f0d5cb4ae",
+            "source": "CBS Sports",
+            "source_type": "aggregator",
+            "summary": "Falcons rule out Tua Tagovailoa against Steelers, Cooper Rush to start at quarterback - CBS Sports",
+            "ttl_days": 7,
+            "type": "news",
+            "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxObVQ1eWdRMXJTZWV2clpLRml2anFxdWwySldvaDk3cm1nbTN5ZnFlbzhURWFkY3dkS05ReExWUnlTT0xUZ0hwMVYwTFJycjNpbHpIRUYwMElGUU4xa3ZweGtnMTc3Q2RLeFd0LXQ1S0pqYzhPUXdxVnM0U21kTjhHb2ttekk2NnlSUFlWS2I3N2xiSFNfbDc5VmhnUVMyWlpld0E?oc=5",
+            "weighted_score": 0.0
+          }
+        ],
+        "weekly_multiplier": 0.974
+      },
+      "context_adjustment": 2.7,
       "depth": 3,
       "depth_chart_order": 3,
       "depth_chart_position": "QB",
@@ -542,7 +619,7 @@
       "market_rank": 304,
       "market_value": 2235,
       "name": "Cooper Rush",
-      "opportunity_score": 74.0,
+      "opportunity_score": 76.7,
       "performance": {
         "air_yards_share": 0.0,
         "basis": "current",
@@ -594,6 +671,7 @@
       "player_id": "4574",
       "position": "QB",
       "reasons": [
+        "Current context adjusts the opportunity score +2.7.",
         "Dynasty Dealer market value 2,235 adds insulation/upside signal.",
         "current-season usage: 22.0 opportunities/game, 100% offensive snaps, 7.2 715 PPG.",
         "Currently on an NFL roster (ATL).",
@@ -602,7 +680,7 @@
         "Recently dropped by NolanFarts; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 3.6,
+        "age_days": 3.7,
         "manager": "NolanFarts"
       },
       "status": "Active",
@@ -3272,7 +3350,7 @@
         "Recently dropped by ryansorensen8; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 1.6,
+        "age_days": 1.7,
         "manager": "ryansorensen8"
       },
       "status": "Active",
@@ -4691,7 +4769,7 @@
         "Recently dropped by Amelse; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 1.5,
+        "age_days": 1.6,
         "manager": "Amelse"
       },
       "status": "Active",
@@ -5038,7 +5116,7 @@
         "Recently dropped by MayaHuskies; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 4.7,
+        "age_days": 4.8,
         "manager": "MayaHuskies"
       },
       "status": "Active",
@@ -5225,7 +5303,7 @@
         "Recently dropped by NolanFarts; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 6.0,
+        "age_days": 6.1,
         "manager": "NolanFarts"
       },
       "status": "Active",
@@ -6300,7 +6378,7 @@
         "Recently dropped by Amelse; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 1.5,
+        "age_days": 1.6,
         "manager": "Amelse"
       },
       "status": "Active",
@@ -7161,7 +7239,7 @@
         "Recently dropped by Waldo23; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 2.0,
+        "age_days": 2.1,
         "manager": "Waldo23"
       },
       "status": "Active",
@@ -10991,7 +11069,7 @@
         "Recently dropped by Amelse; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 4.1,
+        "age_days": 4.2,
         "manager": "Amelse"
       },
       "status": "Active",
@@ -12905,7 +12983,7 @@
         "Recently dropped by Amelse; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 1.5,
+        "age_days": 1.6,
         "manager": "Amelse"
       },
       "status": "Active",
