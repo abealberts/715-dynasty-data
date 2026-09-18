@@ -1,6 +1,6 @@
 {
   "context_methodology": "Time-decayed, source-weighted context. Narrative effects are capped at ±8%, combined workload context at ±12%, and availability remains a separate guardrail. Every adjustment retains its source and explanation.",
-  "generated_at": "2026-09-18T04:54:53.850299+00:00",
+  "generated_at": "2026-09-18T11:11:57.690817+00:00",
   "methodology": "Signal score, not dynasty market value. Uses confirmed league availability, NFL roster status, depth chart, age, league format, Sleeper 24h add/drop trends, recent 715 drops, and injury/IR-slot context. Phase 4.6 adds Dynasty Dealer market value plus nflverse offensive snap share, opportunities, 715-scoring production, and current usage trend. Prior-season performance is deliberately discounted until current-season data exists.",
   "players": [
     {
@@ -75,15 +75,179 @@
         "Currently on an NFL roster (MIN).",
         "Listed first on the Sleeper depth chart.",
         "Superflex format raises the value of any QB with a path to starts.",
-        "Sleeper market heat: 132,828 adds in the 24h trend window."
+        "Sleeper market heat: 122,982 adds in the 24h trend window."
       ],
       "recent_715_drop": null,
       "status": "Active",
       "team": "MIN",
       "tier": "Priority",
-      "trending_adds_24h": 132828,
+      "trending_adds_24h": 122982,
       "trending_drops_24h": 0,
       "years_exp": 10
+    },
+    {
+      "age": 32,
+      "base_opportunity_score": 91.3,
+      "context": {
+        "actionable_signal_count": 2,
+        "availability_probability": 1.0,
+        "confidence": "medium",
+        "net_direction": "negative",
+        "opportunity_score_adjustment": 2.3,
+        "player_id": "4574",
+        "research_mention_count": 3,
+        "signal_count": 5,
+        "signals": [
+          {
+            "corroboration_count": 1,
+            "direction": -1,
+            "event_date": null,
+            "impact": "workload",
+            "magnitude": 2,
+            "origin": "sleeper",
+            "player_id": "4574",
+            "player_name": "Cooper Rush",
+            "published_at": "2026-09-18T11:12:00.122167+00:00",
+            "reliability": 0.65,
+            "signal_id": "sleeper-depth-4574",
+            "source": "Sleeper depth chart",
+            "source_type": "team",
+            "summary": "Current Sleeper depth-chart order is 3.",
+            "ttl_days": 3,
+            "type": "depth_chart",
+            "url": null,
+            "weighted_score": -0.26
+          },
+          {
+            "corroboration_count": 1,
+            "direction": 1.0,
+            "event_date": null,
+            "impact": "availability",
+            "magnitude": 3.0,
+            "origin": "curated_report",
+            "player_id": "4574",
+            "player_name": "Cooper Rush",
+            "published_at": "2026-09-17T19:45:40+00:00",
+            "reliability": 0.45,
+            "scored": true,
+            "signal_id": "c8e3cd1ab55ca448e8fa",
+            "source": "FantasyPros",
+            "source_type": "aggregator",
+            "summary": "Cooper Rush (back) logs full practice Thursday",
+            "ttl_days": 4,
+            "type": "practice",
+            "url": "https://www.fantasypros.com/nfl/news/608627/cooper-rush-back-logs-full-practice-thursday.php",
+            "weighted_score": 0.2266
+          },
+          {
+            "corroboration_count": 1,
+            "direction": 0.0,
+            "event_date": null,
+            "impact": "context",
+            "magnitude": 0.0,
+            "origin": "curated_report",
+            "player_id": "4574",
+            "player_name": "Cooper Rush",
+            "published_at": "2026-09-11T18:03:00+00:00",
+            "reliability": 0.45,
+            "scored": false,
+            "signal_id": "357cc0cc823f0d5cb4ae",
+            "source": "CBS Sports",
+            "source_type": "aggregator",
+            "summary": "Falcons rule out Tua Tagovailoa against Steelers, Cooper Rush to start at quarterback - CBS Sports",
+            "ttl_days": 7,
+            "type": "news",
+            "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxObVQ1eWdRMXJTZWV2clpLRml2anFxdWwySldvaDk3cm1nbTN5ZnFlbzhURWFkY3dkS05ReExWUnlTT0xUZ0hwMVYwTFJycjNpbHpIRUYwMElGUU4xa3ZweGtnMTc3Q2RLeFd0LXQ1S0pqYzhPUXdxVnM0U21kTjhHb2ttekk2NnlSUFlWS2I3N2xiSFNfbDc5VmhnUVMyWlpld0E?oc=5",
+            "weighted_score": 0.0
+          }
+        ],
+        "weekly_multiplier": 0.974
+      },
+      "context_adjustment": 2.3,
+      "depth": 3,
+      "depth_chart_order": 3,
+      "depth_chart_position": "QB",
+      "fantasy_positions": [
+        "QB"
+      ],
+      "injury_body_part": null,
+      "injury_notes": null,
+      "injury_status": null,
+      "market_position_rank": 55,
+      "market_rank": 304,
+      "market_value": 2235,
+      "name": "Cooper Rush",
+      "opportunity_score": 93.6,
+      "performance": {
+        "air_yards_share": 0.0,
+        "basis": "current",
+        "basis_label": "2026",
+        "carries_per_game": 0.0,
+        "fantasy_points_715": 7.15,
+        "games": 1,
+        "gsis_id": "00-0033662",
+        "last3_opportunities_per_game": 22.0,
+        "last3_ppg_715": 7.15,
+        "name": "Cooper Rush",
+        "offense_snap_pct": 100.0,
+        "opportunities": 22.0,
+        "opportunities_per_game": 22.0,
+        "pfr_id": "RushCo00",
+        "position": "QB",
+        "ppg_715": 7.15,
+        "season": 2026,
+        "sleeper_id": "4574",
+        "target_share": 0.0,
+        "targets_per_game": 0.0,
+        "touches_per_game": 0.0,
+        "weekly": [
+          {
+            "air_yards_share": 0.0,
+            "attempts": 22.0,
+            "carries": 0.0,
+            "fantasy_points_715": 7.15,
+            "offense_snap_pct": 100.0,
+            "offense_snaps": 60.0,
+            "opponent": "PIT",
+            "opportunities": 22.0,
+            "passing_interceptions": 2.0,
+            "passing_tds": 1.0,
+            "passing_yards": 143.0,
+            "receiving_tds": 0.0,
+            "receiving_yards": 0.0,
+            "receptions": 0.0,
+            "rushing_tds": 0.0,
+            "rushing_yards": 0.0,
+            "target_share": 0.0,
+            "targets": 0.0,
+            "team": "ATL",
+            "touches": 0.0,
+            "week": 1
+          }
+        ]
+      },
+      "player_id": "4574",
+      "position": "QB",
+      "reasons": [
+        "Current context adjusts the opportunity score +2.3.",
+        "Dynasty Dealer market value 2,235 adds insulation/upside signal.",
+        "current-season usage: 22.0 opportunities/game, 100% offensive snaps, 7.2 715 PPG.",
+        "Currently on an NFL roster (ATL).",
+        "Depth-chart No. 3: plausible contingent upside.",
+        "Superflex format raises the value of any QB with a path to starts.",
+        "Sleeper market heat: 8,910 adds in the 24h trend window.",
+        "Recently dropped by NolanFarts; worth checking for a league-specific market reset."
+      ],
+      "recent_715_drop": {
+        "age_days": 4.4,
+        "manager": "NolanFarts"
+      },
+      "status": "Active",
+      "team": "ATL",
+      "tier": "Priority",
+      "trending_adds_24h": 8910,
+      "trending_drops_24h": 0,
+      "years_exp": 9
     },
     {
       "age": 41,
@@ -100,7 +264,7 @@
       "market_rank": 361,
       "market_value": 1895,
       "name": "Joe Flacco",
-      "opportunity_score": 85.1,
+      "opportunity_score": 85.0,
       "performance": {
         "air_yards_share": 0.0,
         "basis": "prior",
@@ -433,13 +597,13 @@
         "Currently on an NFL roster (CIN).",
         "Depth-chart No. 2: direct contingent path to usage.",
         "Superflex format raises the value of any QB with a path to starts.",
-        "Sleeper market heat: 12,780 adds in the 24h trend window."
+        "Sleeper market heat: 12,168 adds in the 24h trend window."
       ],
       "recent_715_drop": null,
       "status": "Active",
       "team": "CIN",
       "tier": "Priority",
-      "trending_adds_24h": 12780,
+      "trending_adds_24h": 12168,
       "trending_drops_24h": 0,
       "years_exp": 18
     },
@@ -458,7 +622,7 @@
       "market_rank": 228,
       "market_value": 2676,
       "name": "Mike Gesicki",
-      "opportunity_score": 81.1,
+      "opportunity_score": 81.0,
       "performance": {
         "air_yards_share": 27.9,
         "basis": "current",
@@ -514,179 +678,16 @@
         "current-season usage: 7.0 opportunities/game, 33% offensive snaps, 18.8 715 PPG.",
         "Currently on an NFL roster (CIN).",
         "Listed first on the Sleeper depth chart.",
-        "Sleeper market heat: 88,016 adds in the 24h trend window.",
-        "Market headwind: 27,292 drops in the 24h trend window."
+        "Sleeper market heat: 84,892 adds in the 24h trend window.",
+        "Market headwind: 26,800 drops in the 24h trend window."
       ],
       "recent_715_drop": null,
       "status": "Active",
       "team": "CIN",
       "tier": "Priority",
-      "trending_adds_24h": 88016,
-      "trending_drops_24h": 27292,
+      "trending_adds_24h": 84892,
+      "trending_drops_24h": 26800,
       "years_exp": 8
-    },
-    {
-      "age": 32,
-      "base_opportunity_score": 74.0,
-      "context": {
-        "actionable_signal_count": 2,
-        "availability_probability": 1.0,
-        "confidence": "medium",
-        "net_direction": "negative",
-        "opportunity_score_adjustment": 2.4,
-        "player_id": "4574",
-        "research_mention_count": 3,
-        "signal_count": 5,
-        "signals": [
-          {
-            "corroboration_count": 1,
-            "direction": -1,
-            "event_date": null,
-            "impact": "workload",
-            "magnitude": 2,
-            "origin": "sleeper",
-            "player_id": "4574",
-            "player_name": "Cooper Rush",
-            "published_at": "2026-09-18T04:54:55.388332+00:00",
-            "reliability": 0.65,
-            "signal_id": "sleeper-depth-4574",
-            "source": "Sleeper depth chart",
-            "source_type": "team",
-            "summary": "Current Sleeper depth-chart order is 3.",
-            "ttl_days": 3,
-            "type": "depth_chart",
-            "url": null,
-            "weighted_score": -0.26
-          },
-          {
-            "corroboration_count": 1,
-            "direction": 1.0,
-            "event_date": null,
-            "impact": "availability",
-            "magnitude": 3.0,
-            "origin": "curated_report",
-            "player_id": "4574",
-            "player_name": "Cooper Rush",
-            "published_at": "2026-09-17T19:45:40+00:00",
-            "reliability": 0.45,
-            "scored": true,
-            "signal_id": "c8e3cd1ab55ca448e8fa",
-            "source": "FantasyPros",
-            "source_type": "aggregator",
-            "summary": "Cooper Rush (back) logs full practice Thursday",
-            "ttl_days": 4,
-            "type": "practice",
-            "url": "https://www.fantasypros.com/nfl/news/608627/cooper-rush-back-logs-full-practice-thursday.php",
-            "weighted_score": 0.2443
-          },
-          {
-            "corroboration_count": 1,
-            "direction": 0.0,
-            "event_date": null,
-            "impact": "context",
-            "magnitude": 0.0,
-            "origin": "curated_report",
-            "player_id": "4574",
-            "player_name": "Cooper Rush",
-            "published_at": "2026-09-11T18:03:00+00:00",
-            "reliability": 0.45,
-            "scored": false,
-            "signal_id": "357cc0cc823f0d5cb4ae",
-            "source": "CBS Sports",
-            "source_type": "aggregator",
-            "summary": "Falcons rule out Tua Tagovailoa against Steelers, Cooper Rush to start at quarterback - CBS Sports",
-            "ttl_days": 7,
-            "type": "news",
-            "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxObVQ1eWdRMXJTZWV2clpLRml2anFxdWwySldvaDk3cm1nbTN5ZnFlbzhURWFkY3dkS05ReExWUnlTT0xUZ0hwMVYwTFJycjNpbHpIRUYwMElGUU4xa3ZweGtnMTc3Q2RLeFd0LXQ1S0pqYzhPUXdxVnM0U21kTjhHb2ttekk2NnlSUFlWS2I3N2xiSFNfbDc5VmhnUVMyWlpld0E?oc=5",
-            "weighted_score": 0.0
-          }
-        ],
-        "weekly_multiplier": 0.974
-      },
-      "context_adjustment": 2.4,
-      "depth": 3,
-      "depth_chart_order": 3,
-      "depth_chart_position": "QB",
-      "fantasy_positions": [
-        "QB"
-      ],
-      "injury_body_part": null,
-      "injury_notes": null,
-      "injury_status": null,
-      "market_position_rank": 55,
-      "market_rank": 304,
-      "market_value": 2235,
-      "name": "Cooper Rush",
-      "opportunity_score": 76.4,
-      "performance": {
-        "air_yards_share": 0.0,
-        "basis": "current",
-        "basis_label": "2026",
-        "carries_per_game": 0.0,
-        "fantasy_points_715": 7.15,
-        "games": 1,
-        "gsis_id": "00-0033662",
-        "last3_opportunities_per_game": 22.0,
-        "last3_ppg_715": 7.15,
-        "name": "Cooper Rush",
-        "offense_snap_pct": 100.0,
-        "opportunities": 22.0,
-        "opportunities_per_game": 22.0,
-        "pfr_id": "RushCo00",
-        "position": "QB",
-        "ppg_715": 7.15,
-        "season": 2026,
-        "sleeper_id": "4574",
-        "target_share": 0.0,
-        "targets_per_game": 0.0,
-        "touches_per_game": 0.0,
-        "weekly": [
-          {
-            "air_yards_share": 0.0,
-            "attempts": 22.0,
-            "carries": 0.0,
-            "fantasy_points_715": 7.15,
-            "offense_snap_pct": 100.0,
-            "offense_snaps": 60.0,
-            "opponent": "PIT",
-            "opportunities": 22.0,
-            "passing_interceptions": 2.0,
-            "passing_tds": 1.0,
-            "passing_yards": 143.0,
-            "receiving_tds": 0.0,
-            "receiving_yards": 0.0,
-            "receptions": 0.0,
-            "rushing_tds": 0.0,
-            "rushing_yards": 0.0,
-            "target_share": 0.0,
-            "targets": 0.0,
-            "team": "ATL",
-            "touches": 0.0,
-            "week": 1
-          }
-        ]
-      },
-      "player_id": "4574",
-      "position": "QB",
-      "reasons": [
-        "Current context adjusts the opportunity score +2.4.",
-        "Dynasty Dealer market value 2,235 adds insulation/upside signal.",
-        "current-season usage: 22.0 opportunities/game, 100% offensive snaps, 7.2 715 PPG.",
-        "Currently on an NFL roster (ATL).",
-        "Depth-chart No. 3: plausible contingent upside.",
-        "Superflex format raises the value of any QB with a path to starts.",
-        "Recently dropped by NolanFarts; worth checking for a league-specific market reset."
-      ],
-      "recent_715_drop": {
-        "age_days": 4.1,
-        "manager": "NolanFarts"
-      },
-      "status": "Active",
-      "team": "ATL",
-      "tier": "Priority",
-      "trending_adds_24h": 0,
-      "trending_drops_24h": 0,
-      "years_exp": 9
     },
     {
       "age": 31,
@@ -759,13 +760,13 @@
         "current-season usage: 3.0 opportunities/game, 47% offensive snaps, 7.0 715 PPG.",
         "Currently on an NFL roster (GB).",
         "Depth-chart No. 2: direct contingent path to usage.",
-        "Sleeper market heat: 10,234 adds in the 24h trend window."
+        "Sleeper market heat: 9,457 adds in the 24h trend window."
       ],
       "recent_715_drop": null,
       "status": "Active",
       "team": "GB",
       "tier": "Priority",
-      "trending_adds_24h": 10234,
+      "trending_adds_24h": 9457,
       "trending_drops_24h": 0,
       "years_exp": 9
     },
@@ -784,7 +785,7 @@
       "market_rank": 500,
       "market_value": 10,
       "name": "DeeJay Dallas",
-      "opportunity_score": 69.9,
+      "opportunity_score": 69.8,
       "performance": {
         "air_yards_share": 0.6,
         "basis": "current",
@@ -840,13 +841,13 @@
         "Currently on an NFL roster (MIN).",
         "Depth-chart No. 2: direct contingent path to usage.",
         "RB contingent value can rise quickly with one depth-chart change.",
-        "Sleeper market heat: 60,735 adds in the 24h trend window."
+        "Sleeper market heat: 54,801 adds in the 24h trend window."
       ],
       "recent_715_drop": null,
       "status": "Active",
       "team": "MIN",
       "tier": "Strong stash",
-      "trending_adds_24h": 60735,
+      "trending_adds_24h": 54801,
       "trending_drops_24h": 0,
       "years_exp": 6
     },
@@ -2047,15 +2048,15 @@
         "current-season usage: 2.0 opportunities/game, 35% offensive snaps, 4.8 715 PPG.",
         "Currently on an NFL roster (CAR).",
         "Listed first on the Sleeper depth chart.",
-        "Sleeper market heat: 9,351 adds in the 24h trend window.",
-        "Market headwind: 41,238 drops in the 24h trend window."
+        "Sleeper market heat: 9,126 adds in the 24h trend window.",
+        "Market headwind: 39,078 drops in the 24h trend window."
       ],
       "recent_715_drop": null,
       "status": "Active",
       "team": "CAR",
       "tier": "Strong stash",
-      "trending_adds_24h": 9351,
-      "trending_drops_24h": 41238,
+      "trending_adds_24h": 9126,
+      "trending_drops_24h": 39078,
       "years_exp": 11
     },
     {
@@ -3354,7 +3355,7 @@
         "Recently dropped by ryansorensen8; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 2.1,
+        "age_days": 2.4,
         "manager": "ryansorensen8"
       },
       "status": "Active",
@@ -4773,7 +4774,7 @@
         "Recently dropped by Amelse; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 2.0,
+        "age_days": 2.3,
         "manager": "Amelse"
       },
       "status": "Active",
@@ -5120,7 +5121,7 @@
         "Recently dropped by MayaHuskies; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 5.2,
+        "age_days": 5.4,
         "manager": "MayaHuskies"
       },
       "status": "Active",
@@ -5307,7 +5308,7 @@
         "Recently dropped by NolanFarts; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 6.4,
+        "age_days": 6.7,
         "manager": "NolanFarts"
       },
       "status": "Active",
