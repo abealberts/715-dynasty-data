@@ -1,92 +1,10 @@
 {
   "context_methodology": "Time-decayed, source-weighted context. Narrative effects are capped at ±8%, combined workload context at ±12%, and availability remains a separate guardrail. Every adjustment retains its source and explanation.",
-  "generated_at": "2026-09-18T20:53:14.682714+00:00",
+  "generated_at": "2026-09-18T22:41:14.632867+00:00",
   "market_attribution": "Values by Dynasty Dealer — https://www.dynastydealer.com/",
   "methodology": "Signal score, not dynasty market value. Uses confirmed league availability, NFL roster status, depth chart, age, league format, Sleeper 24h add/drop trends, recent 715 drops, and injury/IR-slot context. Phase 4.6 adds Dynasty Dealer market value plus nflverse offensive snap share, opportunities, 715-scoring production, and current usage trend. Prior-season performance is deliberately discounted until current-season data exists.",
   "performance_attribution": "NFL performance data via nflverse — https://nflverse.com/",
   "players": [
-    {
-      "age": 33,
-      "depth": 1,
-      "depth_chart_order": 1,
-      "depth_chart_position": "QB",
-      "fantasy_positions": [
-        "QB"
-      ],
-      "injury_body_part": null,
-      "injury_notes": null,
-      "injury_status": null,
-      "market_position_rank": 41,
-      "market_rank": 229,
-      "market_value": 2664,
-      "name": "Carson Wentz",
-      "opportunity_score": 100.0,
-      "performance": {
-        "air_yards_share": 0.0,
-        "basis": "current",
-        "basis_label": "2026",
-        "carries_per_game": 5.0,
-        "fantasy_points_715": 20.55,
-        "games": 1,
-        "gsis_id": "00-0032950",
-        "last3_opportunities_per_game": 24.0,
-        "last3_ppg_715": 20.55,
-        "name": "Carson Wentz",
-        "offense_snap_pct": 83.0,
-        "opportunities": 24.0,
-        "opportunities_per_game": 24.0,
-        "pfr_id": "WentCa00",
-        "position": "QB",
-        "ppg_715": 20.55,
-        "season": 2026,
-        "sleeper_id": "3161",
-        "target_share": 0.0,
-        "targets_per_game": 0.0,
-        "touches_per_game": 5.0,
-        "weekly": [
-          {
-            "air_yards_share": 0.0,
-            "attempts": 19.0,
-            "carries": 5.0,
-            "fantasy_points_715": 20.55,
-            "offense_snap_pct": 83.0,
-            "offense_snaps": 54.0,
-            "opponent": "GB",
-            "opportunities": 24.0,
-            "passing_interceptions": 0.0,
-            "passing_tds": 3.0,
-            "passing_yards": 133.0,
-            "receiving_tds": 0.0,
-            "receiving_yards": 0.0,
-            "receptions": 0.0,
-            "rushing_tds": 0.0,
-            "rushing_yards": -1.0,
-            "target_share": 0.0,
-            "targets": 0.0,
-            "team": "MIN",
-            "touches": 5.0,
-            "week": 1
-          }
-        ]
-      },
-      "player_id": "3161",
-      "position": "QB",
-      "reasons": [
-        "Dynasty Dealer market value 2,664 adds insulation/upside signal.",
-        "current-season usage: 24.0 opportunities/game, 83% offensive snaps, 20.6 715 PPG.",
-        "Currently on an NFL roster (MIN).",
-        "Listed first on the Sleeper depth chart.",
-        "Superflex format raises the value of any QB with a path to starts.",
-        "Sleeper market heat: 104,838 adds in the 24h trend window."
-      ],
-      "recent_715_drop": null,
-      "status": "Active",
-      "team": "MIN",
-      "tier": "Priority",
-      "trending_adds_24h": 104838,
-      "trending_drops_24h": 0,
-      "years_exp": 10
-    },
     {
       "age": 32,
       "base_opportunity_score": 99.9,
@@ -95,10 +13,10 @@
         "availability_probability": 1.0,
         "confidence": "medium",
         "net_direction": "neutral",
-        "opportunity_score_adjustment": 7.5,
+        "opportunity_score_adjustment": 7.4,
         "player_id": "4574",
-        "research_mention_count": 1,
-        "signal_count": 4,
+        "research_mention_count": 2,
+        "signal_count": 5,
         "signals": [
           {
             "corroboration_count": 1,
@@ -119,7 +37,7 @@
             "ttl_days": 7,
             "type": "injury",
             "url": "\n                                                https://www.cbssports.com/nfl/news/falcons-starting-qb-cooper-rush-panthers/\n                    ",
-            "weighted_score": 0.549
+            "weighted_score": 0.543
           },
           {
             "corroboration_count": 1,
@@ -140,7 +58,7 @@
             "ttl_days": 4,
             "type": "practice",
             "url": "https://www.fantasypros.com/nfl/news/608627/cooper-rush-back-logs-full-practice-thursday.php",
-            "weighted_score": 0.1993
+            "weighted_score": 0.1943
           },
           {
             "corroboration_count": 1,
@@ -151,7 +69,7 @@
             "origin": "sleeper",
             "player_id": "4574",
             "player_name": "Cooper Rush",
-            "published_at": "2026-09-18T20:53:17.674984+00:00",
+            "published_at": "2026-09-18T22:41:17.581187+00:00",
             "reliability": 0.65,
             "signal_id": "sleeper-depth-4574",
             "source": "Sleeper depth chart",
@@ -165,7 +83,7 @@
         ],
         "weekly_multiplier": 1.013
       },
-      "context_adjustment": 7.5,
+      "context_adjustment": 7.4,
       "depth": 2,
       "depth_chart_order": 2,
       "depth_chart_position": "QB",
@@ -231,7 +149,7 @@
       "player_id": "4574",
       "position": "QB",
       "reasons": [
-        "Current context adjusts the opportunity score +7.5.",
+        "Current context adjusts the opportunity score +7.4.",
         "Dynasty Dealer market value 2,123 adds insulation/upside signal.",
         "current-season usage: 22.0 opportunities/game, 100% offensive snaps, 7.2 715 PPG.",
         "Currently on an NFL roster (ATL).",
@@ -241,7 +159,7 @@
         "Recently dropped by NolanFarts; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 4.8,
+        "age_days": 4.9,
         "manager": "NolanFarts"
       },
       "status": "Active",
@@ -250,6 +168,166 @@
       "trending_adds_24h": 9572,
       "trending_drops_24h": 0,
       "years_exp": 9
+    },
+    {
+      "age": 33,
+      "base_opportunity_score": 100.0,
+      "context": {
+        "actionable_signal_count": 2,
+        "availability_probability": 0.85,
+        "confidence": "medium",
+        "net_direction": "negative",
+        "opportunity_score_adjustment": -6.9,
+        "player_id": "3161",
+        "research_mention_count": 6,
+        "signal_count": 8,
+        "signals": [
+          {
+            "corroboration_count": 1,
+            "direction": -1.0,
+            "event_date": null,
+            "impact": "availability",
+            "magnitude": 5.0,
+            "origin": "curated_report",
+            "player_id": "3161",
+            "player_name": "Carson Wentz",
+            "published_at": "2026-09-18T19:31:42+00:00",
+            "reliability": 0.7,
+            "scored": true,
+            "signal_id": "cd5a273bd75466ede837",
+            "source": "Zachary Pereles",
+            "source_type": "established_media",
+            "summary": "Vikings rule out Kyler Murray for Week 2 vs. Bears, Carson Wentz to start",
+            "ttl_days": 7,
+            "type": "injury",
+            "url": "\n                                                https://www.cbssports.com/nfl/news/kyler-murray-injury-vikings-qb-carson-wentz/\n                    ",
+            "weighted_score": -0.6868
+          },
+          {
+            "corroboration_count": 1,
+            "direction": 1,
+            "event_date": null,
+            "impact": "workload",
+            "magnitude": 2,
+            "origin": "sleeper",
+            "player_id": "3161",
+            "player_name": "Carson Wentz",
+            "published_at": "2026-09-18T22:41:17.581187+00:00",
+            "reliability": 0.65,
+            "signal_id": "sleeper-depth-3161",
+            "source": "Sleeper depth chart",
+            "source_type": "team",
+            "summary": "Current Sleeper depth-chart order is 1.",
+            "ttl_days": 3,
+            "type": "depth_chart",
+            "url": null,
+            "weighted_score": 0.26
+          },
+          {
+            "corroboration_count": 1,
+            "direction": 0.0,
+            "event_date": null,
+            "impact": "context",
+            "magnitude": 0.0,
+            "origin": "curated_report",
+            "player_id": "3161",
+            "player_name": "Carson Wentz",
+            "published_at": "2026-09-13T22:15:02+00:00",
+            "reliability": 0.45,
+            "scored": false,
+            "signal_id": "27e3120367689524c443",
+            "source": "Yahoo Sports",
+            "source_type": "aggregator",
+            "summary": "Carson Wentz teams timeline: Complete history of NFL career, from Eagles star to Vikings backup QB - Yahoo Sports",
+            "ttl_days": 7,
+            "type": "news",
+            "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOQ0NpYUhHbHlTM2YtT2tQS2JHU1gyazhwOEFqTFVTSXE2Nl9hekVsNXdhdmZfc3F1cEM1Y0tQbF9fWGFmdm5Vd1hTWEhQY21GNmZCUl9xU2dUcGtQN19EVEN6SWUzZVFWQnBkTnhjT0ZsMWpyQkg0Sloyd2E1U1BFQzhRaUJkU3dCZFBxTi1R?oc=5",
+            "weighted_score": 0.0
+          }
+        ],
+        "weekly_multiplier": 0.872
+      },
+      "context_adjustment": -6.9,
+      "depth": 1,
+      "depth_chart_order": 1,
+      "depth_chart_position": "QB",
+      "fantasy_positions": [
+        "QB"
+      ],
+      "injury_body_part": null,
+      "injury_notes": null,
+      "injury_status": null,
+      "market_position_rank": 41,
+      "market_rank": 229,
+      "market_value": 2664,
+      "name": "Carson Wentz",
+      "opportunity_score": 93.1,
+      "performance": {
+        "air_yards_share": 0.0,
+        "basis": "current",
+        "basis_label": "2026",
+        "carries_per_game": 5.0,
+        "fantasy_points_715": 20.55,
+        "games": 1,
+        "gsis_id": "00-0032950",
+        "last3_opportunities_per_game": 24.0,
+        "last3_ppg_715": 20.55,
+        "name": "Carson Wentz",
+        "offense_snap_pct": 83.0,
+        "opportunities": 24.0,
+        "opportunities_per_game": 24.0,
+        "pfr_id": "WentCa00",
+        "position": "QB",
+        "ppg_715": 20.55,
+        "season": 2026,
+        "sleeper_id": "3161",
+        "target_share": 0.0,
+        "targets_per_game": 0.0,
+        "touches_per_game": 5.0,
+        "weekly": [
+          {
+            "air_yards_share": 0.0,
+            "attempts": 19.0,
+            "carries": 5.0,
+            "fantasy_points_715": 20.55,
+            "offense_snap_pct": 83.0,
+            "offense_snaps": 54.0,
+            "opponent": "GB",
+            "opportunities": 24.0,
+            "passing_interceptions": 0.0,
+            "passing_tds": 3.0,
+            "passing_yards": 133.0,
+            "receiving_tds": 0.0,
+            "receiving_yards": 0.0,
+            "receptions": 0.0,
+            "rushing_tds": 0.0,
+            "rushing_yards": -1.0,
+            "target_share": 0.0,
+            "targets": 0.0,
+            "team": "MIN",
+            "touches": 5.0,
+            "week": 1
+          }
+        ]
+      },
+      "player_id": "3161",
+      "position": "QB",
+      "reasons": [
+        "Current context adjusts the opportunity score -6.9.",
+        "Dynasty Dealer market value 2,664 adds insulation/upside signal.",
+        "current-season usage: 24.0 opportunities/game, 83% offensive snaps, 20.6 715 PPG.",
+        "Currently on an NFL roster (MIN).",
+        "Listed first on the Sleeper depth chart.",
+        "Superflex format raises the value of any QB with a path to starts.",
+        "Sleeper market heat: 104,838 adds in the 24h trend window."
+      ],
+      "recent_715_drop": null,
+      "status": "Active",
+      "team": "MIN",
+      "tier": "Priority",
+      "trending_adds_24h": 104838,
+      "trending_drops_24h": 0,
+      "years_exp": 10
     },
     {
       "age": 41,
@@ -3380,7 +3458,7 @@
         "Recently dropped by ryansorensen8; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 2.8,
+        "age_days": 2.9,
         "manager": "ryansorensen8"
       },
       "status": "Active",
@@ -3970,7 +4048,7 @@
         "Recently dropped by NolanFarts; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 7.1,
+        "age_days": 7.2,
         "manager": "NolanFarts"
       },
       "status": "Active",
@@ -4435,7 +4513,7 @@
         "Recently dropped by MayaHuskies; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 5.8,
+        "age_days": 5.9,
         "manager": "MayaHuskies"
       },
       "status": "Active",
@@ -13602,7 +13680,7 @@
         "Recently dropped by Amelse; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 5.2,
+        "age_days": 5.3,
         "manager": "Amelse"
       },
       "status": "Active",
