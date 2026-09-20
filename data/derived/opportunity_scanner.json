@@ -1,6 +1,6 @@
 {
   "context_methodology": "Time-decayed, source-weighted context. Narrative effects are capped at ±8%, combined workload context at ±12%, and availability remains a separate guardrail. Every adjustment retains its source and explanation.",
-  "generated_at": "2026-09-20T04:52:24.012273+00:00",
+  "generated_at": "2026-09-20T05:03:35.086094+00:00",
   "market_attribution": "Values by Dynasty Dealer — https://www.dynastydealer.com/",
   "methodology": "Signal score, not dynasty market value. Uses confirmed league availability, NFL roster status, depth chart, age, league format, Sleeper 24h add/drop trends, recent 715 drops, and injury/IR-slot context. Phase 4.6 adds Dynasty Dealer market value plus nflverse offensive snap share, opportunities, 715-scoring production, and current usage trend. Prior-season performance is deliberately discounted until current-season data exists.",
   "performance_attribution": "NFL performance data via nflverse — https://nflverse.com/",
@@ -15,8 +15,8 @@
         "net_direction": "positive",
         "opportunity_score_adjustment": 5.5,
         "player_id": "4574",
-        "research_mention_count": 2,
-        "signal_count": 5,
+        "research_mention_count": 3,
+        "signal_count": 6,
         "signals": [
           {
             "corroboration_count": 1,
@@ -37,7 +37,7 @@
             "ttl_days": 7,
             "type": "injury",
             "url": "\n                                                https://www.cbssports.com/nfl/news/falcons-starting-qb-cooper-rush-panthers/\n                    ",
-            "weighted_score": 0.4424
+            "weighted_score": 0.4418
           },
           {
             "corroboration_count": 1,
@@ -48,7 +48,7 @@
             "origin": "sleeper",
             "player_id": "4574",
             "player_name": "Cooper Rush",
-            "published_at": "2026-09-20T04:52:26.978649+00:00",
+            "published_at": "2026-09-20T05:03:38.062014+00:00",
             "reliability": 0.65,
             "signal_id": "sleeper-depth-4574",
             "source": "Sleeper depth chart",
@@ -78,7 +78,7 @@
             "ttl_days": 4,
             "type": "practice",
             "url": "https://www.fantasypros.com/nfl/news/608627/cooper-rush-back-logs-full-practice-thursday.php",
-            "weighted_score": 0.1094
+            "weighted_score": 0.1088
           }
         ],
         "weekly_multiplier": 1.026
@@ -201,7 +201,7 @@
             "ttl_days": 7,
             "type": "injury",
             "url": "\n                                                https://www.cbssports.com/nfl/news/kyler-murray-injury-vikings-qb-carson-wentz/\n                    ",
-            "weighted_score": -0.5611
+            "weighted_score": -0.5603
           },
           {
             "corroboration_count": 1,
@@ -212,7 +212,7 @@
             "origin": "sleeper",
             "player_id": "3161",
             "player_name": "Carson Wentz",
-            "published_at": "2026-09-20T04:52:26.978649+00:00",
+            "published_at": "2026-09-20T05:03:38.062014+00:00",
             "reliability": 0.65,
             "signal_id": "sleeper-depth-3161",
             "source": "Sleeper depth chart",
@@ -4327,7 +4327,7 @@
         "Recently dropped by NolanFarts; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 8.4,
+        "age_days": 8.5,
         "manager": "NolanFarts"
       },
       "status": "Active",
