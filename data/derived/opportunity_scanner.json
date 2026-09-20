@@ -1,6 +1,6 @@
 {
   "context_methodology": "Time-decayed, source-weighted context. Narrative effects are capped at ±8%, combined workload context at ±12%, and availability remains a separate guardrail. Every adjustment retains its source and explanation.",
-  "generated_at": "2026-09-20T11:21:14.009388+00:00",
+  "generated_at": "2026-09-20T13:06:29.663558+00:00",
   "market_attribution": "Values by Dynasty Dealer — https://www.dynastydealer.com/",
   "methodology": "Signal score, not dynasty market value. Uses confirmed league availability, NFL roster status, depth chart, age, league format, Sleeper 24h add/drop trends, recent 715 drops, and injury/IR-slot context. Phase 4.6 adds Dynasty Dealer market value plus nflverse offensive snap share, opportunities, 715-scoring production, and current usage trend. Prior-season performance is deliberately discounted until current-season data exists.",
   "performance_attribution": "NFL performance data via nflverse — https://nflverse.com/",
@@ -13,7 +13,7 @@
         "availability_probability": 1.0,
         "confidence": "medium",
         "net_direction": "positive",
-        "opportunity_score_adjustment": 5.1,
+        "opportunity_score_adjustment": 5.0,
         "player_id": "4574",
         "research_mention_count": 3,
         "signal_count": 6,
@@ -37,7 +37,7 @@
             "ttl_days": 7,
             "type": "injury",
             "url": "\n                                                https://www.cbssports.com/nfl/news/falcons-starting-qb-cooper-rush-panthers/\n                    ",
-            "weighted_score": 0.4208
+            "weighted_score": 0.4149
           },
           {
             "corroboration_count": 1,
@@ -48,7 +48,7 @@
             "origin": "sleeper",
             "player_id": "4574",
             "player_name": "Cooper Rush",
-            "published_at": "2026-09-20T11:21:16.963787+00:00",
+            "published_at": "2026-09-20T13:06:32.665771+00:00",
             "reliability": 0.65,
             "signal_id": "sleeper-depth-4574",
             "source": "Sleeper depth chart",
@@ -78,12 +78,12 @@
             "ttl_days": 4,
             "type": "practice",
             "url": "https://www.fantasypros.com/nfl/news/608627/cooper-rush-back-logs-full-practice-thursday.php",
-            "weighted_score": 0.0911
+            "weighted_score": 0.0862
           }
         ],
         "weekly_multiplier": 1.026
       },
-      "context_adjustment": 5.1,
+      "context_adjustment": 5.0,
       "depth": 1,
       "depth_chart_order": 1,
       "depth_chart_position": "QB",
@@ -149,7 +149,7 @@
       "player_id": "4574",
       "position": "QB",
       "reasons": [
-        "Current context adjusts the opportunity score +5.1.",
+        "Current context adjusts the opportunity score +5.0.",
         "Dynasty Dealer market value 2,106 adds insulation/upside signal.",
         "current-season usage: 22.0 opportunities/game, 100% offensive snaps, 7.2 715 PPG.",
         "Currently on an NFL roster (ATL).",
@@ -159,7 +159,7 @@
         "Recently dropped by NolanFarts; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 6.4,
+        "age_days": 6.5,
         "manager": "NolanFarts"
       },
       "status": "Active",
@@ -179,8 +179,8 @@
         "net_direction": "negative",
         "opportunity_score_adjustment": -5.3,
         "player_id": "3161",
-        "research_mention_count": 7,
-        "signal_count": 9,
+        "research_mention_count": 8,
+        "signal_count": 10,
         "signals": [
           {
             "corroboration_count": 1,
@@ -201,7 +201,7 @@
             "ttl_days": 7,
             "type": "injury",
             "url": "\n                                                https://www.cbssports.com/nfl/news/kyler-murray-injury-vikings-qb-carson-wentz/\n                    ",
-            "weighted_score": -0.5341
+            "weighted_score": -0.5267
           },
           {
             "corroboration_count": 1,
@@ -212,7 +212,7 @@
             "origin": "sleeper",
             "player_id": "3161",
             "player_name": "Carson Wentz",
-            "published_at": "2026-09-20T11:21:16.963787+00:00",
+            "published_at": "2026-09-20T13:06:32.665771+00:00",
             "reliability": 0.65,
             "signal_id": "sleeper-depth-3161",
             "source": "Sleeper depth chart",
@@ -232,16 +232,16 @@
             "origin": "curated_report",
             "player_id": "3161",
             "player_name": "Carson Wentz",
-            "published_at": "2026-09-13T22:15:02+00:00",
+            "published_at": "2026-09-14T07:06:15+00:00",
             "reliability": 0.45,
             "scored": false,
-            "signal_id": "27e3120367689524c443",
+            "signal_id": "26d8d3223737ff41b2c5",
             "source": "Yahoo Sports",
             "source_type": "aggregator",
-            "summary": "Carson Wentz teams timeline: Complete history of NFL career, from Eagles star to Vikings backup QB - Yahoo Sports",
+            "summary": "How Carson Wentz secured a $100K bonus in the Vikings’ NFL Week 1 game against Packers - Yahoo Sports",
             "ttl_days": 7,
             "type": "news",
-            "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOQ0NpYUhHbHlTM2YtT2tQS2JHU1gyazhwOEFqTFVTSXE2Nl9hekVsNXdhdmZfc3F1cEM1Y0tQbF9fWGFmdm5Vd1hTWEhQY21GNmZCUl9xU2dUcGtQN19EVEN6SWUzZVFWQnBkTnhjT0ZsMWpyQkg0Sloyd2E1U1BFQzhRaUJkU3dCZFBxTi1R?oc=5",
+            "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPVnNsV1VJOG5kUE9CUzJxMFdZd3h2Zm53V2VTTUVZN1QwTlRJUHp3emNTNjJuT0tDV042b1Z0NURnZUEtQVZxQ2Mzd3FsdGNSZXItZFkyU0huWFRZZWxfWmRKdkZlT0o2cklZUW1xcU1VUnBRZXRkc1ZhOUNlbHBiRmdrVnh3Z2s?oc=5",
             "weighted_score": 0.0
           }
         ],
@@ -3862,7 +3862,7 @@
         "Recently dropped by ryansorensen8; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 4.4,
+        "age_days": 4.5,
         "manager": "ryansorensen8"
       },
       "status": "Active",
@@ -4059,7 +4059,7 @@
         "Recently dropped by MayaHuskies; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 7.4,
+        "age_days": 7.5,
         "manager": "MayaHuskies"
       },
       "status": "Active",
@@ -4328,7 +4328,7 @@
         "Recently dropped by NolanFarts; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 8.7,
+        "age_days": 8.8,
         "manager": "NolanFarts"
       },
       "status": "Active",
@@ -14476,7 +14476,7 @@
         "Recently dropped by Amelse; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 6.8,
+        "age_days": 6.9,
         "manager": "Amelse"
       },
       "status": "Active",
