@@ -1,6 +1,6 @@
 {
   "context_methodology": "Time-decayed, source-weighted context. Narrative effects are capped at ±8%, combined workload context at ±12%, and availability remains a separate guardrail. Every adjustment retains its source and explanation.",
-  "generated_at": "2026-09-21T12:45:42.884649+00:00",
+  "generated_at": "2026-09-21T15:10:55.937078+00:00",
   "methodology": "Signal score, not dynasty market value. Uses confirmed league availability, NFL roster status, depth chart, age, league format, Sleeper 24h add/drop trends, recent 715 drops, and injury/IR-slot context. Phase 4.6 adds Dynasty Dealer market value plus nflverse offensive snap share, opportunities, 715-scoring production, and current usage trend. Prior-season performance is deliberately discounted until current-season data exists.",
   "players": [
     {
@@ -11,7 +11,7 @@
         "availability_probability": 0.85,
         "confidence": "medium",
         "net_direction": "negative",
-        "opportunity_score_adjustment": -4.3,
+        "opportunity_score_adjustment": -4.2,
         "player_id": "3161",
         "research_mention_count": 3,
         "signal_count": 5,
@@ -35,7 +35,7 @@
             "ttl_days": 7,
             "type": "injury",
             "url": "\n                                                https://www.cbssports.com/nfl/news/kyler-murray-injury-vikings-qb-carson-wentz/\n                    ",
-            "weighted_score": -0.4282
+            "weighted_score": -0.4181
           },
           {
             "corroboration_count": 1,
@@ -46,7 +46,7 @@
             "origin": "sleeper",
             "player_id": "3161",
             "player_name": "Carson Wentz",
-            "published_at": "2026-09-21T12:45:45.753949+00:00",
+            "published_at": "2026-09-21T15:10:58.801057+00:00",
             "reliability": 0.65,
             "signal_id": "sleeper-depth-3161",
             "source": "Sleeper depth chart",
@@ -81,7 +81,7 @@
         ],
         "weekly_multiplier": 0.872
       },
-      "context_adjustment": -4.3,
+      "context_adjustment": -4.2,
       "depth": 1,
       "depth_chart_order": 1,
       "depth_chart_position": "QB",
@@ -95,7 +95,7 @@
       "market_rank": 252,
       "market_value": 2502,
       "name": "Carson Wentz",
-      "opportunity_score": 91.0,
+      "opportunity_score": 91.1,
       "performance": {
         "air_yards_share": 0.0,
         "basis": "current",
@@ -147,7 +147,7 @@
       "player_id": "3161",
       "position": "QB",
       "reasons": [
-        "Current context adjusts the opportunity score -4.3.",
+        "Current context adjusts the opportunity score -4.2.",
         "Dynasty Dealer market value 2,502 adds insulation/upside signal.",
         "current-season usage: 24.0 opportunities/game, 83% offensive snaps, 20.6 715 PPG.",
         "Currently on an NFL roster (MIN).",
@@ -484,7 +484,7 @@
         "availability_probability": 0.85,
         "confidence": "medium",
         "net_direction": "negative",
-        "opportunity_score_adjustment": -0.9,
+        "opportunity_score_adjustment": -1.0,
         "player_id": "4574",
         "research_mention_count": 2,
         "signal_count": 6,
@@ -508,7 +508,7 @@
             "ttl_days": 7,
             "type": "injury",
             "url": "https://www.rotowire.com//football/player/cooper-rush-11841",
-            "weighted_score": -0.4483
+            "weighted_score": -0.4403
           },
           {
             "corroboration_count": 1,
@@ -529,7 +529,7 @@
             "ttl_days": 7,
             "type": "injury",
             "url": "\n                                                https://www.cbssports.com/nfl/news/falcons-starting-qb-cooper-rush-panthers/\n                    ",
-            "weighted_score": 0.3361
+            "weighted_score": 0.328
           },
           {
             "corroboration_count": 1,
@@ -540,7 +540,7 @@
             "origin": "sleeper",
             "player_id": "4574",
             "player_name": "Cooper Rush",
-            "published_at": "2026-09-21T12:45:45.753949+00:00",
+            "published_at": "2026-09-21T15:10:58.801057+00:00",
             "reliability": 0.65,
             "signal_id": "sleeper-depth-4574",
             "source": "Sleeper depth chart",
@@ -554,7 +554,7 @@
         ],
         "weekly_multiplier": 0.872
       },
-      "context_adjustment": -0.9,
+      "context_adjustment": -1.0,
       "depth": 1,
       "depth_chart_order": 1,
       "depth_chart_position": "QB",
@@ -568,7 +568,7 @@
       "market_rank": 322,
       "market_value": 2081,
       "name": "Cooper Rush",
-      "opportunity_score": 86.1,
+      "opportunity_score": 86.0,
       "performance": {
         "air_yards_share": 0.0,
         "basis": "current",
@@ -620,7 +620,7 @@
       "player_id": "4574",
       "position": "QB",
       "reasons": [
-        "Current context adjusts the opportunity score -0.9.",
+        "Current context adjusts the opportunity score -1.0.",
         "Dynasty Dealer market value 2,081 adds insulation/upside signal.",
         "current-season usage: 22.0 opportunities/game, 100% offensive snaps, 7.2 715 PPG.",
         "Currently on an NFL roster (ATL).",
@@ -629,7 +629,7 @@
         "Recently dropped by NolanFarts; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 7.4,
+        "age_days": 7.6,
         "manager": "NolanFarts"
       },
       "status": "Active",
@@ -715,7 +715,7 @@
         "Recently dropped by Amelse; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 1.3,
+        "age_days": 1.4,
         "manager": "Amelse"
       },
       "status": "Active",
@@ -1172,7 +1172,7 @@
         "Recently dropped by Amelse; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 0.9,
+        "age_days": 1.0,
         "manager": "Amelse"
       },
       "status": "Active",
@@ -2075,7 +2075,7 @@
         "Recently dropped by NolanFarts; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 1.7,
+        "age_days": 1.8,
         "manager": "NolanFarts"
       },
       "status": "Active",
@@ -3990,7 +3990,7 @@
         "Recently dropped by ryansorensen8; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 5.4,
+        "age_days": 5.5,
         "manager": "ryansorensen8"
       },
       "status": "Active",
@@ -4187,7 +4187,7 @@
         "Recently dropped by MayaHuskies; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 8.5,
+        "age_days": 8.6,
         "manager": "MayaHuskies"
       },
       "status": "Active",
@@ -4306,7 +4306,7 @@
         "Recently dropped by NolanFarts; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 9.8,
+        "age_days": 9.9,
         "manager": "NolanFarts"
       },
       "status": "Active",
@@ -4424,7 +4424,7 @@
         "Recently dropped by Amelse; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 5.3,
+        "age_days": 5.4,
         "manager": "Amelse"
       },
       "status": "Active",
