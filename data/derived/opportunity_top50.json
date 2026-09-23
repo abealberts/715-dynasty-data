@@ -1,6 +1,6 @@
 {
   "context_methodology": "Time-decayed, source-weighted context. Narrative effects are capped at ±8%, combined workload context at ±12%, and availability remains a separate guardrail. Every adjustment retains its source and explanation.",
-  "generated_at": "2026-09-23T04:55:12.692841+00:00",
+  "generated_at": "2026-09-23T11:33:32.556990+00:00",
   "methodology": "Signal score, not dynasty market value. Uses confirmed league availability, NFL roster status, depth chart, age, league format, Sleeper 24h add/drop trends, recent 715 drops, and injury/IR-slot context. Phase 4.6 adds Dynasty Dealer market value plus nflverse offensive snap share, opportunities, 715-scoring production, and current usage trend. Prior-season performance is deliberately discounted until current-season data exists.",
   "players": [
     {
@@ -75,120 +75,15 @@
         "Currently on an NFL roster (WAS).",
         "Depth-chart No. 2: direct contingent path to usage.",
         "Superflex format raises the value of any QB with a path to starts.",
-        "Sleeper market heat: 477,252 adds in the 24h trend window."
+        "Sleeper market heat: 505,200 adds in the 24h trend window."
       ],
       "recent_715_drop": null,
       "status": "Active",
       "team": "WAS",
       "tier": "Priority",
-      "trending_adds_24h": 477252,
+      "trending_adds_24h": 505200,
       "trending_drops_24h": 0,
       "years_exp": 11
-    },
-    {
-      "age": 27,
-      "depth": 2,
-      "depth_chart_order": 2,
-      "depth_chart_position": "RB",
-      "fantasy_positions": [
-        "RB"
-      ],
-      "injury_body_part": null,
-      "injury_notes": null,
-      "injury_status": null,
-      "market_position_rank": 68,
-      "market_rank": 253,
-      "market_value": 2455,
-      "name": "Emanuel Wilson",
-      "opportunity_score": 89.0,
-      "performance": {
-        "air_yards_share": 0.2,
-        "basis": "current",
-        "basis_label": "2026",
-        "carries_per_game": 11.5,
-        "fantasy_points_715": 9.5,
-        "games": 2,
-        "gsis_id": "00-0038797",
-        "last3_opportunities_per_game": 12.0,
-        "last3_ppg_715": 4.75,
-        "name": "Emanuel Wilson",
-        "offense_snap_pct": 23.5,
-        "opportunities": 24.0,
-        "opportunities_per_game": 12.0,
-        "pfr_id": "WilsEm00",
-        "position": "RB",
-        "ppg_715": 4.75,
-        "season": 2026,
-        "sleeper_id": "11435",
-        "target_share": 1.9,
-        "targets_per_game": 0.5,
-        "touches_per_game": 11.5,
-        "weekly": [
-          {
-            "air_yards_share": 0.0,
-            "attempts": 0.0,
-            "carries": 2.0,
-            "fantasy_points_715": 0.3,
-            "offense_snap_pct": 6.0,
-            "offense_snaps": 3.0,
-            "opponent": "NE",
-            "opportunities": 2.0,
-            "passing_interceptions": 0.0,
-            "passing_tds": 0.0,
-            "passing_yards": 0.0,
-            "receiving_tds": 0.0,
-            "receiving_yards": 0.0,
-            "receptions": 0.0,
-            "rushing_tds": 0.0,
-            "rushing_yards": 3.0,
-            "target_share": 0.0,
-            "targets": 0.0,
-            "team": "SEA",
-            "touches": 2.0,
-            "week": 1
-          },
-          {
-            "air_yards_share": 0.00440528634361234,
-            "attempts": 0.0,
-            "carries": 21.0,
-            "fantasy_points_715": 9.2,
-            "offense_snap_pct": 41.0,
-            "offense_snaps": 29.0,
-            "opponent": "ARI",
-            "opportunities": 22.0,
-            "passing_interceptions": 0.0,
-            "passing_tds": 0.0,
-            "passing_yards": 0.0,
-            "receiving_tds": 0.0,
-            "receiving_yards": 0.0,
-            "receptions": 0.0,
-            "rushing_tds": 0.0,
-            "rushing_yards": 92.0,
-            "target_share": 0.0384615384615385,
-            "targets": 1.0,
-            "team": "SEA",
-            "touches": 21.0,
-            "week": 2
-          }
-        ]
-      },
-      "player_id": "11435",
-      "position": "RB",
-      "reasons": [
-        "Dynasty Dealer market value 2,455 adds insulation/upside signal.",
-        "current-season usage: 12.0 opportunities/game, 24% offensive snaps, 4.8 715 PPG.",
-        "Currently on an NFL roster (SEA).",
-        "Depth-chart No. 2: direct contingent path to usage.",
-        "RB contingent value can rise quickly with one depth-chart change.",
-        "Sleeper market heat: 3,160,620 adds in the 24h trend window."
-      ],
-      "recent_715_drop": null,
-      "status": "Active",
-      "team": "SEA",
-      "tier": "Priority",
-      "trending_adds_24h": 3160620,
-      "trending_drops_24h": 0,
-      "years_exp": 3
     },
     {
       "age": 28,
@@ -205,7 +100,7 @@
       "market_rank": 357,
       "market_value": 1852,
       "name": "Justice Hill",
-      "opportunity_score": 86.3,
+      "opportunity_score": 86.5,
       "performance": {
         "air_yards_share": -1.6,
         "basis": "current",
@@ -285,17 +180,17 @@
         "Currently on an NFL roster (BAL).",
         "Depth-chart No. 2: direct contingent path to usage.",
         "RB contingent value can rise quickly with one depth-chart change.",
-        "Sleeper market heat: 31,824 adds in the 24h trend window.",
+        "Sleeper market heat: 37,008 adds in the 24h trend window.",
         "Recently dropped by Amelse; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 0.7,
+        "age_days": 1.0,
         "manager": "Amelse"
       },
       "status": "Active",
       "team": "BAL",
       "tier": "Priority",
-      "trending_adds_24h": 31824,
+      "trending_adds_24h": 37008,
       "trending_drops_24h": 0,
       "years_exp": 7
     },
@@ -393,13 +288,13 @@
         "current-season usage: 2.5 opportunities/game, 40% offensive snaps, 11.6 715 PPG.",
         "Currently on an NFL roster (CAR).",
         "Listed first on the Sleeper depth chart.",
-        "Sleeper market heat: 691,974 adds in the 24h trend window."
+        "Sleeper market heat: 752,121 adds in the 24h trend window."
       ],
       "recent_715_drop": null,
       "status": "Active",
       "team": "CAR",
       "tier": "Priority",
-      "trending_adds_24h": 691974,
+      "trending_adds_24h": 752121,
       "trending_drops_24h": 0,
       "years_exp": 11
     },
@@ -418,7 +313,7 @@
       "market_rank": 371,
       "market_value": 1639,
       "name": "Will Shipley",
-      "opportunity_score": 79.9,
+      "opportunity_score": 80.0,
       "performance": {
         "air_yards_share": 1.3,
         "basis": "current",
@@ -499,25 +394,131 @@
         "Depth-chart No. 3: plausible contingent upside.",
         "Age supports long-term value growth.",
         "RB contingent value can rise quickly with one depth-chart change.",
-        "Sleeper market heat: 24,226 adds in the 24h trend window."
+        "Sleeper market heat: 27,840 adds in the 24h trend window."
       ],
       "recent_715_drop": null,
       "status": "Active",
       "team": "PHI",
       "tier": "Priority",
-      "trending_adds_24h": 24226,
+      "trending_adds_24h": 27840,
       "trending_drops_24h": 0,
       "years_exp": 2
     },
     {
+      "age": 27,
+      "depth": 2,
+      "depth_chart_order": 2,
+      "depth_chart_position": "RB",
+      "fantasy_positions": [
+        "RB"
+      ],
+      "injury_body_part": null,
+      "injury_notes": null,
+      "injury_status": null,
+      "market_position_rank": 68,
+      "market_rank": 253,
+      "market_value": 2455,
+      "name": "Emanuel Wilson",
+      "opportunity_score": 78.2,
+      "performance": {
+        "air_yards_share": 0.2,
+        "basis": "current",
+        "basis_label": "2026",
+        "carries_per_game": 11.5,
+        "fantasy_points_715": 9.5,
+        "games": 2,
+        "gsis_id": "00-0038797",
+        "last3_opportunities_per_game": 12.0,
+        "last3_ppg_715": 4.75,
+        "name": "Emanuel Wilson",
+        "offense_snap_pct": 23.5,
+        "opportunities": 24.0,
+        "opportunities_per_game": 12.0,
+        "pfr_id": "WilsEm00",
+        "position": "RB",
+        "ppg_715": 4.75,
+        "season": 2026,
+        "sleeper_id": "11435",
+        "target_share": 1.9,
+        "targets_per_game": 0.5,
+        "touches_per_game": 11.5,
+        "weekly": [
+          {
+            "air_yards_share": 0.0,
+            "attempts": 0.0,
+            "carries": 2.0,
+            "fantasy_points_715": 0.3,
+            "offense_snap_pct": 6.0,
+            "offense_snaps": 3.0,
+            "opponent": "NE",
+            "opportunities": 2.0,
+            "passing_interceptions": 0.0,
+            "passing_tds": 0.0,
+            "passing_yards": 0.0,
+            "receiving_tds": 0.0,
+            "receiving_yards": 0.0,
+            "receptions": 0.0,
+            "rushing_tds": 0.0,
+            "rushing_yards": 3.0,
+            "target_share": 0.0,
+            "targets": 0.0,
+            "team": "SEA",
+            "touches": 2.0,
+            "week": 1
+          },
+          {
+            "air_yards_share": 0.00440528634361234,
+            "attempts": 0.0,
+            "carries": 21.0,
+            "fantasy_points_715": 9.2,
+            "offense_snap_pct": 41.0,
+            "offense_snaps": 29.0,
+            "opponent": "ARI",
+            "opportunities": 22.0,
+            "passing_interceptions": 0.0,
+            "passing_tds": 0.0,
+            "passing_yards": 0.0,
+            "receiving_tds": 0.0,
+            "receiving_yards": 0.0,
+            "receptions": 0.0,
+            "rushing_tds": 0.0,
+            "rushing_yards": 92.0,
+            "target_share": 0.0384615384615385,
+            "targets": 1.0,
+            "team": "SEA",
+            "touches": 21.0,
+            "week": 2
+          }
+        ]
+      },
+      "player_id": "11435",
+      "position": "RB",
+      "reasons": [
+        "Dynasty Dealer market value 2,455 adds insulation/upside signal.",
+        "current-season usage: 12.0 opportunities/game, 24% offensive snaps, 4.8 715 PPG.",
+        "Currently on an NFL roster (SEA).",
+        "Depth-chart No. 2: direct contingent path to usage.",
+        "RB contingent value can rise quickly with one depth-chart change.",
+        "Sleeper market heat: 3,410,982 adds in the 24h trend window.",
+        "Market headwind: 53,766 drops in the 24h trend window."
+      ],
+      "recent_715_drop": null,
+      "status": "Active",
+      "team": "SEA",
+      "tier": "Priority",
+      "trending_adds_24h": 3410982,
+      "trending_drops_24h": 53766,
+      "years_exp": 3
+    },
+    {
       "age": 26,
-      "base_opportunity_score": 82.2,
+      "base_opportunity_score": 82.1,
       "context": {
         "actionable_signal_count": 2,
         "availability_probability": 0.85,
         "confidence": "medium",
         "net_direction": "negative",
-        "opportunity_score_adjustment": -4.2,
+        "opportunity_score_adjustment": -4.0,
         "player_id": "11256",
         "research_mention_count": 3,
         "signal_count": 5,
@@ -541,7 +542,7 @@
             "ttl_days": 7,
             "type": "injury",
             "url": "https://www.fantasypros.com/nfl/news/609838/tyson-bagent-concussion-concussion-protocol-could-miss-week-3.php",
-            "weighted_score": -0.4219
+            "weighted_score": -0.4042
           },
           {
             "corroboration_count": 1,
@@ -552,7 +553,7 @@
             "origin": "sleeper",
             "player_id": "11256",
             "player_name": "Tyson Bagent",
-            "published_at": "2026-09-23T04:55:15.497903+00:00",
+            "published_at": "2026-09-23T11:33:35.342193+00:00",
             "reliability": 0.65,
             "signal_id": "sleeper-depth-11256",
             "source": "Sleeper depth chart",
@@ -587,7 +588,7 @@
         ],
         "weekly_multiplier": 0.861
       },
-      "context_adjustment": -4.2,
+      "context_adjustment": -4.0,
       "depth": 2,
       "depth_chart_order": 2,
       "depth_chart_position": "QB",
@@ -601,7 +602,7 @@
       "market_rank": 309,
       "market_value": 2146,
       "name": "Tyson Bagent",
-      "opportunity_score": 78.0,
+      "opportunity_score": 78.1,
       "performance": {
         "air_yards_share": 0.0,
         "basis": "current",
@@ -653,19 +654,19 @@
       "player_id": "11256",
       "position": "QB",
       "reasons": [
-        "Current context adjusts the opportunity score -4.2.",
+        "Current context adjusts the opportunity score -4.0.",
         "Dynasty Dealer market value 2,146 adds insulation/upside signal.",
         "current-season usage: 9.0 opportunities/game, 14% offensive snaps, 2.7 715 PPG.",
         "Currently on an NFL roster (CHI).",
         "Depth-chart No. 2: direct contingent path to usage.",
         "Superflex format raises the value of any QB with a path to starts.",
-        "Sleeper market heat: 323,760 adds in the 24h trend window."
+        "Sleeper market heat: 335,790 adds in the 24h trend window."
       ],
       "recent_715_drop": null,
       "status": "Active",
       "team": "CHI",
       "tier": "Priority",
-      "trending_adds_24h": 323760,
+      "trending_adds_24h": 335790,
       "trending_drops_24h": 0,
       "years_exp": 3
     },
@@ -684,7 +685,7 @@
       "market_rank": 394,
       "market_value": 1249,
       "name": "Isaiah Williams",
-      "opportunity_score": 71.9,
+      "opportunity_score": 72.0,
       "performance": {
         "air_yards_share": 2.5,
         "basis": "current",
@@ -763,13 +764,13 @@
         "current-season usage: 4.0 opportunities/game, 71% offensive snaps, 6.2 715 PPG.",
         "Currently on an NFL roster (NYJ).",
         "Depth-chart No. 3: plausible contingent upside.",
-        "Sleeper market heat: 146,688 adds in the 24h trend window."
+        "Sleeper market heat: 168,726 adds in the 24h trend window."
       ],
       "recent_715_drop": null,
       "status": "Active",
       "team": "NYJ",
       "tier": "Priority",
-      "trending_adds_24h": 146688,
+      "trending_adds_24h": 168726,
       "trending_drops_24h": 0,
       "years_exp": 2
     },
@@ -805,7 +806,7 @@
             "ttl_days": 7,
             "type": "injury",
             "url": "https://www.rotowire.com//football/player/cooper-rush-11841",
-            "weighted_score": -0.3145
+            "weighted_score": -0.2924
           },
           {
             "corroboration_count": 1,
@@ -816,7 +817,7 @@
             "origin": "sleeper",
             "player_id": "4574",
             "player_name": "Cooper Rush",
-            "published_at": "2026-09-23T04:55:15.497903+00:00",
+            "published_at": "2026-09-23T11:33:35.342193+00:00",
             "reliability": 0.65,
             "signal_id": "sleeper-depth-4574",
             "source": "Sleeper depth chart",
@@ -846,7 +847,7 @@
             "ttl_days": 7,
             "type": "injury",
             "url": "\n                                                https://www.cbssports.com/nfl/news/falcons-starting-qb-cooper-rush-panthers/\n                    ",
-            "weighted_score": 0.2022
+            "weighted_score": 0.1801
           }
         ],
         "weekly_multiplier": 0.828
@@ -949,7 +950,7 @@
         "Recently dropped by NolanFarts; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 9.1,
+        "age_days": 9.4,
         "manager": "NolanFarts"
       },
       "status": "Active",
@@ -1057,7 +1058,7 @@
         "Recently dropped by Amelse; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 2.6,
+        "age_days": 2.9,
         "manager": "Amelse"
       },
       "status": "Active",
@@ -1211,7 +1212,7 @@
         "Recently dropped by NolanFarts; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 3.4,
+        "age_days": 3.7,
         "manager": "NolanFarts"
       },
       "status": "Active",
@@ -2064,18 +2065,18 @@
         "current-season usage: 3.0 opportunities/game, 58% offensive snaps, 8.5 715 PPG.",
         "Currently on an NFL roster (DEN).",
         "Listed first on the Sleeper depth chart.",
-        "Market headwind: 84,512 drops in the 24h trend window.",
+        "Market headwind: 94,144 drops in the 24h trend window.",
         "Recently dropped by Amelse; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 3.0,
+        "age_days": 3.2,
         "manager": "Amelse"
       },
       "status": "Active",
       "team": "DEN",
       "tier": "Strong stash",
       "trending_adds_24h": 0,
-      "trending_drops_24h": 84512,
+      "trending_drops_24h": 94144,
       "years_exp": 9
     },
     {
@@ -2370,7 +2371,7 @@
       "market_rank": 408,
       "market_value": 460,
       "name": "AJ Dillon",
-      "opportunity_score": 59.0,
+      "opportunity_score": 59.2,
       "performance": {
         "air_yards_share": 0.0,
         "basis": "current",
@@ -2449,13 +2450,13 @@
         "Currently on an NFL roster (CAR).",
         "Depth-chart No. 3: plausible contingent upside.",
         "RB contingent value can rise quickly with one depth-chart change.",
-        "Sleeper market heat: 49,216 adds in the 24h trend window."
+        "Sleeper market heat: 55,968 adds in the 24h trend window."
       ],
       "recent_715_drop": null,
       "status": "Active",
       "team": "CAR",
       "tier": "Strong stash",
-      "trending_adds_24h": 49216,
+      "trending_adds_24h": 55968,
       "trending_drops_24h": 0,
       "years_exp": 6
     },
@@ -2759,18 +2760,18 @@
         "current-season usage: 3.5 opportunities/game, 34% offensive snaps, 9.4 715 PPG.",
         "Currently on an NFL roster (CIN).",
         "Listed first on the Sleeper depth chart.",
-        "Market headwind: 180,372 drops in the 24h trend window.",
+        "Market headwind: 194,924 drops in the 24h trend window.",
         "Recently dropped by Amelse; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 0.7,
+        "age_days": 1.0,
         "manager": "Amelse"
       },
       "status": "Active",
       "team": "CIN",
       "tier": "Strong stash",
       "trending_adds_24h": 0,
-      "trending_drops_24h": 180372,
+      "trending_drops_24h": 194924,
       "years_exp": 8
     },
     {
@@ -3446,7 +3447,7 @@
       "market_rank": 171,
       "market_value": 3143,
       "name": "Darius Slayton",
-      "opportunity_score": 56.6,
+      "opportunity_score": 56.8,
       "performance": {
         "air_yards_share": 25.0,
         "basis": "prior",
@@ -3800,120 +3801,15 @@
         "Dynasty Dealer market value 3,143 adds insulation/upside signal.",
         "2025 prior usage: 4.5 opportunities/game, 81% offensive snaps, 7.1 715 PPG.",
         "Currently on an NFL roster (IND).",
-        "Sleeper market heat: 90,960 adds in the 24h trend window."
+        "Sleeper market heat: 111,504 adds in the 24h trend window."
       ],
       "recent_715_drop": null,
       "status": "Active",
       "team": "IND",
       "tier": "Strong stash",
-      "trending_adds_24h": 90960,
+      "trending_adds_24h": 111504,
       "trending_drops_24h": 0,
       "years_exp": 7
-    },
-    {
-      "age": 28,
-      "depth": 3,
-      "depth_chart_order": 3,
-      "depth_chart_position": "SWR",
-      "fantasy_positions": [
-        "WR"
-      ],
-      "injury_body_part": null,
-      "injury_notes": null,
-      "injury_status": null,
-      "market_position_rank": 98,
-      "market_rank": 240,
-      "market_value": 2526,
-      "name": "Darnell Mooney",
-      "opportunity_score": 56.2,
-      "performance": {
-        "air_yards_share": 10.2,
-        "basis": "current",
-        "basis_label": "2026",
-        "carries_per_game": 0.0,
-        "fantasy_points_715": 11.5,
-        "games": 2,
-        "gsis_id": "00-0036309",
-        "last3_opportunities_per_game": 2.5,
-        "last3_ppg_715": 5.75,
-        "name": "Darnell Mooney",
-        "offense_snap_pct": 64.5,
-        "opportunities": 5.0,
-        "opportunities_per_game": 2.5,
-        "pfr_id": "MoonDa00",
-        "position": "WR",
-        "ppg_715": 5.75,
-        "season": 2026,
-        "sleeper_id": "7090",
-        "target_share": 8.1,
-        "targets_per_game": 2.5,
-        "touches_per_game": 2.0,
-        "weekly": [
-          {
-            "air_yards_share": 0.102040816326531,
-            "attempts": 0.0,
-            "carries": 0.0,
-            "fantasy_points_715": 4.7,
-            "offense_snap_pct": 57.0,
-            "offense_snaps": 39.0,
-            "opponent": "DAL",
-            "opportunities": 2.0,
-            "passing_interceptions": 0.0,
-            "passing_tds": 0.0,
-            "passing_yards": 0.0,
-            "receiving_tds": 0.0,
-            "receiving_yards": 27.0,
-            "receptions": 2.0,
-            "rushing_tds": 0.0,
-            "rushing_yards": 0.0,
-            "target_share": 0.0689655172413793,
-            "targets": 2.0,
-            "team": "NYG",
-            "touches": 2.0,
-            "week": 1
-          },
-          {
-            "air_yards_share": 0.102639296187683,
-            "attempts": 0.0,
-            "carries": 0.0,
-            "fantasy_points_715": 6.8,
-            "offense_snap_pct": 72.0,
-            "offense_snaps": 42.0,
-            "opponent": "LA",
-            "opportunities": 3.0,
-            "passing_interceptions": 0.0,
-            "passing_tds": 0.0,
-            "passing_yards": 0.0,
-            "receiving_tds": 0.0,
-            "receiving_yards": 48.0,
-            "receptions": 2.0,
-            "rushing_tds": 0.0,
-            "rushing_yards": 0.0,
-            "target_share": 0.09375,
-            "targets": 3.0,
-            "team": "NYG",
-            "touches": 2.0,
-            "week": 2
-          }
-        ]
-      },
-      "player_id": "7090",
-      "position": "WR",
-      "reasons": [
-        "Dynasty Dealer market value 2,526 adds insulation/upside signal.",
-        "current-season usage: 2.5 opportunities/game, 64% offensive snaps, 5.8 715 PPG.",
-        "Currently on an NFL roster (NYG).",
-        "Depth-chart No. 3: plausible contingent upside.",
-        "Sleeper market heat: 19,881 adds in the 24h trend window.",
-        "Market headwind: 80,478 drops in the 24h trend window."
-      ],
-      "recent_715_drop": null,
-      "status": "Active",
-      "team": "NYG",
-      "tier": "Strong stash",
-      "trending_adds_24h": 19881,
-      "trending_drops_24h": 80478,
-      "years_exp": 6
     },
     {
       "age": 31,
@@ -4012,7 +3908,7 @@
         "Recently dropped by ryansorensen8; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 7.1,
+        "age_days": 7.4,
         "manager": "ryansorensen8"
       },
       "status": "Active",
@@ -4645,7 +4541,7 @@
         "Recently dropped by Amelse; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 7.0,
+        "age_days": 7.3,
         "manager": "Amelse"
       },
       "status": "Active",
@@ -4654,6 +4550,86 @@
       "trending_adds_24h": 0,
       "trending_drops_24h": 0,
       "years_exp": 3
+    },
+    {
+      "age": 26,
+      "depth": 2,
+      "depth_chart_order": 2,
+      "depth_chart_position": "RWR",
+      "fantasy_positions": [
+        "WR"
+      ],
+      "injury_body_part": null,
+      "injury_notes": null,
+      "injury_status": null,
+      "market_position_rank": 135,
+      "market_rank": 342,
+      "market_value": 1954,
+      "name": "Tutu Atwell",
+      "opportunity_score": 53.0,
+      "performance": {
+        "air_yards_share": 17.5,
+        "basis": "current",
+        "basis_label": "2026",
+        "carries_per_game": 0.0,
+        "fantasy_points_715": 2.9,
+        "games": 1,
+        "gsis_id": "00-0036849",
+        "last3_opportunities_per_game": 2.0,
+        "last3_ppg_715": 2.9,
+        "name": "Tutu Atwell",
+        "offense_snap_pct": 18.0,
+        "opportunities": 2.0,
+        "opportunities_per_game": 2.0,
+        "pfr_id": "AtweTu00",
+        "position": "WR",
+        "ppg_715": 2.9,
+        "season": 2026,
+        "sleeper_id": "7562",
+        "target_share": 6.7,
+        "targets_per_game": 2.0,
+        "touches_per_game": 1.0,
+        "weekly": [
+          {
+            "air_yards_share": 0.175226586102719,
+            "attempts": 0.0,
+            "carries": 0.0,
+            "fantasy_points_715": 2.9,
+            "offense_snap_pct": 18.0,
+            "offense_snaps": 11.0,
+            "opponent": "NYG",
+            "opportunities": 2.0,
+            "passing_interceptions": 0.0,
+            "passing_tds": 0.0,
+            "passing_yards": 0.0,
+            "receiving_tds": 0.0,
+            "receiving_yards": 19.0,
+            "receptions": 1.0,
+            "rushing_tds": 0.0,
+            "rushing_yards": 0.0,
+            "target_share": 0.0666666666666667,
+            "targets": 2.0,
+            "team": "LA",
+            "touches": 1.0,
+            "week": 2
+          }
+        ]
+      },
+      "player_id": "7562",
+      "position": "WR",
+      "reasons": [
+        "Dynasty Dealer market value 1,954 adds insulation/upside signal.",
+        "current-season usage: 2.0 opportunities/game, 18% offensive snaps, 2.9 715 PPG.",
+        "Currently on an NFL roster (LAR).",
+        "Depth-chart No. 2: direct contingent path to usage."
+      ],
+      "recent_715_drop": null,
+      "status": "Active",
+      "team": "LAR",
+      "tier": "Watch",
+      "trending_adds_24h": 0,
+      "trending_drops_24h": 0,
+      "years_exp": 5
     },
     {
       "age": 24,
@@ -5370,18 +5346,18 @@
         "current-season usage: 3.5 opportunities/game, 70% offensive snaps, 6.5 715 PPG.",
         "Currently on an NFL roster (NE).",
         "Depth-chart No. 3: plausible contingent upside.",
-        "Market headwind: 83,559 drops in the 24h trend window.",
+        "Market headwind: 93,366 drops in the 24h trend window.",
         "Recently dropped by Amelse; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 0.7,
+        "age_days": 1.0,
         "manager": "Amelse"
       },
       "status": "Active",
       "team": "NE",
       "tier": "Watch",
       "trending_adds_24h": 0,
-      "trending_drops_24h": 83559,
+      "trending_drops_24h": 93366,
       "years_exp": 9
     },
     {
@@ -5660,18 +5636,18 @@
         "Currently on an NFL roster (NYG).",
         "Depth-chart No. 3: plausible contingent upside.",
         "RB contingent value can rise quickly with one depth-chart change.",
-        "Market headwind: 46,465 drops in the 24h trend window.",
+        "Market headwind: 51,560 drops in the 24h trend window.",
         "Recently dropped by NolanFarts; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 5.9,
+        "age_days": 6.2,
         "manager": "NolanFarts"
       },
       "status": "Active",
       "team": "NYG",
       "tier": "Watch",
       "trending_adds_24h": 0,
-      "trending_drops_24h": 46465,
+      "trending_drops_24h": 51560,
       "years_exp": 5
     },
     {
@@ -5969,14 +5945,14 @@
         "current-season usage: 2.0 opportunities/game, 74% offensive snaps, 2.5 715 PPG.",
         "Currently on an NFL roster (LAR).",
         "Depth-chart No. 2: direct contingent path to usage.",
-        "Market headwind: 59,742 drops in the 24h trend window."
+        "Market headwind: 65,118 drops in the 24h trend window."
       ],
       "recent_715_drop": null,
       "status": "Active",
       "team": "LAR",
       "tier": "Watch",
       "trending_adds_24h": 0,
-      "trending_drops_24h": 59742,
+      "trending_drops_24h": 65118,
       "years_exp": 6
     },
     {
@@ -6008,7 +5984,7 @@
         "Unavailable/injured status is costly because this league has no IR slots."
       ],
       "recent_715_drop": {
-        "age_days": 11.4,
+        "age_days": 11.7,
         "manager": "NolanFarts"
       },
       "status": "Active",
