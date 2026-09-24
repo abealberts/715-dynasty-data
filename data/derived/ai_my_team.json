@@ -549,7 +549,7 @@
     "total_market_value": 110410,
     "weeks": 2
   },
-  "generated_at": "2026-09-24T20:02:36.806481+00:00",
+  "generated_at": "2026-09-24T21:29:54.708867+00:00",
   "lineup": [
     {
       "player": {
@@ -677,37 +677,6 @@
     },
     {
       "player": {
-        "age": 24,
-        "depth_chart_order": 2,
-        "injury_status": "Questionable",
-        "market_position_rank": 32,
-        "market_rank": 89,
-        "market_value": 4674,
-        "name": "Jalen Coker",
-        "performance": {
-          "air_yards_share": 24.7,
-          "basis": "current",
-          "basis_label": "2026",
-          "carries_per_game": 0.0,
-          "games": 2,
-          "last3_opportunities_per_game": 9.0,
-          "last3_ppg_715": 24.2,
-          "offense_snap_pct": 80.0,
-          "opportunities_per_game": 9.0,
-          "ppg_715": 24.2,
-          "target_share": 27.3,
-          "targets_per_game": 9.0,
-          "touches_per_game": 8.0
-        },
-        "player_id": "11646",
-        "position": "WR",
-        "starter": true,
-        "team": "CAR"
-      },
-      "slot": "WR2"
-    },
-    {
-      "player": {
         "age": 27,
         "depth_chart_order": 1,
         "injury_status": null,
@@ -734,6 +703,37 @@
         "position": "WR",
         "starter": true,
         "team": "DEN"
+      },
+      "slot": "WR2"
+    },
+    {
+      "player": {
+        "age": 31,
+        "depth_chart_order": 1,
+        "injury_status": null,
+        "market_position_rank": 40,
+        "market_rank": 108,
+        "market_value": 4101,
+        "name": "Terry McLaurin",
+        "performance": {
+          "air_yards_share": 24.9,
+          "basis": "current",
+          "basis_label": "2026",
+          "carries_per_game": 0.0,
+          "games": 2,
+          "last3_opportunities_per_game": 6.5,
+          "last3_ppg_715": 5.2,
+          "offense_snap_pct": 78.5,
+          "opportunities_per_game": 6.5,
+          "ppg_715": 5.2,
+          "target_share": 20.1,
+          "targets_per_game": 6.5,
+          "touches_per_game": 2.0
+        },
+        "player_id": "5927",
+        "position": "WR",
+        "starter": true,
+        "team": "WAS"
       },
       "slot": "WR3"
     },
@@ -770,32 +770,32 @@
     },
     {
       "player": {
-        "age": 31,
-        "depth_chart_order": 1,
-        "injury_status": null,
-        "market_position_rank": 40,
-        "market_rank": 108,
-        "market_value": 4101,
-        "name": "Terry McLaurin",
+        "age": 24,
+        "depth_chart_order": 2,
+        "injury_status": "Questionable",
+        "market_position_rank": 32,
+        "market_rank": 89,
+        "market_value": 4674,
+        "name": "Jalen Coker",
         "performance": {
-          "air_yards_share": 24.9,
+          "air_yards_share": 24.7,
           "basis": "current",
           "basis_label": "2026",
           "carries_per_game": 0.0,
           "games": 2,
-          "last3_opportunities_per_game": 6.5,
-          "last3_ppg_715": 5.2,
-          "offense_snap_pct": 78.5,
-          "opportunities_per_game": 6.5,
-          "ppg_715": 5.2,
-          "target_share": 20.1,
-          "targets_per_game": 6.5,
-          "touches_per_game": 2.0
+          "last3_opportunities_per_game": 9.0,
+          "last3_ppg_715": 24.2,
+          "offense_snap_pct": 80.0,
+          "opportunities_per_game": 9.0,
+          "ppg_715": 24.2,
+          "target_share": 27.3,
+          "targets_per_game": 9.0,
+          "touches_per_game": 8.0
         },
-        "player_id": "5927",
+        "player_id": "11646",
         "position": "WR",
         "starter": true,
-        "team": "WAS"
+        "team": "CAR"
       },
       "slot": "FLEX"
     },
@@ -1167,7 +1167,36 @@
     "window": "Middle",
     "young_player_share": 40.7
   },
-  "recent_changes": [],
+  "recent_changes": [
+    {
+      "detected_at": "2026-09-24T21:29:51.402075+00:00",
+      "manager": "abewav",
+      "new_starters": [
+        "8161",
+        "8138",
+        "8228",
+        "6794",
+        "7526",
+        "5927",
+        "10859",
+        "11646",
+        "4892"
+      ],
+      "old_starters": [
+        "8161",
+        "8138",
+        "8228",
+        "6794",
+        "11646",
+        "7526",
+        "10859",
+        "5927",
+        "4892"
+      ],
+      "roster_id": 3,
+      "type": "starter_change"
+    }
+  ],
   "record": {
     "fpts": 249,
     "fpts_decimal": 80,
