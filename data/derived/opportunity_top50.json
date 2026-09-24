@@ -1,6 +1,6 @@
 {
   "context_methodology": "Time-decayed, source-weighted context. Narrative effects are capped at ±8%, combined workload context at ±12%, and availability remains a separate guardrail. Every adjustment retains its source and explanation.",
-  "generated_at": "2026-09-24T17:09:02.869408+00:00",
+  "generated_at": "2026-09-24T20:02:33.624646+00:00",
   "methodology": "Signal score, not dynasty market value. Uses confirmed league availability, NFL roster status, depth chart, age, league format, Sleeper 24h add/drop trends, recent 715 drops, and injury/IR-slot context. Phase 4.6 adds Dynasty Dealer market value plus nflverse offensive snap share, opportunities, 715-scoring production, and current usage trend. Prior-season performance is deliberately discounted until current-season data exists.",
   "players": [
     {
@@ -102,7 +102,7 @@
         "Recently dropped by Amelse; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 2.2,
+        "age_days": 2.3,
         "manager": "Amelse"
       },
       "status": "Active",
@@ -210,7 +210,7 @@
         "Recently dropped by Amelse; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 2.2,
+        "age_days": 2.3,
         "manager": "Amelse"
       },
       "status": "Active",
@@ -221,7 +221,193 @@
       "years_exp": 9
     },
     {
+      "age": 28,
+      "depth": 2,
+      "depth_chart_order": 2,
+      "depth_chart_position": "RB",
+      "fantasy_positions": [
+        "RB"
+      ],
+      "injury_body_part": "Toe",
+      "injury_notes": null,
+      "injury_status": "Questionable",
+      "market_position_rank": 104,
+      "market_rank": 396,
+      "market_value": 1109,
+      "name": "DeeJay Dallas",
+      "opportunity_score": 79.8,
+      "performance": {
+        "air_yards_share": -1.0,
+        "basis": "current",
+        "basis_label": "2026",
+        "carries_per_game": 1.0,
+        "fantasy_points_715": 4.1,
+        "games": 2,
+        "gsis_id": "00-0036425",
+        "last3_opportunities_per_game": 2.0,
+        "last3_ppg_715": 2.05,
+        "name": "DeeJay Dallas",
+        "offense_snap_pct": 12.0,
+        "opportunities": 4.0,
+        "opportunities_per_game": 2.0,
+        "pfr_id": "DallDe00",
+        "position": "RB",
+        "ppg_715": 2.05,
+        "season": 2026,
+        "sleeper_id": "6931",
+        "target_share": 4.8,
+        "targets_per_game": 1.0,
+        "touches_per_game": 2.0,
+        "weekly": [
+          {
+            "air_yards_share": 0.00568181818181818,
+            "attempts": 0.0,
+            "carries": 0.0,
+            "fantasy_points_715": 1.1,
+            "offense_snap_pct": 9.0,
+            "offense_snaps": 6.0,
+            "opponent": "GB",
+            "opportunities": 1.0,
+            "passing_interceptions": 0.0,
+            "passing_tds": 0.0,
+            "passing_yards": 0.0,
+            "receiving_tds": 0.0,
+            "receiving_yards": 1.0,
+            "receptions": 1.0,
+            "rushing_tds": 0.0,
+            "rushing_yards": 0.0,
+            "target_share": 0.0434782608695652,
+            "targets": 1.0,
+            "team": "MIN",
+            "touches": 1.0,
+            "week": 1
+          },
+          {
+            "air_yards_share": -0.0254777070063694,
+            "attempts": 0.0,
+            "carries": 2.0,
+            "fantasy_points_715": 3.0,
+            "offense_snap_pct": 15.0,
+            "offense_snaps": 8.0,
+            "opponent": "CHI",
+            "opportunities": 3.0,
+            "passing_interceptions": 0.0,
+            "passing_tds": 0.0,
+            "passing_yards": 0.0,
+            "receiving_tds": 0.0,
+            "receiving_yards": 12.0,
+            "receptions": 1.0,
+            "rushing_tds": 0.0,
+            "rushing_yards": 8.0,
+            "target_share": 0.0526315789473684,
+            "targets": 1.0,
+            "team": "MIN",
+            "touches": 3.0,
+            "week": 2
+          }
+        ]
+      },
+      "player_id": "6931",
+      "position": "RB",
+      "reasons": [
+        "Dynasty Dealer market value 1,109 adds insulation/upside signal.",
+        "current-season usage: 2.0 opportunities/game, 12% offensive snaps, 2.0 715 PPG.",
+        "Currently on an NFL roster (MIN).",
+        "Depth-chart No. 2: direct contingent path to usage.",
+        "RB contingent value can rise quickly with one depth-chart change.",
+        "Sleeper market heat: 21,321 adds in the 24h trend window.",
+        "Recently dropped by Amelse; worth checking for a league-specific market reset."
+      ],
+      "recent_715_drop": {
+        "age_days": 0.3,
+        "manager": "Amelse"
+      },
+      "status": "Active",
+      "team": "MIN",
+      "tier": "Priority",
+      "trending_adds_24h": 21321,
+      "trending_drops_24h": 0,
+      "years_exp": 6
+    },
+    {
       "age": 41,
+      "base_opportunity_score": 86.2,
+      "context": {
+        "actionable_signal_count": 2,
+        "availability_probability": 0.85,
+        "confidence": "medium",
+        "net_direction": "negative",
+        "opportunity_score_adjustment": -6.8,
+        "player_id": "19",
+        "research_mention_count": 2,
+        "signal_count": 4,
+        "signals": [
+          {
+            "corroboration_count": 1,
+            "direction": -1.0,
+            "event_date": null,
+            "impact": "availability",
+            "magnitude": 5.0,
+            "origin": "curated_report",
+            "player_id": "19",
+            "player_name": "Joe Flacco",
+            "published_at": "2026-09-24T15:00:02+00:00",
+            "reliability": 0.7,
+            "scored": true,
+            "signal_id": "4db57fe333c40f240b0b",
+            "source": "Jordan Dajani",
+            "source_type": "established_media",
+            "summary": "Why a Giants trade for Joe Flacco in wake of Jaxson Dart injury makes sense...and why it doesn't",
+            "ttl_days": 7,
+            "type": "injury",
+            "url": "\n                                                https://www.cbssports.com/nfl/news/pros-and-cons-of-giants-trade-bengals-joe-flacco-jaxson-dart/\n                    ",
+            "weighted_score": -0.679
+          },
+          {
+            "corroboration_count": 1,
+            "direction": 1,
+            "event_date": null,
+            "impact": "workload",
+            "magnitude": 1,
+            "origin": "sleeper",
+            "player_id": "19",
+            "player_name": "Joe Flacco",
+            "published_at": "2026-09-24T20:02:36.420289+00:00",
+            "reliability": 0.65,
+            "signal_id": "sleeper-depth-19",
+            "source": "Sleeper depth chart",
+            "source_type": "team",
+            "summary": "Current Sleeper depth-chart order is 2.",
+            "ttl_days": 3,
+            "type": "depth_chart",
+            "url": null,
+            "weighted_score": 0.13
+          },
+          {
+            "corroboration_count": 1,
+            "direction": 0.0,
+            "event_date": null,
+            "impact": "context",
+            "magnitude": 0.0,
+            "origin": "curated_report",
+            "player_id": "19",
+            "player_name": "Joe Flacco",
+            "published_at": "2026-09-23T13:13:00+00:00",
+            "reliability": 0.45,
+            "scored": false,
+            "signal_id": "402b32340e1e3ebfa3d1",
+            "source": "Delawareonline.com",
+            "source_type": "aggregator",
+            "summary": "Joe Flacco, 41, Super Bowl-winning QB from University of Delaware - Delawareonline.com",
+            "ttl_days": 7,
+            "type": "news",
+            "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQU3FKcG1MMnd6Q0hVRHRIWmR5VnVCV0ZhSUs4RF9scVZTN25jby1HQy1nVXR5eWVXaV9mZ0dnLWlBaHhfU1NKQjl3d1pUSnJOMDhRWG9iRkRHbmdLRTg0QTk5SDB5aUpDNDlybzhuQVppSlRJdlNaS2RfRnVUYzZzMmVIQjNFcm9NNjFucHNOa0lBd1Z5QVpWNWQwUEVBNlVYV3NhakoyU3lIQUgtZ3ZkMmlHa0ZaVlZQREIzR0lQWUt5Qk9yZGRVQW9MNFRjWGNqNlNIZmJuc01YNFJnUUV4anNuRHRzNFBf?oc=5",
+            "weighted_score": 0.0
+          }
+        ],
+        "weekly_multiplier": 0.861
+      },
+      "context_adjustment": -6.8,
       "depth": 2,
       "depth_chart_order": 2,
       "depth_chart_position": "QB",
@@ -235,7 +421,7 @@
       "market_rank": 358,
       "market_value": 1877,
       "name": "Joe Flacco",
-      "opportunity_score": 86.2,
+      "opportunity_score": 79.4,
       "performance": {
         "air_yards_share": 0.0,
         "basis": "prior",
@@ -563,6 +749,7 @@
       "player_id": "19",
       "position": "QB",
       "reasons": [
+        "Current context adjusts the opportunity score -6.8.",
         "Dynasty Dealer market value 1,877 adds insulation/upside signal.",
         "2025 prior usage: 33.6 opportunities/game, 78% offensive snaps, 13.2 715 PPG.",
         "Currently on an NFL roster (CIN).",
@@ -577,115 +764,6 @@
       "trending_adds_24h": 25281,
       "trending_drops_24h": 0,
       "years_exp": 18
-    },
-    {
-      "age": 28,
-      "depth": 2,
-      "depth_chart_order": 2,
-      "depth_chart_position": "RB",
-      "fantasy_positions": [
-        "RB"
-      ],
-      "injury_body_part": "Toe",
-      "injury_notes": null,
-      "injury_status": "Questionable",
-      "market_position_rank": 104,
-      "market_rank": 396,
-      "market_value": 1109,
-      "name": "DeeJay Dallas",
-      "opportunity_score": 79.8,
-      "performance": {
-        "air_yards_share": -1.0,
-        "basis": "current",
-        "basis_label": "2026",
-        "carries_per_game": 1.0,
-        "fantasy_points_715": 4.1,
-        "games": 2,
-        "gsis_id": "00-0036425",
-        "last3_opportunities_per_game": 2.0,
-        "last3_ppg_715": 2.05,
-        "name": "DeeJay Dallas",
-        "offense_snap_pct": 12.0,
-        "opportunities": 4.0,
-        "opportunities_per_game": 2.0,
-        "pfr_id": "DallDe00",
-        "position": "RB",
-        "ppg_715": 2.05,
-        "season": 2026,
-        "sleeper_id": "6931",
-        "target_share": 4.8,
-        "targets_per_game": 1.0,
-        "touches_per_game": 2.0,
-        "weekly": [
-          {
-            "air_yards_share": 0.00568181818181818,
-            "attempts": 0.0,
-            "carries": 0.0,
-            "fantasy_points_715": 1.1,
-            "offense_snap_pct": 9.0,
-            "offense_snaps": 6.0,
-            "opponent": "GB",
-            "opportunities": 1.0,
-            "passing_interceptions": 0.0,
-            "passing_tds": 0.0,
-            "passing_yards": 0.0,
-            "receiving_tds": 0.0,
-            "receiving_yards": 1.0,
-            "receptions": 1.0,
-            "rushing_tds": 0.0,
-            "rushing_yards": 0.0,
-            "target_share": 0.0434782608695652,
-            "targets": 1.0,
-            "team": "MIN",
-            "touches": 1.0,
-            "week": 1
-          },
-          {
-            "air_yards_share": -0.0254777070063694,
-            "attempts": 0.0,
-            "carries": 2.0,
-            "fantasy_points_715": 3.0,
-            "offense_snap_pct": 15.0,
-            "offense_snaps": 8.0,
-            "opponent": "CHI",
-            "opportunities": 3.0,
-            "passing_interceptions": 0.0,
-            "passing_tds": 0.0,
-            "passing_yards": 0.0,
-            "receiving_tds": 0.0,
-            "receiving_yards": 12.0,
-            "receptions": 1.0,
-            "rushing_tds": 0.0,
-            "rushing_yards": 8.0,
-            "target_share": 0.0526315789473684,
-            "targets": 1.0,
-            "team": "MIN",
-            "touches": 3.0,
-            "week": 2
-          }
-        ]
-      },
-      "player_id": "6931",
-      "position": "RB",
-      "reasons": [
-        "Dynasty Dealer market value 1,109 adds insulation/upside signal.",
-        "current-season usage: 2.0 opportunities/game, 12% offensive snaps, 2.0 715 PPG.",
-        "Currently on an NFL roster (MIN).",
-        "Depth-chart No. 2: direct contingent path to usage.",
-        "RB contingent value can rise quickly with one depth-chart change.",
-        "Sleeper market heat: 21,321 adds in the 24h trend window.",
-        "Recently dropped by Amelse; worth checking for a league-specific market reset."
-      ],
-      "recent_715_drop": {
-        "age_days": 0.2,
-        "manager": "Amelse"
-      },
-      "status": "Active",
-      "team": "MIN",
-      "tier": "Priority",
-      "trending_adds_24h": 21321,
-      "trending_drops_24h": 0,
-      "years_exp": 6
     },
     {
       "age": 32,
@@ -719,7 +797,7 @@
             "ttl_days": 7,
             "type": "injury",
             "url": "https://www.rotowire.com//football/player/cooper-rush-11841",
-            "weighted_score": -0.1937
+            "weighted_score": -0.1841
           },
           {
             "corroboration_count": 1,
@@ -730,7 +808,7 @@
             "origin": "sleeper",
             "player_id": "4574",
             "player_name": "Cooper Rush",
-            "published_at": "2026-09-24T17:09:05.645323+00:00",
+            "published_at": "2026-09-24T20:02:36.420289+00:00",
             "reliability": 0.65,
             "signal_id": "sleeper-depth-4574",
             "source": "Sleeper depth chart",
@@ -760,7 +838,7 @@
             "ttl_days": 7,
             "type": "injury",
             "url": "\n                                                https://www.cbssports.com/nfl/news/falcons-starting-qb-cooper-rush-panthers/\n                    ",
-            "weighted_score": 0.0814
+            "weighted_score": 0.0718
           }
         ],
         "weekly_multiplier": 0.861
@@ -863,7 +941,7 @@
         "Recently dropped by NolanFarts; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 10.6,
+        "age_days": 10.8,
         "manager": "NolanFarts"
       },
       "status": "Active",
@@ -971,7 +1049,7 @@
         "Recently dropped by nathanhoglund; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 1.5,
+        "age_days": 1.7,
         "manager": "nathanhoglund"
       },
       "status": "Active",
@@ -1286,7 +1364,7 @@
         "Recently dropped by ryansorensen8; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 1.5,
+        "age_days": 1.6,
         "manager": "ryansorensen8"
       },
       "status": "Active",
@@ -1394,7 +1472,7 @@
         "Recently dropped by Amelse; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 4.1,
+        "age_days": 4.2,
         "manager": "Amelse"
       },
       "status": "Active",
@@ -1548,7 +1626,7 @@
         "Recently dropped by NolanFarts; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 4.9,
+        "age_days": 5.0,
         "manager": "NolanFarts"
       },
       "status": "Active",
@@ -1852,7 +1930,7 @@
         "Recently dropped by MayaHuskies; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 2.6,
+        "age_days": 2.7,
         "manager": "MayaHuskies"
       },
       "status": "Active",
@@ -2442,7 +2520,7 @@
         "Recently dropped by MayaHuskies; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 11.7,
+        "age_days": 11.8,
         "manager": "MayaHuskies"
       },
       "status": "Active",
@@ -2746,7 +2824,7 @@
         "Recently dropped by Amelse; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 4.5,
+        "age_days": 4.6,
         "manager": "Amelse"
       },
       "status": "Active",
@@ -4073,7 +4151,7 @@
         "Recently dropped by NolanFarts; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 7.4,
+        "age_days": 7.5,
         "manager": "NolanFarts"
       },
       "status": "Active",
@@ -4248,7 +4326,7 @@
         "Recently dropped by Amelse; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 1.2,
+        "age_days": 1.3,
         "manager": "Amelse"
       },
       "status": "Active",
@@ -4460,7 +4538,7 @@
         "Recently dropped by ryansorensen8; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 8.6,
+        "age_days": 8.8,
         "manager": "ryansorensen8"
       },
       "status": "Active",
@@ -4877,7 +4955,7 @@
         "Recently dropped by Amelse; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 2.2,
+        "age_days": 2.3,
         "manager": "Amelse"
       },
       "status": "Active",
@@ -6008,7 +6086,7 @@
         "Recently dropped by Amelse; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 8.5,
+        "age_days": 8.6,
         "manager": "Amelse"
       },
       "status": "Active",
