@@ -1,6 +1,6 @@
 {
   "context_methodology": "Time-decayed, source-weighted context. Narrative effects are capped at ±8%, combined workload context at ±12%, and availability remains a separate guardrail. Every adjustment retains its source and explanation.",
-  "generated_at": "2026-09-25T11:48:51.987877+00:00",
+  "generated_at": "2026-09-25T13:57:45.911501+00:00",
   "market_attribution": "Values by Dynasty Dealer — https://www.dynastydealer.com/",
   "methodology": "Signal score, not dynasty market value. Uses confirmed league availability, NFL roster status, depth chart, age, league format, Sleeper 24h add/drop trends, recent 715 drops, and injury/IR-slot context. Phase 4.6 adds Dynasty Dealer market value plus nflverse offensive snap share, opportunities, 715-scoring production, and current usage trend. Prior-season performance is deliberately discounted until current-season data exists.",
   "performance_attribution": "NFL performance data via nflverse — https://nflverse.com/",
@@ -104,7 +104,7 @@
         "Recently dropped by Amelse; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 3.0,
+        "age_days": 3.1,
         "manager": "Amelse"
       },
       "status": "Active",
@@ -212,7 +212,7 @@
         "Recently dropped by Amelse; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 3.0,
+        "age_days": 3.1,
         "manager": "Amelse"
       },
       "status": "Active",
@@ -230,10 +230,10 @@
         "availability_probability": 0.85,
         "confidence": "medium",
         "net_direction": "negative",
-        "opportunity_score_adjustment": -6.1,
+        "opportunity_score_adjustment": -6.0,
         "player_id": "19",
-        "research_mention_count": 2,
-        "signal_count": 4,
+        "research_mention_count": 3,
+        "signal_count": 5,
         "signals": [
           {
             "corroboration_count": 1,
@@ -254,7 +254,7 @@
             "ttl_days": 7,
             "type": "injury",
             "url": "\n                                                https://www.cbssports.com/nfl/news/pros-and-cons-of-giants-trade-bengals-joe-flacco-jaxson-dart/\n                    ",
-            "weighted_score": -0.6133
+            "weighted_score": -0.6043
           },
           {
             "corroboration_count": 1,
@@ -265,7 +265,7 @@
             "origin": "sleeper",
             "player_id": "19",
             "player_name": "Joe Flacco",
-            "published_at": "2026-09-25T11:48:54.775180+00:00",
+            "published_at": "2026-09-25T13:57:47.445413+00:00",
             "reliability": 0.65,
             "signal_id": "sleeper-depth-19",
             "source": "Sleeper depth chart",
@@ -300,7 +300,7 @@
         ],
         "weekly_multiplier": 0.861
       },
-      "context_adjustment": -6.1,
+      "context_adjustment": -6.0,
       "depth": 2,
       "depth_chart_order": 2,
       "depth_chart_position": "QB",
@@ -314,7 +314,7 @@
       "market_rank": 358,
       "market_value": 1877,
       "name": "Joe Flacco",
-      "opportunity_score": 79.3,
+      "opportunity_score": 79.4,
       "performance": {
         "air_yards_share": 0.0,
         "basis": "prior",
@@ -642,7 +642,7 @@
       "player_id": "19",
       "position": "QB",
       "reasons": [
-        "Current context adjusts the opportunity score -6.1.",
+        "Current context adjusts the opportunity score -6.0.",
         "Dynasty Dealer market value 1,877 adds insulation/upside signal.",
         "2025 prior usage: 33.6 opportunities/game, 78% offensive snaps, 13.2 715 PPG.",
         "Currently on an NFL roster (CIN).",
@@ -673,6 +673,26 @@
         "signals": [
           {
             "corroboration_count": 1,
+            "direction": 1,
+            "event_date": null,
+            "impact": "workload",
+            "magnitude": 1,
+            "origin": "sleeper",
+            "player_id": "4574",
+            "player_name": "Cooper Rush",
+            "published_at": "2026-09-25T13:57:47.445413+00:00",
+            "reliability": 0.65,
+            "signal_id": "sleeper-depth-4574",
+            "source": "Sleeper depth chart",
+            "source_type": "team",
+            "summary": "Current Sleeper depth-chart order is 2.",
+            "ttl_days": 3,
+            "type": "depth_chart",
+            "url": null,
+            "weighted_score": 0.13
+          },
+          {
+            "corroboration_count": 1,
             "direction": -1.0,
             "event_date": null,
             "impact": "availability",
@@ -690,27 +710,7 @@
             "ttl_days": 7,
             "type": "injury",
             "url": "https://www.rotowire.com//football/player/cooper-rush-11841",
-            "weighted_score": -0.1315
-          },
-          {
-            "corroboration_count": 1,
-            "direction": 1,
-            "event_date": null,
-            "impact": "workload",
-            "magnitude": 1,
-            "origin": "sleeper",
-            "player_id": "4574",
-            "player_name": "Cooper Rush",
-            "published_at": "2026-09-25T11:48:54.775180+00:00",
-            "reliability": 0.65,
-            "signal_id": "sleeper-depth-4574",
-            "source": "Sleeper depth chart",
-            "source_type": "team",
-            "summary": "Current Sleeper depth-chart order is 2.",
-            "ttl_days": 3,
-            "type": "depth_chart",
-            "url": null,
-            "weighted_score": 0.13
+            "weighted_score": -0.1243
           },
           {
             "corroboration_count": 1,
@@ -731,7 +731,7 @@
             "ttl_days": 7,
             "type": "injury",
             "url": "\n                                                https://www.cbssports.com/nfl/news/falcons-starting-qb-cooper-rush-panthers/\n                    ",
-            "weighted_score": 0.0192
+            "weighted_score": 0.0121
           }
         ],
         "weekly_multiplier": 0.861
@@ -834,7 +834,7 @@
         "Recently dropped by NolanFarts; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 11.4,
+        "age_days": 11.5,
         "manager": "NolanFarts"
       },
       "status": "Active",
@@ -942,7 +942,7 @@
         "Recently dropped by nathanhoglund; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 2.3,
+        "age_days": 2.4,
         "manager": "nathanhoglund"
       },
       "status": "Active",
@@ -1257,7 +1257,7 @@
         "Recently dropped by ryansorensen8; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 2.3,
+        "age_days": 2.4,
         "manager": "ryansorensen8"
       },
       "status": "Active",
@@ -1399,7 +1399,7 @@
         "Recently dropped by Amelse; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 4.9,
+        "age_days": 5.0,
         "manager": "Amelse"
       },
       "status": "Active",
@@ -1553,7 +1553,7 @@
         "Recently dropped by NolanFarts; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 5.7,
+        "age_days": 5.8,
         "manager": "NolanFarts"
       },
       "status": "Active",
@@ -1857,7 +1857,7 @@
         "Recently dropped by MayaHuskies; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 3.4,
+        "age_days": 3.5,
         "manager": "MayaHuskies"
       },
       "status": "Active",
@@ -2447,7 +2447,7 @@
         "Recently dropped by MayaHuskies; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 12.5,
+        "age_days": 12.6,
         "manager": "MayaHuskies"
       },
       "status": "Active",
@@ -2751,7 +2751,7 @@
         "Recently dropped by Amelse; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 5.2,
+        "age_days": 5.3,
         "manager": "Amelse"
       },
       "status": "Active",
@@ -2859,7 +2859,7 @@
         "Recently dropped by Amelse; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 0.9,
+        "age_days": 1.0,
         "manager": "Amelse"
       },
       "status": "Active",
@@ -4208,7 +4208,7 @@
         "Recently dropped by ryansorensen8; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 0.5,
+        "age_days": 0.6,
         "manager": "ryansorensen8"
       },
       "status": "Active",
@@ -4293,7 +4293,7 @@
         "Recently dropped by NolanFarts; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 8.2,
+        "age_days": 8.3,
         "manager": "NolanFarts"
       },
       "status": "Active",
@@ -4468,7 +4468,7 @@
         "Recently dropped by Amelse; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 1.9,
+        "age_days": 2.0,
         "manager": "Amelse"
       },
       "status": "Active",
@@ -4783,7 +4783,7 @@
         "Recently dropped by ryansorensen8; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 9.4,
+        "age_days": 9.5,
         "manager": "ryansorensen8"
       },
       "status": "Active",
@@ -5200,7 +5200,7 @@
         "Recently dropped by Amelse; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 3.0,
+        "age_days": 3.1,
         "manager": "Amelse"
       },
       "status": "Active",
@@ -5849,7 +5849,7 @@
         "Recently dropped by Amelse; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 9.3,
+        "age_days": 9.4,
         "manager": "Amelse"
       },
       "status": "Active",
@@ -7105,7 +7105,7 @@
         "Recently dropped by NolanFarts; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 13.7,
+        "age_days": 13.8,
         "manager": "NolanFarts"
       },
       "status": "Active",
@@ -8659,7 +8659,7 @@
         "Recently dropped by Amelse; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 9.3,
+        "age_days": 9.4,
         "manager": "Amelse"
       },
       "status": "Active",
@@ -17853,7 +17853,7 @@
         "Recently dropped by NolanFarts; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 2.3,
+        "age_days": 2.4,
         "manager": "NolanFarts"
       },
       "status": "Active",
