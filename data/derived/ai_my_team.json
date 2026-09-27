@@ -386,6 +386,34 @@
         "team": "HOU"
       },
       {
+        "age": 31,
+        "depth_chart_order": 1,
+        "injury_status": null,
+        "market_position_rank": 41,
+        "market_rank": 110,
+        "market_value": 3937,
+        "name": "Terry McLaurin",
+        "performance": {
+          "air_yards_share": 24.9,
+          "basis": "current",
+          "basis_label": "2026",
+          "carries_per_game": 0.0,
+          "games": 2,
+          "last3_opportunities_per_game": 6.5,
+          "last3_ppg_715": 5.2,
+          "offense_snap_pct": 78.5,
+          "opportunities_per_game": 6.5,
+          "ppg_715": 5.2,
+          "target_share": 20.1,
+          "targets_per_game": 6.5,
+          "touches_per_game": 2.0
+        },
+        "player_id": "5927",
+        "position": "WR",
+        "starter": false,
+        "team": "WAS"
+      },
+      {
         "age": 26,
         "depth_chart_order": 6,
         "injury_status": "Out",
@@ -440,34 +468,6 @@
         "position": "WR",
         "starter": false,
         "team": "DEN"
-      },
-      {
-        "age": 26,
-        "depth_chart_order": 2,
-        "injury_status": null,
-        "market_position_rank": 94,
-        "market_rank": 241,
-        "market_value": 2525,
-        "name": "Rashod Bateman",
-        "performance": {
-          "air_yards_share": 23.7,
-          "basis": "current",
-          "basis_label": "2026",
-          "carries_per_game": 0.0,
-          "games": 2,
-          "last3_opportunities_per_game": 5.0,
-          "last3_ppg_715": 10.9,
-          "offense_snap_pct": 85.5,
-          "opportunities_per_game": 5.0,
-          "ppg_715": 10.9,
-          "target_share": 17.6,
-          "targets_per_game": 5.0,
-          "touches_per_game": 3.5
-        },
-        "player_id": "7571",
-        "position": "WR",
-        "starter": false,
-        "team": "BAL"
       },
       {
         "age": 26,
@@ -549,7 +549,7 @@
     "total_market_value": 109170,
     "weeks": 2
   },
-  "generated_at": "2026-09-27T15:16:29.548516+00:00",
+  "generated_at": "2026-09-27T16:57:00.881241+00:00",
   "lineup": [
     {
       "player": {
@@ -708,32 +708,32 @@
     },
     {
       "player": {
-        "age": 31,
-        "depth_chart_order": 1,
+        "age": 26,
+        "depth_chart_order": 2,
         "injury_status": null,
-        "market_position_rank": 41,
-        "market_rank": 110,
-        "market_value": 3937,
-        "name": "Terry McLaurin",
+        "market_position_rank": 94,
+        "market_rank": 241,
+        "market_value": 2525,
+        "name": "Rashod Bateman",
         "performance": {
-          "air_yards_share": 24.9,
+          "air_yards_share": 23.7,
           "basis": "current",
           "basis_label": "2026",
           "carries_per_game": 0.0,
           "games": 2,
-          "last3_opportunities_per_game": 6.5,
-          "last3_ppg_715": 5.2,
-          "offense_snap_pct": 78.5,
-          "opportunities_per_game": 6.5,
-          "ppg_715": 5.2,
-          "target_share": 20.1,
-          "targets_per_game": 6.5,
-          "touches_per_game": 2.0
+          "last3_opportunities_per_game": 5.0,
+          "last3_ppg_715": 10.9,
+          "offense_snap_pct": 85.5,
+          "opportunities_per_game": 5.0,
+          "ppg_715": 10.9,
+          "target_share": 17.6,
+          "targets_per_game": 5.0,
+          "touches_per_game": 3.5
         },
-        "player_id": "5927",
+        "player_id": "7571",
         "position": "WR",
         "starter": true,
-        "team": "WAS"
+        "team": "BAL"
       },
       "slot": "WR3"
     },
@@ -853,7 +853,7 @@
     "roster_id": 3,
     "roster_market_score": 70.1,
     "starter_market_score": 81.5,
-    "submitted_starter_market_value": 49003,
+    "submitted_starter_market_value": 47591,
     "team_name": "Beef Cylinder",
     "total_market_score": 77.4,
     "total_market_value": 109170
@@ -882,7 +882,7 @@
       "roster_id": 3,
       "roster_market_score": 70.1,
       "starter_market_score": 81.5,
-      "submitted_starter_market_value": 49003,
+      "submitted_starter_market_value": 47591,
       "team_name": "Beef Cylinder",
       "total_market_score": 77.4,
       "total_market_value": 109170
@@ -1167,7 +1167,92 @@
     "window": "Middle",
     "young_player_share": 40.7
   },
-  "recent_changes": [],
+  "recent_changes": [
+    {
+      "detected_at": "2026-09-27T16:56:58.466131+00:00",
+      "manager": "NolanFarts",
+      "new_starters": [
+        "6904",
+        "9221",
+        "5892",
+        "9488",
+        "8146",
+        "7525",
+        "8130",
+        "8150",
+        "4943"
+      ],
+      "old_starters": [
+        "6904",
+        "9221",
+        "8150",
+        "9488",
+        "8146",
+        "7525",
+        "8130",
+        "5892",
+        "4943"
+      ],
+      "roster_id": 2,
+      "type": "starter_change"
+    },
+    {
+      "detected_at": "2026-09-27T16:56:58.466131+00:00",
+      "manager": "abewav",
+      "new_starters": [
+        "8161",
+        "8138",
+        "8228",
+        "6794",
+        "7526",
+        "7571",
+        "10859",
+        "11646",
+        "4892"
+      ],
+      "old_starters": [
+        "8161",
+        "8138",
+        "8228",
+        "6794",
+        "7526",
+        "5927",
+        "10859",
+        "11646",
+        "4892"
+      ],
+      "roster_id": 3,
+      "type": "starter_change"
+    },
+    {
+      "detected_at": "2026-09-27T16:56:58.466131+00:00",
+      "manager": "hoglundcory2",
+      "new_starters": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "7553",
+        "0",
+        "0"
+      ],
+      "old_starters": [
+        "11563",
+        "9224",
+        "11584",
+        "12519",
+        "11631",
+        "13274",
+        "7553",
+        "12489",
+        "3163"
+      ],
+      "roster_id": 8,
+      "type": "starter_change"
+    }
+  ],
   "record": {
     "fpts": 249,
     "fpts_decimal": 80,
