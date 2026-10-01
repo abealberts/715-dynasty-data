@@ -30,6 +30,34 @@
         "team": "WAS"
       },
       {
+        "age": 31,
+        "depth_chart_order": 2,
+        "injury_status": "Out",
+        "market_position_rank": 21,
+        "market_rank": 72,
+        "market_value": 5227,
+        "name": "Baker Mayfield",
+        "performance": {
+          "air_yards_share": 0.0,
+          "basis": "current",
+          "basis_label": "2026",
+          "carries_per_game": 3.67,
+          "games": 3,
+          "last3_opportunities_per_game": 35.67,
+          "last3_ppg_715": 13.75,
+          "offense_snap_pct": 98.0,
+          "opportunities_per_game": 35.67,
+          "ppg_715": 13.75,
+          "target_share": 0.0,
+          "targets_per_game": 0.0,
+          "touches_per_game": 3.67
+        },
+        "player_id": "4892",
+        "position": "QB",
+        "starter": false,
+        "team": "TB"
+      },
+      {
         "age": 24,
         "depth_chart_order": 3,
         "injury_status": null,
@@ -56,34 +84,6 @@
         "position": "QB",
         "starter": false,
         "team": "CLE"
-      },
-      {
-        "age": 42,
-        "depth_chart_order": 1,
-        "injury_status": null,
-        "market_position_rank": 40,
-        "market_rank": 206,
-        "market_value": 2822,
-        "name": "Aaron Rodgers",
-        "performance": {
-          "air_yards_share": 0.0,
-          "basis": "current",
-          "basis_label": "2026",
-          "carries_per_game": 2.33,
-          "games": 3,
-          "last3_opportunities_per_game": 40.0,
-          "last3_ppg_715": 15.4,
-          "offense_snap_pct": 98.7,
-          "opportunities_per_game": 40.0,
-          "ppg_715": 15.4,
-          "target_share": 0.0,
-          "targets_per_game": 0.0,
-          "touches_per_game": 2.33
-        },
-        "player_id": "96",
-        "position": "QB",
-        "starter": false,
-        "team": "PIT"
       },
       {
         "age": 23,
@@ -358,60 +358,32 @@
     ],
     "WR": [
       {
-        "age": 27,
-        "depth_chart_order": 1,
+        "age": 24,
+        "depth_chart_order": 2,
         "injury_status": "Questionable",
-        "market_position_rank": 13,
-        "market_rank": 40,
-        "market_value": 6385,
-        "name": "Nico Collins",
+        "market_position_rank": 31,
+        "market_rank": 84,
+        "market_value": 4791,
+        "name": "Jalen Coker",
         "performance": {
-          "air_yards_share": 37.3,
-          "basis": "current",
-          "basis_label": "2026",
-          "carries_per_game": 1.0,
-          "games": 1,
-          "last3_opportunities_per_game": 11.0,
-          "last3_ppg_715": 21.2,
-          "offense_snap_pct": 72.0,
-          "opportunities_per_game": 11.0,
-          "ppg_715": 21.2,
-          "target_share": 27.0,
-          "targets_per_game": 10.0,
-          "touches_per_game": 8.0
-        },
-        "player_id": "7569",
-        "position": "WR",
-        "starter": false,
-        "team": "HOU"
-      },
-      {
-        "age": 31,
-        "depth_chart_order": 1,
-        "injury_status": null,
-        "market_position_rank": 42,
-        "market_rank": 113,
-        "market_value": 3865,
-        "name": "Terry McLaurin",
-        "performance": {
-          "air_yards_share": 31.4,
+          "air_yards_share": 22.5,
           "basis": "current",
           "basis_label": "2026",
           "carries_per_game": 0.0,
           "games": 3,
           "last3_opportunities_per_game": 7.33,
-          "last3_ppg_715": 10.03,
-          "offense_snap_pct": 77.3,
+          "last3_ppg_715": 17.4,
+          "offense_snap_pct": 65.3,
           "opportunities_per_game": 7.33,
-          "ppg_715": 10.03,
-          "target_share": 23.4,
+          "ppg_715": 17.4,
+          "target_share": 21.4,
           "targets_per_game": 7.33,
-          "touches_per_game": 3.33
+          "touches_per_game": 6.0
         },
-        "player_id": "5927",
+        "player_id": "11646",
         "position": "WR",
         "starter": false,
-        "team": "WAS"
+        "team": "CAR"
       },
       {
         "age": 26,
@@ -468,6 +440,34 @@
         "position": "WR",
         "starter": false,
         "team": "DEN"
+      },
+      {
+        "age": 26,
+        "depth_chart_order": 2,
+        "injury_status": null,
+        "market_position_rank": 100,
+        "market_rank": 247,
+        "market_value": 2552,
+        "name": "Rashod Bateman",
+        "performance": {
+          "air_yards_share": 20.8,
+          "basis": "current",
+          "basis_label": "2026",
+          "carries_per_game": 0.0,
+          "games": 3,
+          "last3_opportunities_per_game": 4.33,
+          "last3_ppg_715": 9.17,
+          "offense_snap_pct": 86.3,
+          "opportunities_per_game": 4.33,
+          "ppg_715": 9.17,
+          "target_share": 16.7,
+          "targets_per_game": 4.33,
+          "touches_per_game": 3.0
+        },
+        "player_id": "7571",
+        "position": "WR",
+        "starter": false,
+        "team": "BAL"
       },
       {
         "age": 26,
@@ -549,7 +549,7 @@
     "total_market_value": 106391,
     "weeks": 3
   },
-  "generated_at": "2026-09-30T22:14:05.887253+00:00",
+  "generated_at": "2026-10-01T05:49:52.703132+00:00",
   "lineup": [
     {
       "player": {
@@ -708,32 +708,32 @@
     },
     {
       "player": {
-        "age": 26,
-        "depth_chart_order": 2,
+        "age": 31,
+        "depth_chart_order": 1,
         "injury_status": null,
-        "market_position_rank": 100,
-        "market_rank": 247,
-        "market_value": 2552,
-        "name": "Rashod Bateman",
+        "market_position_rank": 42,
+        "market_rank": 113,
+        "market_value": 3865,
+        "name": "Terry McLaurin",
         "performance": {
-          "air_yards_share": 20.8,
+          "air_yards_share": 31.4,
           "basis": "current",
           "basis_label": "2026",
           "carries_per_game": 0.0,
           "games": 3,
-          "last3_opportunities_per_game": 4.33,
-          "last3_ppg_715": 9.17,
-          "offense_snap_pct": 86.3,
-          "opportunities_per_game": 4.33,
-          "ppg_715": 9.17,
-          "target_share": 16.7,
-          "targets_per_game": 4.33,
-          "touches_per_game": 3.0
+          "last3_opportunities_per_game": 7.33,
+          "last3_ppg_715": 10.03,
+          "offense_snap_pct": 77.3,
+          "opportunities_per_game": 7.33,
+          "ppg_715": 10.03,
+          "target_share": 23.4,
+          "targets_per_game": 7.33,
+          "touches_per_game": 3.33
         },
-        "player_id": "7571",
+        "player_id": "5927",
         "position": "WR",
         "starter": true,
-        "team": "BAL"
+        "team": "WAS"
       },
       "slot": "WR3"
     },
@@ -770,63 +770,63 @@
     },
     {
       "player": {
-        "age": 24,
-        "depth_chart_order": 2,
+        "age": 27,
+        "depth_chart_order": 1,
         "injury_status": "Questionable",
-        "market_position_rank": 31,
-        "market_rank": 84,
-        "market_value": 4791,
-        "name": "Jalen Coker",
+        "market_position_rank": 13,
+        "market_rank": 40,
+        "market_value": 6385,
+        "name": "Nico Collins",
         "performance": {
-          "air_yards_share": 22.5,
+          "air_yards_share": 37.3,
           "basis": "current",
           "basis_label": "2026",
-          "carries_per_game": 0.0,
-          "games": 3,
-          "last3_opportunities_per_game": 7.33,
-          "last3_ppg_715": 17.4,
-          "offense_snap_pct": 65.3,
-          "opportunities_per_game": 7.33,
-          "ppg_715": 17.4,
-          "target_share": 21.4,
-          "targets_per_game": 7.33,
-          "touches_per_game": 6.0
+          "carries_per_game": 1.0,
+          "games": 1,
+          "last3_opportunities_per_game": 11.0,
+          "last3_ppg_715": 21.2,
+          "offense_snap_pct": 72.0,
+          "opportunities_per_game": 11.0,
+          "ppg_715": 21.2,
+          "target_share": 27.0,
+          "targets_per_game": 10.0,
+          "touches_per_game": 8.0
         },
-        "player_id": "11646",
+        "player_id": "7569",
         "position": "WR",
         "starter": true,
-        "team": "CAR"
+        "team": "HOU"
       },
       "slot": "FLEX"
     },
     {
       "player": {
-        "age": 31,
-        "depth_chart_order": 2,
-        "injury_status": "Out",
-        "market_position_rank": 21,
-        "market_rank": 72,
-        "market_value": 5227,
-        "name": "Baker Mayfield",
+        "age": 42,
+        "depth_chart_order": 1,
+        "injury_status": null,
+        "market_position_rank": 40,
+        "market_rank": 206,
+        "market_value": 2822,
+        "name": "Aaron Rodgers",
         "performance": {
           "air_yards_share": 0.0,
           "basis": "current",
           "basis_label": "2026",
-          "carries_per_game": 3.67,
+          "carries_per_game": 2.33,
           "games": 3,
-          "last3_opportunities_per_game": 35.67,
-          "last3_ppg_715": 13.75,
-          "offense_snap_pct": 98.0,
-          "opportunities_per_game": 35.67,
-          "ppg_715": 13.75,
+          "last3_opportunities_per_game": 40.0,
+          "last3_ppg_715": 15.4,
+          "offense_snap_pct": 98.7,
+          "opportunities_per_game": 40.0,
+          "ppg_715": 15.4,
           "target_share": 0.0,
           "targets_per_game": 0.0,
-          "touches_per_game": 3.67
+          "touches_per_game": 2.33
         },
-        "player_id": "4892",
+        "player_id": "96",
         "position": "QB",
         "starter": true,
-        "team": "TB"
+        "team": "PIT"
       },
       "slot": "SUPERFLEX"
     }
@@ -853,7 +853,7 @@
     "roster_id": 3,
     "roster_market_score": 68.0,
     "starter_market_score": 80.6,
-    "submitted_starter_market_value": 46963,
+    "submitted_starter_market_value": 47465,
     "team_name": "Beef Cylinder",
     "total_market_score": 74.5,
     "total_market_value": 106391
@@ -882,7 +882,7 @@
       "roster_id": 3,
       "roster_market_score": 68.0,
       "starter_market_score": 80.6,
-      "submitted_starter_market_value": 46963,
+      "submitted_starter_market_value": 47465,
       "team_name": "Beef Cylinder",
       "total_market_score": 74.5,
       "total_market_value": 106391
@@ -1169,50 +1169,60 @@
   },
   "recent_changes": [
     {
-      "detected_at": "2026-09-30T22:14:02.797392+00:00",
-      "manager": "NolanFarts",
-      "player": {
-        "age": 23,
-        "depth_chart_order": 4,
-        "depth_chart_position": "LWR",
-        "fantasy_positions": [
-          "WR"
-        ],
-        "injury_body_part": null,
-        "injury_notes": null,
-        "injury_status": null,
-        "name": "Tai Felton",
-        "player_id": "12496",
-        "position": "WR",
-        "status": "Active",
-        "team": "MIN",
-        "years_exp": 1
-      },
-      "roster_id": 2,
-      "type": "roster_add"
+      "detected_at": "2026-10-01T05:49:50.355612+00:00",
+      "manager": "abewav",
+      "new_starters": [
+        "8161",
+        "8138",
+        "8228",
+        "6794",
+        "7526",
+        "5927",
+        "10859",
+        "7569",
+        "96"
+      ],
+      "old_starters": [
+        "8161",
+        "8138",
+        "8228",
+        "6794",
+        "7526",
+        "7571",
+        "10859",
+        "11646",
+        "4892"
+      ],
+      "roster_id": 3,
+      "type": "starter_change"
     },
     {
-      "detected_at": "2026-09-30T22:14:02.797392+00:00",
-      "manager": "NolanFarts",
-      "player": {
-        "age": 25,
-        "depth_chart_order": 3,
-        "depth_chart_position": "RB",
-        "fantasy_positions": [
-          "RB"
-        ],
-        "injury_body_part": null,
-        "injury_notes": null,
-        "injury_status": null,
-        "name": "Jacob Saylors",
-        "player_id": "11237",
-        "position": "RB",
-        "status": "Active",
-        "team": "DET",
-        "years_exp": 3
-      },
-      "roster_id": 2,
-      "type": "roster_drop"
+      "detected_at": "2026-10-01T05:49:50.355612+00:00",
+      "manager": "hoglundcory2",
+      "new_starters": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "old_starters": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "7553",
+        "0",
+        "0"
+      ],
+      "roster_id": 8,
+      "type": "starter_change"
     }
   ],
   "record": {
