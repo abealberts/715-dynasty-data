@@ -386,6 +386,34 @@
         "team": "MIN"
       },
       {
+        "age": 31,
+        "depth_chart_order": 1,
+        "injury_status": "Questionable",
+        "market_position_rank": 39,
+        "market_rank": 108,
+        "market_value": 3852,
+        "name": "Terry McLaurin",
+        "performance": {
+          "air_yards_share": 31.4,
+          "basis": "current",
+          "basis_label": "2026",
+          "carries_per_game": 0.0,
+          "games": 3,
+          "last3_opportunities_per_game": 7.33,
+          "last3_ppg_715": 10.03,
+          "offense_snap_pct": 77.3,
+          "opportunities_per_game": 7.33,
+          "ppg_715": 10.03,
+          "target_share": 23.4,
+          "targets_per_game": 7.33,
+          "touches_per_game": 3.33
+        },
+        "player_id": "5927",
+        "position": "WR",
+        "starter": false,
+        "team": "WAS"
+      },
+      {
         "age": 26,
         "depth_chart_order": 6,
         "injury_status": "IR",
@@ -412,34 +440,6 @@
         "position": "WR",
         "starter": false,
         "team": "GB"
-      },
-      {
-        "age": 30,
-        "depth_chart_order": 2,
-        "injury_status": null,
-        "market_position_rank": 67,
-        "market_rank": 170,
-        "market_value": 3026,
-        "name": "Courtland Sutton",
-        "performance": {
-          "air_yards_share": 33.3,
-          "basis": "current",
-          "basis_label": "2026",
-          "carries_per_game": 0.0,
-          "games": 3,
-          "last3_opportunities_per_game": 5.33,
-          "last3_ppg_715": 5.4,
-          "offense_snap_pct": 78.7,
-          "opportunities_per_game": 5.33,
-          "ppg_715": 5.4,
-          "target_share": 18.3,
-          "targets_per_game": 5.33,
-          "touches_per_game": 2.67
-        },
-        "player_id": "5045",
-        "position": "WR",
-        "starter": false,
-        "team": "DEN"
       },
       {
         "age": 26,
@@ -549,7 +549,7 @@
     "total_market_value": 106059,
     "weeks": 3
   },
-  "generated_at": "2026-10-03T14:51:07.841973+00:00",
+  "generated_at": "2026-10-03T16:16:15.016482+00:00",
   "lineup": [
     {
       "player": {
@@ -708,32 +708,32 @@
     },
     {
       "player": {
-        "age": 31,
-        "depth_chart_order": 1,
-        "injury_status": "Questionable",
-        "market_position_rank": 39,
-        "market_rank": 108,
-        "market_value": 3852,
-        "name": "Terry McLaurin",
+        "age": 30,
+        "depth_chart_order": 2,
+        "injury_status": null,
+        "market_position_rank": 67,
+        "market_rank": 170,
+        "market_value": 3026,
+        "name": "Courtland Sutton",
         "performance": {
-          "air_yards_share": 31.4,
+          "air_yards_share": 33.3,
           "basis": "current",
           "basis_label": "2026",
           "carries_per_game": 0.0,
           "games": 3,
-          "last3_opportunities_per_game": 7.33,
-          "last3_ppg_715": 10.03,
-          "offense_snap_pct": 77.3,
-          "opportunities_per_game": 7.33,
-          "ppg_715": 10.03,
-          "target_share": 23.4,
-          "targets_per_game": 7.33,
-          "touches_per_game": 3.33
+          "last3_opportunities_per_game": 5.33,
+          "last3_ppg_715": 5.4,
+          "offense_snap_pct": 78.7,
+          "opportunities_per_game": 5.33,
+          "ppg_715": 5.4,
+          "target_share": 18.3,
+          "targets_per_game": 5.33,
+          "touches_per_game": 2.67
         },
-        "player_id": "5927",
+        "player_id": "5045",
         "position": "WR",
         "starter": true,
-        "team": "WAS"
+        "team": "DEN"
       },
       "slot": "WR3"
     },
@@ -840,7 +840,7 @@
     "optimal_starter_market_value": 53782,
     "position_scores": {
       "QB": 62.3,
-      "RB": 75.0,
+      "RB": 80.6,
       "TE": 60.1,
       "WR": 54.2
     },
@@ -853,7 +853,7 @@
     "roster_id": 3,
     "roster_market_score": 68.3,
     "starter_market_score": 79.9,
-    "submitted_starter_market_value": 44045,
+    "submitted_starter_market_value": 43219,
     "team_name": "Beef Cylinder",
     "total_market_score": 77.4,
     "total_market_value": 106059
@@ -869,7 +869,7 @@
       "optimal_starter_market_value": 53782,
       "position_scores": {
         "QB": 62.3,
-        "RB": 75.0,
+        "RB": 80.6,
         "TE": 60.1,
         "WR": 54.2
       },
@@ -882,7 +882,7 @@
       "roster_id": 3,
       "roster_market_score": 68.3,
       "starter_market_score": 79.9,
-      "submitted_starter_market_value": 44045,
+      "submitted_starter_market_value": 43219,
       "team_name": "Beef Cylinder",
       "total_market_score": 77.4,
       "total_market_value": 106059
@@ -891,7 +891,7 @@
       {
         "label": "thin",
         "position": "WR",
-        "strength": 2.17
+        "strength": 2.25
       },
       {
         "label": "below avg",
@@ -934,15 +934,15 @@
       },
       "RB": {
         "count": 9,
-        "delta_vs_average": 1.92,
+        "delta_vs_average": 2.0,
         "label": "deep",
-        "league_average": 7.08,
-        "market_score": 75.0,
+        "league_average": 7.0,
+        "market_score": 80.6,
         "market_value": 30605,
         "need_strength": 0.0,
         "quality_label": "market-deep",
         "starters": 2,
-        "surplus_strength": 1.92,
+        "surplus_strength": 2.0,
         "target": 5
       },
       "TE": {
@@ -960,12 +960,12 @@
       },
       "WR": {
         "count": 9,
-        "delta_vs_average": -2.17,
+        "delta_vs_average": -2.25,
         "label": "thin",
-        "league_average": 11.17,
+        "league_average": 11.25,
         "market_score": 54.2,
         "market_value": 38726,
-        "need_strength": 2.17,
+        "need_strength": 2.25,
         "quality_label": "market-balanced",
         "starters": 4,
         "surplus_strength": 0.0,
@@ -977,7 +977,7 @@
       {
         "label": "market-deep",
         "position": "RB",
-        "strength": 2.0
+        "strength": 2.45
       },
       {
         "label": "above avg",
@@ -1167,7 +1167,82 @@
     "window": "Retool Needed",
     "young_player_share": 40.7
   },
-  "recent_changes": [],
+  "recent_changes": [
+    {
+      "detected_at": "2026-10-03T16:16:11.938926+00:00",
+      "manager": "abewav",
+      "new_starters": [
+        "8161",
+        "8138",
+        "8228",
+        "11646",
+        "7526",
+        "5045",
+        "10859",
+        "7569",
+        "96"
+      ],
+      "old_starters": [
+        "8161",
+        "8138",
+        "8228",
+        "11646",
+        "7526",
+        "5927",
+        "10859",
+        "7569",
+        "96"
+      ],
+      "roster_id": 3,
+      "type": "starter_change"
+    },
+    {
+      "detected_at": "2026-10-03T16:16:11.938926+00:00",
+      "manager": "Waldo23",
+      "player": {
+        "age": 33,
+        "depth_chart_order": 2,
+        "depth_chart_position": "RWR",
+        "fantasy_positions": [
+          "WR"
+        ],
+        "injury_body_part": null,
+        "injury_notes": null,
+        "injury_status": null,
+        "name": "Mack Hollins",
+        "player_id": "4177",
+        "position": "WR",
+        "status": "Active",
+        "team": "NE",
+        "years_exp": 9
+      },
+      "roster_id": 11,
+      "type": "roster_add"
+    },
+    {
+      "detected_at": "2026-10-03T16:16:11.938926+00:00",
+      "manager": "Waldo23",
+      "player": {
+        "age": 29,
+        "depth_chart_order": 3,
+        "depth_chart_position": "RB",
+        "fantasy_positions": [
+          "RB"
+        ],
+        "injury_body_part": null,
+        "injury_notes": null,
+        "injury_status": null,
+        "name": "Devin Singletary",
+        "player_id": "6130",
+        "position": "RB",
+        "status": "Active",
+        "team": "NYG",
+        "years_exp": 7
+      },
+      "roster_id": 11,
+      "type": "roster_drop"
+    }
+  ],
   "record": {
     "fpts": 343,
     "fpts_decimal": 85,
@@ -1227,7 +1302,7 @@
         {
           "label": "thin",
           "position": "RB",
-          "strength": 6.08
+          "strength": 6.0
         },
         {
           "label": "below avg",
@@ -1239,7 +1314,7 @@
         {
           "label": "deep",
           "position": "WR",
-          "strength": 6.83
+          "strength": 6.75
         }
       ]
     },
@@ -1250,7 +1325,7 @@
       "market": {
         "position_scores": {
           "QB": 41.0,
-          "RB": 47.6,
+          "RB": 51.2,
           "TE": 81.8,
           "WR": 69.6
         },
@@ -1291,7 +1366,7 @@
         {
           "label": "thin",
           "position": "RB",
-          "strength": 2.08
+          "strength": 2.0
         },
         {
           "label": "below avg",
@@ -1303,18 +1378,18 @@
         {
           "label": "deep",
           "position": "WR",
-          "strength": 2.83
+          "strength": 2.75
         }
       ]
     },
     {
-      "count_fit_score": 8.2,
-      "fit_score": 5.6,
+      "count_fit_score": 8.4,
+      "fit_score": 5.7,
       "manager": "MayaHuskies",
       "market": {
         "position_scores": {
           "QB": 0.0,
-          "RB": 59.3,
+          "RB": 63.7,
           "TE": 0.0,
           "WR": 76.7
         },
@@ -1366,18 +1441,18 @@
         {
           "label": "deep",
           "position": "WR",
-          "strength": 2.83
+          "strength": 2.75
         }
       ]
     },
     {
-      "count_fit_score": 4.2,
-      "fit_score": 2.9,
+      "count_fit_score": 4.0,
+      "fit_score": 2.7,
       "manager": "Butler2142",
       "market": {
         "position_scores": {
           "QB": 46.4,
-          "RB": 85.2,
+          "RB": 91.6,
           "TE": 32.0,
           "WR": 100.0
         },
@@ -1427,23 +1502,23 @@
         {
           "label": "deep",
           "position": "RB",
-          "strength": 1.92
+          "strength": 2.0
         },
         {
           "label": "above avg",
           "position": "WR",
-          "strength": 0.83
+          "strength": 0.75
         }
       ]
     },
     {
-      "count_fit_score": 2.5,
-      "fit_score": 1.7,
+      "count_fit_score": 2.4,
+      "fit_score": 1.6,
       "manager": "SORY9",
       "market": {
         "position_scores": {
           "QB": 66.5,
-          "RB": 68.8,
+          "RB": 73.9,
           "TE": 56.7,
           "WR": 44.3
         },
@@ -1479,7 +1554,7 @@
         {
           "label": "thin",
           "position": "RB",
-          "strength": 1.08
+          "strength": 1.0
         }
       ],
       "their_surpluses": [
@@ -1497,7 +1572,7 @@
       "market": {
         "position_scores": {
           "QB": 35.3,
-          "RB": 76.0,
+          "RB": 81.6,
           "TE": 100.0,
           "WR": 80.1
         },
@@ -1529,12 +1604,12 @@
         "They are deep at TE, where you are comparatively thin."
       ],
       "roster_id": 2,
-      "team_name": "Najee Germany",
+      "team_name": "Puka Nachewa",
       "their_needs": [
         {
           "label": "thin",
           "position": "WR",
-          "strength": 1.17
+          "strength": 1.25
         }
       ],
       "their_surpluses": [
@@ -1552,7 +1627,7 @@
       "market": {
         "position_scores": {
           "QB": 44.8,
-          "RB": 82.9,
+          "RB": 89.1,
           "TE": 60.8,
           "WR": 60.8
         },
@@ -1594,7 +1669,7 @@
         {
           "label": "above avg",
           "position": "RB",
-          "strength": 0.92
+          "strength": 1.0
         }
       ]
     },
@@ -1605,7 +1680,7 @@
       "market": {
         "position_scores": {
           "QB": 61.1,
-          "RB": 66.3,
+          "RB": 71.2,
           "TE": 77.3,
           "WR": 0.0
         },
@@ -1643,7 +1718,7 @@
         {
           "label": "thin",
           "position": "WR",
-          "strength": 4.17
+          "strength": 4.25
         }
       ],
       "their_surpluses": [
@@ -1655,7 +1730,7 @@
         {
           "label": "deep",
           "position": "RB",
-          "strength": 1.92
+          "strength": 2.0
         }
       ]
     },
@@ -1666,7 +1741,7 @@
       "market": {
         "position_scores": {
           "QB": 5.4,
-          "RB": 47.9,
+          "RB": 51.5,
           "TE": 53.2,
           "WR": 48.7
         },
@@ -1712,11 +1787,11 @@
           "QB": 100.0,
           "RB": 100.0,
           "TE": 66.0,
-          "WR": 17.9
+          "WR": 26.6
         },
         "their_market_rank": 3,
         "their_starter_value": 60804,
-        "their_total_value": 112876
+        "their_total_value": 112475
       },
       "market_fit_score": 0.0,
       "pick_summary": {
@@ -1747,14 +1822,14 @@
         {
           "label": "thin",
           "position": "WR",
-          "strength": 4.17
+          "strength": 3.25
         }
       ],
       "their_surpluses": [
         {
           "label": "deep",
           "position": "RB",
-          "strength": 2.92
+          "strength": 2.0
         },
         {
           "label": "above avg",
@@ -1770,7 +1845,7 @@
       "market": {
         "position_scores": {
           "QB": 21.1,
-          "RB": 77.9,
+          "RB": 83.7,
           "TE": 92.6,
           "WR": 51.7
         },
@@ -1805,7 +1880,7 @@
         {
           "label": "thin",
           "position": "WR",
-          "strength": 1.17
+          "strength": 1.25
         }
       ],
       "their_surpluses": []
