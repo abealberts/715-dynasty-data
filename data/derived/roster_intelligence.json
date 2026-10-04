@@ -3,27 +3,14 @@
     {
       "category": "Lineup",
       "confidence": "medium",
-      "cost_or_cut": "Bench Courtland Sutton; no roster transaction required.",
+      "cost_or_cut": "Bench Woody Marks; no roster transaction required.",
       "priority": 8,
-      "projected_advantage": 8.44,
-      "rationale": "Harold Fannin carries the stronger evidence projection (13.91 vs 5.47). The evidence gap is large enough to merit a lineup change after final availability checks.",
+      "projected_advantage": 6.28,
+      "rationale": "Harold Fannin carries the stronger evidence projection (13.91 vs 7.63). The evidence gap is large enough to merit a lineup change after final availability checks.",
       "recommendation": "Treat this as provisional until current matchup, injury and inactive information is verified.",
       "risk": "The report does not yet contain verified current matchup or beat-report context.",
-      "title": "Consider Harold Fannin over Courtland Sutton",
-      "upside": "The evidence model adds approximately 8.4 points if its role assumptions hold.",
-      "urgency": "Before lineup lock"
-    },
-    {
-      "category": "Availability",
-      "confidence": "medium",
-      "cost_or_cut": "No transaction required unless the final designation changes roster-slot options.",
-      "priority": 7,
-      "projected_advantage": null,
-      "rationale": "Sleeper lists Jalen Coker as Questionable; no decision-grade current availability report is attached.",
-      "recommendation": "Confirm the official game designation and keep a legal pivot available.",
-      "risk": "Sleeper status alone does not establish expected availability or workload.",
-      "title": "Verify Jalen Coker before lock",
-      "upside": "A prepared pivot protects the lineup from a zero or limited role.",
+      "title": "Consider Harold Fannin over Woody Marks",
+      "upside": "The evidence model adds approximately 6.3 points if its role assumptions hold.",
       "urgency": "Before lineup lock"
     },
     {
@@ -32,7 +19,7 @@
       "cost_or_cut": "Likely cut: Ray Davis; verify lineup, taxi and IR constraints first.",
       "priority": 5,
       "projected_advantage": null,
-      "rationale": "Current context adjusts the opportunity score +3.5. Dynasty Dealer market value 933 adds insulation/upside signal.",
+      "rationale": "Current context adjusts the opportunity score +3.4. Dynasty Dealer market value 933 adds insulation/upside signal.",
       "recommendation": "Do not submit the move until role, current news and roster fit are verified.",
       "risk": "Opportunity score is a discovery signal, not proof of future touches or trade value.",
       "title": "Compare Austin Ekeler with Ray Davis",
@@ -77,6 +64,19 @@
       "recommendation": "Confirm the official game designation and keep a legal pivot available.",
       "risk": "Sleeper status alone does not establish expected availability or workload.",
       "title": "Verify Baker Mayfield before lock",
+      "upside": "A prepared pivot protects the lineup from a zero or limited role.",
+      "urgency": "Before lineup lock"
+    },
+    {
+      "category": "Availability",
+      "confidence": "medium",
+      "cost_or_cut": "No transaction required unless the final designation changes roster-slot options.",
+      "priority": 5,
+      "projected_advantage": null,
+      "rationale": "Sleeper lists Jalen Coker as Questionable; no decision-grade current availability report is attached.",
+      "recommendation": "Confirm the official game designation and keep a legal pivot available.",
+      "risk": "Sleeper status alone does not establish expected availability or workload.",
+      "title": "Verify Jalen Coker before lock",
       "upside": "A prepared pivot protects the lineup from a zero or limited role.",
       "urgency": "Before lineup lock"
     },
@@ -137,13 +137,13 @@
     "actionable_context_reports": 13,
     "coach_beat_reporter_players": 0,
     "context_signal_players": 27,
-    "curated_context_reports": 326,
+    "curated_context_reports": 308,
     "current_season_performance_samples": 26,
     "market_values": 27,
     "news_players": 27,
     "objective_context_signals": 38,
     "performance_samples": 26,
-    "research_mentions": 313,
+    "research_mentions": 295,
     "research_status": "available",
     "roster_players": 27
   },
@@ -160,21 +160,32 @@
     "performance_basis": [
       "2026"
     ],
-    "player_context_generated_at": "2026-10-04T19:43:09.779412+00:00",
-    "research_generated_at": "2026-10-04T19:43:09.779412+00:00",
-    "sleeper_data_checked_at": "2026-10-04T19:43:09.995063+00:00"
+    "player_context_generated_at": "2026-10-04T21:22:34.460433+00:00",
+    "research_generated_at": "2026-10-04T21:22:34.460433+00:00",
+    "sleeper_data_checked_at": "2026-10-04T21:22:34.617062+00:00"
   },
-  "generated_at": "2026-10-04T19:43:10.331158+00:00",
+  "generated_at": "2026-10-04T21:22:34.849384+00:00",
   "lineup": {
-    "actionable_projected_advantage": 8.44,
+    "actionable_projected_advantage": 6.28,
     "changes": [
+      {
+        "current_decision_evidence": true,
+        "decision": "hold_current",
+        "decision_reason": "Do not make the swap without clearing Jalen Coker's Questionable status.",
+        "explanation": "Jalen Coker carries the stronger evidence projection (14.98 vs 5.47).",
+        "projected_advantage": 9.51,
+        "sit": "Courtland Sutton",
+        "sit_confidence": "high",
+        "start": "Jalen Coker",
+        "start_confidence": "high"
+      },
       {
         "current_decision_evidence": true,
         "decision": "consider",
         "decision_reason": "The evidence gap is large enough to merit a lineup change after final availability checks.",
-        "explanation": "Harold Fannin carries the stronger evidence projection (13.91 vs 5.47).",
-        "projected_advantage": 8.44,
-        "sit": "Courtland Sutton",
+        "explanation": "Harold Fannin carries the stronger evidence projection (13.91 vs 7.63).",
+        "projected_advantage": 6.28,
+        "sit": "Woody Marks",
         "sit_confidence": "high",
         "start": "Harold Fannin",
         "start_confidence": "high"
@@ -289,17 +300,17 @@
       {
         "confidence": "high",
         "current_decision_evidence": true,
-        "injury_status": "Questionable",
-        "name": "Jalen Coker",
-        "player_id": "11646",
-        "position": "WR",
-        "projected_ceiling": 18.0,
-        "projected_floor": 12.0,
-        "projected_points": 14.98,
-        "projection_basis": "2026 715 PPG blended with recent form; current context multiplier 0.861 applied",
+        "injury_status": null,
+        "name": "Woody Marks",
+        "player_id": "12474",
+        "position": "RB",
+        "projected_ceiling": 9.2,
+        "projected_floor": 6.1,
+        "projected_points": 7.63,
+        "projection_basis": "2026 715 PPG blended with recent form; current context multiplier 1.013 applied",
         "slot": "FLEX",
         "slot_label": "FLEX",
-        "team": "CAR"
+        "team": "HOU"
       },
       {
         "confidence": "high",
@@ -317,7 +328,7 @@
         "team": "PIT"
       }
     ],
-    "current_projected_points": 126.94,
+    "current_projected_points": 119.59,
     "decision_thresholds": {
       "availability_guardrail": true,
       "close_call_below": 3,
@@ -463,7 +474,7 @@
       }
     ],
     "optimized_projected_points": 135.38,
-    "projected_advantage": 8.44,
+    "projected_advantage": 15.79,
     "status": "provisional"
   },
   "movement": [
@@ -814,7 +825,7 @@
                     "origin": "sleeper",
                     "player_id": "11566",
                     "player_name": "Jayden Daniels",
-                    "published_at": "2026-10-04T19:43:09.779412+00:00",
+                    "published_at": "2026-10-04T21:22:34.460433+00:00",
                     "reliability": 0.82,
                     "signal_id": "sleeper-injury-11566",
                     "source": "Sleeper player status",
@@ -844,7 +855,7 @@
                     "ttl_days": 7,
                     "type": "injury",
                     "url": "https://www.rotowire.com//football/player/jayden-daniels-17692",
-                    "weighted_score": -0.4477
+                    "weighted_score": -0.4408
                   },
                   {
                     "corroboration_count": 1,
@@ -855,7 +866,7 @@
                     "origin": "sleeper",
                     "player_id": "11566",
                     "player_name": "Jayden Daniels",
-                    "published_at": "2026-10-04T19:43:09.779412+00:00",
+                    "published_at": "2026-10-04T21:22:34.460433+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-11566",
                     "source": "Sleeper depth chart",
@@ -1281,7 +1292,7 @@
               "news": [
                 {
                   "event_date": null,
-                  "published_at": "2026-10-04T19:43:09.779412+00:00",
+                  "published_at": "2026-10-04T21:22:34.460433+00:00",
                   "signal_type": "injury",
                   "source": "Sleeper player status",
                   "text": "Sleeper lists Jayden Daniels as Out.",
@@ -1295,7 +1306,7 @@
                   "source": "RotoWire NFL Player News / Nicki Jhabvala of The Athletic",
                   "text": "Jayden Daniels: Ruled out for Week 4",
                   "url": "https://www.rotowire.com//football/player/jayden-daniels-17692",
-                  "weighted_score": -0.4477
+                  "weighted_score": -0.4408
                 },
                 {
                   "event_date": null,
@@ -1531,7 +1542,7 @@
                     "origin": "sleeper",
                     "player_id": "4892",
                     "player_name": "Baker Mayfield",
-                    "published_at": "2026-10-04T19:43:09.779412+00:00",
+                    "published_at": "2026-10-04T21:22:34.460433+00:00",
                     "reliability": 0.82,
                     "signal_id": "sleeper-injury-4892",
                     "source": "Sleeper player status",
@@ -1561,7 +1572,7 @@
                     "ttl_days": 7,
                     "type": "injury",
                     "url": "\n                                                https://www.cbssports.com/nfl/news/baker-mayfield-injury-update-buccaneers/\n                    ",
-                    "weighted_score": -0.6739
+                    "weighted_score": -0.667
                   },
                   {
                     "corroboration_count": 1,
@@ -1582,7 +1593,7 @@
                     "ttl_days": 7,
                     "type": "injury",
                     "url": "https://www.rotowire.com//football/player/baker-mayfield-12619",
-                    "weighted_score": -0.6415
+                    "weighted_score": -0.6346
                   },
                   {
                     "corroboration_count": 1,
@@ -1593,7 +1604,7 @@
                     "origin": "sleeper",
                     "player_id": "4892",
                     "player_name": "Baker Mayfield",
-                    "published_at": "2026-10-04T19:43:09.779412+00:00",
+                    "published_at": "2026-10-04T21:22:34.460433+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-4892",
                     "source": "Sleeper depth chart",
@@ -2187,7 +2198,7 @@
               "news": [
                 {
                   "event_date": null,
-                  "published_at": "2026-10-04T19:43:09.779412+00:00",
+                  "published_at": "2026-10-04T21:22:34.460433+00:00",
                   "signal_type": "injury",
                   "source": "Sleeper player status",
                   "text": "Sleeper lists Baker Mayfield as Out.",
@@ -2201,7 +2212,7 @@
                   "source": "Brad Crawford",
                   "text": "Baker Mayfield injury update: Dislocated thumb could sideline Bucs QB longer than expected",
                   "url": "\n                                                https://www.cbssports.com/nfl/news/baker-mayfield-injury-update-buccaneers/\n                    ",
-                  "weighted_score": -0.6739
+                  "weighted_score": -0.667
                 },
                 {
                   "event_date": null,
@@ -2210,7 +2221,7 @@
                   "source": "RotoWire NFL Player News / Adam Schefter of ESPN",
                   "text": "Baker Mayfield: Could miss up to six weeks",
                   "url": "https://www.rotowire.com//football/player/baker-mayfield-12619",
-                  "weighted_score": -0.6415
+                  "weighted_score": -0.6346
                 },
                 {
                   "event_date": null,
@@ -2501,8 +2512,8 @@
                 "availability_probability": 1.0,
                 "confidence": "medium",
                 "net_direction": "positive",
-                "research_mention_count": 10,
-                "signal_count": 11,
+                "research_mention_count": 7,
+                "signal_count": 8,
                 "signals": [
                   {
                     "corroboration_count": 1,
@@ -2513,7 +2524,7 @@
                     "origin": "sleeper",
                     "player_id": "8161",
                     "player_name": "Malik Willis",
-                    "published_at": "2026-10-04T19:43:09.779412+00:00",
+                    "published_at": "2026-10-04T21:22:34.460433+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-8161",
                     "source": "Sleeper depth chart",
@@ -2564,48 +2575,6 @@
                     "ttl_days": 7,
                     "type": "news",
                     "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNSWtFVFJ2VS1nMUdXbmk2aDRfU3Q1QjNiZWJlZ053R0dHb0VTNnRFZ01sbVNSSWw3aDhTYlprUTRMRzJNLXNQZnFIaHBBTGxfQ0YzRXFyMmpFMURyeUlSTW1aSzhzNE96cEt1WnhyTUUtSldQaHpIMk9NSGxFOXhSUGRVTlJ0dm9IVm1Ld3lYb0JPeFhWUUE?oc=5",
-                    "weighted_score": 0.0
-                  },
-                  {
-                    "corroboration_count": 1,
-                    "direction": 0.0,
-                    "event_date": null,
-                    "impact": "context",
-                    "magnitude": 0.0,
-                    "origin": "curated_report",
-                    "player_id": "8161",
-                    "player_name": "Malik Willis",
-                    "published_at": "2026-09-27T20:19:56+00:00",
-                    "reliability": 0.45,
-                    "scored": false,
-                    "signal_id": "56a466d8dcc7e26a5f0f",
-                    "source": "NFL.com",
-                    "source_type": "aggregator",
-                    "summary": "Can't-Miss Play: Chris Jones' tip of Malik Willis' pass yields INT for Karlaftis via deflection - NFL.com",
-                    "ttl_days": 7,
-                    "type": "news",
-                    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPTUhMUU45dnBXWDNEUkM1SU9fcEVxYVZJUUIxZHgtWVpXVUZBTko3X0k0LXVZemZvTGtKUjFnZmNWXzdVYmdQLXFLM3JMR3gwUWZUTzVZdTZvWVlTYzdqQnkwWnp6Z2pTMnFMQlgxTkZlQ1dqRnpiSjQ0eFo5dWxrX0J5X3VhaTM0cFdlQmhnbzduZ1lYSXRyVHF2TkNuVzktcmQtVnQ2TE5JYUxQMUJtUGN1OTNjaFBXaFI0?oc=5",
-                    "weighted_score": 0.0
-                  },
-                  {
-                    "corroboration_count": 1,
-                    "direction": 0.0,
-                    "event_date": null,
-                    "impact": "context",
-                    "magnitude": 0.0,
-                    "origin": "curated_report",
-                    "player_id": "8161",
-                    "player_name": "Malik Willis",
-                    "published_at": "2026-09-27T20:52:18+00:00",
-                    "reliability": 0.45,
-                    "scored": false,
-                    "signal_id": "59b2a4d9084391b96eb5",
-                    "source": "Yahoo Sports",
-                    "source_type": "aggregator",
-                    "summary": "Malik Willis throws for 210 yards - Yahoo Sports",
-                    "ttl_days": 7,
-                    "type": "news",
-                    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQQlFfbUdNWklHWm5DQ3FtVi05a1YxUWM1NGZDbHY4bTdRSzN1R0J5UzZwVGZGWHpwSzNLWVhtZGEyU1oteE53YkRmdzdLR0MxLWJ2SFYzWWdRUTlMYzVyYWQxRnZha29QdnRMZDVUZnl0QjZCNk82SlFrTEFZM1FZMlpVb1U?oc=5",
                     "weighted_score": 0.0
                   },
                   {
@@ -2690,27 +2659,6 @@
                     "ttl_days": 7,
                     "type": "news",
                     "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxQS2E5X0M4dkdxVWc0anpqTW1JbklwV1IyNHBhanNsTktMdGd6U2IyaTdYUFpXN2RSWGdaY1RiSnVuUm9lM1E3a3pLdkJ5T1R4UnE0eHpHRVRNOFRJeFA3M1VIeGd3S0RNOUdrdllEMGp6NVdEMzJ6b00ta252WlJVd2hTM0lNRFdPb0MtUFBoT3FKSjBDVzJubEZfQ0lqQ3oxVnk0Q1B6ZUFKTGF3M2UzZGZZS3NvclRGOU02OEFGVl9hWHBsVWtjSEtKNzNkaGR2djlQSmJlMERIQkZ3d19FZXh1MHNyd0t5bFVFUC1qeGF0NTVwNVFRUUFJbTBZSG1JS1dhZ0FUZkJfVXVhcWc?oc=5",
-                    "weighted_score": 0.0
-                  },
-                  {
-                    "corroboration_count": 1,
-                    "direction": 0.0,
-                    "event_date": null,
-                    "impact": "context",
-                    "magnitude": 0.0,
-                    "origin": "curated_report",
-                    "player_id": "8161",
-                    "player_name": "Malik Willis",
-                    "published_at": "2026-09-27T20:33:51+00:00",
-                    "reliability": 0.45,
-                    "scored": false,
-                    "signal_id": "ce7b4efc2a5b1859b5cf",
-                    "source": "Kansas City Chiefs",
-                    "source_type": "aggregator",
-                    "summary": "Can't-Miss Play: Chris Jones Tips Malik Willis’s Pass and George Karlaftis intercepts It - Kansas City Chiefs",
-                    "ttl_days": 7,
-                    "type": "news",
-                    "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPc3ZyNnFFeWhmOERiMURBWHdPenBRcDNFT19BWDZQdHhFTmk4djFqY25HMmtWZnZ4WWVqME50dmZ5S2o2T0xxVXlXdThSTVJfSWNqdlpuYXY2SE9SUWxhRzRHbHFPVU5QdHlndVpYUzloYUd0cF9keUJIc1dmX3plOXcxSERkbk9ORzVTRElCaGJhRlVLTHRrZDktR0psbEhpbVhweWwwaHl2MDdtamk3UW83cVNDWVk?oc=5",
                     "weighted_score": 0.0
                   },
                   {
@@ -2809,24 +2757,6 @@
                 },
                 {
                   "event_date": null,
-                  "published_at": "2026-09-27T20:19:56+00:00",
-                  "signal_type": "news",
-                  "source": "NFL.com",
-                  "text": "Can't-Miss Play: Chris Jones' tip of Malik Willis' pass yields INT for Karlaftis via deflection - NFL.com",
-                  "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPTUhMUU45dnBXWDNEUkM1SU9fcEVxYVZJUUIxZHgtWVpXVUZBTko3X0k0LXVZemZvTGtKUjFnZmNWXzdVYmdQLXFLM3JMR3gwUWZUTzVZdTZvWVlTYzdqQnkwWnp6Z2pTMnFMQlgxTkZlQ1dqRnpiSjQ0eFo5dWxrX0J5X3VhaTM0cFdlQmhnbzduZ1lYSXRyVHF2TkNuVzktcmQtVnQ2TE5JYUxQMUJtUGN1OTNjaFBXaFI0?oc=5",
-                  "weighted_score": 0.0
-                },
-                {
-                  "event_date": null,
-                  "published_at": "2026-09-27T20:52:18+00:00",
-                  "signal_type": "news",
-                  "source": "Yahoo Sports",
-                  "text": "Malik Willis throws for 210 yards - Yahoo Sports",
-                  "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQQlFfbUdNWklHWm5DQ3FtVi05a1YxUWM1NGZDbHY4bTdRSzN1R0J5UzZwVGZGWHpwSzNLWVhtZGEyU1oteE53YkRmdzdLR0MxLWJ2SFYzWWdRUTlMYzVyYWQxRnZha29QdnRMZDVUZnl0QjZCNk82SlFrTEFZM1FZMlpVb1U?oc=5",
-                  "weighted_score": 0.0
-                },
-                {
-                  "event_date": null,
                   "published_at": "2026-09-28T19:57:01+00:00",
                   "signal_type": "news",
                   "source": "Yahoo Sports",
@@ -2859,15 +2789,6 @@
                   "source": "bozemandailychronicle.com",
                   "text": "Malik Willis and the 0-3 Dolphins aren't panicking ahead of their matchup with the unbeaten Vikings - bozemandailychronicle.com",
                   "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxQS2E5X0M4dkdxVWc0anpqTW1JbklwV1IyNHBhanNsTktMdGd6U2IyaTdYUFpXN2RSWGdaY1RiSnVuUm9lM1E3a3pLdkJ5T1R4UnE0eHpHRVRNOFRJeFA3M1VIeGd3S0RNOUdrdllEMGp6NVdEMzJ6b00ta252WlJVd2hTM0lNRFdPb0MtUFBoT3FKSjBDVzJubEZfQ0lqQ3oxVnk0Q1B6ZUFKTGF3M2UzZGZZS3NvclRGOU02OEFGVl9hWHBsVWtjSEtKNzNkaGR2djlQSmJlMERIQkZ3d19FZXh1MHNyd0t5bFVFUC1qeGF0NTVwNVFRUUFJbTBZSG1JS1dhZ0FUZkJfVXVhcWc?oc=5",
-                  "weighted_score": 0.0
-                },
-                {
-                  "event_date": null,
-                  "published_at": "2026-09-27T20:33:51+00:00",
-                  "signal_type": "news",
-                  "source": "Kansas City Chiefs",
-                  "text": "Can't-Miss Play: Chris Jones Tips Malik Willis’s Pass and George Karlaftis intercepts It - Kansas City Chiefs",
-                  "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPc3ZyNnFFeWhmOERiMURBWHdPenBRcDNFT19BWDZQdHhFTmk4djFqY25HMmtWZnZ4WWVqME50dmZ5S2o2T0xxVXlXdThSTVJfSWNqdlpuYXY2SE9SUWxhRzRHbHFPVU5QdHlndVpYUzloYUd0cF9keUJIc1dmX3plOXcxSERkbk9ORzVTRElCaGJhRlVLTHRrZDktR0psbEhpbVhweWwwaHl2MDdtamk3UW83cVNDWVk?oc=5",
                   "weighted_score": 0.0
                 },
                 {
@@ -2959,7 +2880,7 @@
                     "origin": "sleeper",
                     "player_id": "12524",
                     "player_name": "Shedeur Sanders",
-                    "published_at": "2026-10-04T19:43:09.779412+00:00",
+                    "published_at": "2026-10-04T21:22:34.460433+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-12524",
                     "source": "Sleeper depth chart",
@@ -2989,7 +2910,7 @@
                     "ttl_days": 7,
                     "type": "injury",
                     "url": "https://www.pff.com/news/fantasy-football-3-dynasty-trade-throw-ins-to-target-in-2026/",
-                    "weighted_score": -0.1911
+                    "weighted_score": -0.1883
                   },
                   {
                     "corroboration_count": 1,
@@ -3305,7 +3226,7 @@
                   "source": "Ryan Conway",
                   "text": "Fantasy football: 3 dynasty trade throw-ins to target in 2026",
                   "url": "https://www.pff.com/news/fantasy-football-3-dynasty-trade-throw-ins-to-target-in-2026/",
-                  "weighted_score": -0.1911
+                  "weighted_score": -0.1883
                 },
                 {
                   "event_date": null,
@@ -3479,8 +3400,8 @@
                 "availability_probability": 1.0,
                 "confidence": "medium",
                 "net_direction": "positive",
-                "research_mention_count": 26,
-                "signal_count": 27,
+                "research_mention_count": 24,
+                "signal_count": 25,
                 "signals": [
                   {
                     "corroboration_count": 1,
@@ -3491,7 +3412,7 @@
                     "origin": "sleeper",
                     "player_id": "96",
                     "player_name": "Aaron Rodgers",
-                    "published_at": "2026-10-04T19:43:09.779412+00:00",
+                    "published_at": "2026-10-04T21:22:34.460433+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-96",
                     "source": "Sleeper depth chart",
@@ -3637,27 +3558,6 @@
                     "origin": "curated_report",
                     "player_id": "96",
                     "player_name": "Aaron Rodgers",
-                    "published_at": "2026-09-27T20:17:23+00:00",
-                    "reliability": 0.45,
-                    "scored": false,
-                    "signal_id": "41bf57cd76b2a02f15ea",
-                    "source": "NBC Sports",
-                    "source_type": "aggregator",
-                    "summary": "Aaron Rodgers wins quarterback duel with Joe Burrow, Steelers beat Bengals 30-27 - NBC Sports",
-                    "ttl_days": 7,
-                    "type": "news",
-                    "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQU0ctR3Jnb2xIbFZHNC1RV2IxZmVFX2NaRlFqUGhsMjhqOXVZQU1lYUNDelhOM3VmUHVRNmVOMTB4bXhNaUw2THdjWGpiR0RWVG4zOHV2ZU1KY2N6d2RKT3N4SHlTRHZvVjBUMXNiZDRGc2MtRHY3dWZBbjE0NzFBSW42aTFZSEs1d2xub3B6SDc4MFRULTlteTU2T2RPd0Y3OEU4Tm45QTNBUzdHblFhSWVuVmxzX1EtaG05Q0laTDIwZTlfTnFNekhxbzNSNno1WWl3THA5UG0?oc=5",
-                    "weighted_score": 0.0
-                  },
-                  {
-                    "corroboration_count": 1,
-                    "direction": 0.0,
-                    "event_date": null,
-                    "impact": "context",
-                    "magnitude": 0.0,
-                    "origin": "curated_report",
-                    "player_id": "96",
-                    "player_name": "Aaron Rodgers",
                     "published_at": "2026-10-02T01:26:00+00:00",
                     "reliability": 0.45,
                     "scored": false,
@@ -3752,27 +3652,6 @@
                     "ttl_days": 7,
                     "type": "news",
                     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNWmF6cHpObk9oelplM1drbFhkdU1GR1JMRE9WNjh3VlhEOHJlZ2FTRXRuSnc5OXQ0eFdhWWlWbFNYM0o2UE5yZ2cwZ0prSm1vUU5WeE9EWERxYXhJdi1pYXFVMGpweEF3ZUlDcVQ3bWFDaklPV1V4QUl5RVpvSlNBdXVjOUw2a3cySXFmT2F0c3pKZm1tTEszZg?oc=5",
-                    "weighted_score": 0.0
-                  },
-                  {
-                    "corroboration_count": 1,
-                    "direction": 0.0,
-                    "event_date": null,
-                    "impact": "context",
-                    "magnitude": 0.0,
-                    "origin": "curated_report",
-                    "player_id": "96",
-                    "player_name": "Aaron Rodgers",
-                    "published_at": "2026-09-27T21:21:07+00:00",
-                    "reliability": 0.45,
-                    "scored": false,
-                    "signal_id": "847ab463658b25517eb1",
-                    "source": "NFL.com",
-                    "source_type": "aggregator",
-                    "summary": "Aaron Rodgers' best plays from 3-TD game vs. Bengals | Week 3 - NFL.com",
-                    "ttl_days": 7,
-                    "type": "news",
-                    "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNNmMxRGlSbmxxejVKU3lncmRlTkQ5MkQ5MnFodm5hckxOUFNZVE02LTJwN2F0ZFREWWRMU0xnUU15LThMWU01Y3FsQUY3RWc1UnBrZk5FQlhBU1dsZ2kwdEVyT1RzNGNpVVVrSGZLVC1kQ3g5eUlYamFoelJOUGt1V1VDa3U5eW1HN0tGSw?oc=5",
                     "weighted_score": 0.0
                   },
                   {
@@ -4159,15 +4038,6 @@
                 },
                 {
                   "event_date": null,
-                  "published_at": "2026-09-27T20:17:23+00:00",
-                  "signal_type": "news",
-                  "source": "NBC Sports",
-                  "text": "Aaron Rodgers wins quarterback duel with Joe Burrow, Steelers beat Bengals 30-27 - NBC Sports",
-                  "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQU0ctR3Jnb2xIbFZHNC1RV2IxZmVFX2NaRlFqUGhsMjhqOXVZQU1lYUNDelhOM3VmUHVRNmVOMTB4bXhNaUw2THdjWGpiR0RWVG4zOHV2ZU1KY2N6d2RKT3N4SHlTRHZvVjBUMXNiZDRGc2MtRHY3dWZBbjE0NzFBSW42aTFZSEs1d2xub3B6SDc4MFRULTlteTU2T2RPd0Y3OEU4Tm45QTNBUzdHblFhSWVuVmxzX1EtaG05Q0laTDIwZTlfTnFNekhxbzNSNno1WWl3THA5UG0?oc=5",
-                  "weighted_score": 0.0
-                },
-                {
-                  "event_date": null,
                   "published_at": "2026-10-02T01:26:00+00:00",
                   "signal_type": "news",
                   "source": "Yahoo Sports",
@@ -4209,15 +4079,6 @@
                   "source": "Yahoo Sports",
                   "text": "‘There’s Overreactions’: Aaron Rodgers Silences Talking Heads in Win over Bengals - Yahoo Sports",
                   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNWmF6cHpObk9oelplM1drbFhkdU1GR1JMRE9WNjh3VlhEOHJlZ2FTRXRuSnc5OXQ0eFdhWWlWbFNYM0o2UE5yZ2cwZ0prSm1vUU5WeE9EWERxYXhJdi1pYXFVMGpweEF3ZUlDcVQ3bWFDaklPV1V4QUl5RVpvSlNBdXVjOUw2a3cySXFmT2F0c3pKZm1tTEszZg?oc=5",
-                  "weighted_score": 0.0
-                },
-                {
-                  "event_date": null,
-                  "published_at": "2026-09-27T21:21:07+00:00",
-                  "signal_type": "news",
-                  "source": "NFL.com",
-                  "text": "Aaron Rodgers' best plays from 3-TD game vs. Bengals | Week 3 - NFL.com",
-                  "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNNmMxRGlSbmxxejVKU3lncmRlTkQ5MkQ5MnFodm5hckxOUFNZVE02LTJwN2F0ZFREWWRMU0xnUU15LThMWU01Y3FsQUY3RWc1UnBrZk5FQlhBU1dsZ2kwdEVyT1RzNGNpVVVrSGZLVC1kQ3g5eUlYamFoelJOUGt1V1VDa3U5eW1HN0tGSw?oc=5",
                   "weighted_score": 0.0
                 },
                 {
@@ -4413,7 +4274,7 @@
                     "origin": "sleeper",
                     "player_id": "13306",
                     "player_name": "Taylen Green",
-                    "published_at": "2026-10-04T19:43:09.779412+00:00",
+                    "published_at": "2026-10-04T21:22:34.460433+00:00",
                     "reliability": 0.82,
                     "signal_id": "sleeper-injury-13306",
                     "source": "Sleeper player status",
@@ -4433,7 +4294,7 @@
                     "origin": "sleeper",
                     "player_id": "13306",
                     "player_name": "Taylen Green",
-                    "published_at": "2026-10-04T19:43:09.779412+00:00",
+                    "published_at": "2026-10-04T21:22:34.460433+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-13306",
                     "source": "Sleeper depth chart",
@@ -4607,7 +4468,7 @@
               "news": [
                 {
                   "event_date": null,
-                  "published_at": "2026-10-04T19:43:09.779412+00:00",
+                  "published_at": "2026-10-04T21:22:34.460433+00:00",
                   "signal_type": "injury",
                   "source": "Sleeper player status",
                   "text": "Sleeper lists Taylen Green as Out.",
@@ -4737,8 +4598,8 @@
                 "availability_probability": 1.0,
                 "confidence": "medium",
                 "net_direction": "positive",
-                "research_mention_count": 12,
-                "signal_count": 13,
+                "research_mention_count": 7,
+                "signal_count": 8,
                 "signals": [
                   {
                     "corroboration_count": 1,
@@ -4749,7 +4610,7 @@
                     "origin": "sleeper",
                     "player_id": "8138",
                     "player_name": "James Cook",
-                    "published_at": "2026-10-04T19:43:09.779412+00:00",
+                    "published_at": "2026-10-04T21:22:34.460433+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-8138",
                     "source": "Sleeper depth chart",
@@ -4759,69 +4620,6 @@
                     "type": "depth_chart",
                     "url": null,
                     "weighted_score": 0.26
-                  },
-                  {
-                    "corroboration_count": 1,
-                    "direction": 0.0,
-                    "event_date": null,
-                    "impact": "context",
-                    "magnitude": 0.0,
-                    "origin": "curated_report",
-                    "player_id": "8138",
-                    "player_name": "James Cook",
-                    "published_at": "2026-09-27T20:01:15+00:00",
-                    "reliability": 0.45,
-                    "scored": false,
-                    "signal_id": "1cc2313dea63b5a12a43",
-                    "source": "foxsports.com",
-                    "source_type": "aggregator",
-                    "summary": "James Cook scores three-yard touchdown, extending Bills' lead over Chargers | NFL Highlights - foxsports.com",
-                    "ttl_days": 7,
-                    "type": "news",
-                    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFB5djE3aElUSktQZFlFWDJBZ2xyQkEydHBXWjJFc3NCVm1YMVY4UGo2NG1IbXJ1MG82Q3ZqWGdEcFdPSjN5VmpiT3ZrNUhyaGRIOTZCdUJMdTd4REwyaEdDdGRB?oc=5",
-                    "weighted_score": 0.0
-                  },
-                  {
-                    "corroboration_count": 1,
-                    "direction": 0.0,
-                    "event_date": null,
-                    "impact": "context",
-                    "magnitude": 0.0,
-                    "origin": "curated_report",
-                    "player_id": "8138",
-                    "player_name": "James Cook",
-                    "published_at": "2026-09-27T21:10:15+00:00",
-                    "reliability": 0.45,
-                    "scored": false,
-                    "signal_id": "27aa938c2da8f2da5b24",
-                    "source": "Fantasy Footballers Podcast",
-                    "source_type": "aggregator",
-                    "summary": "James Cook III Another stellar effort in win - Fantasy Footballers Podcast",
-                    "ttl_days": 7,
-                    "type": "news",
-                    "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPYXdoVXZXNTlFbURyX09wUnp2S3htSTlvVDV3VXcwRUhBdXZOLTR2eVN2M051TkZ1NGJvcGJ1UWpYVGZ4QU93WHlaX0ZyMnh0WFFFV0plaTVtWU9KSHhMVHpmMHVTM2oycjJuX2c4N2dTU05oeG5sSDRoakZlaXBKbzBwYTJQaEpUSGlvalpENlBzMjVUX3c?oc=5",
-                    "weighted_score": 0.0
-                  },
-                  {
-                    "corroboration_count": 1,
-                    "direction": 0.0,
-                    "event_date": null,
-                    "impact": "context",
-                    "magnitude": 0.0,
-                    "origin": "curated_report",
-                    "player_id": "8138",
-                    "player_name": "James Cook",
-                    "published_at": "2026-09-27T20:40:32+00:00",
-                    "reliability": 0.45,
-                    "scored": false,
-                    "signal_id": "51bf9db0a48ee8c70d07",
-                    "source": "NFL.com",
-                    "source_type": "aggregator",
-                    "summary": "Buffalo Bills running back James Cook's best runs from 154-yard game vs. Los Angeles Chargers | Week 3 - NFL.com",
-                    "ttl_days": 7,
-                    "type": "news",
-                    "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQTTJtenB3RFdMM2d1UGpOcjlwbHlqUFRTUGQ4dDc5NVdQa2VHVXJDWGgwNVBlOHYyVUdKNGNiYm15LUk2MWpwZXpyYnJTS29FSzFwVVNGblhWa3B6T2RpbVRvMHphY08yWlk2VTVLcE5wWG83UlR3UFFQUW1XREIyajhMRVdzSi1RNUdmVk13UGw?oc=5",
-                    "weighted_score": 0.0
                   },
                   {
                     "corroboration_count": 1,
@@ -4863,27 +4661,6 @@
                     "ttl_days": 7,
                     "type": "news",
                     "url": "https://www.fantasypros.com/nfl/news/611010/james-cook-iii-dominated-on-ground-week-3-win-over-chargers.php",
-                    "weighted_score": 0.0
-                  },
-                  {
-                    "corroboration_count": 1,
-                    "direction": 0.0,
-                    "event_date": null,
-                    "impact": "context",
-                    "magnitude": 0.0,
-                    "origin": "curated_report",
-                    "player_id": "8138",
-                    "player_name": "James Cook",
-                    "published_at": "2026-09-27T20:01:15+00:00",
-                    "reliability": 0.45,
-                    "scored": false,
-                    "signal_id": "904ac565df022ec2d1e1",
-                    "source": "FOX Sports",
-                    "source_type": "aggregator",
-                    "summary": "James Cook scores three-yard touchdown, extending Bills' lead over Chargers | NFL Highlights - FOX Sports",
-                    "ttl_days": 7,
-                    "type": "news",
-                    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFB5djE3aElUSktQZFlFWDJBZ2xyQkEydHBXWjJFc3NCVm1YMVY4UGo2NG1IbXJ1MG82Q3ZqWGdEcFdPSjN5VmpiT3ZrNUhyaGRIOTZCdUJMdTd4REwyaEdDdGRB?oc=5",
                     "weighted_score": 0.0
                   },
                   {
@@ -4979,27 +4756,6 @@
                     "origin": "curated_report",
                     "player_id": "8138",
                     "player_name": "James Cook",
-                    "published_at": "2026-09-27T21:10:15+00:00",
-                    "reliability": 0.45,
-                    "scored": false,
-                    "signal_id": "ef97bbbd0b482bca4233",
-                    "source": "thefantasyfootballers.com",
-                    "source_type": "aggregator",
-                    "summary": "James Cook III Another stellar effort in win - thefantasyfootballers.com",
-                    "ttl_days": 7,
-                    "type": "news",
-                    "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPYXdoVXZXNTlFbURyX09wUnp2S3htSTlvVDV3VXcwRUhBdXZOLTR2eVN2M051TkZ1NGJvcGJ1UWpYVGZ4QU93WHlaX0ZyMnh0WFFFV0plaTVtWU9KSHhMVHpmMHVTM2oycjJuX2c4N2dTU05oeG5sSDRoakZlaXBKbzBwYTJQaEpUSGlvalpENlBzMjVUX3c?oc=5",
-                    "weighted_score": 0.0
-                  },
-                  {
-                    "corroboration_count": 1,
-                    "direction": 0.0,
-                    "event_date": null,
-                    "impact": "context",
-                    "magnitude": 0.0,
-                    "origin": "curated_report",
-                    "player_id": "8138",
-                    "player_name": "James Cook",
                     "published_at": "2026-09-30T17:28:50+00:00",
                     "reliability": 0.45,
                     "scored": false,
@@ -5069,33 +4825,6 @@
               "news": [
                 {
                   "event_date": null,
-                  "published_at": "2026-09-27T20:01:15+00:00",
-                  "signal_type": "news",
-                  "source": "foxsports.com",
-                  "text": "James Cook scores three-yard touchdown, extending Bills' lead over Chargers | NFL Highlights - foxsports.com",
-                  "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFB5djE3aElUSktQZFlFWDJBZ2xyQkEydHBXWjJFc3NCVm1YMVY4UGo2NG1IbXJ1MG82Q3ZqWGdEcFdPSjN5VmpiT3ZrNUhyaGRIOTZCdUJMdTd4REwyaEdDdGRB?oc=5",
-                  "weighted_score": 0.0
-                },
-                {
-                  "event_date": null,
-                  "published_at": "2026-09-27T21:10:15+00:00",
-                  "signal_type": "news",
-                  "source": "Fantasy Footballers Podcast",
-                  "text": "James Cook III Another stellar effort in win - Fantasy Footballers Podcast",
-                  "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPYXdoVXZXNTlFbURyX09wUnp2S3htSTlvVDV3VXcwRUhBdXZOLTR2eVN2M051TkZ1NGJvcGJ1UWpYVGZ4QU93WHlaX0ZyMnh0WFFFV0plaTVtWU9KSHhMVHpmMHVTM2oycjJuX2c4N2dTU05oeG5sSDRoakZlaXBKbzBwYTJQaEpUSGlvalpENlBzMjVUX3c?oc=5",
-                  "weighted_score": 0.0
-                },
-                {
-                  "event_date": null,
-                  "published_at": "2026-09-27T20:40:32+00:00",
-                  "signal_type": "news",
-                  "source": "NFL.com",
-                  "text": "Buffalo Bills running back James Cook's best runs from 154-yard game vs. Los Angeles Chargers | Week 3 - NFL.com",
-                  "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQTTJtenB3RFdMM2d1UGpOcjlwbHlqUFRTUGQ4dDc5NVdQa2VHVXJDWGgwNVBlOHYyVUdKNGNiYm15LUk2MWpwZXpyYnJTS29FSzFwVVNGblhWa3B6T2RpbVRvMHphY08yWlk2VTVLcE5wWG83UlR3UFFQUW1XREIyajhMRVdzSi1RNUdmVk13UGw?oc=5",
-                  "weighted_score": 0.0
-                },
-                {
-                  "event_date": null,
                   "published_at": "2026-09-30T10:36:22+00:00",
                   "signal_type": "news",
                   "source": "buffalobills.com",
@@ -5110,15 +4839,6 @@
                   "source": "FantasyPros",
                   "text": "James Cook III dominates on ground in Week 3 win over Chargers",
                   "url": "https://www.fantasypros.com/nfl/news/611010/james-cook-iii-dominated-on-ground-week-3-win-over-chargers.php",
-                  "weighted_score": 0.0
-                },
-                {
-                  "event_date": null,
-                  "published_at": "2026-09-27T20:01:15+00:00",
-                  "signal_type": "news",
-                  "source": "FOX Sports",
-                  "text": "James Cook scores three-yard touchdown, extending Bills' lead over Chargers | NFL Highlights - FOX Sports",
-                  "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFB5djE3aElUSktQZFlFWDJBZ2xyQkEydHBXWjJFc3NCVm1YMVY4UGo2NG1IbXJ1MG82Q3ZqWGdEcFdPSjN5VmpiT3ZrNUhyaGRIOTZCdUJMdTd4REwyaEdDdGRB?oc=5",
                   "weighted_score": 0.0
                 },
                 {
@@ -5155,15 +4875,6 @@
                   "source": "Yahoo Sports",
                   "text": "James Cook churns out 154 yards on the ground in Week 3 victory - Yahoo Sports",
                   "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNYnNsdTJERkN6d2cyeXhYQWt5OGlRZFlKc185bFJsVU5hanBOMDctVGVxYlJrNm8xb2VjcHpsbUI3djVLYTRpTnM0MTdza3ZmdERtY2c1RTJnT2tEY0w2ZVpzODFwbzVoeHE1SWNuOW5WNFVKSkVBWDNzZDBmemxDRVhn?oc=5",
-                  "weighted_score": 0.0
-                },
-                {
-                  "event_date": null,
-                  "published_at": "2026-09-27T21:10:15+00:00",
-                  "signal_type": "news",
-                  "source": "thefantasyfootballers.com",
-                  "text": "James Cook III Another stellar effort in win - thefantasyfootballers.com",
-                  "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPYXdoVXZXNTlFbURyX09wUnp2S3htSTlvVDV3VXcwRUhBdXZOLTR2eVN2M051TkZ1NGJvcGJ1UWpYVGZ4QU93WHlaX0ZyMnh0WFFFV0plaTVtWU9KSHhMVHpmMHVTM2oycjJuX2c4N2dTU05oeG5sSDRoakZlaXBKbzBwYTJQaEpUSGlvalpENlBzMjVUX3c?oc=5",
                   "weighted_score": 0.0
                 },
                 {
@@ -5255,7 +4966,7 @@
                     "origin": "sleeper",
                     "player_id": "8228",
                     "player_name": "Jaylen Warren",
-                    "published_at": "2026-10-04T19:43:09.779412+00:00",
+                    "published_at": "2026-10-04T21:22:34.460433+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-8228",
                     "source": "Sleeper depth chart",
@@ -5725,7 +5436,7 @@
                     "origin": "sleeper",
                     "player_id": "13345",
                     "player_name": "Jonah Coleman",
-                    "published_at": "2026-10-04T19:43:09.779412+00:00",
+                    "published_at": "2026-10-04T21:22:34.460433+00:00",
                     "reliability": 0.82,
                     "signal_id": "sleeper-injury-13345",
                     "source": "Sleeper player status",
@@ -5745,7 +5456,7 @@
                     "origin": "sleeper",
                     "player_id": "13345",
                     "player_name": "Jonah Coleman",
-                    "published_at": "2026-10-04T19:43:09.779412+00:00",
+                    "published_at": "2026-10-04T21:22:34.460433+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-13345",
                     "source": "Sleeper depth chart",
@@ -5919,7 +5630,7 @@
               "news": [
                 {
                   "event_date": null,
-                  "published_at": "2026-10-04T19:43:09.779412+00:00",
+                  "published_at": "2026-10-04T21:22:34.460433+00:00",
                   "signal_type": "injury",
                   "source": "Sleeper player status",
                   "text": "Sleeper lists Jonah Coleman as IR.",
@@ -6036,8 +5747,8 @@
                 "availability_probability": 1.0,
                 "confidence": "medium",
                 "net_direction": "neutral",
-                "research_mention_count": 8,
-                "signal_count": 9,
+                "research_mention_count": 5,
+                "signal_count": 6,
                 "signals": [
                   {
                     "corroboration_count": 1,
@@ -6048,7 +5759,7 @@
                     "origin": "sleeper",
                     "player_id": "12474",
                     "player_name": "Woody Marks",
-                    "published_at": "2026-10-04T19:43:09.779412+00:00",
+                    "published_at": "2026-10-04T21:22:34.460433+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-12474",
                     "source": "Sleeper depth chart",
@@ -6058,27 +5769,6 @@
                     "type": "depth_chart",
                     "url": null,
                     "weighted_score": 0.13
-                  },
-                  {
-                    "corroboration_count": 1,
-                    "direction": 0.0,
-                    "event_date": null,
-                    "impact": "context",
-                    "magnitude": 0.0,
-                    "origin": "curated_report",
-                    "player_id": "12474",
-                    "player_name": "Woody Marks",
-                    "published_at": "2026-09-27T20:16:09+00:00",
-                    "reliability": 0.45,
-                    "scored": false,
-                    "signal_id": "144737d0905343821bd7",
-                    "source": "ESPN",
-                    "source_type": "aggregator",
-                    "summary": "Woody Marks dives in for a Texans TD - ESPN",
-                    "ttl_days": 7,
-                    "type": "news",
-                    "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBHcnRQN2Rlck1HbGF0NmVvOVFFakRiWGNCWThUdE1nc2pxWEFibU5xZndnT0U2NzJMNU1pOG9kY3RGTm1vM0hPOVlrYkpXLXJuSm45cFhCM0R5YkdHaWJMZW1CVG5KZ0oxQUdwVVBjY2h5UkdDbUtkUXk3eko1QQ?oc=5",
-                    "weighted_score": 0.0
                   },
                   {
                     "corroboration_count": 1,
@@ -6173,27 +5863,6 @@
                     "origin": "curated_report",
                     "player_id": "12474",
                     "player_name": "Woody Marks",
-                    "published_at": "2026-09-27T20:06:53+00:00",
-                    "reliability": 0.45,
-                    "scored": false,
-                    "signal_id": "a64f0f364ffe4010f466",
-                    "source": "NFL.com",
-                    "source_type": "aggregator",
-                    "summary": "Woody Marks' TD run makes it a 16-16 tie late in fourth quarter - NFL.com",
-                    "ttl_days": 7,
-                    "type": "news",
-                    "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOZnA2SXF5UEp1Wl9feUJiWHJQN0ZOc28zd19pQUszUkpELXdnMFZoTUhrVk1WQ0M2NjZuN05jb0RLVGRhRndZUXp2TzFOdVNQaUw0UTRNaExTVG9OWlVTNEw4UUdEeF9Jazh4bWpEd0RCRUh6SFE2LWtQeV9ibWgtbUZmbVFLUENPVkV5UEw0MmtUOXc?oc=5",
-                    "weighted_score": 0.0
-                  },
-                  {
-                    "corroboration_count": 1,
-                    "direction": 0.0,
-                    "event_date": null,
-                    "impact": "context",
-                    "magnitude": 0.0,
-                    "origin": "curated_report",
-                    "player_id": "12474",
-                    "player_name": "Woody Marks",
                     "published_at": "2026-09-29T01:35:01+00:00",
                     "reliability": 0.45,
                     "scored": false,
@@ -6204,27 +5873,6 @@
                     "ttl_days": 7,
                     "type": "news",
                     "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxObnJoSVZDa1M4Z244MFRKZ1RFZlJVVmlYc0V0RWF1TW5ZNFViTTRhbnlBMG1ydUlXdjJKZHRENjZvVS1hSWsxOE5CS3VrSERDTDZyVGJLa2tOdkQ3U0hOQWR0SllwYmx0Q0ZTN3o4aENXNjhJRS1TODVTdDNNSGR1akMxMXNFdktFU0RFZVdZUQ?oc=5",
-                    "weighted_score": 0.0
-                  },
-                  {
-                    "corroboration_count": 1,
-                    "direction": 0.0,
-                    "event_date": null,
-                    "impact": "context",
-                    "magnitude": 0.0,
-                    "origin": "curated_report",
-                    "player_id": "12474",
-                    "player_name": "Woody Marks",
-                    "published_at": "2026-09-27T20:06:53+00:00",
-                    "reliability": 0.45,
-                    "scored": false,
-                    "signal_id": "e52c864d47e9d54a15ff",
-                    "source": "nfl.com",
-                    "source_type": "aggregator",
-                    "summary": "Woody Marks' TD run makes it a 16-16 tie late in fourth quarter - nfl.com",
-                    "ttl_days": 7,
-                    "type": "news",
-                    "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOZnA2SXF5UEp1Wl9feUJiWHJQN0ZOc28zd19pQUszUkpELXdnMFZoTUhrVk1WQ0M2NjZuN05jb0RLVGRhRndZUXp2TzFOdVNQaUw0UTRNaExTVG9OWlVTNEw4UUdEeF9Jazh4bWpEd0RCRUh6SFE2LWtQeV9ibWgtbUZmbVFLUENPVkV5UEw0MmtUOXc?oc=5",
                     "weighted_score": 0.0
                   }
                 ],
@@ -6248,19 +5896,19 @@
                   "points": 7.63
                 }
               },
-              "current_starter": false,
+              "current_starter": true,
               "decision_lenses": {
                 "dynasty": {
                   "label": "Flexible depth asset",
                   "summary": "Market value 3,156 and position rank #41; age 25 shapes the liquidity and time-horizon risk."
                 },
-                "recommended_stance": "Hold / monitor role",
+                "recommended_stance": "Start / hold",
                 "rest_of_season": {
                   "label": "Role sensitive",
                   "summary": "The 2026 sample shows 10.0 opportunities/game and 45.3% snaps."
                 },
                 "weekly": {
-                  "label": "Depth",
+                  "label": "Starter",
                   "summary": "Evidence range 6.1–9.2 with high confidence; current matchup research is unavailable."
                 }
               },
@@ -6282,15 +5930,6 @@
               },
               "name": "Woody Marks",
               "news": [
-                {
-                  "event_date": null,
-                  "published_at": "2026-09-27T20:16:09+00:00",
-                  "signal_type": "news",
-                  "source": "ESPN",
-                  "text": "Woody Marks dives in for a Texans TD - ESPN",
-                  "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBHcnRQN2Rlck1HbGF0NmVvOVFFakRiWGNCWThUdE1nc2pxWEFibU5xZndnT0U2NzJMNU1pOG9kY3RGTm1vM0hPOVlrYkpXLXJuSm45cFhCM0R5YkdHaWJMZW1CVG5KZ0oxQUdwVVBjY2h5UkdDbUtkUXk3eko1QQ?oc=5",
-                  "weighted_score": 0.0
-                },
                 {
                   "event_date": null,
                   "published_at": "2026-09-27T22:50:42+00:00",
@@ -6329,39 +5968,22 @@
                 },
                 {
                   "event_date": null,
-                  "published_at": "2026-09-27T20:06:53+00:00",
-                  "signal_type": "news",
-                  "source": "NFL.com",
-                  "text": "Woody Marks' TD run makes it a 16-16 tie late in fourth quarter - NFL.com",
-                  "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOZnA2SXF5UEp1Wl9feUJiWHJQN0ZOc28zd19pQUszUkpELXdnMFZoTUhrVk1WQ0M2NjZuN05jb0RLVGRhRndZUXp2TzFOdVNQaUw0UTRNaExTVG9OWlVTNEw4UUdEeF9Jazh4bWpEd0RCRUh6SFE2LWtQeV9ibWgtbUZmbVFLUENPVkV5UEw0MmtUOXc?oc=5",
-                  "weighted_score": 0.0
-                },
-                {
-                  "event_date": null,
                   "published_at": "2026-09-29T01:35:01+00:00",
                   "signal_type": "news",
                   "source": "thefantasyfootballers.com",
                   "text": "Woody Marks Scores first TD of 2026 - thefantasyfootballers.com",
                   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxObnJoSVZDa1M4Z244MFRKZ1RFZlJVVmlYc0V0RWF1TW5ZNFViTTRhbnlBMG1ydUlXdjJKZHRENjZvVS1hSWsxOE5CS3VrSERDTDZyVGJLa2tOdkQ3U0hOQWR0SllwYmx0Q0ZTN3o4aENXNjhJRS1TODVTdDNNSGR1akMxMXNFdktFU0RFZVdZUQ?oc=5",
                   "weighted_score": 0.0
-                },
-                {
-                  "event_date": null,
-                  "published_at": "2026-09-27T20:06:53+00:00",
-                  "signal_type": "news",
-                  "source": "nfl.com",
-                  "text": "Woody Marks' TD run makes it a 16-16 tie late in fourth quarter - nfl.com",
-                  "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOZnA2SXF5UEp1Wl9feUJiWHJQN0ZOc28zd19pQUszUkpELXdnMFZoTUhrVk1WQ0M2NjZuN05jb0RLVGRhRndZUXp2TzFOdVNQaUw0UTRNaExTVG9OWlVTNEw4UUdEeF9Jazh4bWpEd0RCRUh6SFE2LWtQeV9ibWgtbUZmbVFLUENPVkV5UEw0MmtUOXc?oc=5",
-                  "weighted_score": 0.0
                 }
               ],
               "notable_takeaways": [
+                "Currently selected in the Sleeper starting lineup.",
                 "Market value lost 4 since the previous report."
               ],
               "player_id": "12474",
               "position": "RB",
               "position_rank_on_roster": 4,
-              "recommended_stance": "Hold / monitor role",
+              "recommended_stance": "Start / hold",
               "research_coverage": {
                 "coach_beat_reporter": false,
                 "news": true
@@ -6425,7 +6047,7 @@
                     "origin": "sleeper",
                     "player_id": "7021",
                     "player_name": "Rico Dowdle",
-                    "published_at": "2026-10-04T19:43:09.779412+00:00",
+                    "published_at": "2026-10-04T21:22:34.460433+00:00",
                     "reliability": 0.82,
                     "signal_id": "sleeper-injury-7021",
                     "source": "Sleeper player status",
@@ -6445,7 +6067,7 @@
                     "origin": "sleeper",
                     "player_id": "7021",
                     "player_name": "Rico Dowdle",
-                    "published_at": "2026-10-04T19:43:09.779412+00:00",
+                    "published_at": "2026-10-04T21:22:34.460433+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-7021",
                     "source": "Sleeper depth chart",
@@ -6766,7 +6388,7 @@
               "news": [
                 {
                   "event_date": null,
-                  "published_at": "2026-10-04T19:43:09.779412+00:00",
+                  "published_at": "2026-10-04T21:22:34.460433+00:00",
                   "signal_type": "injury",
                   "source": "Sleeper player status",
                   "text": "Sleeper lists Rico Dowdle as Out.",
@@ -6963,7 +6585,7 @@
                     "origin": "sleeper",
                     "player_id": "11581",
                     "player_name": "MarShawn Lloyd",
-                    "published_at": "2026-10-04T19:43:09.779412+00:00",
+                    "published_at": "2026-10-04T21:22:34.460433+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-11581",
                     "source": "Sleeper depth chart",
@@ -7344,7 +6966,7 @@
                     "origin": "sleeper",
                     "player_id": "11655",
                     "player_name": "Tyrone Tracy",
-                    "published_at": "2026-10-04T19:43:09.779412+00:00",
+                    "published_at": "2026-10-04T21:22:34.460433+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-11655",
                     "source": "Sleeper depth chart",
@@ -7907,7 +7529,7 @@
                     "origin": "sleeper",
                     "player_id": "9757",
                     "player_name": "Kendre Miller",
-                    "published_at": "2026-10-04T19:43:09.779412+00:00",
+                    "published_at": "2026-10-04T21:22:34.460433+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-9757",
                     "source": "Sleeper depth chart",
@@ -8316,7 +7938,7 @@
                     "origin": "sleeper",
                     "player_id": "11575",
                     "player_name": "Ray Davis",
-                    "published_at": "2026-10-04T19:43:09.779412+00:00",
+                    "published_at": "2026-10-04T21:22:34.460433+00:00",
                     "reliability": 0.82,
                     "signal_id": "sleeper-injury-11575",
                     "source": "Sleeper player status",
@@ -8336,7 +7958,7 @@
                     "origin": "sleeper",
                     "player_id": "11575",
                     "player_name": "Ray Davis",
-                    "published_at": "2026-10-04T19:43:09.779412+00:00",
+                    "published_at": "2026-10-04T21:22:34.460433+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-11575",
                     "source": "Sleeper depth chart",
@@ -8657,7 +8279,7 @@
               "news": [
                 {
                   "event_date": null,
-                  "published_at": "2026-10-04T19:43:09.779412+00:00",
+                  "published_at": "2026-10-04T21:22:34.460433+00:00",
                   "signal_type": "injury",
                   "source": "Sleeper player status",
                   "text": "Sleeper lists Ray Davis as Questionable.",
@@ -8847,8 +8469,8 @@
                 "availability_probability": 0.0,
                 "confidence": "medium",
                 "net_direction": "negative",
-                "research_mention_count": 21,
-                "signal_count": 26,
+                "research_mention_count": 18,
+                "signal_count": 23,
                 "signals": [
                   {
                     "corroboration_count": 1,
@@ -8859,7 +8481,7 @@
                     "origin": "sleeper",
                     "player_id": "6794",
                     "player_name": "Justin Jefferson",
-                    "published_at": "2026-10-04T19:43:09.779412+00:00",
+                    "published_at": "2026-10-04T21:22:34.460433+00:00",
                     "reliability": 0.82,
                     "signal_id": "sleeper-injury-6794",
                     "source": "Sleeper player status",
@@ -8889,7 +8511,7 @@
                     "ttl_days": 7,
                     "type": "injury",
                     "url": "https://www.rotowire.com//football/player/justin-jefferson-14509",
-                    "weighted_score": -0.5451
+                    "weighted_score": -0.5382
                   },
                   {
                     "corroboration_count": 1,
@@ -8900,7 +8522,7 @@
                     "origin": "sleeper",
                     "player_id": "6794",
                     "player_name": "Justin Jefferson",
-                    "published_at": "2026-10-04T19:43:09.779412+00:00",
+                    "published_at": "2026-10-04T21:22:34.460433+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-6794",
                     "source": "Sleeper depth chart",
@@ -8930,7 +8552,7 @@
                     "ttl_days": 7,
                     "type": "injury",
                     "url": "https://www.pff.com/news/nfl-wide-receiver-rankings/",
-                    "weighted_score": -0.2734
+                    "weighted_score": -0.2665
                   },
                   {
                     "corroboration_count": 1,
@@ -8951,7 +8573,7 @@
                     "ttl_days": 7,
                     "type": "injury",
                     "url": "\n                                                https://www.cbssports.com/nfl/news/vikings-justin-jefferson-questionable-to-return-vs-buccaneers-with-a-knee-injury/\n                    ",
-                    "weighted_score": -0.0104
+                    "weighted_score": -0.0035
                   },
                   {
                     "corroboration_count": 1,
@@ -9056,48 +8678,6 @@
                     "ttl_days": 7,
                     "type": "news",
                     "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNdHlOM0V3M0h6cDJPSDNXcWdtWFpkSHd3ODRxRTFtbGx1VmdqWE1aQkVpbE5tOHRtR19zWUNEcGl4Q2V2b21hNmpaZmdmZHVGU19RanVmT1YtU0Y3cVNaZlBMM1B5R1RHbk5neWhBdVcyQzZhZ0hrTkJWQTNjZlRiQkY0N3Z0RDl0RFBr?oc=5",
-                    "weighted_score": 0.0
-                  },
-                  {
-                    "corroboration_count": 1,
-                    "direction": 0.0,
-                    "event_date": null,
-                    "impact": "context",
-                    "magnitude": 0.0,
-                    "origin": "curated_report",
-                    "player_id": "6794",
-                    "player_name": "Justin Jefferson",
-                    "published_at": "2026-09-27T20:45:51+00:00",
-                    "reliability": 0.45,
-                    "scored": false,
-                    "signal_id": "566b34026804aa673f45",
-                    "source": "NFL.com",
-                    "source_type": "aggregator",
-                    "summary": "Kyler Murray, Justin Jefferson begin game with 22-yard gain on Vikings first offensive play - NFL.com",
-                    "ttl_days": 7,
-                    "type": "news",
-                    "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNUTdOaTIxNDhKdW9SUE9ad0NJWm1lelVjT0xoTUlBTFBKcV9jN2ZKQmlkeWQzVkE0cTB6Rm5jeXV2dzdKM0Q4UlloNm5sa0pxQTZuclNHR0lMRUZmZnJEUjI4X2pFalZxdzV3QlZja2IwdGpNNl81dEVPenRHZnRkN21XcjYybkVHaXRQVU1RZ0pPc0hRNmZKLW9KNUc0STJkd1o2S0JtNHRJeVlCSkJ4cGxteDROUERZ?oc=5",
-                    "weighted_score": 0.0
-                  },
-                  {
-                    "corroboration_count": 1,
-                    "direction": 0.0,
-                    "event_date": null,
-                    "impact": "context",
-                    "magnitude": 0.0,
-                    "origin": "curated_report",
-                    "player_id": "6794",
-                    "player_name": "Justin Jefferson",
-                    "published_at": "2026-09-27T20:45:51+00:00",
-                    "reliability": 0.45,
-                    "scored": false,
-                    "signal_id": "6223486c19f574b0f2a9",
-                    "source": "nfl.com",
-                    "source_type": "aggregator",
-                    "summary": "Kyler Murray, Justin Jefferson begin game with 22-yard gain on Vikings first offensive play - nfl.com",
-                    "ttl_days": 7,
-                    "type": "news",
-                    "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNUTdOaTIxNDhKdW9SUE9ad0NJWm1lelVjT0xoTUlBTFBKcV9jN2ZKQmlkeWQzVkE0cTB6Rm5jeXV2dzdKM0Q4UlloNm5sa0pxQTZuclNHR0lMRUZmZnJEUjI4X2pFalZxdzV3QlZja2IwdGpNNl81dEVPenRHZnRkN21XcjYybkVHaXRQVU1RZ0pPc0hRNmZKLW9KNUc0STJkd1o2S0JtNHRJeVlCSkJ4cGxteDROUERZ?oc=5",
                     "weighted_score": 0.0
                   },
                   {
@@ -9298,27 +8878,6 @@
                     "origin": "curated_report",
                     "player_id": "6794",
                     "player_name": "Justin Jefferson",
-                    "published_at": "2026-09-27T20:48:55+00:00",
-                    "reliability": 0.45,
-                    "scored": false,
-                    "signal_id": "a47ce12ef7029d9bfde7",
-                    "source": "NBC Sports",
-                    "source_type": "aggregator",
-                    "summary": "Justin Jefferson is questionable to return with an ankle injury - NBC Sports",
-                    "ttl_days": 7,
-                    "type": "news",
-                    "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNY1h5VGIzMTh0ZEZDTS05a19rVlRfY0IwVFpqR2tpNmVrZFExMDhQYmZpWUhXVnNTYUI0cHNZUzdVSXY4V2NnZkxoUHY1cHRkMkJwbmpCaHdMWW9DdGVFY0V4Qk5KTEhXUjQ5YW5hYlN2WC1LLVFfeUx3c2FRczNLeWhsa0lkZ3FoallDblFyMGNTVWE0azFuYjFiTlVrNmFNeF9RRnl2dFpwQlhtVXdMeERYNGJFOWNyQTVHYUtvZ2Nsblk?oc=5",
-                    "weighted_score": 0.0
-                  },
-                  {
-                    "corroboration_count": 1,
-                    "direction": 0.0,
-                    "event_date": null,
-                    "impact": "context",
-                    "magnitude": 0.0,
-                    "origin": "curated_report",
-                    "player_id": "6794",
-                    "player_name": "Justin Jefferson",
                     "published_at": "2026-09-28T16:39:55+00:00",
                     "reliability": 0.45,
                     "scored": false,
@@ -9452,7 +9011,7 @@
               "news": [
                 {
                   "event_date": null,
-                  "published_at": "2026-10-04T19:43:09.779412+00:00",
+                  "published_at": "2026-10-04T21:22:34.460433+00:00",
                   "signal_type": "injury",
                   "source": "Sleeper player status",
                   "text": "Sleeper lists Justin Jefferson as Out.",
@@ -9466,7 +9025,7 @@
                   "source": "RotoWire NFL Player News / Jeremy Fowler of ESPN",
                   "text": "Justin Jefferson: Aiming to return Week 5",
                   "url": "https://www.rotowire.com//football/player/justin-jefferson-14509",
-                  "weighted_score": -0.5451
+                  "weighted_score": -0.5382
                 },
                 {
                   "event_date": null,
@@ -9475,7 +9034,7 @@
                   "source": "Gordon McGuinness",
                   "text": "NFL wide receiver rankings: Jaxon Smith-Njigba leads top 32",
                   "url": "https://www.pff.com/news/nfl-wide-receiver-rankings/",
-                  "weighted_score": -0.2734
+                  "weighted_score": -0.2665
                 },
                 {
                   "event_date": null,
@@ -9484,7 +9043,7 @@
                   "source": "Shanna McCarriston",
                   "text": "Vikings' Justin Jefferson ruled out vs. Buccaneers with a knee injury",
                   "url": "\n                                                https://www.cbssports.com/nfl/news/vikings-justin-jefferson-questionable-to-return-vs-buccaneers-with-a-knee-injury/\n                    ",
-                  "weighted_score": -0.0104
+                  "weighted_score": -0.0035
                 },
                 {
                   "event_date": null,
@@ -9529,24 +9088,6 @@
                   "source": "NFL.com",
                   "text": "NFL news roundup: Jaycee Horn out indefinitely; Justin Jefferson, Breece Hall avoid serious injuries - NFL.com",
                   "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNdHlOM0V3M0h6cDJPSDNXcWdtWFpkSHd3ODRxRTFtbGx1VmdqWE1aQkVpbE5tOHRtR19zWUNEcGl4Q2V2b21hNmpaZmdmZHVGU19RanVmT1YtU0Y3cVNaZlBMM1B5R1RHbk5neWhBdVcyQzZhZ0hrTkJWQTNjZlRiQkY0N3Z0RDl0RFBr?oc=5",
-                  "weighted_score": 0.0
-                },
-                {
-                  "event_date": null,
-                  "published_at": "2026-09-27T20:45:51+00:00",
-                  "signal_type": "news",
-                  "source": "NFL.com",
-                  "text": "Kyler Murray, Justin Jefferson begin game with 22-yard gain on Vikings first offensive play - NFL.com",
-                  "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNUTdOaTIxNDhKdW9SUE9ad0NJWm1lelVjT0xoTUlBTFBKcV9jN2ZKQmlkeWQzVkE0cTB6Rm5jeXV2dzdKM0Q4UlloNm5sa0pxQTZuclNHR0lMRUZmZnJEUjI4X2pFalZxdzV3QlZja2IwdGpNNl81dEVPenRHZnRkN21XcjYybkVHaXRQVU1RZ0pPc0hRNmZKLW9KNUc0STJkd1o2S0JtNHRJeVlCSkJ4cGxteDROUERZ?oc=5",
-                  "weighted_score": 0.0
-                },
-                {
-                  "event_date": null,
-                  "published_at": "2026-09-27T20:45:51+00:00",
-                  "signal_type": "news",
-                  "source": "nfl.com",
-                  "text": "Kyler Murray, Justin Jefferson begin game with 22-yard gain on Vikings first offensive play - nfl.com",
-                  "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNUTdOaTIxNDhKdW9SUE9ad0NJWm1lelVjT0xoTUlBTFBKcV9jN2ZKQmlkeWQzVkE0cTB6Rm5jeXV2dzdKM0Q4UlloNm5sa0pxQTZuclNHR0lMRUZmZnJEUjI4X2pFalZxdzV3QlZja2IwdGpNNl81dEVPenRHZnRkN21XcjYybkVHaXRQVU1RZ0pPc0hRNmZKLW9KNUc0STJkd1o2S0JtNHRJeVlCSkJ4cGxteDROUERZ?oc=5",
                   "weighted_score": 0.0
                 },
                 {
@@ -9628,15 +9169,6 @@
                   "source": "CBS Sports",
                   "text": "NFL Week 4 injury panic meter: Updates on Baker Mayfield, Justin Jefferson and more - CBS Sports",
                   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNYXJwc1NnckRCUU9YeEVsOXpMa0xUVXlLOGxsZGFMNjJvY3psMzZDbzlYdVVvQ0xQcFpQVXVDV01ud0ZkOTA0ZW9fUG93eTF3N3BkTTQycl82QVV3UDdGLWJOUlpsNy1jSjJ5eFFUVWFUY0ZJcEFEdTkzc2FZbXVfM0NsakFGUEZjS1RHc2pGZ3BPUDlONUhWa3FyQVBzZw?oc=5",
-                  "weighted_score": 0.0
-                },
-                {
-                  "event_date": null,
-                  "published_at": "2026-09-27T20:48:55+00:00",
-                  "signal_type": "news",
-                  "source": "NBC Sports",
-                  "text": "Justin Jefferson is questionable to return with an ankle injury - NBC Sports",
-                  "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNY1h5VGIzMTh0ZEZDTS05a19rVlRfY0IwVFpqR2tpNmVrZFExMDhQYmZpWUhXVnNTYUI0cHNZUzdVSXY4V2NnZkxoUHY1cHRkMkJwbmpCaHdMWW9DdGVFY0V4Qk5KTEhXUjQ5YW5hYlN2WC1LLVFfeUx3c2FRczNLeWhsa0lkZ3FoallDblFyMGNTVWE0azFuYjFiTlVrNmFNeF9RRnl2dFpwQlhtVXdMeERYNGJFOWNyQTVHYUtvZ2Nsblk?oc=5",
                   "weighted_score": 0.0
                 },
                 {
@@ -9758,7 +9290,7 @@
                     "origin": "sleeper",
                     "player_id": "7569",
                     "player_name": "Nico Collins",
-                    "published_at": "2026-10-04T19:43:09.779412+00:00",
+                    "published_at": "2026-10-04T21:22:34.460433+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-7569",
                     "source": "Sleeper depth chart",
@@ -9788,7 +9320,7 @@
                     "ttl_days": 4,
                     "type": "practice",
                     "url": "https://www.rotowire.com//football/player/nico-collins-15200",
-                    "weighted_score": 0.1715
+                    "weighted_score": 0.1618
                   },
                   {
                     "corroboration_count": 1,
@@ -9809,7 +9341,7 @@
                     "ttl_days": 4,
                     "type": "practice",
                     "url": "https://www.rotowire.com//football/player/nico-collins-15200",
-                    "weighted_score": -0.0183
+                    "weighted_score": -0.0135
                   },
                   {
                     "corroboration_count": 1,
@@ -10041,7 +9573,7 @@
                   "source": "RotoWire NFL Player News",
                   "text": "Nico Collins: Cleared to play Sunday",
                   "url": "https://www.rotowire.com//football/player/nico-collins-15200",
-                  "weighted_score": 0.1715
+                  "weighted_score": 0.1618
                 },
                 {
                   "event_date": null,
@@ -10050,7 +9582,7 @@
                   "source": "RotoWire NFL Player News",
                   "text": "Nico Collins: Limited once more Thursday",
                   "url": "https://www.rotowire.com//football/player/nico-collins-15200",
-                  "weighted_score": -0.0183
+                  "weighted_score": -0.0135
                 },
                 {
                   "event_date": null,
@@ -10198,7 +9730,7 @@
                     "origin": "sleeper",
                     "player_id": "7526",
                     "player_name": "Jaylen Waddle",
-                    "published_at": "2026-10-04T19:43:09.779412+00:00",
+                    "published_at": "2026-10-04T21:22:34.460433+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-7526",
                     "source": "Sleeper depth chart",
@@ -10915,7 +10447,7 @@
                     "origin": "sleeper",
                     "player_id": "11646",
                     "player_name": "Jalen Coker",
-                    "published_at": "2026-10-04T19:43:09.779412+00:00",
+                    "published_at": "2026-10-04T21:22:34.460433+00:00",
                     "reliability": 0.82,
                     "signal_id": "sleeper-injury-11646",
                     "source": "Sleeper player status",
@@ -10935,7 +10467,7 @@
                     "origin": "sleeper",
                     "player_id": "11646",
                     "player_name": "Jalen Coker",
-                    "published_at": "2026-10-04T19:43:09.779412+00:00",
+                    "published_at": "2026-10-04T21:22:34.460433+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-11646",
                     "source": "Sleeper depth chart",
@@ -11156,7 +10688,7 @@
                   "points": 14.98
                 }
               },
-              "current_starter": true,
+              "current_starter": false,
               "decision_lenses": {
                 "dynasty": {
                   "label": "Development hold",
@@ -11193,7 +10725,7 @@
               "news": [
                 {
                   "event_date": null,
-                  "published_at": "2026-10-04T19:43:09.779412+00:00",
+                  "published_at": "2026-10-04T21:22:34.460433+00:00",
                   "signal_type": "injury",
                   "source": "Sleeper player status",
                   "text": "Sleeper lists Jalen Coker as Questionable.",
@@ -11283,7 +10815,6 @@
                 }
               ],
               "notable_takeaways": [
-                "Currently selected in the Sleeper starting lineup.",
                 "Market value lost 83 since the previous report."
               ],
               "player_id": "11646",
@@ -11357,7 +10888,7 @@
                     "origin": "sleeper",
                     "player_id": "5927",
                     "player_name": "Terry McLaurin",
-                    "published_at": "2026-10-04T19:43:09.779412+00:00",
+                    "published_at": "2026-10-04T21:22:34.460433+00:00",
                     "reliability": 0.82,
                     "signal_id": "sleeper-injury-5927",
                     "source": "Sleeper player status",
@@ -11387,7 +10918,7 @@
                     "ttl_days": 7,
                     "type": "injury",
                     "url": "https://www.rotowire.com//football/player/terry-mclaurin-13536",
-                    "weighted_score": -0.6389
+                    "weighted_score": -0.632
                   },
                   {
                     "corroboration_count": 1,
@@ -11408,7 +10939,7 @@
                     "ttl_days": 7,
                     "type": "injury",
                     "url": "https://www.fantasypros.com/nfl/news/611988/terry-mclaurin-hamstring-not-expected-to-play-sunday.php",
-                    "weighted_score": -0.3736
+                    "weighted_score": -0.3692
                   },
                   {
                     "corroboration_count": 1,
@@ -11419,7 +10950,7 @@
                     "origin": "sleeper",
                     "player_id": "5927",
                     "player_name": "Terry McLaurin",
-                    "published_at": "2026-10-04T19:43:09.779412+00:00",
+                    "published_at": "2026-10-04T21:22:34.460433+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-5927",
                     "source": "Sleeper depth chart",
@@ -11740,7 +11271,7 @@
               "news": [
                 {
                   "event_date": null,
-                  "published_at": "2026-10-04T19:43:09.779412+00:00",
+                  "published_at": "2026-10-04T21:22:34.460433+00:00",
                   "signal_type": "injury",
                   "source": "Sleeper player status",
                   "text": "Sleeper lists Terry McLaurin as Out.",
@@ -11754,7 +11285,7 @@
                   "source": "RotoWire NFL Player News",
                   "text": "Terry McLaurin: Sitting out London game",
                   "url": "https://www.rotowire.com//football/player/terry-mclaurin-13536",
-                  "weighted_score": -0.6389
+                  "weighted_score": -0.632
                 },
                 {
                   "event_date": null,
@@ -11763,7 +11294,7 @@
                   "source": "FantasyPros",
                   "text": "Terry McLaurin (hamstring) not expected to play Sunday",
                   "url": "https://www.fantasypros.com/nfl/news/611988/terry-mclaurin-hamstring-not-expected-to-play-sunday.php",
-                  "weighted_score": -0.3736
+                  "weighted_score": -0.3692
                 },
                 {
                   "event_date": null,
@@ -11950,7 +11481,7 @@
                     "origin": "sleeper",
                     "player_id": "5045",
                     "player_name": "Courtland Sutton",
-                    "published_at": "2026-10-04T19:43:09.779412+00:00",
+                    "published_at": "2026-10-04T21:22:34.460433+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-5045",
                     "source": "Sleeper depth chart",
@@ -12336,7 +11867,7 @@
                     "origin": "sleeper",
                     "player_id": "10222",
                     "player_name": "Jayden Reed",
-                    "published_at": "2026-10-04T19:43:09.779412+00:00",
+                    "published_at": "2026-10-04T21:22:34.460433+00:00",
                     "reliability": 0.82,
                     "signal_id": "sleeper-injury-10222",
                     "source": "Sleeper player status",
@@ -12356,7 +11887,7 @@
                     "origin": "sleeper",
                     "player_id": "10222",
                     "player_name": "Jayden Reed",
-                    "published_at": "2026-10-04T19:43:09.779412+00:00",
+                    "published_at": "2026-10-04T21:22:34.460433+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-10222",
                     "source": "Sleeper depth chart",
@@ -12386,7 +11917,7 @@
                     "ttl_days": 7,
                     "type": "injury",
                     "url": "\n                                                https://www.cbssports.com/nfl/news/tyreek-hill-nfl-comeback-cold-weather-landing-spots/\n                    ",
-                    "weighted_score": -0.2947
+                    "weighted_score": -0.2878
                   },
                   {
                     "corroboration_count": 1,
@@ -12407,7 +11938,7 @@
                     "ttl_days": 7,
                     "type": "injury",
                     "url": "\n                                                https://www.cbssports.com/nfl/news/jayden-reed-injury-update-packers-wr-neck-surgery/\n                    ",
-                    "weighted_score": -0.2887
+                    "weighted_score": -0.2818
                   },
                   {
                     "corroboration_count": 1,
@@ -12677,7 +12208,7 @@
               "news": [
                 {
                   "event_date": null,
-                  "published_at": "2026-10-04T19:43:09.779412+00:00",
+                  "published_at": "2026-10-04T21:22:34.460433+00:00",
                   "signal_type": "injury",
                   "source": "Sleeper player status",
                   "text": "Sleeper lists Jayden Reed as IR.",
@@ -12691,7 +12222,7 @@
                   "source": "Garrett Podell",
                   "text": "Tyreek Hill teases potential NFL comeback: Former All-Pro WR seeks 'cold weather' landing spot",
                   "url": "\n                                                https://www.cbssports.com/nfl/news/tyreek-hill-nfl-comeback-cold-weather-landing-spots/\n                    ",
-                  "weighted_score": -0.2947
+                  "weighted_score": -0.2878
                 },
                 {
                   "event_date": null,
@@ -12700,7 +12231,7 @@
                   "source": "Tyler Sullivan",
                   "text": "Packers' Jayden Reed out for season, set to undergo surgery for neck injury",
                   "url": "\n                                                https://www.cbssports.com/nfl/news/jayden-reed-injury-update-packers-wr-neck-surgery/\n                    ",
-                  "weighted_score": -0.2887
+                  "weighted_score": -0.2818
                 },
                 {
                   "event_date": null,
@@ -12869,7 +12400,7 @@
                     "origin": "sleeper",
                     "player_id": "7571",
                     "player_name": "Rashod Bateman",
-                    "published_at": "2026-10-04T19:43:09.779412+00:00",
+                    "published_at": "2026-10-04T21:22:34.460433+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-7571",
                     "source": "Sleeper depth chart",
@@ -13156,7 +12687,7 @@
                     "origin": "sleeper",
                     "player_id": "10226",
                     "player_name": "Andrei Iosivas",
-                    "published_at": "2026-10-04T19:43:09.779412+00:00",
+                    "published_at": "2026-10-04T21:22:34.460433+00:00",
                     "reliability": 0.82,
                     "signal_id": "sleeper-injury-10226",
                     "source": "Sleeper player status",
@@ -13176,7 +12707,7 @@
                     "origin": "sleeper",
                     "player_id": "10226",
                     "player_name": "Andrei Iosivas",
-                    "published_at": "2026-10-04T19:43:09.779412+00:00",
+                    "published_at": "2026-10-04T21:22:34.460433+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-10226",
                     "source": "Sleeper depth chart",
@@ -13392,7 +12923,7 @@
               "news": [
                 {
                   "event_date": null,
-                  "published_at": "2026-10-04T19:43:09.779412+00:00",
+                  "published_at": "2026-10-04T21:22:34.460433+00:00",
                   "signal_type": "injury",
                   "source": "Sleeper player status",
                   "text": "Sleeper lists Andrei Iosivas as IR.",
@@ -13550,7 +13081,7 @@
                     "origin": "sleeper",
                     "player_id": "10859",
                     "player_name": "Sam LaPorta",
-                    "published_at": "2026-10-04T19:43:09.779412+00:00",
+                    "published_at": "2026-10-04T21:22:34.460433+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-10859",
                     "source": "Sleeper depth chart",
@@ -14009,8 +13540,8 @@
                 "availability_probability": 1.0,
                 "confidence": "medium",
                 "net_direction": "positive",
-                "research_mention_count": 12,
-                "signal_count": 13,
+                "research_mention_count": 10,
+                "signal_count": 11,
                 "signals": [
                   {
                     "corroboration_count": 1,
@@ -14021,7 +13552,7 @@
                     "origin": "sleeper",
                     "player_id": "12506",
                     "player_name": "Harold Fannin",
-                    "published_at": "2026-10-04T19:43:09.779412+00:00",
+                    "published_at": "2026-10-04T21:22:34.460433+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-12506",
                     "source": "Sleeper depth chart",
@@ -14031,27 +13562,6 @@
                     "type": "depth_chart",
                     "url": null,
                     "weighted_score": 0.26
-                  },
-                  {
-                    "corroboration_count": 1,
-                    "direction": 0.0,
-                    "event_date": null,
-                    "impact": "context",
-                    "magnitude": 0.0,
-                    "origin": "curated_report",
-                    "player_id": "12506",
-                    "player_name": "Harold Fannin",
-                    "published_at": "2026-09-27T20:37:37+00:00",
-                    "reliability": 0.45,
-                    "scored": false,
-                    "signal_id": "0ab7a9ee8419851fc813",
-                    "source": "foxsports.com",
-                    "source_type": "aggregator",
-                    "summary": "Deshaun Watson finds Harold Fannin Jr for 14-yard TD, followed by 2-point conversion to give Browns the win vs Panthers | NFL Highlights - foxsports.com",
-                    "ttl_days": 7,
-                    "type": "news",
-                    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFA4RDl6TGFkT3VjNWxxX091WGNLcnFZMmtIWXlUWkNOU2dQVGNZSTVTX1Y4Vm5iX2hpRGxVejR0MncyZ0xrdHc1UHMyMFhRYkFSejI2TGYyMk4zN29GNTZQUU13?oc=5",
-                    "weighted_score": 0.0
                   },
                   {
                     "corroboration_count": 1,
@@ -14251,27 +13761,6 @@
                     "origin": "curated_report",
                     "player_id": "12506",
                     "player_name": "Harold Fannin",
-                    "published_at": "2026-09-27T20:37:37+00:00",
-                    "reliability": 0.45,
-                    "scored": false,
-                    "signal_id": "f0c5bbafb245d5b84c6a",
-                    "source": "FOX Sports",
-                    "source_type": "aggregator",
-                    "summary": "Deshaun Watson finds Harold Fannin Jr for 14-yard TD, followed by 2-point conversion to give Browns the win vs Panthers | NFL Highlights - FOX Sports",
-                    "ttl_days": 7,
-                    "type": "news",
-                    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFA4RDl6TGFkT3VjNWxxX091WGNLcnFZMmtIWXlUWkNOU2dQVGNZSTVTX1Y4Vm5iX2hpRGxVejR0MncyZ0xrdHc1UHMyMFhRYkFSejI2TGYyMk4zN29GNTZQUU13?oc=5",
-                    "weighted_score": 0.0
-                  },
-                  {
-                    "corroboration_count": 1,
-                    "direction": 0.0,
-                    "event_date": null,
-                    "impact": "context",
-                    "magnitude": 0.0,
-                    "origin": "curated_report",
-                    "player_id": "12506",
-                    "player_name": "Harold Fannin",
                     "published_at": "2026-10-02T14:18:21+00:00",
                     "reliability": 0.45,
                     "scored": false,
@@ -14339,15 +13828,6 @@
               },
               "name": "Harold Fannin",
               "news": [
-                {
-                  "event_date": null,
-                  "published_at": "2026-09-27T20:37:37+00:00",
-                  "signal_type": "news",
-                  "source": "foxsports.com",
-                  "text": "Deshaun Watson finds Harold Fannin Jr for 14-yard TD, followed by 2-point conversion to give Browns the win vs Panthers | NFL Highlights - foxsports.com",
-                  "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFA4RDl6TGFkT3VjNWxxX091WGNLcnFZMmtIWXlUWkNOU2dQVGNZSTVTX1Y4Vm5iX2hpRGxVejR0MncyZ0xrdHc1UHMyMFhRYkFSejI2TGYyMk4zN29GNTZQUU13?oc=5",
-                  "weighted_score": 0.0
-                },
                 {
                   "event_date": null,
                   "published_at": "2026-09-28T04:49:46+00:00",
@@ -14427,15 +13907,6 @@
                   "source": "thefantasyfootballers.com",
                   "text": "Harold Fannin Jr. Pair of TDs in win - thefantasyfootballers.com",
                   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNVW9CMUFmN2llWGhnWi1kWTY1OWhyVHJEUm42NTNUWm1ubWxseE51SktqQm9lVXRwektpUU55bU43eDFmS0VCVGJhbUxqM1pES2R1a0w5Y28yM3ZkQWtPeDRaejNwenNXWmZWVUNBZXJRdHkyaE5WZl9fUmhvRzFISTluLTE1ZjhuU2NmUHlybw?oc=5",
-                  "weighted_score": 0.0
-                },
-                {
-                  "event_date": null,
-                  "published_at": "2026-09-27T20:37:37+00:00",
-                  "signal_type": "news",
-                  "source": "FOX Sports",
-                  "text": "Deshaun Watson finds Harold Fannin Jr for 14-yard TD, followed by 2-point conversion to give Browns the win vs Panthers | NFL Highlights - FOX Sports",
-                  "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFA4RDl6TGFkT3VjNWxxX091WGNLcnFZMmtIWXlUWkNOU2dQVGNZSTVTX1Y4Vm5iX2hpRGxVejR0MncyZ0xrdHc1UHMyMFhRYkFSejI2TGYyMk4zN29GNTZQUU13?oc=5",
                   "weighted_score": 0.0
                 },
                 {
@@ -14527,7 +13998,7 @@
                     "origin": "sleeper",
                     "player_id": "12521",
                     "player_name": "Elijah Arroyo",
-                    "published_at": "2026-10-04T19:43:09.779412+00:00",
+                    "published_at": "2026-10-04T21:22:34.460433+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-12521",
                     "source": "Sleeper depth chart",
@@ -14807,7 +14278,7 @@
   ],
   "sources": [
     {
-      "checked_at": "2026-10-04T19:43:09.995063+00:00",
+      "checked_at": "2026-10-04T21:22:34.617062+00:00",
       "name": "Sleeper",
       "status": "ok",
       "type": "authoritative_roster_data",
@@ -14831,14 +14302,14 @@
       "url": "https://nflverse.com/"
     },
     {
-      "checked_at": "2026-10-04T19:43:09.779412+00:00",
+      "checked_at": "2026-10-04T21:22:34.460433+00:00",
       "name": "Player context signals",
       "status": "available",
       "type": "availability_depth_usage_and_reporting",
       "url": null
     },
     {
-      "checked_at": "2026-10-04T19:43:09.779412+00:00",
+      "checked_at": "2026-10-04T21:22:34.460433+00:00",
       "name": "Roster research",
       "status": "available",
       "type": "news_matchup_coach_reporting",
