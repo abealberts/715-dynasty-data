@@ -1,6 +1,6 @@
 {
   "context_methodology": "Time-decayed, source-weighted context. Narrative effects are capped at ±8%, combined workload context at ±12%, and availability remains a separate guardrail. Every adjustment retains its source and explanation.",
-  "generated_at": "2026-10-04T15:28:56.739918+00:00",
+  "generated_at": "2026-10-04T19:43:07.072757+00:00",
   "methodology": "Signal score, not dynasty market value. Uses confirmed league availability, NFL roster status, depth chart, age, league format, Sleeper 24h add/drop trends, recent 715 drops, and injury/IR-slot context. Phase 4.6 adds Dynasty Dealer market value plus nflverse offensive snap share, opportunities, 715-scoring production, and current usage trend. Prior-season performance is deliberately discounted until current-season data exists.",
   "players": [
     {
@@ -124,7 +124,7 @@
         "Recently dropped by Amelse; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 12.1,
+        "age_days": 12.3,
         "manager": "Amelse"
       },
       "status": "Active",
@@ -142,7 +142,7 @@
         "availability_probability": 1.0,
         "confidence": "medium",
         "net_direction": "neutral",
-        "opportunity_score_adjustment": 3.6,
+        "opportunity_score_adjustment": 3.5,
         "player_id": "4663",
         "research_mention_count": 1,
         "signal_count": 3,
@@ -166,7 +166,7 @@
             "ttl_days": 7,
             "type": "injury",
             "url": "https://www.fantasypros.com/nfl/news/612017/austin-ekeler-active-week-4.php",
-            "weighted_score": 0.3551
+            "weighted_score": 0.346
           },
           {
             "corroboration_count": 1,
@@ -177,7 +177,7 @@
             "origin": "sleeper",
             "player_id": "4663",
             "player_name": "Austin Ekeler",
-            "published_at": "2026-10-04T15:28:59.471379+00:00",
+            "published_at": "2026-10-04T19:43:09.779412+00:00",
             "reliability": 0.65,
             "signal_id": "sleeper-depth-4663",
             "source": "Sleeper depth chart",
@@ -212,7 +212,7 @@
         ],
         "weekly_multiplier": 1.013
       },
-      "context_adjustment": 3.6,
+      "context_adjustment": 3.5,
       "depth": 2,
       "depth_chart_order": 2,
       "depth_chart_position": "RB",
@@ -226,7 +226,7 @@
       "market_rank": 410,
       "market_value": 933,
       "name": "Austin Ekeler",
-      "opportunity_score": 85.7,
+      "opportunity_score": 85.6,
       "performance": {
         "air_yards_share": 2.2,
         "basis": "prior",
@@ -301,7 +301,7 @@
       "player_id": "4663",
       "position": "RB",
       "reasons": [
-        "Current context adjusts the opportunity score +3.6.",
+        "Current context adjusts the opportunity score +3.5.",
         "Dynasty Dealer market value 933 adds insulation/upside signal.",
         "2025 prior usage: 10.5 opportunities/game, 50% offensive snaps, 6.5 715 PPG.",
         "Currently on an NFL roster (WAS).",
@@ -627,7 +627,7 @@
         "Recently dropped by Amelse; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 12.1,
+        "age_days": 12.3,
         "manager": "Amelse"
       },
       "status": "Active",
@@ -757,7 +757,7 @@
         "Recently dropped by ryansorensen8; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 11.4,
+        "age_days": 11.6,
         "manager": "ryansorensen8"
       },
       "status": "Active",
@@ -1126,6 +1126,88 @@
       "trending_adds_24h": 12549,
       "trending_drops_24h": 0,
       "years_exp": 0
+    },
+    {
+      "age": 38,
+      "depth": 2,
+      "depth_chart_order": 2,
+      "depth_chart_position": "QB",
+      "fantasy_positions": [
+        "QB"
+      ],
+      "injury_body_part": null,
+      "injury_notes": null,
+      "injury_status": null,
+      "market_position_rank": 51,
+      "market_rank": 304,
+      "market_value": 2142,
+      "name": "Case Keenum",
+      "opportunity_score": 67.5,
+      "performance": {
+        "air_yards_share": 0.0,
+        "basis": "current",
+        "basis_label": "2026",
+        "carries_per_game": 4.0,
+        "fantasy_points_715": 26.95,
+        "games": 1,
+        "gsis_id": "00-0028986",
+        "last3_opportunities_per_game": 38.0,
+        "last3_ppg_715": 26.95,
+        "name": "Case Keenum",
+        "offense_snap_pct": 100.0,
+        "opportunities": 38.0,
+        "opportunities_per_game": 38.0,
+        "pfr_id": "KeenCa00",
+        "position": "QB",
+        "ppg_715": 26.95,
+        "season": 2026,
+        "sleeper_id": "1737",
+        "target_share": 0.0,
+        "targets_per_game": 0.0,
+        "touches_per_game": 4.0,
+        "weekly": [
+          {
+            "air_yards_share": 0.0,
+            "attempts": 34.0,
+            "carries": 4.0,
+            "fantasy_points_715": 26.95,
+            "offense_snap_pct": 100.0,
+            "offense_snaps": 72.0,
+            "opponent": "PHI",
+            "opportunities": 38.0,
+            "passing_interceptions": 0.0,
+            "passing_tds": 2.0,
+            "passing_yards": 247.0,
+            "receiving_tds": 0.0,
+            "receiving_yards": 0.0,
+            "receptions": 0.0,
+            "rushing_tds": 1.0,
+            "rushing_yards": 6.0,
+            "target_share": 0.0,
+            "targets": 0.0,
+            "team": "CHI",
+            "touches": 4.0,
+            "week": 3
+          }
+        ]
+      },
+      "player_id": "1737",
+      "position": "QB",
+      "reasons": [
+        "Dynasty Dealer market value 2,142 adds insulation/upside signal.",
+        "current-season usage: 38.0 opportunities/game, 100% offensive snaps, 26.9 715 PPG.",
+        "Currently on an NFL roster (CHI).",
+        "Depth-chart No. 2: direct contingent path to usage.",
+        "Superflex format raises the value of any QB with a path to starts.",
+        "Market headwind: 24,990 drops in the 24h trend window."
+      ],
+      "recent_715_drop": null,
+      "status": "Active",
+      "team": "CHI",
+      "tier": "Strong stash",
+      "trending_adds_24h": 0,
+      "trending_drops_24h": 24990,
+      "years_exp": 14
     },
     {
       "age": 27,
@@ -2039,166 +2121,6 @@
       "years_exp": 4
     },
     {
-      "age": 38,
-      "base_opportunity_score": 67.5,
-      "context": {
-        "actionable_signal_count": 2,
-        "availability_probability": 1.0,
-        "confidence": "medium",
-        "net_direction": "neutral",
-        "opportunity_score_adjustment": -2.5,
-        "player_id": "1737",
-        "research_mention_count": 1,
-        "signal_count": 3,
-        "signals": [
-          {
-            "corroboration_count": 1,
-            "direction": -1.0,
-            "event_date": null,
-            "impact": "workload",
-            "magnitude": 2.0,
-            "origin": "curated_report",
-            "player_id": "1737",
-            "player_name": "Case Keenum",
-            "published_at": "2026-10-03T16:17:57+00:00",
-            "reliability": 0.7,
-            "scored": true,
-            "signal_id": "1b32028cf93963d46b2f",
-            "source": "Jordan Dajani",
-            "source_type": "established_media",
-            "summary": "Bears make starting QB decision for Week 4 matchup vs. Jets",
-            "ttl_days": 10,
-            "type": "role",
-            "url": "\n                                                https://www.cbssports.com/nfl/news/bears-make-starting-qb-decision-week-4-matchup-jets/\n                    ",
-            "weighted_score": -0.253
-          },
-          {
-            "corroboration_count": 1,
-            "direction": 1,
-            "event_date": null,
-            "impact": "workload",
-            "magnitude": 1,
-            "origin": "sleeper",
-            "player_id": "1737",
-            "player_name": "Case Keenum",
-            "published_at": "2026-10-04T15:28:59.471379+00:00",
-            "reliability": 0.65,
-            "signal_id": "sleeper-depth-1737",
-            "source": "Sleeper depth chart",
-            "source_type": "team",
-            "summary": "Current Sleeper depth-chart order is 2.",
-            "ttl_days": 3,
-            "type": "depth_chart",
-            "url": null,
-            "weighted_score": 0.13
-          },
-          {
-            "corroboration_count": 1,
-            "direction": 0.0,
-            "event_date": null,
-            "impact": "context",
-            "magnitude": 0.0,
-            "origin": "curated_report",
-            "player_id": "1737",
-            "player_name": "Case Keenum",
-            "published_at": "2026-09-29T11:30:48+00:00",
-            "reliability": 0.45,
-            "scored": false,
-            "signal_id": "05430c00591312cadea1",
-            "source": "NFL.com",
-            "source_type": "aggregator",
-            "summary": "38-year-old Case Keenum shines as Bears demolish Eagles: 'As a kid you dream about it' - NFL.com",
-            "ttl_days": 7,
-            "type": "news",
-            "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPS1Zldk43Mm93WHVyMjFLYjdwSFRSbEM2QV9XSUREeDNCYXZLQlhHbzF2bFloV0tQOEZ5ZE9JNF9FdDkteGptV25jeFFoR2JjWlFNZzZsOXFLRF9MUGxRa04yTVZGR3k1Wk4tdDA0QUY3RVlWZDRTTHpaRnRaMmttczZZcDRkU0FEWnB3TnVvRXlEdW5Db2EyVWhjOUE3VC1vYURoOGZOandpRl9X?oc=5",
-            "weighted_score": 0.0
-          }
-        ],
-        "weekly_multiplier": 0.988
-      },
-      "context_adjustment": -2.5,
-      "depth": 2,
-      "depth_chart_order": 2,
-      "depth_chart_position": "QB",
-      "fantasy_positions": [
-        "QB"
-      ],
-      "injury_body_part": null,
-      "injury_notes": null,
-      "injury_status": null,
-      "market_position_rank": 51,
-      "market_rank": 304,
-      "market_value": 2142,
-      "name": "Case Keenum",
-      "opportunity_score": 65.0,
-      "performance": {
-        "air_yards_share": 0.0,
-        "basis": "current",
-        "basis_label": "2026",
-        "carries_per_game": 4.0,
-        "fantasy_points_715": 26.95,
-        "games": 1,
-        "gsis_id": "00-0028986",
-        "last3_opportunities_per_game": 38.0,
-        "last3_ppg_715": 26.95,
-        "name": "Case Keenum",
-        "offense_snap_pct": 100.0,
-        "opportunities": 38.0,
-        "opportunities_per_game": 38.0,
-        "pfr_id": "KeenCa00",
-        "position": "QB",
-        "ppg_715": 26.95,
-        "season": 2026,
-        "sleeper_id": "1737",
-        "target_share": 0.0,
-        "targets_per_game": 0.0,
-        "touches_per_game": 4.0,
-        "weekly": [
-          {
-            "air_yards_share": 0.0,
-            "attempts": 34.0,
-            "carries": 4.0,
-            "fantasy_points_715": 26.95,
-            "offense_snap_pct": 100.0,
-            "offense_snaps": 72.0,
-            "opponent": "PHI",
-            "opportunities": 38.0,
-            "passing_interceptions": 0.0,
-            "passing_tds": 2.0,
-            "passing_yards": 247.0,
-            "receiving_tds": 0.0,
-            "receiving_yards": 0.0,
-            "receptions": 0.0,
-            "rushing_tds": 1.0,
-            "rushing_yards": 6.0,
-            "target_share": 0.0,
-            "targets": 0.0,
-            "team": "CHI",
-            "touches": 4.0,
-            "week": 3
-          }
-        ]
-      },
-      "player_id": "1737",
-      "position": "QB",
-      "reasons": [
-        "Current context adjusts the opportunity score -2.5.",
-        "Dynasty Dealer market value 2,142 adds insulation/upside signal.",
-        "current-season usage: 38.0 opportunities/game, 100% offensive snaps, 26.9 715 PPG.",
-        "Currently on an NFL roster (CHI).",
-        "Depth-chart No. 2: direct contingent path to usage.",
-        "Superflex format raises the value of any QB with a path to starts.",
-        "Market headwind: 24,990 drops in the 24h trend window."
-      ],
-      "recent_715_drop": null,
-      "status": "Active",
-      "team": "CHI",
-      "tier": "Strong stash",
-      "trending_adds_24h": 0,
-      "trending_drops_24h": 24990,
-      "years_exp": 14
-    },
-    {
       "age": 24,
       "depth": 3,
       "depth_chart_order": 3,
@@ -2620,7 +2542,7 @@
         "Recently dropped by nathanhoglund; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 11.5,
+        "age_days": 11.6,
         "manager": "nathanhoglund"
       },
       "status": "Active",
@@ -3002,7 +2924,7 @@
         "Recently dropped by Amelse; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 10.1,
+        "age_days": 10.3,
         "manager": "Amelse"
       },
       "status": "Active",
@@ -3558,7 +3480,7 @@
         "Recently dropped by NolanFarts; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 5.5,
+        "age_days": 5.6,
         "manager": "NolanFarts"
       },
       "status": "Active",
@@ -4447,7 +4369,7 @@
         "Recently dropped by MayaHuskies; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 12.5,
+        "age_days": 12.7,
         "manager": "MayaHuskies"
       },
       "status": "Active",
@@ -4577,7 +4499,7 @@
         "Recently dropped by ryansorensen8; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 9.6,
+        "age_days": 9.8,
         "manager": "ryansorensen8"
       },
       "status": "Active",
@@ -4648,7 +4570,7 @@
         "Recently dropped by Amelse; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 11.1,
+        "age_days": 11.3,
         "manager": "Amelse"
       },
       "status": "Active",
@@ -4862,7 +4784,7 @@
         "Recently dropped by Waldo23; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 1.7,
+        "age_days": 1.9,
         "manager": "Waldo23"
       },
       "status": "Active",
