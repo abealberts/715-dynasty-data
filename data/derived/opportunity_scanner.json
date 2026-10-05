@@ -1,6 +1,6 @@
 {
   "context_methodology": "Time-decayed, source-weighted context. Narrative effects are capped at ±8%, combined workload context at ±12%, and availability remains a separate guardrail. Every adjustment retains its source and explanation.",
-  "generated_at": "2026-10-05T14:34:23.952824+00:00",
+  "generated_at": "2026-10-05T17:14:48.241240+00:00",
   "market_attribution": "Values by Dynasty Dealer — https://www.dynastydealer.com/",
   "methodology": "Signal score, not dynasty market value. Uses confirmed league availability, NFL roster status, depth chart, age, league format, Sleeper 24h add/drop trends, recent 715 drops, and injury/IR-slot context. Phase 4.6 adds Dynasty Dealer market value plus nflverse offensive snap share, opportunities, 715-scoring production, and current usage trend. Prior-season performance is deliberately discounted until current-season data exists.",
   "performance_attribution": "NFL performance data via nflverse — https://nflverse.com/",
@@ -126,7 +126,7 @@
         "Recently dropped by Amelse; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 13.1,
+        "age_days": 13.2,
         "manager": "Amelse"
       },
       "status": "Active",
@@ -144,10 +144,10 @@
         "availability_probability": 1.0,
         "confidence": "medium",
         "net_direction": "neutral",
-        "opportunity_score_adjustment": 3.1,
+        "opportunity_score_adjustment": 3.0,
         "player_id": "4663",
-        "research_mention_count": 0,
-        "signal_count": 2,
+        "research_mention_count": 1,
+        "signal_count": 3,
         "signals": [
           {
             "corroboration_count": 1,
@@ -168,7 +168,7 @@
             "ttl_days": 7,
             "type": "injury",
             "url": "https://www.fantasypros.com/nfl/news/612017/austin-ekeler-active-week-4.php",
-            "weighted_score": 0.3056
+            "weighted_score": 0.2999
           },
           {
             "corroboration_count": 1,
@@ -179,7 +179,7 @@
             "origin": "sleeper",
             "player_id": "4663",
             "player_name": "Austin Ekeler",
-            "published_at": "2026-10-05T14:34:26.034348+00:00",
+            "published_at": "2026-10-05T17:14:50.959929+00:00",
             "reliability": 0.65,
             "signal_id": "sleeper-depth-4663",
             "source": "Sleeper depth chart",
@@ -189,11 +189,32 @@
             "type": "depth_chart",
             "url": null,
             "weighted_score": 0.13
+          },
+          {
+            "corroboration_count": 1,
+            "direction": 0.0,
+            "event_date": null,
+            "impact": "context",
+            "magnitude": 0.0,
+            "origin": "curated_report",
+            "player_id": "4663",
+            "player_name": "Austin Ekeler",
+            "published_at": "2026-09-28T19:14:24+00:00",
+            "reliability": 0.45,
+            "scored": false,
+            "signal_id": "98bf0f35bb0be51c05cf",
+            "source": "Yahoo Sports",
+            "source_type": "aggregator",
+            "summary": "Fantasy Football Waiver Wire: Austin Ekeler Could Be a Steal After Potential Commanders Reunion - Yahoo Sports",
+            "ttl_days": 7,
+            "type": "news",
+            "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQdEdpeVVQV0gtMEVMNHJrUDY1Z2JfUFZidzdkdWJ0bXpkVjNMclV2SXRqeV9tbFpLd2dpb0RPcUlKcUFIX3hHX1ZwUkRWRmxXV213TmVSZGstcXVrZ1BzMmduUXhfVUVtZk02cHFBTW1La0RQZE1IWkJpV08yTnRiNWtjcGpHU1dsWmhnVQ?oc=5",
+            "weighted_score": 0.0
           }
         ],
         "weekly_multiplier": 1.013
       },
-      "context_adjustment": 3.1,
+      "context_adjustment": 3.0,
       "depth": 2,
       "depth_chart_order": 2,
       "depth_chart_position": "RB",
@@ -207,7 +228,7 @@
       "market_rank": 410,
       "market_value": 933,
       "name": "Austin Ekeler",
-      "opportunity_score": 83.6,
+      "opportunity_score": 83.5,
       "performance": {
         "air_yards_share": 2.2,
         "basis": "prior",
@@ -282,7 +303,7 @@
       "player_id": "4663",
       "position": "RB",
       "reasons": [
-        "Current context adjusts the opportunity score +3.1.",
+        "Current context adjusts the opportunity score +3.0.",
         "Dynasty Dealer market value 933 adds insulation/upside signal.",
         "2025 prior usage: 10.5 opportunities/game, 50% offensive snaps, 6.5 715 PPG.",
         "Currently on an NFL roster (WAS).",
@@ -654,7 +675,7 @@
         "Recently dropped by Amelse; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 13.1,
+        "age_days": 13.2,
         "manager": "Amelse"
       },
       "status": "Active",
@@ -784,7 +805,7 @@
         "Recently dropped by ryansorensen8; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 12.4,
+        "age_days": 12.5,
         "manager": "ryansorensen8"
       },
       "status": "Active",
@@ -2209,7 +2230,7 @@
         "Recently dropped by nathanhoglund; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 12.4,
+        "age_days": 12.5,
         "manager": "nathanhoglund"
       },
       "status": "Active",
@@ -2591,7 +2612,7 @@
         "Recently dropped by Amelse; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 11.1,
+        "age_days": 11.2,
         "manager": "Amelse"
       },
       "status": "Active",
@@ -3251,7 +3272,7 @@
         "Recently dropped by NolanFarts; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 6.4,
+        "age_days": 6.5,
         "manager": "NolanFarts"
       },
       "status": "Active",
@@ -4074,7 +4095,7 @@
         "Recently dropped by MayaHuskies; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 13.5,
+        "age_days": 13.6,
         "manager": "MayaHuskies"
       },
       "status": "Active",
@@ -4204,7 +4225,7 @@
         "Recently dropped by ryansorensen8; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 10.6,
+        "age_days": 10.7,
         "manager": "ryansorensen8"
       },
       "status": "Active",
@@ -4275,7 +4296,7 @@
         "Recently dropped by Amelse; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 12.1,
+        "age_days": 12.2,
         "manager": "Amelse"
       },
       "status": "Active",
@@ -4406,7 +4427,7 @@
         "Recently dropped by ryansorensen8; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 0.9,
+        "age_days": 1.1,
         "manager": "ryansorensen8"
       },
       "status": "Active",
@@ -4998,7 +5019,7 @@
         "Recently dropped by Waldo23; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 2.7,
+        "age_days": 2.8,
         "manager": "Waldo23"
       },
       "status": "Active",
@@ -8029,7 +8050,7 @@
         "Recently dropped by ryansorensen8; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 0.8,
+        "age_days": 0.9,
         "manager": "ryansorensen8"
       },
       "status": "Active",
