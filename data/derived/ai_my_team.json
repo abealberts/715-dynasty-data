@@ -186,6 +186,34 @@
         "team": "GB"
       },
       {
+        "age": 27,
+        "depth_chart_order": 4,
+        "injury_status": "IR",
+        "market_position_rank": 66,
+        "market_rank": 241,
+        "market_value": 2437,
+        "name": "Isiah Pacheco",
+        "performance": {
+          "air_yards_share": -0.6,
+          "basis": "prior",
+          "basis_label": "2025",
+          "carries_per_game": 9.08,
+          "games": 13,
+          "last3_opportunities_per_game": 11.67,
+          "last3_ppg_715": 6.27,
+          "offense_snap_pct": 51.7,
+          "opportunities_per_game": 11.08,
+          "ppg_715": 6.72,
+          "target_share": 6.8,
+          "targets_per_game": 2.0,
+          "touches_per_game": 10.54
+        },
+        "player_id": "8205",
+        "position": "RB",
+        "starter": false,
+        "team": "DET"
+      },
+      {
         "age": 26,
         "depth_chart_order": 4,
         "injury_status": null,
@@ -212,34 +240,6 @@
         "position": "RB",
         "starter": false,
         "team": "NYG"
-      },
-      {
-        "age": 24,
-        "depth_chart_order": 2,
-        "injury_status": null,
-        "market_position_rank": 84,
-        "market_rank": 326,
-        "market_value": 2040,
-        "name": "Kendre Miller",
-        "performance": {
-          "air_yards_share": -0.8,
-          "basis": "current",
-          "basis_label": "2026",
-          "carries_per_game": 6.5,
-          "games": 2,
-          "last3_opportunities_per_game": 8.0,
-          "last3_ppg_715": 6.45,
-          "offense_snap_pct": 24.0,
-          "opportunities_per_game": 8.0,
-          "ppg_715": 6.45,
-          "target_share": 3.8,
-          "targets_per_game": 1.5,
-          "touches_per_game": 7.5
-        },
-        "player_id": "9757",
-        "position": "RB",
-        "starter": false,
-        "team": "NO"
       },
       {
         "age": 26,
@@ -510,7 +510,7 @@
     "components": {
       "current_performance": 52.0,
       "historical_prior": 72.0,
-      "roster_market": 68.3
+      "roster_market": 68.6
     },
     "h2h": {
       "losses": 2,
@@ -525,7 +525,7 @@
     "live_performance_score": 52.0,
     "luck_index": -6.1,
     "manager": "abewav",
-    "market_strength": 68.3,
+    "market_strength": 68.6,
     "median": {
       "losses": 2,
       "pct": 0.3333,
@@ -536,7 +536,7 @@
     "owner_id": "1001624178866429952",
     "points_for": 343.85,
     "points_left_on_bench": 117.15,
-    "power_score": 63.1,
+    "power_score": 63.3,
     "previous_rank": 9,
     "rank": 6,
     "recent_3_average": 114.62,
@@ -546,10 +546,10 @@
     ],
     "starter_market_value": 53343,
     "team_name": "Beef Cylinder",
-    "total_market_value": 104715,
+    "total_market_value": 105112,
     "weeks": 3
   },
-  "generated_at": "2026-10-05T05:56:35.236820+00:00",
+  "generated_at": "2026-10-05T14:34:26.340606+00:00",
   "lineup": [
     {
       "player": {
@@ -833,59 +833,59 @@
   ],
   "manager": "abewav",
   "market": {
-    "depth_market_score": 34.2,
-    "depth_market_value": 51372,
+    "depth_market_score": 35.5,
+    "depth_market_value": 51769,
     "manager": "abewav",
     "market_rank": 6,
     "optimal_starter_market_value": 53343,
     "position_scores": {
       "QB": 61.0,
-      "RB": 80.7,
+      "RB": 81.8,
       "TE": 59.2,
       "WR": 54.3
     },
     "position_values": {
       "QB": 23300,
-      "RB": 30277,
+      "RB": 30674,
       "TE": 12887,
       "WR": 38251
     },
     "roster_id": 3,
-    "roster_market_score": 68.3,
+    "roster_market_score": 68.6,
     "starter_market_score": 79.6,
     "submitted_starter_market_value": 41439,
     "team_name": "Beef Cylinder",
-    "total_market_score": 78.0,
-    "total_market_value": 104715
+    "total_market_score": 78.9,
+    "total_market_value": 105112
   },
   "needs": {
     "faab_remaining": 67,
     "manager": "abewav",
     "market": {
-      "depth_market_score": 34.2,
-      "depth_market_value": 51372,
+      "depth_market_score": 35.5,
+      "depth_market_value": 51769,
       "manager": "abewav",
       "market_rank": 6,
       "optimal_starter_market_value": 53343,
       "position_scores": {
         "QB": 61.0,
-        "RB": 80.7,
+        "RB": 81.8,
         "TE": 59.2,
         "WR": 54.3
       },
       "position_values": {
         "QB": 23300,
-        "RB": 30277,
+        "RB": 30674,
         "TE": 12887,
         "WR": 38251
       },
       "roster_id": 3,
-      "roster_market_score": 68.3,
+      "roster_market_score": 68.6,
       "starter_market_score": 79.6,
       "submitted_starter_market_value": 41439,
       "team_name": "Beef Cylinder",
-      "total_market_score": 78.0,
-      "total_market_value": 104715
+      "total_market_score": 78.9,
+      "total_market_value": 105112
     },
     "needs": [
       {
@@ -899,19 +899,19 @@
         "1": 2,
         "2": 4,
         "3": 4,
-        "4": 3,
-        "5": 1
+        "4": 4,
+        "5": 3
       },
       "by_year": {
         "2026": 5,
-        "2027": 3,
+        "2027": 4,
         "2028": 2,
-        "2029": 4
+        "2029": 6
       },
       "early_picks": 6,
       "firsts": 2,
       "seconds": 4,
-      "total": 14
+      "total": 17
     },
     "positions": {
       "QB": {
@@ -932,8 +932,8 @@
         "delta_vs_average": 2.0,
         "label": "deep",
         "league_average": 7.0,
-        "market_score": 80.7,
-        "market_value": 30277,
+        "market_score": 81.8,
+        "market_value": 30674,
         "need_strength": 0.0,
         "quality_label": "market-deep",
         "starters": 3,
@@ -972,7 +972,7 @@
       {
         "label": "market-deep",
         "position": "RB",
-        "strength": 2.46
+        "strength": 2.54
       },
       {
         "label": "above avg",
@@ -1048,6 +1048,14 @@
       "traded": false
     },
     {
+      "original_manager": "austinamelse",
+      "original_roster_id": 1,
+      "owner_roster_id": 3,
+      "round": 5,
+      "season": "2027",
+      "traded": true
+    },
+    {
       "original_manager": "NolanFarts",
       "original_roster_id": 2,
       "owner_roster_id": 3,
@@ -1094,6 +1102,22 @@
       "round": 4,
       "season": "2029",
       "traded": false
+    },
+    {
+      "original_manager": "Ebro51",
+      "original_roster_id": 10,
+      "owner_roster_id": 3,
+      "round": 4,
+      "season": "2029",
+      "traded": true
+    },
+    {
+      "original_manager": "Ebro51",
+      "original_roster_id": 10,
+      "owner_roster_id": 3,
+      "round": 5,
+      "season": "2029",
+      "traded": true
     }
   ],
   "playoff": {
@@ -1104,14 +1128,14 @@
     "current_sd": 18.37,
     "current_weeks": 3,
     "manager": "abewav",
-    "market_model_mean": 120.88,
-    "market_strength": 68.3,
+    "market_model_mean": 120.96,
+    "market_strength": 68.6,
     "market_weight": 0.3,
-    "model_mean": 123.27,
+    "model_mean": 123.29,
     "model_sd": 17.32,
     "one_seed_odds": 0.0,
     "owner_id": "1001624178866429952",
-    "playoff_odds": 6.0,
+    "playoff_odds": 6.1,
     "prior_mean": 133.97,
     "prior_sd": 16.26,
     "prior_weeks": 13,
@@ -1129,28 +1153,28 @@
     "WR": 9
   },
   "profile": {
-    "average_roster_age": 26.6,
+    "average_roster_age": 26.7,
     "early_picks": 6,
     "first_round_picks": 2,
-    "franchise_score": 61.3,
+    "franchise_score": 60.9,
     "manager": "abewav",
     "metrics": {
-      "draft_capital": 22.7,
+      "draft_capital": 23.8,
       "lineup_management": 87.8,
-      "market_value": 68.3,
+      "market_value": 68.6,
       "performance_prior": 64.5,
       "roster_balance": 100.0,
       "stability": 94.5,
-      "youth": 23.5
+      "youth": 17.6
     },
-    "model_mean": 123.27,
+    "model_mean": 123.29,
     "model_sd": 17.32,
     "owner_id": "1001624178866429952",
-    "pick_count": 14,
-    "playoff_odds": 6.0,
+    "pick_count": 17,
+    "playoff_odds": 6.1,
     "risks": [
-      "Draft Capital",
-      "Youth"
+      "Youth",
+      "Draft Capital"
     ],
     "roster_id": 3,
     "strengths": [
@@ -1160,9 +1184,135 @@
     "team_name": "Beef Cylinder",
     "title_odds": 0.1,
     "window": "Retool Needed",
-    "young_player_share": 40.7
+    "young_player_share": 37.0
   },
-  "recent_changes": [],
+  "recent_changes": [
+    {
+      "detected_at": "2026-10-05T14:34:23.938899+00:00",
+      "manager": "abewav",
+      "player": {
+        "age": 27,
+        "depth_chart_order": 4,
+        "depth_chart_position": "RB",
+        "fantasy_positions": [
+          "RB"
+        ],
+        "injury_body_part": "Back",
+        "injury_notes": null,
+        "injury_status": "IR",
+        "name": "Isiah Pacheco",
+        "player_id": "8205",
+        "position": "RB",
+        "status": "Inactive",
+        "team": "DET",
+        "years_exp": 4
+      },
+      "roster_id": 3,
+      "type": "roster_add"
+    },
+    {
+      "detected_at": "2026-10-05T14:34:23.938899+00:00",
+      "manager": "abewav",
+      "player": {
+        "age": 24,
+        "depth_chart_order": 2,
+        "depth_chart_position": "RB",
+        "fantasy_positions": [
+          "RB"
+        ],
+        "injury_body_part": null,
+        "injury_notes": null,
+        "injury_status": null,
+        "name": "Kendre Miller",
+        "player_id": "9757",
+        "position": "RB",
+        "status": "Active",
+        "team": "NO",
+        "years_exp": 3
+      },
+      "roster_id": 3,
+      "type": "roster_drop"
+    },
+    {
+      "detected_at": "2026-10-05T14:34:23.938899+00:00",
+      "manager": "Ebro51",
+      "player": {
+        "age": 24,
+        "depth_chart_order": 2,
+        "depth_chart_position": "RB",
+        "fantasy_positions": [
+          "RB"
+        ],
+        "injury_body_part": null,
+        "injury_notes": null,
+        "injury_status": null,
+        "name": "Kendre Miller",
+        "player_id": "9757",
+        "position": "RB",
+        "status": "Active",
+        "team": "NO",
+        "years_exp": 3
+      },
+      "roster_id": 10,
+      "type": "roster_add"
+    },
+    {
+      "detected_at": "2026-10-05T14:34:23.938899+00:00",
+      "manager": "Ebro51",
+      "player": {
+        "age": 27,
+        "depth_chart_order": 4,
+        "depth_chart_position": "RB",
+        "fantasy_positions": [
+          "RB"
+        ],
+        "injury_body_part": "Back",
+        "injury_notes": null,
+        "injury_status": "IR",
+        "name": "Isiah Pacheco",
+        "player_id": "8205",
+        "position": "RB",
+        "status": "Inactive",
+        "team": "DET",
+        "years_exp": 4
+      },
+      "roster_id": 10,
+      "type": "roster_drop"
+    },
+    {
+      "detected_at": "2026-10-05T14:34:23.938899+00:00",
+      "new_owner_manager": "abewav",
+      "new_owner_roster_id": 3,
+      "old_owner_manager": "Ebro51",
+      "old_owner_roster_id": 10,
+      "original_roster_id": 1,
+      "round": 5,
+      "season": "2027",
+      "type": "pick_owner_change"
+    },
+    {
+      "detected_at": "2026-10-05T14:34:23.938899+00:00",
+      "new_owner_manager": "abewav",
+      "new_owner_roster_id": 3,
+      "old_owner_manager": "Ebro51",
+      "old_owner_roster_id": 10,
+      "original_roster_id": 10,
+      "round": 4,
+      "season": "2029",
+      "type": "pick_owner_change"
+    },
+    {
+      "detected_at": "2026-10-05T14:34:23.938899+00:00",
+      "new_owner_manager": "abewav",
+      "new_owner_roster_id": 3,
+      "old_owner_manager": "Ebro51",
+      "old_owner_roster_id": 10,
+      "original_roster_id": 10,
+      "round": 5,
+      "season": "2029",
+      "type": "pick_owner_change"
+    }
+  ],
   "record": {
     "fpts": 343,
     "fpts_decimal": 85,
@@ -1245,13 +1395,13 @@
       "market": {
         "position_scores": {
           "QB": 41.0,
-          "RB": 51.7,
+          "RB": 50.6,
           "TE": 82.9,
           "WR": 69.4
         },
         "their_market_rank": 8,
         "their_starter_value": 51423,
-        "their_total_value": 98160
+        "their_total_value": 97763
       },
       "market_fit_score": 0.0,
       "pick_summary": {
@@ -1259,19 +1409,19 @@
           "1": 5,
           "2": 4,
           "3": 4,
-          "4": 2,
-          "5": 3
+          "4": 1,
+          "5": 1
         },
         "by_year": {
           "2026": 6,
-          "2027": 5,
+          "2027": 4,
           "2028": 2,
-          "2029": 5
+          "2029": 3
         },
         "early_picks": 9,
         "firsts": 5,
         "seconds": 4,
-        "total": 18
+        "total": 15
       },
       "reasons": [
         "You have relative QB depth that matches one of their needs.",

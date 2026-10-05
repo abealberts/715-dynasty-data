@@ -1,5 +1,131 @@
 [
   {
+    "adds": [
+      {
+        "manager": "abewav",
+        "player": {
+          "age": 27,
+          "depth_chart_order": 4,
+          "depth_chart_position": "RB",
+          "fantasy_positions": [
+            "RB"
+          ],
+          "injury_body_part": "Back",
+          "injury_notes": null,
+          "injury_status": "IR",
+          "name": "Isiah Pacheco",
+          "player_id": "8205",
+          "position": "RB",
+          "status": "Inactive",
+          "team": "DET",
+          "years_exp": 4
+        },
+        "roster_id": 3
+      },
+      {
+        "manager": "Ebro51",
+        "player": {
+          "age": 24,
+          "depth_chart_order": 2,
+          "depth_chart_position": "RB",
+          "fantasy_positions": [
+            "RB"
+          ],
+          "injury_body_part": null,
+          "injury_notes": null,
+          "injury_status": null,
+          "name": "Kendre Miller",
+          "player_id": "9757",
+          "position": "RB",
+          "status": "Active",
+          "team": "NO",
+          "years_exp": 3
+        },
+        "roster_id": 10
+      }
+    ],
+    "created": 1791207117111,
+    "draft_picks": [
+      {
+        "league_id": null,
+        "owner_id": 3,
+        "previous_owner_id": 10,
+        "roster_id": 1,
+        "round": 5,
+        "season": "2027"
+      },
+      {
+        "league_id": null,
+        "owner_id": 3,
+        "previous_owner_id": 10,
+        "roster_id": 10,
+        "round": 4,
+        "season": "2029"
+      },
+      {
+        "league_id": null,
+        "owner_id": 3,
+        "previous_owner_id": 10,
+        "roster_id": 10,
+        "round": 5,
+        "season": "2029"
+      }
+    ],
+    "drops": [
+      {
+        "manager": "Ebro51",
+        "player": {
+          "age": 27,
+          "depth_chart_order": 4,
+          "depth_chart_position": "RB",
+          "fantasy_positions": [
+            "RB"
+          ],
+          "injury_body_part": "Back",
+          "injury_notes": null,
+          "injury_status": "IR",
+          "name": "Isiah Pacheco",
+          "player_id": "8205",
+          "position": "RB",
+          "status": "Inactive",
+          "team": "DET",
+          "years_exp": 4
+        },
+        "roster_id": 10
+      },
+      {
+        "manager": "abewav",
+        "player": {
+          "age": 24,
+          "depth_chart_order": 2,
+          "depth_chart_position": "RB",
+          "fantasy_positions": [
+            "RB"
+          ],
+          "injury_body_part": null,
+          "injury_notes": null,
+          "injury_status": null,
+          "name": "Kendre Miller",
+          "player_id": "9757",
+          "position": "RB",
+          "status": "Active",
+          "team": "NO",
+          "years_exp": 3
+        },
+        "roster_id": 3
+      }
+    ],
+    "roster_ids": [
+      3,
+      10
+    ],
+    "status": "complete",
+    "transaction_id": "1412828685915951104",
+    "type": "trade",
+    "waiver_budget": null,
+    "week": 4
+  },
+  {
     "adds": [],
     "created": 1791138686224,
     "draft_picks": [],
@@ -10416,107 +10542,6 @@
     "status": "complete",
     "transaction_id": "1362536874794557440",
     "type": "free_agent",
-    "waiver_budget": null,
-    "week": 1
-  },
-  {
-    "adds": [
-      {
-        "manager": "NolanFarts",
-        "player": {
-          "age": 35,
-          "depth_chart_order": 1,
-          "depth_chart_position": "QB",
-          "fantasy_positions": [
-            "QB"
-          ],
-          "injury_body_part": null,
-          "injury_notes": null,
-          "injury_status": null,
-          "name": "Geno Smith",
-          "player_id": "1373",
-          "position": "QB",
-          "status": "Active",
-          "team": "NYJ",
-          "years_exp": 13
-        },
-        "roster_id": 2
-      },
-      {
-        "manager": "Waldo23",
-        "player": {
-          "age": 27,
-          "depth_chart_order": 1,
-          "depth_chart_position": "TE",
-          "fantasy_positions": [
-            "TE"
-          ],
-          "injury_body_part": null,
-          "injury_notes": null,
-          "injury_status": null,
-          "name": "Chig Okonkwo",
-          "player_id": "8210",
-          "position": "TE",
-          "status": "Active",
-          "team": "WAS",
-          "years_exp": 4
-        },
-        "roster_id": 11
-      }
-    ],
-    "created": 1779068673070,
-    "draft_picks": [],
-    "drops": [
-      {
-        "manager": "Waldo23",
-        "player": {
-          "age": 35,
-          "depth_chart_order": 1,
-          "depth_chart_position": "QB",
-          "fantasy_positions": [
-            "QB"
-          ],
-          "injury_body_part": null,
-          "injury_notes": null,
-          "injury_status": null,
-          "name": "Geno Smith",
-          "player_id": "1373",
-          "position": "QB",
-          "status": "Active",
-          "team": "NYJ",
-          "years_exp": 13
-        },
-        "roster_id": 11
-      },
-      {
-        "manager": "NolanFarts",
-        "player": {
-          "age": 27,
-          "depth_chart_order": 1,
-          "depth_chart_position": "TE",
-          "fantasy_positions": [
-            "TE"
-          ],
-          "injury_body_part": null,
-          "injury_notes": null,
-          "injury_status": null,
-          "name": "Chig Okonkwo",
-          "player_id": "8210",
-          "position": "TE",
-          "status": "Active",
-          "team": "WAS",
-          "years_exp": 4
-        },
-        "roster_id": 2
-      }
-    ],
-    "roster_ids": [
-      2,
-      11
-    ],
-    "status": "complete",
-    "transaction_id": "1361916361516793856",
-    "type": "trade",
     "waiver_budget": null,
     "week": 1
   }
