@@ -1,7 +1,7 @@
 {
   "data_health": {
     "derived": {
-      "generated_at": "2026-10-05T19:23:07.267412+00:00",
+      "generated_at": "2026-10-06T00:02:01.466122+00:00",
       "status": "ok"
     },
     "dynasty_dealer": {
@@ -9,7 +9,7 @@
       "players": 964,
       "status": "ok"
     },
-    "generated_at": "2026-10-05T19:23:10.278702+00:00",
+    "generated_at": "2026-10-06T00:02:04.458362+00:00",
     "latest_completed_week": 3,
     "nflverse": {
       "current_season_snaps": "ok",
@@ -29,7 +29,7 @@
       "authoritative": true,
       "files": {
         "free_agents.json": {
-          "bytes": 1234696,
+          "bytes": 1234260,
           "status": "ok"
         },
         "league.json": {
@@ -37,7 +37,7 @@
           "status": "ok"
         },
         "matchups.json": {
-          "bytes": 329098,
+          "bytes": 329653,
           "status": "ok"
         },
         "nfl_state.json": {
@@ -53,15 +53,15 @@
           "status": "ok"
         },
         "roster_index.json": {
-          "bytes": 12156,
+          "bytes": 12170,
           "status": "ok"
         },
         "rosters.json": {
-          "bytes": 11975,
+          "bytes": 11989,
           "status": "ok"
         },
         "transactions.json": {
-          "bytes": 168750,
+          "bytes": 169353,
           "status": "ok"
         }
       },
@@ -69,11 +69,11 @@
     },
     "warnings": []
   },
-  "generated_at": "2026-10-05T19:23:10.501631+00:00",
+  "generated_at": "2026-10-06T00:02:04.671950+00:00",
   "history": {
     "first_date": "2026-08-31",
-    "latest_date": "2026-10-05",
-    "tracked_days": 36
+    "latest_date": "2026-10-06",
+    "tracked_days": 37
   },
   "league": {
     "draft_rounds": 5,
@@ -452,7 +452,7 @@
         "components": {
           "current_performance": 74.3,
           "historical_prior": 85.1,
-          "roster_market": 68.6
+          "roster_market": 70.4
         },
         "h2h": {
           "losses": 2,
@@ -467,7 +467,7 @@
         "live_performance_score": 74.3,
         "luck_index": -33.3,
         "manager": "ryansorensen8",
-        "market_strength": 68.6,
+        "market_strength": 70.4,
         "median": {
           "losses": 0,
           "pct": 1.0,
@@ -478,7 +478,7 @@
         "owner_id": "446892006564687872",
         "points_for": 404.1,
         "points_left_on_bench": 74.55,
-        "power_score": 73.1,
+        "power_score": 74.0,
         "previous_rank": 3,
         "rank": 3,
         "recent_3_average": 134.7,
@@ -488,7 +488,7 @@
         ],
         "starter_market_value": 53853,
         "team_name": "Matt Prater",
-        "total_market_value": 105059,
+        "total_market_value": 107224,
         "weeks": 3
       },
       {
@@ -672,10 +672,36 @@
         "total_market_value": 111862
       },
       {
+        "depth_market_score": 41.1,
+        "depth_market_value": 53371,
+        "manager": "ryansorensen8",
+        "market_rank": 4,
+        "optimal_starter_market_value": 53853,
+        "position_scores": {
+          "QB": 44.6,
+          "RB": 95.3,
+          "TE": 45.4,
+          "WR": 60.7
+        },
+        "position_values": {
+          "QB": 20889,
+          "RB": 35277,
+          "TE": 11149,
+          "WR": 39909
+        },
+        "roster_id": 9,
+        "roster_market_score": 70.4,
+        "starter_market_score": 80.2,
+        "submitted_starter_market_value": 52661,
+        "team_name": "Matt Prater",
+        "total_market_score": 84.5,
+        "total_market_value": 107224
+      },
+      {
         "depth_market_score": 37.0,
         "depth_market_value": 52107,
         "manager": "austinamelse",
-        "market_rank": 4,
+        "market_rank": 5,
         "optimal_starter_market_value": 54350,
         "position_scores": {
           "QB": 20.3,
@@ -696,32 +722,6 @@
         "team_name": null,
         "total_market_score": 82.7,
         "total_market_value": 106457
-      },
-      {
-        "depth_market_score": 34.1,
-        "depth_market_value": 51206,
-        "manager": "ryansorensen8",
-        "market_rank": 5,
-        "optimal_starter_market_value": 53853,
-        "position_scores": {
-          "QB": 44.6,
-          "RB": 89.2,
-          "TE": 45.4,
-          "WR": 60.7
-        },
-        "position_values": {
-          "QB": 20889,
-          "RB": 33112,
-          "TE": 11149,
-          "WR": 39909
-        },
-        "roster_id": 9,
-        "roster_market_score": 68.6,
-        "starter_market_score": 80.2,
-        "submitted_starter_market_value": 52661,
-        "team_name": "Matt Prater",
-        "total_market_score": 79.4,
-        "total_market_value": 105059
       }
     ],
     "playoffs": [
@@ -775,7 +775,7 @@
         "roster_id": 2,
         "strength_score": 100.0,
         "team_name": "Puka Nachewa",
-        "title_odds": 49.1
+        "title_odds": 49.0
       },
       {
         "actual_points_for": 404.1,
@@ -785,23 +785,23 @@
         "current_sd": 12.85,
         "current_weeks": 3,
         "manager": "ryansorensen8",
-        "market_model_mean": 120.96,
-        "market_strength": 68.6,
+        "market_model_mean": 121.41,
+        "market_strength": 70.4,
         "market_weight": 0.3,
-        "model_mean": 134.56,
+        "model_mean": 134.7,
         "model_sd": 15.82,
-        "one_seed_odds": 1.9,
+        "one_seed_odds": 2.0,
         "owner_id": "446892006564687872",
-        "playoff_odds": 87.2,
+        "playoff_odds": 87.5,
         "prior_mean": 146.09,
         "prior_sd": 18.79,
         "prior_weeks": 13,
         "projected_standings_losses": 6.7,
         "projected_standings_wins": 19.3,
         "roster_id": 9,
-        "strength_score": 78.9,
+        "strength_score": 79.0,
         "team_name": "Matt Prater",
-        "title_odds": 6.8
+        "title_odds": 6.9
       },
       {
         "actual_points_for": 399.65,
@@ -818,7 +818,7 @@
         "model_sd": 19.72,
         "one_seed_odds": 0.4,
         "owner_id": "846844677612212224",
-        "playoff_odds": 50.4,
+        "playoff_odds": 50.3,
         "prior_mean": 132.0,
         "prior_sd": 16.54,
         "prior_weeks": 13,
@@ -827,7 +827,7 @@
         "roster_id": 7,
         "strength_score": 71.6,
         "team_name": "TEAM MIKE ALSTOTT",
-        "title_odds": 2.2
+        "title_odds": 2.1
       },
       {
         "actual_points_for": 489.6,
@@ -844,7 +844,7 @@
         "model_sd": 43.17,
         "one_seed_odds": 0.7,
         "owner_id": "868747143425499136",
-        "playoff_odds": 48.8,
+        "playoff_odds": 48.7,
         "prior_mean": 105.86,
         "prior_sd": 31.84,
         "prior_weeks": 13,
@@ -887,7 +887,7 @@
           "Roster Balance"
         ],
         "team_name": "Puka Nachewa",
-        "title_odds": 49.1,
+        "title_odds": 49.0,
         "window": "Contender",
         "young_player_share": 33.3
       },
@@ -926,25 +926,25 @@
         "young_player_share": 37.0
       },
       {
-        "average_roster_age": 25.9,
+        "average_roster_age": 26.0,
         "early_picks": 1,
         "first_round_picks": 1,
-        "franchise_score": 66.4,
+        "franchise_score": 66.5,
         "manager": "ryansorensen8",
         "metrics": {
           "draft_capital": 3.2,
           "lineup_management": 100.0,
-          "market_value": 68.6,
-          "performance_prior": 78.9,
+          "market_value": 70.4,
+          "performance_prior": 79.0,
           "roster_balance": 100.0,
           "stability": 100.0,
-          "youth": 50.5
+          "youth": 47.1
         },
-        "model_mean": 134.56,
+        "model_mean": 134.7,
         "model_sd": 15.82,
         "owner_id": "446892006564687872",
         "pick_count": 4,
-        "playoff_odds": 87.2,
+        "playoff_odds": 87.5,
         "risks": [
           "Draft Capital"
         ],
@@ -954,9 +954,9 @@
           "Lineup Management"
         ],
         "team_name": "Matt Prater",
-        "title_odds": 6.8,
+        "title_odds": 6.9,
         "window": "Contender",
-        "young_player_share": 57.7
+        "young_player_share": 55.6
       },
       {
         "average_roster_age": 25.1,
@@ -977,7 +977,7 @@
         "model_sd": 18.14,
         "owner_id": "1001623087835648000",
         "pick_count": 15,
-        "playoff_odds": 6.0,
+        "playoff_odds": 5.9,
         "risks": [
           "Draft Capital"
         ],
@@ -1176,15 +1176,15 @@
         },
         "RB": {
           "count": 9,
-          "delta_vs_average": 2.0,
+          "delta_vs_average": 1.92,
           "label": "deep",
-          "league_average": 7.0,
+          "league_average": 7.08,
           "market_score": 82.2,
           "market_value": 30678,
           "need_strength": 0.0,
           "quality_label": "market-deep",
           "starters": 3,
-          "surplus_strength": 2.0,
+          "surplus_strength": 1.92,
           "target": 5
         },
         "TE": {
@@ -1301,7 +1301,7 @@
       "market_rank": 253,
       "market_value": 2358,
       "name": "Mike Gesicki",
-      "opportunity_score": 91.2,
+      "opportunity_score": 91.7,
       "performance": {
         "air_yards_share": 13.3,
         "basis": "current",
@@ -1324,11 +1324,11 @@
         "current-season usage: 3.8 opportunities/game, 45% offensive snaps, 11.1 715 PPG.",
         "Currently on an NFL roster (CIN).",
         "Listed first on the Sleeper depth chart.",
-        "Sleeper market heat: 51,908 adds in the 24h trend window."
+        "Sleeper market heat: 67,740 adds in the 24h trend window."
       ],
       "team": "CIN",
       "tier": "Priority",
-      "trending_adds_24h": 51908
+      "trending_adds_24h": 67740
     },
     {
       "age": 31,
@@ -1338,7 +1338,7 @@
       "market_rank": 368,
       "market_value": 1775,
       "name": "Austin Ekeler",
-      "opportunity_score": 82.7,
+      "opportunity_score": 82.8,
       "performance": {
         "air_yards_share": -1.0,
         "basis": "current",
@@ -1357,7 +1357,7 @@
       "player_id": "4663",
       "position": "RB",
       "reasons": [
-        "Current context adjusts the opportunity score +3.0.",
+        "Current context adjusts the opportunity score +2.9.",
         "Dynasty Dealer market value 1,775 adds insulation/upside signal.",
         "current-season usage: 6.0 opportunities/game, 27% offensive snaps, 5.0 715 PPG.",
         "Currently on an NFL roster (WAS).",
@@ -1365,7 +1365,7 @@
       ],
       "team": "WAS",
       "tier": "Priority",
-      "trending_adds_24h": 23696
+      "trending_adds_24h": 25356
     },
     {
       "age": 24,
@@ -1375,7 +1375,7 @@
       "market_rank": 351,
       "market_value": 1884,
       "name": "Will Shipley",
-      "opportunity_score": 78.4,
+      "opportunity_score": 81.5,
       "performance": {
         "air_yards_share": 1.9,
         "basis": "current",
@@ -1402,7 +1402,81 @@
       ],
       "team": "PHI",
       "tier": "Priority",
-      "trending_adds_24h": 19408
+      "trending_adds_24h": 104550
+    },
+    {
+      "age": 28,
+      "depth": 2,
+      "injury_status": null,
+      "market_position_rank": 69,
+      "market_rank": 364,
+      "market_value": 1825,
+      "name": "Tyler Huntley",
+      "opportunity_score": 80.3,
+      "performance": {
+        "air_yards_share": 0.0,
+        "basis": "current",
+        "basis_label": "2026",
+        "carries_per_game": 4.0,
+        "games": 1,
+        "last3_opportunities_per_game": 13.0,
+        "last3_ppg_715": 4.75,
+        "offense_snap_pct": 48.0,
+        "opportunities_per_game": 13.0,
+        "ppg_715": 4.75,
+        "target_share": 0.0,
+        "targets_per_game": 0.0,
+        "touches_per_game": 4.0
+      },
+      "player_id": "7083",
+      "position": "QB",
+      "reasons": [
+        "Dynasty Dealer market value 1,825 adds insulation/upside signal.",
+        "current-season usage: 13.0 opportunities/game, 48% offensive snaps, 4.8 715 PPG.",
+        "Currently on an NFL roster (BAL).",
+        "Depth-chart No. 2: direct contingent path to usage.",
+        "Superflex format raises the value of any QB with a path to starts."
+      ],
+      "team": "BAL",
+      "tier": "Priority",
+      "trending_adds_24h": 6292
+    },
+    {
+      "age": 25,
+      "depth": 2,
+      "injury_status": null,
+      "market_position_rank": 37,
+      "market_rank": 249,
+      "market_value": 2396,
+      "name": "Darnell Washington",
+      "opportunity_score": 77.1,
+      "performance": {
+        "air_yards_share": 4.2,
+        "basis": "current",
+        "basis_label": "2026",
+        "carries_per_game": 0.0,
+        "games": 4,
+        "last3_opportunities_per_game": 3.67,
+        "last3_ppg_715": 7.7,
+        "offense_snap_pct": 66.0,
+        "opportunities_per_game": 3.25,
+        "ppg_715": 6.72,
+        "target_share": 9.1,
+        "targets_per_game": 3.25,
+        "touches_per_game": 2.25
+      },
+      "player_id": "9479",
+      "position": "TE",
+      "reasons": [
+        "Dynasty Dealer market value 2,396 adds insulation/upside signal.",
+        "current-season usage: 3.2 opportunities/game, 66% offensive snaps, 6.7 715 PPG.",
+        "Currently on an NFL roster (PIT).",
+        "Depth-chart No. 2: direct contingent path to usage.",
+        "Sleeper market heat: 5,610 adds in the 24h trend window."
+      ],
+      "team": "PIT",
+      "tier": "Priority",
+      "trending_adds_24h": 5610
     },
     {
       "age": 33,
@@ -1449,7 +1523,7 @@
       "market_rank": null,
       "market_value": null,
       "name": "Athan Kaliakmanis",
-      "opportunity_score": 76.6,
+      "opportunity_score": 76.2,
       "performance": {
         "air_yards_share": 0.0,
         "basis": "current",
@@ -1476,7 +1550,7 @@
       ],
       "team": "WAS",
       "tier": "Priority",
-      "trending_adds_24h": 12666
+      "trending_adds_24h": 10251
     },
     {
       "age": 24,
@@ -1486,7 +1560,7 @@
       "market_rank": 334,
       "market_value": 1977,
       "name": "Darius Cooper",
-      "opportunity_score": 76.6,
+      "opportunity_score": 75.7,
       "performance": {
         "air_yards_share": 13.4,
         "basis": "current",
@@ -1513,7 +1587,7 @@
       ],
       "team": "PHI",
       "tier": "Priority",
-      "trending_adds_24h": 192717
+      "trending_adds_24h": 115773
     },
     {
       "age": 38,
@@ -1634,7 +1708,7 @@
       "market_rank": 295,
       "market_value": 2155,
       "name": "Tyler Higbee",
-      "opportunity_score": 69.2,
+      "opportunity_score": 69.3,
       "performance": {
         "air_yards_share": 8.2,
         "basis": "current",
@@ -1657,11 +1731,48 @@
         "current-season usage: 4.8 opportunities/game, 46% offensive snaps, 8.3 715 PPG.",
         "Currently on an NFL roster (LAR).",
         "Listed first on the Sleeper depth chart.",
-        "Sleeper market heat: 88,722 adds in the 24h trend window."
+        "Sleeper market heat: 73,125 adds in the 24h trend window."
       ],
       "team": "LAR",
       "tier": "Strong stash",
-      "trending_adds_24h": 88722
+      "trending_adds_24h": 73125
+    },
+    {
+      "age": 22,
+      "depth": 3,
+      "injury_status": null,
+      "market_position_rank": 112,
+      "market_rank": 425,
+      "market_value": 291,
+      "name": "CJ Donaldson",
+      "opportunity_score": 67.4,
+      "performance": {
+        "air_yards_share": 0.3,
+        "basis": "current",
+        "basis_label": "2026",
+        "carries_per_game": 1.33,
+        "games": 3,
+        "last3_opportunities_per_game": 2.0,
+        "last3_ppg_715": 0.63,
+        "offense_snap_pct": 20.7,
+        "opportunities_per_game": 2.0,
+        "ppg_715": 0.63,
+        "target_share": 1.3,
+        "targets_per_game": 0.67,
+        "touches_per_game": 1.67
+      },
+      "player_id": "13277",
+      "position": "RB",
+      "reasons": [
+        "current-season usage: 2.0 opportunities/game, 21% offensive snaps, 0.6 715 PPG.",
+        "Currently on an NFL roster (NO).",
+        "Depth-chart No. 3: plausible contingent upside.",
+        "Very young for a dynasty stash.",
+        "RB contingent value can rise quickly with one depth-chart change."
+      ],
+      "team": "NO",
+      "tier": "Strong stash",
+      "trending_adds_24h": 6792
     },
     {
       "age": 27,
@@ -1745,7 +1856,7 @@
       "market_rank": 248,
       "market_value": 2420,
       "name": "John Metchie",
-      "opportunity_score": 66.8,
+      "opportunity_score": 65.6,
       "performance": {
         "air_yards_share": 7.0,
         "basis": "current",
@@ -1768,11 +1879,11 @@
         "current-season usage: 3.3 opportunities/game, 35% offensive snaps, 5.5 715 PPG.",
         "Currently on an NFL roster (CAR).",
         "Depth-chart No. 3: plausible contingent upside.",
-        "Sleeper market heat: 24,605 adds in the 24h trend window."
+        "Sleeper market heat: 12,404 adds in the 24h trend window."
       ],
       "team": "CAR",
       "tier": "Strong stash",
-      "trending_adds_24h": 24605
+      "trending_adds_24h": 12404
     },
     {
       "age": 31,
@@ -1782,7 +1893,7 @@
       "market_rank": 439,
       "market_value": 109,
       "name": "Laquon Treadwell",
-      "opportunity_score": 65.1,
+      "opportunity_score": 64.8,
       "performance": {
         "air_yards_share": 19.6,
         "basis": "current",
@@ -1804,48 +1915,11 @@
         "current-season usage: 2.8 opportunities/game, 68% offensive snaps, 5.3 715 PPG.",
         "Currently on an NFL roster (IND).",
         "Depth-chart No. 2: direct contingent path to usage.",
-        "Sleeper market heat: 17,030 adds in the 24h trend window."
+        "Sleeper market heat: 14,240 adds in the 24h trend window."
       ],
       "team": "IND",
       "tier": "Strong stash",
-      "trending_adds_24h": 17030
-    },
-    {
-      "age": 28,
-      "depth": 2,
-      "injury_status": null,
-      "market_position_rank": 69,
-      "market_rank": 364,
-      "market_value": 1825,
-      "name": "Tyler Huntley",
-      "opportunity_score": 64.0,
-      "performance": {
-        "air_yards_share": 0.0,
-        "basis": "current",
-        "basis_label": "2026",
-        "carries_per_game": 4.0,
-        "games": 1,
-        "last3_opportunities_per_game": 13.0,
-        "last3_ppg_715": 4.75,
-        "offense_snap_pct": 48.0,
-        "opportunities_per_game": 13.0,
-        "ppg_715": 4.75,
-        "target_share": 0.0,
-        "targets_per_game": 0.0,
-        "touches_per_game": 4.0
-      },
-      "player_id": "7083",
-      "position": "QB",
-      "reasons": [
-        "Dynasty Dealer market value 1,825 adds insulation/upside signal.",
-        "current-season usage: 13.0 opportunities/game, 48% offensive snaps, 4.8 715 PPG.",
-        "Currently on an NFL roster (BAL).",
-        "Depth-chart No. 2: direct contingent path to usage.",
-        "Superflex format raises the value of any QB with a path to starts."
-      ],
-      "team": "BAL",
-      "tier": "Strong stash",
-      "trending_adds_24h": 0
+      "trending_adds_24h": 14240
     },
     {
       "age": 28,
@@ -1955,79 +2029,6 @@
         "RB contingent value can rise quickly with one depth-chart change."
       ],
       "team": "GB",
-      "tier": "Strong stash",
-      "trending_adds_24h": 0
-    },
-    {
-      "age": 26,
-      "depth": 2,
-      "injury_status": null,
-      "market_position_rank": null,
-      "market_rank": null,
-      "market_value": null,
-      "name": "Brycen Tremayne",
-      "opportunity_score": 61.1,
-      "performance": {
-        "air_yards_share": 8.8,
-        "basis": "current",
-        "basis_label": "2026",
-        "carries_per_game": 0.0,
-        "games": 4,
-        "last3_opportunities_per_game": 3.0,
-        "last3_ppg_715": 5.83,
-        "offense_snap_pct": 52.0,
-        "opportunities_per_game": 2.25,
-        "ppg_715": 4.38,
-        "target_share": 5.5,
-        "targets_per_game": 2.25,
-        "touches_per_game": 1.5
-      },
-      "player_id": "11157",
-      "position": "WR",
-      "reasons": [
-        "current-season usage: 2.2 opportunities/game, 52% offensive snaps, 4.4 715 PPG.",
-        "Currently on an NFL roster (CAR).",
-        "Depth-chart No. 2: direct contingent path to usage.",
-        "Sleeper market heat: 426,789 adds in the 24h trend window.",
-        "Market headwind: 64,620 drops in the 24h trend window."
-      ],
-      "team": "CAR",
-      "tier": "Strong stash",
-      "trending_adds_24h": 426789
-    },
-    {
-      "age": 25,
-      "depth": 2,
-      "injury_status": null,
-      "market_position_rank": 37,
-      "market_rank": 249,
-      "market_value": 2396,
-      "name": "Darnell Washington",
-      "opportunity_score": 61.0,
-      "performance": {
-        "air_yards_share": 4.2,
-        "basis": "current",
-        "basis_label": "2026",
-        "carries_per_game": 0.0,
-        "games": 4,
-        "last3_opportunities_per_game": 3.67,
-        "last3_ppg_715": 7.7,
-        "offense_snap_pct": 66.0,
-        "opportunities_per_game": 3.25,
-        "ppg_715": 6.72,
-        "target_share": 9.1,
-        "targets_per_game": 3.25,
-        "touches_per_game": 2.25
-      },
-      "player_id": "9479",
-      "position": "TE",
-      "reasons": [
-        "Dynasty Dealer market value 2,396 adds insulation/upside signal.",
-        "current-season usage: 3.2 opportunities/game, 66% offensive snaps, 6.7 715 PPG.",
-        "Currently on an NFL roster (PIT).",
-        "Depth-chart No. 2: direct contingent path to usage."
-      ],
-      "team": "PIT",
       "tier": "Strong stash",
       "trending_adds_24h": 0
     }
