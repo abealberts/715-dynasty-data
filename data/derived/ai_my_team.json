@@ -501,45 +501,45 @@
   },
   "current_power": {
     "all_play": {
-      "losses": 20,
-      "pct": 0.3939,
+      "losses": 24,
+      "pct": 0.4545,
       "ties": 0,
-      "wins": 13
+      "wins": 20
     },
-    "average_score": 114.62,
+    "average_score": 120.34,
     "components": {
-      "current_performance": 52.0,
-      "historical_prior": 72.0,
+      "current_performance": 59.4,
+      "historical_prior": 72.5,
       "roster_market": 68.4
     },
     "h2h": {
       "losses": 2,
-      "pct": 0.3333,
+      "pct": 0.5,
       "ties": 0,
-      "wins": 1
+      "wins": 2
     },
-    "historical_prior_score": 72.0,
+    "historical_prior_score": 72.5,
     "identity_id": "3",
-    "lineup_efficiency": 74.6,
-    "lineup_weeks": 3,
-    "live_performance_score": 52.0,
-    "luck_index": -6.1,
+    "lineup_efficiency": 78.4,
+    "lineup_weeks": 4,
+    "live_performance_score": 59.4,
+    "luck_index": 4.5,
     "manager": "abewav",
     "market_strength": 68.4,
     "median": {
       "losses": 2,
-      "pct": 0.3333,
+      "pct": 0.5,
       "ties": 0,
-      "wins": 1
+      "wins": 2
     },
     "movement": 0,
     "owner_id": "1001624178866429952",
-    "points_for": 343.85,
-    "points_left_on_bench": 117.15,
-    "power_score": 63.2,
+    "points_for": 481.35,
+    "points_left_on_bench": 132.4,
+    "power_score": 64.6,
     "previous_rank": 9,
     "rank": 6,
-    "recent_3_average": 114.62,
+    "recent_3_average": 120.32,
     "roster_id": 3,
     "seasons": [
       "2026"
@@ -547,9 +547,9 @@
     "starter_market_value": 53340,
     "team_name": "Beef Cylinder",
     "total_market_value": 104982,
-    "weeks": 3
+    "weeks": 4
   },
-  "generated_at": "2026-10-06T01:20:58.863993+00:00",
+  "generated_at": "2026-10-06T06:18:11.915227+00:00",
   "lineup": [
     {
       "player": {
@@ -1121,30 +1121,30 @@
     }
   ],
   "playoff": {
-    "actual_points_for": 343.85,
+    "actual_points_for": 481.35,
     "actual_standings_losses": 4,
-    "actual_standings_wins": 2,
-    "current_mean": 114.62,
-    "current_sd": 18.37,
-    "current_weeks": 3,
+    "actual_standings_wins": 4,
+    "current_mean": 120.34,
+    "current_sd": 18.87,
+    "current_weeks": 4,
     "manager": "abewav",
     "market_model_mean": 120.91,
     "market_strength": 68.4,
-    "market_weight": 0.3,
-    "model_mean": 123.28,
-    "model_sd": 17.32,
+    "market_weight": 0.25,
+    "model_mean": 123.89,
+    "model_sd": 18.0,
     "one_seed_odds": 0.0,
     "owner_id": "1001624178866429952",
-    "playoff_odds": 6.1,
+    "playoff_odds": 6.7,
     "prior_mean": 133.97,
     "prior_sd": 16.26,
     "prior_weeks": 13,
     "projected_standings_losses": 12.4,
     "projected_standings_wins": 13.6,
     "roster_id": 3,
-    "strength_score": 64.5,
+    "strength_score": 70.2,
     "team_name": "Beef Cylinder",
-    "title_odds": 0.1
+    "title_odds": 0.4
   },
   "position_counts": {
     "QB": 6,
@@ -1156,22 +1156,22 @@
     "average_roster_age": 26.7,
     "early_picks": 6,
     "first_round_picks": 2,
-    "franchise_score": 60.9,
+    "franchise_score": 62.4,
     "manager": "abewav",
     "metrics": {
       "draft_capital": 23.8,
-      "lineup_management": 87.8,
+      "lineup_management": 90.9,
       "market_value": 68.4,
-      "performance_prior": 64.5,
+      "performance_prior": 70.2,
       "roster_balance": 100.0,
-      "stability": 94.5,
+      "stability": 86.8,
       "youth": 17.6
     },
-    "model_mean": 123.28,
-    "model_sd": 17.32,
+    "model_mean": 123.89,
+    "model_sd": 18.0,
     "owner_id": "1001624178866429952",
     "pick_count": 17,
-    "playoff_odds": 6.1,
+    "playoff_odds": 6.7,
     "risks": [
       "Youth",
       "Draft Capital"
@@ -1179,20 +1179,49 @@
     "roster_id": 3,
     "strengths": [
       "Roster Balance",
-      "Stability"
+      "Lineup Management"
     ],
     "team_name": "Beef Cylinder",
-    "title_odds": 0.1,
+    "title_odds": 0.4,
     "window": "Retool Needed",
     "young_player_share": 37.0
   },
-  "recent_changes": [],
+  "recent_changes": [
+    {
+      "detected_at": "2026-10-06T06:18:08.856958+00:00",
+      "manager": "NolanFarts",
+      "new_starters": [
+        "6904",
+        "9221",
+        "8150",
+        "9488",
+        "9493",
+        "8146",
+        "8130",
+        "7525",
+        "4943"
+      ],
+      "old_starters": [
+        "6904",
+        "9221",
+        "8150",
+        "9488",
+        "8146",
+        "9493",
+        "8130",
+        "5892",
+        "4943"
+      ],
+      "roster_id": 2,
+      "type": "starter_change"
+    }
+  ],
   "record": {
-    "fpts": 343,
-    "fpts_decimal": 85,
+    "fpts": 481,
+    "fpts_decimal": 35,
     "losses": 4,
     "ties": 0,
-    "wins": 2
+    "wins": 4
   },
   "roster_id": 3,
   "team_name": "Beef Cylinder",
