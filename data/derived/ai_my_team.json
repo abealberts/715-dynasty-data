@@ -549,7 +549,7 @@
     "total_market_value": 105829,
     "weeks": 4
   },
-  "generated_at": "2026-10-07T23:04:08.832556+00:00",
+  "generated_at": "2026-10-08T06:01:38.438685+00:00",
   "lineup": [
     {
       "player": {
@@ -836,11 +836,11 @@
     "depth_market_score": 37.4,
     "depth_market_value": 52318,
     "manager": "abewav",
-    "market_rank": 6,
+    "market_rank": 5,
     "optimal_starter_market_value": 53511,
     "position_scores": {
       "QB": 61.0,
-      "RB": 84.0,
+      "RB": 73.8,
       "TE": 57.9,
       "WR": 51.6
     },
@@ -865,11 +865,11 @@
       "depth_market_score": 37.4,
       "depth_market_value": 52318,
       "manager": "abewav",
-      "market_rank": 6,
+      "market_rank": 5,
       "optimal_starter_market_value": 53511,
       "position_scores": {
         "QB": 61.0,
-        "RB": 84.0,
+        "RB": 73.8,
         "TE": 57.9,
         "WR": 51.6
       },
@@ -929,15 +929,15 @@
       },
       "RB": {
         "count": 9,
-        "delta_vs_average": 1.75,
+        "delta_vs_average": 1.83,
         "label": "deep",
-        "league_average": 7.25,
-        "market_score": 84.0,
+        "league_average": 7.17,
+        "market_score": 73.8,
         "market_value": 31158,
         "need_strength": 0.0,
         "quality_label": "market-deep",
         "starters": 2,
-        "surplus_strength": 1.75,
+        "surplus_strength": 1.83,
         "target": 5
       },
       "TE": {
@@ -972,7 +972,7 @@
       {
         "label": "market-deep",
         "position": "RB",
-        "strength": 2.72
+        "strength": 1.9
       },
       {
         "label": "above avg",
@@ -1135,7 +1135,7 @@
     "model_sd": 18.0,
     "one_seed_odds": 0.0,
     "owner_id": "1001624178866429952",
-    "playoff_odds": 6.6,
+    "playoff_odds": 6.7,
     "prior_mean": 133.97,
     "prior_sd": 16.26,
     "prior_weeks": 13,
@@ -1171,7 +1171,7 @@
     "model_sd": 18.0,
     "owner_id": "1001624178866429952",
     "pick_count": 17,
-    "playoff_odds": 6.6,
+    "playoff_odds": 6.7,
     "risks": [
       "Youth",
       "Draft Capital"
@@ -1188,62 +1188,39 @@
   },
   "recent_changes": [
     {
-      "detected_at": "2026-10-07T23:04:05.982589+00:00",
-      "manager": "austinamelse",
+      "detected_at": "2026-10-08T06:01:36.162766+00:00",
+      "manager": "NolanFarts",
       "new_starters": [
-        "13425",
-        "12527",
-        "12529",
-        "8144",
-        "13279",
-        "9500",
-        "9484",
-        "10236",
-        "12545"
+        "6904",
+        "9221",
+        "8150",
+        "9488",
+        "9493",
+        "8146",
+        "8130",
+        "5892",
+        "4943"
       ],
       "old_starters": [
-        "12522",
-        "12527",
-        "12529",
-        "8144",
-        "9500",
-        "9756",
-        "10236",
-        "9484",
-        "12545"
+        "6904",
+        "9221",
+        "8150",
+        "9488",
+        "9493",
+        "8146",
+        "8130",
+        "7525",
+        "4943"
       ],
-      "roster_id": 1,
+      "roster_id": 2,
       "type": "starter_change"
     },
     {
-      "detected_at": "2026-10-07T23:04:05.982589+00:00",
-      "manager": "NolanFarts",
+      "detected_at": "2026-10-08T06:01:36.162766+00:00",
+      "manager": "ryansorensen8",
       "player": {
         "age": 22,
-        "depth_chart_order": 3,
-        "depth_chart_position": "RB",
-        "fantasy_positions": [
-          "RB"
-        ],
-        "injury_body_part": null,
-        "injury_notes": null,
-        "injury_status": null,
-        "name": "CJ Donaldson",
-        "player_id": "13277",
-        "position": "RB",
-        "status": "Active",
-        "team": "NO",
-        "years_exp": 0
-      },
-      "roster_id": 2,
-      "type": "roster_add"
-    },
-    {
-      "detected_at": "2026-10-07T23:04:05.982589+00:00",
-      "manager": "NolanFarts",
-      "player": {
-        "age": 23,
-        "depth_chart_order": 3,
+        "depth_chart_order": 2,
         "depth_chart_position": "LWR",
         "fantasy_positions": [
           "WR"
@@ -1251,256 +1228,95 @@
         "injury_body_part": null,
         "injury_notes": null,
         "injury_status": null,
-        "name": "Tai Felton",
-        "player_id": "12496",
+        "name": "Antonio Williams",
+        "player_id": "13301",
         "position": "WR",
         "status": "Active",
-        "team": "MIN",
-        "years_exp": 1
-      },
-      "roster_id": 2,
-      "type": "roster_drop"
-    },
-    {
-      "detected_at": "2026-10-07T23:04:05.982589+00:00",
-      "manager": "abewav",
-      "player": {
-        "age": 29,
-        "depth_chart_order": 2,
-        "depth_chart_position": "RB",
-        "fantasy_positions": [
-          "RB"
-        ],
-        "injury_body_part": null,
-        "injury_notes": null,
-        "injury_status": null,
-        "name": "Ty Johnson",
-        "player_id": "6039",
-        "position": "RB",
-        "status": "Active",
-        "team": "BUF",
-        "years_exp": 7
-      },
-      "roster_id": 3,
-      "type": "roster_add"
-    },
-    {
-      "detected_at": "2026-10-07T23:04:05.982589+00:00",
-      "manager": "abewav",
-      "player": {
-        "age": 26,
-        "depth_chart_order": 3,
-        "depth_chart_position": "RB",
-        "fantasy_positions": [
-          "RB"
-        ],
-        "injury_body_part": null,
-        "injury_notes": null,
-        "injury_status": null,
-        "name": "Ray Davis",
-        "player_id": "11575",
-        "position": "RB",
-        "status": "Active",
-        "team": "BUF",
-        "years_exp": 2
-      },
-      "roster_id": 3,
-      "type": "roster_drop"
-    },
-    {
-      "detected_at": "2026-10-07T23:04:05.982589+00:00",
-      "manager": "abewav",
-      "new_starters": [
-        "11566",
-        "8138",
-        "8228",
-        "7569",
-        "7526",
-        "6794",
-        "10859",
-        "12506",
-        "96"
-      ],
-      "old_starters": [
-        "8161",
-        "8138",
-        "8228",
-        "7569",
-        "7526",
-        "5045",
-        "10859",
-        "12474",
-        "96"
-      ],
-      "roster_id": 3,
-      "type": "starter_change"
-    },
-    {
-      "detected_at": "2026-10-07T23:04:05.982589+00:00",
-      "manager": "nathanhoglund",
-      "player": {
-        "age": 24,
-        "depth_chart_order": 2,
-        "depth_chart_position": "RB",
-        "fantasy_positions": [
-          "RB"
-        ],
-        "injury_body_part": null,
-        "injury_notes": null,
-        "injury_status": null,
-        "name": "Will Shipley",
-        "player_id": "11577",
-        "position": "RB",
-        "status": "Active",
-        "team": "PHI",
-        "years_exp": 2
-      },
-      "roster_id": 5,
-      "type": "roster_add"
-    },
-    {
-      "detected_at": "2026-10-07T23:04:05.982589+00:00",
-      "manager": "nathanhoglund",
-      "player": {
-        "age": 28,
-        "depth_chart_order": 2,
-        "depth_chart_position": "QB",
-        "fantasy_positions": [
-          "QB"
-        ],
-        "injury_body_part": null,
-        "injury_notes": null,
-        "injury_status": null,
-        "name": "Tyler Huntley",
-        "player_id": "7083",
-        "position": "QB",
-        "status": "Active",
-        "team": "BAL",
-        "years_exp": 6
-      },
-      "roster_id": 5,
-      "type": "roster_add"
-    },
-    {
-      "detected_at": "2026-10-07T23:04:05.982589+00:00",
-      "manager": "nathanhoglund",
-      "player": {
-        "age": 32,
-        "depth_chart_order": 1,
-        "depth_chart_position": "QB",
-        "fantasy_positions": [
-          "QB"
-        ],
-        "injury_body_part": "Knee - MCL",
-        "injury_notes": "Sprain",
-        "injury_status": "Doubtful",
-        "name": "Marcus Mariota",
-        "player_id": "2307",
-        "position": "QB",
-        "status": "Active",
         "team": "WAS",
-        "years_exp": 11
+        "years_exp": 0
       },
-      "roster_id": 5,
+      "roster_id": 9,
+      "type": "roster_add"
+    },
+    {
+      "detected_at": "2026-10-08T06:01:36.162766+00:00",
+      "manager": "ryansorensen8",
+      "player": {
+        "age": 25,
+        "depth_chart_order": 2,
+        "depth_chart_position": "RB",
+        "fantasy_positions": [
+          "RB"
+        ],
+        "injury_body_part": null,
+        "injury_notes": null,
+        "injury_status": null,
+        "name": "Blake Corum",
+        "player_id": "11586",
+        "position": "RB",
+        "status": "Active",
+        "team": "LAR",
+        "years_exp": 2
+      },
+      "roster_id": 9,
       "type": "roster_drop"
     },
     {
-      "detected_at": "2026-10-07T23:04:05.982589+00:00",
-      "manager": "nathanhoglund",
+      "detected_at": "2026-10-08T06:01:36.162766+00:00",
+      "manager": "ryansorensen8",
       "player": {
         "age": 27,
         "depth_chart_order": 2,
-        "depth_chart_position": "RWR",
+        "depth_chart_position": "RB",
         "fantasy_positions": [
-          "WR"
+          "RB"
         ],
-        "injury_body_part": "Concussion",
+        "injury_body_part": null,
         "injury_notes": null,
-        "injury_status": "Questionable",
-        "name": "Jalen Nailor",
-        "player_id": "8180",
-        "position": "WR",
+        "injury_status": null,
+        "name": "Brian Robinson",
+        "player_id": "8154",
+        "position": "RB",
         "status": "Active",
-        "team": "LV",
+        "team": "ATL",
         "years_exp": 4
       },
-      "roster_id": 5,
-      "type": "roster_drop"
-    },
-    {
-      "detected_at": "2026-10-07T23:04:05.982589+00:00",
-      "manager": "ryansorensen8",
-      "player": {
-        "age": 31,
-        "depth_chart_order": 2,
-        "depth_chart_position": "RB",
-        "fantasy_positions": [
-          "RB"
-        ],
-        "injury_body_part": null,
-        "injury_notes": null,
-        "injury_status": null,
-        "name": "Austin Ekeler",
-        "player_id": "4663",
-        "position": "RB",
-        "status": "Active",
-        "team": "WAS",
-        "years_exp": 9
-      },
-      "roster_id": 9,
-      "type": "roster_add"
-    },
-    {
-      "detected_at": "2026-10-07T23:04:05.982589+00:00",
-      "manager": "ryansorensen8",
-      "player": {
-        "age": 22,
-        "depth_chart_order": 4,
-        "depth_chart_position": "RB",
-        "fantasy_positions": [
-          "RB"
-        ],
-        "injury_body_part": null,
-        "injury_notes": null,
-        "injury_status": null,
-        "name": "LeQuint Allen",
-        "player_id": "12544",
-        "position": "RB",
-        "status": "Active",
-        "team": "JAX",
-        "years_exp": 1
-      },
       "roster_id": 9,
       "type": "roster_drop"
     },
     {
-      "detected_at": "2026-10-07T23:04:05.982589+00:00",
-      "manager": "Waldo23",
-      "player": {
-        "age": 28,
-        "depth_chart_order": 2,
-        "depth_chart_position": "RB",
-        "fantasy_positions": [
-          "RB"
-        ],
-        "injury_body_part": null,
-        "injury_notes": null,
-        "injury_status": null,
-        "name": "Najee Harris",
-        "player_id": "7528",
-        "position": "RB",
-        "status": "Active",
-        "team": "NYG",
-        "years_exp": 5
-      },
-      "roster_id": 11,
-      "type": "roster_add"
+      "detected_at": "2026-10-08T06:01:36.162766+00:00",
+      "manager": "Ebro51",
+      "new_starters": [
+        "6797",
+        "11643",
+        "9757",
+        "13298",
+        "6786",
+        "9754",
+        "11604",
+        "4039",
+        "1479"
+      ],
+      "old_starters": [
+        "6797",
+        "8155",
+        "9757",
+        "13298",
+        "6786",
+        "9754",
+        "11604",
+        "4039",
+        "1479"
+      ],
+      "roster_id": 10,
+      "type": "starter_change"
     },
     {
-      "detected_at": "2026-10-07T23:04:05.982589+00:00",
+      "detected_at": "2026-10-08T06:01:36.162766+00:00",
       "manager": "Waldo23",
       "player": {
-        "age": 24,
+        "age": 25,
         "depth_chart_order": 2,
         "depth_chart_position": "RB",
         "fantasy_positions": [
@@ -1509,15 +1325,106 @@
         "injury_body_part": null,
         "injury_notes": null,
         "injury_status": null,
-        "name": "Isaiah Davis",
-        "player_id": "11571",
+        "name": "Blake Corum",
+        "player_id": "11586",
         "position": "RB",
         "status": "Active",
-        "team": "NYJ",
+        "team": "LAR",
         "years_exp": 2
       },
       "roster_id": 11,
+      "type": "roster_add"
+    },
+    {
+      "detected_at": "2026-10-08T06:01:36.162766+00:00",
+      "manager": "Waldo23",
+      "player": {
+        "age": 27,
+        "depth_chart_order": 2,
+        "depth_chart_position": "RB",
+        "fantasy_positions": [
+          "RB"
+        ],
+        "injury_body_part": null,
+        "injury_notes": null,
+        "injury_status": null,
+        "name": "Brian Robinson",
+        "player_id": "8154",
+        "position": "RB",
+        "status": "Active",
+        "team": "ATL",
+        "years_exp": 4
+      },
+      "roster_id": 11,
+      "type": "roster_add"
+    },
+    {
+      "detected_at": "2026-10-08T06:01:36.162766+00:00",
+      "manager": "Waldo23",
+      "player": {
+        "age": 22,
+        "depth_chart_order": 2,
+        "depth_chart_position": "LWR",
+        "fantasy_positions": [
+          "WR"
+        ],
+        "injury_body_part": null,
+        "injury_notes": null,
+        "injury_status": null,
+        "name": "Antonio Williams",
+        "player_id": "13301",
+        "position": "WR",
+        "status": "Active",
+        "team": "WAS",
+        "years_exp": 0
+      },
+      "roster_id": 11,
       "type": "roster_drop"
+    },
+    {
+      "detected_at": "2026-10-08T06:01:36.162766+00:00",
+      "manager": "Waldo23",
+      "player": {
+        "age": 23,
+        "depth_chart_order": 6,
+        "depth_chart_position": "RB",
+        "fantasy_positions": [
+          "RB"
+        ],
+        "injury_body_part": null,
+        "injury_notes": null,
+        "injury_status": null,
+        "name": "Eli Heidenreich",
+        "player_id": "13423",
+        "position": "RB",
+        "status": "Active",
+        "team": "PIT",
+        "years_exp": 0
+      },
+      "roster_id": 11,
+      "type": "roster_drop"
+    },
+    {
+      "detected_at": "2026-10-08T06:01:36.162766+00:00",
+      "new_owner_manager": "ryansorensen8",
+      "new_owner_roster_id": 9,
+      "old_owner_manager": "Waldo23",
+      "old_owner_roster_id": 11,
+      "original_roster_id": 11,
+      "round": 4,
+      "season": "2027",
+      "type": "pick_owner_change"
+    },
+    {
+      "detected_at": "2026-10-08T06:01:36.162766+00:00",
+      "new_owner_manager": "ryansorensen8",
+      "new_owner_roster_id": 9,
+      "old_owner_manager": "Waldo23",
+      "old_owner_roster_id": 11,
+      "original_roster_id": 11,
+      "round": 3,
+      "season": "2028",
+      "type": "pick_owner_change"
     }
   ],
   "record": {
@@ -1579,7 +1486,7 @@
         {
           "label": "thin",
           "position": "RB",
-          "strength": 6.25
+          "strength": 6.17
         },
         {
           "label": "below avg",
@@ -1602,7 +1509,7 @@
       "market": {
         "position_scores": {
           "QB": 39.4,
-          "RB": 51.3,
+          "RB": 45.1,
           "TE": 86.1,
           "WR": 69.2
         },
@@ -1643,7 +1550,7 @@
         {
           "label": "thin",
           "position": "RB",
-          "strength": 2.25
+          "strength": 2.17
         },
         {
           "label": "below avg",
@@ -1666,7 +1573,7 @@
       "market": {
         "position_scores": {
           "QB": 0.0,
-          "RB": 65.0,
+          "RB": 57.2,
           "TE": 0.0,
           "WR": 81.4
         },
@@ -1729,7 +1636,7 @@
       "market": {
         "position_scores": {
           "QB": 44.5,
-          "RB": 93.3,
+          "RB": 82.1,
           "TE": 29.6,
           "WR": 100.0
         },
@@ -1774,7 +1681,7 @@
         {
           "label": "deep",
           "position": "RB",
-          "strength": 1.75
+          "strength": 1.83
         },
         {
           "label": "above avg",
@@ -1784,13 +1691,68 @@
       ]
     },
     {
-      "count_fit_score": 2.9,
-      "fit_score": 2.0,
+      "count_fit_score": 4.1,
+      "fit_score": 2.8,
+      "manager": "ryansorensen8",
+      "market": {
+        "position_scores": {
+          "QB": 43.6,
+          "RB": 66.4,
+          "TE": 45.6,
+          "WR": 73.4
+        },
+        "their_market_rank": 6,
+        "their_starter_value": 53648,
+        "their_total_value": 104029
+      },
+      "market_fit_score": 0.0,
+      "pick_summary": {
+        "by_round": {
+          "1": 1,
+          "2": 0,
+          "3": 3,
+          "4": 2,
+          "5": 0
+        },
+        "by_year": {
+          "2027": 1,
+          "2028": 2,
+          "2029": 3
+        },
+        "early_picks": 1,
+        "firsts": 1,
+        "seconds": 0,
+        "total": 6
+      },
+      "reasons": [
+        "You have relative QB depth that matches one of their needs.",
+        "They are deep at WR, where you are comparatively thin."
+      ],
+      "roster_id": 9,
+      "team_name": "Matt Prater",
+      "their_needs": [
+        {
+          "label": "below avg",
+          "position": "QB",
+          "strength": 0.92
+        }
+      ],
+      "their_surpluses": [
+        {
+          "label": "above avg",
+          "position": "WR",
+          "strength": 0.92
+        }
+      ]
+    },
+    {
+      "count_fit_score": 2.7,
+      "fit_score": 1.8,
       "manager": "SORY9",
       "market": {
         "position_scores": {
           "QB": 64.6,
-          "RB": 75.6,
+          "RB": 66.5,
           "TE": 55.1,
           "WR": 46.3
         },
@@ -1826,7 +1788,7 @@
         {
           "label": "thin",
           "position": "RB",
-          "strength": 1.25
+          "strength": 1.17
         }
       ],
       "their_surpluses": [
@@ -1838,66 +1800,13 @@
       ]
     },
     {
-      "count_fit_score": 1.8,
-      "fit_score": 1.2,
-      "manager": "ryansorensen8",
-      "market": {
-        "position_scores": {
-          "QB": 43.6,
-          "RB": 95.6,
-          "TE": 45.6,
-          "WR": 59.5
-        },
-        "their_market_rank": 4,
-        "their_starter_value": 53648,
-        "their_total_value": 107680
-      },
-      "market_fit_score": 0.0,
-      "pick_summary": {
-        "by_round": {
-          "1": 1,
-          "2": 0,
-          "3": 2,
-          "4": 1,
-          "5": 0
-        },
-        "by_year": {
-          "2028": 1,
-          "2029": 3
-        },
-        "early_picks": 1,
-        "firsts": 1,
-        "seconds": 0,
-        "total": 4
-      },
-      "reasons": [
-        "You have relative QB depth that matches one of their needs."
-      ],
-      "roster_id": 9,
-      "team_name": "Matt Prater",
-      "their_needs": [
-        {
-          "label": "below avg",
-          "position": "QB",
-          "strength": 0.92
-        }
-      ],
-      "their_surpluses": [
-        {
-          "label": "deep",
-          "position": "RB",
-          "strength": 1.75
-        }
-      ]
-    },
-    {
       "count_fit_score": 0.9,
       "fit_score": 0.6,
       "manager": "hoglundcory2",
       "market": {
         "position_scores": {
           "QB": 60.3,
-          "RB": 75.2,
+          "RB": 66.1,
           "TE": 74.2,
           "WR": 0.0
         },
@@ -1947,7 +1856,7 @@
         {
           "label": "deep",
           "position": "RB",
-          "strength": 1.75
+          "strength": 1.83
         }
       ]
     },
@@ -1958,7 +1867,7 @@
       "market": {
         "position_scores": {
           "QB": 2.0,
-          "RB": 57.4,
+          "RB": 50.5,
           "TE": 54.2,
           "WR": 37.5
         },
@@ -2003,7 +1912,7 @@
         {
           "label": "above avg",
           "position": "RB",
-          "strength": 0.75
+          "strength": 0.83
         }
       ]
     },
@@ -2016,31 +1925,31 @@
           "QB": 100.0,
           "RB": 100.0,
           "TE": 66.2,
-          "WR": 27.4
+          "WR": 13.5
         },
         "their_market_rank": 3,
         "their_starter_value": 60291,
-        "their_total_value": 112471
+        "their_total_value": 113893
       },
       "market_fit_score": 0.0,
       "pick_summary": {
         "by_round": {
           "1": 3,
           "2": 3,
-          "3": 2,
-          "4": 4,
+          "3": 1,
+          "4": 3,
           "5": 5
         },
         "by_year": {
           "2026": 5,
-          "2027": 3,
-          "2028": 4,
+          "2027": 2,
+          "2028": 3,
           "2029": 5
         },
         "early_picks": 6,
         "firsts": 3,
         "seconds": 3,
-        "total": 17
+        "total": 15
       },
       "reasons": [
         "They have multiple future first-round picks available as trade liquidity."
@@ -2051,14 +1960,14 @@
         {
           "label": "thin",
           "position": "WR",
-          "strength": 3.08
+          "strength": 4.08
         }
       ],
       "their_surpluses": [
         {
           "label": "deep",
           "position": "RB",
-          "strength": 1.75
+          "strength": 2.83
         },
         {
           "label": "above avg",
@@ -2074,7 +1983,7 @@
       "market": {
         "position_scores": {
           "QB": 31.9,
-          "RB": 85.9,
+          "RB": 75.6,
           "TE": 100.0,
           "WR": 75.5
         },
@@ -2123,7 +2032,7 @@
         {
           "label": "above avg",
           "position": "RB",
-          "strength": 0.75
+          "strength": 0.83
         }
       ]
     },
@@ -2134,11 +2043,11 @@
       "market": {
         "position_scores": {
           "QB": 18.1,
-          "RB": 85.5,
+          "RB": 75.2,
           "TE": 84.6,
           "WR": 50.9
         },
-        "their_market_rank": 5,
+        "their_market_rank": 4,
         "their_starter_value": 54455,
         "their_total_value": 106445
       },
