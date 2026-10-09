@@ -1,7 +1,7 @@
 {
   "data_health": {
     "derived": {
-      "generated_at": "2026-10-09T15:22:54.333131+00:00",
+      "generated_at": "2026-10-09T15:32:39.272066+00:00",
       "status": "ok"
     },
     "dynasty_dealer": {
@@ -9,7 +9,7 @@
       "players": 964,
       "status": "ok"
     },
-    "generated_at": "2026-10-09T15:22:57.126623+00:00",
+    "generated_at": "2026-10-09T15:32:41.368351+00:00",
     "latest_completed_week": 4,
     "nflverse": {
       "current_season_snaps": "ok",
@@ -29,7 +29,7 @@
       "authoritative": true,
       "files": {
         "free_agents.json": {
-          "bytes": 1234048,
+          "bytes": 1234023,
           "status": "ok"
         },
         "league.json": {
@@ -49,7 +49,7 @@
           "status": "ok"
         },
         "players_active.json": {
-          "bytes": 1377316,
+          "bytes": 1377290,
           "status": "ok"
         },
         "roster_index.json": {
@@ -69,7 +69,7 @@
     },
     "warnings": []
   },
-  "generated_at": "2026-10-09T15:22:57.349376+00:00",
+  "generated_at": "2026-10-09T15:32:41.528797+00:00",
   "history": {
     "first_date": "2026-08-31",
     "latest_date": "2026-10-09",
@@ -1299,43 +1299,6 @@
   "purpose": "Compact first-pass context for ChatGPT. Authoritative ownership/roster/pick/free-agent facts still come from data/current.",
   "top_opportunities": [
     {
-      "age": 24,
-      "depth": 2,
-      "injury_status": null,
-      "market_position_rank": 132,
-      "market_rank": 326,
-      "market_value": 2098,
-      "name": "Darius Cooper",
-      "opportunity_score": 84.6,
-      "performance": {
-        "air_yards_share": 13.4,
-        "basis": "current",
-        "basis_label": "2026",
-        "carries_per_game": 0.0,
-        "games": 4,
-        "last3_opportunities_per_game": 3.33,
-        "last3_ppg_715": 9.63,
-        "offense_snap_pct": 39.0,
-        "opportunities_per_game": 2.5,
-        "ppg_715": 7.22,
-        "target_share": 9.2,
-        "targets_per_game": 2.5,
-        "touches_per_game": 1.25
-      },
-      "player_id": "13150",
-      "position": "WR",
-      "reasons": [
-        "Dynasty Dealer market value 2,098 adds insulation/upside signal.",
-        "current-season usage: 2.5 opportunities/game, 39% offensive snaps, 7.2 715 PPG.",
-        "Currently on an NFL roster (PHI).",
-        "Depth-chart No. 2: direct contingent path to usage.",
-        "Age supports long-term value growth."
-      ],
-      "team": "PHI",
-      "tier": "Priority",
-      "trending_adds_24h": 196567
-    },
-    {
       "age": 25,
       "depth": 2,
       "injury_status": null,
@@ -1343,7 +1306,7 @@
       "market_rank": 234,
       "market_value": 2531,
       "name": "Darnell Washington",
-      "opportunity_score": 82.1,
+      "opportunity_score": 82.0,
       "performance": {
         "air_yards_share": 4.2,
         "basis": "current",
@@ -1366,11 +1329,11 @@
         "current-season usage: 3.2 opportunities/game, 66% offensive snaps, 6.7 715 PPG.",
         "Currently on an NFL roster (PIT).",
         "Depth-chart No. 2: direct contingent path to usage.",
-        "Sleeper market heat: 17,610 adds in the 24h trend window."
+        "Sleeper market heat: 16,880 adds in the 24h trend window."
       ],
       "team": "PIT",
       "tier": "Priority",
-      "trending_adds_24h": 17610
+      "trending_adds_24h": 16880
     },
     {
       "age": 25,
@@ -1380,7 +1343,7 @@
       "market_rank": 327,
       "market_value": 2098,
       "name": "Tyler Goodson",
-      "opportunity_score": 78.6,
+      "opportunity_score": 78.4,
       "performance": {
         "air_yards_share": -1.3,
         "basis": "current",
@@ -1407,7 +1370,7 @@
       ],
       "team": "DAL",
       "tier": "Priority",
-      "trending_adds_24h": 13398
+      "trending_adds_24h": 12456
     },
     {
       "age": 33,
@@ -1447,6 +1410,43 @@
       "trending_adds_24h": 0
     },
     {
+      "age": 24,
+      "depth": 3,
+      "injury_status": null,
+      "market_position_rank": 132,
+      "market_rank": 326,
+      "market_value": 2098,
+      "name": "Darius Cooper",
+      "opportunity_score": 76.5,
+      "performance": {
+        "air_yards_share": 13.4,
+        "basis": "current",
+        "basis_label": "2026",
+        "carries_per_game": 0.0,
+        "games": 4,
+        "last3_opportunities_per_game": 3.33,
+        "last3_ppg_715": 9.63,
+        "offense_snap_pct": 39.0,
+        "opportunities_per_game": 2.5,
+        "ppg_715": 7.22,
+        "target_share": 9.2,
+        "targets_per_game": 2.5,
+        "touches_per_game": 1.25
+      },
+      "player_id": "13150",
+      "position": "WR",
+      "reasons": [
+        "Dynasty Dealer market value 2,098 adds insulation/upside signal.",
+        "current-season usage: 2.5 opportunities/game, 39% offensive snaps, 7.2 715 PPG.",
+        "Currently on an NFL roster (PHI).",
+        "Depth-chart No. 3: plausible contingent upside.",
+        "Age supports long-term value growth."
+      ],
+      "team": "PHI",
+      "tier": "Priority",
+      "trending_adds_24h": 194789
+    },
+    {
       "age": 25,
       "depth": 3,
       "injury_status": null,
@@ -1454,7 +1454,7 @@
       "market_rank": 274,
       "market_value": 2298,
       "name": "Roschon Johnson",
-      "opportunity_score": 74.0,
+      "opportunity_score": 74.1,
       "performance": {
         "air_yards_share": 1.2,
         "basis": "current",
@@ -1481,7 +1481,7 @@
       ],
       "team": "CHI",
       "tier": "Priority",
-      "trending_adds_24h": 83576
+      "trending_adds_24h": 90392
     },
     {
       "age": 32,
@@ -1528,7 +1528,7 @@
       "market_rank": 307,
       "market_value": 2201,
       "name": "Tyler Higbee",
-      "opportunity_score": 70.9,
+      "opportunity_score": 70.8,
       "performance": {
         "air_yards_share": 8.2,
         "basis": "current",
@@ -1551,11 +1551,11 @@
         "current-season usage: 4.8 opportunities/game, 46% offensive snaps, 8.3 715 PPG.",
         "Currently on an NFL roster (LAR).",
         "Listed first on the Sleeper depth chart.",
-        "Sleeper market heat: 284,220 adds in the 24h trend window."
+        "Sleeper market heat: 274,581 adds in the 24h trend window."
       ],
       "team": "LAR",
       "tier": "Priority",
-      "trending_adds_24h": 284220
+      "trending_adds_24h": 274581
     },
     {
       "age": 27,
@@ -1816,6 +1816,43 @@
       "trending_adds_24h": 0
     },
     {
+      "age": 32,
+      "depth": 2,
+      "injury_status": "Doubtful",
+      "market_position_rank": 52,
+      "market_rank": 303,
+      "market_value": 2215,
+      "name": "Marcus Mariota",
+      "opportunity_score": 63.6,
+      "performance": {
+        "air_yards_share": 0.0,
+        "basis": "current",
+        "basis_label": "2026",
+        "carries_per_game": 2.33,
+        "games": 3,
+        "last3_opportunities_per_game": 19.33,
+        "last3_ppg_715": 12.63,
+        "offense_snap_pct": 53.7,
+        "opportunities_per_game": 19.33,
+        "ppg_715": 12.63,
+        "target_share": 0.0,
+        "targets_per_game": 0.0,
+        "touches_per_game": 2.33
+      },
+      "player_id": "2307",
+      "position": "QB",
+      "reasons": [
+        "Dynasty Dealer market value 2,215 adds insulation/upside signal.",
+        "current-season usage: 19.3 opportunities/game, 54% offensive snaps, 12.6 715 PPG.",
+        "Currently on an NFL roster (WAS).",
+        "Depth-chart No. 2: direct contingent path to usage.",
+        "Superflex format raises the value of any QB with a path to starts."
+      ],
+      "team": "WAS",
+      "tier": "Strong stash",
+      "trending_adds_24h": 0
+    },
+    {
       "age": 24,
       "depth": 2,
       "injury_status": null,
@@ -1849,43 +1886,6 @@
         "Superflex format raises the value of any QB with a path to starts."
       ],
       "team": "MIA",
-      "tier": "Strong stash",
-      "trending_adds_24h": 0
-    },
-    {
-      "age": 32,
-      "depth": 2,
-      "injury_status": "Doubtful",
-      "market_position_rank": 52,
-      "market_rank": 303,
-      "market_value": 2215,
-      "name": "Marcus Mariota",
-      "opportunity_score": 63.5,
-      "performance": {
-        "air_yards_share": 0.0,
-        "basis": "current",
-        "basis_label": "2026",
-        "carries_per_game": 2.33,
-        "games": 3,
-        "last3_opportunities_per_game": 19.33,
-        "last3_ppg_715": 12.63,
-        "offense_snap_pct": 53.7,
-        "opportunities_per_game": 19.33,
-        "ppg_715": 12.63,
-        "target_share": 0.0,
-        "targets_per_game": 0.0,
-        "touches_per_game": 2.33
-      },
-      "player_id": "2307",
-      "position": "QB",
-      "reasons": [
-        "Dynasty Dealer market value 2,215 adds insulation/upside signal.",
-        "current-season usage: 19.3 opportunities/game, 54% offensive snaps, 12.6 715 PPG.",
-        "Currently on an NFL roster (WAS).",
-        "Depth-chart No. 2: direct contingent path to usage.",
-        "Superflex format raises the value of any QB with a path to starts."
-      ],
-      "team": "WAS",
       "tier": "Strong stash",
       "trending_adds_24h": 0
     },
