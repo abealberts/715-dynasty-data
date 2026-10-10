@@ -549,7 +549,7 @@
     "total_market_value": 103952,
     "weeks": 4
   },
-  "generated_at": "2026-10-10T20:11:24.362918+00:00",
+  "generated_at": "2026-10-10T21:42:04.524773+00:00",
   "lineup": [
     {
       "player": {
@@ -1191,7 +1191,54 @@
     "window": "Retool Needed",
     "young_player_share": 37.0
   },
-  "recent_changes": [],
+  "recent_changes": [
+    {
+      "detected_at": "2026-10-10T21:42:01.459255+00:00",
+      "manager": "NolanFarts",
+      "player": {
+        "age": 26,
+        "depth_chart_order": 2,
+        "depth_chart_position": "QB",
+        "fantasy_positions": [
+          "QB"
+        ],
+        "injury_body_part": null,
+        "injury_notes": null,
+        "injury_status": null,
+        "name": "Tanner McKee",
+        "player_id": "9230",
+        "position": "QB",
+        "status": "Active",
+        "team": "PHI",
+        "years_exp": 3
+      },
+      "roster_id": 2,
+      "type": "roster_add"
+    },
+    {
+      "detected_at": "2026-10-10T21:42:01.459255+00:00",
+      "manager": "NolanFarts",
+      "player": {
+        "age": 38,
+        "depth_chart_order": null,
+        "depth_chart_position": null,
+        "fantasy_positions": [
+          "QB"
+        ],
+        "injury_body_part": null,
+        "injury_notes": null,
+        "injury_status": null,
+        "name": "Andy Dalton",
+        "player_id": "829",
+        "position": "QB",
+        "status": "Active",
+        "team": "PHI",
+        "years_exp": 15
+      },
+      "roster_id": 2,
+      "type": "roster_drop"
+    }
+  ],
   "record": {
     "fpts": 481,
     "fpts_decimal": 35,
@@ -1574,14 +1621,14 @@
       "manager": "NolanFarts",
       "market": {
         "position_scores": {
-          "QB": 23.7,
+          "QB": 27.1,
           "RB": 76.9,
           "TE": 100.0,
           "WR": 84.1
         },
         "their_market_rank": 1,
         "their_starter_value": 66766,
-        "their_total_value": 113090
+        "their_total_value": 113600
       },
       "market_fit_score": 0.0,
       "pick_summary": {

@@ -11,7 +11,7 @@
       "components": {
         "current_performance": 93.6,
         "historical_prior": 88.1,
-        "roster_market": 79.2
+        "roster_market": 79.7
       },
       "h2h": {
         "losses": 0,
@@ -26,7 +26,7 @@
       "live_performance_score": 93.6,
       "luck_index": 11.4,
       "manager": "NolanFarts",
-      "market_strength": 79.2,
+      "market_strength": 79.7,
       "median": {
         "losses": 0,
         "pct": 1.0,
@@ -37,7 +37,7 @@
       "owner_id": "988277931761786880",
       "points_for": 676.0,
       "points_left_on_bench": 147.65,
-      "power_score": 86.8,
+      "power_score": 87.0,
       "previous_rank": 1,
       "rank": 1,
       "recent_3_average": 173.2,
@@ -47,7 +47,7 @@
       ],
       "starter_market_value": 66766,
       "team_name": "Puka Nachewa",
-      "total_market_value": 113090,
+      "total_market_value": 113600,
       "weeks": 4
     },
     {
@@ -2441,7 +2441,7 @@
       }
     }
   ],
-  "generated_at": "2026-10-10T20:11:24.362918+00:00",
+  "generated_at": "2026-10-10T21:42:04.524773+00:00",
   "manager_tendencies": {
     "managers": [
       {
@@ -2550,11 +2550,11 @@
         "picks_acquired": 3,
         "picks_sent": 15,
         "players_acquired_trade": 14,
-        "players_added": 28,
-        "players_dropped": 29,
+        "players_added": 29,
+        "players_dropped": 30,
         "players_sent_trade": 14,
         "primary_tendency": "FAAB Burner",
-        "roster_moves": 34,
+        "roster_moves": 35,
         "seasons": [
           "2025",
           "2026"
@@ -2580,9 +2580,9 @@
         ],
         "trades": 13,
         "trades_initiated": 6,
-        "waiver_attempts": 38,
-        "waiver_success_rate": 73.7,
-        "waiver_successes": 28
+        "waiver_attempts": 39,
+        "waiver_success_rate": 74.4,
+        "waiver_successes": 29
       },
       {
         "faab_spent": 45,
@@ -3385,14 +3385,14 @@
       "manager": "NolanFarts",
       "market": {
         "position_scores": {
-          "QB": 23.7,
+          "QB": 27.1,
           "RB": 76.9,
           "TE": 100.0,
           "WR": 84.1
         },
         "their_market_rank": 1,
         "their_starter_value": 66766,
-        "their_total_value": 113090
+        "their_total_value": 113600
       },
       "market_fit_score": 0.0,
       "pick_summary": {
@@ -3666,21 +3666,21 @@
   ],
   "profiles": [
     {
-      "average_roster_age": 27.3,
+      "average_roster_age": 26.9,
       "early_picks": 1,
       "first_round_picks": 0,
-      "franchise_score": 68.6,
+      "franchise_score": 68.7,
       "manager": "NolanFarts",
       "metrics": {
         "draft_capital": 1.9,
         "lineup_management": 92.6,
-        "market_value": 79.2,
+        "market_value": 79.7,
         "performance_prior": 100.0,
         "roster_balance": 100.0,
         "stability": 53.3,
         "youth": 11.8
       },
-      "model_mean": 152.58,
+      "model_mean": 152.61,
       "model_sd": 27.5,
       "owner_id": "988277931761786880",
       "pick_count": 8,
@@ -3695,7 +3695,7 @@
         "Roster Balance"
       ],
       "team_name": "Puka Nachewa",
-      "title_odds": 53.1,
+      "title_odds": 53.2,
       "window": "Contender",
       "young_player_share": 33.3
     },
@@ -3795,7 +3795,7 @@
         "Market Value"
       ],
       "team_name": "Henry given sunday",
-      "title_odds": 22.5,
+      "title_odds": 22.4,
       "window": "Contender",
       "young_player_share": 37.0
     },
@@ -4072,6 +4072,64 @@
     }
   ],
   "recent_transactions": [
+    {
+      "adds": [
+        {
+          "manager": "NolanFarts",
+          "player": {
+            "age": 26,
+            "depth_chart_order": 2,
+            "depth_chart_position": "QB",
+            "fantasy_positions": [
+              "QB"
+            ],
+            "injury_body_part": null,
+            "injury_notes": null,
+            "injury_status": null,
+            "name": "Tanner McKee",
+            "player_id": "9230",
+            "position": "QB",
+            "status": "Active",
+            "team": "PHI",
+            "years_exp": 3
+          },
+          "roster_id": 2
+        }
+      ],
+      "created": 1791570005052,
+      "draft_picks": [],
+      "drops": [
+        {
+          "manager": "NolanFarts",
+          "player": {
+            "age": 38,
+            "depth_chart_order": null,
+            "depth_chart_position": null,
+            "fantasy_positions": [
+              "QB"
+            ],
+            "injury_body_part": null,
+            "injury_notes": null,
+            "injury_status": null,
+            "name": "Andy Dalton",
+            "player_id": "829",
+            "position": "QB",
+            "status": "Active",
+            "team": "PHI",
+            "years_exp": 15
+          },
+          "roster_id": 2
+        }
+      ],
+      "roster_ids": [
+        2
+      ],
+      "status": "complete",
+      "transaction_id": "1414350748254261248",
+      "type": "waiver",
+      "waiver_budget": 0,
+      "week": 5
+    },
     {
       "adds": [
         {
@@ -6129,65 +6187,29 @@
       "type": "waiver",
       "waiver_budget": 0,
       "week": 3
-    },
-    {
-      "adds": [
-        {
-          "manager": "Amelse",
-          "player": {
-            "age": 23,
-            "depth_chart_order": 8,
-            "depth_chart_position": null,
-            "fantasy_positions": [
-              "WR"
-            ],
-            "injury_body_part": "Knee",
-            "injury_notes": "Soreness",
-            "injury_status": "IR",
-            "name": "Jeff Caldwell",
-            "player_id": "13392",
-            "position": "WR",
-            "status": "Inactive",
-            "team": "KC",
-            "years_exp": 0
-          },
-          "roster_id": 6
-        }
-      ],
-      "created": 1790169376758,
-      "draft_picks": [],
-      "drops": [],
-      "roster_ids": [
-        6
-      ],
-      "status": "complete",
-      "transaction_id": "1408476087402446848",
-      "type": "waiver",
-      "waiver_budget": 0,
-      "week": 3
     }
   ],
   "teams": [
     {
-      "depth_market_value": 46324,
+      "depth_market_value": 46834,
       "manager": "NolanFarts",
       "market_rank": 1,
       "optimal_starter_market_value": 66766,
       "position_scores": {
-        "QB": 23.7,
+        "QB": 27.1,
         "RB": 76.9,
         "TE": 100.0,
         "WR": 84.1
       },
       "position_values": {
-        "QB": 18177,
+        "QB": 18687,
         "RB": 32913,
         "TE": 17841,
         "WR": 44159
       },
       "roster_id": 2,
       "team_name": "Puka Nachewa",
-      "total_market_value": 113090
+      "total_market_value": 113600
     },
     {
       "depth_market_value": 54586,
