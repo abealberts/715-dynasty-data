@@ -1,6 +1,6 @@
 {
   "context_methodology": "Time-decayed, source-weighted context. Narrative effects are capped at ±8%, combined workload context at ±12%, and availability remains a separate guardrail. Every adjustment retains its source and explanation.",
-  "generated_at": "2026-10-11T16:24:37.656361+00:00",
+  "generated_at": "2026-10-11T20:24:45.437472+00:00",
   "market_attribution": "Values by Dynasty Dealer — https://www.dynastydealer.com/",
   "methodology": "Signal score, not dynasty market value. Uses confirmed league availability, NFL roster status, depth chart, age, league format, Sleeper 24h add/drop trends, recent 715 drops, and injury/IR-slot context. Phase 4.6 adds Dynasty Dealer market value plus nflverse offensive snap share, opportunities, 715-scoring production, and current usage trend. Prior-season performance is deliberately discounted until current-season data exists.",
   "performance_attribution": "NFL performance data via nflverse — https://nflverse.com/",
@@ -165,8 +165,8 @@
         "net_direction": "neutral",
         "opportunity_score_adjustment": -1.8,
         "player_id": "4454",
-        "research_mention_count": 0,
-        "signal_count": 2,
+        "research_mention_count": 1,
+        "signal_count": 3,
         "signals": [
           {
             "corroboration_count": 1,
@@ -177,7 +177,7 @@
             "origin": "measured_usage",
             "player_id": "4454",
             "player_name": "Kendrick Bourne",
-            "published_at": "2026-10-11T16:24:40.210305+00:00",
+            "published_at": "2026-10-11T20:24:47.965114+00:00",
             "reliability": 0.9,
             "signal_id": "usage-trend-4454",
             "source": "nflverse play-by-play",
@@ -197,7 +197,7 @@
             "origin": "sleeper",
             "player_id": "4454",
             "player_name": "Kendrick Bourne",
-            "published_at": "2026-10-11T16:24:40.210305+00:00",
+            "published_at": "2026-10-11T20:24:47.965114+00:00",
             "reliability": 0.65,
             "signal_id": "sleeper-depth-4454",
             "source": "Sleeper depth chart",
@@ -207,6 +207,27 @@
             "type": "depth_chart",
             "url": null,
             "weighted_score": 0.13
+          },
+          {
+            "corroboration_count": 1,
+            "direction": 0.0,
+            "event_date": null,
+            "impact": "context",
+            "magnitude": 0.0,
+            "origin": "curated_report",
+            "player_id": "4454",
+            "player_name": "Kendrick Bourne",
+            "published_at": "2026-10-10T17:29:04+00:00",
+            "reliability": 0.45,
+            "scored": false,
+            "signal_id": "8b288de6f844ac0576e2",
+            "source": "Sports Illustrated",
+            "source_type": "aggregator",
+            "summary": "Kendrick Bourne, TreVeyon Henderson, And All The Top Boom-Or-Bust Fantasy Football Options For Week 5 - Sports Illustrated",
+            "ttl_days": 7,
+            "type": "news",
+            "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQWTBfeEFSazhFUEpfcjhIaG9RUXY1Q0VYZS1SOG9zSnNYQVNXc0JmRldkbEpWNDZqRkVERHYzSWdiX24wemtHVXJaOGpEZVpHZTRqajVMS0l6eXhXdVdYSHhXYU9FOGpodjZFRGVxT19fd0V6ZkdvOGotbG5IMUdyejB1VHJEQ1NPVUh0SkllWHhTMFVKNXAza1c0QUhqSERVRUNOOFpweXUtMG8xZ09CVEYxbHA1VHE5bi15eFZ4ZWh5OUdMZC1QSWk5Zno1cTM2?oc=5",
+            "weighted_score": 0.0
           }
         ],
         "weekly_multiplier": 0.995
@@ -2521,7 +2542,7 @@
         "Recently dropped by NolanFarts; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 12.5,
+        "age_days": 12.7,
         "manager": "NolanFarts"
       },
       "status": "Active",
@@ -3294,7 +3315,7 @@
         "Recently dropped by Waldo23; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 5.2,
+        "age_days": 5.3,
         "manager": "Waldo23"
       },
       "status": "Active",
@@ -3747,7 +3768,7 @@
         "Recently dropped by abewav; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 6.1,
+        "age_days": 6.3,
         "manager": "abewav"
       },
       "status": "Active",
@@ -4028,7 +4049,7 @@
         "Recently dropped by Butler2142; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 3.2,
+        "age_days": 3.3,
         "manager": "Butler2142"
       },
       "status": "Active",
@@ -4850,7 +4871,7 @@
         "Recently dropped by Waldo23; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 8.8,
+        "age_days": 8.9,
         "manager": "Waldo23"
       },
       "status": "Active",
@@ -5088,7 +5109,7 @@
         "Unavailable/injured status is costly because this league has no IR slots."
       ],
       "recent_715_drop": {
-        "age_days": 4.5,
+        "age_days": 4.7,
         "manager": "nathanhoglund"
       },
       "status": "Active",
@@ -5219,7 +5240,7 @@
         "Recently dropped by ryansorensen8; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 7.0,
+        "age_days": 7.2,
         "manager": "ryansorensen8"
       },
       "status": "Active",
@@ -7488,7 +7509,7 @@
         "Recently dropped by NolanFarts; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 5.5,
+        "age_days": 5.7,
         "manager": "NolanFarts"
       },
       "status": "Active",
@@ -8617,7 +8638,7 @@
         "Recently dropped by Waldo23; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 3.5,
+        "age_days": 3.7,
         "manager": "Waldo23"
       },
       "status": "Active",
