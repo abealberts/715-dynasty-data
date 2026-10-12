@@ -1,6 +1,6 @@
 {
   "context_methodology": "Time-decayed, source-weighted context. Narrative effects are capped at ±8%, combined workload context at ±12%, and availability remains a separate guardrail. Every adjustment retains its source and explanation.",
-  "generated_at": "2026-10-12T05:54:31.905818+00:00",
+  "generated_at": "2026-10-12T06:12:27.753075+00:00",
   "market_attribution": "Values by Dynasty Dealer — https://www.dynastydealer.com/",
   "methodology": "Signal score, not dynasty market value. Uses confirmed league availability, NFL roster status, depth chart, age, league format, Sleeper 24h add/drop trends, recent 715 drops, and injury/IR-slot context. Phase 4.6 adds Dynasty Dealer market value plus nflverse offensive snap share, opportunities, 715-scoring production, and current usage trend. Prior-season performance is deliberately discounted until current-season data exists.",
   "performance_attribution": "NFL performance data via nflverse — https://nflverse.com/",
@@ -317,8 +317,8 @@
         "net_direction": "neutral",
         "opportunity_score_adjustment": -1.8,
         "player_id": "4454",
-        "research_mention_count": 1,
-        "signal_count": 3,
+        "research_mention_count": 2,
+        "signal_count": 4,
         "signals": [
           {
             "corroboration_count": 1,
@@ -329,7 +329,7 @@
             "origin": "measured_usage",
             "player_id": "4454",
             "player_name": "Kendrick Bourne",
-            "published_at": "2026-10-12T05:54:34.456773+00:00",
+            "published_at": "2026-10-12T06:12:30.354032+00:00",
             "reliability": 0.9,
             "signal_id": "usage-trend-4454",
             "source": "nflverse play-by-play",
@@ -349,7 +349,7 @@
             "origin": "sleeper",
             "player_id": "4454",
             "player_name": "Kendrick Bourne",
-            "published_at": "2026-10-12T05:54:34.456773+00:00",
+            "published_at": "2026-10-12T06:12:30.354032+00:00",
             "reliability": 0.65,
             "signal_id": "sleeper-depth-4454",
             "source": "Sleeper depth chart",
@@ -369,16 +369,16 @@
             "origin": "curated_report",
             "player_id": "4454",
             "player_name": "Kendrick Bourne",
-            "published_at": "2026-10-10T17:29:04+00:00",
+            "published_at": "2026-10-11T20:47:46+00:00",
             "reliability": 0.45,
             "scored": false,
-            "signal_id": "8b288de6f844ac0576e2",
-            "source": "Sports Illustrated",
+            "signal_id": "39c00e34f5626c9576e4",
+            "source": "NFL.com",
             "source_type": "aggregator",
-            "summary": "Kendrick Bourne, TreVeyon Henderson, And All The Top Boom-Or-Bust Fantasy Football Options For Week 5 - Sports Illustrated",
+            "summary": "Kendrick Bourne corkscrews his way to Lions' 30-yard line after catching Brissett's dart - NFL.com",
             "ttl_days": 7,
             "type": "news",
-            "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQWTBfeEFSazhFUEpfcjhIaG9RUXY1Q0VYZS1SOG9zSnNYQVNXc0JmRldkbEpWNDZqRkVERHYzSWdiX24wemtHVXJaOGpEZVpHZTRqajVMS0l6eXhXdVdYSHhXYU9FOGpodjZFRGVxT19fd0V6ZkdvOGotbG5IMUdyejB1VHJEQ1NPVUh0SkllWHhTMFVKNXAza1c0QUhqSERVRUNOOFpweXUtMG8xZ09CVEYxbHA1VHE5bi15eFZ4ZWh5OUdMZC1QSWk5Zno1cTM2?oc=5",
+            "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxONmp3c20tR3dJd1NnX3l0dFZEMmVUX2VWdDZzRC1OWXVfWDRKWlFwS1ZNSU1qNU8zRjNkZ1BlNTNrbnRFVnQ0RVpLSjRPcDRXSmpMZ1lnaHp0SlJJaHR3TWVtaEFmaHRUcnZEMTEwYnZCSHFnV1VFYVN4RGI4b2d2ZU9WcU5WOHhUSDlvRWxSMnAyd2xJSGRJNHZfbDZZSUtWb251YV9HellvUzhOQTlyMDdYaks?oc=5",
             "weighted_score": 0.0
           }
         ],
@@ -3747,7 +3747,7 @@
         "Recently dropped by Waldo23; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 5.7,
+        "age_days": 5.8,
         "manager": "Waldo23"
       },
       "status": "Active",
