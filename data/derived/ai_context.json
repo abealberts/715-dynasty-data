@@ -1,7 +1,7 @@
 {
   "data_health": {
     "derived": {
-      "generated_at": "2026-10-16T13:21:53.215327+00:00",
+      "generated_at": "2026-10-16T13:30:07.820812+00:00",
       "status": "ok"
     },
     "dynasty_dealer": {
@@ -9,7 +9,7 @@
       "players": 964,
       "status": "ok"
     },
-    "generated_at": "2026-10-16T13:21:55.939847+00:00",
+    "generated_at": "2026-10-16T13:30:09.330075+00:00",
     "latest_completed_week": 5,
     "nflverse": {
       "current_season_snaps": "ok",
@@ -29,7 +29,7 @@
       "authoritative": true,
       "files": {
         "free_agents.json": {
-          "bytes": 1234491,
+          "bytes": 1234543,
           "status": "ok"
         },
         "league.json": {
@@ -49,7 +49,7 @@
           "status": "ok"
         },
         "players_active.json": {
-          "bytes": 1377250,
+          "bytes": 1377358,
           "status": "ok"
         },
         "roster_index.json": {
@@ -69,7 +69,7 @@
     },
     "warnings": []
   },
-  "generated_at": "2026-10-16T13:21:56.172297+00:00",
+  "generated_at": "2026-10-16T13:30:09.468387+00:00",
   "history": {
     "first_date": "2026-08-31",
     "latest_date": "2026-10-16",
@@ -1295,43 +1295,6 @@
   "purpose": "Compact first-pass context for ChatGPT. Authoritative ownership/roster/pick/free-agent facts still come from data/current.",
   "top_opportunities": [
     {
-      "age": 24,
-      "depth": 2,
-      "injury_status": null,
-      "market_position_rank": 104,
-      "market_rank": 372,
-      "market_value": 1786,
-      "name": "Corey Kiner",
-      "opportunity_score": 84.6,
-      "performance": {
-        "air_yards_share": -0.5,
-        "basis": "current",
-        "basis_label": "2026",
-        "carries_per_game": 4.0,
-        "games": 5,
-        "last3_opportunities_per_game": 4.67,
-        "last3_ppg_715": 2.87,
-        "offense_snap_pct": 10.8,
-        "opportunities_per_game": 4.4,
-        "ppg_715": 1.94,
-        "target_share": 1.3,
-        "targets_per_game": 0.4,
-        "touches_per_game": 4.4
-      },
-      "player_id": "12491",
-      "position": "RB",
-      "reasons": [
-        "Dynasty Dealer market value 1,786 adds insulation/upside signal.",
-        "current-season usage: 4.4 opportunities/game, 11% offensive snaps, 1.9 715 PPG.",
-        "Currently on an NFL roster (NE).",
-        "Depth-chart No. 2: direct contingent path to usage.",
-        "Age supports long-term value growth."
-      ],
-      "team": "NE",
-      "tier": "Priority",
-      "trending_adds_24h": 60918
-    },
-    {
       "age": 31,
       "depth": 2,
       "injury_status": null,
@@ -1339,7 +1302,7 @@
       "market_rank": 225,
       "market_value": 2604,
       "name": "Kendrick Bourne",
-      "opportunity_score": 81.1,
+      "opportunity_score": 81.0,
       "performance": {
         "air_yards_share": 8.0,
         "basis": "current",
@@ -1362,11 +1325,11 @@
         "current-season usage: 4.4 opportunities/game, 59% offensive snaps, 7.0 715 PPG.",
         "Currently on an NFL roster (ARI).",
         "Depth-chart No. 2: direct contingent path to usage.",
-        "Sleeper market heat: 79,176 adds in the 24h trend window."
+        "Sleeper market heat: 76,725 adds in the 24h trend window."
       ],
       "team": "ARI",
       "tier": "Priority",
-      "trending_adds_24h": 79176
+      "trending_adds_24h": 76725
     },
     {
       "age": 28,
@@ -1403,7 +1366,7 @@
       ],
       "team": "BAL",
       "tier": "Priority",
-      "trending_adds_24h": 40014
+      "trending_adds_24h": 39852
     },
     {
       "age": 33,
@@ -1413,7 +1376,7 @@
       "market_rank": 224,
       "market_value": 2611,
       "name": "Tyler Higbee",
-      "opportunity_score": 78.1,
+      "opportunity_score": 78.0,
       "performance": {
         "air_yards_share": 9.7,
         "basis": "current",
@@ -1440,7 +1403,7 @@
       ],
       "team": "LAR",
       "tier": "Priority",
-      "trending_adds_24h": 178407
+      "trending_adds_24h": 178101
     },
     {
       "age": 33,
@@ -1478,6 +1441,43 @@
       "team": "MIN",
       "tier": "Priority",
       "trending_adds_24h": 0
+    },
+    {
+      "age": 24,
+      "depth": 3,
+      "injury_status": null,
+      "market_position_rank": 104,
+      "market_rank": 372,
+      "market_value": 1786,
+      "name": "Corey Kiner",
+      "opportunity_score": 76.4,
+      "performance": {
+        "air_yards_share": -0.5,
+        "basis": "current",
+        "basis_label": "2026",
+        "carries_per_game": 4.0,
+        "games": 5,
+        "last3_opportunities_per_game": 4.67,
+        "last3_ppg_715": 2.87,
+        "offense_snap_pct": 10.8,
+        "opportunities_per_game": 4.4,
+        "ppg_715": 1.94,
+        "target_share": 1.3,
+        "targets_per_game": 0.4,
+        "touches_per_game": 4.4
+      },
+      "player_id": "12491",
+      "position": "RB",
+      "reasons": [
+        "Dynasty Dealer market value 1,786 adds insulation/upside signal.",
+        "current-season usage: 4.4 opportunities/game, 11% offensive snaps, 1.9 715 PPG.",
+        "Currently on an NFL roster (NE).",
+        "Depth-chart No. 3: plausible contingent upside.",
+        "Age supports long-term value growth."
+      ],
+      "team": "NE",
+      "tier": "Priority",
+      "trending_adds_24h": 55362
     },
     {
       "age": 32,
@@ -1547,11 +1547,11 @@
         "Currently on an NFL roster (GB).",
         "Depth-chart No. 2: direct contingent path to usage.",
         "RB contingent value can rise quickly with one depth-chart change.",
-        "Sleeper market heat: 69,363 adds in the 24h trend window."
+        "Sleeper market heat: 72,090 adds in the 24h trend window."
       ],
       "team": "GB",
       "tier": "Priority",
-      "trending_adds_24h": 69363
+      "trending_adds_24h": 72090
     },
     {
       "age": 23,
@@ -1574,7 +1574,7 @@
       ],
       "team": "PHI",
       "tier": "Priority",
-      "trending_adds_24h": 62154
+      "trending_adds_24h": 65556
     },
     {
       "age": 32,
@@ -1915,7 +1915,7 @@
       "market_rank": 434,
       "market_value": 215,
       "name": "Jaleel McLaughlin",
-      "opportunity_score": 62.3,
+      "opportunity_score": 62.1,
       "performance": {
         "air_yards_share": 0.5,
         "basis": "current",
@@ -1938,11 +1938,11 @@
         "Currently on an NFL roster (CLE).",
         "Depth-chart No. 2: direct contingent path to usage.",
         "RB contingent value can rise quickly with one depth-chart change.",
-        "Sleeper market heat: 218,020 adds in the 24h trend window."
+        "Sleeper market heat: 207,550 adds in the 24h trend window."
       ],
       "team": "CLE",
       "tier": "Strong stash",
-      "trending_adds_24h": 218020
+      "trending_adds_24h": 207550
     },
     {
       "age": 31,
@@ -1975,7 +1975,7 @@
         "current-season usage: 3.4 opportunities/game, 45% offensive snaps, 10.4 715 PPG.",
         "Currently on an NFL roster (CIN).",
         "Listed first on the Sleeper depth chart.",
-        "Market headwind: 57,756 drops in the 24h trend window."
+        "Market headwind: 56,216 drops in the 24h trend window."
       ],
       "team": "CIN",
       "tier": "Strong stash",
