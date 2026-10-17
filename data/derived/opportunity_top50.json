@@ -1,6 +1,6 @@
 {
   "context_methodology": "Time-decayed, source-weighted context. Narrative effects are capped at ±8%, combined workload context at ±12%, and availability remains a separate guardrail. Every adjustment retains its source and explanation.",
-  "generated_at": "2026-10-17T10:41:12.309759+00:00",
+  "generated_at": "2026-10-17T12:16:51.788276+00:00",
   "methodology": "Signal score, not dynasty market value. Uses confirmed league availability, NFL roster status, depth chart, age, league format, Sleeper 24h add/drop trends, recent 715 drops, and injury/IR-slot context. Phase 4.6 adds Dynasty Dealer market value plus nflverse offensive snap share, opportunities, 715-scoring production, and current usage trend. Prior-season performance is deliberately discounted until current-season data exists.",
   "players": [
     {
@@ -551,7 +551,7 @@
             "origin": "sleeper",
             "player_id": "3271",
             "player_name": "Tyler Higbee",
-            "published_at": "2026-10-17T10:41:14.137148+00:00",
+            "published_at": "2026-10-17T12:16:53.087624+00:00",
             "reliability": 0.65,
             "signal_id": "sleeper-depth-3271",
             "source": "Sleeper depth chart",
@@ -571,7 +571,7 @@
             "origin": "measured_usage",
             "player_id": "3271",
             "player_name": "Tyler Higbee",
-            "published_at": "2026-10-17T10:41:14.137148+00:00",
+            "published_at": "2026-10-17T12:16:53.087624+00:00",
             "reliability": 0.9,
             "signal_id": "usage-trend-3271",
             "source": "nflverse play-by-play",
@@ -1098,6 +1098,41 @@
       "years_exp": 11
     },
     {
+      "age": 23,
+      "depth": 3,
+      "depth_chart_order": 3,
+      "depth_chart_position": "QB",
+      "fantasy_positions": [
+        "QB"
+      ],
+      "injury_body_part": null,
+      "injury_notes": null,
+      "injury_status": null,
+      "market_position_rank": 63,
+      "market_rank": 342,
+      "market_value": 1970,
+      "name": "Cole Payton",
+      "opportunity_score": 72.8,
+      "performance": null,
+      "player_id": "13335",
+      "position": "QB",
+      "reasons": [
+        "Dynasty Dealer market value 1,970 adds insulation/upside signal.",
+        "Currently on an NFL roster (PHI).",
+        "Depth-chart No. 3: plausible contingent upside.",
+        "Age supports long-term value growth.",
+        "Superflex format raises the value of any QB with a path to starts.",
+        "Sleeper market heat: 20,292 adds in the 24h trend window."
+      ],
+      "recent_715_drop": null,
+      "status": "Active",
+      "team": "PHI",
+      "tier": "Priority",
+      "trending_adds_24h": 20292,
+      "trending_drops_24h": 0,
+      "years_exp": 0
+    },
+    {
       "age": 32,
       "depth": 2,
       "depth_chart_order": 2,
@@ -1367,7 +1402,7 @@
         "Recently dropped by Butler2142; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 8.9,
+        "age_days": 9.0,
         "manager": "Butler2142"
       },
       "status": "Active",
@@ -2210,119 +2245,6 @@
       "years_exp": 18
     },
     {
-      "age": 23,
-      "base_opportunity_score": 72.8,
-      "context": {
-        "actionable_signal_count": 2,
-        "availability_probability": 0.85,
-        "confidence": "medium",
-        "net_direction": "negative",
-        "opportunity_score_adjustment": -6.2,
-        "player_id": "13335",
-        "research_mention_count": 1,
-        "signal_count": 3,
-        "signals": [
-          {
-            "corroboration_count": 1,
-            "direction": -1.0,
-            "event_date": null,
-            "impact": "availability",
-            "magnitude": 5.0,
-            "origin": "curated_report",
-            "player_id": "13335",
-            "player_name": "Cole Payton",
-            "published_at": "2026-10-16T16:02:35+00:00",
-            "reliability": 0.7,
-            "scored": true,
-            "signal_id": "3858e83497ff5b07fcde",
-            "source": "John Breech",
-            "source_type": "established_media",
-            "summary": "Eagles steal QB from Cowboys: Joe Milton expected to sign with Philadelphia after injury to Jalen Hurts",
-            "ttl_days": 7,
-            "type": "injury",
-            "url": "\n                                                https://www.cbssports.com/nfl/news/eagles-sign-qb-joe-milton-jalen-hurts-injury-cowboys/\n                    ",
-            "weighted_score": -0.6223
-          },
-          {
-            "corroboration_count": 1,
-            "direction": -1,
-            "event_date": null,
-            "impact": "workload",
-            "magnitude": 2,
-            "origin": "sleeper",
-            "player_id": "13335",
-            "player_name": "Cole Payton",
-            "published_at": "2026-10-17T10:41:14.137148+00:00",
-            "reliability": 0.65,
-            "signal_id": "sleeper-depth-13335",
-            "source": "Sleeper depth chart",
-            "source_type": "team",
-            "summary": "Current Sleeper depth-chart order is 3.",
-            "ttl_days": 3,
-            "type": "depth_chart",
-            "url": null,
-            "weighted_score": -0.26
-          },
-          {
-            "corroboration_count": 1,
-            "direction": 0.0,
-            "event_date": null,
-            "impact": "context",
-            "magnitude": 0.0,
-            "origin": "curated_report",
-            "player_id": "13335",
-            "player_name": "Cole Payton",
-            "published_at": "2026-10-14T15:12:12+00:00",
-            "reliability": 0.45,
-            "scored": false,
-            "signal_id": "bcc9eaa4a43fd4d85d7f",
-            "source": "6abc Philadelphia",
-            "source_type": "aggregator",
-            "summary": "Eagles select QB Cole Payton on Day 3 of NFL draft - 6abc Philadelphia",
-            "ttl_days": 7,
-            "type": "news",
-            "url": "https://news.google.com/rss/articles/CBMi3wlBVV95cUxPMkFTOGFPMWxBLXRtakZXaTh6VlFDTXBiUWkzQVA1OTVJQU1scm5vQ0hBRWkyQ3VaeFJPNDJMcmF0YU4wTUY2bW5zU3djX2s4cF9sV3pFSlEtNkpOWjhTbWpnUklLOTVGMl9ad3R3RENwZ0JQQnZQMkhaOFdCc0lfNkV0YlNqVzl0cFBUdm5IVzBYWWlsRkpKWExRRnBpQlBwcjg5Qm5FTzRDdHMyNDZvVm1UZEs2emY3R0F6dk55NllrOUR2X0MwVEllb1J1cjdVd1BOLVZwZW1HRmRMX1BEbDBOUnF2YlQwaFJJbU5paTJkVm1LeUlSaGo1Q3dmUnE0dkhfYktsQ2lmTTZYd0doMjdhRk5kNmpua1FBejN6aC1YT25PaklNWmNadXdBMmZjZkJNWDlHNXdJMGpkUEtHNS1aeWUxSVNyTGRmQXpUdmd4R2o3YWd3aW5wY1I2bzJ1NlFXTGdlSUZYV3pZOWFaT1h1Y0ZFV0w1ZmlFQk56dU1TOHVrVTQyY1FMQU9DcHYyelhPaEJWM20tc0NDREIzeEdpWnNrOFJUclJyRzdPZ09BYWpDRG5QUlQ1TjRpQzNwNWszc01FczczVHlKSHJYUHhERGg5RkEyeEVvSDBTQmNSUGJqRG53VjlBMVlteU1LVDFHUEx3VU5vclBRNjZUSFpNRG44YlZhQVBMNmJDUVpWdEhnSHZvUHQ2Q3BJV05YY1VDVUQ4aHltNExTLXMxaFpRSGppMFNyUUhWaGxBR3l2VkEwY2NrVzQ1WWplQzUzQzNCZTVXdkRxU0JxVzhrNEtoSXZadlJpdjdfbmF2VURVN3dhYUQ0NFN0M05kUGdqaU94NWVaeGFrMHRIS1lWMTFBU2hRQzBMMUwwRDF6UGVfd3BDUTJIajhXaE9ySzRpSE4zOGs1WkV3WnRnUVpPd2tydl9CQWszZnFWLS1FQ2p4b0dRZmQwX2M0dXRfaFNnY1N1VUJEV3Q2eUxkT0lQUXBHMDRxdnB3NUQ5cXk5a1ZEcDdIbUxQVE5VTmw2cUN3aTFWRkhaR2pYZkx0NzNkVFhlNl9XaE1xVGpBYW44UUh5M3FnZnVnWW9nTmZ4QzlRSWZ0VnluTWNSUTFBSFlQTnlsd2xla3N6SnVjYzZIdW9YdmhXbHg4Y3BzM1RTZy12RFpXajhkZjFyQTRaVGpGWHRVVWdKeVlhYzNLUGlvSXQ3RU1mdWpnV0Z1SHVDNWs3UXVMUVFLTEtwUEJLbF9zdlBKTWs1alNfMXRPS0xhdUJUYkx0MF9fZTNDNjRDZUpsV1VWNzVkOS1JVXM4dERjVjNzZ3l6VzVxM2NDTzJIWTg4RUMxbjVIdTB3UlJrWkh2WG9ZODFuajh1UjhlS004eGxKYUhUV1hWOERjWXgxeWk3ZzVoVWJqZlhxa3hYS1poYzhlM3QwNWstaHkxaXZPcEVvUFRzN2NWVWNrb0NpOWNheDZRX0Q2Z0ZBZy16d18zZU1fTnNXNDdERU9jWGl6MEJmSVprdC1fdFQtaE5pc091TWdrVEZHLVc1Ujktd0FrNUZ3N2pRTVpSMml5Ykc2aE1mcTc1aEJzYUl3LWxJZ0lDRnM2Y0NxR2YtdG5jbkxsWTB2QWRlX3E0X1NsdjhfcmNOOW1vVEJJTV9PNFNrbw?oc=5",
-            "weighted_score": 0.0
-          }
-        ],
-        "weekly_multiplier": 0.828
-      },
-      "context_adjustment": -6.2,
-      "depth": 3,
-      "depth_chart_order": 3,
-      "depth_chart_position": "QB",
-      "fantasy_positions": [
-        "QB"
-      ],
-      "injury_body_part": null,
-      "injury_notes": null,
-      "injury_status": null,
-      "market_position_rank": 63,
-      "market_rank": 342,
-      "market_value": 1970,
-      "name": "Cole Payton",
-      "opportunity_score": 66.6,
-      "performance": null,
-      "player_id": "13335",
-      "position": "QB",
-      "reasons": [
-        "Current context adjusts the opportunity score -6.2.",
-        "Dynasty Dealer market value 1,970 adds insulation/upside signal.",
-        "Currently on an NFL roster (PHI).",
-        "Depth-chart No. 3: plausible contingent upside.",
-        "Age supports long-term value growth.",
-        "Superflex format raises the value of any QB with a path to starts.",
-        "Sleeper market heat: 20,292 adds in the 24h trend window."
-      ],
-      "recent_715_drop": null,
-      "status": "Active",
-      "team": "PHI",
-      "tier": "Strong stash",
-      "trending_adds_24h": 20292,
-      "trending_drops_24h": 0,
-      "years_exp": 0
-    },
-    {
       "age": 31,
       "depth": 2,
       "depth_chart_order": 2,
@@ -2676,7 +2598,7 @@
         "Recently dropped by Waldo23; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 10.9,
+        "age_days": 11.0,
         "manager": "Waldo23"
       },
       "status": "Active",
@@ -3372,7 +3294,7 @@
         "Recently dropped by Butler2142; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 1.3,
+        "age_days": 1.4,
         "manager": "Butler2142"
       },
       "status": "Active",
@@ -4502,7 +4424,7 @@
         "Recently dropped by NolanFarts; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 11.3,
+        "age_days": 11.4,
         "manager": "NolanFarts"
       },
       "status": "Active",
@@ -5656,7 +5578,7 @@
             "origin": "measured_usage",
             "player_id": "5857",
             "player_name": "Noah Fant",
-            "published_at": "2026-10-17T10:41:14.137148+00:00",
+            "published_at": "2026-10-17T12:16:53.087624+00:00",
             "reliability": 0.9,
             "signal_id": "usage-trend-5857",
             "source": "nflverse play-by-play",
@@ -5676,7 +5598,7 @@
             "origin": "sleeper",
             "player_id": "5857",
             "player_name": "Noah Fant",
-            "published_at": "2026-10-17T10:41:14.137148+00:00",
+            "published_at": "2026-10-17T12:16:53.087624+00:00",
             "reliability": 0.65,
             "signal_id": "sleeper-depth-5857",
             "source": "Sleeper depth chart",
