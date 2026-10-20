@@ -549,7 +549,7 @@
     "total_market_value": 110616,
     "weeks": 6
   },
-  "generated_at": "2026-10-20T05:02:45.943492+00:00",
+  "generated_at": "2026-10-20T11:33:19.129323+00:00",
   "lineup": [
     {
       "player": {
@@ -892,11 +892,6 @@
         "label": "thin",
         "position": "WR",
         "strength": 2.17
-      },
-      {
-        "label": "below avg",
-        "position": "TE",
-        "strength": 0.75
       }
     ],
     "pick_summary": {
@@ -947,12 +942,12 @@
       },
       "TE": {
         "count": 3,
-        "delta_vs_average": -0.75,
+        "delta_vs_average": -0.67,
         "label": "below avg",
-        "league_average": 3.75,
+        "league_average": 3.67,
         "market_score": 53.5,
         "market_value": 14222,
-        "need_strength": 0.75,
+        "need_strength": 0.67,
         "quality_label": "market-balanced",
         "starters": 1,
         "surplus_strength": 0.0,
@@ -1161,7 +1156,7 @@
     "average_roster_age": 26.9,
     "early_picks": 6,
     "first_round_picks": 2,
-    "franchise_score": 64.3,
+    "franchise_score": 64.2,
     "manager": "abewav",
     "metrics": {
       "draft_capital": 23.8,
@@ -1170,7 +1165,7 @@
       "performance_prior": 77.5,
       "roster_balance": 100.0,
       "stability": 56.1,
-      "youth": 18.8
+      "youth": 17.6
     },
     "model_mean": 128.29,
     "model_sd": 26.11,
@@ -1191,7 +1186,87 @@
     "window": "Retool Needed",
     "young_player_share": 37.0
   },
-  "recent_changes": [],
+  "recent_changes": [
+    {
+      "detected_at": "2026-10-20T11:33:17.523711+00:00",
+      "manager": "SORY9",
+      "player": {
+        "age": 35,
+        "depth_chart_order": null,
+        "depth_chart_position": null,
+        "fantasy_positions": [
+          "TE"
+        ],
+        "injury_body_part": null,
+        "injury_notes": null,
+        "injury_status": null,
+        "name": "Zach Ertz",
+        "player_id": "1339",
+        "position": "TE",
+        "status": "Active",
+        "team": "PHI",
+        "years_exp": 13
+      },
+      "roster_id": 7,
+      "type": "roster_drop"
+    },
+    {
+      "detected_at": "2026-10-20T11:33:17.523711+00:00",
+      "manager": "SORY9",
+      "new_starters": [
+        "4046",
+        "12495",
+        "6813",
+        "2216",
+        "9997",
+        "5846",
+        "12518",
+        "4866",
+        "6770"
+      ],
+      "old_starters": [
+        "4046",
+        "4035",
+        "6813",
+        "2216",
+        "9997",
+        "5846",
+        "5012",
+        "8121",
+        "3257"
+      ],
+      "roster_id": 7,
+      "type": "starter_change"
+    },
+    {
+      "detected_at": "2026-10-20T11:33:17.523711+00:00",
+      "manager": "ryansorensen8",
+      "new_starters": [
+        "5849",
+        "4034",
+        "7588",
+        "8148",
+        "8137",
+        "10229",
+        "12517",
+        "11576",
+        "4017"
+      ],
+      "old_starters": [
+        "4984",
+        "11576",
+        "7588",
+        "11635",
+        "8137",
+        "2449",
+        "12517",
+        "4034",
+        "4017"
+      ],
+      "roster_id": 9,
+      "type": "starter_change"
+    }
+  ],
   "record": {
     "fpts": 776,
     "fpts_decimal": 60,
@@ -1385,11 +1460,6 @@
           "label": "thin",
           "position": "RB",
           "strength": 1.25
-        },
-        {
-          "label": "below avg",
-          "position": "TE",
-          "strength": 0.75
         }
       ],
       "their_surpluses": [
@@ -1444,11 +1514,6 @@
         {
           "label": "below avg",
           "position": "QB",
-          "strength": 0.75
-        },
-        {
-          "label": "below avg",
-          "position": "TE",
           "strength": 0.75
         }
       ],
@@ -1506,11 +1571,6 @@
           "label": "thin",
           "position": "QB",
           "strength": 1.75
-        },
-        {
-          "label": "below avg",
-          "position": "TE",
-          "strength": 0.75
         }
       ],
       "their_surpluses": [
@@ -1523,66 +1583,6 @@
           "label": "above avg",
           "position": "WR",
           "strength": 0.83
-        }
-      ]
-    },
-    {
-      "count_fit_score": 1.9,
-      "fit_score": 1.3,
-      "manager": "NolanFarts",
-      "market": {
-        "position_scores": {
-          "QB": 34.1,
-          "RB": 76.6,
-          "TE": 100.0,
-          "WR": 72.8
-        },
-        "their_market_rank": 3,
-        "their_starter_value": 67698,
-        "their_total_value": 116301
-      },
-      "market_fit_score": 0.0,
-      "pick_summary": {
-        "by_round": {
-          "1": 0,
-          "2": 1,
-          "3": 0,
-          "4": 4,
-          "5": 3
-        },
-        "by_year": {
-          "2026": 2,
-          "2027": 2,
-          "2028": 1,
-          "2029": 3
-        },
-        "early_picks": 1,
-        "firsts": 0,
-        "seconds": 1,
-        "total": 8
-      },
-      "reasons": [
-        "They are deep at TE, where you are comparatively thin."
-      ],
-      "roster_id": 2,
-      "team_name": "Puka Nachewa",
-      "their_needs": [
-        {
-          "label": "thin",
-          "position": "WR",
-          "strength": 2.17
-        }
-      ],
-      "their_surpluses": [
-        {
-          "label": "deep",
-          "position": "TE",
-          "strength": 1.25
-        },
-        {
-          "label": "above avg",
-          "position": "RB",
-          "strength": 0.75
         }
       ]
     },
@@ -1766,17 +1766,77 @@
     {
       "count_fit_score": 0.0,
       "fit_score": 0.0,
+      "manager": "NolanFarts",
+      "market": {
+        "position_scores": {
+          "QB": 34.1,
+          "RB": 76.6,
+          "TE": 100.0,
+          "WR": 72.8
+        },
+        "their_market_rank": 3,
+        "their_starter_value": 67698,
+        "their_total_value": 116301
+      },
+      "market_fit_score": 0.0,
+      "pick_summary": {
+        "by_round": {
+          "1": 0,
+          "2": 1,
+          "3": 0,
+          "4": 4,
+          "5": 3
+        },
+        "by_year": {
+          "2026": 2,
+          "2027": 2,
+          "2028": 1,
+          "2029": 3
+        },
+        "early_picks": 1,
+        "firsts": 0,
+        "seconds": 1,
+        "total": 8
+      },
+      "reasons": [
+        "No obvious roster-construction mismatch; a deal would be driven more by player preference than team need."
+      ],
+      "roster_id": 2,
+      "team_name": "Puka Nachewa",
+      "their_needs": [
+        {
+          "label": "thin",
+          "position": "WR",
+          "strength": 2.17
+        }
+      ],
+      "their_surpluses": [
+        {
+          "label": "deep",
+          "position": "TE",
+          "strength": 1.33
+        },
+        {
+          "label": "above avg",
+          "position": "RB",
+          "strength": 0.75
+        }
+      ]
+    },
+    {
+      "count_fit_score": 0.0,
+      "fit_score": 0.0,
       "manager": "SORY9",
       "market": {
         "position_scores": {
           "QB": 66.8,
           "RB": 73.3,
-          "TE": 41.1,
+          "TE": 40.4,
           "WR": 51.4
         },
         "their_market_rank": 5,
         "their_starter_value": 57366,
-        "their_total_value": 108826
+        "their_total_value": 108761
       },
       "market_fit_score": 0.0,
       "pick_summary": {

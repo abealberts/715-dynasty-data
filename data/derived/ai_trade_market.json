@@ -297,7 +297,7 @@
       ],
       "starter_market_value": 57366,
       "team_name": "TEAM MIKE ALSTOTT",
-      "total_market_value": 108826,
+      "total_market_value": 108761,
       "weeks": 6
     },
     {
@@ -2441,7 +2441,7 @@
       }
     }
   ],
-  "generated_at": "2026-10-20T05:02:45.943492+00:00",
+  "generated_at": "2026-10-20T11:33:19.129323+00:00",
   "manager_tendencies": {
     "managers": [
       {
@@ -2634,7 +2634,7 @@
         "failed_waiver_attempts": 9,
         "firsts_acquired": 2,
         "firsts_sent": 5,
-        "free_agent_moves": 10,
+        "free_agent_moves": 11,
         "manager": "SORY9",
         "net_firsts": -3,
         "owner_id": "846844677612212224",
@@ -2642,10 +2642,10 @@
         "picks_sent": 26,
         "players_acquired_trade": 17,
         "players_added": 14,
-        "players_dropped": 23,
+        "players_dropped": 24,
         "players_sent_trade": 9,
         "primary_tendency": "Pick Spender",
-        "roster_moves": 24,
+        "roster_moves": 25,
         "seasons": [
           "2025",
           "2026"
@@ -3196,11 +3196,6 @@
           "label": "thin",
           "position": "RB",
           "strength": 1.25
-        },
-        {
-          "label": "below avg",
-          "position": "TE",
-          "strength": 0.75
         }
       ],
       "their_surpluses": [
@@ -3255,11 +3250,6 @@
         {
           "label": "below avg",
           "position": "QB",
-          "strength": 0.75
-        },
-        {
-          "label": "below avg",
-          "position": "TE",
           "strength": 0.75
         }
       ],
@@ -3317,11 +3307,6 @@
           "label": "thin",
           "position": "QB",
           "strength": 1.75
-        },
-        {
-          "label": "below avg",
-          "position": "TE",
-          "strength": 0.75
         }
       ],
       "their_surpluses": [
@@ -3334,66 +3319,6 @@
           "label": "above avg",
           "position": "WR",
           "strength": 0.83
-        }
-      ]
-    },
-    {
-      "count_fit_score": 1.9,
-      "fit_score": 1.3,
-      "manager": "NolanFarts",
-      "market": {
-        "position_scores": {
-          "QB": 34.1,
-          "RB": 76.6,
-          "TE": 100.0,
-          "WR": 72.8
-        },
-        "their_market_rank": 3,
-        "their_starter_value": 67698,
-        "their_total_value": 116301
-      },
-      "market_fit_score": 0.0,
-      "pick_summary": {
-        "by_round": {
-          "1": 0,
-          "2": 1,
-          "3": 0,
-          "4": 4,
-          "5": 3
-        },
-        "by_year": {
-          "2026": 2,
-          "2027": 2,
-          "2028": 1,
-          "2029": 3
-        },
-        "early_picks": 1,
-        "firsts": 0,
-        "seconds": 1,
-        "total": 8
-      },
-      "reasons": [
-        "They are deep at TE, where you are comparatively thin."
-      ],
-      "roster_id": 2,
-      "team_name": "Puka Nachewa",
-      "their_needs": [
-        {
-          "label": "thin",
-          "position": "WR",
-          "strength": 2.17
-        }
-      ],
-      "their_surpluses": [
-        {
-          "label": "deep",
-          "position": "TE",
-          "strength": 1.25
-        },
-        {
-          "label": "above avg",
-          "position": "RB",
-          "strength": 0.75
         }
       ]
     },
@@ -3577,17 +3502,77 @@
     {
       "count_fit_score": 0.0,
       "fit_score": 0.0,
+      "manager": "NolanFarts",
+      "market": {
+        "position_scores": {
+          "QB": 34.1,
+          "RB": 76.6,
+          "TE": 100.0,
+          "WR": 72.8
+        },
+        "their_market_rank": 3,
+        "their_starter_value": 67698,
+        "their_total_value": 116301
+      },
+      "market_fit_score": 0.0,
+      "pick_summary": {
+        "by_round": {
+          "1": 0,
+          "2": 1,
+          "3": 0,
+          "4": 4,
+          "5": 3
+        },
+        "by_year": {
+          "2026": 2,
+          "2027": 2,
+          "2028": 1,
+          "2029": 3
+        },
+        "early_picks": 1,
+        "firsts": 0,
+        "seconds": 1,
+        "total": 8
+      },
+      "reasons": [
+        "No obvious roster-construction mismatch; a deal would be driven more by player preference than team need."
+      ],
+      "roster_id": 2,
+      "team_name": "Puka Nachewa",
+      "their_needs": [
+        {
+          "label": "thin",
+          "position": "WR",
+          "strength": 2.17
+        }
+      ],
+      "their_surpluses": [
+        {
+          "label": "deep",
+          "position": "TE",
+          "strength": 1.33
+        },
+        {
+          "label": "above avg",
+          "position": "RB",
+          "strength": 0.75
+        }
+      ]
+    },
+    {
+      "count_fit_score": 0.0,
+      "fit_score": 0.0,
       "manager": "SORY9",
       "market": {
         "position_scores": {
           "QB": 66.8,
           "RB": 73.3,
-          "TE": 41.1,
+          "TE": 40.4,
           "WR": 51.4
         },
         "their_market_rank": 5,
         "their_starter_value": 57366,
-        "their_total_value": 108826
+        "their_total_value": 108761
       },
       "market_fit_score": 0.0,
       "pick_summary": {
@@ -3674,7 +3659,7 @@
       "average_roster_age": 26.9,
       "early_picks": 1,
       "first_round_picks": 0,
-      "franchise_score": 68.3,
+      "franchise_score": 68.2,
       "manager": "NolanFarts",
       "metrics": {
         "draft_capital": 1.9,
@@ -3683,7 +3668,7 @@
         "performance_prior": 100.0,
         "roster_balance": 100.0,
         "stability": 36.3,
-        "youth": 13.0
+        "youth": 11.8
       },
       "model_mean": 160.41,
       "model_sd": 32.46,
@@ -3717,7 +3702,7 @@
         "performance_prior": 82.4,
         "roster_balance": 100.0,
         "stability": 100.0,
-        "youth": 53.6
+        "youth": 52.9
       },
       "model_mean": 135.31,
       "model_sd": 12.0,
@@ -3750,7 +3735,7 @@
         "performance_prior": 78.3,
         "roster_balance": 75.0,
         "stability": 34.8,
-        "youth": 81.3
+        "youth": 81.0
       },
       "model_mean": 129.45,
       "model_sd": 32.94,
@@ -3774,7 +3759,7 @@
       "average_roster_age": 25.1,
       "early_picks": 9,
       "first_round_picks": 5,
-      "franchise_score": 66.6,
+      "franchise_score": 66.5,
       "manager": "Ebro51",
       "metrics": {
         "draft_capital": 38.2,
@@ -3783,7 +3768,7 @@
         "performance_prior": 70.0,
         "roster_balance": 100.0,
         "stability": 46.9,
-        "youth": 71.0
+        "youth": 70.6
       },
       "model_mean": 117.63,
       "model_sd": 29.05,
@@ -3807,7 +3792,7 @@
       "average_roster_age": 27.2,
       "early_picks": 3,
       "first_round_picks": 0,
-      "franchise_score": 64.9,
+      "franchise_score": 64.8,
       "manager": "Butler2142",
       "metrics": {
         "draft_capital": 12.6,
@@ -3816,7 +3801,7 @@
         "performance_prior": 91.9,
         "roster_balance": 75.0,
         "stability": 28.5,
-        "youth": 18.8
+        "youth": 17.6
       },
       "model_mean": 148.82,
       "model_sd": 34.95,
@@ -3841,7 +3826,7 @@
       "average_roster_age": 26.8,
       "early_picks": 6,
       "first_round_picks": 3,
-      "franchise_score": 64.7,
+      "franchise_score": 64.6,
       "manager": "Waldo23",
       "metrics": {
         "draft_capital": 22.7,
@@ -3850,7 +3835,7 @@
         "performance_prior": 87.5,
         "roster_balance": 100.0,
         "stability": 0.0,
-        "youth": 18.8
+        "youth": 17.6
       },
       "model_mean": 142.62,
       "model_sd": 44.11,
@@ -3875,7 +3860,7 @@
       "average_roster_age": 26.9,
       "early_picks": 6,
       "first_round_picks": 2,
-      "franchise_score": 64.3,
+      "franchise_score": 64.2,
       "manager": "abewav",
       "metrics": {
         "draft_capital": 23.8,
@@ -3884,7 +3869,7 @@
         "performance_prior": 77.5,
         "roster_balance": 100.0,
         "stability": 56.1,
-        "youth": 18.8
+        "youth": 17.6
       },
       "model_mean": 128.29,
       "model_sd": 26.11,
@@ -3906,7 +3891,7 @@
       "young_player_share": 37.0
     },
     {
-      "average_roster_age": 27.8,
+      "average_roster_age": 27.5,
       "early_picks": 3,
       "first_round_picks": 1,
       "franchise_score": 62.1,
@@ -3937,7 +3922,7 @@
       "team_name": "TEAM MIKE ALSTOTT",
       "title_odds": 2.1,
       "window": "Middle",
-      "young_player_share": 25.0
+      "young_player_share": 25.9
     },
     {
       "average_roster_age": 24.3,
@@ -3952,7 +3937,7 @@
         "performance_prior": 68.3,
         "roster_balance": 100.0,
         "stability": 54.7,
-        "youth": 75.3
+        "youth": 74.9
       },
       "model_mean": 115.19,
       "model_sd": 26.54,
@@ -3985,7 +3970,7 @@
         "performance_prior": 50.0,
         "roster_balance": 100.0,
         "stability": 100.0,
-        "youth": 59.4
+        "youth": 58.8
       },
       "model_mean": 17.86,
       "model_sd": 12.0,
@@ -4043,7 +4028,7 @@
       "average_roster_age": 24.8,
       "early_picks": 16,
       "first_round_picks": 11,
-      "franchise_score": 45.3,
+      "franchise_score": 45.2,
       "manager": "nathanhoglund",
       "metrics": {
         "draft_capital": 74.3,
@@ -4052,7 +4037,7 @@
         "performance_prior": 8.7,
         "roster_balance": 100.0,
         "stability": 21.6,
-        "youth": 65.2
+        "youth": 64.7
       },
       "model_mean": 30.26,
       "model_sd": 37.17,
@@ -4075,6 +4060,42 @@
     }
   ],
   "recent_transactions": [
+    {
+      "adds": [],
+      "created": 1792490033980,
+      "draft_picks": [],
+      "drops": [
+        {
+          "manager": "SORY9",
+          "player": {
+            "age": 35,
+            "depth_chart_order": null,
+            "depth_chart_position": null,
+            "fantasy_positions": [
+              "TE"
+            ],
+            "injury_body_part": null,
+            "injury_notes": null,
+            "injury_status": null,
+            "name": "Zach Ertz",
+            "player_id": "1339",
+            "position": "TE",
+            "status": "Active",
+            "team": "PHI",
+            "years_exp": 13
+          },
+          "roster_id": 7
+        }
+      ],
+      "roster_ids": [
+        7
+      ],
+      "status": "complete",
+      "transaction_id": "1418209629267079168",
+      "type": "free_agent",
+      "waiver_budget": null,
+      "week": 6
+    },
     {
       "adds": [
         {
@@ -6100,64 +6121,6 @@
       "type": "waiver",
       "waiver_budget": 0,
       "week": 4
-    },
-    {
-      "adds": [
-        {
-          "manager": "Waldo23",
-          "player": {
-            "age": 33,
-            "depth_chart_order": 6,
-            "depth_chart_position": "RWR",
-            "fantasy_positions": [
-              "WR"
-            ],
-            "injury_body_part": "Calf",
-            "injury_notes": null,
-            "injury_status": "IR",
-            "name": "Mack Hollins",
-            "player_id": "4177",
-            "position": "WR",
-            "status": "Inactive",
-            "team": "NE",
-            "years_exp": 9
-          },
-          "roster_id": 11
-        }
-      ],
-      "created": 1790978105920,
-      "draft_picks": [],
-      "drops": [
-        {
-          "manager": "Waldo23",
-          "player": {
-            "age": 29,
-            "depth_chart_order": 4,
-            "depth_chart_position": "RB",
-            "fantasy_positions": [
-              "RB"
-            ],
-            "injury_body_part": null,
-            "injury_notes": null,
-            "injury_status": null,
-            "name": "Devin Singletary",
-            "player_id": "6130",
-            "position": "RB",
-            "status": "Active",
-            "team": "NYG",
-            "years_exp": 7
-          },
-          "roster_id": 11
-        }
-      ],
-      "roster_ids": [
-        11
-      ],
-      "status": "complete",
-      "transaction_id": "1411868143357374464",
-      "type": "waiver",
-      "waiver_budget": 0,
-      "week": 4
     }
   ],
   "teams": [
@@ -6246,25 +6209,25 @@
       "total_market_value": 110616
     },
     {
-      "depth_market_value": 51460,
+      "depth_market_value": 51395,
       "manager": "SORY9",
       "market_rank": 5,
       "optimal_starter_market_value": 57366,
       "position_scores": {
         "QB": 66.8,
         "RB": 73.3,
-        "TE": 41.1,
+        "TE": 40.4,
         "WR": 51.4
       },
       "position_values": {
         "QB": 24650,
         "RB": 32162,
-        "TE": 12935,
+        "TE": 12870,
         "WR": 39079
       },
       "roster_id": 7,
       "team_name": "TEAM MIKE ALSTOTT",
-      "total_market_value": 108826
+      "total_market_value": 108761
     },
     {
       "depth_market_value": 52504,
