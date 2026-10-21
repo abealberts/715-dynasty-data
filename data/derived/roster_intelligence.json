@@ -18,12 +18,12 @@
       "confidence": "medium",
       "cost_or_cut": "Bench Jaylen Waddle; no roster transaction required.",
       "priority": 8,
-      "projected_advantage": 11.54,
-      "rationale": "Jayden Daniels carries the stronger evidence projection (20.74 vs 9.2). The evidence gap is large enough to merit a lineup change after final availability checks.",
+      "projected_advantage": 12.92,
+      "rationale": "Jayden Daniels carries the stronger evidence projection (20.74 vs 7.82). The evidence gap is large enough to merit a lineup change after final availability checks.",
       "recommendation": "Treat this as provisional until current matchup, injury and inactive information is verified.",
       "risk": "The report does not yet contain verified current matchup or beat-report context.",
       "title": "Consider Jayden Daniels over Jaylen Waddle",
-      "upside": "The evidence model adds approximately 11.5 points if its role assumptions hold.",
+      "upside": "The evidence model adds approximately 12.9 points if its role assumptions hold.",
       "urgency": "Before lineup lock"
     },
     {
@@ -134,16 +134,16 @@
     }
   ],
   "coverage": {
-    "actionable_context_reports": 8,
+    "actionable_context_reports": 9,
     "coach_beat_reporter_players": 0,
     "context_signal_players": 27,
-    "curated_context_reports": 252,
+    "curated_context_reports": 268,
     "current_season_performance_samples": 25,
     "market_values": 27,
     "news_players": 27,
     "objective_context_signals": 39,
     "performance_samples": 26,
-    "research_mentions": 244,
+    "research_mentions": 259,
     "research_status": "available",
     "roster_players": 27
   },
@@ -161,20 +161,20 @@
       "2025",
       "2026"
     ],
-    "player_context_generated_at": "2026-10-21T21:41:17.869524+00:00",
-    "research_generated_at": "2026-10-21T21:41:17.869524+00:00",
-    "sleeper_data_checked_at": "2026-10-21T21:41:18.115669+00:00"
+    "player_context_generated_at": "2026-10-21T23:28:31.366879+00:00",
+    "research_generated_at": "2026-10-21T23:28:31.366879+00:00",
+    "sleeper_data_checked_at": "2026-10-21T23:28:31.591615+00:00"
   },
-  "generated_at": "2026-10-21T21:41:18.409596+00:00",
+  "generated_at": "2026-10-21T23:28:31.957421+00:00",
   "lineup": {
-    "actionable_projected_advantage": 20.09,
+    "actionable_projected_advantage": 21.47,
     "changes": [
       {
         "current_decision_evidence": true,
         "decision": "consider",
         "decision_reason": "The evidence gap is large enough to merit a lineup change after final availability checks.",
-        "explanation": "Jayden Daniels carries the stronger evidence projection (20.74 vs 9.2).",
-        "projected_advantage": 11.54,
+        "explanation": "Jayden Daniels carries the stronger evidence projection (20.74 vs 7.82).",
+        "projected_advantage": 12.92,
         "sit": "Jaylen Waddle",
         "sit_confidence": "high",
         "start": "Jayden Daniels",
@@ -305,10 +305,10 @@
         "name": "Jaylen Waddle",
         "player_id": "7526",
         "position": "WR",
-        "projected_ceiling": 14.9,
-        "projected_floor": 4.9,
-        "projected_points": 9.2,
-        "projection_basis": "2026 715 PPG blended with recent form; current context multiplier 1.026 applied",
+        "projected_ceiling": 12.6,
+        "projected_floor": 4.2,
+        "projected_points": 7.82,
+        "projection_basis": "2026 715 PPG blended with recent form; current context multiplier 0.872 applied",
         "slot": "FLEX",
         "slot_label": "FLEX",
         "team": "DEN"
@@ -329,7 +329,7 @@
         "team": "MIA"
       }
     ],
-    "current_projected_points": 135.07,
+    "current_projected_points": 133.69,
     "decision_thresholds": {
       "availability_guardrail": true,
       "close_call_below": 3,
@@ -475,7 +475,7 @@
       }
     ],
     "optimized_projected_points": 155.16,
-    "projected_advantage": 20.09,
+    "projected_advantage": 21.47,
     "status": "provisional"
   },
   "movement": [
@@ -814,8 +814,8 @@
                 "availability_probability": 0.85,
                 "confidence": "medium",
                 "net_direction": "negative",
-                "research_mention_count": 19,
-                "signal_count": 21,
+                "research_mention_count": 18,
+                "signal_count": 20,
                 "signals": [
                   {
                     "corroboration_count": 1,
@@ -826,7 +826,7 @@
                     "origin": "sleeper",
                     "player_id": "11566",
                     "player_name": "Jayden Daniels",
-                    "published_at": "2026-10-21T21:41:17.869524+00:00",
+                    "published_at": "2026-10-21T23:28:31.366879+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-11566",
                     "source": "Sleeper depth chart",
@@ -856,7 +856,7 @@
                     "ttl_days": 7,
                     "type": "injury",
                     "url": "\n                                                https://www.cbssports.com/nfl/news/jayden-daniels-takes-blame-commanders-gaffe-vs-giants/\n                    ",
-                    "weighted_score": -0.0952
+                    "weighted_score": -0.0877
                   },
                   {
                     "corroboration_count": 1,
@@ -1066,27 +1066,6 @@
                     "ttl_days": 7,
                     "type": "news",
                     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOanlpTk9QZHo3VWc5ODFhSGYxbEJ3VFoxa0lsZnAtaFhvb3d3LWZTUnYzaGp4enQwdC1LcW5Idk96ZkRTMkc3WG1kNW95RFREMHhTZWtLbG1GU2pCdXdNdkZfeXpRcC1pZ0NZTDBvUnJOV3ZobVBabFVFcko1YlE2ZEpkRQ?oc=5",
-                    "weighted_score": 0.0
-                  },
-                  {
-                    "corroboration_count": 1,
-                    "direction": 0.0,
-                    "event_date": null,
-                    "impact": "context",
-                    "magnitude": 0.0,
-                    "origin": "curated_report",
-                    "player_id": "11566",
-                    "player_name": "Jayden Daniels",
-                    "published_at": "2026-10-14T23:27:27+00:00",
-                    "reliability": 0.45,
-                    "scored": false,
-                    "signal_id": "a54cd6457f60212cdf61",
-                    "source": "The New York Times",
-                    "source_type": "aggregator",
-                    "summary": "Micah Parsons says ‘Jayden Daniels probably cost my man Dan Quinn his job’ - The New York Times",
-                    "ttl_days": 7,
-                    "type": "news",
-                    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOQkc1N1E0RDgwSFl6WW1tdW9LVlBMakV3dVBocnBpYlhVbFhIekFWR09XMFpqd0F6MWNHQWpYdGtKdUM4UFJSS3NfZ2lxS1VfMUFxdDcyUzdQcWZoMWZ3RjVYb0tKTGRmVnRTeEJXQ0lUQWttUWZDTG5sTTVWX2VUN3RLLWhkQmE1OTlEMWx0WTUwX1FnY1FqOW9GdGlqaURxVl9zaUpBR2JzR3FTQU5PYQ?oc=5",
                     "weighted_score": 0.0
                   },
                   {
@@ -1319,7 +1298,7 @@
                   "source": "Jordan Dajani",
                   "text": "Jayden Daniels takes blame for Commanders' embarrassing gaffe vs. Giants: 'It was a failure'",
                   "url": "\n                                                https://www.cbssports.com/nfl/news/jayden-daniels-takes-blame-commanders-gaffe-vs-giants/\n                    ",
-                  "weighted_score": -0.0952
+                  "weighted_score": -0.0877
                 },
                 {
                   "event_date": null,
@@ -1409,15 +1388,6 @@
                   "source": "Yahoo Sports",
                   "text": "Jayden Daniels vs. 49ers Week 6: Four Expectations for Commanders QB - Yahoo Sports",
                   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOanlpTk9QZHo3VWc5ODFhSGYxbEJ3VFoxa0lsZnAtaFhvb3d3LWZTUnYzaGp4enQwdC1LcW5Idk96ZkRTMkc3WG1kNW95RFREMHhTZWtLbG1GU2pCdXdNdkZfeXpRcC1pZ0NZTDBvUnJOV3ZobVBabFVFcko1YlE2ZEpkRQ?oc=5",
-                  "weighted_score": 0.0
-                },
-                {
-                  "event_date": null,
-                  "published_at": "2026-10-14T23:27:27+00:00",
-                  "signal_type": "news",
-                  "source": "The New York Times",
-                  "text": "Micah Parsons says ‘Jayden Daniels probably cost my man Dan Quinn his job’ - The New York Times",
-                  "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOQkc1N1E0RDgwSFl6WW1tdW9LVlBMakV3dVBocnBpYlhVbFhIekFWR09XMFpqd0F6MWNHQWpYdGtKdUM4UFJSS3NfZ2lxS1VfMUFxdDcyUzdQcWZoMWZ3RjVYb0tKTGRmVnRTeEJXQ0lUQWttUWZDTG5sTTVWX2VUN3RLLWhkQmE1OTlEMWx0WTUwX1FnY1FqOW9GdGlqaURxVl9zaUpBR2JzR3FTQU5PYQ?oc=5",
                   "weighted_score": 0.0
                 },
                 {
@@ -1582,7 +1552,7 @@
                     "ttl_days": 4,
                     "type": "practice",
                     "url": "https://www.rotowire.com//football/player/baker-mayfield-12619",
-                    "weighted_score": 0.38
+                    "weighted_score": 0.3722
                   },
                   {
                     "corroboration_count": 1,
@@ -1593,7 +1563,7 @@
                     "origin": "sleeper",
                     "player_id": "4892",
                     "player_name": "Baker Mayfield",
-                    "published_at": "2026-10-21T21:41:17.869524+00:00",
+                    "published_at": "2026-10-21T23:28:31.366879+00:00",
                     "reliability": 0.82,
                     "signal_id": "sleeper-injury-4892",
                     "source": "Sleeper player status",
@@ -1613,7 +1583,7 @@
                     "origin": "sleeper",
                     "player_id": "4892",
                     "player_name": "Baker Mayfield",
-                    "published_at": "2026-10-21T21:41:17.869524+00:00",
+                    "published_at": "2026-10-21T23:28:31.366879+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-4892",
                     "source": "Sleeper depth chart",
@@ -1685,27 +1655,6 @@
                     "ttl_days": 7,
                     "type": "news",
                     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPY3BMeW9kdlp1c3Z0ZkJnbHNGcDR0MjJtM3JuUGZORXliNFVvZU0yTmU1MzlwajZuUTJxQnNmU0V4OEJ0UnMyWHBaSzFCZ3VvVW9IdENXc2d1eDVxUGxQVzNFMWN2LWNaTDFGRGo0VFVkajRmMUwwT2tWeHZNV3JnbklYZC10dHdHaWJVZWhiMjhfYmlrY2ZtSw?oc=5",
-                    "weighted_score": 0.0
-                  },
-                  {
-                    "corroboration_count": 1,
-                    "direction": 0.0,
-                    "event_date": null,
-                    "impact": "context",
-                    "magnitude": 0.0,
-                    "origin": "curated_report",
-                    "player_id": "4892",
-                    "player_name": "Baker Mayfield",
-                    "published_at": "2026-10-14T22:37:34+00:00",
-                    "reliability": 0.45,
-                    "scored": false,
-                    "signal_id": "42fd4aa1d7e23fa02037",
-                    "source": "Yahoo Sports",
-                    "source_type": "aggregator",
-                    "summary": "Buccaneers Give Update on Baker Mayfield’s Status vs. Steelers - Yahoo Sports",
-                    "ttl_days": 7,
-                    "type": "news",
-                    "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxORUlIZWVLNGdtSjZrYVR6cm9fdVZaNktTNDVNUXdlNjJMYjdZNHJYTmN5bGhmQXVKUUNmWGowSHJrQ0hNanRxOG9XSkw4QWtORVdXcEJIT0xWeklkUzFJRmVnSjJ4VUlDWnhXSWhTZGZiWVJxOUljcHNkUWtmMWpTMld4RzBKaFN1a2VnQg?oc=5",
                     "weighted_score": 0.0
                   },
                   {
@@ -1790,6 +1739,27 @@
                     "ttl_days": 7,
                     "type": "news",
                     "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPRGVrLTJWS0l3MnZVbjhveXlYM2hzUGpIa2ZEamF4SkI0M2NndjU4NUNoMHZ1YUhGT1RHYWVxSFhIZ1J3S3owV3JuTm5NLXk1R3lTT243TXNsREZwRnZGTUduTGdtdU83dWlUZzBwbFVseVdIc1UzRlphSUs1Q3J6RDRIVWMtM0Z5dHVOcl9zOUJ6WmZVTFVwLVlRWTBDRWp0TS1QMG9LNERfX2ExTTNrRFZqQ19JV3FlOVZWbXJ1bWU0clRkU3lOeXUwMzZtQ3dPdlpqZWpELWFhR0JpSVA5dk0zUzNMQQ?oc=5",
+                    "weighted_score": 0.0
+                  },
+                  {
+                    "corroboration_count": 1,
+                    "direction": 0.0,
+                    "event_date": null,
+                    "impact": "context",
+                    "magnitude": 0.0,
+                    "origin": "curated_report",
+                    "player_id": "4892",
+                    "player_name": "Baker Mayfield",
+                    "published_at": "2026-10-19T19:58:22+00:00",
+                    "reliability": 0.45,
+                    "scored": false,
+                    "signal_id": "96e7cdfa8359ae3f7d14",
+                    "source": "Sports Illustrated",
+                    "source_type": "aggregator",
+                    "summary": "Fantasy Football Waiver Wire Debate: JJ McCarthy Vs Baker Mayfield - Sports Illustrated",
+                    "ttl_days": 7,
+                    "type": "news",
+                    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQZ3hqR2ZlT2owME9DSVQxcnVCSUZKaHVWYUFVVDdLNkxCclkzcUxEdUdtZVByS2E5ZDM4SnctNl9JM1dFZjBhM1RTZlJJQ0tEZWFQM3NBcDF0VktsT1ljcWhtNzZBN21ha3ZDSTNMN3RBVm5fQUF2V0ozYlZ1YlBWbDNBLXJicDE2X3FxeFBrYzNfNVhEZ0x1THlOblhtTVlwSkM4UUVLbm9yTGR2Snc?oc=5",
                     "weighted_score": 0.0
                   },
                   {
@@ -2002,11 +1972,11 @@
                   "source": "RotoWire NFL Player News / Scott Smith of the Buccaneers' official site",
                   "text": "Baker Mayfield: Logs full practice Wednesday",
                   "url": "https://www.rotowire.com//football/player/baker-mayfield-12619",
-                  "weighted_score": 0.38
+                  "weighted_score": 0.3722
                 },
                 {
                   "event_date": null,
-                  "published_at": "2026-10-21T21:41:17.869524+00:00",
+                  "published_at": "2026-10-21T23:28:31.366879+00:00",
                   "signal_type": "injury",
                   "source": "Sleeper player status",
                   "text": "Sleeper lists Baker Mayfield as Questionable.",
@@ -2038,15 +2008,6 @@
                   "source": "Sports Illustrated",
                   "text": "Could Baker Mayfield Miss Another Buccaneers Game? - Sports Illustrated",
                   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPY3BMeW9kdlp1c3Z0ZkJnbHNGcDR0MjJtM3JuUGZORXliNFVvZU0yTmU1MzlwajZuUTJxQnNmU0V4OEJ0UnMyWHBaSzFCZ3VvVW9IdENXc2d1eDVxUGxQVzNFMWN2LWNaTDFGRGo0VFVkajRmMUwwT2tWeHZNV3JnbklYZC10dHdHaWJVZWhiMjhfYmlrY2ZtSw?oc=5",
-                  "weighted_score": 0.0
-                },
-                {
-                  "event_date": null,
-                  "published_at": "2026-10-14T22:37:34+00:00",
-                  "signal_type": "news",
-                  "source": "Yahoo Sports",
-                  "text": "Buccaneers Give Update on Baker Mayfield’s Status vs. Steelers - Yahoo Sports",
-                  "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxORUlIZWVLNGdtSjZrYVR6cm9fdVZaNktTNDVNUXdlNjJMYjdZNHJYTmN5bGhmQXVKUUNmWGowSHJrQ0hNanRxOG9XSkw4QWtORVdXcEJIT0xWeklkUzFJRmVnSjJ4VUlDWnhXSWhTZGZiWVJxOUljcHNkUWtmMWpTMld4RzBKaFN1a2VnQg?oc=5",
                   "weighted_score": 0.0
                 },
                 {
@@ -2083,6 +2044,15 @@
                   "source": "LancasterOnline",
                   "text": "Baker Mayfield might not be able to save the Buccaneers' season - LancasterOnline",
                   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPRGVrLTJWS0l3MnZVbjhveXlYM2hzUGpIa2ZEamF4SkI0M2NndjU4NUNoMHZ1YUhGT1RHYWVxSFhIZ1J3S3owV3JuTm5NLXk1R3lTT243TXNsREZwRnZGTUduTGdtdU83dWlUZzBwbFVseVdIc1UzRlphSUs1Q3J6RDRIVWMtM0Z5dHVOcl9zOUJ6WmZVTFVwLVlRWTBDRWp0TS1QMG9LNERfX2ExTTNrRFZqQ19JV3FlOVZWbXJ1bWU0clRkU3lOeXUwMzZtQ3dPdlpqZWpELWFhR0JpSVA5dk0zUzNMQQ?oc=5",
+                  "weighted_score": 0.0
+                },
+                {
+                  "event_date": null,
+                  "published_at": "2026-10-19T19:58:22+00:00",
+                  "signal_type": "news",
+                  "source": "Sports Illustrated",
+                  "text": "Fantasy Football Waiver Wire Debate: JJ McCarthy Vs Baker Mayfield - Sports Illustrated",
+                  "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQZ3hqR2ZlT2owME9DSVQxcnVCSUZKaHVWYUFVVDdLNkxCclkzcUxEdUdtZVByS2E5ZDM4SnctNl9JM1dFZjBhM1RTZlJJQ0tEZWFQM3NBcDF0VktsT1ljcWhtNzZBN21ha3ZDSTNMN3RBVm5fQUF2V0ozYlZ1YlBWbDNBLXJicDE2X3FxeFBrYzNfNVhEZ0x1THlOblhtTVlwSkM4UUVLbm9yTGR2Snc?oc=5",
                   "weighted_score": 0.0
                 },
                 {
@@ -2241,7 +2211,7 @@
                     "ttl_days": 7,
                     "type": "injury",
                     "url": "https://www.rotowire.com//football/player/malik-willis-15872",
-                    "weighted_score": -0.4428
+                    "weighted_score": -0.4353
                   },
                   {
                     "corroboration_count": 1,
@@ -2252,7 +2222,7 @@
                     "origin": "sleeper",
                     "player_id": "8161",
                     "player_name": "Malik Willis",
-                    "published_at": "2026-10-21T21:41:17.869524+00:00",
+                    "published_at": "2026-10-21T23:28:31.366879+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-8161",
                     "source": "Sleeper depth chart",
@@ -2272,7 +2242,7 @@
                     "origin": "measured_usage",
                     "player_id": "8161",
                     "player_name": "Malik Willis",
-                    "published_at": "2026-10-21T21:41:17.869524+00:00",
+                    "published_at": "2026-10-21T23:28:31.366879+00:00",
                     "reliability": 0.9,
                     "signal_id": "usage-trend-8161",
                     "source": "nflverse play-by-play",
@@ -2555,7 +2525,7 @@
                   "source": "RotoWire NFL Player News / David Furones of the South Florida Sun Sentinel",
                   "text": "Malik Willis: Ready to go after minor injury",
                   "url": "https://www.rotowire.com//football/player/malik-willis-15872",
-                  "weighted_score": -0.4428
+                  "weighted_score": -0.4353
                 },
                 {
                   "event_date": null,
@@ -2722,7 +2692,7 @@
                     "origin": "sleeper",
                     "player_id": "96",
                     "player_name": "Aaron Rodgers",
-                    "published_at": "2026-10-21T21:41:17.869524+00:00",
+                    "published_at": "2026-10-21T23:28:31.366879+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-96",
                     "source": "Sleeper depth chart",
@@ -3218,8 +3188,8 @@
                 "availability_probability": 1.0,
                 "confidence": "medium",
                 "net_direction": "negative",
-                "research_mention_count": 6,
-                "signal_count": 7,
+                "research_mention_count": 7,
+                "signal_count": 8,
                 "signals": [
                   {
                     "corroboration_count": 1,
@@ -3230,7 +3200,7 @@
                     "origin": "sleeper",
                     "player_id": "12524",
                     "player_name": "Shedeur Sanders",
-                    "published_at": "2026-10-21T21:41:17.869524+00:00",
+                    "published_at": "2026-10-21T23:28:31.366879+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-12524",
                     "source": "Sleeper depth chart",
@@ -3366,6 +3336,27 @@
                     "type": "news",
                     "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNZUt4RmpfeUNrbUxHTUJ3MENNRkNWZFhHSmI5VE9DQmxmZ2JiYTRIY3A2eWpUeF91OG05cDBnVjVmWkNsV2Y4eUROX0I5WWRpTkYyekhHQWJoNUNUOFJSVkZBMTZqNXN6WEpwUVo2dndVa19KTnBvWVlGT29SME94ZUVfc2VPdkhfUVpoWTV2VGY?oc=5",
                     "weighted_score": 0.0
+                  },
+                  {
+                    "corroboration_count": 1,
+                    "direction": 0.0,
+                    "event_date": null,
+                    "impact": "context",
+                    "magnitude": 0.0,
+                    "origin": "curated_report",
+                    "player_id": "12524",
+                    "player_name": "Shedeur Sanders",
+                    "published_at": "2026-10-17T18:00:10+00:00",
+                    "reliability": 0.45,
+                    "scored": false,
+                    "signal_id": "e6f6b3a17f2dff875923",
+                    "source": "Yahoo Sports",
+                    "source_type": "aggregator",
+                    "summary": "NFL insider would be 'surprised' if Browns made bold Shedeur Sanders trade decision - Yahoo Sports",
+                    "ttl_days": 7,
+                    "type": "news",
+                    "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOZ0ltV0p4YlJlbUlYZjllNjloRGltb3IwaHA2ekR0dFZ6REV4VllsX0FveU91XzRwa2FZWU1QWGg4ZS1ocWhSNGotNWYtYlM5R2d3c1ZINkZQNUVEY3NTYVVhbjd1OGhTUzg5a2lhd2xxQk1tTFRadW4xYmNmZzJPMlp1ZlBwTDN2OGc?oc=5",
+                    "weighted_score": 0.0
                   }
                 ],
                 "weekly_multiplier": 0.974
@@ -3475,6 +3466,15 @@
                   "text": "Browns Trade Situation With Shedeur Sanders Gets Update From NFL Insider - Yahoo Sports",
                   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNZUt4RmpfeUNrbUxHTUJ3MENNRkNWZFhHSmI5VE9DQmxmZ2JiYTRIY3A2eWpUeF91OG05cDBnVjVmWkNsV2Y4eUROX0I5WWRpTkYyekhHQWJoNUNUOFJSVkZBMTZqNXN6WEpwUVo2dndVa19KTnBvWVlGT29SME94ZUVfc2VPdkhfUVpoWTV2VGY?oc=5",
                   "weighted_score": 0.0
+                },
+                {
+                  "event_date": null,
+                  "published_at": "2026-10-17T18:00:10+00:00",
+                  "signal_type": "news",
+                  "source": "Yahoo Sports",
+                  "text": "NFL insider would be 'surprised' if Browns made bold Shedeur Sanders trade decision - Yahoo Sports",
+                  "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOZ0ltV0p4YlJlbUlYZjllNjloRGltb3IwaHA2ekR0dFZ6REV4VllsX0FveU91XzRwa2FZWU1QWGg4ZS1ocWhSNGotNWYtYlM5R2d3c1ZINkZQNUVEY3NTYVVhbjd1OGhTUzg5a2lhd2xxQk1tTFRadW4xYmNmZzJPMlp1ZlBwTDN2OGc?oc=5",
+                  "weighted_score": 0.0
                 }
               ],
               "notable_takeaways": [
@@ -3552,7 +3552,7 @@
                     "origin": "sleeper",
                     "player_id": "13306",
                     "player_name": "Taylen Green",
-                    "published_at": "2026-10-21T21:41:17.869524+00:00",
+                    "published_at": "2026-10-21T23:28:31.366879+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-13306",
                     "source": "Sleeper depth chart",
@@ -3856,7 +3856,7 @@
                     "origin": "sleeper",
                     "player_id": "8138",
                     "player_name": "James Cook",
-                    "published_at": "2026-10-21T21:41:17.869524+00:00",
+                    "published_at": "2026-10-21T23:28:31.366879+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-8138",
                     "source": "Sleeper depth chart",
@@ -4170,8 +4170,8 @@
                 "availability_probability": 1.0,
                 "confidence": "high",
                 "net_direction": "positive",
-                "research_mention_count": 7,
-                "signal_count": 9,
+                "research_mention_count": 6,
+                "signal_count": 8,
                 "signals": [
                   {
                     "corroboration_count": 1,
@@ -4182,7 +4182,7 @@
                     "origin": "sleeper",
                     "player_id": "8228",
                     "player_name": "Jaylen Warren",
-                    "published_at": "2026-10-21T21:41:17.869524+00:00",
+                    "published_at": "2026-10-21T23:28:31.366879+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-8228",
                     "source": "Sleeper depth chart",
@@ -4202,7 +4202,7 @@
                     "origin": "measured_usage",
                     "player_id": "8228",
                     "player_name": "Jaylen Warren",
-                    "published_at": "2026-10-21T21:41:17.869524+00:00",
+                    "published_at": "2026-10-21T23:28:31.366879+00:00",
                     "reliability": 0.9,
                     "signal_id": "usage-trend-8228",
                     "source": "nflverse play-by-play",
@@ -4295,27 +4295,6 @@
                     "ttl_days": 7,
                     "type": "news",
                     "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOa25qcDNwVlI5RGk5T0xZQlBkTzdZRkF2YklQM3F0bjJEeUtGbE1ZZzZwYmZDT1BtX2xnTkRJT1JWMEFSWVlGVm1ibWlPVy00aFdnSTZHQWFrSXNUVzItTGphTHNud2VzUUp3VTdNRWJxaGpTbTRhTTE0X19Nb2IyNmcxTTRtaWc?oc=5",
-                    "weighted_score": 0.0
-                  },
-                  {
-                    "corroboration_count": 1,
-                    "direction": 0.0,
-                    "event_date": null,
-                    "impact": "context",
-                    "magnitude": 0.0,
-                    "origin": "curated_report",
-                    "player_id": "8228",
-                    "player_name": "Jaylen Warren",
-                    "published_at": "2026-10-14T22:08:12+00:00",
-                    "reliability": 0.45,
-                    "scored": false,
-                    "signal_id": "97711aa0ce6ffbfe7b3c",
-                    "source": "Yahoo Sports",
-                    "source_type": "aggregator",
-                    "summary": "Jaylen Warren Pulls Off Rare NFL Feat No Other Player Has Matched This Season - Yahoo Sports",
-                    "ttl_days": 7,
-                    "type": "news",
-                    "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPbkdvdTV2VlVhUnQwVGtqeUhrbVlSQnFtaU5PcVk2VkQxVHBXZ1JBTmwyTG1HaHpoRmxsVk5TMnJoMWlOWTVjMVhhanpLNUtDaDV3YVhSWDNITzZ2d2Q0T1ZScHBsdTY2QTVGdlNoRnp1UGxkdHI5Q3RRVk1KQlF5ZXJTYw?oc=5",
                     "weighted_score": 0.0
                   },
                   {
@@ -4453,15 +4432,6 @@
                 },
                 {
                   "event_date": null,
-                  "published_at": "2026-10-14T22:08:12+00:00",
-                  "signal_type": "news",
-                  "source": "Yahoo Sports",
-                  "text": "Jaylen Warren Pulls Off Rare NFL Feat No Other Player Has Matched This Season - Yahoo Sports",
-                  "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPbkdvdTV2VlVhUnQwVGtqeUhrbVlSQnFtaU5PcVk2VkQxVHBXZ1JBTmwyTG1HaHpoRmxsVk5TMnJoMWlOWTVjMVhhanpLNUtDaDV3YVhSWDNITzZ2d2Q0T1ZScHBsdTY2QTVGdlNoRnp1UGxkdHI5Q3RRVk1KQlF5ZXJTYw?oc=5",
-                  "weighted_score": 0.0
-                },
-                {
-                  "event_date": null,
                   "published_at": "2026-10-18T20:26:42+00:00",
                   "signal_type": "news",
                   "source": "NFL.com",
@@ -4542,8 +4512,8 @@
                 "availability_probability": 1.0,
                 "confidence": "high",
                 "net_direction": "positive",
-                "research_mention_count": 6,
-                "signal_count": 8,
+                "research_mention_count": 7,
+                "signal_count": 9,
                 "signals": [
                   {
                     "corroboration_count": 1,
@@ -4554,7 +4524,7 @@
                     "origin": "sleeper",
                     "player_id": "12474",
                     "player_name": "Woody Marks",
-                    "published_at": "2026-10-21T21:41:17.869524+00:00",
+                    "published_at": "2026-10-21T23:28:31.366879+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-12474",
                     "source": "Sleeper depth chart",
@@ -4574,7 +4544,7 @@
                     "origin": "measured_usage",
                     "player_id": "12474",
                     "player_name": "Woody Marks",
-                    "published_at": "2026-10-21T21:41:17.869524+00:00",
+                    "published_at": "2026-10-21T23:28:31.366879+00:00",
                     "reliability": 0.9,
                     "signal_id": "usage-trend-12474",
                     "source": "nflverse play-by-play",
@@ -4625,6 +4595,27 @@
                     "ttl_days": 7,
                     "type": "news",
                     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOaFBXM0hVQW5vaElUdHBhcW9OQnZCN19QV3JmNHBFNzh5NERmbzVaNGxXYU15aUEwNTlnWlAzaXpDdWhQUkFrSEU3dWF6eVBQVWFQM1JmU2IzNV83c2RnWTE3Y3hIdGhHTno4Tkk2MFh3MjhkRUFKX2w1N3haMVUtc0dZVEJvQnBKa0VqQ0pZZXJfRFkyVHZ6ZWFMNWNzTndzYmNKTTFlYnlLM1pVWHZYVDdyTmpyWEwwX3B3?oc=5",
+                    "weighted_score": 0.0
+                  },
+                  {
+                    "corroboration_count": 1,
+                    "direction": 0.0,
+                    "event_date": null,
+                    "impact": "context",
+                    "magnitude": 0.0,
+                    "origin": "curated_report",
+                    "player_id": "12474",
+                    "player_name": "Woody Marks",
+                    "published_at": "2026-10-16T15:25:31+00:00",
+                    "reliability": 0.45,
+                    "scored": false,
+                    "signal_id": "400034c824e4207470de",
+                    "source": "Sports Illustrated",
+                    "source_type": "aggregator",
+                    "summary": "Fantasy Football Impact: Woody Marks Has a Chance To Steal The Texans' Starting Job With David Montgomery OUT - Sports Illustrated",
+                    "ttl_days": 7,
+                    "type": "news",
+                    "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPcEtTSDlaSlRaRUxzcEJqTkZJb1BtVW9ueVJJa3ZEODZ1UXhOdmVDNEl4NTBsMWVkUFZDaUlUM1BvN3QzOVJzQ0tQemJ3VDNLZXJ1YzlNQ2NFN2R2YmEzd3ZITVVMUTJrbUl1Z0N2MnFfNjJpR0FDS3g4LUNsQkxjYVZLZVVnVmswVkxOSWhockt1MzZUbHBjSGw2emRRZDQ0M01CYVdwUGYwbXc1c0NkNWFZQjJDbk9QOFZrc1liT2YxOXNzbjRXVkVqSUc0T1hCaE9UbmVUZzIwNTRIcnk2ZEZn?oc=5",
                     "weighted_score": 0.0
                   },
                   {
@@ -4786,6 +4777,15 @@
                 },
                 {
                   "event_date": null,
+                  "published_at": "2026-10-16T15:25:31+00:00",
+                  "signal_type": "news",
+                  "source": "Sports Illustrated",
+                  "text": "Fantasy Football Impact: Woody Marks Has a Chance To Steal The Texans' Starting Job With David Montgomery OUT - Sports Illustrated",
+                  "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPcEtTSDlaSlRaRUxzcEJqTkZJb1BtVW9ueVJJa3ZEODZ1UXhOdmVDNEl4NTBsMWVkUFZDaUlUM1BvN3QzOVJzQ0tQemJ3VDNLZXJ1YzlNQ2NFN2R2YmEzd3ZITVVMUTJrbUl1Z0N2MnFfNjJpR0FDS3g4LUNsQkxjYVZLZVVnVmswVkxOSWhockt1MzZUbHBjSGw2emRRZDQ0M01CYVdwUGYwbXc1c0NkNWFZQjJDbk9QOFZrc1liT2YxOXNzbjRXVkVqSUc0T1hCaE9UbmVUZzIwNTRIcnk2ZEZn?oc=5",
+                  "weighted_score": 0.0
+                },
+                {
+                  "event_date": null,
                   "published_at": "2026-10-18T16:53:58+00:00",
                   "signal_type": "news",
                   "source": "NFL.com",
@@ -4882,8 +4882,8 @@
                 "availability_probability": 0.0,
                 "confidence": "medium",
                 "net_direction": "negative",
-                "research_mention_count": 10,
-                "signal_count": 12,
+                "research_mention_count": 11,
+                "signal_count": 13,
                 "signals": [
                   {
                     "corroboration_count": 1,
@@ -4894,7 +4894,7 @@
                     "origin": "sleeper",
                     "player_id": "13345",
                     "player_name": "Jonah Coleman",
-                    "published_at": "2026-10-21T21:41:17.869524+00:00",
+                    "published_at": "2026-10-21T23:28:31.366879+00:00",
                     "reliability": 0.82,
                     "signal_id": "sleeper-injury-13345",
                     "source": "Sleeper player status",
@@ -4914,7 +4914,7 @@
                     "origin": "sleeper",
                     "player_id": "13345",
                     "player_name": "Jonah Coleman",
-                    "published_at": "2026-10-21T21:41:17.869524+00:00",
+                    "published_at": "2026-10-21T23:28:31.366879+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-13345",
                     "source": "Sleeper depth chart",
@@ -4965,6 +4965,27 @@
                     "ttl_days": 7,
                     "type": "news",
                     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQdklNSnlYNHdhMnB0TGZnbUpqM2x1X0dCdE1EX3E2bW1qTy1hekhhMFZFVnU5UUpXX0dlc1ZhbkpMSWsxUzdZeHl6b1BFamtVUTQ1Q05VYnc5ZWtFUkgyNEhQSmIwOHRaX2hGbkwwWGl2Ri03OTM2MVNTOEpuMmJDeWJFT3RaTEpHM044SWRfTm1hbEhWa0tqcDR3NmRzZHcwRjlzXzdJd0M?oc=5",
+                    "weighted_score": 0.0
+                  },
+                  {
+                    "corroboration_count": 1,
+                    "direction": 0.0,
+                    "event_date": null,
+                    "impact": "context",
+                    "magnitude": 0.0,
+                    "origin": "curated_report",
+                    "player_id": "13345",
+                    "player_name": "Jonah Coleman",
+                    "published_at": "2026-10-21T20:44:21+00:00",
+                    "reliability": 0.45,
+                    "scored": false,
+                    "signal_id": "31f4ac6544fd1d23d3b0",
+                    "source": "Denver Sports 104.3 The Fan",
+                    "source_type": "aggregator",
+                    "summary": "Broncos get Jonah Coleman, Pat Surtain II back on field – Denver Sports - Denver Sports 104.3 The Fan",
+                    "ttl_days": 7,
+                    "type": "news",
+                    "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5sSG5kYTlIeWc1cGU2N0FrS2NaVzdDWTlzclhSS0Z6MjBLaHlNMHFxRVdJRHZSV2VlWk55QTNvOWxlTlc1WmJhZHpqNG9vWHFJU1FQSTRNb2gxSV8zUllQZnRWV25qbHBhWW5BOENTRVotYm80V2c?oc=5",
                     "weighted_score": 0.0
                   },
                   {
@@ -5193,7 +5214,7 @@
               "news": [
                 {
                   "event_date": null,
-                  "published_at": "2026-10-21T21:41:17.869524+00:00",
+                  "published_at": "2026-10-21T23:28:31.366879+00:00",
                   "signal_type": "injury",
                   "source": "Sleeper player status",
                   "text": "Sleeper lists Jonah Coleman as IR.",
@@ -5216,6 +5237,15 @@
                   "source": "Yahoo Sports",
                   "text": "Jonah Coleman is a stash who will matter in the second half - Yahoo Sports",
                   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQdklNSnlYNHdhMnB0TGZnbUpqM2x1X0dCdE1EX3E2bW1qTy1hekhhMFZFVnU5UUpXX0dlc1ZhbkpMSWsxUzdZeHl6b1BFamtVUTQ1Q05VYnc5ZWtFUkgyNEhQSmIwOHRaX2hGbkwwWGl2Ri03OTM2MVNTOEpuMmJDeWJFT3RaTEpHM044SWRfTm1hbEhWa0tqcDR3NmRzZHcwRjlzXzdJd0M?oc=5",
+                  "weighted_score": 0.0
+                },
+                {
+                  "event_date": null,
+                  "published_at": "2026-10-21T20:44:21+00:00",
+                  "signal_type": "news",
+                  "source": "Denver Sports 104.3 The Fan",
+                  "text": "Broncos get Jonah Coleman, Pat Surtain II back on field – Denver Sports - Denver Sports 104.3 The Fan",
+                  "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5sSG5kYTlIeWc1cGU2N0FrS2NaVzdDWTlzclhSS0Z6MjBLaHlNMHFxRVdJRHZSV2VlWk55QTNvOWxlTlc1WmJhZHpqNG9vWHFJU1FQSTRNb2gxSV8zUllQZnRWV25qbHBhWW5BOENTRVotYm80V2c?oc=5",
                   "weighted_score": 0.0
                 },
                 {
@@ -5355,8 +5385,8 @@
                 "availability_probability": 1.0,
                 "confidence": "medium",
                 "net_direction": "positive",
-                "research_mention_count": 10,
-                "signal_count": 11,
+                "research_mention_count": 9,
+                "signal_count": 10,
                 "signals": [
                   {
                     "corroboration_count": 1,
@@ -5367,7 +5397,7 @@
                     "origin": "sleeper",
                     "player_id": "11581",
                     "player_name": "MarShawn Lloyd",
-                    "published_at": "2026-10-21T21:41:17.869524+00:00",
+                    "published_at": "2026-10-21T23:28:31.366879+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-11581",
                     "source": "Sleeper depth chart",
@@ -5555,27 +5585,6 @@
                     "origin": "curated_report",
                     "player_id": "11581",
                     "player_name": "MarShawn Lloyd",
-                    "published_at": "2026-10-14T23:19:06+00:00",
-                    "reliability": 0.45,
-                    "scored": false,
-                    "signal_id": "cd5c6dace39db50153fe",
-                    "source": "Seattlepi.com",
-                    "source_type": "aggregator",
-                    "summary": "Packers need more from their ground game. MarShawn Lloyd's highlight-worthy TD offers some hope - Seattlepi.com",
-                    "ttl_days": 7,
-                    "type": "news",
-                    "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOMU1uLVhJUlQ4aktCYk9zV1duekoza3BBb0I5dUYyMGJHeE5HbjlTem9rNkpnY3BxOVNldWlqSjcxMlJ5UFN3eHI1a3VkcDZZX1pTX1ZMR1o1NzJvaVVjV1JJaDR6UDhaUXlVWkJiSkZzcTBxMkVfVF9TWnh5UE0yS3FtOUhLeUgwZzNB?oc=5",
-                    "weighted_score": 0.0
-                  },
-                  {
-                    "corroboration_count": 1,
-                    "direction": 0.0,
-                    "event_date": null,
-                    "impact": "context",
-                    "magnitude": 0.0,
-                    "origin": "curated_report",
-                    "player_id": "11581",
-                    "player_name": "MarShawn Lloyd",
                     "published_at": "2026-10-16T11:18:00+00:00",
                     "reliability": 0.45,
                     "scored": false,
@@ -5717,15 +5726,6 @@
                 },
                 {
                   "event_date": null,
-                  "published_at": "2026-10-14T23:19:06+00:00",
-                  "signal_type": "news",
-                  "source": "Seattlepi.com",
-                  "text": "Packers need more from their ground game. MarShawn Lloyd's highlight-worthy TD offers some hope - Seattlepi.com",
-                  "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOMU1uLVhJUlQ4aktCYk9zV1duekoza3BBb0I5dUYyMGJHeE5HbjlTem9rNkpnY3BxOVNldWlqSjcxMlJ5UFN3eHI1a3VkcDZZX1pTX1ZMR1o1NzJvaVVjV1JJaDR6UDhaUXlVWkJiSkZzcTBxMkVfVF9TWnh5UE0yS3FtOUhLeUgwZzNB?oc=5",
-                  "weighted_score": 0.0
-                },
-                {
-                  "event_date": null,
                   "published_at": "2026-10-16T11:18:00+00:00",
                   "signal_type": "news",
                   "source": "The New York Times",
@@ -5803,8 +5803,8 @@
                 "availability_probability": 1.0,
                 "confidence": "medium",
                 "net_direction": "neutral",
-                "research_mention_count": 6,
-                "signal_count": 8,
+                "research_mention_count": 7,
+                "signal_count": 9,
                 "signals": [
                   {
                     "corroboration_count": 1,
@@ -5825,7 +5825,7 @@
                     "ttl_days": 7,
                     "type": "injury",
                     "url": "https://www.fantasypros.com/nfl/news/614499/rico-dowdle-toe-officially-active-week-6.php",
-                    "weighted_score": 0.1936
+                    "weighted_score": 0.1898
                   },
                   {
                     "corroboration_count": 1,
@@ -5836,7 +5836,7 @@
                     "origin": "sleeper",
                     "player_id": "7021",
                     "player_name": "Rico Dowdle",
-                    "published_at": "2026-10-21T21:41:17.869524+00:00",
+                    "published_at": "2026-10-21T23:28:31.366879+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-7021",
                     "source": "Sleeper depth chart",
@@ -5866,6 +5866,27 @@
                     "ttl_days": 7,
                     "type": "news",
                     "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTm0zbGhNLVZOYm9uM2pQcHkxRF83QkJCLXRmdk05ckZIcmx0MF9IeFdUdzh5ZDNwMnBjZ09kNlpEY0NoVGRUNUdXTTd6TnhQb29yV05FQlNSWEZ5NDB0R2d4X1UweVdnNEJuSWRrb1VhbWJBbUFWTnFGa0ZZa0Zab09xdl9nM1dOcVc3bE5rLWNOa2M4bUE?oc=5",
+                    "weighted_score": 0.0
+                  },
+                  {
+                    "corroboration_count": 1,
+                    "direction": 0.0,
+                    "event_date": null,
+                    "impact": "context",
+                    "magnitude": 0.0,
+                    "origin": "curated_report",
+                    "player_id": "7021",
+                    "player_name": "Rico Dowdle",
+                    "published_at": "2026-10-19T05:49:50+00:00",
+                    "reliability": 0.45,
+                    "scored": false,
+                    "signal_id": "4c2ced4b0a4442b94740",
+                    "source": "Fantasy Footballers Podcast",
+                    "source_type": "aggregator",
+                    "summary": "Rico Dowdle Ten touches in return to lineup - Fantasy Footballers Podcast",
+                    "ttl_days": 7,
+                    "type": "news",
+                    "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPdEJHYnhDSzEta3kxVWk5LWxWMkdHTlp5S0U0NER1QTNTS3k4cUowX21pUWhRWDMxR1lVVjZyQjB0ZTUwN0ptaVh0TFByOFJiMmZWZU9jU0VIRks3OE55SWtkdElrWjM4eEVKUWZjUXltUlhuT1FkRWpwZnlGMThPTEplUkVBYl9mTGRMSE5sNUo4OExrdEZ6YVF3?oc=5",
                     "weighted_score": 0.0
                   },
                   {
@@ -6035,7 +6056,7 @@
                   "source": "FantasyPros",
                   "text": "Rico Dowdle (toe) officially active for Week 6",
                   "url": "https://www.fantasypros.com/nfl/news/614499/rico-dowdle-toe-officially-active-week-6.php",
-                  "weighted_score": 0.1936
+                  "weighted_score": 0.1898
                 },
                 {
                   "event_date": null,
@@ -6044,6 +6065,15 @@
                   "source": "NFL.com",
                   "text": "Pittsburgh Steelers running back Rico Dowdle makes his return known via 15-yard run up the middle - NFL.com",
                   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTm0zbGhNLVZOYm9uM2pQcHkxRF83QkJCLXRmdk05ckZIcmx0MF9IeFdUdzh5ZDNwMnBjZ09kNlpEY0NoVGRUNUdXTTd6TnhQb29yV05FQlNSWEZ5NDB0R2d4X1UweVdnNEJuSWRrb1VhbWJBbUFWTnFGa0ZZa0Zab09xdl9nM1dOcVc3bE5rLWNOa2M4bUE?oc=5",
+                  "weighted_score": 0.0
+                },
+                {
+                  "event_date": null,
+                  "published_at": "2026-10-19T05:49:50+00:00",
+                  "signal_type": "news",
+                  "source": "Fantasy Footballers Podcast",
+                  "text": "Rico Dowdle Ten touches in return to lineup - Fantasy Footballers Podcast",
+                  "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPdEJHYnhDSzEta3kxVWk5LWxWMkdHTlp5S0U0NER1QTNTS3k4cUowX21pUWhRWDMxR1lVVjZyQjB0ZTUwN0ptaVh0TFByOFJiMmZWZU9jU0VIRks3OE55SWtkdElrWjM4eEVKUWZjUXltUlhuT1FkRWpwZnlGMThPTEplUkVBYl9mTGRMSE5sNUo4OExrdEZ6YVF3?oc=5",
                   "weighted_score": 0.0
                 },
                 {
@@ -6164,7 +6194,7 @@
                     "origin": "sleeper",
                     "player_id": "8205",
                     "player_name": "Isiah Pacheco",
-                    "published_at": "2026-10-21T21:41:17.869524+00:00",
+                    "published_at": "2026-10-21T23:28:31.366879+00:00",
                     "reliability": 0.82,
                     "signal_id": "sleeper-injury-8205",
                     "source": "Sleeper player status",
@@ -6184,7 +6214,7 @@
                     "origin": "sleeper",
                     "player_id": "8205",
                     "player_name": "Isiah Pacheco",
-                    "published_at": "2026-10-21T21:41:17.869524+00:00",
+                    "published_at": "2026-10-21T23:28:31.366879+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-8205",
                     "source": "Sleeper depth chart",
@@ -6379,7 +6409,7 @@
               "news": [
                 {
                   "event_date": null,
-                  "published_at": "2026-10-21T21:41:17.869524+00:00",
+                  "published_at": "2026-10-21T23:28:31.366879+00:00",
                   "signal_type": "injury",
                   "source": "Sleeper player status",
                   "text": "Sleeper lists Isiah Pacheco as IR.",
@@ -6517,7 +6547,7 @@
                     "origin": "measured_usage",
                     "player_id": "11655",
                     "player_name": "Tyrone Tracy",
-                    "published_at": "2026-10-21T21:41:17.869524+00:00",
+                    "published_at": "2026-10-21T23:28:31.366879+00:00",
                     "reliability": 0.9,
                     "signal_id": "usage-trend-11655",
                     "source": "nflverse play-by-play",
@@ -6537,7 +6567,7 @@
                     "origin": "sleeper",
                     "player_id": "11655",
                     "player_name": "Tyrone Tracy",
-                    "published_at": "2026-10-21T21:41:17.869524+00:00",
+                    "published_at": "2026-10-21T23:28:31.366879+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-11655",
                     "source": "Sleeper depth chart",
@@ -6557,7 +6587,7 @@
                     "origin": "curated_report",
                     "player_id": "11655",
                     "player_name": "Tyrone Tracy",
-                    "published_at": "2026-10-19T19:00:00+00:00",
+                    "published_at": "2026-10-19T20:15:00+00:00",
                     "reliability": 0.45,
                     "scored": false,
                     "signal_id": "05cc90f28558213aaca2",
@@ -6794,7 +6824,7 @@
               "news": [
                 {
                   "event_date": null,
-                  "published_at": "2026-10-19T19:00:00+00:00",
+                  "published_at": "2026-10-19T20:15:00+00:00",
                   "signal_type": "news",
                   "source": "PrizePicks",
                   "text": "Tyrone Tracy Stats, Props & Recent Performance - PrizePicks",
@@ -6948,7 +6978,7 @@
                     "origin": "sleeper",
                     "player_id": "6039",
                     "player_name": "Ty Johnson",
-                    "published_at": "2026-10-21T21:41:17.869524+00:00",
+                    "published_at": "2026-10-21T23:28:31.366879+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-6039",
                     "source": "Sleeper depth chart",
@@ -7299,8 +7329,8 @@
                 "availability_probability": 1.0,
                 "confidence": "medium",
                 "net_direction": "positive",
-                "research_mention_count": 5,
-                "signal_count": 6,
+                "research_mention_count": 8,
+                "signal_count": 9,
                 "signals": [
                   {
                     "corroboration_count": 1,
@@ -7311,7 +7341,7 @@
                     "origin": "sleeper",
                     "player_id": "6794",
                     "player_name": "Justin Jefferson",
-                    "published_at": "2026-10-21T21:41:17.869524+00:00",
+                    "published_at": "2026-10-21T23:28:31.366879+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-6794",
                     "source": "Sleeper depth chart",
@@ -7321,6 +7351,48 @@
                     "type": "depth_chart",
                     "url": null,
                     "weighted_score": 0.26
+                  },
+                  {
+                    "corroboration_count": 1,
+                    "direction": 0.0,
+                    "event_date": null,
+                    "impact": "context",
+                    "magnitude": 0.0,
+                    "origin": "curated_report",
+                    "player_id": "6794",
+                    "player_name": "Justin Jefferson",
+                    "published_at": "2026-10-21T22:47:53+00:00",
+                    "reliability": 0.45,
+                    "scored": false,
+                    "signal_id": "33b13ec04338e877ecf6",
+                    "source": "Yahoo Sports",
+                    "source_type": "aggregator",
+                    "summary": "Justin Jefferson limited at practice Wednesday - Yahoo Sports",
+                    "ttl_days": 7,
+                    "type": "news",
+                    "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPNFpLdUNXOGpKWWU5dGlSTV93SUJmazlVSkxDVE1EM3BJYmpOZ0hNUkFXbkdGQ0ZfdFJVUGVSSlZtQTAwaG11U21NWVNoQ1U2VkFXekg5RXluNHZpanRLcjAwTmUwUTdfTnhGeHZMbDZMVVZ6WTRWcTYzU0g3NFQtN3hsTGdIY1ZWNVdrS1hnanE3NWdCcmY0?oc=5",
+                    "weighted_score": 0.0
+                  },
+                  {
+                    "corroboration_count": 1,
+                    "direction": 0.0,
+                    "event_date": null,
+                    "impact": "context",
+                    "magnitude": 0.0,
+                    "origin": "curated_report",
+                    "player_id": "6794",
+                    "player_name": "Justin Jefferson",
+                    "published_at": "2026-10-21T21:43:29+00:00",
+                    "reliability": 0.45,
+                    "scored": false,
+                    "signal_id": "43a6d062e17e7df17f44",
+                    "source": "Fantasy Footballers Podcast",
+                    "source_type": "aggregator",
+                    "summary": "Justin Jefferson Remains limited by ankle issue - Fantasy Footballers Podcast",
+                    "ttl_days": 7,
+                    "type": "news",
+                    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNS3cwdXZEZGdteFZYVHZpeWtKbFZ2dGl1dUk4Zm4wRlZJOHJSSFA3VS1tejg5dll4ZlNCOGRMMU1ReFRnUzBnQ0VkekdIbzZKMEo2UzEzYWdGMV9sMTRNM0I5UjJIT0J6c0tJUkI2bzZSVzVCUjVfN1lZek83MU0yUU5OdzdXTnFMaXRhSDh4ZmVnQVRGNXpYTVhsSHVDdFE?oc=5",
+                    "weighted_score": 0.0
                   },
                   {
                     "corroboration_count": 1,
@@ -7341,6 +7413,27 @@
                     "ttl_days": 7,
                     "type": "news",
                     "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOTXB4dWRUSEdWVXRMbmpJOGcwbl85TXdvVEdFZDZOZEhUWTNUX0cwUXdSQlNRaHZYejc0LVE2LWZsQ1VaMEY2N00tcE5GWDFxdU9DZno1TnlhcWtKcnZheC0tT0hzSUZLUS1DR3U5dllFVjZMNzBsVmt4UUZoSXR2X2hhY1NVUW1Oa3ZocUE1bw?oc=5",
+                    "weighted_score": 0.0
+                  },
+                  {
+                    "corroboration_count": 1,
+                    "direction": 0.0,
+                    "event_date": null,
+                    "impact": "context",
+                    "magnitude": 0.0,
+                    "origin": "curated_report",
+                    "player_id": "6794",
+                    "player_name": "Justin Jefferson",
+                    "published_at": "2026-10-21T21:37:07+00:00",
+                    "reliability": 0.45,
+                    "scored": false,
+                    "signal_id": "51cf1530c93c66579e53",
+                    "source": "NBC Sports",
+                    "source_type": "aggregator",
+                    "summary": "Justin Jefferson (ankle) limited to begin Week 7 - NBC Sports",
+                    "ttl_days": 7,
+                    "type": "news",
+                    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQOEpoZm1QZi00ZHltQVhRUDctUUpBQ0N6ZkRhUkNxQXk1Rms0c3hhTGRTcDZUZU9NZGl0WVlJUDlETWVMOWh0TG5faVJWcVpHUDRCNXFHY0REcTBEcEJ5Qk11MFh1bUQ1RWVLTlAzekNVOUpuR29BWTVtUkU1ZWdhRnVWdXZKUGs4SWtHUV9yYkRFWTZkWVp1dGVmaXFuQnM4MVQ2aTNkSU10NXJNTFc3TUh3?oc=5",
                     "weighted_score": 0.0
                   },
                   {
@@ -7484,11 +7577,38 @@
               "news": [
                 {
                   "event_date": null,
+                  "published_at": "2026-10-21T22:47:53+00:00",
+                  "signal_type": "news",
+                  "source": "Yahoo Sports",
+                  "text": "Justin Jefferson limited at practice Wednesday - Yahoo Sports",
+                  "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPNFpLdUNXOGpKWWU5dGlSTV93SUJmazlVSkxDVE1EM3BJYmpOZ0hNUkFXbkdGQ0ZfdFJVUGVSSlZtQTAwaG11U21NWVNoQ1U2VkFXekg5RXluNHZpanRLcjAwTmUwUTdfTnhGeHZMbDZMVVZ6WTRWcTYzU0g3NFQtN3hsTGdIY1ZWNVdrS1hnanE3NWdCcmY0?oc=5",
+                  "weighted_score": 0.0
+                },
+                {
+                  "event_date": null,
+                  "published_at": "2026-10-21T21:43:29+00:00",
+                  "signal_type": "news",
+                  "source": "Fantasy Footballers Podcast",
+                  "text": "Justin Jefferson Remains limited by ankle issue - Fantasy Footballers Podcast",
+                  "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNS3cwdXZEZGdteFZYVHZpeWtKbFZ2dGl1dUk4Zm4wRlZJOHJSSFA3VS1tejg5dll4ZlNCOGRMMU1ReFRnUzBnQ0VkekdIbzZKMEo2UzEzYWdGMV9sMTRNM0I5UjJIT0J6c0tJUkI2bzZSVzVCUjVfN1lZek83MU0yUU5OdzdXTnFMaXRhSDh4ZmVnQVRGNXpYTVhsSHVDdFE?oc=5",
+                  "weighted_score": 0.0
+                },
+                {
+                  "event_date": null,
                   "published_at": "2026-10-20T16:05:00+00:00",
                   "signal_type": "news",
                   "source": "Yahoo Sports",
                   "text": "Vikings WR1 Justin Jefferson Probably Made Note of the Recent News - Yahoo Sports",
                   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOTXB4dWRUSEdWVXRMbmpJOGcwbl85TXdvVEdFZDZOZEhUWTNUX0cwUXdSQlNRaHZYejc0LVE2LWZsQ1VaMEY2N00tcE5GWDFxdU9DZno1TnlhcWtKcnZheC0tT0hzSUZLUS1DR3U5dllFVjZMNzBsVmt4UUZoSXR2X2hhY1NVUW1Oa3ZocUE1bw?oc=5",
+                  "weighted_score": 0.0
+                },
+                {
+                  "event_date": null,
+                  "published_at": "2026-10-21T21:37:07+00:00",
+                  "signal_type": "news",
+                  "source": "NBC Sports",
+                  "text": "Justin Jefferson (ankle) limited to begin Week 7 - NBC Sports",
+                  "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQOEpoZm1QZi00ZHltQVhRUDctUUpBQ0N6ZkRhUkNxQXk1Rms0c3hhTGRTcDZUZU9NZGl0WVlJUDlETWVMOWh0TG5faVJWcVpHUDRCNXFHY0REcTBEcEJ5Qk11MFh1bUQ1RWVLTlAzekNVOUpuR29BWTVtUkU1ZWdhRnVWdXZKUGs4SWtHUV9yYkRFWTZkWVp1dGVmaXFuQnM4MVQ2aTNkSU10NXJNTFc3TUh3?oc=5",
                   "weighted_score": 0.0
                 },
                 {
@@ -7595,8 +7715,8 @@
                 "availability_probability": 1.0,
                 "confidence": "medium",
                 "net_direction": "positive",
-                "research_mention_count": 6,
-                "signal_count": 7,
+                "research_mention_count": 7,
+                "signal_count": 8,
                 "signals": [
                   {
                     "corroboration_count": 1,
@@ -7607,7 +7727,7 @@
                     "origin": "sleeper",
                     "player_id": "7569",
                     "player_name": "Nico Collins",
-                    "published_at": "2026-10-21T21:41:17.869524+00:00",
+                    "published_at": "2026-10-21T23:28:31.366879+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-7569",
                     "source": "Sleeper depth chart",
@@ -7700,6 +7820,27 @@
                     "ttl_days": 7,
                     "type": "news",
                     "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxObFNQXzlVZEJpZFE1NzRRU1RESEZ4R1hVSGtlVDllWnhtZUVzblI2eml4U0ZoLVVZd0NwYmQ0Q2piTXlKa1RZX0NGaU5qWTJvam11RFVlZHlSblhWcFZRMG1vSUR1OGtXQUE2Q2RaeE1YQUxLblk4amVJbE1IUHN2UVhzSFA3SXhMUVUyZ0ZGWTFjTWJJS3RJemduMFNJaW8wVXRkSFNFaHE5V2M?oc=5",
+                    "weighted_score": 0.0
+                  },
+                  {
+                    "corroboration_count": 1,
+                    "direction": 0.0,
+                    "event_date": null,
+                    "impact": "context",
+                    "magnitude": 0.0,
+                    "origin": "curated_report",
+                    "player_id": "7569",
+                    "player_name": "Nico Collins",
+                    "published_at": "2026-10-19T22:07:31+00:00",
+                    "reliability": 0.45,
+                    "scored": false,
+                    "signal_id": "b0251ce00f8c438f9073",
+                    "source": "FantasySP",
+                    "source_type": "aggregator",
+                    "summary": "Nico Collins Fantasy Outlook & Stats - FantasySP",
+                    "ttl_days": 7,
+                    "type": "news",
+                    "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1DLU5jdFk4SXE0T0hFUkVZaDExTnpiSjRDUWEzalN5a2l6SGZyNjA4VFd4aFpPUTJpQVpvenNzODR3VmJmNG9vT3NHYWg0R29CT1lFNlBWTVU0ZklnX2lTVlVBcHFFQQ?oc=5",
                     "weighted_score": 0.0
                   },
                   {
@@ -7837,6 +7978,15 @@
                 },
                 {
                   "event_date": null,
+                  "published_at": "2026-10-19T22:07:31+00:00",
+                  "signal_type": "news",
+                  "source": "FantasySP",
+                  "text": "Nico Collins Fantasy Outlook & Stats - FantasySP",
+                  "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1DLU5jdFk4SXE0T0hFUkVZaDExTnpiSjRDUWEzalN5a2l6SGZyNjA4VFd4aFpPUTJpQVpvenNzODR3VmJmNG9vT3NHYWg0R29CT1lFNlBWTVU0ZklnX2lTVlVBcHFFQQ?oc=5",
+                  "weighted_score": 0.0
+                },
+                {
+                  "event_date": null,
                   "published_at": "2026-10-18T17:45:35+00:00",
                   "signal_type": "news",
                   "source": "Yahoo Sports",
@@ -7917,8 +8067,8 @@
                 "availability_probability": 1.0,
                 "confidence": "medium",
                 "net_direction": "neutral",
-                "research_mention_count": 10,
-                "signal_count": 11,
+                "research_mention_count": 11,
+                "signal_count": 12,
                 "signals": [
                   {
                     "corroboration_count": 1,
@@ -7929,7 +8079,7 @@
                     "origin": "sleeper",
                     "player_id": "11646",
                     "player_name": "Jalen Coker",
-                    "published_at": "2026-10-21T21:41:17.869524+00:00",
+                    "published_at": "2026-10-21T23:28:31.366879+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-11646",
                     "source": "Sleeper depth chart",
@@ -8043,6 +8193,27 @@
                     "ttl_days": 7,
                     "type": "news",
                     "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE8wVGhBYUtfcUNPOHdCNzg5YkFQTHktTnMxRTM0T184UGtjLWdMOFBzM2xqQ29vclZhVXYteks4UmtCLWpuZmN5TWxnMlNLUUlMLWN4YjllLVE5aEtDdGZGanJPbF9QQQ?oc=5",
+                    "weighted_score": 0.0
+                  },
+                  {
+                    "corroboration_count": 1,
+                    "direction": 0.0,
+                    "event_date": null,
+                    "impact": "context",
+                    "magnitude": 0.0,
+                    "origin": "curated_report",
+                    "player_id": "11646",
+                    "player_name": "Jalen Coker",
+                    "published_at": "2026-10-21T15:53:59+00:00",
+                    "reliability": 0.45,
+                    "scored": false,
+                    "signal_id": "7ff63b7d3bdf067a2246",
+                    "source": "FantasyLife",
+                    "source_type": "aggregator",
+                    "summary": "Rest-Of-Season Fantasy Football Rankings: Jalen Coker Rises Ahead Of Week 7 - FantasyLife",
+                    "ttl_days": 7,
+                    "type": "news",
+                    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOY0VHMDFPeGZCbllXTnpYSmUyTERzQXhCejlNekNkdkhKNWZJczZZY29pZF9sWi1Obnl5MlYzVGUyaGpJaS0zRFBsQzVPWURvbHROUjNhSEtUclRwNnRNTlJKNWdsLUgwVlotQ1RnZFBlNVJOVjd3eTBxODk5UFVSdG1mS3lVbU9OTlQwQ1VyeEZFdUh3N1V2YmcyNXlrR1dGNjZJdzVIcw?oc=5",
                     "weighted_score": 0.0
                   },
                   {
@@ -8252,6 +8423,15 @@
                 },
                 {
                   "event_date": null,
+                  "published_at": "2026-10-21T15:53:59+00:00",
+                  "signal_type": "news",
+                  "source": "FantasyLife",
+                  "text": "Rest-Of-Season Fantasy Football Rankings: Jalen Coker Rises Ahead Of Week 7 - FantasyLife",
+                  "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOY0VHMDFPeGZCbllXTnpYSmUyTERzQXhCejlNekNkdkhKNWZJczZZY29pZF9sWi1Obnl5MlYzVGUyaGpJaS0zRFBsQzVPWURvbHROUjNhSEtUclRwNnRNTlJKNWdsLUgwVlotQ1RnZFBlNVJOVjd3eTBxODk5UFVSdG1mS3lVbU9OTlQwQ1VyeEZFdUh3N1V2YmcyNXlrR1dGNjZJdzVIcw?oc=5",
+                  "weighted_score": 0.0
+                },
+                {
+                  "event_date": null,
                   "published_at": "2026-10-18T09:05:08+00:00",
                   "signal_type": "news",
                   "source": "Yahoo Sports",
@@ -8353,12 +8533,12 @@
               ],
               "coach_beat_reporter_information": [],
               "context": {
-                "actionable_signal_count": 1,
-                "availability_probability": 1.0,
+                "actionable_signal_count": 2,
+                "availability_probability": 0.85,
                 "confidence": "medium",
-                "net_direction": "positive",
+                "net_direction": "negative",
                 "research_mention_count": 9,
-                "signal_count": 10,
+                "signal_count": 11,
                 "signals": [
                   {
                     "corroboration_count": 1,
@@ -8369,7 +8549,7 @@
                     "origin": "sleeper",
                     "player_id": "7526",
                     "player_name": "Jaylen Waddle",
-                    "published_at": "2026-10-21T21:41:17.869524+00:00",
+                    "published_at": "2026-10-21T23:28:31.366879+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-7526",
                     "source": "Sleeper depth chart",
@@ -8382,24 +8562,24 @@
                   },
                   {
                     "corroboration_count": 1,
-                    "direction": 0.0,
+                    "direction": -1.0,
                     "event_date": null,
-                    "impact": "context",
-                    "magnitude": 0.0,
+                    "impact": "availability",
+                    "magnitude": 2.0,
                     "origin": "curated_report",
                     "player_id": "7526",
                     "player_name": "Jaylen Waddle",
-                    "published_at": "2026-10-14T22:28:40+00:00",
-                    "reliability": 0.45,
-                    "scored": false,
-                    "signal_id": "0db71ca8c5470fbdde52",
-                    "source": "Sports Illustrated",
-                    "source_type": "aggregator",
-                    "summary": "Fantasy Football Week 6 Start ‘Em, Sit ‘Em: Jaylen Waddle vs. Carnell Tate - Sports Illustrated",
-                    "ttl_days": 7,
-                    "type": "news",
-                    "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQeW9RQVdFNFFRVWRaUmtXaFBhdnBBTWtOU2dsZFMzbjhZdjhScXZUTG9nVW8xRHJaX2Vtc0ltMEc0WWhJOUlVa0xBc1F3RHF3WDZucm0wcjdsU20wcG9XekRnWVJGYnV2OEtIdmxmWE9wWkp1Ylc1c0FxUFYyc0hkWTNuXzEwMnk5THBKUHVtOFE4eEFEcFVjRVYxNVRqYVlpamFTRHJtOXBHR09sdDVidmNvaWlHaGlB?oc=5",
-                    "weighted_score": 0.0
+                    "published_at": "2026-10-21T04:22:00+00:00",
+                    "reliability": 0.7,
+                    "scored": true,
+                    "signal_id": "1ed24bbff418b14e5f1a",
+                    "source": "RotoWire NFL Player News / Aric DiLalla of the Broncos' official site",
+                    "source_type": "established_media",
+                    "summary": "Jaylen Waddle: Tending to chest injury",
+                    "ttl_days": 4,
+                    "type": "practice",
+                    "url": "https://www.rotowire.com//football/player/jaylen-waddle-15404",
+                    "weighted_score": -0.2243
                   },
                   {
                     "corroboration_count": 1,
@@ -8515,6 +8695,27 @@
                     "origin": "curated_report",
                     "player_id": "7526",
                     "player_name": "Jaylen Waddle",
+                    "published_at": "2026-10-16T02:05:00+00:00",
+                    "reliability": 0.45,
+                    "scored": false,
+                    "signal_id": "853780ad9e37ca463775",
+                    "source": "NBC Sports",
+                    "source_type": "aggregator",
+                    "summary": "Jaylen Waddle questionable to return to Week 6 - NBC Sports",
+                    "ttl_days": 7,
+                    "type": "news",
+                    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOV0l2TGZwdzhEZDZleDlKMzNwOG9Wc3poc3ZKMzhmT3hJX0RGZmJPTTFxc21udWhyMXd6SEt1NURSWVlURHpocGV5ckt4WHRfckFZTUM1R2ZtTk5RTk5iN21QYlVQVi1kbGxxc3VYdl9XanlHNjd1YVU1VjhhZzZtQk56Z0RmblNQdk42MjByWU5vbkhkMzg5N2o3R0RfYTBxSnpyRnJ5Q2VhODNxblZMNTdR?oc=5",
+                    "weighted_score": 0.0
+                  },
+                  {
+                    "corroboration_count": 1,
+                    "direction": 0.0,
+                    "event_date": null,
+                    "impact": "context",
+                    "magnitude": 0.0,
+                    "origin": "curated_report",
+                    "player_id": "7526",
+                    "player_name": "Jaylen Waddle",
                     "published_at": "2026-10-15T09:59:00+00:00",
                     "reliability": 0.7,
                     "scored": false,
@@ -8570,7 +8771,7 @@
                     "weighted_score": 0.0
                   }
                 ],
-                "weekly_multiplier": 1.026
+                "weekly_multiplier": 0.872
               },
               "current_fantasy_value": {
                 "market_position_rank": 31,
@@ -8578,16 +8779,16 @@
                 "market_value": 5010,
                 "projection": {
                   "baseline_points": 8.97,
-                  "basis": "2026 715 PPG blended with recent form; current context multiplier 1.026 applied",
-                  "ceiling": 14.9,
+                  "basis": "2026 715 PPG blended with recent form; current context multiplier 0.872 applied",
+                  "ceiling": 12.6,
                   "confidence": "high",
-                  "context_adjustment_points": 0.23,
-                  "context_multiplier": 1.026,
+                  "context_adjustment_points": -1.15,
+                  "context_multiplier": 0.872,
                   "current_decision_evidence": true,
-                  "floor": 4.9,
+                  "floor": 4.2,
                   "model_type": "evidence_estimate",
                   "performance_basis": "current",
-                  "points": 9.2
+                  "points": 7.82
                 }
               },
               "current_starter": true,
@@ -8603,7 +8804,7 @@
                 },
                 "weekly": {
                   "label": "Starter",
-                  "summary": "Evidence range 4.9–14.9 with high confidence; current matchup research is unavailable."
+                  "summary": "Evidence range 4.2–12.6 with high confidence; current matchup research is unavailable."
                 }
               },
               "depth_chart_order": 1,
@@ -8626,12 +8827,12 @@
               "news": [
                 {
                   "event_date": null,
-                  "published_at": "2026-10-14T22:28:40+00:00",
-                  "signal_type": "news",
-                  "source": "Sports Illustrated",
-                  "text": "Fantasy Football Week 6 Start ‘Em, Sit ‘Em: Jaylen Waddle vs. Carnell Tate - Sports Illustrated",
-                  "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQeW9RQVdFNFFRVWRaUmtXaFBhdnBBTWtOU2dsZFMzbjhZdjhScXZUTG9nVW8xRHJaX2Vtc0ltMEc0WWhJOUlVa0xBc1F3RHF3WDZucm0wcjdsU20wcG9XekRnWVJGYnV2OEtIdmxmWE9wWkp1Ylc1c0FxUFYyc0hkWTNuXzEwMnk5THBKUHVtOFE4eEFEcFVjRVYxNVRqYVlpamFTRHJtOXBHR09sdDVidmNvaWlHaGlB?oc=5",
-                  "weighted_score": 0.0
+                  "published_at": "2026-10-21T04:22:00+00:00",
+                  "signal_type": "practice",
+                  "source": "RotoWire NFL Player News / Aric DiLalla of the Broncos' official site",
+                  "text": "Jaylen Waddle: Tending to chest injury",
+                  "url": "https://www.rotowire.com//football/player/jaylen-waddle-15404",
+                  "weighted_score": -0.2243
                 },
                 {
                   "event_date": null,
@@ -8676,6 +8877,15 @@
                   "source": "Broncos Wire",
                   "text": "Broncos injuries: Jaylen Waddle goes to locker room before halftime of 'TNF' - Broncos Wire",
                   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNcWVVYU5FQmRzajJxbXMxdmlNLV9DVWppcThya2lWZjBlTm9yQjNlVGZxYl9YNG82ckZoRXk4WlJoLV9GZEpCQk5IUVJXOE1MZzFNWjFFOVUtYlZMdGx3bGdSV2ZqeUVTb3MzRWNWb1lsYlI1R1BIVllTYUJVM1ZUTUI4Wk1IeTByemhZOFAzenl2WmZKaEVaTGh6NkRZa1UxcHh4WmhPRGpIbm1sS0ZwaVJMNDdod0N3bnFhdTBMQy1xaGpJaGZPcg?oc=5",
+                  "weighted_score": 0.0
+                },
+                {
+                  "event_date": null,
+                  "published_at": "2026-10-16T02:05:00+00:00",
+                  "signal_type": "news",
+                  "source": "NBC Sports",
+                  "text": "Jaylen Waddle questionable to return to Week 6 - NBC Sports",
+                  "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOV0l2TGZwdzhEZDZleDlKMzNwOG9Wc3poc3ZKMzhmT3hJX0RGZmJPTTFxc21udWhyMXd6SEt1NURSWVlURHpocGV5ckt4WHRfckFZTUM1R2ZtTk5RTk5iN21QYlVQVi1kbGxxc3VYdl9XanlHNjd1YVU1VjhhZzZtQk56Z0RmblNQdk42MjByWU5vbkhkMzg5N2o3R0RfYTBxSnpyRnJ5Q2VhODNxblZMNTdR?oc=5",
                   "weighted_score": 0.0
                 },
                 {
@@ -8785,7 +8995,7 @@
                     "origin": "sleeper",
                     "player_id": "5927",
                     "player_name": "Terry McLaurin",
-                    "published_at": "2026-10-21T21:41:17.869524+00:00",
+                    "published_at": "2026-10-21T23:28:31.366879+00:00",
                     "reliability": 0.82,
                     "signal_id": "sleeper-injury-5927",
                     "source": "Sleeper player status",
@@ -8815,7 +9025,7 @@
                     "ttl_days": 7,
                     "type": "injury",
                     "url": "\n                                                https://www.cbssports.com/nfl/news/commanders-terry-mclaurin-knee-injury-monday-night-football/\n                    ",
-                    "weighted_score": -0.5907
+                    "weighted_score": -0.5832
                   },
                   {
                     "corroboration_count": 1,
@@ -8836,7 +9046,7 @@
                     "ttl_days": 7,
                     "type": "injury",
                     "url": "https://www.fantasypros.com/nfl/news/614941/terry-mclaurin-knee-done-2026-with-torn-patellar-tendon.php",
-                    "weighted_score": -0.3793
+                    "weighted_score": -0.3745
                   },
                   {
                     "corroboration_count": 1,
@@ -8857,7 +9067,7 @@
                     "ttl_days": 7,
                     "type": "injury",
                     "url": "https://www.fantasypros.com/nfl/news/614921/terry-mclaurin-knee-to-have-mri-on-tuesday.php",
-                    "weighted_score": -0.3642
+                    "weighted_score": -0.3594
                   },
                   {
                     "corroboration_count": 1,
@@ -8878,7 +9088,7 @@
                     "ttl_days": 7,
                     "type": "injury",
                     "url": "https://www.fantasypros.com/nfl/news/614873/terry-mclaurin-carted-off-field-during-monday-night-football.php",
-                    "weighted_score": -0.3304
+                    "weighted_score": -0.3256
                   },
                   {
                     "corroboration_count": 1,
@@ -8889,7 +9099,7 @@
                     "origin": "sleeper",
                     "player_id": "5927",
                     "player_name": "Terry McLaurin",
-                    "published_at": "2026-10-21T21:41:17.869524+00:00",
+                    "published_at": "2026-10-21T23:28:31.366879+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-5927",
                     "source": "Sleeper depth chart",
@@ -9357,7 +9567,7 @@
               "news": [
                 {
                   "event_date": null,
-                  "published_at": "2026-10-21T21:41:17.869524+00:00",
+                  "published_at": "2026-10-21T23:28:31.366879+00:00",
                   "signal_type": "injury",
                   "source": "Sleeper player status",
                   "text": "Sleeper lists Terry McLaurin as Out.",
@@ -9371,7 +9581,7 @@
                   "source": "Zachary Pereles",
                   "text": "Commanders' Terry McLaurin out for the season after knee injury on 'MNF'",
                   "url": "\n                                                https://www.cbssports.com/nfl/news/commanders-terry-mclaurin-knee-injury-monday-night-football/\n                    ",
-                  "weighted_score": -0.5907
+                  "weighted_score": -0.5832
                 },
                 {
                   "event_date": null,
@@ -9380,7 +9590,7 @@
                   "source": "FantasyPros",
                   "text": "Terry McLaurin (knee) done for 2026 with torn patellar tendon",
                   "url": "https://www.fantasypros.com/nfl/news/614941/terry-mclaurin-knee-done-2026-with-torn-patellar-tendon.php",
-                  "weighted_score": -0.3793
+                  "weighted_score": -0.3745
                 },
                 {
                   "event_date": null,
@@ -9389,7 +9599,7 @@
                   "source": "FantasyPros",
                   "text": "Terry McLaurin (knee) to have MRI on Tuesday",
                   "url": "https://www.fantasypros.com/nfl/news/614921/terry-mclaurin-knee-to-have-mri-on-tuesday.php",
-                  "weighted_score": -0.3642
+                  "weighted_score": -0.3594
                 },
                 {
                   "event_date": null,
@@ -9398,7 +9608,7 @@
                   "source": "FantasyPros",
                   "text": "Terry McLaurin carted off field during Monday Night Football",
                   "url": "https://www.fantasypros.com/nfl/news/614873/terry-mclaurin-carted-off-field-during-monday-night-football.php",
-                  "weighted_score": -0.3304
+                  "weighted_score": -0.3256
                 },
                 {
                   "event_date": null,
@@ -9635,8 +9845,8 @@
                 "availability_probability": 0.0,
                 "confidence": "medium",
                 "net_direction": "negative",
-                "research_mention_count": 5,
-                "signal_count": 7,
+                "research_mention_count": 6,
+                "signal_count": 8,
                 "signals": [
                   {
                     "corroboration_count": 1,
@@ -9647,7 +9857,7 @@
                     "origin": "sleeper",
                     "player_id": "10226",
                     "player_name": "Andrei Iosivas",
-                    "published_at": "2026-10-21T21:41:17.869524+00:00",
+                    "published_at": "2026-10-21T23:28:31.366879+00:00",
                     "reliability": 0.82,
                     "signal_id": "sleeper-injury-10226",
                     "source": "Sleeper player status",
@@ -9667,7 +9877,7 @@
                     "origin": "sleeper",
                     "player_id": "10226",
                     "player_name": "Andrei Iosivas",
-                    "published_at": "2026-10-21T21:41:17.869524+00:00",
+                    "published_at": "2026-10-21T23:28:31.366879+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-10226",
                     "source": "Sleeper depth chart",
@@ -9718,6 +9928,27 @@
                     "ttl_days": 7,
                     "type": "news",
                     "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQbDlwWWRFLUlJUVdKVGt0NzZoSnJnaXZlRHo3djZsSmhuVDlCVUtpVWdOTGRSdkFuZldqMHNYZzFLQW9sNkRRNTBsdHdNdGd5YkhqRjc1Unh6Y1FiNFpmaEI3bndsTkhyMjlhTkd1TTlCNnRKbWF4c093YWE2Wm1FTWlHOWxfalk?oc=5",
+                    "weighted_score": 0.0
+                  },
+                  {
+                    "corroboration_count": 1,
+                    "direction": 0.0,
+                    "event_date": null,
+                    "impact": "context",
+                    "magnitude": 0.0,
+                    "origin": "curated_report",
+                    "player_id": "10226",
+                    "player_name": "Andrei Iosivas",
+                    "published_at": "2026-10-21T20:30:00+00:00",
+                    "reliability": 0.45,
+                    "scored": false,
+                    "signal_id": "8b1bd46b66219b8cb0e3",
+                    "source": "Sportskeeda",
+                    "source_type": "aggregator",
+                    "summary": "Bengals WR Andrei Iosivas' GF Gia Duddy unlocks \"alternate personality\" with noticeable makeover - Sportskeeda",
+                    "ttl_days": 7,
+                    "type": "news",
+                    "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPUEVZZk5CdkJJQVlUTWh6ZnNndjJiYnRYV1pxQWc0aW5ZN1FxZmZxSFB5eUIxQlBxZm0tLUM3cWYydzdneUM2Ym5yb1U0UGZiYXpCTG4zUG5uOG8wVTdoNmxBYkpUT2JQaUUyTXMzNEpVYk9Id19wQTNXeTBwcDA0M2UtVjRJZm1Jdk9LeUZYcVdHT0RveEpkQm5KdVhZa2NXTGJSOXkxdW90YWU4eFQ4b2tnSW9yZ01JUlk3NnpFMW5vVmM?oc=5",
                     "weighted_score": 0.0
                   },
                   {
@@ -9841,7 +10072,7 @@
               "news": [
                 {
                   "event_date": null,
-                  "published_at": "2026-10-21T21:41:17.869524+00:00",
+                  "published_at": "2026-10-21T23:28:31.366879+00:00",
                   "signal_type": "injury",
                   "source": "Sleeper player status",
                   "text": "Sleeper lists Andrei Iosivas as IR.",
@@ -9864,6 +10095,15 @@
                   "source": "FantasyPros",
                   "text": "Andrei Iosivas Fantasy Football Half PPR Ros Rankings | Cincinnati Bengals - FantasyPros",
                   "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQbDlwWWRFLUlJUVdKVGt0NzZoSnJnaXZlRHo3djZsSmhuVDlCVUtpVWdOTGRSdkFuZldqMHNYZzFLQW9sNkRRNTBsdHdNdGd5YkhqRjc1Unh6Y1FiNFpmaEI3bndsTkhyMjlhTkd1TTlCNnRKbWF4c093YWE2Wm1FTWlHOWxfalk?oc=5",
+                  "weighted_score": 0.0
+                },
+                {
+                  "event_date": null,
+                  "published_at": "2026-10-21T20:30:00+00:00",
+                  "signal_type": "news",
+                  "source": "Sportskeeda",
+                  "text": "Bengals WR Andrei Iosivas' GF Gia Duddy unlocks \"alternate personality\" with noticeable makeover - Sportskeeda",
+                  "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPUEVZZk5CdkJJQVlUTWh6ZnNndjJiYnRYV1pxQWc0aW5ZN1FxZmZxSFB5eUIxQlBxZm0tLUM3cWYydzdneUM2Ym5yb1U0UGZiYXpCTG4zUG5uOG8wVTdoNmxBYkpUT2JQaUUyTXMzNEpVYk9Id19wQTNXeTBwcDA0M2UtVjRJZm1Jdk9LeUZYcVdHT0RveEpkQm5KdVhZa2NXTGJSOXkxdW90YWU4eFQ4b2tnSW9yZ01JUlk3NnpFMW5vVmM?oc=5",
                   "weighted_score": 0.0
                 },
                 {
@@ -9967,7 +10207,7 @@
                     "origin": "sleeper",
                     "player_id": "10222",
                     "player_name": "Jayden Reed",
-                    "published_at": "2026-10-21T21:41:17.869524+00:00",
+                    "published_at": "2026-10-21T23:28:31.366879+00:00",
                     "reliability": 0.82,
                     "signal_id": "sleeper-injury-10222",
                     "source": "Sleeper player status",
@@ -9987,7 +10227,7 @@
                     "origin": "sleeper",
                     "player_id": "10222",
                     "player_name": "Jayden Reed",
-                    "published_at": "2026-10-21T21:41:17.869524+00:00",
+                    "published_at": "2026-10-21T23:28:31.366879+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-10222",
                     "source": "Sleeper depth chart",
@@ -10140,7 +10380,7 @@
               "news": [
                 {
                   "event_date": null,
-                  "published_at": "2026-10-21T21:41:17.869524+00:00",
+                  "published_at": "2026-10-21T23:28:31.366879+00:00",
                   "signal_type": "injury",
                   "source": "Sleeper player status",
                   "text": "Sleeper lists Jayden Reed as IR.",
@@ -10255,8 +10495,8 @@
                 "availability_probability": 1.0,
                 "confidence": "medium",
                 "net_direction": "neutral",
-                "research_mention_count": 7,
-                "signal_count": 8,
+                "research_mention_count": 8,
+                "signal_count": 9,
                 "signals": [
                   {
                     "corroboration_count": 1,
@@ -10267,7 +10507,7 @@
                     "origin": "sleeper",
                     "player_id": "5045",
                     "player_name": "Courtland Sutton",
-                    "published_at": "2026-10-21T21:41:17.869524+00:00",
+                    "published_at": "2026-10-21T23:28:31.366879+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-5045",
                     "source": "Sleeper depth chart",
@@ -10381,6 +10621,27 @@
                     "ttl_days": 7,
                     "type": "news",
                     "url": "https://www.rotowire.com//football/player/courtland-sutton-12586",
+                    "weighted_score": 0.0
+                  },
+                  {
+                    "corroboration_count": 1,
+                    "direction": 0.0,
+                    "event_date": null,
+                    "impact": "context",
+                    "magnitude": 0.0,
+                    "origin": "curated_report",
+                    "player_id": "5045",
+                    "player_name": "Courtland Sutton",
+                    "published_at": "2026-10-19T07:00:00+00:00",
+                    "reliability": 0.45,
+                    "scored": false,
+                    "signal_id": "905f9ff6becb29285e8f",
+                    "source": "FantasyPros",
+                    "source_type": "aggregator",
+                    "summary": "Courtland Sutton Fantasy Football News, Rankings, Projections | Denver Broncos - FantasyPros",
+                    "ttl_days": 7,
+                    "type": "news",
+                    "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1OQ1VjS2NBX3l4Y2hyR1VxNzVEUmJwX19Kcm1ZTnpzSnplZHRSRzJ4S2VabV9sbkhkMHlxMjJlOHpzUHpxb0JuNkllNDFNQWtGTXBjbnFOb2l6Z0s4SVBKTjJhaWFsWFVTR3JlaQ?oc=5",
                     "weighted_score": 0.0
                   },
                   {
@@ -10527,6 +10788,15 @@
                 },
                 {
                   "event_date": null,
+                  "published_at": "2026-10-19T07:00:00+00:00",
+                  "signal_type": "news",
+                  "source": "FantasyPros",
+                  "text": "Courtland Sutton Fantasy Football News, Rankings, Projections | Denver Broncos - FantasyPros",
+                  "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1OQ1VjS2NBX3l4Y2hyR1VxNzVEUmJwX19Kcm1ZTnpzSnplZHRSRzJ4S2VabV9sbkhkMHlxMjJlOHpzUHpxb0JuNkllNDFNQWtGTXBjbnFOb2l6Z0s4SVBKTjJhaWFsWFVTR3JlaQ?oc=5",
+                  "weighted_score": 0.0
+                },
+                {
+                  "event_date": null,
                   "published_at": "2026-10-19T01:52:42+00:00",
                   "signal_type": "news",
                   "source": "FantasySP",
@@ -10606,8 +10876,8 @@
                 "availability_probability": 0.85,
                 "confidence": "medium",
                 "net_direction": "negative",
-                "research_mention_count": 11,
-                "signal_count": 13,
+                "research_mention_count": 12,
+                "signal_count": 14,
                 "signals": [
                   {
                     "corroboration_count": 1,
@@ -10618,7 +10888,7 @@
                     "origin": "sleeper",
                     "player_id": "7571",
                     "player_name": "Rashod Bateman",
-                    "published_at": "2026-10-21T21:41:17.869524+00:00",
+                    "published_at": "2026-10-21T23:28:31.366879+00:00",
                     "reliability": 0.82,
                     "signal_id": "sleeper-injury-7571",
                     "source": "Sleeper player status",
@@ -10638,7 +10908,7 @@
                     "origin": "sleeper",
                     "player_id": "7571",
                     "player_name": "Rashod Bateman",
-                    "published_at": "2026-10-21T21:41:17.869524+00:00",
+                    "published_at": "2026-10-21T23:28:31.366879+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-7571",
                     "source": "Sleeper depth chart",
@@ -10710,6 +10980,27 @@
                     "ttl_days": 7,
                     "type": "news",
                     "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOR25oeERiYS0xYW1XV2dUb1N3cWZSLUZmLW4xamZSd0FxVDRWMUdrX3AyVWdybkYwYXNqNTdXY1NiWF9kVkhFYjZwQlRyaGg1OUF0aTM1VW1oSFVfRzJTc04yM3pJQVQ3eXV3cnAzcVJOZTB1Wi1CcktpcXRfV2xtSkdoRXZSajdGdm9IcQ?oc=5",
+                    "weighted_score": 0.0
+                  },
+                  {
+                    "corroboration_count": 1,
+                    "direction": 0.0,
+                    "event_date": null,
+                    "impact": "context",
+                    "magnitude": 0.0,
+                    "origin": "curated_report",
+                    "player_id": "7571",
+                    "player_name": "Rashod Bateman",
+                    "published_at": "2026-10-21T20:39:31+00:00",
+                    "reliability": 0.45,
+                    "scored": false,
+                    "signal_id": "8915ffe9528958e020a7",
+                    "source": "NBC Sports",
+                    "source_type": "aggregator",
+                    "summary": "Rashod Bateman joins Lamar Jackson as limited participant Wednesday; Cam Jurgens fully participates - NBC Sports",
+                    "ttl_days": 7,
+                    "type": "news",
+                    "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxONTNvSC1uZjhYbWx4ZHRCSDJrd19rV3ZCaVJuRnR6dUdLNnAwTmcwaEJ3VlA4UlZ5WjlDZC1CX19xb0VqSjllQmh6Y2lRWjBCb3djSzRWVFRMUnd4MDF3bl9tQWM0dW90b3NnVFpyZjNRYnFaU2xBTWlGSk84bTNybUdvZGVZYW83ZVd0bmRWb1dIZjJ5TGRBSWZrUzlreE1tZkx6dHRQRy00LWsza2IxY3VpQVZ5MEhKbmtTUVdlX2ZubFowVHBBVVNJN1RiTlV6SVk5YVM1ck5aN3dnbDVURXdrcWtlOURqb1dRSU9aVUc5dw?oc=5",
                     "weighted_score": 0.0
                   },
                   {
@@ -10938,7 +11229,7 @@
               "news": [
                 {
                   "event_date": null,
-                  "published_at": "2026-10-21T21:41:17.869524+00:00",
+                  "published_at": "2026-10-21T23:28:31.366879+00:00",
                   "signal_type": "injury",
                   "source": "Sleeper player status",
                   "text": "Sleeper lists Rashod Bateman as Questionable.",
@@ -10970,6 +11261,15 @@
                   "source": "Yahoo Sports",
                   "text": "Rashod Bateman Trade: Rams Connected to Ravens WR - Yahoo Sports",
                   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOR25oeERiYS0xYW1XV2dUb1N3cWZSLUZmLW4xamZSd0FxVDRWMUdrX3AyVWdybkYwYXNqNTdXY1NiWF9kVkhFYjZwQlRyaGg1OUF0aTM1VW1oSFVfRzJTc04yM3pJQVQ3eXV3cnAzcVJOZTB1Wi1CcktpcXRfV2xtSkdoRXZSajdGdm9IcQ?oc=5",
+                  "weighted_score": 0.0
+                },
+                {
+                  "event_date": null,
+                  "published_at": "2026-10-21T20:39:31+00:00",
+                  "signal_type": "news",
+                  "source": "NBC Sports",
+                  "text": "Rashod Bateman joins Lamar Jackson as limited participant Wednesday; Cam Jurgens fully participates - NBC Sports",
+                  "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxONTNvSC1uZjhYbWx4ZHRCSDJrd19rV3ZCaVJuRnR6dUdLNnAwTmcwaEJ3VlA4UlZ5WjlDZC1CX19xb0VqSjllQmh6Y2lRWjBCb3djSzRWVFRMUnd4MDF3bl9tQWM0dW90b3NnVFpyZjNRYnFaU2xBTWlGSk84bTNybUdvZGVZYW83ZVd0bmRWb1dIZjJ5TGRBSWZrUzlreE1tZkx6dHRQRy00LWsza2IxY3VpQVZ5MEhKbmtTUVdlX2ZubFowVHBBVVNJN1RiTlV6SVk5YVM1ck5aN3dnbDVURXdrcWtlOURqb1dRSU9aVUc5dw?oc=5",
                   "weighted_score": 0.0
                 },
                 {
@@ -11119,8 +11419,8 @@
                 "availability_probability": 1.0,
                 "confidence": "medium",
                 "net_direction": "positive",
-                "research_mention_count": 11,
-                "signal_count": 12,
+                "research_mention_count": 15,
+                "signal_count": 16,
                 "signals": [
                   {
                     "corroboration_count": 1,
@@ -11131,7 +11431,7 @@
                     "origin": "sleeper",
                     "player_id": "10859",
                     "player_name": "Sam LaPorta",
-                    "published_at": "2026-10-21T21:41:17.869524+00:00",
+                    "published_at": "2026-10-21T23:28:31.366879+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-10859",
                     "source": "Sleeper depth chart",
@@ -11161,6 +11461,27 @@
                     "ttl_days": 7,
                     "type": "news",
                     "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOaEpMdjEtTktGcUd0QXM3Q0tmTEt2eGpMN3o4bm4wN2Z0Vjl2dWp5RDRvbEVTTVVzR3REVzFWTUh6eFIwRmNJQy1XWGRzakRodkdmR0Z3TUdtUXVNWEdobC1jRHJhUXhfVk9JTEphWTBmbTNGR01KYV81X0tmUENseDhPY2JFS3JOWElScXRwU1p6ODg?oc=5",
+                    "weighted_score": 0.0
+                  },
+                  {
+                    "corroboration_count": 1,
+                    "direction": 0.0,
+                    "event_date": null,
+                    "impact": "context",
+                    "magnitude": 0.0,
+                    "origin": "curated_report",
+                    "player_id": "10859",
+                    "player_name": "Sam LaPorta",
+                    "published_at": "2026-10-21T16:45:07+00:00",
+                    "reliability": 0.45,
+                    "scored": false,
+                    "signal_id": "15c25b58dc14af84aa2d",
+                    "source": "Yahoo Sports",
+                    "source_type": "aggregator",
+                    "summary": "Sam LaPorta expresses frustration over contract stalemate with Lions - Yahoo Sports",
+                    "ttl_days": 7,
+                    "type": "news",
+                    "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQRXRTYjAzX1RPYkwtV0phbTRUQlFJQjdadkx4UlU1eW1PSkVFREFXNlA1WGtLekJmQTA2SkUwTU1qa1l6S3RnR0tFNFFwOG1aU0EwNm5LUnhDaUJndzQtZ1pTaWdjWktmTFlNREF5aDBFbXVHdmROVnZUaDl0azQtc1Y0amNlQ2o0S1p5WkpJQWo?oc=5",
                     "weighted_score": 0.0
                   },
                   {
@@ -11203,6 +11524,27 @@
                     "ttl_days": 7,
                     "type": "news",
                     "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPeXN2Z3Z1V1V2bXlEd0tRM1V2Y2F5bDlJUWQtOVgtdnIxVnJ3d2RrZzI5SGtSaHUxak41cU4yNG45RTFKWUNEWEJEcDhHUUZTdzJxQnV2RkotNk52SURsN2JhUUtSNHNmUWs3c1U1TDhtZUdQZHdmWmR5cEF5Ym9MV2dabDZnQV9xRzg4?oc=5",
+                    "weighted_score": 0.0
+                  },
+                  {
+                    "corroboration_count": 1,
+                    "direction": 0.0,
+                    "event_date": null,
+                    "impact": "context",
+                    "magnitude": 0.0,
+                    "origin": "curated_report",
+                    "player_id": "10859",
+                    "player_name": "Sam LaPorta",
+                    "published_at": "2026-10-21T20:21:30+00:00",
+                    "reliability": 0.7,
+                    "scored": false,
+                    "signal_id": "54032702e3b525f152a2",
+                    "source": "Bryan DeArdo",
+                    "source_type": "established_media",
+                    "summary": "Sam LaPorta sounds off about contract situation with Lions: 'I break my f-----g back for the team'",
+                    "ttl_days": 7,
+                    "type": "news",
+                    "url": "\n                                                https://www.cbssports.com/nfl/news/sam-laporta-sounds-off-about-contract-situation-lions/\n                    ",
                     "weighted_score": 0.0
                   },
                   {
@@ -11361,6 +11703,48 @@
                     "origin": "curated_report",
                     "player_id": "10859",
                     "player_name": "Sam LaPorta",
+                    "published_at": "2026-10-21T19:31:05+00:00",
+                    "reliability": 0.45,
+                    "scored": false,
+                    "signal_id": "cb43a8cd44b88ac1f610",
+                    "source": "NFL.com",
+                    "source_type": "aggregator",
+                    "summary": "Sam LaPorta on lack of contract extension with Lions: 'They're just not showing the love' - NFL.com",
+                    "ttl_days": 7,
+                    "type": "news",
+                    "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNVTBJaEpiNm5pd2h1T24xRm5KczdzV1ZURXgwYklnMXJuSkZLM3pka2ZXZzcxdlotWDNFM1ZuR24zU1U3VVFTQ0RmWVpkWm5ySFB4UURrcUdHemRIMnczcWNHM1psOUt2ZE9XSnIzMEpaZkt3czNBRlBTMVVQSHpqOHpXN0t3ZWU4V1BVdFpENHdZVUIyWDJmTmI1Y0ZDSWpSeUdJRWVBTENsMjd1WGswdmtKanEyeExJbEZ1M1ktdTNxbVU?oc=5",
+                    "weighted_score": 0.0
+                  },
+                  {
+                    "corroboration_count": 1,
+                    "direction": 0.0,
+                    "event_date": null,
+                    "impact": "context",
+                    "magnitude": 0.0,
+                    "origin": "curated_report",
+                    "player_id": "10859",
+                    "player_name": "Sam LaPorta",
+                    "published_at": "2026-10-21T20:21:30+00:00",
+                    "reliability": 0.45,
+                    "scored": false,
+                    "signal_id": "f2a4b4c3fbf2881c1262",
+                    "source": "CBS Sports",
+                    "source_type": "aggregator",
+                    "summary": "Sam LaPorta sounds off about contract situation with Lions: 'I break my f-----g back for the team' - CBS Sports",
+                    "ttl_days": 7,
+                    "type": "news",
+                    "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQdThXM0k3Ykt0WFpEcmxUWmhFc0kwanc1c0VTUWJGaUM0UkkxU0N3OGVkd2RkbkhrRkRkTEhkMFZDbFQ5VElUUDhwdHUyMXcwTFczTXRCd1dlVlBFRExyd0FLa2dEN1I1ZFVfbENGX1ZsM2Z5LURVXzFIZzdpWEpxVDRUUjJ0U1c1ZmJDTElRT3RfMWc?oc=5",
+                    "weighted_score": 0.0
+                  },
+                  {
+                    "corroboration_count": 1,
+                    "direction": 0.0,
+                    "event_date": null,
+                    "impact": "context",
+                    "magnitude": 0.0,
+                    "origin": "curated_report",
+                    "player_id": "10859",
+                    "player_name": "Sam LaPorta",
                     "published_at": "2026-10-17T17:02:52+00:00",
                     "reliability": 0.45,
                     "scored": false,
@@ -11439,6 +11823,15 @@
                 },
                 {
                   "event_date": null,
+                  "published_at": "2026-10-21T16:45:07+00:00",
+                  "signal_type": "news",
+                  "source": "Yahoo Sports",
+                  "text": "Sam LaPorta expresses frustration over contract stalemate with Lions - Yahoo Sports",
+                  "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQRXRTYjAzX1RPYkwtV0phbTRUQlFJQjdadkx4UlU1eW1PSkVFREFXNlA1WGtLekJmQTA2SkUwTU1qa1l6S3RnR0tFNFFwOG1aU0EwNm5LUnhDaUJndzQtZ1pTaWdjWktmTFlNREF5aDBFbXVHdmROVnZUaDl0azQtc1Y0amNlQ2o0S1p5WkpJQWo?oc=5",
+                  "weighted_score": 0.0
+                },
+                {
+                  "event_date": null,
                   "published_at": "2026-10-17T11:00:41+00:00",
                   "signal_type": "news",
                   "source": "Yahoo Sports",
@@ -11453,6 +11846,15 @@
                   "source": "Yahoo Sports",
                   "text": "Lions Insider Predicts Sam LaPorta Contract Outcome - Yahoo Sports",
                   "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPeXN2Z3Z1V1V2bXlEd0tRM1V2Y2F5bDlJUWQtOVgtdnIxVnJ3d2RrZzI5SGtSaHUxak41cU4yNG45RTFKWUNEWEJEcDhHUUZTdzJxQnV2RkotNk52SURsN2JhUUtSNHNmUWs3c1U1TDhtZUdQZHdmWmR5cEF5Ym9MV2dabDZnQV9xRzg4?oc=5",
+                  "weighted_score": 0.0
+                },
+                {
+                  "event_date": null,
+                  "published_at": "2026-10-21T20:21:30+00:00",
+                  "signal_type": "news",
+                  "source": "Bryan DeArdo",
+                  "text": "Sam LaPorta sounds off about contract situation with Lions: 'I break my f-----g back for the team'",
+                  "url": "\n                                                https://www.cbssports.com/nfl/news/sam-laporta-sounds-off-about-contract-situation-lions/\n                    ",
                   "weighted_score": 0.0
                 },
                 {
@@ -11516,6 +11918,24 @@
                   "source": "roundtable.io",
                   "text": "Quietly Dominant: How Sam LaPorta’s Stellar Start is Fueling the Detroit Lions' Offense - roundtable.io",
                   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPUVczVnVaa3p6dzNKbHpXYXhFYW1wSVVIa1IyazFnTUVZUUhhZngtVDROQTFleFBQalBaakhnRTNtTV9NaldqMnhKTmc5cHBncWJFOFNJV3F5NFNRQVJqLTVBT2lOLXpRdWtidzJndjhfbTVRRVlCVTFyTl82VmFUN3h4NXh0SmF1MUc5TWJZRWNhMUczNE9vc2Z5V3hlUGhPdGtMQ1hzVHBZM2gyM2w4MkszUTRoUkZvZEhybmVkbHZOdU9NVDhXdE9fdzk?oc=5",
+                  "weighted_score": 0.0
+                },
+                {
+                  "event_date": null,
+                  "published_at": "2026-10-21T19:31:05+00:00",
+                  "signal_type": "news",
+                  "source": "NFL.com",
+                  "text": "Sam LaPorta on lack of contract extension with Lions: 'They're just not showing the love' - NFL.com",
+                  "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNVTBJaEpiNm5pd2h1T24xRm5KczdzV1ZURXgwYklnMXJuSkZLM3pka2ZXZzcxdlotWDNFM1ZuR24zU1U3VVFTQ0RmWVpkWm5ySFB4UURrcUdHemRIMnczcWNHM1psOUt2ZE9XSnIzMEpaZkt3czNBRlBTMVVQSHpqOHpXN0t3ZWU4V1BVdFpENHdZVUIyWDJmTmI1Y0ZDSWpSeUdJRWVBTENsMjd1WGswdmtKanEyeExJbEZ1M1ktdTNxbVU?oc=5",
+                  "weighted_score": 0.0
+                },
+                {
+                  "event_date": null,
+                  "published_at": "2026-10-21T20:21:30+00:00",
+                  "signal_type": "news",
+                  "source": "CBS Sports",
+                  "text": "Sam LaPorta sounds off about contract situation with Lions: 'I break my f-----g back for the team' - CBS Sports",
+                  "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQdThXM0k3Ykt0WFpEcmxUWmhFc0kwanc1c0VTUWJGaUM0UkkxU0N3OGVkd2RkbkhrRkRkTEhkMFZDbFQ5VElUUDhwdHUyMXcwTFczTXRCd1dlVlBFRExyd0FLa2dEN1I1ZFVfbENGX1ZsM2Z5LURVXzFIZzdpWEpxVDRUUjJ0U1c1ZmJDTElRT3RfMWc?oc=5",
                   "weighted_score": 0.0
                 },
                 {
@@ -11590,8 +12010,8 @@
                 "availability_probability": 1.0,
                 "confidence": "medium",
                 "net_direction": "positive",
-                "research_mention_count": 9,
-                "signal_count": 10,
+                "research_mention_count": 11,
+                "signal_count": 12,
                 "signals": [
                   {
                     "corroboration_count": 1,
@@ -11602,7 +12022,7 @@
                     "origin": "sleeper",
                     "player_id": "12506",
                     "player_name": "Harold Fannin",
-                    "published_at": "2026-10-21T21:41:17.869524+00:00",
+                    "published_at": "2026-10-21T23:28:31.366879+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-12506",
                     "source": "Sleeper depth chart",
@@ -11801,6 +12221,48 @@
                     "type": "news",
                     "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPazViVU04NVRwTW1ZNGdqa3h3WUo5UUNYU3lGZEtNRktjdTBTZXdYYkh6aXRfS3NRWGNpYXRrcW1GYlZiUkFJc1RGRmJjNDdDYVJOMGp2QzNyWXM3MWdscndXNGxxTTFZSUliMmFPckVIaUs2WWRuVkFrREswRGhhcEVYMV9MbWZlbmUzYWZ5bkdMbEI3ejlV?oc=5",
                     "weighted_score": 0.0
+                  },
+                  {
+                    "corroboration_count": 1,
+                    "direction": 0.0,
+                    "event_date": null,
+                    "impact": "context",
+                    "magnitude": 0.0,
+                    "origin": "curated_report",
+                    "player_id": "12506",
+                    "player_name": "Harold Fannin",
+                    "published_at": "2026-10-18T21:10:57+00:00",
+                    "reliability": 0.45,
+                    "scored": false,
+                    "signal_id": "dbb3af7472a26ff804b5",
+                    "source": "Yahoo Sports",
+                    "source_type": "aggregator",
+                    "summary": "Harold Fannin Jr. limited to one reception vs. Ravens - Yahoo Sports",
+                    "ttl_days": 7,
+                    "type": "news",
+                    "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNUFo1RzM3VkZNTUlGNzlTU2RvRWVyMzNTMU9mV0VwOFRtVHhyeEVEZkhYbkhjcU5kSWFDa1ZlX3JaQlA1ZVkwX1hYTE1ReUw0ZnluaHdkY25FWDVRUjdhYVB6OWRoUWFMRzdQMTFfYkNETElBcmEzNnVHaGtVbi1WWWdxVQ?oc=5",
+                    "weighted_score": 0.0
+                  },
+                  {
+                    "corroboration_count": 1,
+                    "direction": 0.0,
+                    "event_date": null,
+                    "impact": "context",
+                    "magnitude": 0.0,
+                    "origin": "curated_report",
+                    "player_id": "12506",
+                    "player_name": "Harold Fannin",
+                    "published_at": "2026-10-15T18:55:00+00:00",
+                    "reliability": 0.45,
+                    "scored": false,
+                    "signal_id": "f0c13fb019351a169535",
+                    "source": "Browns Wire",
+                    "source_type": "aggregator",
+                    "summary": "Fantasy Football: Should you start Harold Fannin Jr. in Week 6? - Browns Wire",
+                    "ttl_days": 7,
+                    "type": "news",
+                    "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPTmlua3dvSGxRVUVDZ0ZLcDEwOGtlbmlmRUQxLUxkcS1CdU4wUUFUdlBsRlVqcFFqUkw0WWZRXzZxcWxVVnB5TnVWbmNmVXpEeXgtVW9GZm5pRDBTbGNPYkRvUEV5cjlGUzZabFp2MlRRQzVwN2pUemV1NERQcmJheUhFcEtQRVl0YXpjY1BxSE9vVC1GZTRlMWZaVFRKcThnVHg0bjRqaFp3MEY0cnhiMmszaktObG1lR0t1RWdoc1hOajdCZjM5cG1sRE13cjhGbkVRY2wyOA?oc=5",
+                    "weighted_score": 0.0
                   }
                 ],
                 "weekly_multiplier": 1.026
@@ -11937,6 +12399,24 @@
                   "text": "Harold Fannin Jr. Held to one catch Sunday - Fantasy Footballers Podcast",
                   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPazViVU04NVRwTW1ZNGdqa3h3WUo5UUNYU3lGZEtNRktjdTBTZXdYYkh6aXRfS3NRWGNpYXRrcW1GYlZiUkFJc1RGRmJjNDdDYVJOMGp2QzNyWXM3MWdscndXNGxxTTFZSUliMmFPckVIaUs2WWRuVkFrREswRGhhcEVYMV9MbWZlbmUzYWZ5bkdMbEI3ejlV?oc=5",
                   "weighted_score": 0.0
+                },
+                {
+                  "event_date": null,
+                  "published_at": "2026-10-18T21:10:57+00:00",
+                  "signal_type": "news",
+                  "source": "Yahoo Sports",
+                  "text": "Harold Fannin Jr. limited to one reception vs. Ravens - Yahoo Sports",
+                  "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNUFo1RzM3VkZNTUlGNzlTU2RvRWVyMzNTMU9mV0VwOFRtVHhyeEVEZkhYbkhjcU5kSWFDa1ZlX3JaQlA1ZVkwX1hYTE1ReUw0ZnluaHdkY25FWDVRUjdhYVB6OWRoUWFMRzdQMTFfYkNETElBcmEzNnVHaGtVbi1WWWdxVQ?oc=5",
+                  "weighted_score": 0.0
+                },
+                {
+                  "event_date": null,
+                  "published_at": "2026-10-15T18:55:00+00:00",
+                  "signal_type": "news",
+                  "source": "Browns Wire",
+                  "text": "Fantasy Football: Should you start Harold Fannin Jr. in Week 6? - Browns Wire",
+                  "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPTmlua3dvSGxRVUVDZ0ZLcDEwOGtlbmlmRUQxLUxkcS1CdU4wUUFUdlBsRlVqcFFqUkw0WWZRXzZxcWxVVnB5TnVWbmNmVXpEeXgtVW9GZm5pRDBTbGNPYkRvUEV5cjlGUzZabFp2MlRRQzVwN2pUemV1NERQcmJheUhFcEtQRVl0YXpjY1BxSE9vVC1GZTRlMWZaVFRKcThnVHg0bjRqaFp3MEY0cnhiMmszaktObG1lR0t1RWdoc1hOajdCZjM5cG1sRE13cjhGbkVRY2wyOA?oc=5",
+                  "weighted_score": 0.0
                 }
               ],
               "notable_takeaways": [
@@ -12017,7 +12497,7 @@
                     "origin": "sleeper",
                     "player_id": "12521",
                     "player_name": "Elijah Arroyo",
-                    "published_at": "2026-10-21T21:41:17.869524+00:00",
+                    "published_at": "2026-10-21T23:28:31.366879+00:00",
                     "reliability": 0.82,
                     "signal_id": "sleeper-injury-12521",
                     "source": "Sleeper player status",
@@ -12037,7 +12517,7 @@
                     "origin": "sleeper",
                     "player_id": "12521",
                     "player_name": "Elijah Arroyo",
-                    "published_at": "2026-10-21T21:41:17.869524+00:00",
+                    "published_at": "2026-10-21T23:28:31.366879+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-12521",
                     "source": "Sleeper depth chart",
@@ -12400,7 +12880,7 @@
               "news": [
                 {
                   "event_date": null,
-                  "published_at": "2026-10-21T21:41:17.869524+00:00",
+                  "published_at": "2026-10-21T23:28:31.366879+00:00",
                   "signal_type": "injury",
                   "source": "Sleeper player status",
                   "text": "Sleeper lists Elijah Arroyo as Out.",
@@ -12599,7 +13079,7 @@
   ],
   "sources": [
     {
-      "checked_at": "2026-10-21T21:41:18.115669+00:00",
+      "checked_at": "2026-10-21T23:28:31.591615+00:00",
       "name": "Sleeper",
       "status": "ok",
       "type": "authoritative_roster_data",
@@ -12624,14 +13104,14 @@
       "url": "https://nflverse.com/"
     },
     {
-      "checked_at": "2026-10-21T21:41:17.869524+00:00",
+      "checked_at": "2026-10-21T23:28:31.366879+00:00",
       "name": "Player context signals",
       "status": "available",
       "type": "availability_depth_usage_and_reporting",
       "url": null
     },
     {
-      "checked_at": "2026-10-21T21:41:17.869524+00:00",
+      "checked_at": "2026-10-21T23:28:31.366879+00:00",
       "name": "Roster research",
       "status": "available",
       "type": "news_matchup_coach_reporting",
