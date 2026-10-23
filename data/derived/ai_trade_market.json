@@ -347,7 +347,7 @@
       ],
       "starter_market_value": 46400,
       "team_name": null,
-      "total_market_value": 93624,
+      "total_market_value": 93576,
       "weeks": 6
     },
     {
@@ -2441,12 +2441,12 @@
       }
     }
   ],
-  "generated_at": "2026-10-23T15:25:14.730190+00:00",
+  "generated_at": "2026-10-23T17:04:57.003885+00:00",
   "manager_tendencies": {
     "managers": [
       {
         "faab_spent": 193,
-        "failed_waiver_attempts": 73,
+        "failed_waiver_attempts": 74,
         "firsts_acquired": 8,
         "firsts_sent": 1,
         "free_agent_moves": 16,
@@ -2487,8 +2487,8 @@
         ],
         "trades": 18,
         "trades_initiated": 11,
-        "waiver_attempts": 152,
-        "waiver_success_rate": 52.0,
+        "waiver_attempts": 153,
+        "waiver_success_rate": 51.6,
         "waiver_successes": 79
       },
       {
@@ -2720,7 +2720,7 @@
         "waiver_successes": 25
       },
       {
-        "faab_spent": 152,
+        "faab_spent": 154,
         "failed_waiver_attempts": 22,
         "firsts_acquired": 8,
         "firsts_sent": 4,
@@ -2731,11 +2731,11 @@
         "picks_acquired": 24,
         "picks_sent": 14,
         "players_acquired_trade": 12,
-        "players_added": 16,
-        "players_dropped": 19,
+        "players_added": 17,
+        "players_dropped": 20,
         "players_sent_trade": 15,
         "primary_tendency": "Pick Hoarder",
-        "roster_moves": 23,
+        "roster_moves": 24,
         "seasons": [
           "2025",
           "2026"
@@ -2760,9 +2760,9 @@
         ],
         "trades": 11,
         "trades_initiated": 7,
-        "waiver_attempts": 38,
-        "waiver_success_rate": 42.1,
-        "waiver_successes": 16
+        "waiver_attempts": 39,
+        "waiver_success_rate": 43.6,
+        "waiver_successes": 17
       },
       {
         "faab_spent": 100,
@@ -3143,13 +3143,13 @@
       "market": {
         "position_scores": {
           "QB": 0.0,
-          "RB": 52.4,
+          "RB": 52.2,
           "TE": 0.6,
           "WR": 89.1
         },
         "their_market_rank": 10,
         "their_starter_value": 46400,
-        "their_total_value": 93624
+        "their_total_value": 93576
       },
       "market_fit_score": 0.0,
       "pick_summary": {
@@ -3828,6 +3828,40 @@
       "young_player_share": 37.0
     },
     {
+      "average_roster_age": 25.4,
+      "early_picks": 17,
+      "first_round_picks": 8,
+      "franchise_score": 60.4,
+      "manager": "MayaHuskies",
+      "metrics": {
+        "draft_capital": 69.9,
+        "lineup_management": 45.3,
+        "market_value": 29.8,
+        "performance_prior": 77.6,
+        "roster_balance": 75.0,
+        "stability": 34.8,
+        "youth": 76.5
+      },
+      "model_mean": 128.59,
+      "model_sd": 32.94,
+      "owner_id": "974038899053883392",
+      "pick_count": 30,
+      "playoff_odds": 33.3,
+      "risks": [
+        "Market Value",
+        "Stability"
+      ],
+      "roster_id": 4,
+      "strengths": [
+        "Performance Prior",
+        "Youth"
+      ],
+      "team_name": null,
+      "title_odds": 2.4,
+      "window": "Middle",
+      "young_player_share": 74.1
+    },
+    {
       "average_roster_age": 27.5,
       "early_picks": 3,
       "first_round_picks": 1,
@@ -3860,40 +3894,6 @@
       "title_odds": 2.0,
       "window": "Middle",
       "young_player_share": 25.9
-    },
-    {
-      "average_roster_age": 25.5,
-      "early_picks": 17,
-      "first_round_picks": 8,
-      "franchise_score": 59.8,
-      "manager": "MayaHuskies",
-      "metrics": {
-        "draft_capital": 69.9,
-        "lineup_management": 45.3,
-        "market_value": 29.8,
-        "performance_prior": 77.6,
-        "roster_balance": 75.0,
-        "stability": 34.8,
-        "youth": 70.6
-      },
-      "model_mean": 128.59,
-      "model_sd": 32.94,
-      "owner_id": "974038899053883392",
-      "pick_count": 30,
-      "playoff_odds": 33.3,
-      "risks": [
-        "Market Value",
-        "Stability"
-      ],
-      "roster_id": 4,
-      "strengths": [
-        "Performance Prior",
-        "Roster Balance"
-      ],
-      "team_name": null,
-      "title_odds": 2.4,
-      "window": "Middle",
-      "young_player_share": 70.4
     },
     {
       "average_roster_age": 24.4,
@@ -4032,6 +4032,100 @@
     }
   ],
   "recent_transactions": [
+    {
+      "adds": [
+        {
+          "manager": "Amelse",
+          "player": {
+            "age": 25,
+            "depth_chart_order": 2,
+            "depth_chart_position": "RB",
+            "fantasy_positions": [
+              "RB"
+            ],
+            "injury_body_part": null,
+            "injury_notes": null,
+            "injury_status": null,
+            "name": "Zonovan Knight",
+            "player_id": "8122",
+            "position": "RB",
+            "status": "Active",
+            "team": "ARI",
+            "years_exp": 4
+          },
+          "roster_id": 6
+        }
+      ],
+      "created": 1792711796608,
+      "draft_picks": [],
+      "drops": [],
+      "roster_ids": [
+        6
+      ],
+      "status": "failed",
+      "transaction_id": "1419139769148944384",
+      "type": "waiver",
+      "waiver_budget": 0,
+      "week": 7
+    },
+    {
+      "adds": [
+        {
+          "manager": "MayaHuskies",
+          "player": {
+            "age": 25,
+            "depth_chart_order": 2,
+            "depth_chart_position": "RB",
+            "fantasy_positions": [
+              "RB"
+            ],
+            "injury_body_part": null,
+            "injury_notes": null,
+            "injury_status": null,
+            "name": "Zonovan Knight",
+            "player_id": "8122",
+            "position": "RB",
+            "status": "Active",
+            "team": "ARI",
+            "years_exp": 4
+          },
+          "roster_id": 4
+        }
+      ],
+      "created": 1792687091044,
+      "draft_picks": [],
+      "drops": [
+        {
+          "manager": "MayaHuskies",
+          "player": {
+            "age": 27,
+            "depth_chart_order": 2,
+            "depth_chart_position": "RB",
+            "fantasy_positions": [
+              "RB"
+            ],
+            "injury_body_part": null,
+            "injury_notes": null,
+            "injury_status": null,
+            "name": "Pierre Strong Jr.",
+            "player_id": "8116",
+            "position": "RB",
+            "status": "Active",
+            "team": "GB",
+            "years_exp": 4
+          },
+          "roster_id": 4
+        }
+      ],
+      "roster_ids": [
+        4
+      ],
+      "status": "complete",
+      "transaction_id": "1419036146498834432",
+      "type": "waiver",
+      "waiver_budget": 2,
+      "week": 7
+    },
     {
       "adds": [
         {
@@ -5741,202 +5835,6 @@
       "type": "free_agent",
       "waiver_budget": null,
       "week": 5
-    },
-    {
-      "adds": [
-        {
-          "manager": "ryansorensen8",
-          "player": {
-            "age": 22,
-            "depth_chart_order": 3,
-            "depth_chart_position": "RB",
-            "fantasy_positions": [
-              "RB"
-            ],
-            "injury_body_part": null,
-            "injury_notes": null,
-            "injury_status": null,
-            "name": "LeQuint Allen Jr.",
-            "player_id": "12544",
-            "position": "RB",
-            "status": "Active",
-            "team": "JAX",
-            "years_exp": 1
-          },
-          "roster_id": 9
-        }
-      ],
-      "created": 1791425135517,
-      "draft_picks": [],
-      "drops": [],
-      "roster_ids": [
-        9
-      ],
-      "status": "complete",
-      "transaction_id": "1413743121388290048",
-      "type": "waiver",
-      "waiver_budget": 0,
-      "week": 5
-    },
-    {
-      "adds": [
-        {
-          "manager": "Waldo23",
-          "player": {
-            "age": 25,
-            "depth_chart_order": 2,
-            "depth_chart_position": "RB",
-            "fantasy_positions": [
-              "RB"
-            ],
-            "injury_body_part": null,
-            "injury_notes": null,
-            "injury_status": null,
-            "name": "Blake Corum",
-            "player_id": "11586",
-            "position": "RB",
-            "status": "Active",
-            "team": "LAR",
-            "years_exp": 2
-          },
-          "roster_id": 11
-        },
-        {
-          "manager": "ryansorensen8",
-          "player": {
-            "age": 22,
-            "depth_chart_order": 3,
-            "depth_chart_position": "LWR",
-            "fantasy_positions": [
-              "WR"
-            ],
-            "injury_body_part": null,
-            "injury_notes": null,
-            "injury_status": null,
-            "name": "Antonio Williams",
-            "player_id": "13301",
-            "position": "WR",
-            "status": "Active",
-            "team": "WAS",
-            "years_exp": 0
-          },
-          "roster_id": 9
-        },
-        {
-          "manager": "Waldo23",
-          "player": {
-            "age": 27,
-            "depth_chart_order": 2,
-            "depth_chart_position": "RB",
-            "fantasy_positions": [
-              "RB"
-            ],
-            "injury_body_part": "Hamstring",
-            "injury_notes": null,
-            "injury_status": "Questionable",
-            "name": "Brian Robinson Jr.",
-            "player_id": "8154",
-            "position": "RB",
-            "status": "Active",
-            "team": "ATL",
-            "years_exp": 4
-          },
-          "roster_id": 11
-        }
-      ],
-      "created": 1791424294094,
-      "draft_picks": [
-        {
-          "league_id": null,
-          "owner_id": 9,
-          "previous_owner_id": 11,
-          "roster_id": 11,
-          "round": 4,
-          "season": "2027"
-        },
-        {
-          "league_id": null,
-          "owner_id": 9,
-          "previous_owner_id": 11,
-          "roster_id": 11,
-          "round": 3,
-          "season": "2028"
-        }
-      ],
-      "drops": [
-        {
-          "manager": "ryansorensen8",
-          "player": {
-            "age": 25,
-            "depth_chart_order": 2,
-            "depth_chart_position": "RB",
-            "fantasy_positions": [
-              "RB"
-            ],
-            "injury_body_part": null,
-            "injury_notes": null,
-            "injury_status": null,
-            "name": "Blake Corum",
-            "player_id": "11586",
-            "position": "RB",
-            "status": "Active",
-            "team": "LAR",
-            "years_exp": 2
-          },
-          "roster_id": 9
-        },
-        {
-          "manager": "Waldo23",
-          "player": {
-            "age": 22,
-            "depth_chart_order": 3,
-            "depth_chart_position": "LWR",
-            "fantasy_positions": [
-              "WR"
-            ],
-            "injury_body_part": null,
-            "injury_notes": null,
-            "injury_status": null,
-            "name": "Antonio Williams",
-            "player_id": "13301",
-            "position": "WR",
-            "status": "Active",
-            "team": "WAS",
-            "years_exp": 0
-          },
-          "roster_id": 11
-        },
-        {
-          "manager": "ryansorensen8",
-          "player": {
-            "age": 27,
-            "depth_chart_order": 2,
-            "depth_chart_position": "RB",
-            "fantasy_positions": [
-              "RB"
-            ],
-            "injury_body_part": "Hamstring",
-            "injury_notes": null,
-            "injury_status": "Questionable",
-            "name": "Brian Robinson Jr.",
-            "player_id": "8154",
-            "position": "RB",
-            "status": "Active",
-            "team": "ATL",
-            "years_exp": 4
-          },
-          "roster_id": 9
-        }
-      ],
-      "roster_ids": [
-        9,
-        11
-      ],
-      "status": "complete",
-      "transaction_id": "1413739592200298496",
-      "type": "trade",
-      "waiver_budget": null,
-      "week": 5
     }
   ],
   "teams": [
@@ -6130,25 +6028,25 @@
       "total_market_value": 94253
     },
     {
-      "depth_market_value": 47224,
+      "depth_market_value": 47176,
       "manager": "MayaHuskies",
       "market_rank": 10,
       "optimal_starter_market_value": 46400,
       "position_scores": {
         "QB": 0.0,
-        "RB": 52.4,
+        "RB": 52.2,
         "TE": 0.6,
         "WR": 89.1
       },
       "position_values": {
         "QB": 13329,
-        "RB": 22755,
+        "RB": 22707,
         "TE": 8601,
         "WR": 48939
       },
       "roster_id": 4,
       "team_name": null,
-      "total_market_value": 93624
+      "total_market_value": 93576
     },
     {
       "depth_market_value": 44013,
