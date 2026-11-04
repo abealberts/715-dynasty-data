@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-04T19:56:16.316637+00:00",
+  "generated_at": "2026-11-04T23:38:53.957615+00:00",
   "market_attribution": "Values by Dynasty Dealer — https://www.dynastydealer.com/",
   "methodology": "Trade-partner fit combines roster-count complementarity with current Dynasty Dealer position-market strength. It identifies plausible counterparties, not fair trade packages.",
   "partners": {
     "1": [
       {
-        "count_fit_score": 4.1,
-        "fit_score": 5.4,
+        "count_fit_score": 3.7,
+        "fit_score": 5.1,
         "manager": "Amelse",
         "market": {
           "position_scores": {
@@ -52,30 +52,30 @@
           {
             "label": "thin",
             "position": "RB",
-            "strength": 4.42
+            "strength": 4.25
           },
           {
             "label": "thin",
             "position": "QB",
-            "strength": 1.67
+            "strength": 1.92
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "WR",
-            "strength": 5.75
+            "strength": 5.92
           }
         ]
       },
       {
-        "count_fit_score": 4.1,
-        "fit_score": 4.1,
+        "count_fit_score": 3.7,
+        "fit_score": 3.8,
         "manager": "MayaHuskies",
         "market": {
           "position_scores": {
             "QB": 0.0,
-            "RB": 46.4,
+            "RB": 46.3,
             "TE": 0.0,
             "WR": 86.2
           },
@@ -115,14 +115,14 @@
           {
             "label": "thin",
             "position": "QB",
-            "strength": 1.67
+            "strength": 1.92
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "WR",
-            "strength": 2.75
+            "strength": 2.92
           }
         ]
       },
@@ -133,7 +133,7 @@
         "market": {
           "position_scores": {
             "QB": 77.0,
-            "RB": 78.9,
+            "RB": 78.7,
             "TE": 33.5,
             "WR": 47.3
           },
@@ -169,75 +169,20 @@
         "their_needs": [],
         "their_surpluses": [
           {
-            "label": "deep",
+            "label": "above avg",
             "position": "QB",
-            "strength": 1.33
+            "strength": 1.08
           }
         ]
       },
       {
-        "count_fit_score": 3.1,
-        "fit_score": 3.4,
-        "manager": "ryansorensen8",
-        "market": {
-          "position_scores": {
-            "QB": 52.2,
-            "RB": 71.9,
-            "TE": 1.8,
-            "WR": 93.0
-          },
-          "their_market_rank": 4,
-          "their_starter_value": 56634,
-          "their_total_value": 108832
-        },
-        "market_fit_score": 4.0,
-        "pick_summary": {
-          "by_round": {
-            "1": 1,
-            "2": 0,
-            "3": 3,
-            "4": 2,
-            "5": 0
-          },
-          "by_year": {
-            "2027": 1,
-            "2028": 2,
-            "2029": 3
-          },
-          "early_picks": 1,
-          "firsts": 1,
-          "seconds": 0,
-          "total": 6
-        },
-        "reasons": [
-          "Your TE market depth lines up with one of their weaker rooms.",
-          "They are deep at WR, where you are comparatively thin."
-        ],
-        "roster_id": 9,
-        "team_name": "Matt Prater",
-        "their_needs": [
-          {
-            "label": "thin",
-            "position": "TE",
-            "strength": 1.58
-          }
-        ],
-        "their_surpluses": [
-          {
-            "label": "deep",
-            "position": "WR",
-            "strength": 2.75
-          }
-        ]
-      },
-      {
-        "count_fit_score": 2.5,
-        "fit_score": 3.0,
+        "count_fit_score": 2.9,
+        "fit_score": 3.3,
         "manager": "Butler2142",
         "market": {
           "position_scores": {
             "QB": 51.2,
-            "RB": 86.2,
+            "RB": 85.9,
             "TE": 8.2,
             "WR": 100.0
           },
@@ -276,36 +221,96 @@
           {
             "label": "thin",
             "position": "QB",
-            "strength": 1.67
+            "strength": 1.92
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "RB",
-            "strength": 1.58
+            "strength": 1.75
           },
           {
             "label": "above avg",
             "position": "WR",
-            "strength": 0.75
+            "strength": 0.92
           }
         ]
       },
       {
-        "count_fit_score": 4.1,
-        "fit_score": 2.8,
+        "count_fit_score": 2.7,
+        "fit_score": 3.1,
+        "manager": "ryansorensen8",
+        "market": {
+          "position_scores": {
+            "QB": 63.9,
+            "RB": 65.6,
+            "TE": 4.2,
+            "WR": 93.0
+          },
+          "their_market_rank": 4,
+          "their_starter_value": 56634,
+          "their_total_value": 108983
+        },
+        "market_fit_score": 4.0,
+        "pick_summary": {
+          "by_round": {
+            "1": 1,
+            "2": 0,
+            "3": 3,
+            "4": 2,
+            "5": 0
+          },
+          "by_year": {
+            "2027": 1,
+            "2028": 2,
+            "2029": 3
+          },
+          "early_picks": 1,
+          "firsts": 1,
+          "seconds": 0,
+          "total": 6
+        },
+        "reasons": [
+          "Your TE market depth lines up with one of their weaker rooms.",
+          "They are deep at WR, where you are comparatively thin."
+        ],
+        "roster_id": 9,
+        "team_name": "Matt Prater",
+        "their_needs": [
+          {
+            "label": "thin",
+            "position": "TE",
+            "strength": 1.58
+          },
+          {
+            "label": "thin",
+            "position": "RB",
+            "strength": 1.25
+          }
+        ],
+        "their_surpluses": [
+          {
+            "label": "deep",
+            "position": "WR",
+            "strength": 2.92
+          }
+        ]
+      },
+      {
+        "count_fit_score": 3.7,
+        "fit_score": 2.5,
         "manager": "Ebro51",
         "market": {
           "position_scores": {
             "QB": 44.1,
-            "RB": 58.6,
+            "RB": 58.4,
             "TE": 73.6,
-            "WR": 69.4
+            "WR": 61.3
           },
           "their_market_rank": 7,
           "their_starter_value": 53177,
-          "their_total_value": 105200
+          "their_total_value": 103418
         },
         "market_fit_score": 0.0,
         "pick_summary": {
@@ -338,14 +343,19 @@
           {
             "label": "thin",
             "position": "RB",
-            "strength": 1.42
+            "strength": 1.25
+          },
+          {
+            "label": "below avg",
+            "position": "QB",
+            "strength": 0.92
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "WR",
-            "strength": 2.75
+            "strength": 1.92
           }
         ]
       },
@@ -362,7 +372,7 @@
           },
           "their_market_rank": 2,
           "their_starter_value": 60080,
-          "their_total_value": 115810
+          "their_total_value": 115918
         },
         "market_fit_score": 5.2,
         "pick_summary": {
@@ -395,19 +405,19 @@
           {
             "label": "thin",
             "position": "WR",
-            "strength": 3.25
+            "strength": 3.08
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "RB",
-            "strength": 1.58
+            "strength": 1.75
           },
           {
-            "label": "deep",
+            "label": "above avg",
             "position": "QB",
-            "strength": 1.33
+            "strength": 1.08
           }
         ]
       },
@@ -417,14 +427,14 @@
         "manager": "nathanhoglund",
         "market": {
           "position_scores": {
-            "QB": 15.1,
-            "RB": 51.0,
+            "QB": 22.8,
+            "RB": 50.9,
             "TE": 27.5,
-            "WR": 39.4
+            "WR": 29.2
           },
           "their_market_rank": 11,
           "their_starter_value": 42791,
-          "their_total_value": 86424
+          "their_total_value": 85412
         },
         "market_fit_score": 4.0,
         "pick_summary": {
@@ -457,10 +467,21 @@
           {
             "label": "thin",
             "position": "WR",
-            "strength": 1.25
+            "strength": 2.08
           }
         ],
-        "their_surpluses": []
+        "their_surpluses": [
+          {
+            "label": "above avg",
+            "position": "QB",
+            "strength": 1.08
+          },
+          {
+            "label": "above avg",
+            "position": "RB",
+            "strength": 0.75
+          }
+        ]
       },
       {
         "count_fit_score": 0.9,
@@ -469,7 +490,7 @@
         "market": {
           "position_scores": {
             "QB": 59.6,
-            "RB": 80.2,
+            "RB": 79.9,
             "TE": 49.8,
             "WR": 40.7
           },
@@ -507,19 +528,19 @@
           {
             "label": "thin",
             "position": "WR",
-            "strength": 2.25
+            "strength": 2.08
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "RB",
-            "strength": 1.58
+            "strength": 1.75
           },
           {
-            "label": "deep",
+            "label": "above avg",
             "position": "QB",
-            "strength": 1.33
+            "strength": 1.08
           }
         ]
       },
@@ -530,7 +551,7 @@
         "market": {
           "position_scores": {
             "QB": 42.7,
-            "RB": 58.5,
+            "RB": 58.4,
             "TE": 49.8,
             "WR": 0.0
           },
@@ -568,19 +589,19 @@
           {
             "label": "thin",
             "position": "WR",
-            "strength": 4.25
+            "strength": 4.08
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "RB",
-            "strength": 1.58
+            "strength": 1.75
           },
           {
-            "label": "deep",
+            "label": "above avg",
             "position": "QB",
-            "strength": 1.33
+            "strength": 1.08
           }
         ]
       },
@@ -590,14 +611,14 @@
         "manager": "NolanFarts",
         "market": {
           "position_scores": {
-            "QB": 30.4,
-            "RB": 80.2,
+            "QB": 44.5,
+            "RB": 73.6,
             "TE": 100.0,
             "WR": 70.6
           },
           "their_market_rank": 1,
           "their_starter_value": 65708,
-          "their_total_value": 113125
+          "their_total_value": 113358
         },
         "market_fit_score": 0.0,
         "pick_summary": {
@@ -628,7 +649,7 @@
           {
             "label": "thin",
             "position": "WR",
-            "strength": 2.25
+            "strength": 2.08
           }
         ],
         "their_surpluses": [
@@ -636,19 +657,89 @@
             "label": "deep",
             "position": "TE",
             "strength": 1.42
+          },
+          {
+            "label": "above avg",
+            "position": "QB",
+            "strength": 1.08
           }
         ]
       }
     ],
     "10": [
       {
+        "count_fit_score": 9.0,
+        "fit_score": 7.3,
+        "manager": "nathanhoglund",
+        "market": {
+          "position_scores": {
+            "QB": 22.8,
+            "RB": 50.9,
+            "TE": 27.5,
+            "WR": 29.2
+          },
+          "their_market_rank": 11,
+          "their_starter_value": 42791,
+          "their_total_value": 85412
+        },
+        "market_fit_score": 3.6,
+        "pick_summary": {
+          "by_round": {
+            "1": 11,
+            "2": 5,
+            "3": 7,
+            "4": 4,
+            "5": 6
+          },
+          "by_year": {
+            "2026": 6,
+            "2027": 11,
+            "2028": 9,
+            "2029": 7
+          },
+          "early_picks": 16,
+          "firsts": 11,
+          "seconds": 5,
+          "total": 33
+        },
+        "reasons": [
+          "Your TE market depth lines up with one of their weaker rooms.",
+          "They are deep at QB, where you are comparatively thin.",
+          "They are deep at RB, where you are comparatively thin.",
+          "You have relative WR depth that matches one of their needs.",
+          "They hold meaningfully more 1st/2nd-round draft capital.",
+          "They have multiple future first-round picks available as trade liquidity."
+        ],
+        "roster_id": 5,
+        "team_name": "Michael Trigg Sucks Ass",
+        "their_needs": [
+          {
+            "label": "thin",
+            "position": "WR",
+            "strength": 2.08
+          }
+        ],
+        "their_surpluses": [
+          {
+            "label": "above avg",
+            "position": "QB",
+            "strength": 1.08
+          },
+          {
+            "label": "above avg",
+            "position": "RB",
+            "strength": 0.75
+          }
+        ]
+      },
+      {
         "count_fit_score": 10.0,
-        "fit_score": 8.1,
+        "fit_score": 6.8,
         "manager": "hoglundcory2",
         "market": {
           "position_scores": {
             "QB": 42.7,
-            "RB": 58.5,
+            "RB": 58.4,
             "TE": 49.8,
             "WR": 0.0
           },
@@ -656,7 +747,7 @@
           "their_starter_value": 47026,
           "their_total_value": 87044
         },
-        "market_fit_score": 4.0,
+        "market_fit_score": 0.0,
         "pick_summary": {
           "by_round": {
             "1": 7,
@@ -677,7 +768,7 @@
           "total": 25
         },
         "reasons": [
-          "Your WR market depth lines up with one of their weaker rooms.",
+          "They are deep at QB, where you are comparatively thin.",
           "They are deep at RB, where you are comparatively thin.",
           "You have relative WR depth that matches one of their needs.",
           "They hold meaningfully more 1st/2nd-round draft capital.",
@@ -689,25 +780,25 @@
           {
             "label": "thin",
             "position": "WR",
-            "strength": 4.25
+            "strength": 4.08
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "RB",
-            "strength": 1.58
+            "strength": 1.75
           },
           {
-            "label": "deep",
+            "label": "above avg",
             "position": "QB",
-            "strength": 1.33
+            "strength": 1.08
           }
         ]
       },
       {
-        "count_fit_score": 9.4,
-        "fit_score": 7.7,
+        "count_fit_score": 9.6,
+        "fit_score": 6.5,
         "manager": "Waldo23",
         "market": {
           "position_scores": {
@@ -718,9 +809,9 @@
           },
           "their_market_rank": 2,
           "their_starter_value": 60080,
-          "their_total_value": 115810
+          "their_total_value": 115918
         },
-        "market_fit_score": 4.0,
+        "market_fit_score": 0.0,
         "pick_summary": {
           "by_round": {
             "1": 3,
@@ -741,7 +832,7 @@
           "total": 15
         },
         "reasons": [
-          "Your WR market depth lines up with one of their weaker rooms.",
+          "They are deep at QB, where you are comparatively thin.",
           "They are deep at RB, where you are comparatively thin.",
           "You have relative WR depth that matches one of their needs.",
           "They have multiple future first-round picks available as trade liquidity."
@@ -752,30 +843,30 @@
           {
             "label": "thin",
             "position": "WR",
-            "strength": 3.25
+            "strength": 3.08
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "RB",
-            "strength": 1.58
+            "strength": 1.75
           },
           {
-            "label": "deep",
+            "label": "above avg",
             "position": "QB",
-            "strength": 1.33
+            "strength": 1.08
           }
         ]
       },
       {
-        "count_fit_score": 8.4,
-        "fit_score": 5.7,
+        "count_fit_score": 9.6,
+        "fit_score": 6.5,
         "manager": "abewav",
         "market": {
           "position_scores": {
             "QB": 59.6,
-            "RB": 80.2,
+            "RB": 79.9,
             "TE": 49.8,
             "WR": 40.7
           },
@@ -804,6 +895,7 @@
           "total": 17
         },
         "reasons": [
+          "They are deep at QB, where you are comparatively thin.",
           "They are deep at RB, where you are comparatively thin.",
           "You have relative WR depth that matches one of their needs.",
           "They have multiple future first-round picks available as trade liquidity."
@@ -814,30 +906,91 @@
           {
             "label": "thin",
             "position": "WR",
-            "strength": 2.25
+            "strength": 2.08
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "RB",
-            "strength": 1.58
+            "strength": 1.75
           },
           {
-            "label": "deep",
+            "label": "above avg",
             "position": "QB",
-            "strength": 1.33
+            "strength": 1.08
           }
         ]
       },
       {
-        "count_fit_score": 3.5,
-        "fit_score": 3.7,
+        "count_fit_score": 6.1,
+        "fit_score": 4.1,
+        "manager": "NolanFarts",
+        "market": {
+          "position_scores": {
+            "QB": 44.5,
+            "RB": 73.6,
+            "TE": 100.0,
+            "WR": 70.6
+          },
+          "their_market_rank": 1,
+          "their_starter_value": 65708,
+          "their_total_value": 113358
+        },
+        "market_fit_score": 0.0,
+        "pick_summary": {
+          "by_round": {
+            "1": 0,
+            "2": 1,
+            "3": 0,
+            "4": 4,
+            "5": 3
+          },
+          "by_year": {
+            "2026": 2,
+            "2027": 2,
+            "2028": 1,
+            "2029": 3
+          },
+          "early_picks": 1,
+          "firsts": 0,
+          "seconds": 1,
+          "total": 8
+        },
+        "reasons": [
+          "They are deep at QB, where you are comparatively thin.",
+          "You have relative WR depth that matches one of their needs."
+        ],
+        "roster_id": 2,
+        "team_name": "Puka Nachewa",
+        "their_needs": [
+          {
+            "label": "thin",
+            "position": "WR",
+            "strength": 2.08
+          }
+        ],
+        "their_surpluses": [
+          {
+            "label": "deep",
+            "position": "TE",
+            "strength": 1.42
+          },
+          {
+            "label": "above avg",
+            "position": "QB",
+            "strength": 1.08
+          }
+        ]
+      },
+      {
+        "count_fit_score": 3.1,
+        "fit_score": 3.4,
         "manager": "Butler2142",
         "market": {
           "position_scores": {
             "QB": 51.2,
-            "RB": 86.2,
+            "RB": 85.9,
             "TE": 8.2,
             "WR": 100.0
           },
@@ -875,126 +1028,67 @@
           {
             "label": "thin",
             "position": "QB",
-            "strength": 1.67
+            "strength": 1.92
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "RB",
-            "strength": 1.58
+            "strength": 1.75
           },
           {
             "label": "above avg",
             "position": "WR",
-            "strength": 0.75
+            "strength": 0.92
           }
         ]
       },
       {
-        "count_fit_score": 3.5,
-        "fit_score": 3.5,
-        "manager": "nathanhoglund",
+        "count_fit_score": 2.3,
+        "fit_score": 2.6,
+        "manager": "SORY9",
         "market": {
           "position_scores": {
-            "QB": 15.1,
-            "RB": 51.0,
-            "TE": 27.5,
-            "WR": 39.4
+            "QB": 77.0,
+            "RB": 78.7,
+            "TE": 33.5,
+            "WR": 47.3
           },
-          "their_market_rank": 11,
-          "their_starter_value": 42791,
-          "their_total_value": 86424
+          "their_market_rank": 5,
+          "their_starter_value": 55467,
+          "their_total_value": 108408
         },
-        "market_fit_score": 3.6,
+        "market_fit_score": 3.2,
         "pick_summary": {
           "by_round": {
-            "1": 11,
-            "2": 5,
-            "3": 7,
-            "4": 4,
-            "5": 6
-          },
-          "by_year": {
-            "2026": 6,
-            "2027": 11,
-            "2028": 9,
-            "2029": 7
-          },
-          "early_picks": 16,
-          "firsts": 11,
-          "seconds": 5,
-          "total": 33
-        },
-        "reasons": [
-          "Your TE market depth lines up with one of their weaker rooms.",
-          "You have relative WR depth that matches one of their needs.",
-          "They hold meaningfully more 1st/2nd-round draft capital.",
-          "They have multiple future first-round picks available as trade liquidity."
-        ],
-        "roster_id": 5,
-        "team_name": "Michael Trigg Sucks Ass",
-        "their_needs": [
-          {
-            "label": "thin",
-            "position": "WR",
-            "strength": 1.25
-          }
-        ],
-        "their_surpluses": []
-      },
-      {
-        "count_fit_score": 4.5,
-        "fit_score": 3.1,
-        "manager": "NolanFarts",
-        "market": {
-          "position_scores": {
-            "QB": 30.4,
-            "RB": 80.2,
-            "TE": 100.0,
-            "WR": 70.6
-          },
-          "their_market_rank": 1,
-          "their_starter_value": 65708,
-          "their_total_value": 113125
-        },
-        "market_fit_score": 0.0,
-        "pick_summary": {
-          "by_round": {
-            "1": 0,
-            "2": 1,
+            "1": 1,
+            "2": 2,
             "3": 0,
-            "4": 4,
-            "5": 3
+            "4": 3,
+            "5": 2
           },
           "by_year": {
-            "2026": 2,
-            "2027": 2,
-            "2028": 1,
-            "2029": 3
+            "2026": 3,
+            "2029": 5
           },
-          "early_picks": 1,
-          "firsts": 0,
-          "seconds": 1,
+          "early_picks": 3,
+          "firsts": 1,
+          "seconds": 2,
           "total": 8
         },
         "reasons": [
-          "You have relative WR depth that matches one of their needs."
+          "Your TE market depth lines up with one of their weaker rooms.",
+          "They are deep at QB, where you are comparatively thin."
         ],
-        "roster_id": 2,
-        "team_name": "Puka Nachewa",
-        "their_needs": [
-          {
-            "label": "thin",
-            "position": "WR",
-            "strength": 2.25
-          }
-        ],
+        "roster_id": 7,
+        "team_name": "TEAM MIKE ALSTOTT",
+        "their_needs": [],
         "their_surpluses": [
           {
-            "label": "deep",
-            "position": "TE",
-            "strength": 1.42
+            "label": "above avg",
+            "position": "QB",
+            "strength": 1.08
           }
         ]
       },
@@ -1005,7 +1099,7 @@
         "market": {
           "position_scores": {
             "QB": 0.0,
-            "RB": 46.4,
+            "RB": 46.3,
             "TE": 0.0,
             "WR": 86.2
           },
@@ -1044,14 +1138,14 @@
           {
             "label": "thin",
             "position": "QB",
-            "strength": 1.67
+            "strength": 1.92
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "WR",
-            "strength": 2.75
+            "strength": 2.92
           }
         ]
       },
@@ -1101,30 +1195,30 @@
           {
             "label": "thin",
             "position": "RB",
-            "strength": 4.42
+            "strength": 4.25
           },
           {
             "label": "thin",
             "position": "QB",
-            "strength": 1.67
+            "strength": 1.92
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "WR",
-            "strength": 5.75
+            "strength": 5.92
           }
         ]
       },
       {
-        "count_fit_score": 2.5,
-        "fit_score": 1.7,
+        "count_fit_score": 2.2,
+        "fit_score": 1.5,
         "manager": "austinamelse",
         "market": {
           "position_scores": {
             "QB": 9.4,
-            "RB": 68.1,
+            "RB": 67.9,
             "TE": 98.6,
             "WR": 44.9
           },
@@ -1159,7 +1253,7 @@
           {
             "label": "thin",
             "position": "WR",
-            "strength": 1.25
+            "strength": 1.08
           }
         ],
         "their_surpluses": []
@@ -1170,14 +1264,14 @@
         "manager": "ryansorensen8",
         "market": {
           "position_scores": {
-            "QB": 52.2,
-            "RB": 71.9,
-            "TE": 1.8,
+            "QB": 63.9,
+            "RB": 65.6,
+            "TE": 4.2,
             "WR": 93.0
           },
           "their_market_rank": 4,
           "their_starter_value": 56634,
-          "their_total_value": 108832
+          "their_total_value": 108983
         },
         "market_fit_score": 4.0,
         "pick_summary": {
@@ -1209,61 +1303,18 @@
             "label": "thin",
             "position": "TE",
             "strength": 1.58
+          },
+          {
+            "label": "thin",
+            "position": "RB",
+            "strength": 1.25
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "WR",
-            "strength": 2.75
-          }
-        ]
-      },
-      {
-        "count_fit_score": 0.0,
-        "fit_score": 1.0,
-        "manager": "SORY9",
-        "market": {
-          "position_scores": {
-            "QB": 77.0,
-            "RB": 78.9,
-            "TE": 33.5,
-            "WR": 47.3
-          },
-          "their_market_rank": 5,
-          "their_starter_value": 55467,
-          "their_total_value": 108408
-        },
-        "market_fit_score": 3.2,
-        "pick_summary": {
-          "by_round": {
-            "1": 1,
-            "2": 2,
-            "3": 0,
-            "4": 3,
-            "5": 2
-          },
-          "by_year": {
-            "2026": 3,
-            "2029": 5
-          },
-          "early_picks": 3,
-          "firsts": 1,
-          "seconds": 2,
-          "total": 8
-        },
-        "reasons": [
-          "Your TE market depth lines up with one of their weaker rooms.",
-          "No obvious roster-construction mismatch; a deal would be driven more by player preference than team need."
-        ],
-        "roster_id": 7,
-        "team_name": "TEAM MIKE ALSTOTT",
-        "their_needs": [],
-        "their_surpluses": [
-          {
-            "label": "deep",
-            "position": "QB",
-            "strength": 1.33
+            "strength": 2.92
           }
         ]
       }
@@ -1318,19 +1369,19 @@
           {
             "label": "thin",
             "position": "RB",
-            "strength": 4.42
+            "strength": 4.25
           },
           {
             "label": "thin",
             "position": "QB",
-            "strength": 1.67
+            "strength": 1.92
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "WR",
-            "strength": 5.75
+            "strength": 5.92
           }
         ]
       },
@@ -1341,7 +1392,7 @@
         "market": {
           "position_scores": {
             "QB": 0.0,
-            "RB": 46.4,
+            "RB": 46.3,
             "TE": 0.0,
             "WR": 86.2
           },
@@ -1383,90 +1434,31 @@
           {
             "label": "thin",
             "position": "QB",
-            "strength": 1.67
+            "strength": 1.92
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "WR",
-            "strength": 2.75
+            "strength": 2.92
           }
         ]
       },
       {
-        "count_fit_score": 10.0,
-        "fit_score": 8.4,
-        "manager": "Ebro51",
-        "market": {
-          "position_scores": {
-            "QB": 44.1,
-            "RB": 58.6,
-            "TE": 73.6,
-            "WR": 69.4
-          },
-          "their_market_rank": 7,
-          "their_starter_value": 53177,
-          "their_total_value": 105200
-        },
-        "market_fit_score": 5.0,
-        "pick_summary": {
-          "by_round": {
-            "1": 4,
-            "2": 4,
-            "3": 4,
-            "4": 2,
-            "5": 0
-          },
-          "by_year": {
-            "2026": 6,
-            "2027": 3,
-            "2028": 2,
-            "2029": 3
-          },
-          "early_picks": 8,
-          "firsts": 4,
-          "seconds": 4,
-          "total": 14
-        },
-        "reasons": [
-          "Their WR room is materially stronger by current dynasty market value.",
-          "You have relative RB depth that matches one of their needs.",
-          "They are deep at WR, where you are comparatively thin.",
-          "They hold meaningfully more 1st/2nd-round draft capital.",
-          "They have multiple future first-round picks available as trade liquidity."
-        ],
-        "roster_id": 10,
-        "team_name": "Shit heads we ride. ",
-        "their_needs": [
-          {
-            "label": "thin",
-            "position": "RB",
-            "strength": 1.42
-          }
-        ],
-        "their_surpluses": [
-          {
-            "label": "deep",
-            "position": "WR",
-            "strength": 2.75
-          }
-        ]
-      },
-      {
-        "count_fit_score": 6.9,
-        "fit_score": 6.3,
+        "count_fit_score": 9.8,
+        "fit_score": 8.3,
         "manager": "ryansorensen8",
         "market": {
           "position_scores": {
-            "QB": 52.2,
-            "RB": 71.9,
-            "TE": 1.8,
+            "QB": 63.9,
+            "RB": 65.6,
+            "TE": 4.2,
             "WR": 93.0
           },
           "their_market_rank": 4,
           "their_starter_value": 56634,
-          "their_total_value": 108832
+          "their_total_value": 108983
         },
         "market_fit_score": 5.2,
         "pick_summary": {
@@ -1489,6 +1481,7 @@
         },
         "reasons": [
           "Their WR room is materially stronger by current dynasty market value.",
+          "You have relative RB depth that matches one of their needs.",
           "They are deep at WR, where you are comparatively thin."
         ],
         "roster_id": 9,
@@ -1498,13 +1491,82 @@
             "label": "thin",
             "position": "TE",
             "strength": 1.58
+          },
+          {
+            "label": "thin",
+            "position": "RB",
+            "strength": 1.25
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "WR",
-            "strength": 2.75
+            "strength": 2.92
+          }
+        ]
+      },
+      {
+        "count_fit_score": 10.0,
+        "fit_score": 6.8,
+        "manager": "Ebro51",
+        "market": {
+          "position_scores": {
+            "QB": 44.1,
+            "RB": 58.4,
+            "TE": 73.6,
+            "WR": 61.3
+          },
+          "their_market_rank": 7,
+          "their_starter_value": 53177,
+          "their_total_value": 103418
+        },
+        "market_fit_score": 0.0,
+        "pick_summary": {
+          "by_round": {
+            "1": 4,
+            "2": 4,
+            "3": 4,
+            "4": 2,
+            "5": 0
+          },
+          "by_year": {
+            "2026": 6,
+            "2027": 3,
+            "2028": 2,
+            "2029": 3
+          },
+          "early_picks": 8,
+          "firsts": 4,
+          "seconds": 4,
+          "total": 14
+        },
+        "reasons": [
+          "You have relative QB depth that matches one of their needs.",
+          "You have relative RB depth that matches one of their needs.",
+          "They are deep at WR, where you are comparatively thin.",
+          "They hold meaningfully more 1st/2nd-round draft capital.",
+          "They have multiple future first-round picks available as trade liquidity."
+        ],
+        "roster_id": 10,
+        "team_name": "Shit heads we ride. ",
+        "their_needs": [
+          {
+            "label": "thin",
+            "position": "RB",
+            "strength": 1.25
+          },
+          {
+            "label": "below avg",
+            "position": "QB",
+            "strength": 0.92
+          }
+        ],
+        "their_surpluses": [
+          {
+            "label": "deep",
+            "position": "WR",
+            "strength": 1.92
           }
         ]
       },
@@ -1515,7 +1577,7 @@
         "market": {
           "position_scores": {
             "QB": 51.2,
-            "RB": 86.2,
+            "RB": 85.9,
             "TE": 8.2,
             "WR": 100.0
           },
@@ -1554,76 +1616,19 @@
           {
             "label": "thin",
             "position": "QB",
-            "strength": 1.67
+            "strength": 1.92
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "RB",
-            "strength": 1.58
+            "strength": 1.75
           },
           {
             "label": "above avg",
             "position": "WR",
-            "strength": 0.75
-          }
-        ]
-      },
-      {
-        "count_fit_score": 0.0,
-        "fit_score": 2.9,
-        "manager": "NolanFarts",
-        "market": {
-          "position_scores": {
-            "QB": 30.4,
-            "RB": 80.2,
-            "TE": 100.0,
-            "WR": 70.6
-          },
-          "their_market_rank": 1,
-          "their_starter_value": 65708,
-          "their_total_value": 113125
-        },
-        "market_fit_score": 9.2,
-        "pick_summary": {
-          "by_round": {
-            "1": 0,
-            "2": 1,
-            "3": 0,
-            "4": 4,
-            "5": 3
-          },
-          "by_year": {
-            "2026": 2,
-            "2027": 2,
-            "2028": 1,
-            "2029": 3
-          },
-          "early_picks": 1,
-          "firsts": 0,
-          "seconds": 1,
-          "total": 8
-        },
-        "reasons": [
-          "Your QB market depth lines up with one of their weaker rooms.",
-          "Their WR room is materially stronger by current dynasty market value.",
-          "No obvious roster-construction mismatch; a deal would be driven more by player preference than team need."
-        ],
-        "roster_id": 2,
-        "team_name": "Puka Nachewa",
-        "their_needs": [
-          {
-            "label": "thin",
-            "position": "WR",
-            "strength": 2.25
-          }
-        ],
-        "their_surpluses": [
-          {
-            "label": "deep",
-            "position": "TE",
-            "strength": 1.42
+            "strength": 0.92
           }
         ]
       },
@@ -1633,14 +1638,14 @@
         "manager": "nathanhoglund",
         "market": {
           "position_scores": {
-            "QB": 15.1,
-            "RB": 51.0,
+            "QB": 22.8,
+            "RB": 50.9,
             "TE": 27.5,
-            "WR": 39.4
+            "WR": 29.2
           },
           "their_market_rank": 11,
           "their_starter_value": 42791,
-          "their_total_value": 86424
+          "their_total_value": 85412
         },
         "market_fit_score": 4.0,
         "pick_summary": {
@@ -1673,10 +1678,82 @@
           {
             "label": "thin",
             "position": "WR",
-            "strength": 1.25
+            "strength": 2.08
           }
         ],
-        "their_surpluses": []
+        "their_surpluses": [
+          {
+            "label": "above avg",
+            "position": "QB",
+            "strength": 1.08
+          },
+          {
+            "label": "above avg",
+            "position": "RB",
+            "strength": 0.75
+          }
+        ]
+      },
+      {
+        "count_fit_score": 0.0,
+        "fit_score": 1.6,
+        "manager": "NolanFarts",
+        "market": {
+          "position_scores": {
+            "QB": 44.5,
+            "RB": 73.6,
+            "TE": 100.0,
+            "WR": 70.6
+          },
+          "their_market_rank": 1,
+          "their_starter_value": 65708,
+          "their_total_value": 113358
+        },
+        "market_fit_score": 5.1,
+        "pick_summary": {
+          "by_round": {
+            "1": 0,
+            "2": 1,
+            "3": 0,
+            "4": 4,
+            "5": 3
+          },
+          "by_year": {
+            "2026": 2,
+            "2027": 2,
+            "2028": 1,
+            "2029": 3
+          },
+          "early_picks": 1,
+          "firsts": 0,
+          "seconds": 1,
+          "total": 8
+        },
+        "reasons": [
+          "Their WR room is materially stronger by current dynasty market value.",
+          "No obvious roster-construction mismatch; a deal would be driven more by player preference than team need."
+        ],
+        "roster_id": 2,
+        "team_name": "Puka Nachewa",
+        "their_needs": [
+          {
+            "label": "thin",
+            "position": "WR",
+            "strength": 2.08
+          }
+        ],
+        "their_surpluses": [
+          {
+            "label": "deep",
+            "position": "TE",
+            "strength": 1.42
+          },
+          {
+            "label": "above avg",
+            "position": "QB",
+            "strength": 1.08
+          }
+        ]
       },
       {
         "count_fit_score": 0.0,
@@ -1685,7 +1762,7 @@
         "market": {
           "position_scores": {
             "QB": 9.4,
-            "RB": 68.1,
+            "RB": 67.9,
             "TE": 98.6,
             "WR": 44.9
           },
@@ -1721,7 +1798,7 @@
           {
             "label": "thin",
             "position": "WR",
-            "strength": 1.25
+            "strength": 1.08
           }
         ],
         "their_surpluses": []
@@ -1733,7 +1810,7 @@
         "market": {
           "position_scores": {
             "QB": 42.7,
-            "RB": 58.5,
+            "RB": 58.4,
             "TE": 49.8,
             "WR": 0.0
           },
@@ -1771,19 +1848,19 @@
           {
             "label": "thin",
             "position": "WR",
-            "strength": 4.25
+            "strength": 4.08
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "RB",
-            "strength": 1.58
+            "strength": 1.75
           },
           {
-            "label": "deep",
+            "label": "above avg",
             "position": "QB",
-            "strength": 1.33
+            "strength": 1.08
           }
         ]
       },
@@ -1794,7 +1871,7 @@
         "market": {
           "position_scores": {
             "QB": 59.6,
-            "RB": 80.2,
+            "RB": 79.9,
             "TE": 49.8,
             "WR": 40.7
           },
@@ -1831,19 +1908,19 @@
           {
             "label": "thin",
             "position": "WR",
-            "strength": 2.25
+            "strength": 2.08
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "RB",
-            "strength": 1.58
+            "strength": 1.75
           },
           {
-            "label": "deep",
+            "label": "above avg",
             "position": "QB",
-            "strength": 1.33
+            "strength": 1.08
           }
         ]
       },
@@ -1854,7 +1931,7 @@
         "market": {
           "position_scores": {
             "QB": 77.0,
-            "RB": 78.9,
+            "RB": 78.7,
             "TE": 33.5,
             "WR": 47.3
           },
@@ -1888,17 +1965,17 @@
         "their_needs": [],
         "their_surpluses": [
           {
-            "label": "deep",
+            "label": "above avg",
             "position": "QB",
-            "strength": 1.33
+            "strength": 1.08
           }
         ]
       }
     ],
     "12": [
       {
-        "count_fit_score": 5.8,
-        "fit_score": 5.2,
+        "count_fit_score": 5.5,
+        "fit_score": 5.0,
         "manager": "Waldo23",
         "market": {
           "position_scores": {
@@ -1909,7 +1986,7 @@
           },
           "their_market_rank": 2,
           "their_starter_value": 60080,
-          "their_total_value": 115810
+          "their_total_value": 115918
         },
         "market_fit_score": 4.0,
         "pick_summary": {
@@ -1944,30 +2021,30 @@
           {
             "label": "thin",
             "position": "WR",
-            "strength": 3.25
+            "strength": 3.08
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "RB",
-            "strength": 1.58
+            "strength": 1.75
           },
           {
-            "label": "deep",
+            "label": "above avg",
             "position": "QB",
-            "strength": 1.33
+            "strength": 1.08
           }
         ]
       },
       {
-        "count_fit_score": 5.8,
-        "fit_score": 5.2,
+        "count_fit_score": 5.5,
+        "fit_score": 5.0,
         "manager": "hoglundcory2",
         "market": {
           "position_scores": {
             "QB": 42.7,
-            "RB": 58.5,
+            "RB": 58.4,
             "TE": 49.8,
             "WR": 0.0
           },
@@ -2008,83 +2085,151 @@
           {
             "label": "thin",
             "position": "WR",
-            "strength": 4.25
+            "strength": 4.08
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "RB",
-            "strength": 1.58
+            "strength": 1.75
           },
           {
-            "label": "deep",
+            "label": "above avg",
             "position": "QB",
-            "strength": 1.33
+            "strength": 1.08
           }
         ]
       },
       {
-        "count_fit_score": 3.8,
-        "fit_score": 4.2,
-        "manager": "Ebro51",
+        "count_fit_score": 5.5,
+        "fit_score": 5.0,
+        "manager": "nathanhoglund",
         "market": {
           "position_scores": {
-            "QB": 44.1,
-            "RB": 58.6,
-            "TE": 73.6,
-            "WR": 69.4
+            "QB": 22.8,
+            "RB": 50.9,
+            "TE": 27.5,
+            "WR": 29.2
           },
-          "their_market_rank": 7,
-          "their_starter_value": 53177,
-          "their_total_value": 105200
+          "their_market_rank": 11,
+          "their_starter_value": 42791,
+          "their_total_value": 85412
+        },
+        "market_fit_score": 4.0,
+        "pick_summary": {
+          "by_round": {
+            "1": 11,
+            "2": 5,
+            "3": 7,
+            "4": 4,
+            "5": 6
+          },
+          "by_year": {
+            "2026": 6,
+            "2027": 11,
+            "2028": 9,
+            "2029": 7
+          },
+          "early_picks": 16,
+          "firsts": 11,
+          "seconds": 5,
+          "total": 33
+        },
+        "reasons": [
+          "Your WR market depth lines up with one of their weaker rooms.",
+          "They are deep at QB, where you are comparatively thin.",
+          "You have relative WR depth that matches one of their needs.",
+          "They hold meaningfully more 1st/2nd-round draft capital.",
+          "They have multiple future first-round picks available as trade liquidity."
+        ],
+        "roster_id": 5,
+        "team_name": "Michael Trigg Sucks Ass",
+        "their_needs": [
+          {
+            "label": "thin",
+            "position": "WR",
+            "strength": 2.08
+          }
+        ],
+        "their_surpluses": [
+          {
+            "label": "above avg",
+            "position": "QB",
+            "strength": 1.08
+          },
+          {
+            "label": "above avg",
+            "position": "RB",
+            "strength": 0.75
+          }
+        ]
+      },
+      {
+        "count_fit_score": 4.5,
+        "fit_score": 4.7,
+        "manager": "NolanFarts",
+        "market": {
+          "position_scores": {
+            "QB": 44.5,
+            "RB": 73.6,
+            "TE": 100.0,
+            "WR": 70.6
+          },
+          "their_market_rank": 1,
+          "their_starter_value": 65708,
+          "their_total_value": 113358
         },
         "market_fit_score": 5.2,
         "pick_summary": {
           "by_round": {
-            "1": 4,
-            "2": 4,
-            "3": 4,
-            "4": 2,
-            "5": 0
+            "1": 0,
+            "2": 1,
+            "3": 0,
+            "4": 4,
+            "5": 3
           },
           "by_year": {
-            "2026": 6,
-            "2027": 3,
-            "2028": 2,
+            "2026": 2,
+            "2027": 2,
+            "2028": 1,
             "2029": 3
           },
-          "early_picks": 8,
-          "firsts": 4,
-          "seconds": 4,
-          "total": 14
+          "early_picks": 1,
+          "firsts": 0,
+          "seconds": 1,
+          "total": 8
         },
         "reasons": [
           "Their TE room is materially stronger by current dynasty market value.",
-          "You have relative RB depth that matches one of their needs.",
-          "They hold meaningfully more 1st/2nd-round draft capital.",
-          "They have multiple future first-round picks available as trade liquidity."
+          "They are deep at QB, where you are comparatively thin.",
+          "You have relative WR depth that matches one of their needs."
         ],
-        "roster_id": 10,
-        "team_name": "Shit heads we ride. ",
+        "roster_id": 2,
+        "team_name": "Puka Nachewa",
         "their_needs": [
           {
             "label": "thin",
-            "position": "RB",
-            "strength": 1.42
+            "position": "WR",
+            "strength": 2.08
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
-            "position": "WR",
-            "strength": 2.75
+            "position": "TE",
+            "strength": 1.42
+          },
+          {
+            "label": "above avg",
+            "position": "QB",
+            "strength": 1.08
           }
         ]
       },
       {
-        "count_fit_score": 4.1,
-        "fit_score": 4.1,
+        "count_fit_score": 4.4,
+        "fit_score": 4.3,
         "manager": "Amelse",
         "market": {
           "position_scores": {
@@ -2129,30 +2274,93 @@
           {
             "label": "thin",
             "position": "RB",
-            "strength": 4.42
+            "strength": 4.25
           },
           {
             "label": "thin",
             "position": "QB",
-            "strength": 1.67
+            "strength": 1.92
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "WR",
-            "strength": 5.75
+            "strength": 5.92
           }
         ]
       },
       {
-        "count_fit_score": 5.8,
-        "fit_score": 3.9,
+        "count_fit_score": 3.5,
+        "fit_score": 4.0,
+        "manager": "Ebro51",
+        "market": {
+          "position_scores": {
+            "QB": 44.1,
+            "RB": 58.4,
+            "TE": 73.6,
+            "WR": 61.3
+          },
+          "their_market_rank": 7,
+          "their_starter_value": 53177,
+          "their_total_value": 103418
+        },
+        "market_fit_score": 5.2,
+        "pick_summary": {
+          "by_round": {
+            "1": 4,
+            "2": 4,
+            "3": 4,
+            "4": 2,
+            "5": 0
+          },
+          "by_year": {
+            "2026": 6,
+            "2027": 3,
+            "2028": 2,
+            "2029": 3
+          },
+          "early_picks": 8,
+          "firsts": 4,
+          "seconds": 4,
+          "total": 14
+        },
+        "reasons": [
+          "Their TE room is materially stronger by current dynasty market value.",
+          "You have relative RB depth that matches one of their needs.",
+          "They hold meaningfully more 1st/2nd-round draft capital.",
+          "They have multiple future first-round picks available as trade liquidity."
+        ],
+        "roster_id": 10,
+        "team_name": "Shit heads we ride. ",
+        "their_needs": [
+          {
+            "label": "thin",
+            "position": "RB",
+            "strength": 1.25
+          },
+          {
+            "label": "below avg",
+            "position": "QB",
+            "strength": 0.92
+          }
+        ],
+        "their_surpluses": [
+          {
+            "label": "deep",
+            "position": "WR",
+            "strength": 1.92
+          }
+        ]
+      },
+      {
+        "count_fit_score": 5.5,
+        "fit_score": 3.7,
         "manager": "abewav",
         "market": {
           "position_scores": {
             "QB": 59.6,
-            "RB": 80.2,
+            "RB": 79.9,
             "TE": 49.8,
             "WR": 40.7
           },
@@ -2192,86 +2400,30 @@
           {
             "label": "thin",
             "position": "WR",
-            "strength": 2.25
+            "strength": 2.08
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "RB",
-            "strength": 1.58
+            "strength": 1.75
           },
           {
-            "label": "deep",
+            "label": "above avg",
             "position": "QB",
-            "strength": 1.33
+            "strength": 1.08
           }
         ]
       },
       {
-        "count_fit_score": 1.5,
-        "fit_score": 2.7,
-        "manager": "NolanFarts",
-        "market": {
-          "position_scores": {
-            "QB": 30.4,
-            "RB": 80.2,
-            "TE": 100.0,
-            "WR": 70.6
-          },
-          "their_market_rank": 1,
-          "their_starter_value": 65708,
-          "their_total_value": 113125
-        },
-        "market_fit_score": 5.2,
-        "pick_summary": {
-          "by_round": {
-            "1": 0,
-            "2": 1,
-            "3": 0,
-            "4": 4,
-            "5": 3
-          },
-          "by_year": {
-            "2026": 2,
-            "2027": 2,
-            "2028": 1,
-            "2029": 3
-          },
-          "early_picks": 1,
-          "firsts": 0,
-          "seconds": 1,
-          "total": 8
-        },
-        "reasons": [
-          "Their TE room is materially stronger by current dynasty market value.",
-          "You have relative WR depth that matches one of their needs."
-        ],
-        "roster_id": 2,
-        "team_name": "Puka Nachewa",
-        "their_needs": [
-          {
-            "label": "thin",
-            "position": "WR",
-            "strength": 2.25
-          }
-        ],
-        "their_surpluses": [
-          {
-            "label": "deep",
-            "position": "TE",
-            "strength": 1.42
-          }
-        ]
-      },
-      {
-        "count_fit_score": 1.5,
-        "fit_score": 2.7,
+        "count_fit_score": 1.8,
+        "fit_score": 2.9,
         "manager": "austinamelse",
         "market": {
           "position_scores": {
             "QB": 9.4,
-            "RB": 68.1,
+            "RB": 67.9,
             "TE": 98.6,
             "WR": 44.9
           },
@@ -2307,19 +2459,19 @@
           {
             "label": "thin",
             "position": "WR",
-            "strength": 1.25
+            "strength": 1.08
           }
         ],
         "their_surpluses": []
       },
       {
-        "count_fit_score": 3.3,
-        "fit_score": 2.2,
+        "count_fit_score": 2.7,
+        "fit_score": 1.8,
         "manager": "SORY9",
         "market": {
           "position_scores": {
             "QB": 77.0,
-            "RB": 78.9,
+            "RB": 78.7,
             "TE": 33.5,
             "WR": 47.3
           },
@@ -2353,62 +2505,70 @@
         "their_needs": [],
         "their_surpluses": [
           {
-            "label": "deep",
+            "label": "above avg",
             "position": "QB",
-            "strength": 1.33
+            "strength": 1.08
           }
         ]
       },
       {
         "count_fit_score": 2.5,
         "fit_score": 1.7,
-        "manager": "nathanhoglund",
+        "manager": "ryansorensen8",
         "market": {
           "position_scores": {
-            "QB": 15.1,
-            "RB": 51.0,
-            "TE": 27.5,
-            "WR": 39.4
+            "QB": 63.9,
+            "RB": 65.6,
+            "TE": 4.2,
+            "WR": 93.0
           },
-          "their_market_rank": 11,
-          "their_starter_value": 42791,
-          "their_total_value": 86424
+          "their_market_rank": 4,
+          "their_starter_value": 56634,
+          "their_total_value": 108983
         },
         "market_fit_score": 0.0,
         "pick_summary": {
           "by_round": {
-            "1": 11,
-            "2": 5,
-            "3": 7,
-            "4": 4,
-            "5": 6
+            "1": 1,
+            "2": 0,
+            "3": 3,
+            "4": 2,
+            "5": 0
           },
           "by_year": {
-            "2026": 6,
-            "2027": 11,
-            "2028": 9,
-            "2029": 7
+            "2027": 1,
+            "2028": 2,
+            "2029": 3
           },
-          "early_picks": 16,
-          "firsts": 11,
-          "seconds": 5,
-          "total": 33
+          "early_picks": 1,
+          "firsts": 1,
+          "seconds": 0,
+          "total": 6
         },
         "reasons": [
-          "You have relative WR depth that matches one of their needs.",
-          "They hold meaningfully more 1st/2nd-round draft capital.",
-          "They have multiple future first-round picks available as trade liquidity."
+          "You have relative RB depth that matches one of their needs."
         ],
-        "roster_id": 5,
-        "team_name": "Michael Trigg Sucks Ass",
+        "roster_id": 9,
+        "team_name": "Matt Prater",
         "their_needs": [
           {
             "label": "thin",
-            "position": "WR",
+            "position": "TE",
+            "strength": 1.58
+          },
+          {
+            "label": "thin",
+            "position": "RB",
             "strength": 1.25
           }
         ],
-        "their_surpluses": []
+        "their_surpluses": [
+          {
+            "label": "deep",
+            "position": "WR",
+            "strength": 2.92
+          }
+        ]
       },
       {
         "count_fit_score": 0.9,
@@ -2417,7 +2577,7 @@
         "market": {
           "position_scores": {
             "QB": 0.0,
-            "RB": 46.4,
+            "RB": 46.3,
             "TE": 0.0,
             "WR": 86.2
           },
@@ -2455,76 +2615,22 @@
           {
             "label": "thin",
             "position": "QB",
-            "strength": 1.67
+            "strength": 1.92
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "WR",
-            "strength": 2.75
-          }
-        ]
-      },
-      {
-        "count_fit_score": 0.0,
-        "fit_score": 0.0,
-        "manager": "ryansorensen8",
-        "market": {
-          "position_scores": {
-            "QB": 52.2,
-            "RB": 71.9,
-            "TE": 1.8,
-            "WR": 93.0
-          },
-          "their_market_rank": 4,
-          "their_starter_value": 56634,
-          "their_total_value": 108832
-        },
-        "market_fit_score": 0.0,
-        "pick_summary": {
-          "by_round": {
-            "1": 1,
-            "2": 0,
-            "3": 3,
-            "4": 2,
-            "5": 0
-          },
-          "by_year": {
-            "2027": 1,
-            "2028": 2,
-            "2029": 3
-          },
-          "early_picks": 1,
-          "firsts": 1,
-          "seconds": 0,
-          "total": 6
-        },
-        "reasons": [
-          "No obvious roster-construction mismatch; a deal would be driven more by player preference than team need."
-        ],
-        "roster_id": 9,
-        "team_name": "Matt Prater",
-        "their_needs": [
-          {
-            "label": "thin",
-            "position": "TE",
-            "strength": 1.58
-          }
-        ],
-        "their_surpluses": [
-          {
-            "label": "deep",
-            "position": "WR",
-            "strength": 2.75
+            "strength": 2.92
           }
         ]
       }
     ],
     "2": [
       {
-        "count_fit_score": 6.6,
-        "fit_score": 7.1,
+        "count_fit_score": 8.3,
+        "fit_score": 8.2,
         "manager": "Amelse",
         "market": {
           "position_scores": {
@@ -2560,6 +2666,7 @@
         "reasons": [
           "Your RB market depth lines up with one of their weaker rooms.",
           "Your TE market depth lines up with one of their weaker rooms.",
+          "You have relative QB depth that matches one of their needs.",
           "They are deep at WR, where you are comparatively thin.",
           "They hold meaningfully more 1st/2nd-round draft capital.",
           "They have multiple future first-round picks available as trade liquidity."
@@ -2570,36 +2677,95 @@
           {
             "label": "thin",
             "position": "RB",
-            "strength": 4.42
+            "strength": 4.25
           },
           {
             "label": "thin",
             "position": "QB",
-            "strength": 1.67
+            "strength": 1.92
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "WR",
-            "strength": 5.75
+            "strength": 5.92
           }
         ]
       },
       {
-        "count_fit_score": 8.5,
-        "fit_score": 7.1,
+        "count_fit_score": 8.3,
+        "fit_score": 6.9,
+        "manager": "MayaHuskies",
+        "market": {
+          "position_scores": {
+            "QB": 0.0,
+            "RB": 46.3,
+            "TE": 0.0,
+            "WR": 86.2
+          },
+          "their_market_rank": 9,
+          "their_starter_value": 44818,
+          "their_total_value": 89968
+        },
+        "market_fit_score": 4.0,
+        "pick_summary": {
+          "by_round": {
+            "1": 8,
+            "2": 9,
+            "3": 8,
+            "4": 5,
+            "5": 0
+          },
+          "by_year": {
+            "2026": 7,
+            "2027": 10,
+            "2028": 7,
+            "2029": 6
+          },
+          "early_picks": 17,
+          "firsts": 8,
+          "seconds": 9,
+          "total": 30
+        },
+        "reasons": [
+          "Your TE market depth lines up with one of their weaker rooms.",
+          "You have relative QB depth that matches one of their needs.",
+          "They are deep at WR, where you are comparatively thin.",
+          "They hold meaningfully more 1st/2nd-round draft capital.",
+          "They have multiple future first-round picks available as trade liquidity."
+        ],
+        "roster_id": 4,
+        "team_name": null,
+        "their_needs": [
+          {
+            "label": "thin",
+            "position": "QB",
+            "strength": 1.92
+          }
+        ],
+        "their_surpluses": [
+          {
+            "label": "deep",
+            "position": "WR",
+            "strength": 2.92
+          }
+        ]
+      },
+      {
+        "count_fit_score": 8.0,
+        "fit_score": 6.7,
         "manager": "ryansorensen8",
         "market": {
           "position_scores": {
-            "QB": 52.2,
-            "RB": 71.9,
-            "TE": 1.8,
+            "QB": 63.9,
+            "RB": 65.6,
+            "TE": 4.2,
             "WR": 93.0
           },
           "their_market_rank": 4,
           "their_starter_value": 56634,
-          "their_total_value": 108832
+          "their_total_value": 108983
         },
         "market_fit_score": 4.0,
         "pick_summary": {
@@ -2632,88 +2798,35 @@
             "label": "thin",
             "position": "TE",
             "strength": 1.58
-          }
-        ],
-        "their_surpluses": [
-          {
-            "label": "deep",
-            "position": "WR",
-            "strength": 2.75
-          }
-        ]
-      },
-      {
-        "count_fit_score": 6.6,
-        "fit_score": 5.8,
-        "manager": "MayaHuskies",
-        "market": {
-          "position_scores": {
-            "QB": 0.0,
-            "RB": 46.4,
-            "TE": 0.0,
-            "WR": 86.2
           },
-          "their_market_rank": 9,
-          "their_starter_value": 44818,
-          "their_total_value": 89968
-        },
-        "market_fit_score": 4.0,
-        "pick_summary": {
-          "by_round": {
-            "1": 8,
-            "2": 9,
-            "3": 8,
-            "4": 5,
-            "5": 0
-          },
-          "by_year": {
-            "2026": 7,
-            "2027": 10,
-            "2028": 7,
-            "2029": 6
-          },
-          "early_picks": 17,
-          "firsts": 8,
-          "seconds": 9,
-          "total": 30
-        },
-        "reasons": [
-          "Your TE market depth lines up with one of their weaker rooms.",
-          "They are deep at WR, where you are comparatively thin.",
-          "They hold meaningfully more 1st/2nd-round draft capital.",
-          "They have multiple future first-round picks available as trade liquidity."
-        ],
-        "roster_id": 4,
-        "team_name": null,
-        "their_needs": [
           {
             "label": "thin",
-            "position": "QB",
-            "strength": 1.67
+            "position": "RB",
+            "strength": 1.25
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "WR",
-            "strength": 2.75
+            "strength": 2.92
           }
         ]
       },
       {
-        "count_fit_score": 6.6,
-        "fit_score": 4.5,
+        "count_fit_score": 7.6,
+        "fit_score": 5.2,
         "manager": "Ebro51",
         "market": {
           "position_scores": {
             "QB": 44.1,
-            "RB": 58.6,
+            "RB": 58.4,
             "TE": 73.6,
-            "WR": 69.4
+            "WR": 61.3
           },
           "their_market_rank": 7,
           "their_starter_value": 53177,
-          "their_total_value": 105200
+          "their_total_value": 103418
         },
         "market_fit_score": 0.0,
         "pick_summary": {
@@ -2736,6 +2849,7 @@
           "total": 14
         },
         "reasons": [
+          "You have relative QB depth that matches one of their needs.",
           "They are deep at WR, where you are comparatively thin.",
           "They hold meaningfully more 1st/2nd-round draft capital.",
           "They have multiple future first-round picks available as trade liquidity."
@@ -2746,137 +2860,30 @@
           {
             "label": "thin",
             "position": "RB",
-            "strength": 1.42
+            "strength": 1.25
+          },
+          {
+            "label": "below avg",
+            "position": "QB",
+            "strength": 0.92
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "WR",
-            "strength": 2.75
+            "strength": 1.92
           }
         ]
       },
       {
-        "count_fit_score": 0.9,
-        "fit_score": 3.6,
-        "manager": "Waldo23",
-        "market": {
-          "position_scores": {
-            "QB": 100.0,
-            "RB": 100.0,
-            "TE": 62.1,
-            "WR": 18.6
-          },
-          "their_market_rank": 2,
-          "their_starter_value": 60080,
-          "their_total_value": 115810
-        },
-        "market_fit_score": 9.2,
-        "pick_summary": {
-          "by_round": {
-            "1": 3,
-            "2": 3,
-            "3": 1,
-            "4": 3,
-            "5": 5
-          },
-          "by_year": {
-            "2026": 5,
-            "2027": 2,
-            "2028": 3,
-            "2029": 5
-          },
-          "early_picks": 6,
-          "firsts": 3,
-          "seconds": 3,
-          "total": 15
-        },
-        "reasons": [
-          "Their QB room is materially stronger by current dynasty market value.",
-          "Your WR market depth lines up with one of their weaker rooms.",
-          "They hold meaningfully more 1st/2nd-round draft capital.",
-          "They have multiple future first-round picks available as trade liquidity."
-        ],
-        "roster_id": 11,
-        "team_name": "I Cam, I Saw, I Conquered",
-        "their_needs": [
-          {
-            "label": "thin",
-            "position": "WR",
-            "strength": 3.25
-          }
-        ],
-        "their_surpluses": [
-          {
-            "label": "deep",
-            "position": "RB",
-            "strength": 1.58
-          },
-          {
-            "label": "deep",
-            "position": "QB",
-            "strength": 1.33
-          }
-        ]
-      },
-      {
-        "count_fit_score": 0.6,
-        "fit_score": 3.2,
-        "manager": "SORY9",
-        "market": {
-          "position_scores": {
-            "QB": 77.0,
-            "RB": 78.9,
-            "TE": 33.5,
-            "WR": 47.3
-          },
-          "their_market_rank": 5,
-          "their_starter_value": 55467,
-          "their_total_value": 108408
-        },
-        "market_fit_score": 8.6,
-        "pick_summary": {
-          "by_round": {
-            "1": 1,
-            "2": 2,
-            "3": 0,
-            "4": 3,
-            "5": 2
-          },
-          "by_year": {
-            "2026": 3,
-            "2029": 5
-          },
-          "early_picks": 3,
-          "firsts": 1,
-          "seconds": 2,
-          "total": 8
-        },
-        "reasons": [
-          "Their QB room is materially stronger by current dynasty market value.",
-          "Your TE market depth lines up with one of their weaker rooms.",
-          "They hold meaningfully more 1st/2nd-round draft capital."
-        ],
-        "roster_id": 7,
-        "team_name": "TEAM MIKE ALSTOTT",
-        "their_needs": [],
-        "their_surpluses": [
-          {
-            "label": "deep",
-            "position": "QB",
-            "strength": 1.33
-          }
-        ]
-      },
-      {
-        "count_fit_score": 2.5,
-        "fit_score": 3.0,
+        "count_fit_score": 5.1,
+        "fit_score": 4.8,
         "manager": "Butler2142",
         "market": {
           "position_scores": {
             "QB": 51.2,
-            "RB": 86.2,
+            "RB": 85.9,
             "TE": 8.2,
             "WR": 100.0
           },
@@ -2906,6 +2913,7 @@
         },
         "reasons": [
           "Your TE market depth lines up with one of their weaker rooms.",
+          "You have relative QB depth that matches one of their needs.",
           "They are deep at WR, where you are comparatively thin.",
           "They hold meaningfully more 1st/2nd-round draft capital."
         ],
@@ -2915,19 +2923,144 @@
           {
             "label": "thin",
             "position": "QB",
-            "strength": 1.67
+            "strength": 1.92
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "RB",
-            "strength": 1.58
+            "strength": 1.75
           },
           {
             "label": "above avg",
             "position": "WR",
+            "strength": 0.92
+          }
+        ]
+      },
+      {
+        "count_fit_score": 0.9,
+        "fit_score": 2.9,
+        "manager": "nathanhoglund",
+        "market": {
+          "position_scores": {
+            "QB": 22.8,
+            "RB": 50.9,
+            "TE": 27.5,
+            "WR": 29.2
+          },
+          "their_market_rank": 11,
+          "their_starter_value": 42791,
+          "their_total_value": 85412
+        },
+        "market_fit_score": 7.3,
+        "pick_summary": {
+          "by_round": {
+            "1": 11,
+            "2": 5,
+            "3": 7,
+            "4": 4,
+            "5": 6
+          },
+          "by_year": {
+            "2026": 6,
+            "2027": 11,
+            "2028": 9,
+            "2029": 7
+          },
+          "early_picks": 16,
+          "firsts": 11,
+          "seconds": 5,
+          "total": 33
+        },
+        "reasons": [
+          "Your WR market depth lines up with one of their weaker rooms.",
+          "Your TE market depth lines up with one of their weaker rooms.",
+          "They hold meaningfully more 1st/2nd-round draft capital.",
+          "They have multiple future first-round picks available as trade liquidity."
+        ],
+        "roster_id": 5,
+        "team_name": "Michael Trigg Sucks Ass",
+        "their_needs": [
+          {
+            "label": "thin",
+            "position": "WR",
+            "strength": 2.08
+          }
+        ],
+        "their_surpluses": [
+          {
+            "label": "above avg",
+            "position": "QB",
+            "strength": 1.08
+          },
+          {
+            "label": "above avg",
+            "position": "RB",
             "strength": 0.75
+          }
+        ]
+      },
+      {
+        "count_fit_score": 0.9,
+        "fit_score": 1.9,
+        "manager": "Waldo23",
+        "market": {
+          "position_scores": {
+            "QB": 100.0,
+            "RB": 100.0,
+            "TE": 62.1,
+            "WR": 18.6
+          },
+          "their_market_rank": 2,
+          "their_starter_value": 60080,
+          "their_total_value": 115918
+        },
+        "market_fit_score": 4.0,
+        "pick_summary": {
+          "by_round": {
+            "1": 3,
+            "2": 3,
+            "3": 1,
+            "4": 3,
+            "5": 5
+          },
+          "by_year": {
+            "2026": 5,
+            "2027": 2,
+            "2028": 3,
+            "2029": 5
+          },
+          "early_picks": 6,
+          "firsts": 3,
+          "seconds": 3,
+          "total": 15
+        },
+        "reasons": [
+          "Your WR market depth lines up with one of their weaker rooms.",
+          "They hold meaningfully more 1st/2nd-round draft capital.",
+          "They have multiple future first-round picks available as trade liquidity."
+        ],
+        "roster_id": 11,
+        "team_name": "I Cam, I Saw, I Conquered",
+        "their_needs": [
+          {
+            "label": "thin",
+            "position": "WR",
+            "strength": 3.08
+          }
+        ],
+        "their_surpluses": [
+          {
+            "label": "deep",
+            "position": "RB",
+            "strength": 1.75
+          },
+          {
+            "label": "above avg",
+            "position": "QB",
+            "strength": 1.08
           }
         ]
       },
@@ -2938,7 +3071,7 @@
         "market": {
           "position_scores": {
             "QB": 42.7,
-            "RB": 58.5,
+            "RB": 58.4,
             "TE": 49.8,
             "WR": 0.0
           },
@@ -2977,72 +3110,69 @@
           {
             "label": "thin",
             "position": "WR",
-            "strength": 4.25
+            "strength": 4.08
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "RB",
-            "strength": 1.58
+            "strength": 1.75
           },
           {
-            "label": "deep",
+            "label": "above avg",
             "position": "QB",
-            "strength": 1.33
+            "strength": 1.08
           }
         ]
       },
       {
-        "count_fit_score": 0.9,
-        "fit_score": 1.9,
-        "manager": "nathanhoglund",
+        "count_fit_score": 0.6,
+        "fit_score": 1.7,
+        "manager": "SORY9",
         "market": {
           "position_scores": {
-            "QB": 15.1,
-            "RB": 51.0,
-            "TE": 27.5,
-            "WR": 39.4
+            "QB": 77.0,
+            "RB": 78.7,
+            "TE": 33.5,
+            "WR": 47.3
           },
-          "their_market_rank": 11,
-          "their_starter_value": 42791,
-          "their_total_value": 86424
+          "their_market_rank": 5,
+          "their_starter_value": 55467,
+          "their_total_value": 108408
         },
         "market_fit_score": 4.0,
         "pick_summary": {
           "by_round": {
-            "1": 11,
-            "2": 5,
-            "3": 7,
-            "4": 4,
-            "5": 6
+            "1": 1,
+            "2": 2,
+            "3": 0,
+            "4": 3,
+            "5": 2
           },
           "by_year": {
-            "2026": 6,
-            "2027": 11,
-            "2028": 9,
-            "2029": 7
+            "2026": 3,
+            "2029": 5
           },
-          "early_picks": 16,
-          "firsts": 11,
-          "seconds": 5,
-          "total": 33
+          "early_picks": 3,
+          "firsts": 1,
+          "seconds": 2,
+          "total": 8
         },
         "reasons": [
           "Your TE market depth lines up with one of their weaker rooms.",
-          "They hold meaningfully more 1st/2nd-round draft capital.",
-          "They have multiple future first-round picks available as trade liquidity."
+          "They hold meaningfully more 1st/2nd-round draft capital."
         ],
-        "roster_id": 5,
-        "team_name": "Michael Trigg Sucks Ass",
-        "their_needs": [
+        "roster_id": 7,
+        "team_name": "TEAM MIKE ALSTOTT",
+        "their_needs": [],
+        "their_surpluses": [
           {
-            "label": "thin",
-            "position": "WR",
-            "strength": 1.25
+            "label": "above avg",
+            "position": "QB",
+            "strength": 1.08
           }
-        ],
-        "their_surpluses": []
+        ]
       },
       {
         "count_fit_score": 0.9,
@@ -3051,7 +3181,7 @@
         "market": {
           "position_scores": {
             "QB": 59.6,
-            "RB": 80.2,
+            "RB": 79.9,
             "TE": 49.8,
             "WR": 40.7
           },
@@ -3089,19 +3219,19 @@
           {
             "label": "thin",
             "position": "WR",
-            "strength": 2.25
+            "strength": 2.08
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "RB",
-            "strength": 1.58
+            "strength": 1.75
           },
           {
-            "label": "deep",
+            "label": "above avg",
             "position": "QB",
-            "strength": 1.33
+            "strength": 1.08
           }
         ]
       },
@@ -3112,7 +3242,7 @@
         "market": {
           "position_scores": {
             "QB": 9.4,
-            "RB": 68.1,
+            "RB": 67.9,
             "TE": 98.6,
             "WR": 44.9
           },
@@ -3147,7 +3277,7 @@
           {
             "label": "thin",
             "position": "WR",
-            "strength": 1.25
+            "strength": 1.08
           }
         ],
         "their_surpluses": []
@@ -3203,36 +3333,36 @@
           {
             "label": "thin",
             "position": "RB",
-            "strength": 4.42
+            "strength": 4.25
           },
           {
             "label": "thin",
             "position": "QB",
-            "strength": 1.67
+            "strength": 1.92
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "WR",
-            "strength": 5.75
+            "strength": 5.92
           }
         ]
       },
       {
-        "count_fit_score": 9.4,
-        "fit_score": 6.4,
+        "count_fit_score": 10.0,
+        "fit_score": 6.8,
         "manager": "Ebro51",
         "market": {
           "position_scores": {
             "QB": 44.1,
-            "RB": 58.6,
+            "RB": 58.4,
             "TE": 73.6,
-            "WR": 69.4
+            "WR": 61.3
           },
           "their_market_rank": 7,
           "their_starter_value": 53177,
-          "their_total_value": 105200
+          "their_total_value": 103418
         },
         "market_fit_score": 0.0,
         "pick_summary": {
@@ -3255,6 +3385,7 @@
           "total": 14
         },
         "reasons": [
+          "You have relative QB depth that matches one of their needs.",
           "You have relative RB depth that matches one of their needs.",
           "They are deep at WR, where you are comparatively thin.",
           "They hold meaningfully more 1st/2nd-round draft capital.",
@@ -3266,25 +3397,30 @@
           {
             "label": "thin",
             "position": "RB",
-            "strength": 1.42
+            "strength": 1.25
+          },
+          {
+            "label": "below avg",
+            "position": "QB",
+            "strength": 0.92
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "WR",
-            "strength": 2.75
+            "strength": 1.92
           }
         ]
       },
       {
-        "count_fit_score": 9.2,
-        "fit_score": 6.3,
+        "count_fit_score": 8.3,
+        "fit_score": 5.6,
         "manager": "MayaHuskies",
         "market": {
           "position_scores": {
             "QB": 0.0,
-            "RB": 46.4,
+            "RB": 46.3,
             "TE": 0.0,
             "WR": 86.2
           },
@@ -3324,31 +3460,31 @@
           {
             "label": "thin",
             "position": "QB",
-            "strength": 1.67
+            "strength": 1.92
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "WR",
-            "strength": 2.75
+            "strength": 2.92
           }
         ]
       },
       {
-        "count_fit_score": 5.6,
-        "fit_score": 3.8,
+        "count_fit_score": 7.7,
+        "fit_score": 5.2,
         "manager": "ryansorensen8",
         "market": {
           "position_scores": {
-            "QB": 52.2,
-            "RB": 71.9,
-            "TE": 1.8,
+            "QB": 63.9,
+            "RB": 65.6,
+            "TE": 4.2,
             "WR": 93.0
           },
           "their_market_rank": 4,
           "their_starter_value": 56634,
-          "their_total_value": 108832
+          "their_total_value": 108983
         },
         "market_fit_score": 0.0,
         "pick_summary": {
@@ -3370,6 +3506,7 @@
           "total": 6
         },
         "reasons": [
+          "You have relative RB depth that matches one of their needs.",
           "They are deep at WR, where you are comparatively thin."
         ],
         "roster_id": 9,
@@ -3379,13 +3516,18 @@
             "label": "thin",
             "position": "TE",
             "strength": 1.58
+          },
+          {
+            "label": "thin",
+            "position": "RB",
+            "strength": 1.25
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "WR",
-            "strength": 2.75
+            "strength": 2.92
           }
         ]
       },
@@ -3396,7 +3538,7 @@
         "market": {
           "position_scores": {
             "QB": 51.2,
-            "RB": 86.2,
+            "RB": 85.9,
             "TE": 8.2,
             "WR": 100.0
           },
@@ -3434,19 +3576,19 @@
           {
             "label": "thin",
             "position": "QB",
-            "strength": 1.67
+            "strength": 1.92
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "RB",
-            "strength": 1.58
+            "strength": 1.75
           },
           {
             "label": "above avg",
             "position": "WR",
-            "strength": 0.75
+            "strength": 0.92
           }
         ]
       },
@@ -3457,7 +3599,7 @@
         "market": {
           "position_scores": {
             "QB": 42.7,
-            "RB": 58.5,
+            "RB": 58.4,
             "TE": 49.8,
             "WR": 0.0
           },
@@ -3495,19 +3637,19 @@
           {
             "label": "thin",
             "position": "WR",
-            "strength": 4.25
+            "strength": 4.08
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "RB",
-            "strength": 1.58
+            "strength": 1.75
           },
           {
-            "label": "deep",
+            "label": "above avg",
             "position": "QB",
-            "strength": 1.33
+            "strength": 1.08
           }
         ]
       },
@@ -3517,14 +3659,14 @@
         "manager": "nathanhoglund",
         "market": {
           "position_scores": {
-            "QB": 15.1,
-            "RB": 51.0,
+            "QB": 22.8,
+            "RB": 50.9,
             "TE": 27.5,
-            "WR": 39.4
+            "WR": 29.2
           },
           "their_market_rank": 11,
           "their_starter_value": 42791,
-          "their_total_value": 86424
+          "their_total_value": 85412
         },
         "market_fit_score": 0.0,
         "pick_summary": {
@@ -3556,10 +3698,21 @@
           {
             "label": "thin",
             "position": "WR",
-            "strength": 1.25
+            "strength": 2.08
           }
         ],
-        "their_surpluses": []
+        "their_surpluses": [
+          {
+            "label": "above avg",
+            "position": "QB",
+            "strength": 1.08
+          },
+          {
+            "label": "above avg",
+            "position": "RB",
+            "strength": 0.75
+          }
+        ]
       },
       {
         "count_fit_score": 0.3,
@@ -3574,7 +3727,7 @@
           },
           "their_market_rank": 2,
           "their_starter_value": 60080,
-          "their_total_value": 115810
+          "their_total_value": 115918
         },
         "market_fit_score": 0.0,
         "pick_summary": {
@@ -3605,19 +3758,19 @@
           {
             "label": "thin",
             "position": "WR",
-            "strength": 3.25
+            "strength": 3.08
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "RB",
-            "strength": 1.58
+            "strength": 1.75
           },
           {
-            "label": "deep",
+            "label": "above avg",
             "position": "QB",
-            "strength": 1.33
+            "strength": 1.08
           }
         ]
       },
@@ -3627,14 +3780,14 @@
         "manager": "NolanFarts",
         "market": {
           "position_scores": {
-            "QB": 30.4,
-            "RB": 80.2,
+            "QB": 44.5,
+            "RB": 73.6,
             "TE": 100.0,
             "WR": 70.6
           },
           "their_market_rank": 1,
           "their_starter_value": 65708,
-          "their_total_value": 113125
+          "their_total_value": 113358
         },
         "market_fit_score": 0.0,
         "pick_summary": {
@@ -3665,7 +3818,7 @@
           {
             "label": "thin",
             "position": "WR",
-            "strength": 2.25
+            "strength": 2.08
           }
         ],
         "their_surpluses": [
@@ -3673,6 +3826,11 @@
             "label": "deep",
             "position": "TE",
             "strength": 1.42
+          },
+          {
+            "label": "above avg",
+            "position": "QB",
+            "strength": 1.08
           }
         ]
       },
@@ -3683,7 +3841,7 @@
         "market": {
           "position_scores": {
             "QB": 77.0,
-            "RB": 78.9,
+            "RB": 78.7,
             "TE": 33.5,
             "WR": 47.3
           },
@@ -3717,9 +3875,9 @@
         "their_needs": [],
         "their_surpluses": [
           {
-            "label": "deep",
+            "label": "above avg",
             "position": "QB",
-            "strength": 1.33
+            "strength": 1.08
           }
         ]
       },
@@ -3730,7 +3888,7 @@
         "market": {
           "position_scores": {
             "QB": 9.4,
-            "RB": 68.1,
+            "RB": 67.9,
             "TE": 98.6,
             "WR": 44.9
           },
@@ -3765,7 +3923,7 @@
           {
             "label": "thin",
             "position": "WR",
-            "strength": 1.25
+            "strength": 1.08
           }
         ],
         "their_surpluses": []
@@ -3773,8 +3931,8 @@
     ],
     "4": [
       {
-        "count_fit_score": 9.2,
-        "fit_score": 9.4,
+        "count_fit_score": 8.9,
+        "fit_score": 9.2,
         "manager": "Waldo23",
         "market": {
           "position_scores": {
@@ -3785,7 +3943,7 @@
           },
           "their_market_rank": 2,
           "their_starter_value": 60080,
-          "their_total_value": 115810
+          "their_total_value": 115918
         },
         "market_fit_score": 9.2,
         "pick_summary": {
@@ -3820,30 +3978,30 @@
           {
             "label": "thin",
             "position": "WR",
-            "strength": 3.25
+            "strength": 3.08
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "RB",
-            "strength": 1.58
+            "strength": 1.75
           },
           {
-            "label": "deep",
+            "label": "above avg",
             "position": "QB",
-            "strength": 1.33
+            "strength": 1.08
           }
         ]
       },
       {
-        "count_fit_score": 9.2,
-        "fit_score": 7.5,
+        "count_fit_score": 8.9,
+        "fit_score": 7.3,
         "manager": "hoglundcory2",
         "market": {
           "position_scores": {
             "QB": 42.7,
-            "RB": 58.5,
+            "RB": 58.4,
             "TE": 49.8,
             "WR": 0.0
           },
@@ -3883,30 +4041,155 @@
           {
             "label": "thin",
             "position": "WR",
-            "strength": 4.25
+            "strength": 4.08
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "RB",
-            "strength": 1.58
+            "strength": 1.75
           },
           {
-            "label": "deep",
+            "label": "above avg",
             "position": "QB",
-            "strength": 1.33
+            "strength": 1.08
           }
         ]
       },
       {
-        "count_fit_score": 8.2,
-        "fit_score": 5.6,
+        "count_fit_score": 6.9,
+        "fit_score": 6.6,
+        "manager": "NolanFarts",
+        "market": {
+          "position_scores": {
+            "QB": 44.5,
+            "RB": 73.6,
+            "TE": 100.0,
+            "WR": 70.6
+          },
+          "their_market_rank": 1,
+          "their_starter_value": 65708,
+          "their_total_value": 113358
+        },
+        "market_fit_score": 5.2,
+        "pick_summary": {
+          "by_round": {
+            "1": 0,
+            "2": 1,
+            "3": 0,
+            "4": 4,
+            "5": 3
+          },
+          "by_year": {
+            "2026": 2,
+            "2027": 2,
+            "2028": 1,
+            "2029": 3
+          },
+          "early_picks": 1,
+          "firsts": 0,
+          "seconds": 1,
+          "total": 8
+        },
+        "reasons": [
+          "Their TE room is materially stronger by current dynasty market value.",
+          "They are deep at QB, where you are comparatively thin.",
+          "You have relative WR depth that matches one of their needs."
+        ],
+        "roster_id": 2,
+        "team_name": "Puka Nachewa",
+        "their_needs": [
+          {
+            "label": "thin",
+            "position": "WR",
+            "strength": 2.08
+          }
+        ],
+        "their_surpluses": [
+          {
+            "label": "deep",
+            "position": "TE",
+            "strength": 1.42
+          },
+          {
+            "label": "above avg",
+            "position": "QB",
+            "strength": 1.08
+          }
+        ]
+      },
+      {
+        "count_fit_score": 7.2,
+        "fit_score": 6.2,
+        "manager": "nathanhoglund",
+        "market": {
+          "position_scores": {
+            "QB": 22.8,
+            "RB": 50.9,
+            "TE": 27.5,
+            "WR": 29.2
+          },
+          "their_market_rank": 11,
+          "their_starter_value": 42791,
+          "their_total_value": 85412
+        },
+        "market_fit_score": 4.0,
+        "pick_summary": {
+          "by_round": {
+            "1": 11,
+            "2": 5,
+            "3": 7,
+            "4": 4,
+            "5": 6
+          },
+          "by_year": {
+            "2026": 6,
+            "2027": 11,
+            "2028": 9,
+            "2029": 7
+          },
+          "early_picks": 16,
+          "firsts": 11,
+          "seconds": 5,
+          "total": 33
+        },
+        "reasons": [
+          "Your WR market depth lines up with one of their weaker rooms.",
+          "They are deep at QB, where you are comparatively thin.",
+          "You have relative WR depth that matches one of their needs.",
+          "They have multiple future first-round picks available as trade liquidity."
+        ],
+        "roster_id": 5,
+        "team_name": "Michael Trigg Sucks Ass",
+        "their_needs": [
+          {
+            "label": "thin",
+            "position": "WR",
+            "strength": 2.08
+          }
+        ],
+        "their_surpluses": [
+          {
+            "label": "above avg",
+            "position": "QB",
+            "strength": 1.08
+          },
+          {
+            "label": "above avg",
+            "position": "RB",
+            "strength": 0.75
+          }
+        ]
+      },
+      {
+        "count_fit_score": 7.2,
+        "fit_score": 4.9,
         "manager": "abewav",
         "market": {
           "position_scores": {
             "QB": 59.6,
-            "RB": 80.2,
+            "RB": 79.9,
             "TE": 49.8,
             "WR": 40.7
           },
@@ -3945,86 +4228,30 @@
           {
             "label": "thin",
             "position": "WR",
-            "strength": 2.25
+            "strength": 2.08
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "RB",
-            "strength": 1.58
+            "strength": 1.75
           },
           {
-            "label": "deep",
+            "label": "above avg",
             "position": "QB",
-            "strength": 1.33
+            "strength": 1.08
           }
         ]
       },
       {
-        "count_fit_score": 4.5,
-        "fit_score": 5.0,
-        "manager": "NolanFarts",
-        "market": {
-          "position_scores": {
-            "QB": 30.4,
-            "RB": 80.2,
-            "TE": 100.0,
-            "WR": 70.6
-          },
-          "their_market_rank": 1,
-          "their_starter_value": 65708,
-          "their_total_value": 113125
-        },
-        "market_fit_score": 5.2,
-        "pick_summary": {
-          "by_round": {
-            "1": 0,
-            "2": 1,
-            "3": 0,
-            "4": 4,
-            "5": 3
-          },
-          "by_year": {
-            "2026": 2,
-            "2027": 2,
-            "2028": 1,
-            "2029": 3
-          },
-          "early_picks": 1,
-          "firsts": 0,
-          "seconds": 1,
-          "total": 8
-        },
-        "reasons": [
-          "Their TE room is materially stronger by current dynasty market value.",
-          "You have relative WR depth that matches one of their needs."
-        ],
-        "roster_id": 2,
-        "team_name": "Puka Nachewa",
-        "their_needs": [
-          {
-            "label": "thin",
-            "position": "WR",
-            "strength": 2.25
-          }
-        ],
-        "their_surpluses": [
-          {
-            "label": "deep",
-            "position": "TE",
-            "strength": 1.42
-          }
-        ]
-      },
-      {
-        "count_fit_score": 3.3,
-        "fit_score": 4.2,
+        "count_fit_score": 2.7,
+        "fit_score": 3.7,
         "manager": "SORY9",
         "market": {
           "position_scores": {
             "QB": 77.0,
-            "RB": 78.9,
+            "RB": 78.7,
             "TE": 33.5,
             "WR": 47.3
           },
@@ -4059,20 +4286,20 @@
         "their_needs": [],
         "their_surpluses": [
           {
-            "label": "deep",
+            "label": "above avg",
             "position": "QB",
-            "strength": 1.33
+            "strength": 1.08
           }
         ]
       },
       {
-        "count_fit_score": 2.5,
-        "fit_score": 3.4,
+        "count_fit_score": 2.2,
+        "fit_score": 3.2,
         "manager": "austinamelse",
         "market": {
           "position_scores": {
             "QB": 9.4,
-            "RB": 68.1,
+            "RB": 67.9,
             "TE": 98.6,
             "WR": 44.9
           },
@@ -4108,57 +4335,7 @@
           {
             "label": "thin",
             "position": "WR",
-            "strength": 1.25
-          }
-        ],
-        "their_surpluses": []
-      },
-      {
-        "count_fit_score": 2.9,
-        "fit_score": 2.0,
-        "manager": "nathanhoglund",
-        "market": {
-          "position_scores": {
-            "QB": 15.1,
-            "RB": 51.0,
-            "TE": 27.5,
-            "WR": 39.4
-          },
-          "their_market_rank": 11,
-          "their_starter_value": 42791,
-          "their_total_value": 86424
-        },
-        "market_fit_score": 0.0,
-        "pick_summary": {
-          "by_round": {
-            "1": 11,
-            "2": 5,
-            "3": 7,
-            "4": 4,
-            "5": 6
-          },
-          "by_year": {
-            "2026": 6,
-            "2027": 11,
-            "2028": 9,
-            "2029": 7
-          },
-          "early_picks": 16,
-          "firsts": 11,
-          "seconds": 5,
-          "total": 33
-        },
-        "reasons": [
-          "You have relative WR depth that matches one of their needs.",
-          "They have multiple future first-round picks available as trade liquidity."
-        ],
-        "roster_id": 5,
-        "team_name": "Michael Trigg Sucks Ass",
-        "their_needs": [
-          {
-            "label": "thin",
-            "position": "WR",
-            "strength": 1.25
+            "strength": 1.08
           }
         ],
         "their_surpluses": []
@@ -4170,13 +4347,13 @@
         "market": {
           "position_scores": {
             "QB": 44.1,
-            "RB": 58.6,
+            "RB": 58.4,
             "TE": 73.6,
-            "WR": 69.4
+            "WR": 61.3
           },
           "their_market_rank": 7,
           "their_starter_value": 53177,
-          "their_total_value": 105200
+          "their_total_value": 103418
         },
         "market_fit_score": 5.2,
         "pick_summary": {
@@ -4208,14 +4385,19 @@
           {
             "label": "thin",
             "position": "RB",
-            "strength": 1.42
+            "strength": 1.25
+          },
+          {
+            "label": "below avg",
+            "position": "QB",
+            "strength": 0.92
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "WR",
-            "strength": 2.75
+            "strength": 1.92
           }
         ]
       },
@@ -4264,19 +4446,19 @@
           {
             "label": "thin",
             "position": "RB",
-            "strength": 4.42
+            "strength": 4.25
           },
           {
             "label": "thin",
             "position": "QB",
-            "strength": 1.67
+            "strength": 1.92
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "WR",
-            "strength": 5.75
+            "strength": 5.92
           }
         ]
       },
@@ -4287,7 +4469,7 @@
         "market": {
           "position_scores": {
             "QB": 51.2,
-            "RB": 86.2,
+            "RB": 85.9,
             "TE": 8.2,
             "WR": 100.0
           },
@@ -4324,19 +4506,19 @@
           {
             "label": "thin",
             "position": "QB",
-            "strength": 1.67
+            "strength": 1.92
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "RB",
-            "strength": 1.58
+            "strength": 1.75
           },
           {
             "label": "above avg",
             "position": "WR",
-            "strength": 0.75
+            "strength": 0.92
           }
         ]
       },
@@ -4346,14 +4528,14 @@
         "manager": "ryansorensen8",
         "market": {
           "position_scores": {
-            "QB": 52.2,
-            "RB": 71.9,
-            "TE": 1.8,
+            "QB": 63.9,
+            "RB": 65.6,
+            "TE": 4.2,
             "WR": 93.0
           },
           "their_market_rank": 4,
           "their_starter_value": 56634,
-          "their_total_value": 108832
+          "their_total_value": 108983
         },
         "market_fit_score": 0.0,
         "pick_summary": {
@@ -4384,32 +4566,102 @@
             "label": "thin",
             "position": "TE",
             "strength": 1.58
+          },
+          {
+            "label": "thin",
+            "position": "RB",
+            "strength": 1.25
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "WR",
-            "strength": 2.75
+            "strength": 2.92
           }
         ]
       }
     ],
     "5": [
       {
-        "count_fit_score": 3.5,
-        "fit_score": 4.1,
+        "count_fit_score": 9.8,
+        "fit_score": 8.3,
+        "manager": "Amelse",
+        "market": {
+          "position_scores": {
+            "QB": 23.4,
+            "RB": 0.0,
+            "TE": 27.0,
+            "WR": 79.7
+          },
+          "their_market_rank": 12,
+          "their_starter_value": 41753,
+          "their_total_value": 79658
+        },
+        "market_fit_score": 5.0,
+        "pick_summary": {
+          "by_round": {
+            "1": 11,
+            "2": 10,
+            "3": 13,
+            "4": 13,
+            "5": 20
+          },
+          "by_year": {
+            "2026": 14,
+            "2027": 17,
+            "2028": 24,
+            "2029": 12
+          },
+          "early_picks": 21,
+          "firsts": 11,
+          "seconds": 10,
+          "total": 67
+        },
+        "reasons": [
+          "Their WR room is materially stronger by current dynasty market value.",
+          "You have relative QB depth that matches one of their needs.",
+          "You have relative RB depth that matches one of their needs.",
+          "They are deep at WR, where you are comparatively thin.",
+          "They hold meaningfully more 1st/2nd-round draft capital.",
+          "They have multiple future first-round picks available as trade liquidity."
+        ],
+        "roster_id": 6,
+        "team_name": null,
+        "their_needs": [
+          {
+            "label": "thin",
+            "position": "RB",
+            "strength": 4.25
+          },
+          {
+            "label": "thin",
+            "position": "QB",
+            "strength": 1.92
+          }
+        ],
+        "their_surpluses": [
+          {
+            "label": "deep",
+            "position": "WR",
+            "strength": 5.92
+          }
+        ]
+      },
+      {
+        "count_fit_score": 8.5,
+        "fit_score": 7.5,
         "manager": "Ebro51",
         "market": {
           "position_scores": {
             "QB": 44.1,
-            "RB": 58.6,
+            "RB": 58.4,
             "TE": 73.6,
-            "WR": 69.4
+            "WR": 61.3
           },
           "their_market_rank": 7,
           "their_starter_value": 53177,
-          "their_total_value": 105200
+          "their_total_value": 103418
         },
         "market_fit_score": 4.5,
         "pick_summary": {
@@ -4433,6 +4685,8 @@
         },
         "reasons": [
           "Their TE room is materially stronger by current dynasty market value.",
+          "You have relative QB depth that matches one of their needs.",
+          "You have relative RB depth that matches one of their needs.",
           "They are deep at WR, where you are comparatively thin.",
           "They have multiple future first-round picks available as trade liquidity."
         ],
@@ -4442,87 +4696,30 @@
           {
             "label": "thin",
             "position": "RB",
-            "strength": 1.42
-          }
-        ],
-        "their_surpluses": [
-          {
-            "label": "deep",
-            "position": "WR",
-            "strength": 2.75
-          }
-        ]
-      },
-      {
-        "count_fit_score": 4.1,
-        "fit_score": 2.8,
-        "manager": "Amelse",
-        "market": {
-          "position_scores": {
-            "QB": 23.4,
-            "RB": 0.0,
-            "TE": 27.0,
-            "WR": 79.7
-          },
-          "their_market_rank": 12,
-          "their_starter_value": 41753,
-          "their_total_value": 79658
-        },
-        "market_fit_score": 0.0,
-        "pick_summary": {
-          "by_round": {
-            "1": 11,
-            "2": 10,
-            "3": 13,
-            "4": 13,
-            "5": 20
-          },
-          "by_year": {
-            "2026": 14,
-            "2027": 17,
-            "2028": 24,
-            "2029": 12
-          },
-          "early_picks": 21,
-          "firsts": 11,
-          "seconds": 10,
-          "total": 67
-        },
-        "reasons": [
-          "They are deep at WR, where you are comparatively thin.",
-          "They hold meaningfully more 1st/2nd-round draft capital.",
-          "They have multiple future first-round picks available as trade liquidity."
-        ],
-        "roster_id": 6,
-        "team_name": null,
-        "their_needs": [
-          {
-            "label": "thin",
-            "position": "RB",
-            "strength": 4.42
+            "strength": 1.25
           },
           {
-            "label": "thin",
+            "label": "below avg",
             "position": "QB",
-            "strength": 1.67
+            "strength": 0.92
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "WR",
-            "strength": 5.75
+            "strength": 1.92
           }
         ]
       },
       {
-        "count_fit_score": 3.5,
-        "fit_score": 2.4,
+        "count_fit_score": 7.7,
+        "fit_score": 6.9,
         "manager": "MayaHuskies",
         "market": {
           "position_scores": {
             "QB": 0.0,
-            "RB": 46.4,
+            "RB": 46.3,
             "TE": 0.0,
             "WR": 86.2
           },
@@ -4530,7 +4727,7 @@
           "their_starter_value": 44818,
           "their_total_value": 89968
         },
-        "market_fit_score": 0.0,
+        "market_fit_score": 5.2,
         "pick_summary": {
           "by_round": {
             "1": 8,
@@ -4551,6 +4748,8 @@
           "total": 30
         },
         "reasons": [
+          "Their WR room is materially stronger by current dynasty market value.",
+          "You have relative QB depth that matches one of their needs.",
           "They are deep at WR, where you are comparatively thin.",
           "They have multiple future first-round picks available as trade liquidity."
         ],
@@ -4560,33 +4759,33 @@
           {
             "label": "thin",
             "position": "QB",
-            "strength": 1.67
+            "strength": 1.92
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "WR",
-            "strength": 2.75
+            "strength": 2.92
           }
         ]
       },
       {
-        "count_fit_score": 3.1,
-        "fit_score": 2.4,
+        "count_fit_score": 6.7,
+        "fit_score": 6.5,
         "manager": "ryansorensen8",
         "market": {
           "position_scores": {
-            "QB": 52.2,
-            "RB": 71.9,
-            "TE": 1.8,
+            "QB": 63.9,
+            "RB": 65.6,
+            "TE": 4.2,
             "WR": 93.0
           },
           "their_market_rank": 4,
           "their_starter_value": 56634,
-          "their_total_value": 108832
+          "their_total_value": 108983
         },
-        "market_fit_score": 0.0,
+        "market_fit_score": 5.2,
         "pick_summary": {
           "by_round": {
             "1": 1,
@@ -4606,6 +4805,8 @@
           "total": 6
         },
         "reasons": [
+          "Their WR room is materially stronger by current dynasty market value.",
+          "You have relative RB depth that matches one of their needs.",
           "They are deep at WR, where you are comparatively thin."
         ],
         "roster_id": 9,
@@ -4615,13 +4816,142 @@
             "label": "thin",
             "position": "TE",
             "strength": 1.58
+          },
+          {
+            "label": "thin",
+            "position": "RB",
+            "strength": 1.25
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "WR",
-            "strength": 2.75
+            "strength": 2.92
+          }
+        ]
+      },
+      {
+        "count_fit_score": 4.5,
+        "fit_score": 5.0,
+        "manager": "Butler2142",
+        "market": {
+          "position_scores": {
+            "QB": 51.2,
+            "RB": 85.9,
+            "TE": 8.2,
+            "WR": 100.0
+          },
+          "their_market_rank": 3,
+          "their_starter_value": 59037,
+          "their_total_value": 115664
+        },
+        "market_fit_score": 5.2,
+        "pick_summary": {
+          "by_round": {
+            "1": 0,
+            "2": 3,
+            "3": 4,
+            "4": 4,
+            "5": 4
+          },
+          "by_year": {
+            "2026": 6,
+            "2027": 2,
+            "2028": 3,
+            "2029": 4
+          },
+          "early_picks": 3,
+          "firsts": 0,
+          "seconds": 3,
+          "total": 15
+        },
+        "reasons": [
+          "Their WR room is materially stronger by current dynasty market value.",
+          "You have relative QB depth that matches one of their needs.",
+          "They are deep at WR, where you are comparatively thin."
+        ],
+        "roster_id": 12,
+        "team_name": "Henry given sunday",
+        "their_needs": [
+          {
+            "label": "thin",
+            "position": "QB",
+            "strength": 1.92
+          }
+        ],
+        "their_surpluses": [
+          {
+            "label": "deep",
+            "position": "RB",
+            "strength": 1.75
+          },
+          {
+            "label": "above avg",
+            "position": "WR",
+            "strength": 0.92
+          }
+        ]
+      },
+      {
+        "count_fit_score": 0.0,
+        "fit_score": 3.2,
+        "manager": "NolanFarts",
+        "market": {
+          "position_scores": {
+            "QB": 44.5,
+            "RB": 73.6,
+            "TE": 100.0,
+            "WR": 70.6
+          },
+          "their_market_rank": 1,
+          "their_starter_value": 65708,
+          "their_total_value": 113358
+        },
+        "market_fit_score": 9.3,
+        "pick_summary": {
+          "by_round": {
+            "1": 0,
+            "2": 1,
+            "3": 0,
+            "4": 4,
+            "5": 3
+          },
+          "by_year": {
+            "2026": 2,
+            "2027": 2,
+            "2028": 1,
+            "2029": 3
+          },
+          "early_picks": 1,
+          "firsts": 0,
+          "seconds": 1,
+          "total": 8
+        },
+        "reasons": [
+          "Their WR room is materially stronger by current dynasty market value.",
+          "Their TE room is materially stronger by current dynasty market value.",
+          "No obvious roster-construction mismatch; a deal would be driven more by player preference than team need."
+        ],
+        "roster_id": 2,
+        "team_name": "Puka Nachewa",
+        "their_needs": [
+          {
+            "label": "thin",
+            "position": "WR",
+            "strength": 2.08
+          }
+        ],
+        "their_surpluses": [
+          {
+            "label": "deep",
+            "position": "TE",
+            "strength": 1.42
+          },
+          {
+            "label": "above avg",
+            "position": "QB",
+            "strength": 1.08
           }
         ]
       },
@@ -4638,7 +4968,7 @@
           },
           "their_market_rank": 2,
           "their_starter_value": 60080,
-          "their_total_value": 115810
+          "their_total_value": 115918
         },
         "market_fit_score": 5.2,
         "pick_summary": {
@@ -4670,75 +5000,19 @@
           {
             "label": "thin",
             "position": "WR",
-            "strength": 3.25
+            "strength": 3.08
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "RB",
-            "strength": 1.58
+            "strength": 1.75
           },
           {
-            "label": "deep",
+            "label": "above avg",
             "position": "QB",
-            "strength": 1.33
-          }
-        ]
-      },
-      {
-        "count_fit_score": 0.0,
-        "fit_score": 1.9,
-        "manager": "NolanFarts",
-        "market": {
-          "position_scores": {
-            "QB": 30.4,
-            "RB": 80.2,
-            "TE": 100.0,
-            "WR": 70.6
-          },
-          "their_market_rank": 1,
-          "their_starter_value": 65708,
-          "their_total_value": 113125
-        },
-        "market_fit_score": 5.2,
-        "pick_summary": {
-          "by_round": {
-            "1": 0,
-            "2": 1,
-            "3": 0,
-            "4": 4,
-            "5": 3
-          },
-          "by_year": {
-            "2026": 2,
-            "2027": 2,
-            "2028": 1,
-            "2029": 3
-          },
-          "early_picks": 1,
-          "firsts": 0,
-          "seconds": 1,
-          "total": 8
-        },
-        "reasons": [
-          "Their TE room is materially stronger by current dynasty market value.",
-          "No obvious roster-construction mismatch; a deal would be driven more by player preference than team need."
-        ],
-        "roster_id": 2,
-        "team_name": "Puka Nachewa",
-        "their_needs": [
-          {
-            "label": "thin",
-            "position": "WR",
-            "strength": 2.25
-          }
-        ],
-        "their_surpluses": [
-          {
-            "label": "deep",
-            "position": "TE",
-            "strength": 1.42
+            "strength": 1.08
           }
         ]
       },
@@ -4749,7 +5023,7 @@
         "market": {
           "position_scores": {
             "QB": 77.0,
-            "RB": 78.9,
+            "RB": 78.7,
             "TE": 33.5,
             "WR": 47.3
           },
@@ -4784,20 +5058,20 @@
         "their_needs": [],
         "their_surpluses": [
           {
-            "label": "deep",
+            "label": "above avg",
             "position": "QB",
-            "strength": 1.33
+            "strength": 1.08
           }
         ]
       },
       {
         "count_fit_score": 0.0,
-        "fit_score": 1.7,
+        "fit_score": 1.9,
         "manager": "austinamelse",
         "market": {
           "position_scores": {
             "QB": 9.4,
-            "RB": 68.1,
+            "RB": 67.9,
             "TE": 98.6,
             "WR": 44.9
           },
@@ -4833,70 +5107,10 @@
           {
             "label": "thin",
             "position": "WR",
-            "strength": 1.25
+            "strength": 1.08
           }
         ],
         "their_surpluses": []
-      },
-      {
-        "count_fit_score": 1.9,
-        "fit_score": 1.5,
-        "manager": "Butler2142",
-        "market": {
-          "position_scores": {
-            "QB": 51.2,
-            "RB": 86.2,
-            "TE": 8.2,
-            "WR": 100.0
-          },
-          "their_market_rank": 3,
-          "their_starter_value": 59037,
-          "their_total_value": 115664
-        },
-        "market_fit_score": 0.0,
-        "pick_summary": {
-          "by_round": {
-            "1": 0,
-            "2": 3,
-            "3": 4,
-            "4": 4,
-            "5": 4
-          },
-          "by_year": {
-            "2026": 6,
-            "2027": 2,
-            "2028": 3,
-            "2029": 4
-          },
-          "early_picks": 3,
-          "firsts": 0,
-          "seconds": 3,
-          "total": 15
-        },
-        "reasons": [
-          "They are deep at WR, where you are comparatively thin."
-        ],
-        "roster_id": 12,
-        "team_name": "Henry given sunday",
-        "their_needs": [
-          {
-            "label": "thin",
-            "position": "QB",
-            "strength": 1.67
-          }
-        ],
-        "their_surpluses": [
-          {
-            "label": "deep",
-            "position": "RB",
-            "strength": 1.58
-          },
-          {
-            "label": "above avg",
-            "position": "WR",
-            "strength": 0.75
-          }
-        ]
       },
       {
         "count_fit_score": 0.3,
@@ -4905,7 +5119,7 @@
         "market": {
           "position_scores": {
             "QB": 59.6,
-            "RB": 80.2,
+            "RB": 79.9,
             "TE": 49.8,
             "WR": 40.7
           },
@@ -4942,19 +5156,19 @@
           {
             "label": "thin",
             "position": "WR",
-            "strength": 2.25
+            "strength": 2.08
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "RB",
-            "strength": 1.58
+            "strength": 1.75
           },
           {
-            "label": "deep",
+            "label": "above avg",
             "position": "QB",
-            "strength": 1.33
+            "strength": 1.08
           }
         ]
       },
@@ -4965,7 +5179,7 @@
         "market": {
           "position_scores": {
             "QB": 42.7,
-            "RB": 58.5,
+            "RB": 58.4,
             "TE": 49.8,
             "WR": 0.0
           },
@@ -5002,19 +5216,19 @@
           {
             "label": "thin",
             "position": "WR",
-            "strength": 4.25
+            "strength": 4.08
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "RB",
-            "strength": 1.58
+            "strength": 1.75
           },
           {
-            "label": "deep",
+            "label": "above avg",
             "position": "QB",
-            "strength": 1.33
+            "strength": 1.08
           }
         ]
       }
@@ -5033,7 +5247,7 @@
           },
           "their_market_rank": 2,
           "their_starter_value": 60080,
-          "their_total_value": 115810
+          "their_total_value": 115918
         },
         "market_fit_score": 10.0,
         "pick_summary": {
@@ -5069,19 +5283,19 @@
           {
             "label": "thin",
             "position": "WR",
-            "strength": 3.25
+            "strength": 3.08
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "RB",
-            "strength": 1.58
+            "strength": 1.75
           },
           {
-            "label": "deep",
+            "label": "above avg",
             "position": "QB",
-            "strength": 1.33
+            "strength": 1.08
           }
         ]
       },
@@ -5092,7 +5306,7 @@
         "market": {
           "position_scores": {
             "QB": 59.6,
-            "RB": 80.2,
+            "RB": 79.9,
             "TE": 49.8,
             "WR": 40.7
           },
@@ -5133,19 +5347,82 @@
           {
             "label": "thin",
             "position": "WR",
-            "strength": 2.25
+            "strength": 2.08
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "RB",
-            "strength": 1.58
+            "strength": 1.75
           },
           {
-            "label": "deep",
+            "label": "above avg",
             "position": "QB",
-            "strength": 1.33
+            "strength": 1.08
+          }
+        ]
+      },
+      {
+        "count_fit_score": 6.9,
+        "fit_score": 8.1,
+        "manager": "NolanFarts",
+        "market": {
+          "position_scores": {
+            "QB": 44.5,
+            "RB": 73.6,
+            "TE": 100.0,
+            "WR": 70.6
+          },
+          "their_market_rank": 1,
+          "their_starter_value": 65708,
+          "their_total_value": 113358
+        },
+        "market_fit_score": 10.0,
+        "pick_summary": {
+          "by_round": {
+            "1": 0,
+            "2": 1,
+            "3": 0,
+            "4": 4,
+            "5": 3
+          },
+          "by_year": {
+            "2026": 2,
+            "2027": 2,
+            "2028": 1,
+            "2029": 3
+          },
+          "early_picks": 1,
+          "firsts": 0,
+          "seconds": 1,
+          "total": 8
+        },
+        "reasons": [
+          "Their RB room is materially stronger by current dynasty market value.",
+          "Their TE room is materially stronger by current dynasty market value.",
+          "They are deep at QB, where you are comparatively thin.",
+          "You have relative WR depth that matches one of their needs."
+        ],
+        "roster_id": 2,
+        "team_name": "Puka Nachewa",
+        "their_needs": [
+          {
+            "label": "thin",
+            "position": "WR",
+            "strength": 2.08
+          }
+        ],
+        "their_surpluses": [
+          {
+            "label": "deep",
+            "position": "TE",
+            "strength": 1.42
+          },
+          {
+            "label": "above avg",
+            "position": "QB",
+            "strength": 1.08
           }
         ]
       },
@@ -5156,7 +5433,7 @@
         "market": {
           "position_scores": {
             "QB": 42.7,
-            "RB": 58.5,
+            "RB": 58.4,
             "TE": 49.8,
             "WR": 0.0
           },
@@ -5197,87 +5474,94 @@
           {
             "label": "thin",
             "position": "WR",
-            "strength": 4.25
+            "strength": 4.08
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "RB",
-            "strength": 1.58
+            "strength": 1.75
           },
           {
-            "label": "deep",
+            "label": "above avg",
             "position": "QB",
-            "strength": 1.33
+            "strength": 1.08
           }
         ]
       },
       {
-        "count_fit_score": 4.5,
-        "fit_score": 6.5,
-        "manager": "NolanFarts",
+        "count_fit_score": 9.1,
+        "fit_score": 7.5,
+        "manager": "nathanhoglund",
         "market": {
           "position_scores": {
-            "QB": 30.4,
-            "RB": 80.2,
-            "TE": 100.0,
-            "WR": 70.6
+            "QB": 22.8,
+            "RB": 50.9,
+            "TE": 27.5,
+            "WR": 29.2
           },
-          "their_market_rank": 1,
-          "their_starter_value": 65708,
-          "their_total_value": 113125
+          "their_market_rank": 11,
+          "their_starter_value": 42791,
+          "their_total_value": 85412
         },
-        "market_fit_score": 10.0,
+        "market_fit_score": 4.0,
         "pick_summary": {
           "by_round": {
-            "1": 0,
-            "2": 1,
-            "3": 0,
+            "1": 11,
+            "2": 5,
+            "3": 7,
             "4": 4,
-            "5": 3
+            "5": 6
           },
           "by_year": {
-            "2026": 2,
-            "2027": 2,
-            "2028": 1,
-            "2029": 3
+            "2026": 6,
+            "2027": 11,
+            "2028": 9,
+            "2029": 7
           },
-          "early_picks": 1,
-          "firsts": 0,
-          "seconds": 1,
-          "total": 8
+          "early_picks": 16,
+          "firsts": 11,
+          "seconds": 5,
+          "total": 33
         },
         "reasons": [
-          "Their RB room is materially stronger by current dynasty market value.",
-          "Their TE room is materially stronger by current dynasty market value.",
-          "You have relative WR depth that matches one of their needs."
+          "Your WR market depth lines up with one of their weaker rooms.",
+          "They are deep at QB, where you are comparatively thin.",
+          "They are deep at RB, where you are comparatively thin.",
+          "You have relative WR depth that matches one of their needs.",
+          "They have multiple future first-round picks available as trade liquidity."
         ],
-        "roster_id": 2,
-        "team_name": "Puka Nachewa",
+        "roster_id": 5,
+        "team_name": "Michael Trigg Sucks Ass",
         "their_needs": [
           {
             "label": "thin",
             "position": "WR",
-            "strength": 2.25
+            "strength": 2.08
           }
         ],
         "their_surpluses": [
           {
-            "label": "deep",
-            "position": "TE",
-            "strength": 1.42
+            "label": "above avg",
+            "position": "QB",
+            "strength": 1.08
+          },
+          {
+            "label": "above avg",
+            "position": "RB",
+            "strength": 0.75
           }
         ]
       },
       {
-        "count_fit_score": 3.3,
-        "fit_score": 5.7,
+        "count_fit_score": 2.7,
+        "fit_score": 5.3,
         "manager": "SORY9",
         "market": {
           "position_scores": {
             "QB": 77.0,
-            "RB": 78.9,
+            "RB": 78.7,
             "TE": 33.5,
             "WR": 47.3
           },
@@ -5313,69 +5597,20 @@
         "their_needs": [],
         "their_surpluses": [
           {
-            "label": "deep",
+            "label": "above avg",
             "position": "QB",
-            "strength": 1.33
+            "strength": 1.08
           }
         ]
       },
       {
-        "count_fit_score": 2.5,
-        "fit_score": 5.2,
-        "manager": "austinamelse",
-        "market": {
-          "position_scores": {
-            "QB": 9.4,
-            "RB": 68.1,
-            "TE": 98.6,
-            "WR": 44.9
-          },
-          "their_market_rank": 8,
-          "their_starter_value": 52541,
-          "their_total_value": 102823
-        },
-        "market_fit_score": 10.0,
-        "pick_summary": {
-          "by_round": {
-            "1": 0,
-            "2": 1,
-            "3": 0,
-            "4": 1,
-            "5": 0
-          },
-          "by_year": {
-            "2026": 1,
-            "2027": 1
-          },
-          "early_picks": 1,
-          "firsts": 0,
-          "seconds": 1,
-          "total": 2
-        },
-        "reasons": [
-          "Their RB room is materially stronger by current dynasty market value.",
-          "Their TE room is materially stronger by current dynasty market value.",
-          "You have relative WR depth that matches one of their needs."
-        ],
-        "roster_id": 1,
-        "team_name": null,
-        "their_needs": [
-          {
-            "label": "thin",
-            "position": "WR",
-            "strength": 1.25
-          }
-        ],
-        "their_surpluses": []
-      },
-      {
-        "count_fit_score": 4.0,
-        "fit_score": 4.6,
+        "count_fit_score": 4.4,
+        "fit_score": 4.9,
         "manager": "Butler2142",
         "market": {
           "position_scores": {
             "QB": 51.2,
-            "RB": 86.2,
+            "RB": 85.9,
             "TE": 8.2,
             "WR": 100.0
           },
@@ -5413,68 +5648,67 @@
           {
             "label": "thin",
             "position": "QB",
-            "strength": 1.67
+            "strength": 1.92
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "RB",
-            "strength": 1.58
+            "strength": 1.75
           },
           {
             "label": "above avg",
             "position": "WR",
-            "strength": 0.75
+            "strength": 0.92
           }
         ]
       },
       {
-        "count_fit_score": 2.9,
-        "fit_score": 2.0,
-        "manager": "nathanhoglund",
+        "count_fit_score": 2.2,
+        "fit_score": 4.9,
+        "manager": "austinamelse",
         "market": {
           "position_scores": {
-            "QB": 15.1,
-            "RB": 51.0,
-            "TE": 27.5,
-            "WR": 39.4
+            "QB": 9.4,
+            "RB": 67.9,
+            "TE": 98.6,
+            "WR": 44.9
           },
-          "their_market_rank": 11,
-          "their_starter_value": 42791,
-          "their_total_value": 86424
+          "their_market_rank": 8,
+          "their_starter_value": 52541,
+          "their_total_value": 102823
         },
-        "market_fit_score": 0.0,
+        "market_fit_score": 10.0,
         "pick_summary": {
           "by_round": {
-            "1": 11,
-            "2": 5,
-            "3": 7,
-            "4": 4,
-            "5": 6
+            "1": 0,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 0
           },
           "by_year": {
-            "2026": 6,
-            "2027": 11,
-            "2028": 9,
-            "2029": 7
+            "2026": 1,
+            "2027": 1
           },
-          "early_picks": 16,
-          "firsts": 11,
-          "seconds": 5,
-          "total": 33
+          "early_picks": 1,
+          "firsts": 0,
+          "seconds": 1,
+          "total": 2
         },
         "reasons": [
-          "You have relative WR depth that matches one of their needs.",
-          "They have multiple future first-round picks available as trade liquidity."
+          "Their RB room is materially stronger by current dynasty market value.",
+          "Their TE room is materially stronger by current dynasty market value.",
+          "You have relative WR depth that matches one of their needs."
         ],
-        "roster_id": 5,
-        "team_name": "Michael Trigg Sucks Ass",
+        "roster_id": 1,
+        "team_name": null,
         "their_needs": [
           {
             "label": "thin",
             "position": "WR",
-            "strength": 1.25
+            "strength": 1.08
           }
         ],
         "their_surpluses": []
@@ -5486,13 +5720,13 @@
         "market": {
           "position_scores": {
             "QB": 44.1,
-            "RB": 58.6,
+            "RB": 58.4,
             "TE": 73.6,
-            "WR": 69.4
+            "WR": 61.3
           },
           "their_market_rank": 7,
           "their_starter_value": 53177,
-          "their_total_value": 105200
+          "their_total_value": 103418
         },
         "market_fit_score": 4.6,
         "pick_summary": {
@@ -5524,14 +5758,19 @@
           {
             "label": "thin",
             "position": "RB",
-            "strength": 1.42
+            "strength": 1.25
+          },
+          {
+            "label": "below avg",
+            "position": "QB",
+            "strength": 0.92
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "WR",
-            "strength": 2.75
+            "strength": 1.92
           }
         ]
       },
@@ -5541,14 +5780,14 @@
         "manager": "ryansorensen8",
         "market": {
           "position_scores": {
-            "QB": 52.2,
-            "RB": 71.9,
-            "TE": 1.8,
+            "QB": 63.9,
+            "RB": 65.6,
+            "TE": 4.2,
             "WR": 93.0
           },
           "their_market_rank": 4,
           "their_starter_value": 56634,
-          "their_total_value": 108832
+          "their_total_value": 108983
         },
         "market_fit_score": 5.2,
         "pick_summary": {
@@ -5580,13 +5819,18 @@
             "label": "thin",
             "position": "TE",
             "strength": 1.58
+          },
+          {
+            "label": "thin",
+            "position": "RB",
+            "strength": 1.25
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "WR",
-            "strength": 2.75
+            "strength": 2.92
           }
         ]
       },
@@ -5597,7 +5841,7 @@
         "market": {
           "position_scores": {
             "QB": 0.0,
-            "RB": 46.4,
+            "RB": 46.3,
             "TE": 0.0,
             "WR": 86.2
           },
@@ -5634,22 +5878,22 @@
           {
             "label": "thin",
             "position": "QB",
-            "strength": 1.67
+            "strength": 1.92
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "WR",
-            "strength": 2.75
+            "strength": 2.92
           }
         ]
       }
     ],
     "7": [
       {
-        "count_fit_score": 3.6,
-        "fit_score": 5.0,
+        "count_fit_score": 3.1,
+        "fit_score": 4.7,
         "manager": "Amelse",
         "market": {
           "position_scores": {
@@ -5695,30 +5939,30 @@
           {
             "label": "thin",
             "position": "RB",
-            "strength": 4.42
+            "strength": 4.25
           },
           {
             "label": "thin",
             "position": "QB",
-            "strength": 1.67
+            "strength": 1.92
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "WR",
-            "strength": 5.75
+            "strength": 5.92
           }
         ]
       },
       {
-        "count_fit_score": 3.6,
-        "fit_score": 3.7,
+        "count_fit_score": 3.1,
+        "fit_score": 3.4,
         "manager": "MayaHuskies",
         "market": {
           "position_scores": {
             "QB": 0.0,
-            "RB": 46.4,
+            "RB": 46.3,
             "TE": 0.0,
             "WR": 86.2
           },
@@ -5758,14 +6002,77 @@
           {
             "label": "thin",
             "position": "QB",
-            "strength": 1.67
+            "strength": 1.92
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "WR",
-            "strength": 2.75
+            "strength": 2.92
+          }
+        ]
+      },
+      {
+        "count_fit_score": 2.8,
+        "fit_score": 3.2,
+        "manager": "Ebro51",
+        "market": {
+          "position_scores": {
+            "QB": 44.1,
+            "RB": 58.4,
+            "TE": 73.6,
+            "WR": 61.3
+          },
+          "their_market_rank": 7,
+          "their_starter_value": 53177,
+          "their_total_value": 103418
+        },
+        "market_fit_score": 4.0,
+        "pick_summary": {
+          "by_round": {
+            "1": 4,
+            "2": 4,
+            "3": 4,
+            "4": 2,
+            "5": 0
+          },
+          "by_year": {
+            "2026": 6,
+            "2027": 3,
+            "2028": 2,
+            "2029": 3
+          },
+          "early_picks": 8,
+          "firsts": 4,
+          "seconds": 4,
+          "total": 14
+        },
+        "reasons": [
+          "Their TE room is materially stronger by current dynasty market value.",
+          "You have relative QB depth that matches one of their needs.",
+          "They hold meaningfully more 1st/2nd-round draft capital.",
+          "They have multiple future first-round picks available as trade liquidity."
+        ],
+        "roster_id": 10,
+        "team_name": "Shit heads we ride. ",
+        "their_needs": [
+          {
+            "label": "thin",
+            "position": "RB",
+            "strength": 1.25
+          },
+          {
+            "label": "below avg",
+            "position": "QB",
+            "strength": 0.92
+          }
+        ],
+        "their_surpluses": [
+          {
+            "label": "deep",
+            "position": "WR",
+            "strength": 1.92
           }
         ]
       },
@@ -5776,7 +6083,7 @@
         "market": {
           "position_scores": {
             "QB": 9.4,
-            "RB": 68.1,
+            "RB": 67.9,
             "TE": 98.6,
             "WR": 44.9
           },
@@ -5813,124 +6120,10 @@
           {
             "label": "thin",
             "position": "WR",
-            "strength": 1.25
+            "strength": 1.08
           }
         ],
         "their_surpluses": []
-      },
-      {
-        "count_fit_score": 0.0,
-        "fit_score": 2.8,
-        "manager": "NolanFarts",
-        "market": {
-          "position_scores": {
-            "QB": 30.4,
-            "RB": 80.2,
-            "TE": 100.0,
-            "WR": 70.6
-          },
-          "their_market_rank": 1,
-          "their_starter_value": 65708,
-          "their_total_value": 113125
-        },
-        "market_fit_score": 8.8,
-        "pick_summary": {
-          "by_round": {
-            "1": 0,
-            "2": 1,
-            "3": 0,
-            "4": 4,
-            "5": 3
-          },
-          "by_year": {
-            "2026": 2,
-            "2027": 2,
-            "2028": 1,
-            "2029": 3
-          },
-          "early_picks": 1,
-          "firsts": 0,
-          "seconds": 1,
-          "total": 8
-        },
-        "reasons": [
-          "Your QB market depth lines up with one of their weaker rooms.",
-          "Their TE room is materially stronger by current dynasty market value.",
-          "No obvious roster-construction mismatch; a deal would be driven more by player preference than team need."
-        ],
-        "roster_id": 2,
-        "team_name": "Puka Nachewa",
-        "their_needs": [
-          {
-            "label": "thin",
-            "position": "WR",
-            "strength": 2.25
-          }
-        ],
-        "their_surpluses": [
-          {
-            "label": "deep",
-            "position": "TE",
-            "strength": 1.42
-          }
-        ]
-      },
-      {
-        "count_fit_score": 0.9,
-        "fit_score": 1.9,
-        "manager": "Ebro51",
-        "market": {
-          "position_scores": {
-            "QB": 44.1,
-            "RB": 58.6,
-            "TE": 73.6,
-            "WR": 69.4
-          },
-          "their_market_rank": 7,
-          "their_starter_value": 53177,
-          "their_total_value": 105200
-        },
-        "market_fit_score": 4.0,
-        "pick_summary": {
-          "by_round": {
-            "1": 4,
-            "2": 4,
-            "3": 4,
-            "4": 2,
-            "5": 0
-          },
-          "by_year": {
-            "2026": 6,
-            "2027": 3,
-            "2028": 2,
-            "2029": 3
-          },
-          "early_picks": 8,
-          "firsts": 4,
-          "seconds": 4,
-          "total": 14
-        },
-        "reasons": [
-          "Their TE room is materially stronger by current dynasty market value.",
-          "They hold meaningfully more 1st/2nd-round draft capital.",
-          "They have multiple future first-round picks available as trade liquidity."
-        ],
-        "roster_id": 10,
-        "team_name": "Shit heads we ride. ",
-        "their_needs": [
-          {
-            "label": "thin",
-            "position": "RB",
-            "strength": 1.42
-          }
-        ],
-        "their_surpluses": [
-          {
-            "label": "deep",
-            "position": "WR",
-            "strength": 2.75
-          }
-        ]
       },
       {
         "count_fit_score": 0.9,
@@ -5938,14 +6131,14 @@
         "manager": "nathanhoglund",
         "market": {
           "position_scores": {
-            "QB": 15.1,
-            "RB": 51.0,
+            "QB": 22.8,
+            "RB": 50.9,
             "TE": 27.5,
-            "WR": 39.4
+            "WR": 29.2
           },
           "their_market_rank": 11,
           "their_starter_value": 42791,
-          "their_total_value": 86424
+          "their_total_value": 85412
         },
         "market_fit_score": 4.0,
         "pick_summary": {
@@ -5978,19 +6171,91 @@
           {
             "label": "thin",
             "position": "WR",
-            "strength": 1.25
+            "strength": 2.08
           }
         ],
-        "their_surpluses": []
+        "their_surpluses": [
+          {
+            "label": "above avg",
+            "position": "QB",
+            "strength": 1.08
+          },
+          {
+            "label": "above avg",
+            "position": "RB",
+            "strength": 0.75
+          }
+        ]
       },
       {
-        "count_fit_score": 2.7,
-        "fit_score": 1.8,
+        "count_fit_score": 0.0,
+        "fit_score": 1.7,
+        "manager": "NolanFarts",
+        "market": {
+          "position_scores": {
+            "QB": 44.5,
+            "RB": 73.6,
+            "TE": 100.0,
+            "WR": 70.6
+          },
+          "their_market_rank": 1,
+          "their_starter_value": 65708,
+          "their_total_value": 113358
+        },
+        "market_fit_score": 5.2,
+        "pick_summary": {
+          "by_round": {
+            "1": 0,
+            "2": 1,
+            "3": 0,
+            "4": 4,
+            "5": 3
+          },
+          "by_year": {
+            "2026": 2,
+            "2027": 2,
+            "2028": 1,
+            "2029": 3
+          },
+          "early_picks": 1,
+          "firsts": 0,
+          "seconds": 1,
+          "total": 8
+        },
+        "reasons": [
+          "Their TE room is materially stronger by current dynasty market value.",
+          "No obvious roster-construction mismatch; a deal would be driven more by player preference than team need."
+        ],
+        "roster_id": 2,
+        "team_name": "Puka Nachewa",
+        "their_needs": [
+          {
+            "label": "thin",
+            "position": "WR",
+            "strength": 2.08
+          }
+        ],
+        "their_surpluses": [
+          {
+            "label": "deep",
+            "position": "TE",
+            "strength": 1.42
+          },
+          {
+            "label": "above avg",
+            "position": "QB",
+            "strength": 1.08
+          }
+        ]
+      },
+      {
+        "count_fit_score": 2.2,
+        "fit_score": 1.5,
         "manager": "Butler2142",
         "market": {
           "position_scores": {
             "QB": 51.2,
-            "RB": 86.2,
+            "RB": 85.9,
             "TE": 8.2,
             "WR": 100.0
           },
@@ -6027,19 +6292,19 @@
           {
             "label": "thin",
             "position": "QB",
-            "strength": 1.67
+            "strength": 1.92
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "RB",
-            "strength": 1.58
+            "strength": 1.75
           },
           {
             "label": "above avg",
             "position": "WR",
-            "strength": 0.75
+            "strength": 0.92
           }
         ]
       },
@@ -6056,7 +6321,7 @@
           },
           "their_market_rank": 2,
           "their_starter_value": 60080,
-          "their_total_value": 115810
+          "their_total_value": 115918
         },
         "market_fit_score": 0.0,
         "pick_summary": {
@@ -6088,19 +6353,19 @@
           {
             "label": "thin",
             "position": "WR",
-            "strength": 3.25
+            "strength": 3.08
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "RB",
-            "strength": 1.58
+            "strength": 1.75
           },
           {
-            "label": "deep",
+            "label": "above avg",
             "position": "QB",
-            "strength": 1.33
+            "strength": 1.08
           }
         ]
       },
@@ -6111,7 +6376,7 @@
         "market": {
           "position_scores": {
             "QB": 59.6,
-            "RB": 80.2,
+            "RB": 79.9,
             "TE": 49.8,
             "WR": 40.7
           },
@@ -6149,19 +6414,19 @@
           {
             "label": "thin",
             "position": "WR",
-            "strength": 2.25
+            "strength": 2.08
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "RB",
-            "strength": 1.58
+            "strength": 1.75
           },
           {
-            "label": "deep",
+            "label": "above avg",
             "position": "QB",
-            "strength": 1.33
+            "strength": 1.08
           }
         ]
       },
@@ -6172,7 +6437,7 @@
         "market": {
           "position_scores": {
             "QB": 42.7,
-            "RB": 58.5,
+            "RB": 58.4,
             "TE": 49.8,
             "WR": 0.0
           },
@@ -6210,19 +6475,19 @@
           {
             "label": "thin",
             "position": "WR",
-            "strength": 4.25
+            "strength": 4.08
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "RB",
-            "strength": 1.58
+            "strength": 1.75
           },
           {
-            "label": "deep",
+            "label": "above avg",
             "position": "QB",
-            "strength": 1.33
+            "strength": 1.08
           }
         ]
       },
@@ -6232,14 +6497,14 @@
         "manager": "ryansorensen8",
         "market": {
           "position_scores": {
-            "QB": 52.2,
-            "RB": 71.9,
-            "TE": 1.8,
+            "QB": 63.9,
+            "RB": 65.6,
+            "TE": 4.2,
             "WR": 93.0
           },
           "their_market_rank": 4,
           "their_starter_value": 56634,
-          "their_total_value": 108832
+          "their_total_value": 108983
         },
         "market_fit_score": 0.0,
         "pick_summary": {
@@ -6270,73 +6535,81 @@
             "label": "thin",
             "position": "TE",
             "strength": 1.58
+          },
+          {
+            "label": "thin",
+            "position": "RB",
+            "strength": 1.25
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "WR",
-            "strength": 2.75
+            "strength": 2.92
           }
         ]
       }
     ],
     "8": [
       {
-        "count_fit_score": 10.0,
-        "fit_score": 8.7,
-        "manager": "Ebro51",
+        "count_fit_score": 9.8,
+        "fit_score": 8.6,
+        "manager": "ryansorensen8",
         "market": {
           "position_scores": {
-            "QB": 44.1,
-            "RB": 58.6,
-            "TE": 73.6,
-            "WR": 69.4
+            "QB": 63.9,
+            "RB": 65.6,
+            "TE": 4.2,
+            "WR": 93.0
           },
-          "their_market_rank": 7,
-          "their_starter_value": 53177,
-          "their_total_value": 105200
+          "their_market_rank": 4,
+          "their_starter_value": 56634,
+          "their_total_value": 108983
         },
         "market_fit_score": 5.2,
         "pick_summary": {
           "by_round": {
-            "1": 4,
-            "2": 4,
-            "3": 4,
+            "1": 1,
+            "2": 0,
+            "3": 3,
             "4": 2,
             "5": 0
           },
           "by_year": {
-            "2026": 6,
-            "2027": 3,
+            "2027": 1,
             "2028": 2,
             "2029": 3
           },
-          "early_picks": 8,
-          "firsts": 4,
-          "seconds": 4,
-          "total": 14
+          "early_picks": 1,
+          "firsts": 1,
+          "seconds": 0,
+          "total": 6
         },
         "reasons": [
           "Their WR room is materially stronger by current dynasty market value.",
           "You have relative RB depth that matches one of their needs.",
-          "They are deep at WR, where you are comparatively thin.",
-          "They have multiple future first-round picks available as trade liquidity."
+          "They are deep at WR, where you are comparatively thin."
         ],
-        "roster_id": 10,
-        "team_name": "Shit heads we ride. ",
+        "roster_id": 9,
+        "team_name": "Matt Prater",
         "their_needs": [
           {
             "label": "thin",
+            "position": "TE",
+            "strength": 1.58
+          },
+          {
+            "label": "thin",
             "position": "RB",
-            "strength": 1.42
+            "strength": 1.25
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "WR",
-            "strength": 2.75
+            "strength": 2.92
           }
         ]
       },
@@ -6389,19 +6662,19 @@
           {
             "label": "thin",
             "position": "RB",
-            "strength": 4.42
+            "strength": 4.25
           },
           {
             "label": "thin",
             "position": "QB",
-            "strength": 1.67
+            "strength": 1.92
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "WR",
-            "strength": 5.75
+            "strength": 5.92
           }
         ]
       },
@@ -6412,7 +6685,7 @@
         "market": {
           "position_scores": {
             "QB": 0.0,
-            "RB": 46.4,
+            "RB": 46.3,
             "TE": 0.0,
             "WR": 86.2
           },
@@ -6453,69 +6726,77 @@
           {
             "label": "thin",
             "position": "QB",
-            "strength": 1.67
+            "strength": 1.92
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "WR",
-            "strength": 2.75
+            "strength": 2.92
           }
         ]
       },
       {
-        "count_fit_score": 6.9,
-        "fit_score": 6.6,
-        "manager": "ryansorensen8",
+        "count_fit_score": 9.5,
+        "fit_score": 6.5,
+        "manager": "Ebro51",
         "market": {
           "position_scores": {
-            "QB": 52.2,
-            "RB": 71.9,
-            "TE": 1.8,
-            "WR": 93.0
+            "QB": 44.1,
+            "RB": 58.4,
+            "TE": 73.6,
+            "WR": 61.3
           },
-          "their_market_rank": 4,
-          "their_starter_value": 56634,
-          "their_total_value": 108832
+          "their_market_rank": 7,
+          "their_starter_value": 53177,
+          "their_total_value": 103418
         },
-        "market_fit_score": 5.2,
+        "market_fit_score": 0.0,
         "pick_summary": {
           "by_round": {
-            "1": 1,
-            "2": 0,
-            "3": 3,
+            "1": 4,
+            "2": 4,
+            "3": 4,
             "4": 2,
             "5": 0
           },
           "by_year": {
-            "2027": 1,
+            "2026": 6,
+            "2027": 3,
             "2028": 2,
             "2029": 3
           },
-          "early_picks": 1,
-          "firsts": 1,
-          "seconds": 0,
-          "total": 6
+          "early_picks": 8,
+          "firsts": 4,
+          "seconds": 4,
+          "total": 14
         },
         "reasons": [
-          "Their WR room is materially stronger by current dynasty market value.",
-          "They are deep at WR, where you are comparatively thin."
+          "You have relative QB depth that matches one of their needs.",
+          "You have relative RB depth that matches one of their needs.",
+          "They are deep at WR, where you are comparatively thin.",
+          "They have multiple future first-round picks available as trade liquidity."
         ],
-        "roster_id": 9,
-        "team_name": "Matt Prater",
+        "roster_id": 10,
+        "team_name": "Shit heads we ride. ",
         "their_needs": [
           {
             "label": "thin",
-            "position": "TE",
-            "strength": 1.58
+            "position": "RB",
+            "strength": 1.25
+          },
+          {
+            "label": "below avg",
+            "position": "QB",
+            "strength": 0.92
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "WR",
-            "strength": 2.75
+            "strength": 1.92
           }
         ]
       },
@@ -6526,7 +6807,7 @@
         "market": {
           "position_scores": {
             "QB": 51.2,
-            "RB": 86.2,
+            "RB": 85.9,
             "TE": 8.2,
             "WR": 100.0
           },
@@ -6565,19 +6846,19 @@
           {
             "label": "thin",
             "position": "QB",
-            "strength": 1.67
+            "strength": 1.92
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "RB",
-            "strength": 1.58
+            "strength": 1.75
           },
           {
             "label": "above avg",
             "position": "WR",
-            "strength": 0.75
+            "strength": 0.92
           }
         ]
       },
@@ -6587,14 +6868,14 @@
         "manager": "NolanFarts",
         "market": {
           "position_scores": {
-            "QB": 30.4,
-            "RB": 80.2,
+            "QB": 44.5,
+            "RB": 73.6,
             "TE": 100.0,
             "WR": 70.6
           },
           "their_market_rank": 1,
           "their_starter_value": 65708,
-          "their_total_value": 113125
+          "their_total_value": 113358
         },
         "market_fit_score": 5.2,
         "pick_summary": {
@@ -6626,7 +6907,7 @@
           {
             "label": "thin",
             "position": "WR",
-            "strength": 2.25
+            "strength": 2.08
           }
         ],
         "their_surpluses": [
@@ -6634,6 +6915,11 @@
             "label": "deep",
             "position": "TE",
             "strength": 1.42
+          },
+          {
+            "label": "above avg",
+            "position": "QB",
+            "strength": 1.08
           }
         ]
       },
@@ -6643,14 +6929,14 @@
         "manager": "nathanhoglund",
         "market": {
           "position_scores": {
-            "QB": 15.1,
-            "RB": 51.0,
+            "QB": 22.8,
+            "RB": 50.9,
             "TE": 27.5,
-            "WR": 39.4
+            "WR": 29.2
           },
           "their_market_rank": 11,
           "their_starter_value": 42791,
-          "their_total_value": 86424
+          "their_total_value": 85412
         },
         "market_fit_score": 0.0,
         "pick_summary": {
@@ -6682,10 +6968,21 @@
           {
             "label": "thin",
             "position": "WR",
-            "strength": 1.25
+            "strength": 2.08
           }
         ],
-        "their_surpluses": []
+        "their_surpluses": [
+          {
+            "label": "above avg",
+            "position": "QB",
+            "strength": 1.08
+          },
+          {
+            "label": "above avg",
+            "position": "RB",
+            "strength": 0.75
+          }
+        ]
       },
       {
         "count_fit_score": 0.3,
@@ -6700,7 +6997,7 @@
           },
           "their_market_rank": 2,
           "their_starter_value": 60080,
-          "their_total_value": 115810
+          "their_total_value": 115918
         },
         "market_fit_score": 0.0,
         "pick_summary": {
@@ -6731,19 +7028,19 @@
           {
             "label": "thin",
             "position": "WR",
-            "strength": 3.25
+            "strength": 3.08
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "RB",
-            "strength": 1.58
+            "strength": 1.75
           },
           {
-            "label": "deep",
+            "label": "above avg",
             "position": "QB",
-            "strength": 1.33
+            "strength": 1.08
           }
         ]
       },
@@ -6754,7 +7051,7 @@
         "market": {
           "position_scores": {
             "QB": 59.6,
-            "RB": 80.2,
+            "RB": 79.9,
             "TE": 49.8,
             "WR": 40.7
           },
@@ -6791,19 +7088,19 @@
           {
             "label": "thin",
             "position": "WR",
-            "strength": 2.25
+            "strength": 2.08
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "RB",
-            "strength": 1.58
+            "strength": 1.75
           },
           {
-            "label": "deep",
+            "label": "above avg",
             "position": "QB",
-            "strength": 1.33
+            "strength": 1.08
           }
         ]
       },
@@ -6814,7 +7111,7 @@
         "market": {
           "position_scores": {
             "QB": 77.0,
-            "RB": 78.9,
+            "RB": 78.7,
             "TE": 33.5,
             "WR": 47.3
           },
@@ -6848,9 +7145,9 @@
         "their_needs": [],
         "their_surpluses": [
           {
-            "label": "deep",
+            "label": "above avg",
             "position": "QB",
-            "strength": 1.33
+            "strength": 1.08
           }
         ]
       },
@@ -6861,7 +7158,7 @@
         "market": {
           "position_scores": {
             "QB": 9.4,
-            "RB": 68.1,
+            "RB": 67.9,
             "TE": 98.6,
             "WR": 44.9
           },
@@ -6896,7 +7193,7 @@
           {
             "label": "thin",
             "position": "WR",
-            "strength": 1.25
+            "strength": 1.08
           }
         ],
         "their_surpluses": []
@@ -6904,19 +7201,147 @@
     ],
     "9": [
       {
-        "count_fit_score": 8.1,
-        "fit_score": 7.2,
+        "count_fit_score": 9.9,
+        "fit_score": 8.0,
+        "manager": "Waldo23",
+        "market": {
+          "position_scores": {
+            "QB": 100.0,
+            "RB": 100.0,
+            "TE": 62.1,
+            "WR": 18.6
+          },
+          "their_market_rank": 2,
+          "their_starter_value": 60080,
+          "their_total_value": 115918
+        },
+        "market_fit_score": 4.0,
+        "pick_summary": {
+          "by_round": {
+            "1": 3,
+            "2": 3,
+            "3": 1,
+            "4": 3,
+            "5": 5
+          },
+          "by_year": {
+            "2026": 5,
+            "2027": 2,
+            "2028": 3,
+            "2029": 5
+          },
+          "early_picks": 6,
+          "firsts": 3,
+          "seconds": 3,
+          "total": 15
+        },
+        "reasons": [
+          "Your WR market depth lines up with one of their weaker rooms.",
+          "They are deep at RB, where you are comparatively thin.",
+          "You have relative WR depth that matches one of their needs.",
+          "They hold meaningfully more 1st/2nd-round draft capital.",
+          "They have multiple future first-round picks available as trade liquidity."
+        ],
+        "roster_id": 11,
+        "team_name": "I Cam, I Saw, I Conquered",
+        "their_needs": [
+          {
+            "label": "thin",
+            "position": "WR",
+            "strength": 3.08
+          }
+        ],
+        "their_surpluses": [
+          {
+            "label": "deep",
+            "position": "RB",
+            "strength": 1.75
+          },
+          {
+            "label": "above avg",
+            "position": "QB",
+            "strength": 1.08
+          }
+        ]
+      },
+      {
+        "count_fit_score": 9.9,
+        "fit_score": 8.0,
+        "manager": "hoglundcory2",
+        "market": {
+          "position_scores": {
+            "QB": 42.7,
+            "RB": 58.4,
+            "TE": 49.8,
+            "WR": 0.0
+          },
+          "their_market_rank": 10,
+          "their_starter_value": 47026,
+          "their_total_value": 87044
+        },
+        "market_fit_score": 4.0,
+        "pick_summary": {
+          "by_round": {
+            "1": 7,
+            "2": 6,
+            "3": 4,
+            "4": 3,
+            "5": 5
+          },
+          "by_year": {
+            "2026": 5,
+            "2027": 7,
+            "2028": 7,
+            "2029": 6
+          },
+          "early_picks": 13,
+          "firsts": 7,
+          "seconds": 6,
+          "total": 25
+        },
+        "reasons": [
+          "Your WR market depth lines up with one of their weaker rooms.",
+          "They are deep at RB, where you are comparatively thin.",
+          "You have relative WR depth that matches one of their needs.",
+          "They hold meaningfully more 1st/2nd-round draft capital.",
+          "They have multiple future first-round picks available as trade liquidity."
+        ],
+        "roster_id": 8,
+        "team_name": "I Chase Brown Kids",
+        "their_needs": [
+          {
+            "label": "thin",
+            "position": "WR",
+            "strength": 4.08
+          }
+        ],
+        "their_surpluses": [
+          {
+            "label": "deep",
+            "position": "RB",
+            "strength": 1.75
+          },
+          {
+            "label": "above avg",
+            "position": "QB",
+            "strength": 1.08
+          }
+        ]
+      },
+      {
+        "count_fit_score": 7.7,
+        "fit_score": 6.9,
         "manager": "NolanFarts",
         "market": {
           "position_scores": {
-            "QB": 30.4,
-            "RB": 80.2,
+            "QB": 44.5,
+            "RB": 73.6,
             "TE": 100.0,
             "WR": 70.6
           },
           "their_market_rank": 1,
           "their_starter_value": 65708,
-          "their_total_value": 113125
+          "their_total_value": 113358
         },
         "market_fit_score": 5.2,
         "pick_summary": {
@@ -6949,7 +7374,7 @@
           {
             "label": "thin",
             "position": "WR",
-            "strength": 2.25
+            "strength": 2.08
           }
         ],
         "their_surpluses": [
@@ -6957,143 +7382,86 @@
             "label": "deep",
             "position": "TE",
             "strength": 1.42
+          },
+          {
+            "label": "above avg",
+            "position": "QB",
+            "strength": 1.08
           }
         ]
       },
       {
-        "count_fit_score": 6.4,
-        "fit_score": 5.6,
-        "manager": "Waldo23",
+        "count_fit_score": 7.0,
+        "fit_score": 6.0,
+        "manager": "nathanhoglund",
         "market": {
           "position_scores": {
-            "QB": 100.0,
-            "RB": 100.0,
-            "TE": 62.1,
-            "WR": 18.6
+            "QB": 22.8,
+            "RB": 50.9,
+            "TE": 27.5,
+            "WR": 29.2
           },
-          "their_market_rank": 2,
-          "their_starter_value": 60080,
-          "their_total_value": 115810
+          "their_market_rank": 11,
+          "their_starter_value": 42791,
+          "their_total_value": 85412
         },
         "market_fit_score": 4.0,
         "pick_summary": {
           "by_round": {
-            "1": 3,
-            "2": 3,
-            "3": 1,
-            "4": 3,
-            "5": 5
+            "1": 11,
+            "2": 5,
+            "3": 7,
+            "4": 4,
+            "5": 6
           },
           "by_year": {
-            "2026": 5,
-            "2027": 2,
-            "2028": 3,
-            "2029": 5
+            "2026": 6,
+            "2027": 11,
+            "2028": 9,
+            "2029": 7
           },
-          "early_picks": 6,
-          "firsts": 3,
-          "seconds": 3,
-          "total": 15
+          "early_picks": 16,
+          "firsts": 11,
+          "seconds": 5,
+          "total": 33
         },
         "reasons": [
           "Your WR market depth lines up with one of their weaker rooms.",
+          "They are deep at RB, where you are comparatively thin.",
           "You have relative WR depth that matches one of their needs.",
           "They hold meaningfully more 1st/2nd-round draft capital.",
           "They have multiple future first-round picks available as trade liquidity."
         ],
-        "roster_id": 11,
-        "team_name": "I Cam, I Saw, I Conquered",
+        "roster_id": 5,
+        "team_name": "Michael Trigg Sucks Ass",
         "their_needs": [
           {
             "label": "thin",
             "position": "WR",
-            "strength": 3.25
+            "strength": 2.08
           }
         ],
         "their_surpluses": [
           {
-            "label": "deep",
-            "position": "RB",
-            "strength": 1.58
+            "label": "above avg",
+            "position": "QB",
+            "strength": 1.08
           },
           {
-            "label": "deep",
-            "position": "QB",
-            "strength": 1.33
+            "label": "above avg",
+            "position": "RB",
+            "strength": 0.75
           }
         ]
       },
       {
-        "count_fit_score": 6.4,
+        "count_fit_score": 8.2,
         "fit_score": 5.6,
-        "manager": "hoglundcory2",
-        "market": {
-          "position_scores": {
-            "QB": 42.7,
-            "RB": 58.5,
-            "TE": 49.8,
-            "WR": 0.0
-          },
-          "their_market_rank": 10,
-          "their_starter_value": 47026,
-          "their_total_value": 87044
-        },
-        "market_fit_score": 4.0,
-        "pick_summary": {
-          "by_round": {
-            "1": 7,
-            "2": 6,
-            "3": 4,
-            "4": 3,
-            "5": 5
-          },
-          "by_year": {
-            "2026": 5,
-            "2027": 7,
-            "2028": 7,
-            "2029": 6
-          },
-          "early_picks": 13,
-          "firsts": 7,
-          "seconds": 6,
-          "total": 25
-        },
-        "reasons": [
-          "Your WR market depth lines up with one of their weaker rooms.",
-          "You have relative WR depth that matches one of their needs.",
-          "They hold meaningfully more 1st/2nd-round draft capital.",
-          "They have multiple future first-round picks available as trade liquidity."
-        ],
-        "roster_id": 8,
-        "team_name": "I Chase Brown Kids",
-        "their_needs": [
-          {
-            "label": "thin",
-            "position": "WR",
-            "strength": 4.25
-          }
-        ],
-        "their_surpluses": [
-          {
-            "label": "deep",
-            "position": "RB",
-            "strength": 1.58
-          },
-          {
-            "label": "deep",
-            "position": "QB",
-            "strength": 1.33
-          }
-        ]
-      },
-      {
-        "count_fit_score": 5.4,
-        "fit_score": 3.7,
         "manager": "abewav",
         "market": {
           "position_scores": {
             "QB": 59.6,
-            "RB": 80.2,
+            "RB": 79.9,
             "TE": 49.8,
             "WR": 40.7
           },
@@ -7122,6 +7490,7 @@
           "total": 17
         },
         "reasons": [
+          "They are deep at RB, where you are comparatively thin.",
           "You have relative WR depth that matches one of their needs.",
           "They hold meaningfully more 1st/2nd-round draft capital.",
           "They have multiple future first-round picks available as trade liquidity."
@@ -7132,30 +7501,30 @@
           {
             "label": "thin",
             "position": "WR",
-            "strength": 2.25
+            "strength": 2.08
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "RB",
-            "strength": 1.58
+            "strength": 1.75
           },
           {
-            "label": "deep",
+            "label": "above avg",
             "position": "QB",
-            "strength": 1.33
+            "strength": 1.08
           }
         ]
       },
       {
-        "count_fit_score": 2.5,
-        "fit_score": 3.4,
+        "count_fit_score": 2.2,
+        "fit_score": 3.2,
         "manager": "austinamelse",
         "market": {
           "position_scores": {
             "QB": 9.4,
-            "RB": 68.1,
+            "RB": 67.9,
             "TE": 98.6,
             "WR": 44.9
           },
@@ -7191,61 +7560,71 @@
           {
             "label": "thin",
             "position": "WR",
-            "strength": 1.25
+            "strength": 1.08
           }
         ],
         "their_surpluses": []
       },
       {
-        "count_fit_score": 3.5,
-        "fit_score": 2.4,
-        "manager": "nathanhoglund",
+        "count_fit_score": 3.7,
+        "fit_score": 2.5,
+        "manager": "Butler2142",
         "market": {
           "position_scores": {
-            "QB": 15.1,
-            "RB": 51.0,
-            "TE": 27.5,
-            "WR": 39.4
+            "QB": 51.2,
+            "RB": 85.9,
+            "TE": 8.2,
+            "WR": 100.0
           },
-          "their_market_rank": 11,
-          "their_starter_value": 42791,
-          "their_total_value": 86424
+          "their_market_rank": 3,
+          "their_starter_value": 59037,
+          "their_total_value": 115664
         },
         "market_fit_score": 0.0,
         "pick_summary": {
           "by_round": {
-            "1": 11,
-            "2": 5,
-            "3": 7,
+            "1": 0,
+            "2": 3,
+            "3": 4,
             "4": 4,
-            "5": 6
+            "5": 4
           },
           "by_year": {
             "2026": 6,
-            "2027": 11,
-            "2028": 9,
-            "2029": 7
+            "2027": 2,
+            "2028": 3,
+            "2029": 4
           },
-          "early_picks": 16,
-          "firsts": 11,
-          "seconds": 5,
-          "total": 33
+          "early_picks": 3,
+          "firsts": 0,
+          "seconds": 3,
+          "total": 15
         },
         "reasons": [
-          "You have relative WR depth that matches one of their needs.",
-          "They hold meaningfully more 1st/2nd-round draft capital.",
-          "They have multiple future first-round picks available as trade liquidity."
+          "They are deep at RB, where you are comparatively thin.",
+          "They hold meaningfully more 1st/2nd-round draft capital."
         ],
-        "roster_id": 5,
-        "team_name": "Michael Trigg Sucks Ass",
+        "roster_id": 12,
+        "team_name": "Henry given sunday",
         "their_needs": [
           {
             "label": "thin",
-            "position": "WR",
-            "strength": 1.25
+            "position": "QB",
+            "strength": 1.92
           }
         ],
-        "their_surpluses": []
+        "their_surpluses": [
+          {
+            "label": "deep",
+            "position": "RB",
+            "strength": 1.75
+          },
+          {
+            "label": "above avg",
+            "position": "WR",
+            "strength": 0.92
+          }
+        ]
       },
       {
         "count_fit_score": 0.9,
@@ -7254,13 +7633,13 @@
         "market": {
           "position_scores": {
             "QB": 44.1,
-            "RB": 58.6,
+            "RB": 58.4,
             "TE": 73.6,
-            "WR": 69.4
+            "WR": 61.3
           },
           "their_market_rank": 7,
           "their_starter_value": 53177,
-          "their_total_value": 105200
+          "their_total_value": 103418
         },
         "market_fit_score": 5.2,
         "pick_summary": {
@@ -7293,14 +7672,19 @@
           {
             "label": "thin",
             "position": "RB",
-            "strength": 1.42
+            "strength": 1.25
+          },
+          {
+            "label": "below avg",
+            "position": "QB",
+            "strength": 0.92
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "WR",
-            "strength": 2.75
+            "strength": 1.92
           }
         ]
       },
@@ -7350,19 +7734,19 @@
           {
             "label": "thin",
             "position": "RB",
-            "strength": 4.42
+            "strength": 4.25
           },
           {
             "label": "thin",
             "position": "QB",
-            "strength": 1.67
+            "strength": 1.92
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "WR",
-            "strength": 5.75
+            "strength": 5.92
           }
         ]
       },
@@ -7373,7 +7757,7 @@
         "market": {
           "position_scores": {
             "QB": 0.0,
-            "RB": 46.4,
+            "RB": 46.3,
             "TE": 0.0,
             "WR": 86.2
           },
@@ -7411,74 +7795,14 @@
           {
             "label": "thin",
             "position": "QB",
-            "strength": 1.67
+            "strength": 1.92
           }
         ],
         "their_surpluses": [
           {
             "label": "deep",
             "position": "WR",
-            "strength": 2.75
-          }
-        ]
-      },
-      {
-        "count_fit_score": 0.6,
-        "fit_score": 0.4,
-        "manager": "Butler2142",
-        "market": {
-          "position_scores": {
-            "QB": 51.2,
-            "RB": 86.2,
-            "TE": 8.2,
-            "WR": 100.0
-          },
-          "their_market_rank": 3,
-          "their_starter_value": 59037,
-          "their_total_value": 115664
-        },
-        "market_fit_score": 0.0,
-        "pick_summary": {
-          "by_round": {
-            "1": 0,
-            "2": 3,
-            "3": 4,
-            "4": 4,
-            "5": 4
-          },
-          "by_year": {
-            "2026": 6,
-            "2027": 2,
-            "2028": 3,
-            "2029": 4
-          },
-          "early_picks": 3,
-          "firsts": 0,
-          "seconds": 3,
-          "total": 15
-        },
-        "reasons": [
-          "They hold meaningfully more 1st/2nd-round draft capital."
-        ],
-        "roster_id": 12,
-        "team_name": "Henry given sunday",
-        "their_needs": [
-          {
-            "label": "thin",
-            "position": "QB",
-            "strength": 1.67
-          }
-        ],
-        "their_surpluses": [
-          {
-            "label": "deep",
-            "position": "RB",
-            "strength": 1.58
-          },
-          {
-            "label": "above avg",
-            "position": "WR",
-            "strength": 0.75
+            "strength": 2.92
           }
         ]
       },
@@ -7489,7 +7813,7 @@
         "market": {
           "position_scores": {
             "QB": 77.0,
-            "RB": 78.9,
+            "RB": 78.7,
             "TE": 33.5,
             "WR": 47.3
           },
@@ -7523,9 +7847,9 @@
         "their_needs": [],
         "their_surpluses": [
           {
-            "label": "deep",
+            "label": "above avg",
             "position": "QB",
-            "strength": 1.33
+            "strength": 1.08
           }
         ]
       }
