@@ -1,19 +1,6 @@
 {
   "action_board": [
     {
-      "category": "Availability",
-      "confidence": "medium",
-      "cost_or_cut": "No transaction required unless the final designation changes roster-slot options.",
-      "priority": 7,
-      "projected_advantage": null,
-      "rationale": "Sleeper lists James Cook III as Questionable; no decision-grade current availability report is attached.",
-      "recommendation": "Confirm the official game designation and keep a legal pivot available.",
-      "risk": "Sleeper status alone does not establish expected availability or workload.",
-      "title": "Verify James Cook III before lock",
-      "upside": "A prepared pivot protects the lineup from a zero or limited role.",
-      "urgency": "Before lineup lock"
-    },
-    {
       "category": "Waiver review",
       "confidence": "medium",
       "cost_or_cut": "Likely cut: Taylen Green; verify lineup, taxi and IR constraints first.",
@@ -99,19 +86,6 @@
       "cost_or_cut": "No transaction required unless the final designation changes roster-slot options.",
       "priority": 5,
       "projected_advantage": null,
-      "rationale": "Sleeper lists Taylen Green as Out; no decision-grade current availability report is attached.",
-      "recommendation": "Confirm the official game designation and keep a legal pivot available.",
-      "risk": "Sleeper status alone does not establish expected availability or workload.",
-      "title": "Verify Taylen Green before lock",
-      "upside": "A prepared pivot protects the lineup from a zero or limited role.",
-      "urgency": "Before lineup lock"
-    },
-    {
-      "category": "Availability",
-      "confidence": "medium",
-      "cost_or_cut": "No transaction required unless the final designation changes roster-slot options.",
-      "priority": 5,
-      "projected_advantage": null,
       "rationale": "Sleeper lists Terry McLaurin as IR; no decision-grade current availability report is attached.",
       "recommendation": "Confirm the official game designation and keep a legal pivot available.",
       "risk": "Sleeper status alone does not establish expected availability or workload.",
@@ -131,19 +105,32 @@
       "title": "Verify Tyrone Tracy Jr. before lock",
       "upside": "A prepared pivot protects the lineup from a zero or limited role.",
       "urgency": "Before lineup lock"
+    },
+    {
+      "category": "Lineup",
+      "confidence": "medium",
+      "cost_or_cut": "Bench Jaylen Waddle; no roster transaction required.",
+      "priority": 4,
+      "projected_advantage": 2.86,
+      "rationale": "Nico Collins carries the stronger evidence projection (13.03 vs 10.17). This is a close call; matchup and late news should decide it.",
+      "recommendation": "Use matchup and late-news confirmation as the tiebreaker; keeping the submitted starter is reasonable.",
+      "risk": "The report does not yet contain verified current matchup or beat-report context.",
+      "title": "Recheck Nico Collins vs Jaylen Waddle",
+      "upside": "The evidence model adds approximately 2.9 points if its role assumptions hold.",
+      "urgency": "Before lineup lock"
     }
   ],
   "coverage": {
     "actionable_context_reports": 3,
     "coach_beat_reporter_players": 0,
     "context_signal_players": 27,
-    "curated_context_reports": 180,
+    "curated_context_reports": 175,
     "current_season_performance_samples": 25,
     "market_values": 27,
     "news_players": 27,
-    "objective_context_signals": 46,
+    "objective_context_signals": 43,
     "performance_samples": 26,
-    "research_mentions": 177,
+    "research_mentions": 172,
     "research_status": "available",
     "roster_players": 27
   },
@@ -161,11 +148,11 @@
       "2025",
       "2026"
     ],
-    "player_context_generated_at": "2026-11-04T14:39:32.870679+00:00",
-    "research_generated_at": "2026-11-04T14:39:32.870679+00:00",
-    "sleeper_data_checked_at": "2026-11-04T14:39:33.038139+00:00"
+    "player_context_generated_at": "2026-11-04T16:32:21.166907+00:00",
+    "research_generated_at": "2026-11-04T16:32:21.166907+00:00",
+    "sleeper_data_checked_at": "2026-11-04T16:32:21.357580+00:00"
   },
-  "generated_at": "2026-11-04T14:39:33.349445+00:00",
+  "generated_at": "2026-11-04T16:32:21.689731+00:00",
   "lineup": {
     "actionable_projected_advantage": 0,
     "changes": [
@@ -226,14 +213,14 @@
       {
         "confidence": "high",
         "current_decision_evidence": true,
-        "injury_status": "Questionable",
+        "injury_status": null,
         "name": "James Cook III",
         "player_id": "8138",
         "position": "RB",
-        "projected_ceiling": 18.7,
-        "projected_floor": 16.2,
-        "projected_points": 17.73,
-        "projection_basis": "2026 715 PPG blended with recent form; current context multiplier 0.894 applied",
+        "projected_ceiling": 22.0,
+        "projected_floor": 19.0,
+        "projected_points": 20.86,
+        "projection_basis": "2026 715 PPG blended with recent form; current context multiplier 1.052 applied",
         "slot": "RB",
         "slot_label": "RB2",
         "team": "BUF"
@@ -329,7 +316,7 @@
         "team": "MIA"
       }
     ],
-    "current_projected_points": 137.63,
+    "current_projected_points": 140.76,
     "decision_thresholds": {
       "availability_guardrail": true,
       "close_call_below": 3,
@@ -356,14 +343,14 @@
       {
         "confidence": "high",
         "current_decision_evidence": true,
-        "injury_status": "Questionable",
+        "injury_status": null,
         "name": "James Cook III",
         "player_id": "8138",
         "position": "RB",
-        "projected_ceiling": 18.7,
-        "projected_floor": 16.2,
-        "projected_points": 17.73,
-        "projection_basis": "2026 715 PPG blended with recent form; current context multiplier 0.894 applied",
+        "projected_ceiling": 22.0,
+        "projected_floor": 19.0,
+        "projected_points": 20.86,
+        "projection_basis": "2026 715 PPG blended with recent form; current context multiplier 1.052 applied",
         "slot": "RB",
         "slot_label": "RB1",
         "team": "BUF"
@@ -474,7 +461,7 @@
         "team": "WAS"
       }
     ],
-    "optimized_projected_points": 141.75,
+    "optimized_projected_points": 144.88,
     "projected_advantage": 4.12,
     "status": "provisional"
   },
@@ -826,7 +813,7 @@
                     "origin": "sleeper",
                     "player_id": "11566",
                     "player_name": "Jayden Daniels",
-                    "published_at": "2026-11-04T14:39:32.870679+00:00",
+                    "published_at": "2026-11-04T16:32:21.166907+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-11566",
                     "source": "Sleeper depth chart",
@@ -846,7 +833,7 @@
                     "origin": "measured_usage",
                     "player_id": "11566",
                     "player_name": "Jayden Daniels",
-                    "published_at": "2026-11-04T14:39:32.870679+00:00",
+                    "published_at": "2026-11-04T16:32:21.166907+00:00",
                     "reliability": 0.9,
                     "signal_id": "usage-trend-11566",
                     "source": "nflverse play-by-play",
@@ -1291,7 +1278,7 @@
                     "origin": "measured_usage",
                     "player_id": "4892",
                     "player_name": "Baker Mayfield",
-                    "published_at": "2026-11-04T14:39:32.870679+00:00",
+                    "published_at": "2026-11-04T16:32:21.166907+00:00",
                     "reliability": 0.9,
                     "signal_id": "usage-trend-4892",
                     "source": "nflverse play-by-play",
@@ -1311,7 +1298,7 @@
                     "origin": "sleeper",
                     "player_id": "4892",
                     "player_name": "Baker Mayfield",
-                    "published_at": "2026-11-04T14:39:32.870679+00:00",
+                    "published_at": "2026-11-04T16:32:21.166907+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-4892",
                     "source": "Sleeper depth chart",
@@ -1660,7 +1647,7 @@
                     "origin": "sleeper",
                     "player_id": "8161",
                     "player_name": "Malik Willis",
-                    "published_at": "2026-11-04T14:39:32.870679+00:00",
+                    "published_at": "2026-11-04T16:32:21.166907+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-8161",
                     "source": "Sleeper depth chart",
@@ -1979,7 +1966,7 @@
                     "origin": "sleeper",
                     "player_id": "96",
                     "player_name": "Aaron Rodgers",
-                    "published_at": "2026-11-04T14:39:32.870679+00:00",
+                    "published_at": "2026-11-04T16:32:21.166907+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-96",
                     "source": "Sleeper depth chart",
@@ -1999,7 +1986,7 @@
                     "origin": "measured_usage",
                     "player_id": "96",
                     "player_name": "Aaron Rodgers",
-                    "published_at": "2026-11-04T14:39:32.870679+00:00",
+                    "published_at": "2026-11-04T16:32:21.166907+00:00",
                     "reliability": 0.9,
                     "signal_id": "usage-trend-96",
                     "source": "nflverse play-by-play",
@@ -2294,7 +2281,7 @@
                     "origin": "sleeper",
                     "player_id": "12524",
                     "player_name": "Shedeur Sanders",
-                    "published_at": "2026-11-04T14:39:32.870679+00:00",
+                    "published_at": "2026-11-04T16:32:21.166907+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-12524",
                     "source": "Sleeper depth chart",
@@ -2658,33 +2645,13 @@
               ],
               "coach_beat_reporter_information": [],
               "context": {
-                "actionable_signal_count": 2,
-                "availability_probability": 0.0,
+                "actionable_signal_count": 1,
+                "availability_probability": 1.0,
                 "confidence": "medium",
                 "net_direction": "negative",
                 "research_mention_count": 1,
-                "signal_count": 3,
+                "signal_count": 2,
                 "signals": [
-                  {
-                    "corroboration_count": 1,
-                    "direction": -1,
-                    "event_date": null,
-                    "impact": "availability",
-                    "magnitude": 5,
-                    "origin": "sleeper",
-                    "player_id": "13306",
-                    "player_name": "Taylen Green",
-                    "published_at": "2026-11-04T14:39:32.870679+00:00",
-                    "reliability": 0.82,
-                    "signal_id": "sleeper-injury-13306",
-                    "source": "Sleeper player status",
-                    "source_type": "official",
-                    "summary": "Sleeper lists Taylen Green as Out.",
-                    "ttl_days": 2,
-                    "type": "injury",
-                    "url": null,
-                    "weighted_score": -0.82
-                  },
                   {
                     "corroboration_count": 1,
                     "direction": -1,
@@ -2694,7 +2661,7 @@
                     "origin": "sleeper",
                     "player_id": "13306",
                     "player_name": "Taylen Green",
-                    "published_at": "2026-11-04T14:39:32.870679+00:00",
+                    "published_at": "2026-11-04T16:32:21.166907+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-13306",
                     "source": "Sleeper depth chart",
@@ -2727,7 +2694,7 @@
                     "weighted_score": 0.0
                   }
                 ],
-                "weekly_multiplier": 0.0
+                "weekly_multiplier": 0.961
               },
               "current_fantasy_value": {
                 "market_position_rank": 70,
@@ -2735,16 +2702,16 @@
                 "market_value": 1315,
                 "projection": {
                   "baseline_points": 9.51,
-                  "basis": "Dynasty market-value proxy; no NFL performance sample; current context multiplier 0.000 applied",
-                  "ceiling": 0.0,
+                  "basis": "Dynasty market-value proxy; no NFL performance sample; current context multiplier 0.961 applied",
+                  "ceiling": 11.7,
                   "confidence": "low",
-                  "context_adjustment_points": -9.51,
-                  "context_multiplier": 0.0,
+                  "context_adjustment_points": -0.37,
+                  "context_multiplier": 0.961,
                   "current_decision_evidence": false,
-                  "floor": 0.0,
+                  "floor": 6.6,
                   "model_type": "evidence_estimate",
                   "performance_basis": null,
-                  "points": 0.0
+                  "points": 9.14
                 }
               },
               "current_starter": false,
@@ -2753,24 +2720,23 @@
                   "label": "Development hold",
                   "summary": "Market value 1,315 and position rank #70; age 24 shapes the liquidity and time-horizon risk."
                 },
-                "recommended_stance": "Monitor availability",
+                "recommended_stance": "Hold / monitor role",
                 "rest_of_season": {
                   "label": "Insufficient evidence",
                   "summary": "No matched NFL performance sample is available; role must be verified before relying on weekly utility."
                 },
                 "weekly": {
-                  "label": "Availability watch",
-                  "summary": "Evidence range 0.0–0.0 with low confidence; current matchup research is unavailable."
+                  "label": "Unproven",
+                  "summary": "Evidence range 6.6–11.7 with low confidence; current matchup research is unavailable."
                 }
               },
               "depth_chart_order": 4,
-              "injury_body_part": "Coach's Decision",
-              "injury_status": "Out",
+              "injury_body_part": null,
+              "injury_status": null,
               "key_evidence": [
                 "Dynasty Dealer value 1,315; position rank #70.",
                 "No nflverse performance sample is currently matched to this player.",
-                "Sleeper depth-chart order: 4.",
-                "Sleeper availability: Out (Coach's Decision)."
+                "Sleeper depth-chart order: 4."
               ],
               "movement": {
                 "has_previous": true,
@@ -2782,15 +2748,6 @@
               },
               "name": "Taylen Green",
               "news": [
-                {
-                  "event_date": null,
-                  "published_at": "2026-11-04T14:39:32.870679+00:00",
-                  "signal_type": "injury",
-                  "source": "Sleeper player status",
-                  "text": "Sleeper lists Taylen Green as Out.",
-                  "url": null,
-                  "weighted_score": -0.82
-                },
                 {
                   "event_date": null,
                   "published_at": "2026-10-30T18:32:51+00:00",
@@ -2807,19 +2764,18 @@
               "player_id": "13306",
               "position": "QB",
               "position_rank_on_roster": 6,
-              "recommended_stance": "Monitor availability",
+              "recommended_stance": "Hold / monitor role",
               "research_coverage": {
                 "coach_beat_reporter": false,
                 "news": true
               },
               "risk_factors": [
-                "Current Out designation creates availability risk.",
                 "The current depth-chart path requires movement ahead of the player.",
                 "No matched NFL performance sample supports the current weekly estimate."
               ],
               "speculative_outlook": {
-                "label": "Monitor",
-                "summary": "Availability is the immediate swing factor (Out); recheck status before lineup lock."
+                "label": "Developmental",
+                "summary": "Long-term upside remains, but role confirmation is needed before treating the player as a weekly starter."
               },
               "status": "Active",
               "team": "CLE",
@@ -2874,33 +2830,13 @@
               ],
               "coach_beat_reporter_information": [],
               "context": {
-                "actionable_signal_count": 3,
-                "availability_probability": 0.85,
+                "actionable_signal_count": 2,
+                "availability_probability": 1.0,
                 "confidence": "high",
-                "net_direction": "negative",
+                "net_direction": "positive",
                 "research_mention_count": 9,
-                "signal_count": 12,
+                "signal_count": 11,
                 "signals": [
-                  {
-                    "corroboration_count": 1,
-                    "direction": -1,
-                    "event_date": null,
-                    "impact": "availability",
-                    "magnitude": 2,
-                    "origin": "sleeper",
-                    "player_id": "8138",
-                    "player_name": "James Cook III",
-                    "published_at": "2026-11-04T14:39:32.870679+00:00",
-                    "reliability": 0.82,
-                    "signal_id": "sleeper-injury-8138",
-                    "source": "Sleeper player status",
-                    "source_type": "official",
-                    "summary": "Sleeper lists James Cook III as Questionable.",
-                    "ttl_days": 2,
-                    "type": "injury",
-                    "url": null,
-                    "weighted_score": -0.328
-                  },
                   {
                     "corroboration_count": 1,
                     "direction": 1,
@@ -2910,7 +2846,7 @@
                     "origin": "sleeper",
                     "player_id": "8138",
                     "player_name": "James Cook III",
-                    "published_at": "2026-11-04T14:39:32.870679+00:00",
+                    "published_at": "2026-11-04T16:32:21.166907+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-8138",
                     "source": "Sleeper depth chart",
@@ -2930,7 +2866,7 @@
                     "origin": "measured_usage",
                     "player_id": "8138",
                     "player_name": "James Cook III",
-                    "published_at": "2026-11-04T14:39:32.870679+00:00",
+                    "published_at": "2026-11-04T16:32:21.166907+00:00",
                     "reliability": 0.9,
                     "signal_id": "usage-trend-8138",
                     "source": "nflverse play-by-play",
@@ -3131,7 +3067,7 @@
                     "weighted_score": 0.0
                   }
                 ],
-                "weekly_multiplier": 0.894
+                "weekly_multiplier": 1.052
               },
               "current_fantasy_value": {
                 "market_position_rank": 4,
@@ -3139,16 +3075,16 @@
                 "market_value": 7784,
                 "projection": {
                   "baseline_points": 19.83,
-                  "basis": "2026 715 PPG blended with recent form; current context multiplier 0.894 applied",
-                  "ceiling": 18.7,
+                  "basis": "2026 715 PPG blended with recent form; current context multiplier 1.052 applied",
+                  "ceiling": 22.0,
                   "confidence": "high",
-                  "context_adjustment_points": -2.1,
-                  "context_multiplier": 0.894,
+                  "context_adjustment_points": 1.03,
+                  "context_multiplier": 1.052,
                   "current_decision_evidence": true,
-                  "floor": 16.2,
+                  "floor": 19.0,
                   "model_type": "evidence_estimate",
                   "performance_basis": "current",
-                  "points": 17.73
+                  "points": 20.86
                 }
               },
               "current_starter": true,
@@ -3157,24 +3093,23 @@
                   "label": "Foundation asset",
                   "summary": "Market value 7,784 and position rank #4; age 27 shapes the liquidity and time-horizon risk."
                 },
-                "recommended_stance": "Monitor availability",
+                "recommended_stance": "Start / hold",
                 "rest_of_season": {
                   "label": "Role supported",
                   "summary": "The 2026 sample shows 22.14 opportunities/game and 64.9% snaps."
                 },
                 "weekly": {
-                  "label": "Availability watch",
-                  "summary": "Evidence range 16.2–18.7 with high confidence; current matchup research is unavailable."
+                  "label": "Starter",
+                  "summary": "Evidence range 19.0–22.0 with high confidence; current matchup research is unavailable."
                 }
               },
               "depth_chart_order": 1,
-              "injury_body_part": "Undisclosed",
-              "injury_status": "Questionable",
+              "injury_body_part": null,
+              "injury_status": null,
               "key_evidence": [
                 "Dynasty Dealer value 7,784; position rank #4.",
                 "2026 sample: 18.81 PPG, 22.14 opportunities/game, 64.9% snaps.",
-                "Sleeper depth-chart order: 1.",
-                "Sleeper availability: Questionable (Undisclosed)."
+                "Sleeper depth-chart order: 1."
               ],
               "movement": {
                 "has_previous": true,
@@ -3186,15 +3121,6 @@
               },
               "name": "James Cook III",
               "news": [
-                {
-                  "event_date": null,
-                  "published_at": "2026-11-04T14:39:32.870679+00:00",
-                  "signal_type": "injury",
-                  "source": "Sleeper player status",
-                  "text": "Sleeper lists James Cook III as Questionable.",
-                  "url": null,
-                  "weighted_score": -0.328
-                },
                 {
                   "event_date": null,
                   "published_at": "2026-11-01T22:16:37+00:00",
@@ -3283,17 +3209,15 @@
               "player_id": "8138",
               "position": "RB",
               "position_rank_on_roster": 1,
-              "recommended_stance": "Monitor availability",
+              "recommended_stance": "Start / hold",
               "research_coverage": {
                 "coach_beat_reporter": false,
                 "news": true
               },
-              "risk_factors": [
-                "Current Questionable designation creates availability risk."
-              ],
+              "risk_factors": [],
               "speculative_outlook": {
-                "label": "Monitor",
-                "summary": "Availability is the immediate swing factor (Questionable); recheck status before lineup lock."
+                "label": "Stable",
+                "summary": "Current market and role indicators support a dependable hold unless a clear tier-up is available."
               },
               "status": "Active",
               "team": "BUF",
@@ -3357,7 +3281,7 @@
                     "origin": "sleeper",
                     "player_id": "8228",
                     "player_name": "Jaylen Warren",
-                    "published_at": "2026-11-04T14:39:32.870679+00:00",
+                    "published_at": "2026-11-04T16:32:21.166907+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-8228",
                     "source": "Sleeper depth chart",
@@ -3838,7 +3762,7 @@
                     "ttl_days": 7,
                     "type": "injury",
                     "url": "https://www.pff.com/news/fantasy-football-emergency-waiver-wire-targets-nfl-week-8/",
-                    "weighted_score": -0.3939
+                    "weighted_score": -0.3861
                   },
                   {
                     "corroboration_count": 1,
@@ -3849,7 +3773,7 @@
                     "origin": "measured_usage",
                     "player_id": "13345",
                     "player_name": "Jonah Coleman",
-                    "published_at": "2026-11-04T14:39:32.870679+00:00",
+                    "published_at": "2026-11-04T16:32:21.166907+00:00",
                     "reliability": 0.9,
                     "signal_id": "usage-trend-13345",
                     "source": "nflverse play-by-play",
@@ -3869,7 +3793,7 @@
                     "origin": "sleeper",
                     "player_id": "13345",
                     "player_name": "Jonah Coleman",
-                    "published_at": "2026-11-04T14:39:32.870679+00:00",
+                    "published_at": "2026-11-04T16:32:21.166907+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-13345",
                     "source": "Sleeper depth chart",
@@ -4110,7 +4034,7 @@
                   "source": "Nathan Jahnke",
                   "text": "Emergency fantasy football waiver-wire targets for NFL Week 8",
                   "url": "https://www.pff.com/news/fantasy-football-emergency-waiver-wire-targets-nfl-week-8/",
-                  "weighted_score": -0.3939
+                  "weighted_score": -0.3861
                 },
                 {
                   "event_date": null,
@@ -4242,12 +4166,12 @@
               ],
               "coach_beat_reporter_information": [],
               "context": {
-                "actionable_signal_count": 3,
-                "availability_probability": 0.85,
+                "actionable_signal_count": 2,
+                "availability_probability": 1.0,
                 "confidence": "high",
-                "net_direction": "negative",
-                "research_mention_count": 8,
-                "signal_count": 11,
+                "net_direction": "positive",
+                "research_mention_count": 7,
+                "signal_count": 9,
                 "signals": [
                   {
                     "corroboration_count": 1,
@@ -4258,7 +4182,7 @@
                     "origin": "measured_usage",
                     "player_id": "12474",
                     "player_name": "Woody Marks",
-                    "published_at": "2026-11-04T14:39:32.870679+00:00",
+                    "published_at": "2026-11-04T16:32:21.166907+00:00",
                     "reliability": 0.9,
                     "signal_id": "usage-trend-12474",
                     "source": "nflverse play-by-play",
@@ -4271,26 +4195,6 @@
                   },
                   {
                     "corroboration_count": 1,
-                    "direction": -1,
-                    "event_date": null,
-                    "impact": "availability",
-                    "magnitude": 2,
-                    "origin": "sleeper",
-                    "player_id": "12474",
-                    "player_name": "Woody Marks",
-                    "published_at": "2026-11-04T14:39:32.870679+00:00",
-                    "reliability": 0.82,
-                    "signal_id": "sleeper-injury-12474",
-                    "source": "Sleeper player status",
-                    "source_type": "official",
-                    "summary": "Sleeper lists Woody Marks as Questionable.",
-                    "ttl_days": 2,
-                    "type": "injury",
-                    "url": null,
-                    "weighted_score": -0.328
-                  },
-                  {
-                    "corroboration_count": 1,
                     "direction": 1,
                     "event_date": null,
                     "impact": "workload",
@@ -4298,7 +4202,7 @@
                     "origin": "sleeper",
                     "player_id": "12474",
                     "player_name": "Woody Marks",
-                    "published_at": "2026-11-04T14:39:32.870679+00:00",
+                    "published_at": "2026-11-04T16:32:21.166907+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-12474",
                     "source": "Sleeper depth chart",
@@ -4349,27 +4253,6 @@
                     "ttl_days": 7,
                     "type": "news",
                     "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQaUo2djRlU1NqRDhmWmVEOHN5aW1tNWhRLVNMRThIVWliX2wtT185Z19nU0hVamtqaG8tOUVqcmdvZGluYndTeGxwOFRzN2NOcnUySWlDNHpIaXZzRnk3c0EtQ2dXSjVqVFNaUDJOSy04MjFBd0xHTzcwOWJPbHdoME40bUU1VVp2NnJ3RHMxN0YzY3Y0TW9Fd21oc2pSc1lRVzVOdDFTVnllZ0FvM2dzd2lfOVExUlZn?oc=5",
-                    "weighted_score": 0.0
-                  },
-                  {
-                    "corroboration_count": 1,
-                    "direction": 0.0,
-                    "event_date": null,
-                    "impact": "context",
-                    "magnitude": 0.0,
-                    "origin": "curated_report",
-                    "player_id": "12474",
-                    "player_name": "Woody Marks",
-                    "published_at": "2026-10-28T15:08:51+00:00",
-                    "reliability": 0.45,
-                    "scored": false,
-                    "signal_id": "696e0217c2f0f8b0d03f",
-                    "source": "Sports Illustrated",
-                    "source_type": "aggregator",
-                    "summary": "Week 8 Running Back Usage Report: Fantasy Football Impact for Cam Skattebo, Tony Pollard, Woody Marks, and More! - Sports Illustrated",
-                    "ttl_days": 7,
-                    "type": "news",
-                    "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNdkRVY2RBWTNDUW5KdVItd3RsdmpJTVJ5dVlpN3dkWHVoWGVZYl9qTlMxR3h0ZGdHb3AwV2JqZW8wZ2JoUjVGYTE2c2tSeHYyVTM5TkhGVUdoeW1tNzVHWjNuVWlrX240eVU4Y3hSdVlDRU5NSFdzTkpSbHB2T2xyZkkwbS1wVkJSR2pMUnRUdnM0eEFvenpEZFI4R2ROa0Jya0hGelMxRjdzWWVxZU42U09adlNzdjE0VW5VT01pWG5ZUVRFZVkwOGZzdDNjWlJWOXNCY01sQ284WDQ?oc=5",
                     "weighted_score": 0.0
                   },
                   {
@@ -4478,7 +4361,7 @@
                     "weighted_score": 0.0
                   }
                 ],
-                "weekly_multiplier": 0.904
+                "weekly_multiplier": 1.063
               },
               "current_fantasy_value": {
                 "market_position_rank": 36,
@@ -4486,16 +4369,16 @@
                 "market_value": 3607,
                 "projection": {
                   "baseline_points": 9.5,
-                  "basis": "2026 715 PPG blended with recent form; current context multiplier 0.904 applied",
-                  "ceiling": 8.6,
+                  "basis": "2026 715 PPG blended with recent form; current context multiplier 1.063 applied",
+                  "ceiling": 10.1,
                   "confidence": "high",
-                  "context_adjustment_points": -0.91,
-                  "context_multiplier": 0.904,
+                  "context_adjustment_points": 0.6,
+                  "context_multiplier": 1.063,
                   "current_decision_evidence": true,
-                  "floor": 7.7,
+                  "floor": 9.0,
                   "model_type": "evidence_estimate",
                   "performance_basis": "current",
-                  "points": 8.59
+                  "points": 10.1
                 }
               },
               "current_starter": false,
@@ -4504,24 +4387,23 @@
                   "label": "Flexible depth asset",
                   "summary": "Market value 3,607 and position rank #36; age 25 shapes the liquidity and time-horizon risk."
                 },
-                "recommended_stance": "Monitor availability",
+                "recommended_stance": "Hold / monitor role",
                 "rest_of_season": {
                   "label": "Role supported",
                   "summary": "The 2026 sample shows 13.43 opportunities/game and 61.7% snaps."
                 },
                 "weekly": {
-                  "label": "Availability watch",
-                  "summary": "Evidence range 7.7–8.6 with high confidence; current matchup research is unavailable."
+                  "label": "Depth",
+                  "summary": "Evidence range 9.0–10.1 with high confidence; current matchup research is unavailable."
                 }
               },
               "depth_chart_order": 2,
-              "injury_body_part": "Leg",
-              "injury_status": "Questionable",
+              "injury_body_part": null,
+              "injury_status": null,
               "key_evidence": [
                 "Dynasty Dealer value 3,607; position rank #36.",
                 "2026 sample: 8.93 PPG, 13.43 opportunities/game, 61.7% snaps.",
-                "Sleeper depth-chart order: 2.",
-                "Sleeper availability: Questionable (Leg)."
+                "Sleeper depth-chart order: 2."
               ],
               "movement": {
                 "has_previous": true,
@@ -4533,15 +4415,6 @@
               },
               "name": "Woody Marks",
               "news": [
-                {
-                  "event_date": null,
-                  "published_at": "2026-11-04T14:39:32.870679+00:00",
-                  "signal_type": "injury",
-                  "source": "Sleeper player status",
-                  "text": "Sleeper lists Woody Marks as Questionable.",
-                  "url": null,
-                  "weighted_score": -0.328
-                },
                 {
                   "event_date": null,
                   "published_at": "2026-10-31T14:45:29+00:00",
@@ -4558,15 +4431,6 @@
                   "source": "RotoBaller",
                   "text": "Amon-Ra St. Brown or Woody Marks: Who Should I Start in Week 8? Fantasy Football - RotoBaller",
                   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQaUo2djRlU1NqRDhmWmVEOHN5aW1tNWhRLVNMRThIVWliX2wtT185Z19nU0hVamtqaG8tOUVqcmdvZGluYndTeGxwOFRzN2NOcnUySWlDNHpIaXZzRnk3c0EtQ2dXSjVqVFNaUDJOSy04MjFBd0xHTzcwOWJPbHdoME40bUU1VVp2NnJ3RHMxN0YzY3Y0TW9Fd21oc2pSc1lRVzVOdDFTVnllZ0FvM2dzd2lfOVExUlZn?oc=5",
-                  "weighted_score": 0.0
-                },
-                {
-                  "event_date": null,
-                  "published_at": "2026-10-28T15:08:51+00:00",
-                  "signal_type": "news",
-                  "source": "Sports Illustrated",
-                  "text": "Week 8 Running Back Usage Report: Fantasy Football Impact for Cam Skattebo, Tony Pollard, Woody Marks, and More! - Sports Illustrated",
-                  "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNdkRVY2RBWTNDUW5KdVItd3RsdmpJTVJ5dVlpN3dkWHVoWGVZYl9qTlMxR3h0ZGdHb3AwV2JqZW8wZ2JoUjVGYTE2c2tSeHYyVTM5TkhGVUdoeW1tNzVHWjNuVWlrX240eVU4Y3hSdVlDRU5NSFdzTkpSbHB2T2xyZkkwbS1wVkJSR2pMUnRUdnM0eEFvenpEZFI4R2ROa0Jya0hGelMxRjdzWWVxZU42U09adlNzdjE0VW5VT01pWG5ZUVRFZVkwOGZzdDNjWlJWOXNCY01sQ284WDQ?oc=5",
                   "weighted_score": 0.0
                 },
                 {
@@ -4619,17 +4483,15 @@
               "player_id": "12474",
               "position": "RB",
               "position_rank_on_roster": 4,
-              "recommended_stance": "Monitor availability",
+              "recommended_stance": "Hold / monitor role",
               "research_coverage": {
                 "coach_beat_reporter": false,
                 "news": true
               },
-              "risk_factors": [
-                "Current Questionable designation creates availability risk."
-              ],
+              "risk_factors": [],
               "speculative_outlook": {
-                "label": "Monitor",
-                "summary": "Availability is the immediate swing factor (Questionable); recheck status before lineup lock."
+                "label": "Speculative",
+                "summary": "Depth-chart movement, usage growth or a market catalyst is needed for a meaningful value jump."
               },
               "status": "Active",
               "team": "HOU",
@@ -4687,7 +4549,7 @@
                     "origin": "sleeper",
                     "player_id": "7021",
                     "player_name": "Rico Dowdle",
-                    "published_at": "2026-11-04T14:39:32.870679+00:00",
+                    "published_at": "2026-11-04T16:32:21.166907+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-7021",
                     "source": "Sleeper depth chart",
@@ -5010,7 +4872,7 @@
                     "origin": "measured_usage",
                     "player_id": "11581",
                     "player_name": "MarShawn Lloyd",
-                    "published_at": "2026-11-04T14:39:32.870679+00:00",
+                    "published_at": "2026-11-04T16:32:21.166907+00:00",
                     "reliability": 0.9,
                     "signal_id": "usage-trend-11581",
                     "source": "nflverse play-by-play",
@@ -5030,7 +4892,7 @@
                     "origin": "sleeper",
                     "player_id": "11581",
                     "player_name": "MarShawn Lloyd",
-                    "published_at": "2026-11-04T14:39:32.870679+00:00",
+                    "published_at": "2026-11-04T16:32:21.166907+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-11581",
                     "source": "Sleeper depth chart",
@@ -5379,7 +5241,7 @@
                     "origin": "sleeper",
                     "player_id": "11655",
                     "player_name": "Tyrone Tracy Jr.",
-                    "published_at": "2026-11-04T14:39:32.870679+00:00",
+                    "published_at": "2026-11-04T16:32:21.166907+00:00",
                     "reliability": 0.82,
                     "signal_id": "sleeper-injury-11655",
                     "source": "Sleeper player status",
@@ -5399,7 +5261,7 @@
                     "origin": "sleeper",
                     "player_id": "11655",
                     "player_name": "Tyrone Tracy Jr.",
-                    "published_at": "2026-11-04T14:39:32.870679+00:00",
+                    "published_at": "2026-11-04T16:32:21.166907+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-11655",
                     "source": "Sleeper depth chart",
@@ -5419,7 +5281,7 @@
                     "origin": "measured_usage",
                     "player_id": "11655",
                     "player_name": "Tyrone Tracy Jr.",
-                    "published_at": "2026-11-04T14:39:32.870679+00:00",
+                    "published_at": "2026-11-04T16:32:21.166907+00:00",
                     "reliability": 0.9,
                     "signal_id": "usage-trend-11655",
                     "source": "nflverse play-by-play",
@@ -5551,7 +5413,7 @@
               "news": [
                 {
                   "event_date": null,
-                  "published_at": "2026-11-04T14:39:32.870679+00:00",
+                  "published_at": "2026-11-04T16:32:21.166907+00:00",
                   "signal_type": "injury",
                   "source": "Sleeper player status",
                   "text": "Sleeper lists Tyrone Tracy Jr. as IR.",
@@ -5646,8 +5508,8 @@
                 "availability_probability": 0.0,
                 "confidence": "medium",
                 "net_direction": "negative",
-                "research_mention_count": 7,
-                "signal_count": 9,
+                "research_mention_count": 6,
+                "signal_count": 8,
                 "signals": [
                   {
                     "corroboration_count": 1,
@@ -5658,7 +5520,7 @@
                     "origin": "sleeper",
                     "player_id": "8205",
                     "player_name": "Isiah Pacheco",
-                    "published_at": "2026-11-04T14:39:32.870679+00:00",
+                    "published_at": "2026-11-04T16:32:21.166907+00:00",
                     "reliability": 0.82,
                     "signal_id": "sleeper-injury-8205",
                     "source": "Sleeper player status",
@@ -5678,7 +5540,7 @@
                     "origin": "sleeper",
                     "player_id": "8205",
                     "player_name": "Isiah Pacheco",
-                    "published_at": "2026-11-04T14:39:32.870679+00:00",
+                    "published_at": "2026-11-04T16:32:21.166907+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-8205",
                     "source": "Sleeper depth chart",
@@ -5688,27 +5550,6 @@
                     "type": "depth_chart",
                     "url": null,
                     "weighted_score": -0.39
-                  },
-                  {
-                    "corroboration_count": 1,
-                    "direction": 0.0,
-                    "event_date": null,
-                    "impact": "context",
-                    "magnitude": 0.0,
-                    "origin": "curated_report",
-                    "player_id": "8205",
-                    "player_name": "Isiah Pacheco",
-                    "published_at": "2026-10-28T15:55:26+00:00",
-                    "reliability": 0.45,
-                    "scored": false,
-                    "signal_id": "201e002a57b5e7d5ba18",
-                    "source": "Complex",
-                    "source_type": "aggregator",
-                    "summary": "Isiah Pacheco Fantasy Football Injury Update: When Will Lions RB Return? - Complex",
-                    "ttl_days": 7,
-                    "type": "news",
-                    "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNMU1lc0ViRVNVSnBBSDlBTUx4VVBCVjlXaFF3RjczTWQyTkNVd0Y3anRaeW5mRVhVZ285aVJwX2FSZ254VUdGa25UZjNjMFgxY3cxSlA1Q2V2RGVGZmhQaDhwbFhTa3FRdVZ4MnR3bWhkbHhtY0Nwekxpd180X256TTlfMmJwSVhvb1VteVVtYw?oc=5",
-                    "weighted_score": 0.0
                   },
                   {
                     "corroboration_count": 1,
@@ -5894,21 +5735,12 @@
               "news": [
                 {
                   "event_date": null,
-                  "published_at": "2026-11-04T14:39:32.870679+00:00",
+                  "published_at": "2026-11-04T16:32:21.166907+00:00",
                   "signal_type": "injury",
                   "source": "Sleeper player status",
                   "text": "Sleeper lists Isiah Pacheco as IR.",
                   "url": null,
                   "weighted_score": -0.82
-                },
-                {
-                  "event_date": null,
-                  "published_at": "2026-10-28T15:55:26+00:00",
-                  "signal_type": "news",
-                  "source": "Complex",
-                  "text": "Isiah Pacheco Fantasy Football Injury Update: When Will Lions RB Return? - Complex",
-                  "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNMU1lc0ViRVNVSnBBSDlBTUx4VVBCVjlXaFF3RjczTWQyTkNVd0Y3anRaeW5mRVhVZ285aVJwX2FSZ254VUdGa25UZjNjMFgxY3cxSlA1Q2V2RGVGZmhQaDhwbFhTa3FRdVZ4MnR3bWhkbHhtY0Nwekxpd180X256TTlfMmJwSVhvb1VteVVtYw?oc=5",
-                  "weighted_score": 0.0
                 },
                 {
                   "event_date": null,
@@ -6038,7 +5870,7 @@
                     "origin": "sleeper",
                     "player_id": "6039",
                     "player_name": "Ty Johnson",
-                    "published_at": "2026-11-04T14:39:32.870679+00:00",
+                    "published_at": "2026-11-04T16:32:21.166907+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-6039",
                     "source": "Sleeper depth chart",
@@ -6429,7 +6261,7 @@
                     "origin": "sleeper",
                     "player_id": "6794",
                     "player_name": "Justin Jefferson",
-                    "published_at": "2026-11-04T14:39:32.870679+00:00",
+                    "published_at": "2026-11-04T16:32:21.166907+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-6794",
                     "source": "Sleeper depth chart",
@@ -6844,7 +6676,7 @@
                     "origin": "sleeper",
                     "player_id": "7569",
                     "player_name": "Nico Collins",
-                    "published_at": "2026-11-04T14:39:32.870679+00:00",
+                    "published_at": "2026-11-04T16:32:21.166907+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-7569",
                     "source": "Sleeper depth chart",
@@ -7161,7 +6993,7 @@
                     "origin": "sleeper",
                     "player_id": "11646",
                     "player_name": "Jalen Coker",
-                    "published_at": "2026-11-04T14:39:32.870679+00:00",
+                    "published_at": "2026-11-04T16:32:21.166907+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-11646",
                     "source": "Sleeper depth chart",
@@ -7534,8 +7366,8 @@
                 "availability_probability": 1.0,
                 "confidence": "medium",
                 "net_direction": "positive",
-                "research_mention_count": 8,
-                "signal_count": 11,
+                "research_mention_count": 7,
+                "signal_count": 10,
                 "signals": [
                   {
                     "corroboration_count": 1,
@@ -7556,7 +7388,7 @@
                     "ttl_days": 7,
                     "type": "injury",
                     "url": "https://www.rotowire.com//football/player/jaylen-waddle-15404",
-                    "weighted_score": 0.311
+                    "weighted_score": 0.3048
                   },
                   {
                     "corroboration_count": 1,
@@ -7567,7 +7399,7 @@
                     "origin": "sleeper",
                     "player_id": "7526",
                     "player_name": "Jaylen Waddle",
-                    "published_at": "2026-11-04T14:39:32.870679+00:00",
+                    "published_at": "2026-11-04T16:32:21.166907+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-7526",
                     "source": "Sleeper depth chart",
@@ -7597,7 +7429,7 @@
                     "ttl_days": 7,
                     "type": "injury",
                     "url": "https://www.fantasypros.com/nfl/news/616975/jaylen-waddle-chest-active-week-8.php",
-                    "weighted_score": 0.2171
+                    "weighted_score": 0.2131
                   },
                   {
                     "corroboration_count": 1,
@@ -7734,27 +7566,6 @@
                     "origin": "curated_report",
                     "player_id": "7526",
                     "player_name": "Jaylen Waddle",
-                    "published_at": "2026-10-28T16:29:05+00:00",
-                    "reliability": 0.45,
-                    "scored": false,
-                    "signal_id": "90908813c1cb240e2e88",
-                    "source": "NFL.com",
-                    "source_type": "aggregator",
-                    "summary": "NFL news roundup: Broncos WR Jaylen Waddle's Week 8 status vs. Chiefs TBD - NFL.com",
-                    "ttl_days": 7,
-                    "type": "news",
-                    "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPYUFlNFgxNWtMd1JyR25KdG9HejJuTnFrcTBVM0xlZ2NEcGl3Ym0tY19xVUtnZkFQbXBsYUQtRWlBSkhNLU9hTVRBTnZiV25QeXZ0TEJjMEpHY1F1TVhyM1hWeGdtN1R4aXd2cXBnU1ZDSFluelFYSWNueHFkTVZ1azA5NVZKQVRSUlpHUmp3?oc=5",
-                    "weighted_score": 0.0
-                  },
-                  {
-                    "corroboration_count": 1,
-                    "direction": 0.0,
-                    "event_date": null,
-                    "impact": "context",
-                    "magnitude": 0.0,
-                    "origin": "curated_report",
-                    "player_id": "7526",
-                    "player_name": "Jaylen Waddle",
                     "published_at": "2026-10-30T03:58:13+00:00",
                     "reliability": 0.45,
                     "scored": false,
@@ -7829,7 +7640,7 @@
                   "source": "RotoWire NFL Player News / Aric DiLalla of the Broncos' official site",
                   "text": "Jaylen Waddle: Is active for Sunday's game",
                   "url": "https://www.rotowire.com//football/player/jaylen-waddle-15404",
-                  "weighted_score": 0.311
+                  "weighted_score": 0.3048
                 },
                 {
                   "event_date": null,
@@ -7838,7 +7649,7 @@
                   "source": "FantasyPros",
                   "text": "Jaylen Waddle (chest) active for Week 8",
                   "url": "https://www.fantasypros.com/nfl/news/616975/jaylen-waddle-chest-active-week-8.php",
-                  "weighted_score": 0.2171
+                  "weighted_score": 0.2131
                 },
                 {
                   "event_date": null,
@@ -7892,15 +7703,6 @@
                   "source": "Yahoo Sports",
                   "text": "Is Jaylen Waddle playing today vs. Chiefs? Latest injury update - Yahoo Sports",
                   "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNVW5KUFNUZnpYeVNFMkZObXV2bzJzUkExYmNDLS1FN2dXd25EWWVpOG44WllrTXByNG1SSjdjZ0VOeS1lYmE1c3lSbXVwcnlxZVZwRU1GMGlmRjNBYkxaZ3FBcXhMRGRlbU5sN1lzYkRRVkcwZVJsSG1SQXdRaEpBTWZKMUF0QQ?oc=5",
-                  "weighted_score": 0.0
-                },
-                {
-                  "event_date": null,
-                  "published_at": "2026-10-28T16:29:05+00:00",
-                  "signal_type": "news",
-                  "source": "NFL.com",
-                  "text": "NFL news roundup: Broncos WR Jaylen Waddle's Week 8 status vs. Chiefs TBD - NFL.com",
-                  "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPYUFlNFgxNWtMd1JyR25KdG9HejJuTnFrcTBVM0xlZ2NEcGl3Ym0tY19xVUtnZkFQbXBsYUQtRWlBSkhNLU9hTVRBTnZiV25QeXZ0TEJjMEpHY1F1TVhyM1hWeGdtN1R4aXd2cXBnU1ZDSFluelFYSWNueHFkTVZ1azA5NVZKQVRSUlpHUmp3?oc=5",
                   "weighted_score": 0.0
                 },
                 {
@@ -7971,8 +7773,8 @@
                 "availability_probability": 0.0,
                 "confidence": "medium",
                 "net_direction": "negative",
-                "research_mention_count": 7,
-                "signal_count": 9,
+                "research_mention_count": 6,
+                "signal_count": 8,
                 "signals": [
                   {
                     "corroboration_count": 1,
@@ -7983,7 +7785,7 @@
                     "origin": "sleeper",
                     "player_id": "5927",
                     "player_name": "Terry McLaurin",
-                    "published_at": "2026-11-04T14:39:32.870679+00:00",
+                    "published_at": "2026-11-04T16:32:21.166907+00:00",
                     "reliability": 0.82,
                     "signal_id": "sleeper-injury-5927",
                     "source": "Sleeper player status",
@@ -8003,7 +7805,7 @@
                     "origin": "sleeper",
                     "player_id": "5927",
                     "player_name": "Terry McLaurin",
-                    "published_at": "2026-11-04T14:39:32.870679+00:00",
+                    "published_at": "2026-11-04T16:32:21.166907+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-5927",
                     "source": "Sleeper depth chart",
@@ -8054,27 +7856,6 @@
                     "ttl_days": 7,
                     "type": "news",
                     "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQXzE5WDBzWlFPZXZfblFoVHRYZjRQcHJQeXFXWmZYS3R3OUhkcWFzV3QxYUdTS1RBT0xCM0RlX3psTHZxcDk0SVVRaG5uR2ExWjMyaUMxSm5OMHVBblgzcDEwNTlqblBVZFFSZ294SFREQlN0TmJQOEJOLWk4ekhGaERqLWJkNnBt?oc=5",
-                    "weighted_score": 0.0
-                  },
-                  {
-                    "corroboration_count": 1,
-                    "direction": 0.0,
-                    "event_date": null,
-                    "impact": "context",
-                    "magnitude": 0.0,
-                    "origin": "curated_report",
-                    "player_id": "5927",
-                    "player_name": "Terry McLaurin",
-                    "published_at": "2026-10-28T16:19:27+00:00",
-                    "reliability": 0.45,
-                    "scored": false,
-                    "signal_id": "951c7a4e4371f6f7b520",
-                    "source": "NFLTradeRumors.co",
-                    "source_type": "aggregator",
-                    "summary": "Commanders Announce Three Moves, Place WR Terry McLaurin On IR - NFLTradeRumors.co",
-                    "ttl_days": 7,
-                    "type": "news",
-                    "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNWlJZcm96UVlOTHRiMndSWmEtYlkwdmFOUHVyVkktNW4xZGllQVdxcnhNbUpvQUljcVJKMzl1eXh3SjJSenFvSENlRDBuMTh3cjFQVDJmV0FpbER0UHFWelR5VVdHX0prVkR4ckRILUlVb3g0TTNjYzhqRE5fNjdNZF9pLTZGUDIxZDRWRl9IQkJvdw?oc=5",
                     "weighted_score": 0.0
                   },
                   {
@@ -8219,7 +8000,7 @@
               "news": [
                 {
                   "event_date": null,
-                  "published_at": "2026-11-04T14:39:32.870679+00:00",
+                  "published_at": "2026-11-04T16:32:21.166907+00:00",
                   "signal_type": "injury",
                   "source": "Sleeper player status",
                   "text": "Sleeper lists Terry McLaurin as IR.",
@@ -8242,15 +8023,6 @@
                   "source": "Yahoo Sports",
                   "text": "Tyler’s Take: Has Terry McLaurin played his last snap for the Washington Commanders? - Yahoo Sports",
                   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQXzE5WDBzWlFPZXZfblFoVHRYZjRQcHJQeXFXWmZYS3R3OUhkcWFzV3QxYUdTS1RBT0xCM0RlX3psTHZxcDk0SVVRaG5uR2ExWjMyaUMxSm5OMHVBblgzcDEwNTlqblBVZFFSZ294SFREQlN0TmJQOEJOLWk4ekhGaERqLWJkNnBt?oc=5",
-                  "weighted_score": 0.0
-                },
-                {
-                  "event_date": null,
-                  "published_at": "2026-10-28T16:19:27+00:00",
-                  "signal_type": "news",
-                  "source": "NFLTradeRumors.co",
-                  "text": "Commanders Announce Three Moves, Place WR Terry McLaurin On IR - NFLTradeRumors.co",
-                  "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNWlJZcm96UVlOTHRiMndSWmEtYlkwdmFOUHVyVkktNW4xZGllQVdxcnhNbUpvQUljcVJKMzl1eXh3SjJSenFvSENlRDBuMTh3cjFQVDJmV0FpbER0UHFWelR5VVdHX0prVkR4ckRILUlVb3g0TTNjYzhqRE5fNjdNZF9pLTZGUDIxZDRWRl9IQkJvdw?oc=5",
                   "weighted_score": 0.0
                 },
                 {
@@ -8368,7 +8140,7 @@
                     "origin": "sleeper",
                     "player_id": "10222",
                     "player_name": "Jayden Reed",
-                    "published_at": "2026-11-04T14:39:32.870679+00:00",
+                    "published_at": "2026-11-04T16:32:21.166907+00:00",
                     "reliability": 0.82,
                     "signal_id": "sleeper-injury-10222",
                     "source": "Sleeper player status",
@@ -8388,7 +8160,7 @@
                     "origin": "sleeper",
                     "player_id": "10222",
                     "player_name": "Jayden Reed",
-                    "published_at": "2026-11-04T14:39:32.870679+00:00",
+                    "published_at": "2026-11-04T16:32:21.166907+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-10222",
                     "source": "Sleeper depth chart",
@@ -8478,7 +8250,7 @@
               "news": [
                 {
                   "event_date": null,
-                  "published_at": "2026-11-04T14:39:32.870679+00:00",
+                  "published_at": "2026-11-04T16:32:21.166907+00:00",
                   "signal_type": "injury",
                   "source": "Sleeper player status",
                   "text": "Sleeper lists Jayden Reed as IR.",
@@ -8569,7 +8341,7 @@
                     "origin": "sleeper",
                     "player_id": "5045",
                     "player_name": "Courtland Sutton",
-                    "published_at": "2026-11-04T14:39:32.870679+00:00",
+                    "published_at": "2026-11-04T16:32:21.166907+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-5045",
                     "source": "Sleeper depth chart",
@@ -8976,7 +8748,7 @@
                     "origin": "sleeper",
                     "player_id": "10226",
                     "player_name": "Andrei Iosivas",
-                    "published_at": "2026-11-04T14:39:32.870679+00:00",
+                    "published_at": "2026-11-04T16:32:21.166907+00:00",
                     "reliability": 0.82,
                     "signal_id": "sleeper-injury-10226",
                     "source": "Sleeper player status",
@@ -8996,7 +8768,7 @@
                     "origin": "sleeper",
                     "player_id": "10226",
                     "player_name": "Andrei Iosivas",
-                    "published_at": "2026-11-04T14:39:32.870679+00:00",
+                    "published_at": "2026-11-04T16:32:21.166907+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-10226",
                     "source": "Sleeper depth chart",
@@ -9191,7 +8963,7 @@
               "news": [
                 {
                   "event_date": null,
-                  "published_at": "2026-11-04T14:39:32.870679+00:00",
+                  "published_at": "2026-11-04T16:32:21.166907+00:00",
                   "signal_type": "injury",
                   "source": "Sleeper player status",
                   "text": "Sleeper lists Andrei Iosivas as IR.",
@@ -9326,7 +9098,7 @@
                     "origin": "sleeper",
                     "player_id": "7571",
                     "player_name": "Rashod Bateman",
-                    "published_at": "2026-11-04T14:39:32.870679+00:00",
+                    "published_at": "2026-11-04T16:32:21.166907+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-7571",
                     "source": "Sleeper depth chart",
@@ -9625,7 +9397,7 @@
                     "origin": "sleeper",
                     "player_id": "10859",
                     "player_name": "Sam LaPorta",
-                    "published_at": "2026-11-04T14:39:32.870679+00:00",
+                    "published_at": "2026-11-04T16:32:21.166907+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-10859",
                     "source": "Sleeper depth chart",
@@ -9645,7 +9417,7 @@
                     "origin": "measured_usage",
                     "player_id": "10859",
                     "player_name": "Sam LaPorta",
-                    "published_at": "2026-11-04T14:39:32.870679+00:00",
+                    "published_at": "2026-11-04T16:32:21.166907+00:00",
                     "reliability": 0.9,
                     "signal_id": "usage-trend-10859",
                     "source": "nflverse play-by-play",
@@ -9995,7 +9767,7 @@
                     "origin": "sleeper",
                     "player_id": "12506",
                     "player_name": "Harold Fannin Jr.",
-                    "published_at": "2026-11-04T14:39:32.870679+00:00",
+                    "published_at": "2026-11-04T16:32:21.166907+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-12506",
                     "source": "Sleeper depth chart",
@@ -10015,7 +9787,7 @@
                     "origin": "measured_usage",
                     "player_id": "12506",
                     "player_name": "Harold Fannin Jr.",
-                    "published_at": "2026-11-04T14:39:32.870679+00:00",
+                    "published_at": "2026-11-04T16:32:21.166907+00:00",
                     "reliability": 0.9,
                     "signal_id": "usage-trend-12506",
                     "source": "nflverse play-by-play",
@@ -10326,8 +10098,8 @@
                 "availability_probability": 0.0,
                 "confidence": "medium",
                 "net_direction": "negative",
-                "research_mention_count": 1,
-                "signal_count": 3,
+                "research_mention_count": 0,
+                "signal_count": 2,
                 "signals": [
                   {
                     "corroboration_count": 1,
@@ -10338,7 +10110,7 @@
                     "origin": "sleeper",
                     "player_id": "12521",
                     "player_name": "Elijah Arroyo",
-                    "published_at": "2026-11-04T14:39:32.870679+00:00",
+                    "published_at": "2026-11-04T16:32:21.166907+00:00",
                     "reliability": 0.82,
                     "signal_id": "sleeper-injury-12521",
                     "source": "Sleeper player status",
@@ -10358,7 +10130,7 @@
                     "origin": "sleeper",
                     "player_id": "12521",
                     "player_name": "Elijah Arroyo",
-                    "published_at": "2026-11-04T14:39:32.870679+00:00",
+                    "published_at": "2026-11-04T16:32:21.166907+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-12521",
                     "source": "Sleeper depth chart",
@@ -10368,27 +10140,6 @@
                     "type": "depth_chart",
                     "url": null,
                     "weighted_score": -0.39
-                  },
-                  {
-                    "corroboration_count": 1,
-                    "direction": 0.0,
-                    "event_date": null,
-                    "impact": "context",
-                    "magnitude": 0.0,
-                    "origin": "curated_report",
-                    "player_id": "12521",
-                    "player_name": "Elijah Arroyo",
-                    "published_at": "2026-10-28T14:47:26+00:00",
-                    "reliability": 0.45,
-                    "scored": false,
-                    "signal_id": "e1cb1a88cc22ec19341c",
-                    "source": "Unisba Media",
-                    "source_type": "aggregator",
-                    "summary": "Kansas City Chiefs News: 13 Combine Meetings Ft. Ollie Gordon, Derrick Harmon & Elijah Arroyo Bill Pullman (hpGHHxSaYS) - Unisba Media",
-                    "ttl_days": 7,
-                    "type": "news",
-                    "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBuNnkwcGVidlNxTElkTkJMUG9jYzR1QjA3SXpmaHN4NFZMb3NCUFZDSzRQN1Y3OV9HVk8xd0NUVGYxNGZKMXJIM0MtOTg3X2xubVlkY3Zzb0JiTnJqS0w2bXJVZjJMQQ?oc=5",
-                    "weighted_score": 0.0
                   }
                 ],
                 "weekly_multiplier": 0.0
@@ -10448,21 +10199,12 @@
               "news": [
                 {
                   "event_date": null,
-                  "published_at": "2026-11-04T14:39:32.870679+00:00",
+                  "published_at": "2026-11-04T16:32:21.166907+00:00",
                   "signal_type": "injury",
                   "source": "Sleeper player status",
                   "text": "Sleeper lists Elijah Arroyo as IR.",
                   "url": null,
                   "weighted_score": -0.82
-                },
-                {
-                  "event_date": null,
-                  "published_at": "2026-10-28T14:47:26+00:00",
-                  "signal_type": "news",
-                  "source": "Unisba Media",
-                  "text": "Kansas City Chiefs News: 13 Combine Meetings Ft. Ollie Gordon, Derrick Harmon & Elijah Arroyo Bill Pullman (hpGHHxSaYS) - Unisba Media",
-                  "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBuNnkwcGVidlNxTElkTkJMUG9jYzR1QjA3SXpmaHN4NFZMb3NCUFZDSzRQN1Y3OV9HVk8xd0NUVGYxNGZKMXJIM0MtOTg3X2xubVlkY3Zzb0JiTnJqS0w2bXJVZjJMQQ?oc=5",
-                  "weighted_score": 0.0
                 }
               ],
               "notable_takeaways": [],
@@ -10528,7 +10270,7 @@
   ],
   "sources": [
     {
-      "checked_at": "2026-11-04T14:39:33.038139+00:00",
+      "checked_at": "2026-11-04T16:32:21.357580+00:00",
       "name": "Sleeper",
       "status": "ok",
       "type": "authoritative_roster_data",
@@ -10553,14 +10295,14 @@
       "url": "https://nflverse.com/"
     },
     {
-      "checked_at": "2026-11-04T14:39:32.870679+00:00",
+      "checked_at": "2026-11-04T16:32:21.166907+00:00",
       "name": "Player context signals",
       "status": "available",
       "type": "availability_depth_usage_and_reporting",
       "url": null
     },
     {
-      "checked_at": "2026-11-04T14:39:32.870679+00:00",
+      "checked_at": "2026-11-04T16:32:21.166907+00:00",
       "name": "Roster research",
       "status": "available",
       "type": "news_matchup_coach_reporting",
