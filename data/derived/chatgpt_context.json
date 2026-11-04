@@ -1,6 +1,6 @@
 {
   "draft_capital": {
-    "generated_at": "2026-11-04T00:43:01.967181+00:00",
+    "generated_at": "2026-11-04T06:16:51.677870+00:00",
     "teams": [
       {
         "manager": "Amelse",
@@ -889,22 +889,22 @@
         "roster_id": 8,
         "summary": {
           "by_round": {
-            "1": 6,
+            "1": 7,
             "2": 6,
             "3": 4,
-            "4": 4,
-            "5": 4
+            "4": 3,
+            "5": 5
           },
           "by_year": {
             "2026": 5,
-            "2027": 6,
+            "2027": 7,
             "2028": 7,
             "2029": 6
           },
-          "early_picks": 12,
-          "firsts": 6,
+          "early_picks": 13,
+          "firsts": 7,
           "seconds": 6,
-          "total": 24
+          "total": 25
         },
         "team_name": "I Chase Brown Kids",
         "years": {
@@ -972,6 +972,12 @@
               "round": 4
             },
             {
+              "original_manager": "Ebro51",
+              "original_roster_id": 10,
+              "own": false,
+              "round": 5
+            },
+            {
               "original_manager": "hoglundcory2",
               "original_roster_id": 8,
               "own": true,
@@ -1030,6 +1036,12 @@
               "round": 1
             },
             {
+              "original_manager": "Ebro51",
+              "original_roster_id": 10,
+              "own": false,
+              "round": 1
+            },
+            {
               "original_manager": "hoglundcory2",
               "original_roster_id": 8,
               "own": true,
@@ -1051,12 +1063,6 @@
               "original_manager": "hoglundcory2",
               "original_roster_id": 8,
               "own": true,
-              "round": 4
-            },
-            {
-              "original_manager": "hoglundcory2",
-              "original_roster_id": 8,
-              "own": true,
               "round": 5
             }
           ]
@@ -1067,22 +1073,22 @@
         "roster_id": 10,
         "summary": {
           "by_round": {
-            "1": 5,
+            "1": 4,
             "2": 4,
             "3": 4,
-            "4": 1,
-            "5": 1
+            "4": 2,
+            "5": 0
           },
           "by_year": {
             "2026": 6,
-            "2027": 4,
+            "2027": 3,
             "2028": 2,
             "2029": 3
           },
-          "early_picks": 9,
-          "firsts": 5,
+          "early_picks": 8,
+          "firsts": 4,
           "seconds": 4,
-          "total": 15
+          "total": 14
         },
         "team_name": "Shit heads we ride. ",
         "years": {
@@ -1142,12 +1148,6 @@
               "original_roster_id": 10,
               "own": true,
               "round": 3
-            },
-            {
-              "original_manager": "Ebro51",
-              "original_roster_id": 10,
-              "own": true,
-              "round": 5
             }
           ],
           "2028": [
@@ -1169,12 +1169,6 @@
               "original_manager": "Ebro51",
               "original_roster_id": 10,
               "own": true,
-              "round": 1
-            },
-            {
-              "original_manager": "Ebro51",
-              "original_roster_id": 10,
-              "own": true,
               "round": 2
             },
             {
@@ -1182,6 +1176,12 @@
               "original_roster_id": 10,
               "own": true,
               "round": 3
+            },
+            {
+              "original_manager": "hoglundcory2",
+              "original_roster_id": 8,
+              "own": false,
+              "round": 4
             }
           ]
         }
@@ -1848,8 +1848,172 @@
       "2029"
     ]
   },
-  "generated_at": "2026-11-04T00:43:02.041419+00:00",
-  "latest_detected_changes": [],
+  "generated_at": "2026-11-04T06:16:51.774761+00:00",
+  "latest_detected_changes": [
+    {
+      "detected_at": "2026-11-04T06:16:51.623981+00:00",
+      "manager": "SORY9",
+      "new_starters": [
+        "4046",
+        "12495",
+        "6813",
+        "4983",
+        "9997",
+        "2216",
+        "12518",
+        "4866",
+        "6770"
+      ],
+      "old_starters": [
+        "4046",
+        "12495",
+        "6813",
+        "4983",
+        "9997",
+        "5846",
+        "12518",
+        "4866",
+        "6770"
+      ],
+      "roster_id": 7,
+      "type": "starter_change"
+    },
+    {
+      "detected_at": "2026-11-04T06:16:51.623981+00:00",
+      "manager": "hoglundcory2",
+      "player": {
+        "age": 26,
+        "depth_chart_order": 1,
+        "depth_chart_position": "RB",
+        "fantasy_positions": [
+          "RB"
+        ],
+        "injury_body_part": null,
+        "injury_notes": null,
+        "injury_status": null,
+        "name": "Chase Brown",
+        "player_id": "9224",
+        "position": "RB",
+        "status": "Active",
+        "team": "CIN",
+        "years_exp": 3
+      },
+      "roster_id": 8,
+      "type": "roster_drop"
+    },
+    {
+      "detected_at": "2026-11-04T06:16:51.623981+00:00",
+      "manager": "Ebro51",
+      "player": {
+        "age": 26,
+        "depth_chart_order": 1,
+        "depth_chart_position": "RB",
+        "fantasy_positions": [
+          "RB"
+        ],
+        "injury_body_part": null,
+        "injury_notes": null,
+        "injury_status": null,
+        "name": "Chase Brown",
+        "player_id": "9224",
+        "position": "RB",
+        "status": "Active",
+        "team": "CIN",
+        "years_exp": 3
+      },
+      "roster_id": 10,
+      "type": "roster_add"
+    },
+    {
+      "detected_at": "2026-11-04T06:16:51.623981+00:00",
+      "manager": "Ebro51",
+      "new_starters": [
+        "9228",
+        "7594",
+        "8155",
+        "13298",
+        "6786",
+        "1479",
+        "11604",
+        "9482",
+        "11565"
+      ],
+      "old_starters": [
+        "9228",
+        "7594",
+        "13286",
+        "13298",
+        "6786",
+        "1479",
+        "11604",
+        "9482",
+        "6797"
+      ],
+      "roster_id": 10,
+      "type": "starter_change"
+    },
+    {
+      "detected_at": "2026-11-04T06:16:51.623981+00:00",
+      "manager": "Butler2142",
+      "new_starters": [
+        "7523",
+        "5850",
+        "6790",
+        "8167",
+        "7564",
+        "7547",
+        "1466",
+        "3198",
+        "3294"
+      ],
+      "old_starters": [
+        "7523",
+        "5850",
+        "3198",
+        "8167",
+        "7564",
+        "7547",
+        "1466",
+        "7611",
+        "3294"
+      ],
+      "roster_id": 12,
+      "type": "starter_change"
+    },
+    {
+      "detected_at": "2026-11-04T06:16:51.623981+00:00",
+      "new_owner_manager": "hoglundcory2",
+      "new_owner_roster_id": 8,
+      "old_owner_manager": "Ebro51",
+      "old_owner_roster_id": 10,
+      "original_roster_id": 10,
+      "round": 5,
+      "season": "2027",
+      "type": "pick_owner_change"
+    },
+    {
+      "detected_at": "2026-11-04T06:16:51.623981+00:00",
+      "new_owner_manager": "hoglundcory2",
+      "new_owner_roster_id": 8,
+      "old_owner_manager": "Ebro51",
+      "old_owner_roster_id": 10,
+      "original_roster_id": 10,
+      "round": 1,
+      "season": "2029",
+      "type": "pick_owner_change"
+    },
+    {
+      "detected_at": "2026-11-04T06:16:51.623981+00:00",
+      "new_owner_manager": "Ebro51",
+      "new_owner_roster_id": 10,
+      "old_owner_manager": "hoglundcory2",
+      "old_owner_roster_id": 8,
+      "original_roster_id": 8,
+      "round": 4,
+      "season": "2029",
+      "type": "pick_owner_change"
+    }
+  ],
   "latest_weekly_recap": {
     "awards": [
       {
@@ -1916,7 +2080,7 @@
         "title": "Benchwarmer of the Week"
       }
     ],
-    "generated_at": "2026-11-04T00:43:01.966749+00:00",
+    "generated_at": "2026-11-04T06:16:51.677373+00:00",
     "season": "2026",
     "status": "live",
     "week": 8,
@@ -2618,7 +2782,7 @@
     "draft_rounds": 5,
     "faab_budget": 100,
     "full_ppr": true,
-    "generated_at": "2026-11-04T00:43:01.927748+00:00",
+    "generated_at": "2026-11-04T06:16:51.625414+00:00",
     "league_id": "1312115903088852992",
     "league_median_match": true,
     "name": "715 Dynasty",
@@ -2661,10 +2825,10 @@
       {
         "faab_remaining": 101,
         "manager": "Ebro51",
-        "pick_count": 15,
+        "pick_count": 14,
         "position_counts": {
           "QB": 4,
-          "RB": 5,
+          "RB": 6,
           "TE": 4,
           "WR": 14
         },
@@ -2841,10 +3005,10 @@
       {
         "faab_remaining": 79,
         "manager": "hoglundcory2",
-        "pick_count": 24,
+        "pick_count": 25,
         "position_counts": {
           "QB": 6,
-          "RB": 10,
+          "RB": 9,
           "TE": 4,
           "WR": 7
         },
@@ -2883,7 +3047,7 @@
   },
   "lineup_efficiency": {
     "all_time": {
-      "generated_at": "2026-11-04T00:43:01.965528+00:00",
+      "generated_at": "2026-11-04T06:16:51.675781+00:00",
       "latest_completed_week": 8,
       "latest_season": "2026",
       "latest_week": {
@@ -4027,7 +4191,7 @@
       "status": "live"
     },
     "current": {
-      "generated_at": "2026-11-04T00:43:01.962561+00:00",
+      "generated_at": "2026-11-04T06:16:51.671958+00:00",
       "latest_completed_week": 8,
       "latest_season": "2026",
       "latest_week": {
@@ -20611,6 +20775,51 @@
             "waiver_successes": 14
           },
           {
+            "faab_spent": 100,
+            "failed_waiver_attempts": 5,
+            "firsts_acquired": 2,
+            "firsts_sent": 2,
+            "free_agent_moves": 10,
+            "manager": "Ebro51",
+            "net_firsts": 0,
+            "owner_id": "1001623087835648000",
+            "picks_acquired": 8,
+            "picks_sent": 14,
+            "players_acquired_trade": 10,
+            "players_added": 8,
+            "players_dropped": 17,
+            "players_sent_trade": 5,
+            "primary_tendency": "Balanced Operator",
+            "roster_moves": 18,
+            "seasons": [
+              "2025",
+              "2026"
+            ],
+            "tags": [
+              "Balanced Operator"
+            ],
+            "team_name": "Shit heads we ride. ",
+            "top_trade_partners": [
+              {
+                "owner_id": "1001624178866429952",
+                "trades": 4
+              },
+              {
+                "owner_id": "988277931761786880",
+                "trades": 2
+              },
+              {
+                "owner_id": "1118960388529344512",
+                "trades": 1
+              }
+            ],
+            "trades": 12,
+            "trades_initiated": 8,
+            "waiver_attempts": 13,
+            "waiver_success_rate": 61.5,
+            "waiver_successes": 8
+          },
+          {
             "faab_spent": 133,
             "failed_waiver_attempts": 12,
             "firsts_acquired": 0,
@@ -20699,51 +20908,6 @@
             "waiver_attempts": 39,
             "waiver_success_rate": 43.6,
             "waiver_successes": 17
-          },
-          {
-            "faab_spent": 100,
-            "failed_waiver_attempts": 5,
-            "firsts_acquired": 2,
-            "firsts_sent": 1,
-            "free_agent_moves": 10,
-            "manager": "Ebro51",
-            "net_firsts": 1,
-            "owner_id": "1001623087835648000",
-            "picks_acquired": 7,
-            "picks_sent": 12,
-            "players_acquired_trade": 9,
-            "players_added": 8,
-            "players_dropped": 17,
-            "players_sent_trade": 5,
-            "primary_tendency": "Balanced Operator",
-            "roster_moves": 18,
-            "seasons": [
-              "2025",
-              "2026"
-            ],
-            "tags": [
-              "Balanced Operator"
-            ],
-            "team_name": "Shit heads we ride. ",
-            "top_trade_partners": [
-              {
-                "owner_id": "1001624178866429952",
-                "trades": 4
-              },
-              {
-                "owner_id": "988277931761786880",
-                "trades": 2
-              },
-              {
-                "owner_id": "446896707632885760",
-                "trades": 1
-              }
-            ],
-            "trades": 11,
-            "trades_initiated": 7,
-            "waiver_attempts": 13,
-            "waiver_success_rate": 61.5,
-            "waiver_successes": 8
           },
           {
             "faab_spent": 100,
@@ -20884,18 +21048,18 @@
           {
             "faab_spent": 121,
             "failed_waiver_attempts": 7,
-            "firsts_acquired": 2,
+            "firsts_acquired": 3,
             "firsts_sent": 0,
             "free_agent_moves": 6,
             "manager": "hoglundcory2",
-            "net_firsts": 2,
+            "net_firsts": 3,
             "owner_id": "1118960388529344512",
-            "picks_acquired": 4,
-            "picks_sent": 0,
+            "picks_acquired": 6,
+            "picks_sent": 1,
             "players_acquired_trade": 2,
             "players_added": 11,
             "players_dropped": 16,
-            "players_sent_trade": 1,
+            "players_sent_trade": 2,
             "primary_tendency": "Pick Hoarder",
             "roster_moves": 17,
             "seasons": [
@@ -20908,11 +21072,15 @@
             "team_name": "I Chase Brown Kids",
             "top_trade_partners": [
               {
+                "owner_id": "1001623087835648000",
+                "trades": 1
+              },
+              {
                 "owner_id": "1136159156404502528",
                 "trades": 1
               }
             ],
-            "trades": 1,
+            "trades": 2,
             "trades_initiated": 0,
             "waiver_attempts": 18,
             "waiver_success_rate": 61.1,
@@ -21018,24 +21186,24 @@
             "faab_spent": 0,
             "failed_waiver_attempts": 0,
             "firsts_acquired": 1,
-            "firsts_sent": 1,
+            "firsts_sent": 2,
             "free_agent_moves": 9,
             "manager": "Ebro51",
-            "net_firsts": 0,
+            "net_firsts": -1,
             "owner_id": "1001623087835648000",
-            "picks_acquired": 4,
-            "picks_sent": 9,
-            "players_acquired_trade": 7,
+            "picks_acquired": 5,
+            "picks_sent": 11,
+            "players_acquired_trade": 8,
             "players_added": 0,
             "players_dropped": 9,
             "players_sent_trade": 4,
-            "primary_tendency": "Balanced Operator",
+            "primary_tendency": "Trade Machine",
             "roster_moves": 9,
             "seasons": [
               "2026"
             ],
             "tags": [
-              "Balanced Operator"
+              "Trade Machine"
             ],
             "team_name": "Shit heads we ride. ",
             "top_trade_partners": [
@@ -21048,12 +21216,12 @@
                 "trades": 2
               },
               {
-                "owner_id": "446896707632885760",
+                "owner_id": "1118960388529344512",
                 "trades": 1
               }
             ],
-            "trades": 8,
-            "trades_initiated": 6,
+            "trades": 9,
+            "trades_initiated": 7,
             "waiver_attempts": 0,
             "waiver_success_rate": null,
             "waiver_successes": 0
@@ -21410,18 +21578,18 @@
           {
             "faab_spent": 21,
             "failed_waiver_attempts": 2,
-            "firsts_acquired": 2,
+            "firsts_acquired": 3,
             "firsts_sent": 0,
             "free_agent_moves": 6,
             "manager": "hoglundcory2",
-            "net_firsts": 2,
+            "net_firsts": 3,
             "owner_id": "1118960388529344512",
-            "picks_acquired": 4,
-            "picks_sent": 0,
+            "picks_acquired": 6,
+            "picks_sent": 1,
             "players_acquired_trade": 2,
             "players_added": 4,
             "players_dropped": 10,
-            "players_sent_trade": 1,
+            "players_sent_trade": 2,
             "primary_tendency": "Pick Hoarder",
             "roster_moves": 10,
             "seasons": [
@@ -21433,11 +21601,15 @@
             "team_name": "I Chase Brown Kids",
             "top_trade_partners": [
               {
+                "owner_id": "1001623087835648000",
+                "trades": 1
+              },
+              {
                 "owner_id": "1136159156404502528",
                 "trades": 1
               }
             ],
-            "trades": 1,
+            "trades": 2,
             "trades_initiated": 0,
             "waiver_attempts": 6,
             "waiver_success_rate": 66.7,
@@ -21489,7 +21661,7 @@
           "roster_id": 2,
           "strength_score": 100.0,
           "team_name": "Puka Nachewa",
-          "title_odds": 63.4
+          "title_odds": 63.3
         },
         {
           "actual_points_for": 1154.15,
@@ -21513,7 +21685,7 @@
           "projected_standings_losses": 6.4,
           "projected_standings_wins": 19.6,
           "roster_id": 9,
-          "strength_score": 84.5,
+          "strength_score": 84.6,
           "team_name": "Matt Prater",
           "title_odds": 9.5
         },
@@ -21532,12 +21704,12 @@
           "model_sd": 30.09,
           "one_seed_odds": 0.0,
           "owner_id": "1136159156404502528",
-          "playoff_odds": 86.5,
+          "playoff_odds": 86.4,
           "prior_mean": 137.77,
           "prior_sd": 16.33,
           "prior_weeks": 13,
-          "projected_standings_losses": 7.9,
-          "projected_standings_wins": 18.1,
+          "projected_standings_losses": 8.0,
+          "projected_standings_wins": 18.0,
           "roster_id": 12,
           "strength_score": 90.3,
           "team_name": "Henry given sunday",
@@ -21558,7 +21730,7 @@
           "model_sd": 40.45,
           "one_seed_odds": 0.0,
           "owner_id": "868747143425499136",
-          "playoff_odds": 53.2,
+          "playoff_odds": 53.3,
           "prior_mean": 105.86,
           "prior_sd": 31.84,
           "prior_weeks": 13,
@@ -21584,14 +21756,14 @@
           "model_sd": 16.56,
           "one_seed_odds": 0.0,
           "owner_id": "846844677612212224",
-          "playoff_odds": 45.1,
+          "playoff_odds": 44.9,
           "prior_mean": 132.0,
           "prior_sd": 16.54,
           "prior_weeks": 13,
           "projected_standings_losses": 9.2,
           "projected_standings_wins": 16.8,
           "roster_id": 7,
-          "strength_score": 78.5,
+          "strength_score": 78.6,
           "team_name": "TEAM MIKE ALSTOTT",
           "title_odds": 1.3
         },
@@ -21617,7 +21789,7 @@
           "projected_standings_losses": 11.5,
           "projected_standings_wins": 14.5,
           "roster_id": 3,
-          "strength_score": 72.4,
+          "strength_score": 72.5,
           "team_name": "Beef Cylinder",
           "title_odds": 0.2
         },
@@ -21629,21 +21801,21 @@
           "current_sd": 25.24,
           "current_weeks": 8,
           "manager": "Ebro51",
-          "market_model_mean": 115.43,
-          "market_strength": 46.5,
+          "market_model_mean": 117.71,
+          "market_strength": 55.6,
           "market_weight": 0.15,
-          "model_mean": 116.43,
+          "model_mean": 116.77,
           "model_sd": 25.24,
           "one_seed_odds": 0.0,
           "owner_id": "1001623087835648000",
-          "playoff_odds": 6.6,
+          "playoff_odds": 6.8,
           "prior_mean": 114.38,
           "prior_sd": 22.34,
           "prior_weeks": 13,
-          "projected_standings_losses": 11.6,
-          "projected_standings_wins": 14.4,
+          "projected_standings_losses": 11.5,
+          "projected_standings_wins": 14.5,
           "roster_id": 10,
-          "strength_score": 68.0,
+          "strength_score": 68.3,
           "team_name": "Shit heads we ride. ",
           "title_odds": 0.0
         },
@@ -21669,7 +21841,7 @@
           "projected_standings_losses": 12.3,
           "projected_standings_wins": 13.7,
           "roster_id": 4,
-          "strength_score": 71.0,
+          "strength_score": 71.1,
           "team_name": null,
           "title_odds": 0.1
         },
@@ -21695,7 +21867,7 @@
           "projected_standings_losses": 16.0,
           "projected_standings_wins": 10.0,
           "roster_id": 1,
-          "strength_score": 65.0,
+          "strength_score": 65.1,
           "team_name": null,
           "title_odds": 0.0
         },
@@ -21721,7 +21893,7 @@
           "projected_standings_losses": 21.2,
           "projected_standings_wins": 4.8,
           "roster_id": 6,
-          "strength_score": 49.5,
+          "strength_score": 49.7,
           "team_name": null,
           "title_odds": 0.0
         },
@@ -21747,7 +21919,7 @@
           "projected_standings_losses": 24.7,
           "projected_standings_wins": 1.3,
           "roster_id": 5,
-          "strength_score": 8.8,
+          "strength_score": 9.0,
           "team_name": "Michael Trigg Sucks Ass",
           "title_odds": 0.0
         },
@@ -21759,10 +21931,10 @@
           "current_sd": 12.0,
           "current_weeks": 8,
           "manager": "hoglundcory2",
-          "market_model_mean": 111.43,
-          "market_strength": 30.5,
+          "market_model_mean": 108.63,
+          "market_strength": 19.3,
           "market_weight": 0.15,
-          "model_mean": 16.87,
+          "model_mean": 16.45,
           "model_sd": 12.0,
           "one_seed_odds": 0.0,
           "owner_id": "1118960388529344512",
@@ -21770,8 +21942,8 @@
           "prior_mean": 106.49,
           "prior_sd": 26.87,
           "prior_weeks": 13,
-          "projected_standings_losses": 25.1,
-          "projected_standings_wins": 0.9,
+          "projected_standings_losses": 25.2,
+          "projected_standings_wins": 0.8,
           "roster_id": 8,
           "strength_score": 0.0,
           "team_name": "I Chase Brown Kids",
@@ -21810,7 +21982,7 @@
           "Roster Balance"
         ],
         "team_name": "Puka Nachewa",
-        "title_odds": 63.4,
+        "title_odds": 63.3,
         "window": "Contender",
         "young_player_share": 33.3
       },
@@ -21824,7 +21996,7 @@
           "draft_capital": 4.9,
           "lineup_management": 100.0,
           "market_value": 64.7,
-          "performance_prior": 84.5,
+          "performance_prior": 84.6,
           "roster_balance": 100.0,
           "stability": 88.0,
           "youth": 56.2
@@ -21866,7 +22038,7 @@
         "model_sd": 40.45,
         "owner_id": "868747143425499136",
         "pick_count": 15,
-        "playoff_odds": 53.2,
+        "playoff_odds": 53.3,
         "risks": [
           "Stability",
           "Draft Capital"
@@ -21880,6 +22052,39 @@
         "title_odds": 6.1,
         "window": "Playoff Hunt",
         "young_player_share": 40.7
+      },
+      {
+        "average_roster_age": 25.2,
+        "early_picks": 8,
+        "first_round_picks": 4,
+        "franchise_score": 64.3,
+        "manager": "Ebro51",
+        "metrics": {
+          "draft_capital": 34.4,
+          "lineup_management": 99.2,
+          "market_value": 55.6,
+          "performance_prior": 68.3,
+          "roster_balance": 100.0,
+          "stability": 53.5,
+          "youth": 70.8
+        },
+        "model_mean": 116.77,
+        "model_sd": 25.24,
+        "owner_id": "1001623087835648000",
+        "pick_count": 14,
+        "playoff_odds": 6.8,
+        "risks": [
+          "Draft Capital"
+        ],
+        "roster_id": 10,
+        "strengths": [
+          "Roster Balance",
+          "Lineup Management"
+        ],
+        "team_name": "Shit heads we ride. ",
+        "title_odds": 0.0,
+        "window": "Retool Needed",
+        "young_player_share": 67.9
       },
       {
         "average_roster_age": 27.2,
@@ -21900,7 +22105,7 @@
         "model_sd": 30.09,
         "owner_id": "1136159156404502528",
         "pick_count": 15,
-        "playoff_odds": 86.5,
+        "playoff_odds": 86.4,
         "risks": [
           "Draft Capital",
           "Youth"
@@ -21916,39 +22121,6 @@
         "young_player_share": 37.0
       },
       {
-        "average_roster_age": 25.1,
-        "early_picks": 9,
-        "first_round_picks": 5,
-        "franchise_score": 62.9,
-        "manager": "Ebro51",
-        "metrics": {
-          "draft_capital": 38.2,
-          "lineup_management": 99.2,
-          "market_value": 46.5,
-          "performance_prior": 68.0,
-          "roster_balance": 100.0,
-          "stability": 53.5,
-          "youth": 75.0
-        },
-        "model_mean": 116.43,
-        "model_sd": 25.24,
-        "owner_id": "1001623087835648000",
-        "pick_count": 15,
-        "playoff_odds": 6.6,
-        "risks": [
-          "Draft Capital"
-        ],
-        "roster_id": 10,
-        "strengths": [
-          "Roster Balance",
-          "Lineup Management"
-        ],
-        "team_name": "Shit heads we ride. ",
-        "title_odds": 0.0,
-        "window": "Retool Needed",
-        "young_player_share": 70.4
-      },
-      {
         "average_roster_age": 27.5,
         "early_picks": 3,
         "first_round_picks": 1,
@@ -21958,7 +22130,7 @@
           "draft_capital": 9.4,
           "lineup_management": 99.7,
           "market_value": 63.9,
-          "performance_prior": 78.5,
+          "performance_prior": 78.6,
           "roster_balance": 100.0,
           "stability": 84.0,
           "youth": 0.0
@@ -21967,7 +22139,7 @@
         "model_sd": 16.56,
         "owner_id": "846844677612212224",
         "pick_count": 8,
-        "playoff_odds": 45.1,
+        "playoff_odds": 44.9,
         "risks": [
           "Youth",
           "Draft Capital"
@@ -21992,7 +22164,7 @@
           "draft_capital": 23.8,
           "lineup_management": 94.0,
           "market_value": 59.5,
-          "performance_prior": 72.4,
+          "performance_prior": 72.5,
           "roster_balance": 100.0,
           "stability": 35.6,
           "youth": 18.8
@@ -22026,7 +22198,7 @@
           "draft_capital": 100.0,
           "lineup_management": 45.2,
           "market_value": 50.0,
-          "performance_prior": 49.5,
+          "performance_prior": 49.7,
           "roster_balance": 0.0,
           "stability": 64.9,
           "youth": 100.0
@@ -22053,13 +22225,13 @@
         "average_roster_age": 24.5,
         "early_picks": 1,
         "first_round_picks": 0,
-        "franchise_score": 56.0,
+        "franchise_score": 56.1,
         "manager": "austinamelse",
         "metrics": {
           "draft_capital": 0.0,
           "lineup_management": 63.0,
           "market_value": 52.5,
-          "performance_prior": 65.0,
+          "performance_prior": 65.1,
           "roster_balance": 100.0,
           "stability": 59.3,
           "youth": 73.1
@@ -22092,7 +22264,7 @@
           "draft_capital": 69.9,
           "lineup_management": 57.3,
           "market_value": 20.4,
-          "performance_prior": 71.0,
+          "performance_prior": 71.1,
           "roster_balance": 66.7,
           "stability": 27.1,
           "youth": 81.2
@@ -22118,23 +22290,23 @@
       },
       {
         "average_roster_age": 24.7,
-        "early_picks": 12,
-        "first_round_picks": 6,
-        "franchise_score": 50.9,
+        "early_picks": 13,
+        "first_round_picks": 7,
+        "franchise_score": 49.1,
         "manager": "hoglundcory2",
         "metrics": {
-          "draft_capital": 47.0,
+          "draft_capital": 50.8,
           "lineup_management": 0.0,
-          "market_value": 30.5,
+          "market_value": 19.3,
           "performance_prior": 50.0,
           "roster_balance": 100.0,
           "stability": 100.0,
-          "youth": 62.5
+          "youth": 66.6
         },
-        "model_mean": 16.87,
+        "model_mean": 16.45,
         "model_sd": 12.0,
         "owner_id": "1118960388529344512",
-        "pick_count": 24,
+        "pick_count": 25,
         "playoff_odds": 0.0,
         "risks": [
           "Lineup Management",
@@ -22148,19 +22320,19 @@
         "team_name": "I Chase Brown Kids",
         "title_odds": 0.0,
         "window": "Rebuilder",
-        "young_player_share": 63.0
+        "young_player_share": 65.4
       },
       {
         "average_roster_age": 24.8,
         "early_picks": 16,
         "first_round_picks": 11,
-        "franchise_score": 37.0,
+        "franchise_score": 37.1,
         "manager": "nathanhoglund",
         "metrics": {
           "draft_capital": 74.3,
           "lineup_management": 42.7,
           "market_value": 11.7,
-          "performance_prior": 8.8,
+          "performance_prior": 9.0,
           "roster_balance": 100.0,
           "stability": 25.9,
           "youth": 68.8
@@ -22206,7 +22378,7 @@
   },
   "power_rankings": {
     "all_time": {
-      "generated_at": "2026-11-04T00:43:01.963192+00:00",
+      "generated_at": "2026-11-04T06:16:51.672621+00:00",
       "latest_completed_week": 8,
       "latest_season": "2026",
       "methodology": "35% career average scoring, 25% all-play, 15% median record, 15% lineup efficiency, 10% head-to-head record. Career scoring is normalized across all loaded regular-season weeks.",
@@ -22792,7 +22964,7 @@
     },
     "current": {
       "basis": "inseason_enriched",
-      "generated_at": "2026-11-04T00:43:02.041348+00:00",
+      "generated_at": "2026-11-04T06:16:51.774667+00:00",
       "latest_completed_week": 8,
       "latest_season": "2026",
       "market_attribution": "Values by Dynasty Dealer — https://www.dynastydealer.com/",
@@ -23055,6 +23227,56 @@
             "ties": 0,
             "wins": 46
           },
+          "average_score": 116.61,
+          "components": {
+            "current_performance": 68.2,
+            "historical_prior": 54.8,
+            "roster_market": 55.6
+          },
+          "h2h": {
+            "losses": 3,
+            "pct": 0.625,
+            "ties": 0,
+            "wins": 5
+          },
+          "historical_prior_score": 54.8,
+          "identity_id": "10",
+          "lineup_efficiency": 90.2,
+          "lineup_weeks": 8,
+          "live_performance_score": 68.2,
+          "luck_index": 10.2,
+          "manager": "Ebro51",
+          "market_strength": 55.6,
+          "median": {
+            "losses": 3,
+            "pct": 0.625,
+            "ties": 0,
+            "wins": 5
+          },
+          "movement": 0,
+          "owner_id": "1001623087835648000",
+          "points_for": 932.85,
+          "points_left_on_bench": 101.55,
+          "power_score": 64.4,
+          "previous_rank": 8,
+          "rank": 6,
+          "recent_3_average": 119.33,
+          "roster_id": 10,
+          "seasons": [
+            "2026"
+          ],
+          "starter_market_value": 53788,
+          "team_name": "Shit heads we ride. ",
+          "total_market_value": 106405,
+          "weeks": 8
+        },
+        {
+          "all_play": {
+            "losses": 42,
+            "pct": 0.5227,
+            "ties": 0,
+            "wins": 46
+          },
           "average_score": 123.55,
           "components": {
             "current_performance": 65.1,
@@ -23087,7 +23309,7 @@
           "points_left_on_bench": 230.0,
           "power_score": 63.4,
           "previous_rank": 7,
-          "rank": 6,
+          "rank": 7,
           "recent_3_average": 111.15,
           "roster_id": 3,
           "seasons": [
@@ -23096,56 +23318,6 @@
           "starter_market_value": 55465,
           "team_name": "Beef Cylinder",
           "total_market_value": 107075,
-          "weeks": 8
-        },
-        {
-          "all_play": {
-            "losses": 42,
-            "pct": 0.5227,
-            "ties": 0,
-            "wins": 46
-          },
-          "average_score": 116.61,
-          "components": {
-            "current_performance": 68.2,
-            "historical_prior": 54.8,
-            "roster_market": 46.5
-          },
-          "h2h": {
-            "losses": 3,
-            "pct": 0.625,
-            "ties": 0,
-            "wins": 5
-          },
-          "historical_prior_score": 54.8,
-          "identity_id": "10",
-          "lineup_efficiency": 90.2,
-          "lineup_weeks": 8,
-          "live_performance_score": 68.2,
-          "luck_index": 10.2,
-          "manager": "Ebro51",
-          "market_strength": 46.5,
-          "median": {
-            "losses": 3,
-            "pct": 0.625,
-            "ties": 0,
-            "wins": 5
-          },
-          "movement": 0,
-          "owner_id": "1001623087835648000",
-          "points_for": 932.85,
-          "points_left_on_bench": 101.55,
-          "power_score": 61.7,
-          "previous_rank": 8,
-          "rank": 7,
-          "recent_3_average": 119.33,
-          "roster_id": 10,
-          "seasons": [
-            "2026"
-          ],
-          "starter_market_value": 52821,
-          "team_name": "Shit heads we ride. ",
-          "total_market_value": 100779,
           "weeks": 8
         },
         {
@@ -23359,7 +23531,7 @@
           "components": {
             "current_performance": 1.6,
             "historical_prior": 18.8,
-            "roster_market": 30.5
+            "roster_market": 19.3
           },
           "h2h": {
             "losses": 7,
@@ -23374,7 +23546,7 @@
           "live_performance_score": 1.6,
           "luck_index": 2.3,
           "manager": "hoglundcory2",
-          "market_strength": 30.5,
+          "market_strength": 19.3,
           "median": {
             "losses": 8,
             "pct": 0.0,
@@ -23385,7 +23557,7 @@
           "owner_id": "1118960388529344512",
           "points_for": 1.5,
           "points_left_on_bench": 1114.1,
-          "power_score": 10.3,
+          "power_score": 6.9,
           "previous_rank": 12,
           "rank": 12,
           "recent_3_average": 0.0,
@@ -23393,9 +23565,9 @@
           "seasons": [
             "2026"
           ],
-          "starter_market_value": 49276,
+          "starter_market_value": 47191,
           "team_name": "I Chase Brown Kids",
-          "total_market_value": 93438,
+          "total_market_value": 87812,
           "weeks": 8
         }
       ],
@@ -23403,6 +23575,90 @@
     }
   },
   "recent_transactions": [
+    {
+      "adds": [
+        {
+          "manager": "Ebro51",
+          "player": {
+            "age": 26,
+            "depth_chart_order": 1,
+            "depth_chart_position": "RB",
+            "fantasy_positions": [
+              "RB"
+            ],
+            "injury_body_part": null,
+            "injury_notes": null,
+            "injury_status": null,
+            "name": "Chase Brown",
+            "player_id": "9224",
+            "position": "RB",
+            "status": "Active",
+            "team": "CIN",
+            "years_exp": 3
+          },
+          "roster_id": 10
+        }
+      ],
+      "created": 1793753121156,
+      "draft_picks": [
+        {
+          "league_id": null,
+          "owner_id": 8,
+          "previous_owner_id": 10,
+          "roster_id": 10,
+          "round": 5,
+          "season": "2027"
+        },
+        {
+          "league_id": null,
+          "owner_id": 8,
+          "previous_owner_id": 10,
+          "roster_id": 10,
+          "round": 1,
+          "season": "2029"
+        },
+        {
+          "league_id": null,
+          "owner_id": 10,
+          "previous_owner_id": 8,
+          "roster_id": 8,
+          "round": 4,
+          "season": "2029"
+        }
+      ],
+      "drops": [
+        {
+          "manager": "hoglundcory2",
+          "player": {
+            "age": 26,
+            "depth_chart_order": 1,
+            "depth_chart_position": "RB",
+            "fantasy_positions": [
+              "RB"
+            ],
+            "injury_body_part": null,
+            "injury_notes": null,
+            "injury_status": null,
+            "name": "Chase Brown",
+            "player_id": "9224",
+            "position": "RB",
+            "status": "Active",
+            "team": "CIN",
+            "years_exp": 3
+          },
+          "roster_id": 8
+        }
+      ],
+      "roster_ids": [
+        8,
+        10
+      ],
+      "status": "complete",
+      "transaction_id": "1423507400861704192",
+      "type": "trade",
+      "waiver_budget": null,
+      "week": 8
+    },
     {
       "adds": [
         {
@@ -24722,69 +24978,11 @@
       "type": "free_agent",
       "waiver_budget": null,
       "week": 6
-    },
-    {
-      "adds": [
-        {
-          "manager": "nathanhoglund",
-          "player": {
-            "age": 31,
-            "depth_chart_order": 6,
-            "depth_chart_position": "SWR",
-            "fantasy_positions": [
-              "WR"
-            ],
-            "injury_body_part": "Ankle",
-            "injury_notes": "Sprain",
-            "injury_status": "Out",
-            "name": "Kendrick Bourne",
-            "player_id": "4454",
-            "position": "WR",
-            "status": "Active",
-            "team": "ARI",
-            "years_exp": 9
-          },
-          "roster_id": 5
-        }
-      ],
-      "created": 1792107072604,
-      "draft_picks": [],
-      "drops": [
-        {
-          "manager": "nathanhoglund",
-          "player": {
-            "age": 24,
-            "depth_chart_order": 3,
-            "depth_chart_position": "RWR",
-            "fantasy_positions": [
-              "WR"
-            ],
-            "injury_body_part": null,
-            "injury_notes": null,
-            "injury_status": null,
-            "name": "Darius Cooper",
-            "player_id": "13150",
-            "position": "WR",
-            "status": "Active",
-            "team": "PHI",
-            "years_exp": 1
-          },
-          "roster_id": 5
-        }
-      ],
-      "roster_ids": [
-        5
-      ],
-      "status": "complete",
-      "transaction_id": "1416603372840144896",
-      "type": "waiver",
-      "waiver_budget": 0,
-      "week": 6
     }
   ],
   "standings_plus": {
     "all_time": {
-      "generated_at": "2026-11-04T00:43:01.964822+00:00",
+      "generated_at": "2026-11-04T06:16:51.674793+00:00",
       "latest_completed_week": 8,
       "latest_season": "2026",
       "status": "live",
@@ -25236,7 +25434,7 @@
       ]
     },
     "current": {
-      "generated_at": "2026-11-04T00:43:01.961521+00:00",
+      "generated_at": "2026-11-04T06:16:51.670505+00:00",
       "latest_completed_week": 8,
       "latest_season": "2026",
       "status": "live",
@@ -25693,7 +25891,7 @@
         "market_rank": 361,
         "market_value": 1730,
         "name": "Carson Wentz",
-        "opportunity_score": 96.2,
+        "opportunity_score": 96.5,
         "performance": {
           "air_yards_share": 0.0,
           "basis": "current",
@@ -25773,143 +25971,15 @@
           "Currently on an NFL roster (MIN).",
           "Depth-chart No. 2: direct contingent path to usage.",
           "Superflex format raises the value of any QB with a path to starts.",
-          "Sleeper market heat: 56,760 adds in the 24h trend window."
+          "Sleeper market heat: 81,066 adds in the 24h trend window."
         ],
         "recent_715_drop": null,
         "status": "Active",
         "team": "MIN",
         "tier": "Priority",
-        "trending_adds_24h": 56760,
+        "trending_adds_24h": 81066,
         "trending_drops_24h": 0,
         "years_exp": 10
-      },
-      {
-        "age": 26,
-        "depth": 3,
-        "depth_chart_order": 3,
-        "depth_chart_position": "QB",
-        "fantasy_positions": [
-          "QB"
-        ],
-        "injury_body_part": null,
-        "injury_notes": null,
-        "injury_status": null,
-        "market_position_rank": 55,
-        "market_rank": 331,
-        "market_value": 2043,
-        "name": "Tyson Bagent",
-        "opportunity_score": 82.2,
-        "performance": {
-          "air_yards_share": 0.0,
-          "basis": "current",
-          "basis_label": "2026",
-          "carries_per_game": 2.33,
-          "fantasy_points_715": 16.25,
-          "games": 3,
-          "gsis_id": "00-0038416",
-          "last3_opportunities_per_game": 23.67,
-          "last3_ppg_715": 5.42,
-          "name": "Tyson Bagent",
-          "offense_snap_pct": 60.3,
-          "opportunities": 71.0,
-          "opportunities_per_game": 23.67,
-          "pfr_id": "BageTy00",
-          "position": "QB",
-          "ppg_715": 5.42,
-          "season": 2026,
-          "sleeper_id": "11256",
-          "target_share": 0.0,
-          "targets_per_game": 0.0,
-          "touches_per_game": 2.33,
-          "weekly": [
-            {
-              "air_yards_share": 0.0,
-              "attempts": 9.0,
-              "carries": 0.0,
-              "fantasy_points_715": 2.7,
-              "offense_snap_pct": 14.0,
-              "offense_snaps": 10.0,
-              "opponent": "MIN",
-              "opportunities": 9.0,
-              "passing_interceptions": 0.0,
-              "passing_tds": 0.0,
-              "passing_yards": 54.0,
-              "receiving_tds": 0.0,
-              "receiving_yards": 0.0,
-              "receptions": 0.0,
-              "rushing_tds": 0.0,
-              "rushing_yards": 0.0,
-              "target_share": 0.0,
-              "targets": 0.0,
-              "team": "CHI",
-              "touches": 0.0,
-              "week": 2
-            },
-            {
-              "air_yards_share": 0.0,
-              "attempts": 34.0,
-              "carries": 4.0,
-              "fantasy_points_715": 11.5,
-              "offense_snap_pct": 100.0,
-              "offense_snaps": 93.0,
-              "opponent": "NYJ",
-              "opportunities": 38.0,
-              "passing_interceptions": 1.0,
-              "passing_tds": 0.0,
-              "passing_yards": 268.0,
-              "receiving_tds": 0.0,
-              "receiving_yards": 0.0,
-              "receptions": 0.0,
-              "rushing_tds": 0.0,
-              "rushing_yards": 1.0,
-              "target_share": 0.0,
-              "targets": 0.0,
-              "team": "CHI",
-              "touches": 4.0,
-              "week": 4
-            },
-            {
-              "air_yards_share": 0.0,
-              "attempts": 21.0,
-              "carries": 3.0,
-              "fantasy_points_715": 2.05,
-              "offense_snap_pct": 67.0,
-              "offense_snaps": 46.0,
-              "opponent": "GB",
-              "opportunities": 24.0,
-              "passing_interceptions": 2.0,
-              "passing_tds": 0.0,
-              "passing_yards": 87.0,
-              "receiving_tds": 0.0,
-              "receiving_yards": 0.0,
-              "receptions": 0.0,
-              "rushing_tds": 0.0,
-              "rushing_yards": 17.0,
-              "target_share": 0.0,
-              "targets": 0.0,
-              "team": "CHI",
-              "touches": 3.0,
-              "week": 5
-            }
-          ]
-        },
-        "player_id": "11256",
-        "position": "QB",
-        "reasons": [
-          "Dynasty Dealer market value 2,043 adds insulation/upside signal.",
-          "current-season usage: 23.7 opportunities/game, 60% offensive snaps, 5.4 715 PPG.",
-          "Currently on an NFL roster (CHI).",
-          "Depth-chart No. 3: plausible contingent upside.",
-          "Superflex format raises the value of any QB with a path to starts.",
-          "Sleeper market heat: 18,024 adds in the 24h trend window."
-        ],
-        "recent_715_drop": null,
-        "status": "Active",
-        "team": "CHI",
-        "tier": "Priority",
-        "trending_adds_24h": 18024,
-        "trending_drops_24h": 0,
-        "years_exp": 3
       },
       {
         "age": 33,
@@ -26053,7 +26123,7 @@
         "market_rank": 442,
         "market_value": 188,
         "name": "Joe Fagnano",
-        "opportunity_score": 69.2,
+        "opportunity_score": 69.9,
         "performance": {
           "air_yards_share": 0.0,
           "basis": "current",
@@ -26109,16 +26179,143 @@
           "Currently on an NFL roster (BAL).",
           "Listed first on the Sleeper depth chart.",
           "Superflex format raises the value of any QB with a path to starts.",
-          "Sleeper market heat: 32,268 adds in the 24h trend window.",
+          "Sleeper market heat: 57,485 adds in the 24h trend window.",
           "Unavailable/injured status is costly because this league has no IR slots."
         ],
         "recent_715_drop": null,
         "status": "Active",
         "team": "BAL",
         "tier": "Strong stash",
-        "trending_adds_24h": 32268,
+        "trending_adds_24h": 57485,
         "trending_drops_24h": 0,
         "years_exp": 0
+      },
+      {
+        "age": 26,
+        "depth": 3,
+        "depth_chart_order": 3,
+        "depth_chart_position": "QB",
+        "fantasy_positions": [
+          "QB"
+        ],
+        "injury_body_part": null,
+        "injury_notes": null,
+        "injury_status": null,
+        "market_position_rank": 55,
+        "market_rank": 331,
+        "market_value": 2043,
+        "name": "Tyson Bagent",
+        "opportunity_score": 65.0,
+        "performance": {
+          "air_yards_share": 0.0,
+          "basis": "current",
+          "basis_label": "2026",
+          "carries_per_game": 2.33,
+          "fantasy_points_715": 16.25,
+          "games": 3,
+          "gsis_id": "00-0038416",
+          "last3_opportunities_per_game": 23.67,
+          "last3_ppg_715": 5.42,
+          "name": "Tyson Bagent",
+          "offense_snap_pct": 60.3,
+          "opportunities": 71.0,
+          "opportunities_per_game": 23.67,
+          "pfr_id": "BageTy00",
+          "position": "QB",
+          "ppg_715": 5.42,
+          "season": 2026,
+          "sleeper_id": "11256",
+          "target_share": 0.0,
+          "targets_per_game": 0.0,
+          "touches_per_game": 2.33,
+          "weekly": [
+            {
+              "air_yards_share": 0.0,
+              "attempts": 9.0,
+              "carries": 0.0,
+              "fantasy_points_715": 2.7,
+              "offense_snap_pct": 14.0,
+              "offense_snaps": 10.0,
+              "opponent": "MIN",
+              "opportunities": 9.0,
+              "passing_interceptions": 0.0,
+              "passing_tds": 0.0,
+              "passing_yards": 54.0,
+              "receiving_tds": 0.0,
+              "receiving_yards": 0.0,
+              "receptions": 0.0,
+              "rushing_tds": 0.0,
+              "rushing_yards": 0.0,
+              "target_share": 0.0,
+              "targets": 0.0,
+              "team": "CHI",
+              "touches": 0.0,
+              "week": 2
+            },
+            {
+              "air_yards_share": 0.0,
+              "attempts": 34.0,
+              "carries": 4.0,
+              "fantasy_points_715": 11.5,
+              "offense_snap_pct": 100.0,
+              "offense_snaps": 93.0,
+              "opponent": "NYJ",
+              "opportunities": 38.0,
+              "passing_interceptions": 1.0,
+              "passing_tds": 0.0,
+              "passing_yards": 268.0,
+              "receiving_tds": 0.0,
+              "receiving_yards": 0.0,
+              "receptions": 0.0,
+              "rushing_tds": 0.0,
+              "rushing_yards": 1.0,
+              "target_share": 0.0,
+              "targets": 0.0,
+              "team": "CHI",
+              "touches": 4.0,
+              "week": 4
+            },
+            {
+              "air_yards_share": 0.0,
+              "attempts": 21.0,
+              "carries": 3.0,
+              "fantasy_points_715": 2.05,
+              "offense_snap_pct": 67.0,
+              "offense_snaps": 46.0,
+              "opponent": "GB",
+              "opportunities": 24.0,
+              "passing_interceptions": 2.0,
+              "passing_tds": 0.0,
+              "passing_yards": 87.0,
+              "receiving_tds": 0.0,
+              "receiving_yards": 0.0,
+              "receptions": 0.0,
+              "rushing_tds": 0.0,
+              "rushing_yards": 17.0,
+              "target_share": 0.0,
+              "targets": 0.0,
+              "team": "CHI",
+              "touches": 3.0,
+              "week": 5
+            }
+          ]
+        },
+        "player_id": "11256",
+        "position": "QB",
+        "reasons": [
+          "Dynasty Dealer market value 2,043 adds insulation/upside signal.",
+          "current-season usage: 23.7 opportunities/game, 60% offensive snaps, 5.4 715 PPG.",
+          "Currently on an NFL roster (CHI).",
+          "Depth-chart No. 3: plausible contingent upside.",
+          "Superflex format raises the value of any QB with a path to starts."
+        ],
+        "recent_715_drop": null,
+        "status": "Active",
+        "team": "CHI",
+        "tier": "Strong stash",
+        "trending_adds_24h": 0,
+        "trending_drops_24h": 0,
+        "years_exp": 3
       },
       {
         "age": 28,
@@ -28029,7 +28226,7 @@
         "market_rank": 353,
         "market_value": 1848,
         "name": "Austin Ekeler",
-        "opportunity_score": 76.4,
+        "opportunity_score": 76.8,
         "performance": {
           "air_yards_share": -0.8,
           "basis": "current",
@@ -28155,13 +28352,13 @@
           "Currently on an NFL roster (WAS).",
           "Depth-chart No. 2: direct contingent path to usage.",
           "RB contingent value can rise quickly with one depth-chart change.",
-          "Sleeper market heat: 34,688 adds in the 24h trend window."
+          "Sleeper market heat: 55,864 adds in the 24h trend window."
         ],
         "recent_715_drop": null,
         "status": "Active",
         "team": "WAS",
         "tier": "Priority",
-        "trending_adds_24h": 34688,
+        "trending_adds_24h": 55864,
         "trending_drops_24h": 0,
         "years_exp": 9
       },
@@ -28398,15 +28595,15 @@
           "Currently on an NFL roster (BAL).",
           "Depth-chart No. 2: direct contingent path to usage.",
           "RB contingent value can rise quickly with one depth-chart change.",
-          "Sleeper market heat: 22,860 adds in the 24h trend window.",
-          "Market headwind: 35,334 drops in the 24h trend window."
+          "Sleeper market heat: 30,690 adds in the 24h trend window.",
+          "Market headwind: 48,078 drops in the 24h trend window."
         ],
         "recent_715_drop": null,
         "status": "Active",
         "team": "BAL",
         "tier": "Strong stash",
-        "trending_adds_24h": 22860,
-        "trending_drops_24h": 35334,
+        "trending_adds_24h": 30690,
+        "trending_drops_24h": 48078,
         "years_exp": 7
       },
       {
@@ -29051,7 +29248,7 @@
         "market_rank": 316,
         "market_value": 2108,
         "name": "Pierre Strong Jr.",
-        "opportunity_score": 53.7,
+        "opportunity_score": 53.6,
         "performance": {
           "air_yards_share": -0.6,
           "basis": "current",
@@ -29177,18 +29374,18 @@
           "Currently on an NFL roster (GB).",
           "Depth-chart No. 3: plausible contingent upside.",
           "RB contingent value can rise quickly with one depth-chart change.",
-          "Market headwind: 27,774 drops in the 24h trend window.",
+          "Market headwind: 36,549 drops in the 24h trend window.",
           "Recently dropped by MayaHuskies; worth checking for a league-specific market reset."
         ],
         "recent_715_drop": {
-          "age_days": 12.3,
+          "age_days": 12.6,
           "manager": "MayaHuskies"
         },
         "status": "Active",
         "team": "GB",
         "tier": "Watch",
         "trending_adds_24h": 0,
-        "trending_drops_24h": 27774,
+        "trending_drops_24h": 36549,
         "years_exp": 4
       },
       {
@@ -29698,6 +29895,111 @@
         "years_exp": 5
       },
       {
+        "age": 28,
+        "depth": null,
+        "depth_chart_order": null,
+        "depth_chart_position": null,
+        "fantasy_positions": [
+          "RB"
+        ],
+        "injury_body_part": null,
+        "injury_notes": null,
+        "injury_status": null,
+        "market_position_rank": 72,
+        "market_rank": 278,
+        "market_value": 2320,
+        "name": "Elijah Mitchell",
+        "opportunity_score": 48.6,
+        "performance": {
+          "air_yards_share": -10.1,
+          "basis": "current",
+          "basis_label": "2026",
+          "carries_per_game": 7.0,
+          "fantasy_points_715": 14.1,
+          "games": 2,
+          "gsis_id": "00-0036567",
+          "last3_opportunities_per_game": 12.0,
+          "last3_ppg_715": 7.05,
+          "name": "Elijah Mitchell",
+          "offense_snap_pct": 39.0,
+          "opportunities": 24.0,
+          "opportunities_per_game": 12.0,
+          "pfr_id": "MitcEl00",
+          "position": "RB",
+          "ppg_715": 7.05,
+          "season": 2026,
+          "sleeper_id": "7561",
+          "target_share": 15.4,
+          "targets_per_game": 5.0,
+          "touches_per_game": 10.5,
+          "weekly": [
+            {
+              "air_yards_share": -0.0888888888888889,
+              "attempts": 0.0,
+              "carries": 3.0,
+              "fantasy_points_715": 6.4,
+              "offense_snap_pct": 21.0,
+              "offense_snaps": 14.0,
+              "opponent": "DAL",
+              "opportunities": 7.0,
+              "passing_interceptions": 0.0,
+              "passing_tds": 0.0,
+              "passing_yards": 0.0,
+              "receiving_tds": 0.0,
+              "receiving_yards": 23.0,
+              "receptions": 3.0,
+              "rushing_tds": 0.0,
+              "rushing_yards": 11.0,
+              "target_share": 0.121212121212121,
+              "targets": 4.0,
+              "team": "PHI",
+              "touches": 6.0,
+              "week": 7
+            },
+            {
+              "air_yards_share": -0.11214953271028,
+              "attempts": 0.0,
+              "carries": 11.0,
+              "fantasy_points_715": 7.7,
+              "offense_snap_pct": 57.0,
+              "offense_snaps": 39.0,
+              "opponent": "WAS",
+              "opportunities": 17.0,
+              "passing_interceptions": 0.0,
+              "passing_tds": 0.0,
+              "passing_yards": 0.0,
+              "receiving_tds": 0.0,
+              "receiving_yards": 3.0,
+              "receptions": 4.0,
+              "rushing_tds": 0.0,
+              "rushing_yards": 34.0,
+              "target_share": 0.1875,
+              "targets": 6.0,
+              "team": "PHI",
+              "touches": 15.0,
+              "week": 8
+            }
+          ]
+        },
+        "player_id": "7561",
+        "position": "RB",
+        "reasons": [
+          "Dynasty Dealer market value 2,320 adds insulation/upside signal.",
+          "current-season usage: 12.0 opportunities/game, 39% offensive snaps, 7.0 715 PPG.",
+          "Currently on an NFL roster (PHI).",
+          "No reliable depth-chart order is currently available.",
+          "Sleeper market heat: 160,272 adds in the 24h trend window.",
+          "Market headwind: 196,326 drops in the 24h trend window."
+        ],
+        "recent_715_drop": null,
+        "status": "Active",
+        "team": "PHI",
+        "tier": "Watch",
+        "trending_adds_24h": 160272,
+        "trending_drops_24h": 196326,
+        "years_exp": 5
+      },
+      {
         "age": 25,
         "depth": 3,
         "depth_chart_order": 3,
@@ -29807,111 +30109,6 @@
         "trending_adds_24h": 0,
         "trending_drops_24h": 0,
         "years_exp": 0
-      },
-      {
-        "age": 28,
-        "depth": null,
-        "depth_chart_order": null,
-        "depth_chart_position": null,
-        "fantasy_positions": [
-          "RB"
-        ],
-        "injury_body_part": null,
-        "injury_notes": null,
-        "injury_status": null,
-        "market_position_rank": 72,
-        "market_rank": 278,
-        "market_value": 2320,
-        "name": "Elijah Mitchell",
-        "opportunity_score": 47.6,
-        "performance": {
-          "air_yards_share": -10.1,
-          "basis": "current",
-          "basis_label": "2026",
-          "carries_per_game": 7.0,
-          "fantasy_points_715": 14.1,
-          "games": 2,
-          "gsis_id": "00-0036567",
-          "last3_opportunities_per_game": 12.0,
-          "last3_ppg_715": 7.05,
-          "name": "Elijah Mitchell",
-          "offense_snap_pct": 39.0,
-          "opportunities": 24.0,
-          "opportunities_per_game": 12.0,
-          "pfr_id": "MitcEl00",
-          "position": "RB",
-          "ppg_715": 7.05,
-          "season": 2026,
-          "sleeper_id": "7561",
-          "target_share": 15.4,
-          "targets_per_game": 5.0,
-          "touches_per_game": 10.5,
-          "weekly": [
-            {
-              "air_yards_share": -0.0888888888888889,
-              "attempts": 0.0,
-              "carries": 3.0,
-              "fantasy_points_715": 6.4,
-              "offense_snap_pct": 21.0,
-              "offense_snaps": 14.0,
-              "opponent": "DAL",
-              "opportunities": 7.0,
-              "passing_interceptions": 0.0,
-              "passing_tds": 0.0,
-              "passing_yards": 0.0,
-              "receiving_tds": 0.0,
-              "receiving_yards": 23.0,
-              "receptions": 3.0,
-              "rushing_tds": 0.0,
-              "rushing_yards": 11.0,
-              "target_share": 0.121212121212121,
-              "targets": 4.0,
-              "team": "PHI",
-              "touches": 6.0,
-              "week": 7
-            },
-            {
-              "air_yards_share": -0.11214953271028,
-              "attempts": 0.0,
-              "carries": 11.0,
-              "fantasy_points_715": 7.7,
-              "offense_snap_pct": 57.0,
-              "offense_snaps": 39.0,
-              "opponent": "WAS",
-              "opportunities": 17.0,
-              "passing_interceptions": 0.0,
-              "passing_tds": 0.0,
-              "passing_yards": 0.0,
-              "receiving_tds": 0.0,
-              "receiving_yards": 3.0,
-              "receptions": 4.0,
-              "rushing_tds": 0.0,
-              "rushing_yards": 34.0,
-              "target_share": 0.1875,
-              "targets": 6.0,
-              "team": "PHI",
-              "touches": 15.0,
-              "week": 8
-            }
-          ]
-        },
-        "player_id": "7561",
-        "position": "RB",
-        "reasons": [
-          "Dynasty Dealer market value 2,320 adds insulation/upside signal.",
-          "current-season usage: 12.0 opportunities/game, 39% offensive snaps, 7.0 715 PPG.",
-          "Currently on an NFL roster (PHI).",
-          "No reliable depth-chart order is currently available.",
-          "Sleeper market heat: 73,971 adds in the 24h trend window.",
-          "Market headwind: 158,859 drops in the 24h trend window."
-        ],
-        "recent_715_drop": null,
-        "status": "Active",
-        "team": "PHI",
-        "tier": "Watch",
-        "trending_adds_24h": 73971,
-        "trending_drops_24h": 158859,
-        "years_exp": 5
       },
       {
         "age": 32,
@@ -30794,7 +30991,7 @@
         "market_rank": 219,
         "market_value": 2651,
         "name": "Mike Gesicki",
-        "opportunity_score": 88.1,
+        "opportunity_score": 88.2,
         "performance": {
           "air_yards_share": 11.9,
           "basis": "current",
@@ -30988,13 +31185,13 @@
           "current-season usage: 3.4 opportunities/game, 47% offensive snaps, 11.0 715 PPG.",
           "Currently on an NFL roster (CIN).",
           "Listed first on the Sleeper depth chart.",
-          "Sleeper market heat: 288,148 adds in the 24h trend window."
+          "Sleeper market heat: 390,264 adds in the 24h trend window."
         ],
         "recent_715_drop": null,
         "status": "Active",
         "team": "CIN",
         "tier": "Priority",
-        "trending_adds_24h": 288148,
+        "trending_adds_24h": 390264,
         "trending_drops_24h": 0,
         "years_exp": 8
       },
@@ -31013,7 +31210,7 @@
         "market_rank": 244,
         "market_value": 2483,
         "name": "Greg Dulcich",
-        "opportunity_score": 83.9,
+        "opportunity_score": 84.3,
         "performance": {
           "air_yards_share": 11.9,
           "basis": "current",
@@ -31207,13 +31404,13 @@
           "current-season usage: 4.0 opportunities/game, 67% offensive snaps, 7.1 715 PPG.",
           "Currently on an NFL roster (MIA).",
           "Listed first on the Sleeper depth chart.",
-          "Sleeper market heat: 26,388 adds in the 24h trend window."
+          "Sleeper market heat: 40,064 adds in the 24h trend window."
         ],
         "recent_715_drop": null,
         "status": "Active",
         "team": "MIA",
         "tier": "Priority",
-        "trending_adds_24h": 26388,
+        "trending_adds_24h": 40064,
         "trending_drops_24h": 0,
         "years_exp": 4
       },
@@ -31232,7 +31429,7 @@
         "market_rank": 212,
         "market_value": 2700,
         "name": "Cade Otton",
-        "opportunity_score": 74.0,
+        "opportunity_score": 66.0,
         "performance": {
           "air_yards_share": 15.1,
           "basis": "current",
@@ -31448,16 +31645,12 @@
           "Dynasty Dealer market value 2,700 adds insulation/upside signal.",
           "current-season usage: 3.8 opportunities/game, 94% offensive snaps, 4.7 715 PPG.",
           "Currently on an NFL roster (TB).",
-          "Listed first on the Sleeper depth chart.",
-          "Recently dropped by ryansorensen8; worth checking for a league-specific market reset."
+          "Listed first on the Sleeper depth chart."
         ],
-        "recent_715_drop": {
-          "age_days": 13.9,
-          "manager": "ryansorensen8"
-        },
+        "recent_715_drop": null,
         "status": "Active",
         "team": "TB",
-        "tier": "Priority",
+        "tier": "Strong stash",
         "trending_adds_24h": 0,
         "trending_drops_24h": 0,
         "years_exp": 4
@@ -35679,7 +35872,7 @@
           "Recently dropped by Waldo23; worth checking for a league-specific market reset."
         ],
         "recent_715_drop": {
-          "age_days": 6.5,
+          "age_days": 6.8,
           "manager": "Waldo23"
         },
         "status": "Active",
@@ -39015,39 +39208,39 @@
       ]
     },
     {
-      "count_fit_score": 9.7,
-      "fit_score": 6.6,
+      "count_fit_score": 9.4,
+      "fit_score": 6.4,
       "manager": "Ebro51",
       "market": {
         "position_scores": {
           "QB": 43.9,
-          "RB": 42.0,
+          "RB": 58.5,
           "TE": 76.1,
           "WR": 68.7
         },
-        "their_market_rank": 8,
-        "their_starter_value": 52821,
-        "their_total_value": 100779
+        "their_market_rank": 7,
+        "their_starter_value": 53788,
+        "their_total_value": 106405
       },
       "market_fit_score": 0.0,
       "pick_summary": {
         "by_round": {
-          "1": 5,
+          "1": 4,
           "2": 4,
           "3": 4,
-          "4": 1,
-          "5": 1
+          "4": 2,
+          "5": 0
         },
         "by_year": {
           "2026": 6,
-          "2027": 4,
+          "2027": 3,
           "2028": 2,
           "2029": 3
         },
-        "early_picks": 9,
-        "firsts": 5,
+        "early_picks": 8,
+        "firsts": 4,
         "seconds": 4,
-        "total": 15
+        "total": 14
       },
       "reasons": [
         "You have relative RB depth that matches one of their needs.",
@@ -39061,7 +39254,7 @@
         {
           "label": "thin",
           "position": "RB",
-          "strength": 2.42
+          "strength": 1.42
         }
       ],
       "their_surpluses": [
@@ -39083,7 +39276,7 @@
           "TE": 0.0,
           "WR": 88.0
         },
-        "their_market_rank": 10,
+        "their_market_rank": 9,
         "their_starter_value": 45467,
         "their_total_value": 91020
       },
@@ -39252,33 +39445,33 @@
       "market": {
         "position_scores": {
           "QB": 40.8,
-          "RB": 75.3,
+          "RB": 58.7,
           "TE": 49.9,
           "WR": 0.0
         },
-        "their_market_rank": 9,
-        "their_starter_value": 49276,
-        "their_total_value": 93438
+        "their_market_rank": 10,
+        "their_starter_value": 47191,
+        "their_total_value": 87812
       },
       "market_fit_score": 0.0,
       "pick_summary": {
         "by_round": {
-          "1": 6,
+          "1": 7,
           "2": 6,
           "3": 4,
-          "4": 4,
-          "5": 4
+          "4": 3,
+          "5": 5
         },
         "by_year": {
           "2026": 5,
-          "2027": 6,
+          "2027": 7,
           "2028": 7,
           "2029": 6
         },
-        "early_picks": 12,
-        "firsts": 6,
+        "early_picks": 13,
+        "firsts": 7,
         "seconds": 6,
-        "total": 24
+        "total": 25
       },
       "reasons": [
         "They hold meaningfully more 1st/2nd-round draft capital.",
@@ -39297,7 +39490,7 @@
         {
           "label": "deep",
           "position": "RB",
-          "strength": 2.58
+          "strength": 1.58
         },
         {
           "label": "deep",
@@ -39529,7 +39722,7 @@
           "TE": 97.9,
           "WR": 44.1
         },
-        "their_market_rank": 7,
+        "their_market_rank": 8,
         "their_starter_value": 53354,
         "their_total_value": 104595
       },
