@@ -1,6 +1,6 @@
 {
   "context_methodology": "Time-decayed, source-weighted context. Narrative effects are capped at ±8%, combined workload context at ±12%, and availability remains a separate guardrail. Every adjustment retains its source and explanation.",
-  "generated_at": "2026-11-05T19:55:12.238146+00:00",
+  "generated_at": "2026-11-05T22:08:07.982284+00:00",
   "methodology": "Signal score, not dynasty market value. Uses confirmed league availability, NFL roster status, depth chart, age, league format, Sleeper 24h add/drop trends, recent 715 drops, and injury/IR-slot context. Phase 4.6 adds Dynasty Dealer market value plus nflverse offensive snap share, opportunities, 715-scoring production, and current usage trend. Prior-season performance is deliberately discounted until current-season data exists.",
   "players": [
     {
@@ -1085,7 +1085,7 @@
         "Recently dropped by ryansorensen8; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 2.7,
+        "age_days": 2.8,
         "manager": "ryansorensen8"
       },
       "status": "Active",
@@ -1233,8 +1233,8 @@
         "net_direction": "positive",
         "opportunity_score_adjustment": 2.0,
         "player_id": "8207",
-        "research_mention_count": 1,
-        "signal_count": 3,
+        "research_mention_count": 0,
+        "signal_count": 2,
         "signals": [
           {
             "corroboration_count": 1,
@@ -1245,7 +1245,7 @@
             "origin": "measured_usage",
             "player_id": "8207",
             "player_name": "Tyler Goodson",
-            "published_at": "2026-11-05T19:55:14.144971+00:00",
+            "published_at": "2026-11-05T22:08:09.789259+00:00",
             "reliability": 0.9,
             "signal_id": "usage-trend-8207",
             "source": "nflverse play-by-play",
@@ -1265,7 +1265,7 @@
             "origin": "sleeper",
             "player_id": "8207",
             "player_name": "Tyler Goodson",
-            "published_at": "2026-11-05T19:55:14.144971+00:00",
+            "published_at": "2026-11-05T22:08:09.789259+00:00",
             "reliability": 0.65,
             "signal_id": "sleeper-depth-8207",
             "source": "Sleeper depth chart",
@@ -1275,27 +1275,6 @@
             "type": "depth_chart",
             "url": null,
             "weighted_score": 0.13
-          },
-          {
-            "corroboration_count": 1,
-            "direction": 0.0,
-            "event_date": null,
-            "impact": "context",
-            "magnitude": 0.0,
-            "origin": "curated_report",
-            "player_id": "8207",
-            "player_name": "Tyler Goodson",
-            "published_at": "2026-11-01T20:00:12+00:00",
-            "reliability": 0.45,
-            "scored": false,
-            "signal_id": "22a75cb18bc5fe3d5f88",
-            "source": "NFL.com",
-            "source_type": "aggregator",
-            "summary": "Tyler Goodson returns kickoff 45-yard to set up Cowboys near midfield - NFL.com",
-            "ttl_days": 7,
-            "type": "news",
-            "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOX3BXcy1lYkp3NFdpYzJFbHprSnBGd0UxZkFnWGVqZlAxZmNTRHRfWWV1SHJqRUZQZ1lSYy1tS2dUTE53Wk5xWHRoRlNfaFlrUVJfS0pfN1FtQVptWU81U3ZIeGxMOU1sNERwZ3E1NE5sa0hJdF9YSUpSTEFRMWRZNGpldk01dHpwNmpCUkxaczlFQm96Rnhhdi1GN3o?oc=5",
-            "weighted_score": 0.0
           }
         ],
         "weekly_multiplier": 1.033
@@ -2262,7 +2241,7 @@
             "origin": "sleeper",
             "player_id": "8111",
             "player_name": "Cade Otton",
-            "published_at": "2026-11-05T19:55:14.144971+00:00",
+            "published_at": "2026-11-05T22:08:09.789259+00:00",
             "reliability": 0.65,
             "signal_id": "sleeper-depth-8111",
             "source": "Sleeper depth chart",
@@ -2282,7 +2261,7 @@
             "origin": "measured_usage",
             "player_id": "8111",
             "player_name": "Cade Otton",
-            "published_at": "2026-11-05T19:55:14.144971+00:00",
+            "published_at": "2026-11-05T22:08:09.789259+00:00",
             "reliability": 0.9,
             "signal_id": "usage-trend-8111",
             "source": "nflverse play-by-play",
@@ -3192,7 +3171,7 @@
             "origin": "sleeper",
             "player_id": "6865",
             "player_name": "Colby Parkinson",
-            "published_at": "2026-11-05T19:55:14.144971+00:00",
+            "published_at": "2026-11-05T22:08:09.789259+00:00",
             "reliability": 0.82,
             "signal_id": "sleeper-injury-6865",
             "source": "Sleeper player status",
@@ -3212,7 +3191,7 @@
             "origin": "sleeper",
             "player_id": "6865",
             "player_name": "Colby Parkinson",
-            "published_at": "2026-11-05T19:55:14.144971+00:00",
+            "published_at": "2026-11-05T22:08:09.789259+00:00",
             "reliability": 0.65,
             "signal_id": "sleeper-depth-6865",
             "source": "Sleeper depth chart",
@@ -3232,7 +3211,7 @@
             "origin": "measured_usage",
             "player_id": "6865",
             "player_name": "Colby Parkinson",
-            "published_at": "2026-11-05T19:55:14.144971+00:00",
+            "published_at": "2026-11-05T22:08:09.789259+00:00",
             "reliability": 0.9,
             "signal_id": "usage-trend-6865",
             "source": "nflverse play-by-play",
@@ -4212,7 +4191,7 @@
             "origin": "measured_usage",
             "player_id": "11593",
             "player_name": "Brevyn Spann-Ford",
-            "published_at": "2026-11-05T19:55:14.144971+00:00",
+            "published_at": "2026-11-05T22:08:09.789259+00:00",
             "reliability": 0.9,
             "signal_id": "usage-trend-11593",
             "source": "nflverse play-by-play",
@@ -4232,7 +4211,7 @@
             "origin": "sleeper",
             "player_id": "11593",
             "player_name": "Brevyn Spann-Ford",
-            "published_at": "2026-11-05T19:55:14.144971+00:00",
+            "published_at": "2026-11-05T22:08:09.789259+00:00",
             "reliability": 0.65,
             "signal_id": "sleeper-depth-11593",
             "source": "Sleeper depth chart",
@@ -6461,7 +6440,7 @@
             "origin": "sleeper",
             "player_id": "11575",
             "player_name": "Ray Davis",
-            "published_at": "2026-11-05T19:55:14.144971+00:00",
+            "published_at": "2026-11-05T22:08:09.789259+00:00",
             "reliability": 0.65,
             "signal_id": "sleeper-depth-11575",
             "source": "Sleeper depth chart",
@@ -6481,7 +6460,7 @@
             "origin": "measured_usage",
             "player_id": "11575",
             "player_name": "Ray Davis",
-            "published_at": "2026-11-05T19:55:14.144971+00:00",
+            "published_at": "2026-11-05T22:08:09.789259+00:00",
             "reliability": 0.9,
             "signal_id": "usage-trend-11575",
             "source": "nflverse play-by-play",
@@ -6736,7 +6715,7 @@
             "origin": "sleeper",
             "player_id": "2505",
             "player_name": "Darren Waller",
-            "published_at": "2026-11-05T19:55:14.144971+00:00",
+            "published_at": "2026-11-05T22:08:09.789259+00:00",
             "reliability": 0.65,
             "signal_id": "sleeper-depth-2505",
             "source": "Sleeper depth chart",
@@ -6756,7 +6735,7 @@
             "origin": "measured_usage",
             "player_id": "2505",
             "player_name": "Darren Waller",
-            "published_at": "2026-11-05T19:55:14.144971+00:00",
+            "published_at": "2026-11-05T22:08:09.789259+00:00",
             "reliability": 0.9,
             "signal_id": "usage-trend-2505",
             "source": "nflverse play-by-play",
@@ -6983,7 +6962,7 @@
         "Recently dropped by ryansorensen8; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 2.7,
+        "age_days": 2.8,
         "manager": "ryansorensen8"
       },
       "status": "Active",
@@ -7195,7 +7174,7 @@
         "Recently dropped by Waldo23; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 8.3,
+        "age_days": 8.4,
         "manager": "Waldo23"
       },
       "status": "Active",
@@ -8119,7 +8098,7 @@
         "Recently dropped by Amelse; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 1.0,
+        "age_days": 1.1,
         "manager": "Amelse"
       },
       "status": "Active",
@@ -8427,7 +8406,7 @@
             "origin": "sleeper",
             "player_id": "13273",
             "player_name": "Josh Cuevas",
-            "published_at": "2026-11-05T19:55:14.144971+00:00",
+            "published_at": "2026-11-05T22:08:09.789259+00:00",
             "reliability": 0.65,
             "signal_id": "sleeper-depth-13273",
             "source": "Sleeper depth chart",
@@ -8447,7 +8426,7 @@
             "origin": "measured_usage",
             "player_id": "13273",
             "player_name": "Josh Cuevas",
-            "published_at": "2026-11-05T19:55:14.144971+00:00",
+            "published_at": "2026-11-05T22:08:09.789259+00:00",
             "reliability": 0.9,
             "signal_id": "usage-trend-13273",
             "source": "nflverse play-by-play",
