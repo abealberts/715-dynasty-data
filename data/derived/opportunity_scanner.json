@@ -1,6 +1,6 @@
 {
   "context_methodology": "Time-decayed, source-weighted context. Narrative effects are capped at ±8%, combined workload context at ±12%, and availability remains a separate guardrail. Every adjustment retains its source and explanation.",
-  "generated_at": "2026-11-11T18:01:06.052811+00:00",
+  "generated_at": "2026-11-11T22:54:47.438448+00:00",
   "market_attribution": "Values by Dynasty Dealer — https://www.dynastydealer.com/",
   "methodology": "Signal score, not dynasty market value. Uses confirmed league availability, NFL roster status, depth chart, age, league format, Sleeper 24h add/drop trends, recent 715 drops, and injury/IR-slot context. Phase 4.6 adds Dynasty Dealer market value plus nflverse offensive snap share, opportunities, 715-scoring production, and current usage trend. Prior-season performance is deliberately discounted until current-season data exists.",
   "performance_attribution": "NFL performance data via nflverse — https://nflverse.com/",
@@ -133,7 +133,7 @@
             "origin": "measured_usage",
             "player_id": "5995",
             "player_name": "Justice Hill",
-            "published_at": "2026-11-11T18:01:07.573391+00:00",
+            "published_at": "2026-11-11T22:54:48.925828+00:00",
             "reliability": 0.9,
             "signal_id": "usage-trend-5995",
             "source": "nflverse play-by-play",
@@ -153,7 +153,7 @@
             "origin": "sleeper",
             "player_id": "5995",
             "player_name": "Justice Hill",
-            "published_at": "2026-11-11T18:01:07.573391+00:00",
+            "published_at": "2026-11-11T22:54:48.925828+00:00",
             "reliability": 0.65,
             "signal_id": "sleeper-depth-5995",
             "source": "Sleeper depth chart",
@@ -691,7 +691,7 @@
         "Recently dropped by ryansorensen8; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 8.6,
+        "age_days": 8.8,
         "manager": "ryansorensen8"
       },
       "status": "Active",
@@ -723,7 +723,7 @@
             "origin": "measured_usage",
             "player_id": "8116",
             "player_name": "Pierre Strong Jr.",
-            "published_at": "2026-11-11T18:01:07.573391+00:00",
+            "published_at": "2026-11-11T22:54:48.925828+00:00",
             "reliability": 0.9,
             "signal_id": "usage-trend-8116",
             "source": "nflverse play-by-play",
@@ -743,7 +743,7 @@
             "origin": "sleeper",
             "player_id": "8116",
             "player_name": "Pierre Strong Jr.",
-            "published_at": "2026-11-11T18:01:07.573391+00:00",
+            "published_at": "2026-11-11T22:54:48.925828+00:00",
             "reliability": 0.65,
             "signal_id": "sleeper-depth-8116",
             "source": "Sleeper depth chart",
@@ -1154,7 +1154,7 @@
         "Recently dropped by Waldo23; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 3.3,
+        "age_days": 3.5,
         "manager": "Waldo23"
       },
       "status": "Active",
@@ -1416,8 +1416,8 @@
         "net_direction": "neutral",
         "opportunity_score_adjustment": -1.8,
         "player_id": "3155",
-        "research_mention_count": 0,
-        "signal_count": 2,
+        "research_mention_count": 1,
+        "signal_count": 3,
         "signals": [
           {
             "corroboration_count": 1,
@@ -1428,7 +1428,7 @@
             "origin": "sleeper",
             "player_id": "3155",
             "player_name": "Laquon Treadwell",
-            "published_at": "2026-11-11T18:01:07.573391+00:00",
+            "published_at": "2026-11-11T22:54:48.925828+00:00",
             "reliability": 0.65,
             "signal_id": "sleeper-depth-3155",
             "source": "Sleeper depth chart",
@@ -1448,7 +1448,7 @@
             "origin": "measured_usage",
             "player_id": "3155",
             "player_name": "Laquon Treadwell",
-            "published_at": "2026-11-11T18:01:07.573391+00:00",
+            "published_at": "2026-11-11T22:54:48.925828+00:00",
             "reliability": 0.9,
             "signal_id": "usage-trend-3155",
             "source": "nflverse play-by-play",
@@ -1458,6 +1458,27 @@
             "type": "usage_trend",
             "url": "https://nflverse.com/",
             "weighted_score": -0.18
+          },
+          {
+            "corroboration_count": 1,
+            "direction": 0.0,
+            "event_date": null,
+            "impact": "context",
+            "magnitude": 0.0,
+            "origin": "curated_report",
+            "player_id": "3155",
+            "player_name": "Laquon Treadwell",
+            "published_at": "2026-11-11T05:56:14+00:00",
+            "reliability": 0.45,
+            "scored": false,
+            "signal_id": "8fb4423eb471f1acd0a1",
+            "source": "RotoBaller",
+            "source_type": "aggregator",
+            "summary": "Laquon Treadwell: Must-Add Waiver Wire Pickup for Week 10 Fantasy Football? - NFL News - RotoBaller",
+            "ttl_days": 7,
+            "type": "news",
+            "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPbWsyaXd1WnBma2doT2k3VjVLNm16TVY5MkI1V0ZoM2hTcEdmamlLamJ6WURodEZJTzc0N3V0c0ZDNEpFR3RqeVJ2a2hYbWlBRm1YRVNibkNzMFN6Vm84aWJDa2dNZkw1Y0o3WW5WdnU0dktsMm9BZ2M5QlBzSHhBd2JzYkViYkk0R0VJbTBQRlJrdmp2cUFfbWItZDQza1Zud2R5OFlWVmo?oc=5",
+            "weighted_score": 0.0
           }
         ],
         "weekly_multiplier": 1.008
@@ -1749,7 +1770,7 @@
             "origin": "measured_usage",
             "player_id": "6865",
             "player_name": "Colby Parkinson",
-            "published_at": "2026-11-11T18:01:07.573391+00:00",
+            "published_at": "2026-11-11T22:54:48.925828+00:00",
             "reliability": 0.9,
             "signal_id": "usage-trend-6865",
             "source": "nflverse play-by-play",
@@ -1769,7 +1790,7 @@
             "origin": "sleeper",
             "player_id": "6865",
             "player_name": "Colby Parkinson",
-            "published_at": "2026-11-11T18:01:07.573391+00:00",
+            "published_at": "2026-11-11T22:54:48.925828+00:00",
             "reliability": 0.65,
             "signal_id": "sleeper-depth-6865",
             "source": "Sleeper depth chart",
@@ -2261,7 +2282,7 @@
         "Recently dropped by Amelse; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 7.0,
+        "age_days": 7.2,
         "manager": "Amelse"
       },
       "status": "Active",
@@ -3316,7 +3337,7 @@
         "Recently dropped by ryansorensen8; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 8.6,
+        "age_days": 8.8,
         "manager": "ryansorensen8"
       },
       "status": "Active",
@@ -4139,7 +4160,7 @@
         "Recently dropped by NolanFarts; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 3.0,
+        "age_days": 3.2,
         "manager": "NolanFarts"
       },
       "status": "Active",
@@ -5716,7 +5737,7 @@
         "Recently dropped by MayaHuskies; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 3.6,
+        "age_days": 3.8,
         "manager": "MayaHuskies"
       },
       "status": "Active",
@@ -9951,7 +9972,7 @@
             "origin": "sleeper",
             "player_id": "11575",
             "player_name": "Ray Davis",
-            "published_at": "2026-11-11T18:01:07.573391+00:00",
+            "published_at": "2026-11-11T22:54:48.925828+00:00",
             "reliability": 0.65,
             "signal_id": "sleeper-depth-11575",
             "source": "Sleeper depth chart",
@@ -9971,7 +9992,7 @@
             "origin": "measured_usage",
             "player_id": "11575",
             "player_name": "Ray Davis",
-            "published_at": "2026-11-11T18:01:07.573391+00:00",
+            "published_at": "2026-11-11T22:54:48.925828+00:00",
             "reliability": 0.9,
             "signal_id": "usage-trend-11575",
             "source": "nflverse play-by-play",
@@ -11727,7 +11748,7 @@
         "Recently dropped by NolanFarts; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 7.8,
+        "age_days": 8.0,
         "manager": "NolanFarts"
       },
       "status": "Active",
@@ -15876,7 +15897,7 @@
         "Recently dropped by Amelse; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 7.0,
+        "age_days": 7.2,
         "manager": "Amelse"
       },
       "status": "Active",
@@ -17634,7 +17655,7 @@
         "Recently dropped by Ebro51; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 6.9,
+        "age_days": 7.1,
         "manager": "Ebro51"
       },
       "status": "Active",
@@ -34310,7 +34331,7 @@
             "origin": "sleeper",
             "player_id": "11068",
             "player_name": "Mitch Tinsley",
-            "published_at": "2026-11-11T18:01:07.573391+00:00",
+            "published_at": "2026-11-11T22:54:48.925828+00:00",
             "reliability": 0.65,
             "signal_id": "sleeper-depth-11068",
             "source": "Sleeper depth chart",
@@ -34330,7 +34351,7 @@
             "origin": "measured_usage",
             "player_id": "11068",
             "player_name": "Mitch Tinsley",
-            "published_at": "2026-11-11T18:01:07.573391+00:00",
+            "published_at": "2026-11-11T22:54:48.925828+00:00",
             "reliability": 0.9,
             "signal_id": "usage-trend-11068",
             "source": "nflverse play-by-play",
