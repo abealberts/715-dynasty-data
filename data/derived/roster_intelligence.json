@@ -32,11 +32,11 @@
       "cost_or_cut": "Likely cut: Ty Johnson; verify lineup, taxi and IR constraints first.",
       "priority": 5,
       "projected_advantage": null,
-      "rationale": "Dynasty Dealer market value 1,800 adds insulation/upside signal. current-season usage: 6.4 opportunities/game, 25% offensive snaps, 4.2 715 PPG.",
+      "rationale": "Current context adjusts the opportunity score +2.9. Dynasty Dealer market value 1,634 adds insulation/upside signal.",
       "recommendation": "Do not submit the move until role, current news and roster fit are verified.",
       "risk": "Opportunity score is a discovery signal, not proof of future touches or trade value.",
       "title": "Compare Austin Ekeler with Ty Johnson",
-      "upside": "Candidate market value 1,800 versus 1,700 for the likely cut.",
+      "upside": "Candidate market value 1,634 versus 1,895 for the likely cut.",
       "urgency": "Monitor waiver window",
       "verified_available": true
     },
@@ -46,11 +46,11 @@
       "cost_or_cut": "Likely cut: Elijah Arroyo; verify lineup, taxi and IR constraints first.",
       "priority": 5,
       "projected_advantage": null,
-      "rationale": "Dynasty Dealer market value 2,607 adds insulation/upside signal. current-season usage: 3.5 opportunities/game, 65% offensive snaps, 7.8 715 PPG.",
+      "rationale": "Dynasty Dealer market value 2,548 adds insulation/upside signal. current-season usage: 3.5 opportunities/game, 65% offensive snaps, 7.8 715 PPG.",
       "recommendation": "Do not submit the move until role, current news and roster fit are verified.",
       "risk": "Opportunity score is a discovery signal, not proof of future touches or trade value.",
       "title": "Compare Darnell Washington with Elijah Arroyo",
-      "upside": "Candidate market value 2,607 versus 2,319 for the likely cut.",
+      "upside": "Candidate market value 2,548 versus 2,228 for the likely cut.",
       "urgency": "Monitor waiver window",
       "verified_available": true
     },
@@ -137,13 +137,13 @@
     "actionable_context_reports": 5,
     "coach_beat_reporter_players": 0,
     "context_signal_players": 27,
-    "curated_context_reports": 229,
+    "curated_context_reports": 228,
     "current_season_performance_samples": 25,
     "market_values": 27,
     "news_players": 27,
     "objective_context_signals": 51,
     "performance_samples": 26,
-    "research_mentions": 224,
+    "research_mentions": 223,
     "research_status": "available",
     "roster_players": 27
   },
@@ -155,17 +155,17 @@
     "status": "decision_ready"
   },
   "freshness": {
-    "external_sync_generated_at": "2026-11-12T18:33:25.829176+00:00",
-    "market_provider_timestamp": "2026-11-12T18:33:26.158Z",
+    "external_sync_generated_at": "2026-11-13T18:00:11.693402+00:00",
+    "market_provider_timestamp": "2026-11-13T18:00:12.053Z",
     "performance_basis": [
       "2025",
       "2026"
     ],
-    "player_context_generated_at": "2026-11-13T16:43:08.743283+00:00",
-    "research_generated_at": "2026-11-13T16:43:08.743283+00:00",
-    "sleeper_data_checked_at": "2026-11-13T16:43:09.013061+00:00"
+    "player_context_generated_at": "2026-11-13T18:00:15.430249+00:00",
+    "research_generated_at": "2026-11-13T18:00:15.430249+00:00",
+    "sleeper_data_checked_at": "2026-11-13T18:00:15.632774+00:00"
   },
-  "generated_at": "2026-11-13T16:43:09.509625+00:00",
+  "generated_at": "2026-11-13T18:00:16.005022+00:00",
   "lineup": {
     "actionable_projected_advantage": 5.04,
     "changes": [
@@ -189,10 +189,10 @@
         "name": "Jayden Daniels",
         "player_id": "11566",
         "position": "QB",
-        "projected_ceiling": 25.2,
-        "projected_floor": 18.0,
-        "projected_points": 21.7,
-        "projection_basis": "2026 715 PPG blended with recent form; current context multiplier 1.051 applied",
+        "projected_ceiling": 24.3,
+        "projected_floor": 18.1,
+        "projected_points": 21.66,
+        "projection_basis": "2026 715 PPG blended with recent form; current context multiplier 1.044 applied",
         "slot": "QB",
         "slot_label": "QB",
         "team": "WAS"
@@ -318,7 +318,7 @@
         "team": "PIT"
       }
     ],
-    "current_projected_points": 133.2,
+    "current_projected_points": 133.16,
     "decision_thresholds": {
       "availability_guardrail": true,
       "close_call_below": 3,
@@ -334,10 +334,10 @@
         "name": "Jayden Daniels",
         "player_id": "11566",
         "position": "QB",
-        "projected_ceiling": 25.2,
-        "projected_floor": 18.0,
-        "projected_points": 21.7,
-        "projection_basis": "2026 715 PPG blended with recent form; current context multiplier 1.051 applied",
+        "projected_ceiling": 24.3,
+        "projected_floor": 18.1,
+        "projected_points": 21.66,
+        "projection_basis": "2026 715 PPG blended with recent form; current context multiplier 1.044 applied",
         "slot": "QB",
         "slot_label": "QB",
         "team": "WAS"
@@ -463,230 +463,32 @@
         "team": "PIT"
       }
     ],
-    "optimized_projected_points": 138.24,
+    "optimized_projected_points": 138.2,
     "projected_advantage": 5.04,
     "status": "provisional"
   },
   "movement": [
     {
       "has_previous": true,
-      "name": "Aaron Rodgers",
-      "player_id": "96",
+      "name": "Ty Johnson",
+      "player_id": "6039",
+      "position": "RB",
+      "position_rank_change": 0,
+      "tier_changed": false,
+      "tier_from": 4,
+      "tier_to": 4,
+      "value_change": 195
+    },
+    {
+      "has_previous": true,
+      "name": "Shedeur Sanders",
+      "player_id": "12524",
       "position": "QB",
       "position_rank_change": 0,
-      "tier_changed": false,
+      "tier_changed": true,
       "tier_from": 3,
-      "tier_to": 3,
-      "value_change": 0
-    },
-    {
-      "has_previous": true,
-      "name": "Andrei Iosivas",
-      "player_id": "10226",
-      "position": "WR",
-      "position_rank_change": 0,
-      "tier_changed": false,
-      "tier_from": 4,
       "tier_to": 4,
-      "value_change": 0
-    },
-    {
-      "has_previous": true,
-      "name": "Baker Mayfield",
-      "player_id": "4892",
-      "position": "QB",
-      "position_rank_change": 0,
-      "tier_changed": false,
-      "tier_from": 3,
-      "tier_to": 3,
-      "value_change": 0
-    },
-    {
-      "has_previous": true,
-      "name": "Courtland Sutton",
-      "player_id": "5045",
-      "position": "WR",
-      "position_rank_change": 0,
-      "tier_changed": false,
-      "tier_from": 4,
-      "tier_to": 4,
-      "value_change": 0
-    },
-    {
-      "has_previous": true,
-      "name": "Elijah Arroyo",
-      "player_id": "12521",
-      "position": "TE",
-      "position_rank_change": 0,
-      "tier_changed": false,
-      "tier_from": 4,
-      "tier_to": 4,
-      "value_change": 0
-    },
-    {
-      "has_previous": true,
-      "name": "Harold Fannin Jr.",
-      "player_id": "12506",
-      "position": "TE",
-      "position_rank_change": 0,
-      "tier_changed": false,
-      "tier_from": 2,
-      "tier_to": 2,
-      "value_change": 0
-    },
-    {
-      "has_previous": true,
-      "name": "Isiah Pacheco",
-      "player_id": "8205",
-      "position": "RB",
-      "position_rank_change": 0,
-      "tier_changed": false,
-      "tier_from": 4,
-      "tier_to": 4,
-      "value_change": 0
-    },
-    {
-      "has_previous": true,
-      "name": "Jalen Coker",
-      "player_id": "11646",
-      "position": "WR",
-      "position_rank_change": 0,
-      "tier_changed": false,
-      "tier_from": 3,
-      "tier_to": 3,
-      "value_change": 0
-    },
-    {
-      "has_previous": true,
-      "name": "James Cook III",
-      "player_id": "8138",
-      "position": "RB",
-      "position_rank_change": 0,
-      "tier_changed": false,
-      "tier_from": 1,
-      "tier_to": 1,
-      "value_change": 0
-    },
-    {
-      "has_previous": true,
-      "name": "Jayden Daniels",
-      "player_id": "11566",
-      "position": "QB",
-      "position_rank_change": 0,
-      "tier_changed": false,
-      "tier_from": 1,
-      "tier_to": 1,
-      "value_change": 0
-    },
-    {
-      "has_previous": true,
-      "name": "Jayden Reed",
-      "player_id": "10222",
-      "position": "WR",
-      "position_rank_change": 0,
-      "tier_changed": false,
-      "tier_from": 4,
-      "tier_to": 4,
-      "value_change": 0
-    },
-    {
-      "has_previous": true,
-      "name": "Jaylen Waddle",
-      "player_id": "7526",
-      "position": "WR",
-      "position_rank_change": 0,
-      "tier_changed": false,
-      "tier_from": 3,
-      "tier_to": 3,
-      "value_change": 0
-    },
-    {
-      "has_previous": true,
-      "name": "Jaylen Warren",
-      "player_id": "8228",
-      "position": "RB",
-      "position_rank_change": 0,
-      "tier_changed": false,
-      "tier_from": 3,
-      "tier_to": 3,
-      "value_change": 0
-    },
-    {
-      "has_previous": true,
-      "name": "Jonah Coleman",
-      "player_id": "13345",
-      "position": "RB",
-      "position_rank_change": 0,
-      "tier_changed": false,
-      "tier_from": 3,
-      "tier_to": 3,
-      "value_change": 0
-    },
-    {
-      "has_previous": true,
-      "name": "Justin Jefferson",
-      "player_id": "6794",
-      "position": "WR",
-      "position_rank_change": 0,
-      "tier_changed": false,
-      "tier_from": 1,
-      "tier_to": 1,
-      "value_change": 0
-    },
-    {
-      "has_previous": true,
-      "name": "Malik Willis",
-      "player_id": "8161",
-      "position": "QB",
-      "position_rank_change": 0,
-      "tier_changed": false,
-      "tier_from": 3,
-      "tier_to": 3,
-      "value_change": 0
-    },
-    {
-      "has_previous": true,
-      "name": "MarShawn Lloyd",
-      "player_id": "11581",
-      "position": "RB",
-      "position_rank_change": 0,
-      "tier_changed": false,
-      "tier_from": 4,
-      "tier_to": 4,
-      "value_change": 0
-    },
-    {
-      "has_previous": true,
-      "name": "Nico Collins",
-      "player_id": "7569",
-      "position": "WR",
-      "position_rank_change": 0,
-      "tier_changed": false,
-      "tier_from": 2,
-      "tier_to": 2,
-      "value_change": 0
-    },
-    {
-      "has_previous": true,
-      "name": "Rashod Bateman",
-      "player_id": "7571",
-      "position": "WR",
-      "position_rank_change": 0,
-      "tier_changed": false,
-      "tier_from": 4,
-      "tier_to": 4,
-      "value_change": 0
-    },
-    {
-      "has_previous": true,
-      "name": "Rico Dowdle",
-      "player_id": "7021",
-      "position": "RB",
-      "position_rank_change": 0,
-      "tier_changed": false,
-      "tier_from": 3,
-      "tier_to": 3,
-      "value_change": 0
+      "value_change": -164
     },
     {
       "has_previous": true,
@@ -697,62 +499,106 @@
       "tier_changed": false,
       "tier_from": 2,
       "tier_to": 2,
-      "value_change": 0
+      "value_change": -133
     },
     {
       "has_previous": true,
-      "name": "Shedeur Sanders",
-      "player_id": "12524",
-      "position": "QB",
+      "name": "Jalen Coker",
+      "player_id": "11646",
+      "position": "WR",
       "position_rank_change": 0,
       "tier_changed": false,
       "tier_from": 3,
       "tier_to": 3,
-      "value_change": 0
+      "value_change": -125
     },
     {
       "has_previous": true,
-      "name": "Taylen Green",
-      "player_id": "13306",
+      "name": "Jayden Daniels",
+      "player_id": "11566",
       "position": "QB",
       "position_rank_change": 0,
       "tier_changed": false,
-      "tier_from": 4,
-      "tier_to": 4,
-      "value_change": 0
+      "tier_from": 1,
+      "tier_to": 1,
+      "value_change": -118
     },
     {
       "has_previous": true,
-      "name": "Terry McLaurin",
-      "player_id": "5927",
+      "name": "Isiah Pacheco",
+      "player_id": "8205",
+      "position": "RB",
+      "position_rank_change": 1,
+      "tier_changed": false,
+      "tier_from": 4,
+      "tier_to": 4,
+      "value_change": 105
+    },
+    {
+      "has_previous": true,
+      "name": "Jaylen Waddle",
+      "player_id": "7526",
+      "position": "WR",
+      "position_rank_change": 0,
+      "tier_changed": false,
+      "tier_from": 3,
+      "tier_to": 3,
+      "value_change": -105
+    },
+    {
+      "has_previous": true,
+      "name": "Andrei Iosivas",
+      "player_id": "10226",
       "position": "WR",
       "position_rank_change": 0,
       "tier_changed": false,
       "tier_from": 4,
       "tier_to": 4,
-      "value_change": 0
+      "value_change": -103
     },
     {
       "has_previous": true,
-      "name": "Ty Johnson",
-      "player_id": "6039",
-      "position": "RB",
+      "name": "Elijah Arroyo",
+      "player_id": "12521",
+      "position": "TE",
       "position_rank_change": 0,
       "tier_changed": false,
       "tier_from": 4,
       "tier_to": 4,
-      "value_change": 0
+      "value_change": -91
     },
     {
       "has_previous": true,
-      "name": "Tyrone Tracy Jr.",
-      "player_id": "11655",
+      "name": "Baker Mayfield",
+      "player_id": "4892",
+      "position": "QB",
+      "position_rank_change": 0,
+      "tier_changed": false,
+      "tier_from": 3,
+      "tier_to": 3,
+      "value_change": -90
+    },
+    {
+      "has_previous": true,
+      "name": "James Cook III",
+      "player_id": "8138",
       "position": "RB",
       "position_rank_change": 0,
       "tier_changed": false,
-      "tier_from": 4,
-      "tier_to": 4,
-      "value_change": 0
+      "tier_from": 1,
+      "tier_to": 1,
+      "value_change": -84
+    },
+    {
+      "has_previous": true,
+      "name": "Nico Collins",
+      "player_id": "7569",
+      "position": "WR",
+      "position_rank_change": 0,
+      "tier_changed": false,
+      "tier_from": 2,
+      "tier_to": 2,
+      "value_change": -84
     },
     {
       "has_previous": true,
@@ -763,7 +609,161 @@
       "tier_changed": false,
       "tier_from": 3,
       "tier_to": 3,
-      "value_change": 0
+      "value_change": -76
+    },
+    {
+      "has_previous": true,
+      "name": "Tyrone Tracy Jr.",
+      "player_id": "11655",
+      "position": "RB",
+      "position_rank_change": -1,
+      "tier_changed": false,
+      "tier_from": 4,
+      "tier_to": 4,
+      "value_change": -72
+    },
+    {
+      "has_previous": true,
+      "name": "Malik Willis",
+      "player_id": "8161",
+      "position": "QB",
+      "position_rank_change": 0,
+      "tier_changed": false,
+      "tier_from": 3,
+      "tier_to": 3,
+      "value_change": -55
+    },
+    {
+      "has_previous": true,
+      "name": "Terry McLaurin",
+      "player_id": "5927",
+      "position": "WR",
+      "position_rank_change": 0,
+      "tier_changed": false,
+      "tier_from": 4,
+      "tier_to": 4,
+      "value_change": -54
+    },
+    {
+      "has_previous": true,
+      "name": "MarShawn Lloyd",
+      "player_id": "11581",
+      "position": "RB",
+      "position_rank_change": 0,
+      "tier_changed": false,
+      "tier_from": 4,
+      "tier_to": 4,
+      "value_change": -52
+    },
+    {
+      "has_previous": true,
+      "name": "Harold Fannin Jr.",
+      "player_id": "12506",
+      "position": "TE",
+      "position_rank_change": 0,
+      "tier_changed": false,
+      "tier_from": 2,
+      "tier_to": 2,
+      "value_change": -49
+    },
+    {
+      "has_previous": true,
+      "name": "Aaron Rodgers",
+      "player_id": "96",
+      "position": "QB",
+      "position_rank_change": 0,
+      "tier_changed": false,
+      "tier_from": 3,
+      "tier_to": 3,
+      "value_change": -48
+    },
+    {
+      "has_previous": true,
+      "name": "Rashod Bateman",
+      "player_id": "7571",
+      "position": "WR",
+      "position_rank_change": 0,
+      "tier_changed": false,
+      "tier_from": 4,
+      "tier_to": 4,
+      "value_change": -46
+    },
+    {
+      "has_previous": true,
+      "name": "Taylen Green",
+      "player_id": "13306",
+      "position": "QB",
+      "position_rank_change": 0,
+      "tier_changed": false,
+      "tier_from": 4,
+      "tier_to": 4,
+      "value_change": -39
+    },
+    {
+      "has_previous": true,
+      "name": "Courtland Sutton",
+      "player_id": "5045",
+      "position": "WR",
+      "position_rank_change": 0,
+      "tier_changed": false,
+      "tier_from": 4,
+      "tier_to": 4,
+      "value_change": 38
+    },
+    {
+      "has_previous": true,
+      "name": "Jonah Coleman",
+      "player_id": "13345",
+      "position": "RB",
+      "position_rank_change": 0,
+      "tier_changed": true,
+      "tier_from": 3,
+      "tier_to": 2,
+      "value_change": 27
+    },
+    {
+      "has_previous": true,
+      "name": "Jaylen Warren",
+      "player_id": "8228",
+      "position": "RB",
+      "position_rank_change": 0,
+      "tier_changed": false,
+      "tier_from": 3,
+      "tier_to": 3,
+      "value_change": -22
+    },
+    {
+      "has_previous": true,
+      "name": "Jayden Reed",
+      "player_id": "10222",
+      "position": "WR",
+      "position_rank_change": 0,
+      "tier_changed": false,
+      "tier_from": 4,
+      "tier_to": 4,
+      "value_change": -21
+    },
+    {
+      "has_previous": true,
+      "name": "Justin Jefferson",
+      "player_id": "6794",
+      "position": "WR",
+      "position_rank_change": 0,
+      "tier_changed": false,
+      "tier_from": 1,
+      "tier_to": 1,
+      "value_change": -12
+    },
+    {
+      "has_previous": true,
+      "name": "Rico Dowdle",
+      "player_id": "7021",
+      "position": "RB",
+      "position_rank_change": 0,
+      "tier_changed": false,
+      "tier_from": 3,
+      "tier_to": 3,
+      "value_change": 2
     }
   ],
   "position_boards": [
@@ -786,17 +786,16 @@
                 {
                   "label": "Market",
                   "source": "Dynasty Dealer",
-                  "value": "7,231 · #6 QB"
+                  "value": "7,113 · #6 QB"
                 },
                 {
                   "label": "Production",
                   "source": "nflverse",
-                  "value": "21.28 PPG · 35.17 opp/g"
+                  "value": "21.56 PPG · 36.43 opp/g"
                 }
               ],
               "catalysts": [
-                "A top-two depth-chart position creates a direct path to added opportunity.",
-                "Recent opportunity is up 2.83 per game against the broader sample."
+                "A top-two depth-chart position creates a direct path to added opportunity."
               ],
               "coach_beat_reporter_information": [],
               "context": {
@@ -816,7 +815,7 @@
                     "origin": "sleeper",
                     "player_id": "11566",
                     "player_name": "Jayden Daniels",
-                    "published_at": "2026-11-13T16:43:08.743283+00:00",
+                    "published_at": "2026-11-13T18:00:15.430249+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-11566",
                     "source": "Sleeper depth chart",
@@ -832,20 +831,20 @@
                     "direction": 1,
                     "event_date": null,
                     "impact": "workload",
-                    "magnitude": 1.4149999999999991,
+                    "magnitude": 1,
                     "origin": "measured_usage",
                     "player_id": "11566",
                     "player_name": "Jayden Daniels",
-                    "published_at": "2026-11-13T16:43:08.743283+00:00",
+                    "published_at": "2026-11-13T18:00:15.430249+00:00",
                     "reliability": 0.9,
                     "signal_id": "usage-trend-11566",
                     "source": "nflverse play-by-play",
                     "source_type": "official",
-                    "summary": "Last-three-game opportunity volume is 2.8 per game above the season baseline.",
+                    "summary": "Last-three-game opportunity volume is 1.6 per game above the season baseline.",
                     "ttl_days": 8,
                     "type": "usage_trend",
                     "url": "https://nflverse.com/",
-                    "weighted_score": 0.2547
+                    "weighted_score": 0.18
                   },
                   {
                     "corroboration_count": 1,
@@ -1100,48 +1099,48 @@
                     "weighted_score": 0.0
                   }
                 ],
-                "weekly_multiplier": 1.051
+                "weekly_multiplier": 1.044
               },
               "current_fantasy_value": {
                 "market_position_rank": 6,
-                "market_rank": 21,
-                "market_value": 7231,
+                "market_rank": 20,
+                "market_value": 7113,
                 "projection": {
-                  "baseline_points": 20.65,
-                  "basis": "2026 715 PPG blended with recent form; current context multiplier 1.051 applied",
-                  "ceiling": 25.2,
+                  "baseline_points": 20.74,
+                  "basis": "2026 715 PPG blended with recent form; current context multiplier 1.044 applied",
+                  "ceiling": 24.3,
                   "confidence": "high",
-                  "context_adjustment_points": 1.05,
-                  "context_multiplier": 1.051,
+                  "context_adjustment_points": 0.91,
+                  "context_multiplier": 1.044,
                   "current_decision_evidence": true,
-                  "floor": 18.0,
+                  "floor": 18.1,
                   "model_type": "evidence_estimate",
                   "performance_basis": "current",
-                  "points": 21.7
+                  "points": 21.66
                 }
               },
               "current_starter": true,
               "decision_lenses": {
                 "dynasty": {
                   "label": "Foundation asset",
-                  "summary": "Market value 7,231 and position rank #6; age 25 shapes the liquidity and time-horizon risk."
+                  "summary": "Market value 7,113 and position rank #6; age 25 shapes the liquidity and time-horizon risk."
                 },
                 "recommended_stance": "Start / hold",
                 "rest_of_season": {
                   "label": "Role supported",
-                  "summary": "The 2026 sample shows 35.17 opportunities/game and 92.5% snaps."
+                  "summary": "The 2026 sample shows 36.43 opportunities/game and 93.6% snaps."
                 },
                 "weekly": {
                   "label": "Starter",
-                  "summary": "Evidence range 18.0–25.2 with high confidence; current matchup research is unavailable."
+                  "summary": "Evidence range 18.1–24.3 with high confidence; current matchup research is unavailable."
                 }
               },
               "depth_chart_order": 1,
               "injury_body_part": null,
               "injury_status": null,
               "key_evidence": [
-                "Dynasty Dealer value 7,231; position rank #6.",
-                "2026 sample: 21.28 PPG, 35.17 opportunities/game, 92.5% snaps.",
+                "Dynasty Dealer value 7,113; position rank #6.",
+                "2026 sample: 21.56 PPG, 36.43 opportunities/game, 93.6% snaps.",
                 "Sleeper depth-chart order: 1."
               ],
               "movement": {
@@ -1150,7 +1149,7 @@
                 "tier_changed": false,
                 "tier_from": 1,
                 "tier_to": 1,
-                "value_change": 0
+                "value_change": -118
               },
               "name": "Jayden Daniels",
               "news": [
@@ -1264,7 +1263,8 @@
                 }
               ],
               "notable_takeaways": [
-                "Currently selected in the Sleeper starting lineup."
+                "Currently selected in the Sleeper starting lineup.",
+                "Market value lost 118 since the previous report."
               ],
               "player_id": "11566",
               "position": "QB",
@@ -1286,12 +1286,12 @@
                 "number": 1
               },
               "trends": {
-                "opportunity_delta": 2.83,
-                "ppg_delta": -1.8,
+                "opportunity_delta": 1.57,
+                "ppg_delta": -2.33,
                 "recent_opportunities_per_game": 38.0,
-                "recent_ppg": 19.48,
-                "season_opportunities_per_game": 35.17,
-                "season_ppg": 21.28,
+                "recent_ppg": 19.23,
+                "season_opportunities_per_game": 36.43,
+                "season_ppg": 21.56,
                 "summary": "Recent fantasy production is running below the broader sample."
               }
             }
@@ -1312,7 +1312,7 @@
                 {
                   "label": "Market",
                   "source": "Dynasty Dealer",
-                  "value": "4,390 · #21 QB"
+                  "value": "4,300 · #21 QB"
                 },
                 {
                   "label": "Production",
@@ -1341,7 +1341,7 @@
                     "origin": "measured_usage",
                     "player_id": "4892",
                     "player_name": "Baker Mayfield",
-                    "published_at": "2026-11-13T16:43:08.743283+00:00",
+                    "published_at": "2026-11-13T18:00:15.430249+00:00",
                     "reliability": 0.9,
                     "signal_id": "usage-trend-4892",
                     "source": "nflverse play-by-play",
@@ -1361,7 +1361,7 @@
                     "origin": "sleeper",
                     "player_id": "4892",
                     "player_name": "Baker Mayfield",
-                    "published_at": "2026-11-13T16:43:08.743283+00:00",
+                    "published_at": "2026-11-13T18:00:15.430249+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-4892",
                     "source": "Sleeper depth chart",
@@ -1608,8 +1608,8 @@
               },
               "current_fantasy_value": {
                 "market_position_rank": 21,
-                "market_rank": 93,
-                "market_value": 4390,
+                "market_rank": 91,
+                "market_value": 4300,
                 "projection": {
                   "baseline_points": 8.71,
                   "basis": "2026 715 PPG blended with recent form; current context multiplier 0.943 applied",
@@ -1628,7 +1628,7 @@
               "decision_lenses": {
                 "dynasty": {
                   "label": "Market-sensitive veteran",
-                  "summary": "Market value 4,390 and position rank #21; age 31 shapes the liquidity and time-horizon risk."
+                  "summary": "Market value 4,300 and position rank #21; age 31 shapes the liquidity and time-horizon risk."
                 },
                 "recommended_stance": "Shop if value holds",
                 "rest_of_season": {
@@ -1644,7 +1644,7 @@
               "injury_body_part": null,
               "injury_status": null,
               "key_evidence": [
-                "Dynasty Dealer value 4,390; position rank #21.",
+                "Dynasty Dealer value 4,300; position rank #21.",
                 "2026 sample: 10.02 PPG, 26.5 opportunities/game, 97.3% snaps.",
                 "Sleeper depth-chart order: 1."
               ],
@@ -1654,7 +1654,7 @@
                 "tier_changed": false,
                 "tier_from": 3,
                 "tier_to": 3,
-                "value_change": 0
+                "value_change": -90
               },
               "name": "Baker Mayfield",
               "news": [
@@ -1758,7 +1758,9 @@
                   "weighted_score": 0.0
                 }
               ],
-              "notable_takeaways": [],
+              "notable_takeaways": [
+                "Market value lost 90 since the previous report."
+              ],
               "player_id": "4892",
               "position": "QB",
               "position_rank_on_roster": 2,
@@ -1801,7 +1803,7 @@
                 {
                   "label": "Market",
                   "source": "Dynasty Dealer",
-                  "value": "3,792 · #28 QB"
+                  "value": "3,737 · #28 QB"
                 },
                 {
                   "label": "Production",
@@ -1830,7 +1832,7 @@
                     "origin": "sleeper",
                     "player_id": "8161",
                     "player_name": "Malik Willis",
-                    "published_at": "2026-11-13T16:43:08.743283+00:00",
+                    "published_at": "2026-11-13T18:00:15.430249+00:00",
                     "reliability": 0.82,
                     "signal_id": "sleeper-injury-8161",
                     "source": "Sleeper player status",
@@ -1860,7 +1862,7 @@
                     "ttl_days": 7,
                     "type": "injury",
                     "url": "https://www.rotowire.com//football/player/malik-willis-15872",
-                    "weighted_score": -0.3844
+                    "weighted_score": -0.3791
                   },
                   {
                     "corroboration_count": 1,
@@ -1881,7 +1883,7 @@
                     "ttl_days": 7,
                     "type": "injury",
                     "url": "https://www.rotowire.com//football/player/malik-willis-15872",
-                    "weighted_score": -0.3367
+                    "weighted_score": -0.3314
                   },
                   {
                     "corroboration_count": 1,
@@ -1902,7 +1904,7 @@
                     "ttl_days": 7,
                     "type": "injury",
                     "url": "https://www.fantasypros.com/nfl/news/619075/malik-willis-groin-placed-on-ir.php",
-                    "weighted_score": -0.2684
+                    "weighted_score": -0.265
                   },
                   {
                     "corroboration_count": 1,
@@ -1913,7 +1915,7 @@
                     "origin": "sleeper",
                     "player_id": "8161",
                     "player_name": "Malik Willis",
-                    "published_at": "2026-11-13T16:43:08.743283+00:00",
+                    "published_at": "2026-11-13T18:00:15.430249+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-8161",
                     "source": "Sleeper depth chart",
@@ -2076,8 +2078,8 @@
               },
               "current_fantasy_value": {
                 "market_position_rank": 28,
-                "market_rank": 117,
-                "market_value": 3792,
+                "market_rank": 116,
+                "market_value": 3737,
                 "projection": {
                   "baseline_points": 15.5,
                   "basis": "2026 715 PPG blended with recent form; current context multiplier 0.000 applied",
@@ -2096,7 +2098,7 @@
               "decision_lenses": {
                 "dynasty": {
                   "label": "Flexible depth asset",
-                  "summary": "Market value 3,792 and position rank #28; age 27 shapes the liquidity and time-horizon risk."
+                  "summary": "Market value 3,737 and position rank #28; age 27 shapes the liquidity and time-horizon risk."
                 },
                 "recommended_stance": "Monitor availability",
                 "rest_of_season": {
@@ -2112,7 +2114,7 @@
               "injury_body_part": "Groin",
               "injury_status": "IR",
               "key_evidence": [
-                "Dynasty Dealer value 3,792; position rank #28.",
+                "Dynasty Dealer value 3,737; position rank #28.",
                 "2026 sample: 14.88 PPG, 30.75 opportunities/game, 100.0% snaps.",
                 "Sleeper depth-chart order: 2.",
                 "Sleeper availability: IR (Groin)."
@@ -2123,13 +2125,13 @@
                 "tier_changed": false,
                 "tier_from": 3,
                 "tier_to": 3,
-                "value_change": 0
+                "value_change": -55
               },
               "name": "Malik Willis",
               "news": [
                 {
                   "event_date": null,
-                  "published_at": "2026-11-13T16:43:08.743283+00:00",
+                  "published_at": "2026-11-13T18:00:15.430249+00:00",
                   "signal_type": "injury",
                   "source": "Sleeper player status",
                   "text": "Sleeper lists Malik Willis as IR.",
@@ -2143,7 +2145,7 @@
                   "source": "RotoWire NFL Player News / Tom Pelissero of Netflix",
                   "text": "Malik Willis: Headed for IR with core-muscle injury",
                   "url": "https://www.rotowire.com//football/player/malik-willis-15872",
-                  "weighted_score": -0.3844
+                  "weighted_score": -0.3791
                 },
                 {
                   "event_date": null,
@@ -2152,7 +2154,7 @@
                   "source": "RotoWire NFL Player News",
                   "text": "Malik Willis: Move to IR official",
                   "url": "https://www.rotowire.com//football/player/malik-willis-15872",
-                  "weighted_score": -0.3367
+                  "weighted_score": -0.3314
                 },
                 {
                   "event_date": null,
@@ -2161,7 +2163,7 @@
                   "source": "FantasyPros",
                   "text": "Malik Willis (groin) placed on IR",
                   "url": "https://www.fantasypros.com/nfl/news/619075/malik-willis-groin-placed-on-ir.php",
-                  "weighted_score": -0.2684
+                  "weighted_score": -0.265
                 },
                 {
                   "event_date": null,
@@ -2227,7 +2229,9 @@
                   "weighted_score": 0.0
                 }
               ],
-              "notable_takeaways": [],
+              "notable_takeaways": [
+                "Market value lost 55 since the previous report."
+              ],
               "player_id": "8161",
               "position": "QB",
               "position_rank_on_roster": 3,
@@ -2270,7 +2274,7 @@
                 {
                   "label": "Market",
                   "source": "Dynasty Dealer",
-                  "value": "3,087 · #36 QB"
+                  "value": "3,039 · #36 QB"
                 },
                 {
                   "label": "Production",
@@ -2299,7 +2303,7 @@
                     "origin": "sleeper",
                     "player_id": "96",
                     "player_name": "Aaron Rodgers",
-                    "published_at": "2026-11-13T16:43:08.743283+00:00",
+                    "published_at": "2026-11-13T18:00:15.430249+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-96",
                     "source": "Sleeper depth chart",
@@ -2319,7 +2323,7 @@
                     "origin": "measured_usage",
                     "player_id": "96",
                     "player_name": "Aaron Rodgers",
-                    "published_at": "2026-11-13T16:43:08.743283+00:00",
+                    "published_at": "2026-11-13T18:00:15.430249+00:00",
                     "reliability": 0.9,
                     "signal_id": "usage-trend-96",
                     "source": "nflverse play-by-play",
@@ -2482,8 +2486,8 @@
               },
               "current_fantasy_value": {
                 "market_position_rank": 36,
-                "market_rank": 156,
-                "market_value": 3087,
+                "market_rank": 159,
+                "market_value": 3039,
                 "projection": {
                   "baseline_points": 15.74,
                   "basis": "2026 715 PPG blended with recent form; current context multiplier 1.008 applied",
@@ -2502,7 +2506,7 @@
               "decision_lenses": {
                 "dynasty": {
                   "label": "Market-sensitive veteran",
-                  "summary": "Market value 3,087 and position rank #36; age 42 shapes the liquidity and time-horizon risk."
+                  "summary": "Market value 3,039 and position rank #36; age 42 shapes the liquidity and time-horizon risk."
                 },
                 "recommended_stance": "Start / hold",
                 "rest_of_season": {
@@ -2518,7 +2522,7 @@
               "injury_body_part": null,
               "injury_status": null,
               "key_evidence": [
-                "Dynasty Dealer value 3,087; position rank #36.",
+                "Dynasty Dealer value 3,039; position rank #36.",
                 "2026 sample: 16.98 PPG, 37.5 opportunities/game, 98.5% snaps.",
                 "Sleeper depth-chart order: 1."
               ],
@@ -2528,7 +2532,7 @@
                 "tier_changed": false,
                 "tier_from": 3,
                 "tier_to": 3,
-                "value_change": 0
+                "value_change": -48
               },
               "name": "Aaron Rodgers",
               "news": [
@@ -2597,7 +2601,8 @@
                 }
               ],
               "notable_takeaways": [
-                "Currently selected in the Sleeper starting lineup."
+                "Currently selected in the Sleeper starting lineup.",
+                "Market value lost 48 since the previous report."
               ],
               "player_id": "96",
               "position": "QB",
@@ -2629,7 +2634,13 @@
                 "season_ppg": 16.98,
                 "summary": "Recent fantasy production is running below the broader sample."
               }
-            },
+            }
+          ]
+        },
+        {
+          "label": "Speculative",
+          "number": 4,
+          "players": [
             {
               "age": 24,
               "app_data_comparisons": [
@@ -2641,7 +2652,7 @@
                 {
                   "label": "Market",
                   "source": "Dynasty Dealer",
-                  "value": "3,059 · #38 QB"
+                  "value": "2,895 · #39 QB"
                 },
                 {
                   "label": "Production",
@@ -2681,7 +2692,7 @@
                     "ttl_days": 7,
                     "type": "injury",
                     "url": "\n                                                https://www.cbssports.com/nfl/news/saints-motivated-to-face-browns-shedeur-sanders/\n                    ",
-                    "weighted_score": -0.2141
+                    "weighted_score": -0.2087
                   },
                   {
                     "corroboration_count": 1,
@@ -2692,7 +2703,7 @@
                     "origin": "sleeper",
                     "player_id": "12524",
                     "player_name": "Shedeur Sanders",
-                    "published_at": "2026-11-13T16:43:08.743283+00:00",
+                    "published_at": "2026-11-13T18:00:15.430249+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-12524",
                     "source": "Sleeper depth chart",
@@ -3253,9 +3264,9 @@
                 "weekly_multiplier": 0.861
               },
               "current_fantasy_value": {
-                "market_position_rank": 38,
-                "market_rank": 161,
-                "market_value": 3059,
+                "market_position_rank": 39,
+                "market_rank": 171,
+                "market_value": 2895,
                 "projection": {
                   "baseline_points": 8.58,
                   "basis": "2026 715 PPG blended with recent form; current context multiplier 0.861 applied",
@@ -3274,7 +3285,7 @@
               "decision_lenses": {
                 "dynasty": {
                   "label": "Development hold",
-                  "summary": "Market value 3,059 and position rank #38; age 24 shapes the liquidity and time-horizon risk."
+                  "summary": "Market value 2,895 and position rank #39; age 24 shapes the liquidity and time-horizon risk."
                 },
                 "recommended_stance": "Hold for upside",
                 "rest_of_season": {
@@ -3290,17 +3301,17 @@
               "injury_body_part": null,
               "injury_status": null,
               "key_evidence": [
-                "Dynasty Dealer value 3,059; position rank #38.",
+                "Dynasty Dealer value 2,895; position rank #39.",
                 "2026 sample: 8.58 PPG, 14.67 opportunities/game, 35.7% snaps.",
                 "Sleeper depth-chart order: 2."
               ],
               "movement": {
                 "has_previous": true,
                 "position_rank_change": 0,
-                "tier_changed": false,
+                "tier_changed": true,
                 "tier_from": 3,
-                "tier_to": 3,
-                "value_change": 0
+                "tier_to": 4,
+                "value_change": -164
               },
               "name": "Shedeur Sanders",
               "news": [
@@ -3311,7 +3322,7 @@
                   "source": "Carter Bahns",
                   "text": "Browns' Shedeur Sanders claims 'smiling' comment about Saints defense was taken out of context",
                   "url": "\n                                                https://www.cbssports.com/nfl/news/saints-motivated-to-face-browns-shedeur-sanders/\n                    ",
-                  "weighted_score": -0.2141
+                  "weighted_score": -0.2087
                 },
                 {
                   "event_date": null,
@@ -3548,7 +3559,9 @@
                   "weighted_score": 0.0
                 }
               ],
-              "notable_takeaways": [],
+              "notable_takeaways": [
+                "Market value lost 164 since the previous report."
+              ],
               "player_id": "12524",
               "position": "QB",
               "position_rank_on_roster": 5,
@@ -3567,8 +3580,8 @@
               "status": "Active",
               "team": "CLE",
               "tier": {
-                "label": "Rotation",
-                "number": 3
+                "label": "Speculative",
+                "number": 4
               },
               "trends": {
                 "opportunity_delta": 0.0,
@@ -3579,13 +3592,7 @@
                 "season_ppg": 8.58,
                 "summary": "Recent fantasy production is broadly stable against the broader sample."
               }
-            }
-          ]
-        },
-        {
-          "label": "Speculative",
-          "number": 4,
-          "players": [
+            },
             {
               "age": 24,
               "app_data_comparisons": [
@@ -3597,7 +3604,7 @@
                 {
                   "label": "Market",
                   "source": "Dynasty Dealer",
-                  "value": "2,484 · #45 QB"
+                  "value": "2,445 · #43 QB"
                 },
                 {
                   "label": "Production",
@@ -3626,7 +3633,7 @@
                     "origin": "sleeper",
                     "player_id": "13306",
                     "player_name": "Taylen Green",
-                    "published_at": "2026-11-13T16:43:08.743283+00:00",
+                    "published_at": "2026-11-13T18:00:15.430249+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-13306",
                     "source": "Sleeper depth chart",
@@ -3746,13 +3753,13 @@
                 "weekly_multiplier": 0.961
               },
               "current_fantasy_value": {
-                "market_position_rank": 45,
-                "market_rank": 231,
-                "market_value": 2484,
+                "market_position_rank": 43,
+                "market_rank": 228,
+                "market_value": 2445,
                 "projection": {
-                  "baseline_points": 10.86,
+                  "baseline_points": 10.81,
                   "basis": "Dynasty market-value proxy; no NFL performance sample; current context multiplier 0.961 applied",
-                  "ceiling": 13.4,
+                  "ceiling": 13.3,
                   "confidence": "low",
                   "context_adjustment_points": -0.42,
                   "context_multiplier": 0.961,
@@ -3760,14 +3767,14 @@
                   "floor": 7.5,
                   "model_type": "evidence_estimate",
                   "performance_basis": null,
-                  "points": 10.43
+                  "points": 10.39
                 }
               },
               "current_starter": false,
               "decision_lenses": {
                 "dynasty": {
                   "label": "Development hold",
-                  "summary": "Market value 2,484 and position rank #45; age 24 shapes the liquidity and time-horizon risk."
+                  "summary": "Market value 2,445 and position rank #43; age 24 shapes the liquidity and time-horizon risk."
                 },
                 "recommended_stance": "Hold / monitor role",
                 "rest_of_season": {
@@ -3776,14 +3783,14 @@
                 },
                 "weekly": {
                   "label": "Unproven",
-                  "summary": "Evidence range 7.5–13.4 with low confidence; current matchup research is unavailable."
+                  "summary": "Evidence range 7.5–13.3 with low confidence; current matchup research is unavailable."
                 }
               },
               "depth_chart_order": 4,
               "injury_body_part": null,
               "injury_status": null,
               "key_evidence": [
-                "Dynasty Dealer value 2,484; position rank #45.",
+                "Dynasty Dealer value 2,445; position rank #43.",
                 "No nflverse performance sample is currently matched to this player.",
                 "Sleeper depth-chart order: 4."
               ],
@@ -3793,7 +3800,7 @@
                 "tier_changed": false,
                 "tier_from": 4,
                 "tier_to": 4,
-                "value_change": 0
+                "value_change": -39
               },
               "name": "Taylen Green",
               "news": [
@@ -3844,7 +3851,8 @@
                 }
               ],
               "notable_takeaways": [
-                "Treat the lineup projection as low confidence until real usage data is available."
+                "Treat the lineup projection as low confidence until real usage data is available.",
+                "Market value lost 39 since the previous report."
               ],
               "player_id": "13306",
               "position": "QB",
@@ -3901,7 +3909,7 @@
                 {
                   "label": "Market",
                   "source": "Dynasty Dealer",
-                  "value": "7,590 · #4 RB"
+                  "value": "7,506 · #4 RB"
                 },
                 {
                   "label": "Production",
@@ -3931,7 +3939,7 @@
                     "origin": "measured_usage",
                     "player_id": "8138",
                     "player_name": "James Cook III",
-                    "published_at": "2026-11-13T16:43:08.743283+00:00",
+                    "published_at": "2026-11-13T18:00:15.430249+00:00",
                     "reliability": 0.9,
                     "signal_id": "usage-trend-8138",
                     "source": "nflverse play-by-play",
@@ -3951,7 +3959,7 @@
                     "origin": "sleeper",
                     "player_id": "8138",
                     "player_name": "James Cook III",
-                    "published_at": "2026-11-13T16:43:08.743283+00:00",
+                    "published_at": "2026-11-13T18:00:15.430249+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-8138",
                     "source": "Sleeper depth chart",
@@ -4178,7 +4186,7 @@
               "current_fantasy_value": {
                 "market_position_rank": 4,
                 "market_rank": 17,
-                "market_value": 7590,
+                "market_value": 7506,
                 "projection": {
                   "baseline_points": 18.95,
                   "basis": "2026 715 PPG blended with recent form; current context multiplier 1.059 applied",
@@ -4197,7 +4205,7 @@
               "decision_lenses": {
                 "dynasty": {
                   "label": "Foundation asset",
-                  "summary": "Market value 7,590 and position rank #4; age 27 shapes the liquidity and time-horizon risk."
+                  "summary": "Market value 7,506 and position rank #4; age 27 shapes the liquidity and time-horizon risk."
                 },
                 "recommended_stance": "Start / hold",
                 "rest_of_season": {
@@ -4213,7 +4221,7 @@
               "injury_body_part": null,
               "injury_status": null,
               "key_evidence": [
-                "Dynasty Dealer value 7,590; position rank #4.",
+                "Dynasty Dealer value 7,506; position rank #4.",
                 "2026 sample: 18.55 PPG, 23.38 opportunities/game, 64.8% snaps.",
                 "Sleeper depth-chart order: 1."
               ],
@@ -4223,7 +4231,7 @@
                 "tier_changed": false,
                 "tier_from": 1,
                 "tier_to": 1,
-                "value_change": 0
+                "value_change": -84
               },
               "name": "James Cook III",
               "news": [
@@ -4319,7 +4327,8 @@
                 }
               ],
               "notable_takeaways": [
-                "Currently selected in the Sleeper starting lineup."
+                "Currently selected in the Sleeper starting lineup.",
+                "Market value lost 84 since the previous report."
               ],
               "player_id": "8138",
               "position": "RB",
@@ -4353,8 +4362,8 @@
           ]
         },
         {
-          "label": "Rotation",
-          "number": 3,
+          "label": "Core Starter",
+          "number": 2,
           "players": [
             {
               "age": 23,
@@ -4367,7 +4376,7 @@
                 {
                   "label": "Market",
                   "source": "Dynasty Dealer",
-                  "value": "4,983 · #22 RB"
+                  "value": "5,010 · #19 RB"
                 },
                 {
                   "label": "Production",
@@ -4378,7 +4387,8 @@
               "catalysts": [
                 "Youth leaves room for role growth and market appreciation.",
                 "A top-two depth-chart position creates a direct path to added opportunity.",
-                "Recent opportunity is up 3.8 per game against the broader sample."
+                "Recent opportunity is up 3.8 per game against the broader sample.",
+                "Market value increased 27 since the previous report."
               ],
               "coach_beat_reporter_information": [],
               "context": {
@@ -4398,7 +4408,7 @@
                     "origin": "measured_usage",
                     "player_id": "13345",
                     "player_name": "Jonah Coleman",
-                    "published_at": "2026-11-13T16:43:08.743283+00:00",
+                    "published_at": "2026-11-13T18:00:15.430249+00:00",
                     "reliability": 0.9,
                     "signal_id": "usage-trend-13345",
                     "source": "nflverse play-by-play",
@@ -4418,7 +4428,7 @@
                     "origin": "sleeper",
                     "player_id": "13345",
                     "player_name": "Jonah Coleman",
-                    "published_at": "2026-11-13T16:43:08.743283+00:00",
+                    "published_at": "2026-11-13T18:00:15.430249+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-13345",
                     "source": "Sleeper depth chart",
@@ -4559,9 +4569,9 @@
                 "weekly_multiplier": 1.06
               },
               "current_fantasy_value": {
-                "market_position_rank": 22,
-                "market_rank": 79,
-                "market_value": 4983,
+                "market_position_rank": 19,
+                "market_rank": 75,
+                "market_value": 5010,
                 "projection": {
                   "baseline_points": 13.79,
                   "basis": "2026 715 PPG blended with recent form; current context multiplier 1.060 applied",
@@ -4579,8 +4589,8 @@
               "current_starter": false,
               "decision_lenses": {
                 "dynasty": {
-                  "label": "Development hold",
-                  "summary": "Market value 4,983 and position rank #22; age 23 shapes the liquidity and time-horizon risk."
+                  "label": "Strong hold",
+                  "summary": "Market value 5,010 and position rank #19; age 23 shapes the liquidity and time-horizon risk."
                 },
                 "recommended_stance": "Hold for upside",
                 "rest_of_season": {
@@ -4596,17 +4606,17 @@
               "injury_body_part": null,
               "injury_status": null,
               "key_evidence": [
-                "Dynasty Dealer value 4,983; position rank #22.",
+                "Dynasty Dealer value 5,010; position rank #19.",
                 "2026 sample: 12.58 PPG, 12.2 opportunities/game, 47.6% snaps.",
                 "Sleeper depth-chart order: 1."
               ],
               "movement": {
                 "has_previous": true,
                 "position_rank_change": 0,
-                "tier_changed": false,
+                "tier_changed": true,
                 "tier_from": 3,
-                "tier_to": 3,
-                "value_change": 0
+                "tier_to": 2,
+                "value_change": 27
               },
               "name": "Jonah Coleman",
               "news": [
@@ -4665,7 +4675,9 @@
                   "weighted_score": 0.0
                 }
               ],
-              "notable_takeaways": [],
+              "notable_takeaways": [
+                "Market value gained 27 since the previous report."
+              ],
               "player_id": "13345",
               "position": "RB",
               "position_rank_on_roster": 2,
@@ -4682,8 +4694,8 @@
               "status": "Active",
               "team": "DEN",
               "tier": {
-                "label": "Rotation",
-                "number": 3
+                "label": "Core Starter",
+                "number": 2
               },
               "trends": {
                 "opportunity_delta": 3.8,
@@ -4694,7 +4706,13 @@
                 "season_ppg": 12.58,
                 "summary": "Recent fantasy production is running above the broader sample."
               }
-            },
+            }
+          ]
+        },
+        {
+          "label": "Rotation",
+          "number": 3,
+          "players": [
             {
               "age": 28,
               "app_data_comparisons": [
@@ -4706,7 +4724,7 @@
                 {
                   "label": "Market",
                   "source": "Dynasty Dealer",
-                  "value": "4,980 · #23 RB"
+                  "value": "4,958 · #22 RB"
                 },
                 {
                   "label": "Production",
@@ -4735,7 +4753,7 @@
                     "origin": "sleeper",
                     "player_id": "8228",
                     "player_name": "Jaylen Warren",
-                    "published_at": "2026-11-13T16:43:08.743283+00:00",
+                    "published_at": "2026-11-13T18:00:15.430249+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-8228",
                     "source": "Sleeper depth chart",
@@ -4918,9 +4936,9 @@
                 "weekly_multiplier": 1.026
               },
               "current_fantasy_value": {
-                "market_position_rank": 23,
-                "market_rank": 80,
-                "market_value": 4980,
+                "market_position_rank": 22,
+                "market_rank": 79,
+                "market_value": 4958,
                 "projection": {
                   "baseline_points": 17.02,
                   "basis": "2026 715 PPG blended with recent form; current context multiplier 1.026 applied",
@@ -4939,7 +4957,7 @@
               "decision_lenses": {
                 "dynasty": {
                   "label": "Flexible depth asset",
-                  "summary": "Market value 4,980 and position rank #23; age 28 shapes the liquidity and time-horizon risk."
+                  "summary": "Market value 4,958 and position rank #22; age 28 shapes the liquidity and time-horizon risk."
                 },
                 "recommended_stance": "Start / hold",
                 "rest_of_season": {
@@ -4955,7 +4973,7 @@
               "injury_body_part": null,
               "injury_status": null,
               "key_evidence": [
-                "Dynasty Dealer value 4,980; position rank #23.",
+                "Dynasty Dealer value 4,958; position rank #22.",
                 "2026 sample: 17.6 PPG, 19.38 opportunities/game, 72.1% snaps.",
                 "Sleeper depth-chart order: 1."
               ],
@@ -4965,7 +4983,7 @@
                 "tier_changed": false,
                 "tier_from": 3,
                 "tier_to": 3,
-                "value_change": 0
+                "value_change": -22
               },
               "name": "Jaylen Warren",
               "news": [
@@ -5043,7 +5061,8 @@
                 }
               ],
               "notable_takeaways": [
-                "Currently selected in the Sleeper starting lineup."
+                "Currently selected in the Sleeper starting lineup.",
+                "Market value lost 22 since the previous report."
               ],
               "player_id": "8228",
               "position": "RB",
@@ -5085,7 +5104,7 @@
                 {
                   "label": "Market",
                   "source": "Dynasty Dealer",
-                  "value": "3,328 · #41 RB"
+                  "value": "3,252 · #41 RB"
                 },
                 {
                   "label": "Production",
@@ -5115,7 +5134,7 @@
                     "origin": "measured_usage",
                     "player_id": "12474",
                     "player_name": "Woody Marks",
-                    "published_at": "2026-11-13T16:43:08.743283+00:00",
+                    "published_at": "2026-11-13T18:00:15.430249+00:00",
                     "reliability": 0.9,
                     "signal_id": "usage-trend-12474",
                     "source": "nflverse play-by-play",
@@ -5135,7 +5154,7 @@
                     "origin": "sleeper",
                     "player_id": "12474",
                     "player_name": "Woody Marks",
-                    "published_at": "2026-11-13T16:43:08.743283+00:00",
+                    "published_at": "2026-11-13T18:00:15.430249+00:00",
                     "reliability": 0.82,
                     "signal_id": "sleeper-injury-12474",
                     "source": "Sleeper player status",
@@ -5155,7 +5174,7 @@
                     "origin": "sleeper",
                     "player_id": "12474",
                     "player_name": "Woody Marks",
-                    "published_at": "2026-11-13T16:43:08.743283+00:00",
+                    "published_at": "2026-11-13T18:00:15.430249+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-12474",
                     "source": "Sleeper depth chart",
@@ -5185,7 +5204,7 @@
                     "ttl_days": 4,
                     "type": "practice",
                     "url": "https://www.rotowire.com//football/player/woody-marks-18449",
-                    "weighted_score": -0.099
+                    "weighted_score": -0.0953
                   },
                   {
                     "corroboration_count": 1,
@@ -5297,8 +5316,8 @@
               },
               "current_fantasy_value": {
                 "market_position_rank": 41,
-                "market_rank": 137,
-                "market_value": 3328,
+                "market_rank": 138,
+                "market_value": 3252,
                 "projection": {
                   "baseline_points": 8.98,
                   "basis": "2026 715 PPG blended with recent form; current context multiplier 0.914 applied",
@@ -5317,7 +5336,7 @@
               "decision_lenses": {
                 "dynasty": {
                   "label": "Flexible depth asset",
-                  "summary": "Market value 3,328 and position rank #41; age 25 shapes the liquidity and time-horizon risk."
+                  "summary": "Market value 3,252 and position rank #41; age 25 shapes the liquidity and time-horizon risk."
                 },
                 "recommended_stance": "Monitor availability",
                 "rest_of_season": {
@@ -5333,7 +5352,7 @@
               "injury_body_part": "Knee",
               "injury_status": "Questionable",
               "key_evidence": [
-                "Dynasty Dealer value 3,328; position rank #41.",
+                "Dynasty Dealer value 3,252; position rank #41.",
                 "2026 sample: 8.86 PPG, 14.5 opportunities/game, 62.2% snaps.",
                 "Sleeper depth-chart order: 1.",
                 "Sleeper availability: Questionable (Knee)."
@@ -5344,13 +5363,13 @@
                 "tier_changed": false,
                 "tier_from": 3,
                 "tier_to": 3,
-                "value_change": 0
+                "value_change": -76
               },
               "name": "Woody Marks",
               "news": [
                 {
                   "event_date": null,
-                  "published_at": "2026-11-13T16:43:08.743283+00:00",
+                  "published_at": "2026-11-13T18:00:15.430249+00:00",
                   "signal_type": "injury",
                   "source": "Sleeper player status",
                   "text": "Sleeper lists Woody Marks as Questionable.",
@@ -5364,7 +5383,7 @@
                   "source": "RotoWire NFL Player News / Chris Easterling of the Akron Beacon Journal",
                   "text": "Woody Marks: Limited at practice Wednesday",
                   "url": "https://www.rotowire.com//football/player/woody-marks-18449",
-                  "weighted_score": -0.099
+                  "weighted_score": -0.0953
                 },
                 {
                   "event_date": null,
@@ -5412,7 +5431,9 @@
                   "weighted_score": 0.0
                 }
               ],
-              "notable_takeaways": [],
+              "notable_takeaways": [
+                "Market value lost 76 since the previous report."
+              ],
               "player_id": "12474",
               "position": "RB",
               "position_rank_on_roster": 4,
@@ -5455,7 +5476,7 @@
                 {
                   "label": "Market",
                   "source": "Dynasty Dealer",
-                  "value": "3,091 · #43 RB"
+                  "value": "3,093 · #42 RB"
                 },
                 {
                   "label": "Production",
@@ -5464,7 +5485,8 @@
                 }
               ],
               "catalysts": [
-                "A top-two depth-chart position creates a direct path to added opportunity."
+                "A top-two depth-chart position creates a direct path to added opportunity.",
+                "Market value increased 2 since the previous report."
               ],
               "coach_beat_reporter_information": [],
               "context": {
@@ -5484,7 +5506,7 @@
                     "origin": "sleeper",
                     "player_id": "7021",
                     "player_name": "Rico Dowdle",
-                    "published_at": "2026-11-13T16:43:08.743283+00:00",
+                    "published_at": "2026-11-13T18:00:15.430249+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-7021",
                     "source": "Sleeper depth chart",
@@ -5751,9 +5773,9 @@
                 "weekly_multiplier": 1.013
               },
               "current_fantasy_value": {
-                "market_position_rank": 43,
-                "market_rank": 155,
-                "market_value": 3091,
+                "market_position_rank": 42,
+                "market_rank": 153,
+                "market_value": 3093,
                 "projection": {
                   "baseline_points": 9.78,
                   "basis": "2026 715 PPG blended with recent form; current context multiplier 1.013 applied",
@@ -5772,7 +5794,7 @@
               "decision_lenses": {
                 "dynasty": {
                   "label": "Flexible depth asset",
-                  "summary": "Market value 3,091 and position rank #43; age 28 shapes the liquidity and time-horizon risk."
+                  "summary": "Market value 3,093 and position rank #42; age 28 shapes the liquidity and time-horizon risk."
                 },
                 "recommended_stance": "Hold / monitor role",
                 "rest_of_season": {
@@ -5788,7 +5810,7 @@
               "injury_body_part": null,
               "injury_status": null,
               "key_evidence": [
-                "Dynasty Dealer value 3,091; position rank #43.",
+                "Dynasty Dealer value 3,093; position rank #42.",
                 "2026 sample: 8.92 PPG, 12.6 opportunities/game, 40.4% snaps.",
                 "Sleeper depth-chart order: 2."
               ],
@@ -5798,7 +5820,7 @@
                 "tier_changed": false,
                 "tier_from": 3,
                 "tier_to": 3,
-                "value_change": 0
+                "value_change": 2
               },
               "name": "Rico Dowdle",
               "news": [
@@ -5911,7 +5933,9 @@
                   "weighted_score": 0.0
                 }
               ],
-              "notable_takeaways": [],
+              "notable_takeaways": [
+                "Market value gained 2 since the previous report."
+              ],
               "player_id": "7021",
               "position": "RB",
               "position_rank_on_roster": 5,
@@ -5958,7 +5982,7 @@
                 {
                   "label": "Market",
                   "source": "Dynasty Dealer",
-                  "value": "2,802 · #52 RB"
+                  "value": "2,750 · #52 RB"
                 },
                 {
                   "label": "Production",
@@ -5987,7 +6011,7 @@
                     "origin": "sleeper",
                     "player_id": "11581",
                     "player_name": "MarShawn Lloyd",
-                    "published_at": "2026-11-13T16:43:08.743283+00:00",
+                    "published_at": "2026-11-13T18:00:15.430249+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-11581",
                     "source": "Sleeper depth chart",
@@ -6007,7 +6031,7 @@
                     "origin": "measured_usage",
                     "player_id": "11581",
                     "player_name": "MarShawn Lloyd",
-                    "published_at": "2026-11-13T16:43:08.743283+00:00",
+                    "published_at": "2026-11-13T18:00:15.430249+00:00",
                     "reliability": 0.9,
                     "signal_id": "usage-trend-11581",
                     "source": "nflverse play-by-play",
@@ -6254,8 +6278,8 @@
               },
               "current_fantasy_value": {
                 "market_position_rank": 52,
-                "market_rank": 188,
-                "market_value": 2802,
+                "market_rank": 185,
+                "market_value": 2750,
                 "projection": {
                   "baseline_points": 5.27,
                   "basis": "2026 715 PPG blended with recent form; current context multiplier 1.006 applied",
@@ -6274,7 +6298,7 @@
               "decision_lenses": {
                 "dynasty": {
                   "label": "Flexible depth asset",
-                  "summary": "Market value 2,802 and position rank #52; age 25 shapes the liquidity and time-horizon risk."
+                  "summary": "Market value 2,750 and position rank #52; age 25 shapes the liquidity and time-horizon risk."
                 },
                 "recommended_stance": "Hold / monitor role",
                 "rest_of_season": {
@@ -6290,7 +6314,7 @@
               "injury_body_part": null,
               "injury_status": null,
               "key_evidence": [
-                "Dynasty Dealer value 2,802; position rank #52.",
+                "Dynasty Dealer value 2,750; position rank #52.",
                 "2026 sample: 6.47 PPG, 9.25 opportunities/game, 35.6% snaps.",
                 "Sleeper depth-chart order: 1."
               ],
@@ -6300,7 +6324,7 @@
                 "tier_changed": false,
                 "tier_from": 4,
                 "tier_to": 4,
-                "value_change": 0
+                "value_change": -52
               },
               "name": "MarShawn Lloyd",
               "news": [
@@ -6404,7 +6428,9 @@
                   "weighted_score": 0.0
                 }
               ],
-              "notable_takeaways": [],
+              "notable_takeaways": [
+                "Market value lost 52 since the previous report."
+              ],
               "player_id": "11581",
               "position": "RB",
               "position_rank_on_roster": 6,
@@ -6437,6 +6463,238 @@
               }
             },
             {
+              "age": 27,
+              "app_data_comparisons": [
+                {
+                  "label": "Role",
+                  "source": "Sleeper",
+                  "value": "Depth 4 · DET"
+                },
+                {
+                  "label": "Market",
+                  "source": "Dynasty Dealer",
+                  "value": "2,451 · #62 RB"
+                },
+                {
+                  "label": "Production",
+                  "source": "nflverse",
+                  "value": "6.72 PPG · 11.08 opp/g"
+                }
+              ],
+              "catalysts": [
+                "Market value increased 105 since the previous report."
+              ],
+              "coach_beat_reporter_information": [],
+              "context": {
+                "actionable_signal_count": 2,
+                "availability_probability": 0.0,
+                "confidence": "medium",
+                "net_direction": "negative",
+                "research_mention_count": 2,
+                "signal_count": 4,
+                "signals": [
+                  {
+                    "corroboration_count": 1,
+                    "direction": -1,
+                    "event_date": null,
+                    "impact": "availability",
+                    "magnitude": 5,
+                    "origin": "sleeper",
+                    "player_id": "8205",
+                    "player_name": "Isiah Pacheco",
+                    "published_at": "2026-11-13T18:00:15.430249+00:00",
+                    "reliability": 0.82,
+                    "signal_id": "sleeper-injury-8205",
+                    "source": "Sleeper player status",
+                    "source_type": "official",
+                    "summary": "Sleeper lists Isiah Pacheco as IR.",
+                    "ttl_days": 2,
+                    "type": "injury",
+                    "url": null,
+                    "weighted_score": -0.82
+                  },
+                  {
+                    "corroboration_count": 1,
+                    "direction": -1,
+                    "event_date": null,
+                    "impact": "workload",
+                    "magnitude": 3,
+                    "origin": "sleeper",
+                    "player_id": "8205",
+                    "player_name": "Isiah Pacheco",
+                    "published_at": "2026-11-13T18:00:15.430249+00:00",
+                    "reliability": 0.65,
+                    "signal_id": "sleeper-depth-8205",
+                    "source": "Sleeper depth chart",
+                    "source_type": "team",
+                    "summary": "Current Sleeper depth-chart order is 4.",
+                    "ttl_days": 3,
+                    "type": "depth_chart",
+                    "url": null,
+                    "weighted_score": -0.39
+                  },
+                  {
+                    "corroboration_count": 1,
+                    "direction": 0.0,
+                    "event_date": null,
+                    "impact": "context",
+                    "magnitude": 0.0,
+                    "origin": "curated_report",
+                    "player_id": "8205",
+                    "player_name": "Isiah Pacheco",
+                    "published_at": "2026-11-07T12:18:19+00:00",
+                    "reliability": 0.45,
+                    "scored": false,
+                    "signal_id": "5e33e4543e8b2643e1df",
+                    "source": "Spotrac",
+                    "source_type": "aggregator",
+                    "summary": "Isiah Pacheco (RB, Lions) Contract & Cap Hit 2026 - Spotrac",
+                    "ttl_days": 7,
+                    "type": "news",
+                    "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9pTF9LMWlLWkpITVZTMFB5VjNhTUMtZ2ZnVU13NmlZRlRFbGJsSzM4VGh0elFxbjUtaXhTUldlT2ZneFU4dHFoM1hQb3A4dVdMbFI0aTMtVFZXUV9HT2Y3cHYzZFNlU0cwNFdvUG1laWNNa2ZEbnhEeTREVDN3dw?oc=5",
+                    "weighted_score": 0.0
+                  },
+                  {
+                    "corroboration_count": 1,
+                    "direction": 0.0,
+                    "event_date": null,
+                    "impact": "context",
+                    "magnitude": 0.0,
+                    "origin": "curated_report",
+                    "player_id": "8205",
+                    "player_name": "Isiah Pacheco",
+                    "published_at": "2026-11-08T23:08:24+00:00",
+                    "reliability": 0.45,
+                    "scored": false,
+                    "signal_id": "675cfeefc63ef2f6d1a4",
+                    "source": "FantasyPros",
+                    "source_type": "aggregator",
+                    "summary": "Should I Trade Isiah Pacheco for Marlin Klein (2026)? - FantasyPros",
+                    "ttl_days": 7,
+                    "type": "news",
+                    "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1RRHNRbFFSVFdyRDZ2eTBtdWFyNUxYQi1TQUtKR2JyMGtMTGFtN3hWc08yT29PcFlLQ1RpdldUQnhmNGxrdVp1OGtiX2tUajEyYlFWZU5KNEttdlNVam8tUWhfbVZpY2ptYnl3XzQ3eExHMnlBS05v?oc=5",
+                    "weighted_score": 0.0
+                  }
+                ],
+                "weekly_multiplier": 0.0
+              },
+              "current_fantasy_value": {
+                "market_position_rank": 62,
+                "market_rank": 226,
+                "market_value": 2451,
+                "projection": {
+                  "baseline_points": 6.56,
+                  "basis": "2025 715 PPG blended with recent form; current context multiplier 0.000 applied",
+                  "ceiling": 0.0,
+                  "confidence": "medium",
+                  "context_adjustment_points": -6.56,
+                  "context_multiplier": 0.0,
+                  "current_decision_evidence": false,
+                  "floor": 0.0,
+                  "model_type": "evidence_estimate",
+                  "performance_basis": "prior",
+                  "points": 0.0
+                }
+              },
+              "current_starter": false,
+              "decision_lenses": {
+                "dynasty": {
+                  "label": "Flexible depth asset",
+                  "summary": "Market value 2,451 and position rank #62; age 27 shapes the liquidity and time-horizon risk."
+                },
+                "recommended_stance": "Monitor availability",
+                "rest_of_season": {
+                  "label": "Role sensitive",
+                  "summary": "The 2025 sample shows 11.08 opportunities/game and 51.7% snaps."
+                },
+                "weekly": {
+                  "label": "Availability watch",
+                  "summary": "Evidence range 0.0–0.0 with medium confidence; current matchup research is unavailable."
+                }
+              },
+              "depth_chart_order": 4,
+              "injury_body_part": "Back",
+              "injury_status": "IR",
+              "key_evidence": [
+                "Dynasty Dealer value 2,451; position rank #62.",
+                "2025 sample: 6.72 PPG, 11.08 opportunities/game, 51.7% snaps.",
+                "Sleeper depth-chart order: 4.",
+                "Sleeper availability: IR (Back)."
+              ],
+              "movement": {
+                "has_previous": true,
+                "position_rank_change": 1,
+                "tier_changed": false,
+                "tier_from": 4,
+                "tier_to": 4,
+                "value_change": 105
+              },
+              "name": "Isiah Pacheco",
+              "news": [
+                {
+                  "event_date": null,
+                  "published_at": "2026-11-13T18:00:15.430249+00:00",
+                  "signal_type": "injury",
+                  "source": "Sleeper player status",
+                  "text": "Sleeper lists Isiah Pacheco as IR.",
+                  "url": null,
+                  "weighted_score": -0.82
+                },
+                {
+                  "event_date": null,
+                  "published_at": "2026-11-07T12:18:19+00:00",
+                  "signal_type": "news",
+                  "source": "Spotrac",
+                  "text": "Isiah Pacheco (RB, Lions) Contract & Cap Hit 2026 - Spotrac",
+                  "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9pTF9LMWlLWkpITVZTMFB5VjNhTUMtZ2ZnVU13NmlZRlRFbGJsSzM4VGh0elFxbjUtaXhTUldlT2ZneFU4dHFoM1hQb3A4dVdMbFI0aTMtVFZXUV9HT2Y3cHYzZFNlU0cwNFdvUG1laWNNa2ZEbnhEeTREVDN3dw?oc=5",
+                  "weighted_score": 0.0
+                },
+                {
+                  "event_date": null,
+                  "published_at": "2026-11-08T23:08:24+00:00",
+                  "signal_type": "news",
+                  "source": "FantasyPros",
+                  "text": "Should I Trade Isiah Pacheco for Marlin Klein (2026)? - FantasyPros",
+                  "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1RRHNRbFFSVFdyRDZ2eTBtdWFyNUxYQi1TQUtKR2JyMGtMTGFtN3hWc08yT29PcFlLQ1RpdldUQnhmNGxrdVp1OGtiX2tUajEyYlFWZU5KNEttdlNVam8tUWhfbVZpY2ptYnl3XzQ3eExHMnlBS05v?oc=5",
+                  "weighted_score": 0.0
+                }
+              ],
+              "notable_takeaways": [
+                "Market value gained 105 since the previous report."
+              ],
+              "player_id": "8205",
+              "position": "RB",
+              "position_rank_on_roster": 7,
+              "recommended_stance": "Monitor availability",
+              "research_coverage": {
+                "coach_beat_reporter": false,
+                "news": true
+              },
+              "risk_factors": [
+                "Current IR designation creates availability risk.",
+                "The current depth-chart path requires movement ahead of the player."
+              ],
+              "speculative_outlook": {
+                "label": "Monitor",
+                "summary": "Availability is the immediate swing factor (IR); recheck status before lineup lock."
+              },
+              "status": "Inactive",
+              "team": "DET",
+              "tier": {
+                "label": "Speculative",
+                "number": 4
+              },
+              "trends": {
+                "opportunity_delta": 0.59,
+                "ppg_delta": -0.45,
+                "recent_opportunities_per_game": 11.67,
+                "recent_ppg": 6.27,
+                "season_opportunities_per_game": 11.08,
+                "season_ppg": 6.72,
+                "summary": "Recent fantasy production is broadly stable against the broader sample."
+              }
+            },
+            {
               "age": 26,
               "app_data_comparisons": [
                 {
@@ -6447,7 +6705,7 @@
                 {
                   "label": "Market",
                   "source": "Dynasty Dealer",
-                  "value": "2,517 · #61 RB"
+                  "value": "2,445 · #63 RB"
                 },
                 {
                   "label": "Production",
@@ -6476,7 +6734,7 @@
                     "origin": "sleeper",
                     "player_id": "11655",
                     "player_name": "Tyrone Tracy Jr.",
-                    "published_at": "2026-11-13T16:43:08.743283+00:00",
+                    "published_at": "2026-11-13T18:00:15.430249+00:00",
                     "reliability": 0.82,
                     "signal_id": "sleeper-injury-11655",
                     "source": "Sleeper player status",
@@ -6496,7 +6754,7 @@
                     "origin": "sleeper",
                     "player_id": "11655",
                     "player_name": "Tyrone Tracy Jr.",
-                    "published_at": "2026-11-13T16:43:08.743283+00:00",
+                    "published_at": "2026-11-13T18:00:15.430249+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-11655",
                     "source": "Sleeper depth chart",
@@ -6516,7 +6774,7 @@
                     "origin": "measured_usage",
                     "player_id": "11655",
                     "player_name": "Tyrone Tracy Jr.",
-                    "published_at": "2026-11-13T16:43:08.743283+00:00",
+                    "published_at": "2026-11-13T18:00:15.430249+00:00",
                     "reliability": 0.9,
                     "signal_id": "usage-trend-11655",
                     "source": "nflverse play-by-play",
@@ -6636,9 +6894,9 @@
                 "weekly_multiplier": 0.0
               },
               "current_fantasy_value": {
-                "market_position_rank": 61,
-                "market_rank": 226,
-                "market_value": 2517,
+                "market_position_rank": 63,
+                "market_rank": 229,
+                "market_value": 2445,
                 "projection": {
                   "baseline_points": 6.73,
                   "basis": "2026 715 PPG blended with recent form; current context multiplier 0.000 applied",
@@ -6657,7 +6915,7 @@
               "decision_lenses": {
                 "dynasty": {
                   "label": "Flexible depth asset",
-                  "summary": "Market value 2,517 and position rank #61; age 26 shapes the liquidity and time-horizon risk."
+                  "summary": "Market value 2,445 and position rank #63; age 26 shapes the liquidity and time-horizon risk."
                 },
                 "recommended_stance": "Monitor availability",
                 "rest_of_season": {
@@ -6673,24 +6931,24 @@
               "injury_body_part": "Hamstring",
               "injury_status": "IR",
               "key_evidence": [
-                "Dynasty Dealer value 2,517; position rank #61.",
+                "Dynasty Dealer value 2,445; position rank #63.",
                 "2026 sample: 4.56 PPG, 3.71 opportunities/game, 13.9% snaps.",
                 "Sleeper depth-chart order: 6.",
                 "Sleeper availability: IR (Hamstring)."
               ],
               "movement": {
                 "has_previous": true,
-                "position_rank_change": 0,
+                "position_rank_change": -1,
                 "tier_changed": false,
                 "tier_from": 4,
                 "tier_to": 4,
-                "value_change": 0
+                "value_change": -72
               },
               "name": "Tyrone Tracy Jr.",
               "news": [
                 {
                   "event_date": null,
-                  "published_at": "2026-11-13T16:43:08.743283+00:00",
+                  "published_at": "2026-11-13T18:00:15.430249+00:00",
                   "signal_type": "injury",
                   "source": "Sleeper player status",
                   "text": "Sleeper lists Tyrone Tracy Jr. as IR.",
@@ -6743,10 +7001,12 @@
                   "weighted_score": 0.0
                 }
               ],
-              "notable_takeaways": [],
+              "notable_takeaways": [
+                "Market value lost 72 since the previous report."
+              ],
               "player_id": "11655",
               "position": "RB",
-              "position_rank_on_roster": 7,
+              "position_rank_on_roster": 8,
               "recommended_stance": "Monitor availability",
               "research_coverage": {
                 "coach_beat_reporter": false,
@@ -6778,234 +7038,6 @@
               }
             },
             {
-              "age": 27,
-              "app_data_comparisons": [
-                {
-                  "label": "Role",
-                  "source": "Sleeper",
-                  "value": "Depth 4 · DET"
-                },
-                {
-                  "label": "Market",
-                  "source": "Dynasty Dealer",
-                  "value": "2,346 · #67 RB"
-                },
-                {
-                  "label": "Production",
-                  "source": "nflverse",
-                  "value": "6.72 PPG · 11.08 opp/g"
-                }
-              ],
-              "catalysts": [],
-              "coach_beat_reporter_information": [],
-              "context": {
-                "actionable_signal_count": 2,
-                "availability_probability": 0.0,
-                "confidence": "medium",
-                "net_direction": "negative",
-                "research_mention_count": 2,
-                "signal_count": 4,
-                "signals": [
-                  {
-                    "corroboration_count": 1,
-                    "direction": -1,
-                    "event_date": null,
-                    "impact": "availability",
-                    "magnitude": 5,
-                    "origin": "sleeper",
-                    "player_id": "8205",
-                    "player_name": "Isiah Pacheco",
-                    "published_at": "2026-11-13T16:43:08.743283+00:00",
-                    "reliability": 0.82,
-                    "signal_id": "sleeper-injury-8205",
-                    "source": "Sleeper player status",
-                    "source_type": "official",
-                    "summary": "Sleeper lists Isiah Pacheco as IR.",
-                    "ttl_days": 2,
-                    "type": "injury",
-                    "url": null,
-                    "weighted_score": -0.82
-                  },
-                  {
-                    "corroboration_count": 1,
-                    "direction": -1,
-                    "event_date": null,
-                    "impact": "workload",
-                    "magnitude": 3,
-                    "origin": "sleeper",
-                    "player_id": "8205",
-                    "player_name": "Isiah Pacheco",
-                    "published_at": "2026-11-13T16:43:08.743283+00:00",
-                    "reliability": 0.65,
-                    "signal_id": "sleeper-depth-8205",
-                    "source": "Sleeper depth chart",
-                    "source_type": "team",
-                    "summary": "Current Sleeper depth-chart order is 4.",
-                    "ttl_days": 3,
-                    "type": "depth_chart",
-                    "url": null,
-                    "weighted_score": -0.39
-                  },
-                  {
-                    "corroboration_count": 1,
-                    "direction": 0.0,
-                    "event_date": null,
-                    "impact": "context",
-                    "magnitude": 0.0,
-                    "origin": "curated_report",
-                    "player_id": "8205",
-                    "player_name": "Isiah Pacheco",
-                    "published_at": "2026-11-07T12:18:19+00:00",
-                    "reliability": 0.45,
-                    "scored": false,
-                    "signal_id": "5e33e4543e8b2643e1df",
-                    "source": "Spotrac",
-                    "source_type": "aggregator",
-                    "summary": "Isiah Pacheco (RB, Lions) Contract & Cap Hit 2026 - Spotrac",
-                    "ttl_days": 7,
-                    "type": "news",
-                    "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9pTF9LMWlLWkpITVZTMFB5VjNhTUMtZ2ZnVU13NmlZRlRFbGJsSzM4VGh0elFxbjUtaXhTUldlT2ZneFU4dHFoM1hQb3A4dVdMbFI0aTMtVFZXUV9HT2Y3cHYzZFNlU0cwNFdvUG1laWNNa2ZEbnhEeTREVDN3dw?oc=5",
-                    "weighted_score": 0.0
-                  },
-                  {
-                    "corroboration_count": 1,
-                    "direction": 0.0,
-                    "event_date": null,
-                    "impact": "context",
-                    "magnitude": 0.0,
-                    "origin": "curated_report",
-                    "player_id": "8205",
-                    "player_name": "Isiah Pacheco",
-                    "published_at": "2026-11-08T23:08:24+00:00",
-                    "reliability": 0.45,
-                    "scored": false,
-                    "signal_id": "675cfeefc63ef2f6d1a4",
-                    "source": "FantasyPros",
-                    "source_type": "aggregator",
-                    "summary": "Should I Trade Isiah Pacheco for Marlin Klein (2026)? - FantasyPros",
-                    "ttl_days": 7,
-                    "type": "news",
-                    "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1RRHNRbFFSVFdyRDZ2eTBtdWFyNUxYQi1TQUtKR2JyMGtMTGFtN3hWc08yT29PcFlLQ1RpdldUQnhmNGxrdVp1OGtiX2tUajEyYlFWZU5KNEttdlNVam8tUWhfbVZpY2ptYnl3XzQ3eExHMnlBS05v?oc=5",
-                    "weighted_score": 0.0
-                  }
-                ],
-                "weekly_multiplier": 0.0
-              },
-              "current_fantasy_value": {
-                "market_position_rank": 67,
-                "market_rank": 252,
-                "market_value": 2346,
-                "projection": {
-                  "baseline_points": 6.56,
-                  "basis": "2025 715 PPG blended with recent form; current context multiplier 0.000 applied",
-                  "ceiling": 0.0,
-                  "confidence": "medium",
-                  "context_adjustment_points": -6.56,
-                  "context_multiplier": 0.0,
-                  "current_decision_evidence": false,
-                  "floor": 0.0,
-                  "model_type": "evidence_estimate",
-                  "performance_basis": "prior",
-                  "points": 0.0
-                }
-              },
-              "current_starter": false,
-              "decision_lenses": {
-                "dynasty": {
-                  "label": "Flexible depth asset",
-                  "summary": "Market value 2,346 and position rank #67; age 27 shapes the liquidity and time-horizon risk."
-                },
-                "recommended_stance": "Monitor availability",
-                "rest_of_season": {
-                  "label": "Role sensitive",
-                  "summary": "The 2025 sample shows 11.08 opportunities/game and 51.7% snaps."
-                },
-                "weekly": {
-                  "label": "Availability watch",
-                  "summary": "Evidence range 0.0–0.0 with medium confidence; current matchup research is unavailable."
-                }
-              },
-              "depth_chart_order": 4,
-              "injury_body_part": "Back",
-              "injury_status": "IR",
-              "key_evidence": [
-                "Dynasty Dealer value 2,346; position rank #67.",
-                "2025 sample: 6.72 PPG, 11.08 opportunities/game, 51.7% snaps.",
-                "Sleeper depth-chart order: 4.",
-                "Sleeper availability: IR (Back)."
-              ],
-              "movement": {
-                "has_previous": true,
-                "position_rank_change": 0,
-                "tier_changed": false,
-                "tier_from": 4,
-                "tier_to": 4,
-                "value_change": 0
-              },
-              "name": "Isiah Pacheco",
-              "news": [
-                {
-                  "event_date": null,
-                  "published_at": "2026-11-13T16:43:08.743283+00:00",
-                  "signal_type": "injury",
-                  "source": "Sleeper player status",
-                  "text": "Sleeper lists Isiah Pacheco as IR.",
-                  "url": null,
-                  "weighted_score": -0.82
-                },
-                {
-                  "event_date": null,
-                  "published_at": "2026-11-07T12:18:19+00:00",
-                  "signal_type": "news",
-                  "source": "Spotrac",
-                  "text": "Isiah Pacheco (RB, Lions) Contract & Cap Hit 2026 - Spotrac",
-                  "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9pTF9LMWlLWkpITVZTMFB5VjNhTUMtZ2ZnVU13NmlZRlRFbGJsSzM4VGh0elFxbjUtaXhTUldlT2ZneFU4dHFoM1hQb3A4dVdMbFI0aTMtVFZXUV9HT2Y3cHYzZFNlU0cwNFdvUG1laWNNa2ZEbnhEeTREVDN3dw?oc=5",
-                  "weighted_score": 0.0
-                },
-                {
-                  "event_date": null,
-                  "published_at": "2026-11-08T23:08:24+00:00",
-                  "signal_type": "news",
-                  "source": "FantasyPros",
-                  "text": "Should I Trade Isiah Pacheco for Marlin Klein (2026)? - FantasyPros",
-                  "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1RRHNRbFFSVFdyRDZ2eTBtdWFyNUxYQi1TQUtKR2JyMGtMTGFtN3hWc08yT29PcFlLQ1RpdldUQnhmNGxrdVp1OGtiX2tUajEyYlFWZU5KNEttdlNVam8tUWhfbVZpY2ptYnl3XzQ3eExHMnlBS05v?oc=5",
-                  "weighted_score": 0.0
-                }
-              ],
-              "notable_takeaways": [],
-              "player_id": "8205",
-              "position": "RB",
-              "position_rank_on_roster": 8,
-              "recommended_stance": "Monitor availability",
-              "research_coverage": {
-                "coach_beat_reporter": false,
-                "news": true
-              },
-              "risk_factors": [
-                "Current IR designation creates availability risk.",
-                "The current depth-chart path requires movement ahead of the player."
-              ],
-              "speculative_outlook": {
-                "label": "Monitor",
-                "summary": "Availability is the immediate swing factor (IR); recheck status before lineup lock."
-              },
-              "status": "Inactive",
-              "team": "DET",
-              "tier": {
-                "label": "Speculative",
-                "number": 4
-              },
-              "trends": {
-                "opportunity_delta": 0.59,
-                "ppg_delta": -0.45,
-                "recent_opportunities_per_game": 11.67,
-                "recent_ppg": 6.27,
-                "season_opportunities_per_game": 11.08,
-                "season_ppg": 6.72,
-                "summary": "Recent fantasy production is broadly stable against the broader sample."
-              }
-            },
-            {
               "age": 29,
               "app_data_comparisons": [
                 {
@@ -7016,7 +7048,7 @@
                 {
                   "label": "Market",
                   "source": "Dynasty Dealer",
-                  "value": "1,700 · #103 RB"
+                  "value": "1,895 · #91 RB"
                 },
                 {
                   "label": "Production",
@@ -7025,7 +7057,8 @@
                 }
               ],
               "catalysts": [
-                "A top-two depth-chart position creates a direct path to added opportunity."
+                "A top-two depth-chart position creates a direct path to added opportunity.",
+                "Market value increased 195 since the previous report."
               ],
               "coach_beat_reporter_information": [],
               "context": {
@@ -7045,7 +7078,7 @@
                     "origin": "sleeper",
                     "player_id": "6039",
                     "player_name": "Ty Johnson",
-                    "published_at": "2026-11-13T16:43:08.743283+00:00",
+                    "published_at": "2026-11-13T18:00:15.430249+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-6039",
                     "source": "Sleeper depth chart",
@@ -7165,9 +7198,9 @@
                 "weekly_multiplier": 1.013
               },
               "current_fantasy_value": {
-                "market_position_rank": 103,
-                "market_rank": 381,
-                "market_value": 1700,
+                "market_position_rank": 91,
+                "market_rank": 341,
+                "market_value": 1895,
                 "projection": {
                   "baseline_points": 6.07,
                   "basis": "2026 715 PPG blended with recent form; current context multiplier 1.013 applied",
@@ -7186,7 +7219,7 @@
               "decision_lenses": {
                 "dynasty": {
                   "label": "Flexible depth asset",
-                  "summary": "Market value 1,700 and position rank #103; age 29 shapes the liquidity and time-horizon risk."
+                  "summary": "Market value 1,895 and position rank #91; age 29 shapes the liquidity and time-horizon risk."
                 },
                 "recommended_stance": "Hold / monitor role",
                 "rest_of_season": {
@@ -7202,7 +7235,7 @@
               "injury_body_part": null,
               "injury_status": null,
               "key_evidence": [
-                "Dynasty Dealer value 1,700; position rank #103.",
+                "Dynasty Dealer value 1,895; position rank #91.",
                 "2026 sample: 6.52 PPG, 4.0 opportunities/game, 23.3% snaps.",
                 "Sleeper depth-chart order: 2."
               ],
@@ -7212,7 +7245,7 @@
                 "tier_changed": false,
                 "tier_from": 4,
                 "tier_to": 4,
-                "value_change": 0
+                "value_change": 195
               },
               "name": "Ty Johnson",
               "news": [
@@ -7262,7 +7295,9 @@
                   "weighted_score": 0.0
                 }
               ],
-              "notable_takeaways": [],
+              "notable_takeaways": [
+                "Market value gained 195 since the previous report."
+              ],
               "player_id": "6039",
               "position": "RB",
               "position_rank_on_roster": 9,
@@ -7317,7 +7352,7 @@
                 {
                   "label": "Market",
                   "source": "Dynasty Dealer",
-                  "value": "7,670 · #7 WR"
+                  "value": "7,658 · #7 WR"
                 },
                 {
                   "label": "Production",
@@ -7346,7 +7381,7 @@
                     "origin": "sleeper",
                     "player_id": "6794",
                     "player_name": "Justin Jefferson",
-                    "published_at": "2026-11-13T16:43:08.743283+00:00",
+                    "published_at": "2026-11-13T18:00:15.430249+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-6794",
                     "source": "Sleeper depth chart",
@@ -7366,7 +7401,7 @@
                     "origin": "measured_usage",
                     "player_id": "6794",
                     "player_name": "Justin Jefferson",
-                    "published_at": "2026-11-13T16:43:08.743283+00:00",
+                    "published_at": "2026-11-13T18:00:15.430249+00:00",
                     "reliability": 0.9,
                     "signal_id": "usage-trend-6794",
                     "source": "nflverse play-by-play",
@@ -7572,7 +7607,7 @@
               "current_fantasy_value": {
                 "market_position_rank": 7,
                 "market_rank": 16,
-                "market_value": 7670,
+                "market_value": 7658,
                 "projection": {
                   "baseline_points": 12.52,
                   "basis": "2026 715 PPG blended with recent form; current context multiplier 1.044 applied",
@@ -7591,7 +7626,7 @@
               "decision_lenses": {
                 "dynasty": {
                   "label": "Foundation asset",
-                  "summary": "Market value 7,670 and position rank #7; age 27 shapes the liquidity and time-horizon risk."
+                  "summary": "Market value 7,658 and position rank #7; age 27 shapes the liquidity and time-horizon risk."
                 },
                 "recommended_stance": "Start / hold",
                 "rest_of_season": {
@@ -7607,7 +7642,7 @@
               "injury_body_part": null,
               "injury_status": null,
               "key_evidence": [
-                "Dynasty Dealer value 7,670; position rank #7.",
+                "Dynasty Dealer value 7,658; position rank #7.",
                 "2026 sample: 13.6 PPG, 7.43 opportunities/game, 82.9% snaps.",
                 "Sleeper depth-chart order: 1."
               ],
@@ -7617,7 +7652,7 @@
                 "tier_changed": false,
                 "tier_from": 1,
                 "tier_to": 1,
-                "value_change": 0
+                "value_change": -12
               },
               "name": "Justin Jefferson",
               "news": [
@@ -7704,7 +7739,8 @@
                 }
               ],
               "notable_takeaways": [
-                "Currently selected in the Sleeper starting lineup."
+                "Currently selected in the Sleeper starting lineup.",
+                "Market value lost 12 since the previous report."
               ],
               "player_id": "6794",
               "position": "WR",
@@ -7752,7 +7788,7 @@
                 {
                   "label": "Market",
                   "source": "Dynasty Dealer",
-                  "value": "6,452 · #15 WR"
+                  "value": "6,368 · #15 WR"
                 },
                 {
                   "label": "Production",
@@ -7781,7 +7817,7 @@
                     "origin": "sleeper",
                     "player_id": "7569",
                     "player_name": "Nico Collins",
-                    "published_at": "2026-11-13T16:43:08.743283+00:00",
+                    "published_at": "2026-11-13T18:00:15.430249+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-7569",
                     "source": "Sleeper depth chart",
@@ -7801,7 +7837,7 @@
                     "origin": "measured_usage",
                     "player_id": "7569",
                     "player_name": "Nico Collins",
-                    "published_at": "2026-11-13T16:43:08.743283+00:00",
+                    "published_at": "2026-11-13T18:00:15.430249+00:00",
                     "reliability": 0.9,
                     "signal_id": "usage-trend-7569",
                     "source": "nflverse play-by-play",
@@ -8132,8 +8168,8 @@
               },
               "current_fantasy_value": {
                 "market_position_rank": 15,
-                "market_rank": 35,
-                "market_value": 6452,
+                "market_rank": 36,
+                "market_value": 6368,
                 "projection": {
                   "baseline_points": 13.31,
                   "basis": "2026 715 PPG blended with recent form; current context multiplier 1.008 applied",
@@ -8152,7 +8188,7 @@
               "decision_lenses": {
                 "dynasty": {
                   "label": "Strong hold",
-                  "summary": "Market value 6,452 and position rank #15; age 27 shapes the liquidity and time-horizon risk."
+                  "summary": "Market value 6,368 and position rank #15; age 27 shapes the liquidity and time-horizon risk."
                 },
                 "recommended_stance": "Start / hold",
                 "rest_of_season": {
@@ -8168,7 +8204,7 @@
               "injury_body_part": null,
               "injury_status": null,
               "key_evidence": [
-                "Dynasty Dealer value 6,452; position rank #15.",
+                "Dynasty Dealer value 6,368; position rank #15.",
                 "2026 sample: 15.27 PPG, 6.83 opportunities/game, 70.8% snaps.",
                 "Sleeper depth-chart order: 1."
               ],
@@ -8178,7 +8214,7 @@
                 "tier_changed": false,
                 "tier_from": 2,
                 "tier_to": 2,
-                "value_change": 0
+                "value_change": -84
               },
               "name": "Nico Collins",
               "news": [
@@ -8319,7 +8355,8 @@
                 }
               ],
               "notable_takeaways": [
-                "Currently selected in the Sleeper starting lineup."
+                "Currently selected in the Sleeper starting lineup.",
+                "Market value lost 84 since the previous report."
               ],
               "player_id": "7569",
               "position": "WR",
@@ -8367,7 +8404,7 @@
                 {
                   "label": "Market",
                   "source": "Dynasty Dealer",
-                  "value": "4,801 · #31 WR"
+                  "value": "4,676 · #32 WR"
                 },
                 {
                   "label": "Production",
@@ -8396,7 +8433,7 @@
                     "origin": "measured_usage",
                     "player_id": "11646",
                     "player_name": "Jalen Coker",
-                    "published_at": "2026-11-13T16:43:08.743283+00:00",
+                    "published_at": "2026-11-13T18:00:15.430249+00:00",
                     "reliability": 0.9,
                     "signal_id": "usage-trend-11646",
                     "source": "nflverse play-by-play",
@@ -8416,7 +8453,7 @@
                     "origin": "sleeper",
                     "player_id": "11646",
                     "player_name": "Jalen Coker",
-                    "published_at": "2026-11-13T16:43:08.743283+00:00",
+                    "published_at": "2026-11-13T18:00:15.430249+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-11646",
                     "source": "Sleeper depth chart",
@@ -8557,9 +8594,9 @@
                 "weekly_multiplier": 0.994
               },
               "current_fantasy_value": {
-                "market_position_rank": 31,
-                "market_rank": 83,
-                "market_value": 4801,
+                "market_position_rank": 32,
+                "market_rank": 84,
+                "market_value": 4676,
                 "projection": {
                   "baseline_points": 10.52,
                   "basis": "2026 715 PPG blended with recent form; current context multiplier 0.994 applied",
@@ -8578,7 +8615,7 @@
               "decision_lenses": {
                 "dynasty": {
                   "label": "Flexible depth asset",
-                  "summary": "Market value 4,801 and position rank #31; age 25 shapes the liquidity and time-horizon risk."
+                  "summary": "Market value 4,676 and position rank #32; age 25 shapes the liquidity and time-horizon risk."
                 },
                 "recommended_stance": "Start / hold",
                 "rest_of_season": {
@@ -8594,7 +8631,7 @@
               "injury_body_part": null,
               "injury_status": null,
               "key_evidence": [
-                "Dynasty Dealer value 4,801; position rank #31.",
+                "Dynasty Dealer value 4,676; position rank #32.",
                 "2026 sample: 12.57 PPG, 7.14 opportunities/game, 72.1% snaps.",
                 "Sleeper depth-chart order: 2."
               ],
@@ -8604,7 +8641,7 @@
                 "tier_changed": false,
                 "tier_from": 3,
                 "tier_to": 3,
-                "value_change": 0
+                "value_change": -125
               },
               "name": "Jalen Coker",
               "news": [
@@ -8664,7 +8701,8 @@
                 }
               ],
               "notable_takeaways": [
-                "Currently selected in the Sleeper starting lineup."
+                "Currently selected in the Sleeper starting lineup.",
+                "Market value lost 125 since the previous report."
               ],
               "player_id": "11646",
               "position": "WR",
@@ -8706,7 +8744,7 @@
                 {
                   "label": "Market",
                   "source": "Dynasty Dealer",
-                  "value": "4,293 · #36 WR"
+                  "value": "4,188 · #36 WR"
                 },
                 {
                   "label": "Production",
@@ -8735,7 +8773,7 @@
                     "origin": "sleeper",
                     "player_id": "7526",
                     "player_name": "Jaylen Waddle",
-                    "published_at": "2026-11-13T16:43:08.743283+00:00",
+                    "published_at": "2026-11-13T18:00:15.430249+00:00",
                     "reliability": 0.82,
                     "signal_id": "sleeper-injury-7526",
                     "source": "Sleeper player status",
@@ -8755,7 +8793,7 @@
                     "origin": "sleeper",
                     "player_id": "7526",
                     "player_name": "Jaylen Waddle",
-                    "published_at": "2026-11-13T16:43:08.743283+00:00",
+                    "published_at": "2026-11-13T18:00:15.430249+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-7526",
                     "source": "Sleeper depth chart",
@@ -8897,8 +8935,8 @@
               },
               "current_fantasy_value": {
                 "market_position_rank": 36,
-                "market_rank": 96,
-                "market_value": 4293,
+                "market_rank": 97,
+                "market_value": 4188,
                 "projection": {
                   "baseline_points": 9.06,
                   "basis": "2026 715 PPG blended with recent form; current context multiplier 0.000 applied",
@@ -8917,7 +8955,7 @@
               "decision_lenses": {
                 "dynasty": {
                   "label": "Flexible depth asset",
-                  "summary": "Market value 4,293 and position rank #36; age 27 shapes the liquidity and time-horizon risk."
+                  "summary": "Market value 4,188 and position rank #36; age 27 shapes the liquidity and time-horizon risk."
                 },
                 "recommended_stance": "Monitor availability",
                 "rest_of_season": {
@@ -8933,7 +8971,7 @@
               "injury_body_part": "Head",
               "injury_status": "Out",
               "key_evidence": [
-                "Dynasty Dealer value 4,293; position rank #36.",
+                "Dynasty Dealer value 4,188; position rank #36.",
                 "2026 sample: 9.11 PPG, 6.0 opportunities/game, 58.6% snaps.",
                 "Sleeper depth-chart order: 1.",
                 "Sleeper availability: Out (Head)."
@@ -8944,13 +8982,13 @@
                 "tier_changed": false,
                 "tier_from": 3,
                 "tier_to": 3,
-                "value_change": 0
+                "value_change": -105
               },
               "name": "Jaylen Waddle",
               "news": [
                 {
                   "event_date": null,
-                  "published_at": "2026-11-13T16:43:08.743283+00:00",
+                  "published_at": "2026-11-13T18:00:15.430249+00:00",
                   "signal_type": "injury",
                   "source": "Sleeper player status",
                   "text": "Sleeper lists Jaylen Waddle as Out.",
@@ -9012,7 +9050,9 @@
                   "weighted_score": 0.0
                 }
               ],
-              "notable_takeaways": [],
+              "notable_takeaways": [
+                "Market value lost 105 since the previous report."
+              ],
               "player_id": "7526",
               "position": "WR",
               "position_rank_on_roster": 4,
@@ -9061,7 +9101,7 @@
                 {
                   "label": "Market",
                   "source": "Dynasty Dealer",
-                  "value": "2,931 · #63 WR"
+                  "value": "2,877 · #64 WR"
                 },
                 {
                   "label": "Production",
@@ -9088,7 +9128,7 @@
                     "origin": "sleeper",
                     "player_id": "5927",
                     "player_name": "Terry McLaurin",
-                    "published_at": "2026-11-13T16:43:08.743283+00:00",
+                    "published_at": "2026-11-13T18:00:15.430249+00:00",
                     "reliability": 0.82,
                     "signal_id": "sleeper-injury-5927",
                     "source": "Sleeper player status",
@@ -9108,7 +9148,7 @@
                     "origin": "sleeper",
                     "player_id": "5927",
                     "player_name": "Terry McLaurin",
-                    "published_at": "2026-11-13T16:43:08.743283+00:00",
+                    "published_at": "2026-11-13T18:00:15.430249+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-5927",
                     "source": "Sleeper depth chart",
@@ -9249,9 +9289,9 @@
                 "weekly_multiplier": 0.0
               },
               "current_fantasy_value": {
-                "market_position_rank": 63,
+                "market_position_rank": 64,
                 "market_rank": 172,
-                "market_value": 2931,
+                "market_value": 2877,
                 "projection": {
                   "baseline_points": 10.13,
                   "basis": "2026 715 PPG blended with recent form; current context multiplier 0.000 applied",
@@ -9270,7 +9310,7 @@
               "decision_lenses": {
                 "dynasty": {
                   "label": "Market-sensitive veteran",
-                  "summary": "Market value 2,931 and position rank #63; age 31 shapes the liquidity and time-horizon risk."
+                  "summary": "Market value 2,877 and position rank #64; age 31 shapes the liquidity and time-horizon risk."
                 },
                 "recommended_stance": "Monitor availability",
                 "rest_of_season": {
@@ -9286,7 +9326,7 @@
               "injury_body_part": "Knee",
               "injury_status": "IR",
               "key_evidence": [
-                "Dynasty Dealer value 2,931; position rank #63.",
+                "Dynasty Dealer value 2,877; position rank #64.",
                 "2026 sample: 9.2 PPG, 5.4 opportunities/game, 60.0% snaps.",
                 "Sleeper depth-chart order: 6.",
                 "Sleeper availability: IR (Knee)."
@@ -9297,13 +9337,13 @@
                 "tier_changed": false,
                 "tier_from": 4,
                 "tier_to": 4,
-                "value_change": 0
+                "value_change": -54
               },
               "name": "Terry McLaurin",
               "news": [
                 {
                   "event_date": null,
-                  "published_at": "2026-11-13T16:43:08.743283+00:00",
+                  "published_at": "2026-11-13T18:00:15.430249+00:00",
                   "signal_type": "injury",
                   "source": "Sleeper player status",
                   "text": "Sleeper lists Terry McLaurin as IR.",
@@ -9365,7 +9405,9 @@
                   "weighted_score": 0.0
                 }
               ],
-              "notable_takeaways": [],
+              "notable_takeaways": [
+                "Market value lost 54 since the previous report."
+              ],
               "player_id": "5927",
               "position": "WR",
               "position_rank_on_roster": 5,
@@ -9410,7 +9452,7 @@
                 {
                   "label": "Market",
                   "source": "Dynasty Dealer",
-                  "value": "2,766 · #74 WR"
+                  "value": "2,745 · #69 WR"
                 },
                 {
                   "label": "Production",
@@ -9437,7 +9479,7 @@
                     "origin": "sleeper",
                     "player_id": "10222",
                     "player_name": "Jayden Reed",
-                    "published_at": "2026-11-13T16:43:08.743283+00:00",
+                    "published_at": "2026-11-13T18:00:15.430249+00:00",
                     "reliability": 0.82,
                     "signal_id": "sleeper-injury-10222",
                     "source": "Sleeper player status",
@@ -9457,7 +9499,7 @@
                     "origin": "sleeper",
                     "player_id": "10222",
                     "player_name": "Jayden Reed",
-                    "published_at": "2026-11-13T16:43:08.743283+00:00",
+                    "published_at": "2026-11-13T18:00:15.430249+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-10222",
                     "source": "Sleeper depth chart",
@@ -9640,9 +9682,9 @@
                 "weekly_multiplier": 0.0
               },
               "current_fantasy_value": {
-                "market_position_rank": 74,
-                "market_rank": 195,
-                "market_value": 2766,
+                "market_position_rank": 69,
+                "market_rank": 186,
+                "market_value": 2745,
                 "projection": {
                   "baseline_points": 3.2,
                   "basis": "2026 715 PPG blended with recent form; current context multiplier 0.000 applied",
@@ -9661,7 +9703,7 @@
               "decision_lenses": {
                 "dynasty": {
                   "label": "Flexible depth asset",
-                  "summary": "Market value 2,766 and position rank #74; age 26 shapes the liquidity and time-horizon risk."
+                  "summary": "Market value 2,745 and position rank #69; age 26 shapes the liquidity and time-horizon risk."
                 },
                 "recommended_stance": "Monitor availability",
                 "rest_of_season": {
@@ -9677,7 +9719,7 @@
               "injury_body_part": "Neck",
               "injury_status": "IR",
               "key_evidence": [
-                "Dynasty Dealer value 2,766; position rank #74.",
+                "Dynasty Dealer value 2,745; position rank #69.",
                 "2026 sample: 3.2 PPG, 4.0 opportunities/game, 30.0% snaps.",
                 "Sleeper depth-chart order: 7.",
                 "Sleeper availability: IR (Neck)."
@@ -9688,13 +9730,13 @@
                 "tier_changed": false,
                 "tier_from": 4,
                 "tier_to": 4,
-                "value_change": 0
+                "value_change": -21
               },
               "name": "Jayden Reed",
               "news": [
                 {
                   "event_date": null,
-                  "published_at": "2026-11-13T16:43:08.743283+00:00",
+                  "published_at": "2026-11-13T18:00:15.430249+00:00",
                   "signal_type": "injury",
                   "source": "Sleeper player status",
                   "text": "Sleeper lists Jayden Reed as IR.",
@@ -9774,7 +9816,9 @@
                   "weighted_score": 0.0
                 }
               ],
-              "notable_takeaways": [],
+              "notable_takeaways": [
+                "Market value lost 21 since the previous report."
+              ],
               "player_id": "10222",
               "position": "WR",
               "position_rank_on_roster": 6,
@@ -9819,7 +9863,7 @@
                 {
                   "label": "Market",
                   "source": "Dynasty Dealer",
-                  "value": "2,566 · #82 WR"
+                  "value": "2,604 · #76 WR"
                 },
                 {
                   "label": "Production",
@@ -9828,7 +9872,8 @@
                 }
               ],
               "catalysts": [
-                "A top-two depth-chart position creates a direct path to added opportunity."
+                "A top-two depth-chart position creates a direct path to added opportunity.",
+                "Market value increased 38 since the previous report."
               ],
               "coach_beat_reporter_information": [],
               "context": {
@@ -9848,7 +9893,7 @@
                     "origin": "sleeper",
                     "player_id": "5045",
                     "player_name": "Courtland Sutton",
-                    "published_at": "2026-11-13T16:43:08.743283+00:00",
+                    "published_at": "2026-11-13T18:00:15.430249+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-5045",
                     "source": "Sleeper depth chart",
@@ -9989,9 +10034,9 @@
                 "weekly_multiplier": 1.013
               },
               "current_fantasy_value": {
-                "market_position_rank": 82,
-                "market_rank": 217,
-                "market_value": 2566,
+                "market_position_rank": 76,
+                "market_rank": 203,
+                "market_value": 2604,
                 "projection": {
                   "baseline_points": 8.37,
                   "basis": "2026 715 PPG blended with recent form; current context multiplier 1.013 applied",
@@ -10010,7 +10055,7 @@
               "decision_lenses": {
                 "dynasty": {
                   "label": "Market-sensitive veteran",
-                  "summary": "Market value 2,566 and position rank #82; age 31 shapes the liquidity and time-horizon risk."
+                  "summary": "Market value 2,604 and position rank #76; age 31 shapes the liquidity and time-horizon risk."
                 },
                 "recommended_stance": "Shop if value holds",
                 "rest_of_season": {
@@ -10026,7 +10071,7 @@
               "injury_body_part": null,
               "injury_status": null,
               "key_evidence": [
-                "Dynasty Dealer value 2,566; position rank #82.",
+                "Dynasty Dealer value 2,604; position rank #76.",
                 "2026 sample: 7.07 PPG, 5.11 opportunities/game, 78.1% snaps.",
                 "Sleeper depth-chart order: 2."
               ],
@@ -10036,7 +10081,7 @@
                 "tier_changed": false,
                 "tier_from": 4,
                 "tier_to": 4,
-                "value_change": 0
+                "value_change": 38
               },
               "name": "Courtland Sutton",
               "news": [
@@ -10095,7 +10140,9 @@
                   "weighted_score": 0.0
                 }
               ],
-              "notable_takeaways": [],
+              "notable_takeaways": [
+                "Market value gained 38 since the previous report."
+              ],
               "player_id": "5045",
               "position": "WR",
               "position_rank_on_roster": 7,
@@ -10138,7 +10185,7 @@
                 {
                   "label": "Market",
                   "source": "Dynasty Dealer",
-                  "value": "2,206 · #112 WR"
+                  "value": "2,160 · #109 WR"
                 },
                 {
                   "label": "Production",
@@ -10155,8 +10202,8 @@
                 "availability_probability": 0.85,
                 "confidence": "medium",
                 "net_direction": "negative",
-                "research_mention_count": 11,
-                "signal_count": 13,
+                "research_mention_count": 10,
+                "signal_count": 12,
                 "signals": [
                   {
                     "corroboration_count": 1,
@@ -10167,7 +10214,7 @@
                     "origin": "sleeper",
                     "player_id": "7571",
                     "player_name": "Rashod Bateman",
-                    "published_at": "2026-11-13T16:43:08.743283+00:00",
+                    "published_at": "2026-11-13T18:00:15.430249+00:00",
                     "reliability": 0.82,
                     "signal_id": "sleeper-injury-7571",
                     "source": "Sleeper player status",
@@ -10187,7 +10234,7 @@
                     "origin": "sleeper",
                     "player_id": "7571",
                     "player_name": "Rashod Bateman",
-                    "published_at": "2026-11-13T16:43:08.743283+00:00",
+                    "published_at": "2026-11-13T18:00:15.430249+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-7571",
                     "source": "Sleeper depth chart",
@@ -10312,27 +10359,6 @@
                     "origin": "curated_report",
                     "player_id": "7571",
                     "player_name": "Rashod Bateman",
-                    "published_at": "2026-11-06T17:38:42+00:00",
-                    "reliability": 0.45,
-                    "scored": false,
-                    "signal_id": "63f1b59fa679cc981f6a",
-                    "source": "CBS Sports",
-                    "source_type": "aggregator",
-                    "summary": "Ravens' Rashod Bateman: Another one-catch game in loss - CBS Sports",
-                    "ttl_days": 7,
-                    "type": "news",
-                    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxORDlNNm9ZU0FWbUUyUnJsS21OY0ZWQmRSY19zOXJydWdqZVBEWHdoYlpjRVpSQXdZNTNPM3lSYmc1SkxLYWdZTEJtZktyMUxPYVV4a3hDS3FRWVpxbGFaazhEQkwwaVRJQjhtamJoYzlqaUE5UXRKd0lWcHpEaHRDN0wtREd3aGh6YWxSZkRsMmpKMzJlVHc0azZfMm1NSlNVdjVz?oc=5",
-                    "weighted_score": 0.0
-                  },
-                  {
-                    "corroboration_count": 1,
-                    "direction": 0.0,
-                    "event_date": null,
-                    "impact": "context",
-                    "magnitude": 0.0,
-                    "origin": "curated_report",
-                    "player_id": "7571",
-                    "player_name": "Rashod Bateman",
                     "published_at": "2026-11-12T16:30:00+00:00",
                     "reliability": 0.45,
                     "scored": false,
@@ -10433,9 +10459,9 @@
                 "weekly_multiplier": 0.861
               },
               "current_fantasy_value": {
-                "market_position_rank": 112,
-                "market_rank": 284,
-                "market_value": 2206,
+                "market_position_rank": 109,
+                "market_rank": 281,
+                "market_value": 2160,
                 "projection": {
                   "baseline_points": 5.18,
                   "basis": "2026 715 PPG blended with recent form; current context multiplier 0.861 applied",
@@ -10454,7 +10480,7 @@
               "decision_lenses": {
                 "dynasty": {
                   "label": "Flexible depth asset",
-                  "summary": "Market value 2,206 and position rank #112; age 26 shapes the liquidity and time-horizon risk."
+                  "summary": "Market value 2,160 and position rank #109; age 26 shapes the liquidity and time-horizon risk."
                 },
                 "recommended_stance": "Monitor availability",
                 "rest_of_season": {
@@ -10470,7 +10496,7 @@
               "injury_body_part": "Calf",
               "injury_status": "Questionable",
               "key_evidence": [
-                "Dynasty Dealer value 2,206; position rank #112.",
+                "Dynasty Dealer value 2,160; position rank #109.",
                 "2026 sample: 6.16 PPG, 3.44 opportunities/game, 69.7% snaps.",
                 "Sleeper depth-chart order: 2.",
                 "Sleeper availability: Questionable (Calf)."
@@ -10481,13 +10507,13 @@
                 "tier_changed": false,
                 "tier_from": 4,
                 "tier_to": 4,
-                "value_change": 0
+                "value_change": -46
               },
               "name": "Rashod Bateman",
               "news": [
                 {
                   "event_date": null,
-                  "published_at": "2026-11-13T16:43:08.743283+00:00",
+                  "published_at": "2026-11-13T18:00:15.430249+00:00",
                   "signal_type": "injury",
                   "source": "Sleeper player status",
                   "text": "Sleeper lists Rashod Bateman as Questionable.",
@@ -10541,15 +10567,6 @@
                 },
                 {
                   "event_date": null,
-                  "published_at": "2026-11-06T17:38:42+00:00",
-                  "signal_type": "news",
-                  "source": "CBS Sports",
-                  "text": "Ravens' Rashod Bateman: Another one-catch game in loss - CBS Sports",
-                  "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxORDlNNm9ZU0FWbUUyUnJsS21OY0ZWQmRSY19zOXJydWdqZVBEWHdoYlpjRVpSQXdZNTNPM3lSYmc1SkxLYWdZTEJtZktyMUxPYVV4a3hDS3FRWVpxbGFaazhEQkwwaVRJQjhtamJoYzlqaUE5UXRKd0lWcHpEaHRDN0wtREd3aGh6YWxSZkRsMmpKMzJlVHc0azZfMm1NSlNVdjVz?oc=5",
-                  "weighted_score": 0.0
-                },
-                {
-                  "event_date": null,
                   "published_at": "2026-11-12T16:30:00+00:00",
                   "signal_type": "news",
                   "source": "The Baltimore Banner",
@@ -10594,7 +10611,9 @@
                   "weighted_score": 0.0
                 }
               ],
-              "notable_takeaways": [],
+              "notable_takeaways": [
+                "Market value lost 46 since the previous report."
+              ],
               "player_id": "7571",
               "position": "WR",
               "position_rank_on_roster": 8,
@@ -10637,7 +10656,7 @@
                 {
                   "label": "Market",
                   "source": "Dynasty Dealer",
-                  "value": "1,972 · #135 WR"
+                  "value": "1,869 · #136 WR"
                 },
                 {
                   "label": "Production",
@@ -10664,7 +10683,7 @@
                     "origin": "sleeper",
                     "player_id": "10226",
                     "player_name": "Andrei Iosivas",
-                    "published_at": "2026-11-13T16:43:08.743283+00:00",
+                    "published_at": "2026-11-13T18:00:15.430249+00:00",
                     "reliability": 0.82,
                     "signal_id": "sleeper-injury-10226",
                     "source": "Sleeper player status",
@@ -10684,7 +10703,7 @@
                     "origin": "sleeper",
                     "player_id": "10226",
                     "player_name": "Andrei Iosivas",
-                    "published_at": "2026-11-13T16:43:08.743283+00:00",
+                    "published_at": "2026-11-13T18:00:15.430249+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-10226",
                     "source": "Sleeper depth chart",
@@ -10867,9 +10886,9 @@
                 "weekly_multiplier": 0.0
               },
               "current_fantasy_value": {
-                "market_position_rank": 135,
-                "market_rank": 337,
-                "market_value": 1972,
+                "market_position_rank": 136,
+                "market_rank": 344,
+                "market_value": 1869,
                 "projection": {
                   "baseline_points": 2.45,
                   "basis": "2026 715 PPG blended with recent form; current context multiplier 0.000 applied",
@@ -10888,7 +10907,7 @@
               "decision_lenses": {
                 "dynasty": {
                   "label": "Flexible depth asset",
-                  "summary": "Market value 1,972 and position rank #135; age 27 shapes the liquidity and time-horizon risk."
+                  "summary": "Market value 1,869 and position rank #136; age 27 shapes the liquidity and time-horizon risk."
                 },
                 "recommended_stance": "Monitor availability",
                 "rest_of_season": {
@@ -10904,7 +10923,7 @@
               "injury_body_part": "Thumb",
               "injury_status": "IR",
               "key_evidence": [
-                "Dynasty Dealer value 1,972; position rank #135.",
+                "Dynasty Dealer value 1,869; position rank #136.",
                 "2026 sample: 2.45 PPG, 2.0 opportunities/game, 57.0% snaps.",
                 "Sleeper depth-chart order: 6.",
                 "Sleeper availability: IR (Thumb)."
@@ -10915,13 +10934,13 @@
                 "tier_changed": false,
                 "tier_from": 4,
                 "tier_to": 4,
-                "value_change": 0
+                "value_change": -103
               },
               "name": "Andrei Iosivas",
               "news": [
                 {
                   "event_date": null,
-                  "published_at": "2026-11-13T16:43:08.743283+00:00",
+                  "published_at": "2026-11-13T18:00:15.430249+00:00",
                   "signal_type": "injury",
                   "source": "Sleeper player status",
                   "text": "Sleeper lists Andrei Iosivas as IR.",
@@ -11001,7 +11020,9 @@
                   "weighted_score": 0.0
                 }
               ],
-              "notable_takeaways": [],
+              "notable_takeaways": [
+                "Market value lost 103 since the previous report."
+              ],
               "player_id": "10226",
               "position": "WR",
               "position_rank_on_roster": 9,
@@ -11057,7 +11078,7 @@
                 {
                   "label": "Market",
                   "source": "Dynasty Dealer",
-                  "value": "5,699 · #6 TE"
+                  "value": "5,566 · #6 TE"
                 },
                 {
                   "label": "Production",
@@ -11086,7 +11107,7 @@
                     "origin": "sleeper",
                     "player_id": "10859",
                     "player_name": "Sam LaPorta",
-                    "published_at": "2026-11-13T16:43:08.743283+00:00",
+                    "published_at": "2026-11-13T18:00:15.430249+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-10859",
                     "source": "Sleeper depth chart",
@@ -11106,7 +11127,7 @@
                     "origin": "measured_usage",
                     "player_id": "10859",
                     "player_name": "Sam LaPorta",
-                    "published_at": "2026-11-13T16:43:08.743283+00:00",
+                    "published_at": "2026-11-13T18:00:15.430249+00:00",
                     "reliability": 0.9,
                     "signal_id": "usage-trend-10859",
                     "source": "nflverse play-by-play",
@@ -11290,8 +11311,8 @@
               },
               "current_fantasy_value": {
                 "market_position_rank": 6,
-                "market_rank": 56,
-                "market_value": 5699,
+                "market_rank": 59,
+                "market_value": 5566,
                 "projection": {
                   "baseline_points": 9.49,
                   "basis": "2026 715 PPG blended with recent form; current context multiplier 1.008 applied",
@@ -11310,7 +11331,7 @@
               "decision_lenses": {
                 "dynasty": {
                   "label": "Strong hold",
-                  "summary": "Market value 5,699 and position rank #6; age 25 shapes the liquidity and time-horizon risk."
+                  "summary": "Market value 5,566 and position rank #6; age 25 shapes the liquidity and time-horizon risk."
                 },
                 "recommended_stance": "Start / hold",
                 "rest_of_season": {
@@ -11326,7 +11347,7 @@
               "injury_body_part": null,
               "injury_status": null,
               "key_evidence": [
-                "Dynasty Dealer value 5,699; position rank #6.",
+                "Dynasty Dealer value 5,566; position rank #6.",
                 "2026 sample: 11.64 PPG, 6.25 opportunities/game, 89.9% snaps.",
                 "Sleeper depth-chart order: 1."
               ],
@@ -11336,7 +11357,7 @@
                 "tier_changed": false,
                 "tier_from": 2,
                 "tier_to": 2,
-                "value_change": 0
+                "value_change": -133
               },
               "name": "Sam LaPorta",
               "news": [
@@ -11414,7 +11435,8 @@
                 }
               ],
               "notable_takeaways": [
-                "Currently selected in the Sleeper starting lineup."
+                "Currently selected in the Sleeper starting lineup.",
+                "Market value lost 133 since the previous report."
               ],
               "player_id": "10859",
               "position": "TE",
@@ -11456,7 +11478,7 @@
                 {
                   "label": "Market",
                   "source": "Dynasty Dealer",
-                  "value": "5,432 · #8 TE"
+                  "value": "5,383 · #8 TE"
                 },
                 {
                   "label": "Production",
@@ -11486,7 +11508,7 @@
                     "origin": "sleeper",
                     "player_id": "12506",
                     "player_name": "Harold Fannin Jr.",
-                    "published_at": "2026-11-13T16:43:08.743283+00:00",
+                    "published_at": "2026-11-13T18:00:15.430249+00:00",
                     "reliability": 0.82,
                     "signal_id": "sleeper-injury-12506",
                     "source": "Sleeper player status",
@@ -11506,7 +11528,7 @@
                     "origin": "sleeper",
                     "player_id": "12506",
                     "player_name": "Harold Fannin Jr.",
-                    "published_at": "2026-11-13T16:43:08.743283+00:00",
+                    "published_at": "2026-11-13T18:00:15.430249+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-12506",
                     "source": "Sleeper depth chart",
@@ -11526,7 +11548,7 @@
                     "origin": "measured_usage",
                     "player_id": "12506",
                     "player_name": "Harold Fannin Jr.",
-                    "published_at": "2026-11-13T16:43:08.743283+00:00",
+                    "published_at": "2026-11-13T18:00:15.430249+00:00",
                     "reliability": 0.9,
                     "signal_id": "usage-trend-12506",
                     "source": "nflverse play-by-play",
@@ -11669,7 +11691,7 @@
               "current_fantasy_value": {
                 "market_position_rank": 8,
                 "market_rank": 66,
-                "market_value": 5432,
+                "market_value": 5383,
                 "projection": {
                   "baseline_points": 13.07,
                   "basis": "2026 715 PPG blended with recent form; current context multiplier 0.887 applied",
@@ -11688,7 +11710,7 @@
               "decision_lenses": {
                 "dynasty": {
                   "label": "Strong hold",
-                  "summary": "Market value 5,432 and position rank #8; age 22 shapes the liquidity and time-horizon risk."
+                  "summary": "Market value 5,383 and position rank #8; age 22 shapes the liquidity and time-horizon risk."
                 },
                 "recommended_stance": "Monitor availability",
                 "rest_of_season": {
@@ -11704,7 +11726,7 @@
               "injury_body_part": "Groin",
               "injury_status": "Questionable",
               "key_evidence": [
-                "Dynasty Dealer value 5,432; position rank #8.",
+                "Dynasty Dealer value 5,383; position rank #8.",
                 "2026 sample: 11.37 PPG, 5.89 opportunities/game, 86.4% snaps.",
                 "Sleeper depth-chart order: 1.",
                 "Sleeper availability: Questionable (Groin)."
@@ -11715,13 +11737,13 @@
                 "tier_changed": false,
                 "tier_from": 2,
                 "tier_to": 2,
-                "value_change": 0
+                "value_change": -49
               },
               "name": "Harold Fannin Jr.",
               "news": [
                 {
                   "event_date": null,
-                  "published_at": "2026-11-13T16:43:08.743283+00:00",
+                  "published_at": "2026-11-13T18:00:15.430249+00:00",
                   "signal_type": "injury",
                   "source": "Sleeper player status",
                   "text": "Sleeper lists Harold Fannin Jr. as Questionable.",
@@ -11784,7 +11806,8 @@
                 }
               ],
               "notable_takeaways": [
-                "Currently selected in the Sleeper starting lineup."
+                "Currently selected in the Sleeper starting lineup.",
+                "Market value lost 49 since the previous report."
               ],
               "player_id": "12506",
               "position": "TE",
@@ -11834,7 +11857,7 @@
                 {
                   "label": "Market",
                   "source": "Dynasty Dealer",
-                  "value": "2,319 · #43 TE"
+                  "value": "2,228 · #42 TE"
                 },
                 {
                   "label": "Production",
@@ -11863,7 +11886,7 @@
                     "origin": "sleeper",
                     "player_id": "12521",
                     "player_name": "Elijah Arroyo",
-                    "published_at": "2026-11-13T16:43:08.743283+00:00",
+                    "published_at": "2026-11-13T18:00:15.430249+00:00",
                     "reliability": 0.82,
                     "signal_id": "sleeper-injury-12521",
                     "source": "Sleeper player status",
@@ -11883,7 +11906,7 @@
                     "origin": "sleeper",
                     "player_id": "12521",
                     "player_name": "Elijah Arroyo",
-                    "published_at": "2026-11-13T16:43:08.743283+00:00",
+                    "published_at": "2026-11-13T18:00:15.430249+00:00",
                     "reliability": 0.65,
                     "signal_id": "sleeper-depth-12521",
                     "source": "Sleeper depth chart",
@@ -11961,9 +11984,9 @@
                 "weekly_multiplier": 0.0
               },
               "current_fantasy_value": {
-                "market_position_rank": 43,
-                "market_rank": 261,
-                "market_value": 2319,
+                "market_position_rank": 42,
+                "market_rank": 267,
+                "market_value": 2228,
                 "projection": {
                   "baseline_points": 0.29,
                   "basis": "2026 715 PPG blended with recent form; current context multiplier 0.000 applied",
@@ -11982,7 +12005,7 @@
               "decision_lenses": {
                 "dynasty": {
                   "label": "Development hold",
-                  "summary": "Market value 2,319 and position rank #43; age 23 shapes the liquidity and time-horizon risk."
+                  "summary": "Market value 2,228 and position rank #42; age 23 shapes the liquidity and time-horizon risk."
                 },
                 "recommended_stance": "Monitor availability",
                 "rest_of_season": {
@@ -11998,7 +12021,7 @@
               "injury_body_part": "Shoulder",
               "injury_status": "IR",
               "key_evidence": [
-                "Dynasty Dealer value 2,319; position rank #43.",
+                "Dynasty Dealer value 2,228; position rank #42.",
                 "2026 sample: 0.45 PPG, 0.33 opportunities/game, 23.3% snaps.",
                 "Sleeper depth-chart order: 5.",
                 "Sleeper availability: IR (Shoulder)."
@@ -12009,13 +12032,13 @@
                 "tier_changed": false,
                 "tier_from": 4,
                 "tier_to": 4,
-                "value_change": 0
+                "value_change": -91
               },
               "name": "Elijah Arroyo",
               "news": [
                 {
                   "event_date": null,
-                  "published_at": "2026-11-13T16:43:08.743283+00:00",
+                  "published_at": "2026-11-13T18:00:15.430249+00:00",
                   "signal_type": "injury",
                   "source": "Sleeper player status",
                   "text": "Sleeper lists Elijah Arroyo as IR.",
@@ -12050,7 +12073,9 @@
                   "weighted_score": 0.0
                 }
               ],
-              "notable_takeaways": [],
+              "notable_takeaways": [
+                "Market value lost 91 since the previous report."
+              ],
               "player_id": "12521",
               "position": "TE",
               "position_rank_on_roster": 3,
@@ -12113,14 +12138,14 @@
   ],
   "sources": [
     {
-      "checked_at": "2026-11-13T16:43:09.013061+00:00",
+      "checked_at": "2026-11-13T18:00:15.632774+00:00",
       "name": "Sleeper",
       "status": "ok",
       "type": "authoritative_roster_data",
       "url": "https://sleeper.com/"
     },
     {
-      "checked_at": "2026-11-12T18:33:26.158Z",
+      "checked_at": "2026-11-13T18:00:12.053Z",
       "name": "Dynasty Dealer",
       "status": "available",
       "type": "market_context",
@@ -12131,21 +12156,21 @@
         "2025",
         "2026"
       ],
-      "checked_at": "2026-11-12T18:33:25.829176+00:00",
+      "checked_at": "2026-11-13T18:00:11.693402+00:00",
       "name": "nflverse",
       "status": "available",
       "type": "performance_context",
       "url": "https://nflverse.com/"
     },
     {
-      "checked_at": "2026-11-13T16:43:08.743283+00:00",
+      "checked_at": "2026-11-13T18:00:15.430249+00:00",
       "name": "Player context signals",
       "status": "available",
       "type": "availability_depth_usage_and_reporting",
       "url": null
     },
     {
-      "checked_at": "2026-11-13T16:43:08.743283+00:00",
+      "checked_at": "2026-11-13T18:00:15.430249+00:00",
       "name": "Roster research",
       "status": "available",
       "type": "news_matchup_coach_reporting",
