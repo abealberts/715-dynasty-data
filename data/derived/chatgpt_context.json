@@ -1,6 +1,6 @@
 {
   "draft_capital": {
-    "generated_at": "2026-11-15T17:22:26.142092+00:00",
+    "generated_at": "2026-11-15T18:49:09.079951+00:00",
     "teams": [
       {
         "manager": "Amelse",
@@ -1852,8 +1852,111 @@
       "2029"
     ]
   },
-  "generated_at": "2026-11-15T17:22:26.250988+00:00",
-  "latest_detected_changes": [],
+  "generated_at": "2026-11-15T18:49:09.160180+00:00",
+  "latest_detected_changes": [
+    {
+      "detected_at": "2026-11-15T18:49:09.036449+00:00",
+      "manager": "austinamelse",
+      "new_starters": [
+        "12522",
+        "12527",
+        "13337",
+        "9504",
+        "12499",
+        "11783",
+        "8131",
+        "10236",
+        "9484"
+      ],
+      "old_starters": [
+        "12522",
+        "12527",
+        "13337",
+        "9756",
+        "12499",
+        "11783",
+        "8131",
+        "10236",
+        "9484"
+      ],
+      "roster_id": 1,
+      "type": "starter_change"
+    },
+    {
+      "detected_at": "2026-11-15T18:49:09.036449+00:00",
+      "manager": "NolanFarts",
+      "player": {
+        "age": 32,
+        "depth_chart_order": 3,
+        "depth_chart_position": "LWR",
+        "fantasy_positions": [
+          "WR"
+        ],
+        "injury_body_part": null,
+        "injury_notes": null,
+        "injury_status": null,
+        "name": "Demarcus Robinson",
+        "player_id": "3286",
+        "position": "WR",
+        "status": "Active",
+        "team": "SF",
+        "years_exp": 10
+      },
+      "roster_id": 2,
+      "type": "roster_add"
+    },
+    {
+      "detected_at": "2026-11-15T18:49:09.036449+00:00",
+      "manager": "NolanFarts",
+      "player": {
+        "age": 25,
+        "depth_chart_order": 6,
+        "depth_chart_position": "QB",
+        "fantasy_positions": [
+          "QB"
+        ],
+        "injury_body_part": null,
+        "injury_notes": null,
+        "injury_status": null,
+        "name": "Joe Fagnano",
+        "player_id": "13350",
+        "position": "QB",
+        "status": "Active",
+        "team": "BAL",
+        "years_exp": 0
+      },
+      "roster_id": 2,
+      "type": "roster_drop"
+    },
+    {
+      "detected_at": "2026-11-15T18:49:09.036449+00:00",
+      "manager": "SORY9",
+      "new_starters": [
+        "4046",
+        "12495",
+        "6813",
+        "4983",
+        "9997",
+        "5846",
+        "12518",
+        "13276",
+        "6770"
+      ],
+      "old_starters": [
+        "4046",
+        "12495",
+        "6813",
+        "4983",
+        "9997",
+        "5846",
+        "12518",
+        "7543",
+        "6770"
+      ],
+      "roster_id": 7,
+      "type": "starter_change"
+    }
+  ],
   "latest_weekly_recap": {
     "awards": [
       {
@@ -1920,7 +2023,7 @@
         "title": "Benchwarmer of the Week"
       }
     ],
-    "generated_at": "2026-11-15T17:22:26.141525+00:00",
+    "generated_at": "2026-11-15T18:49:09.079463+00:00",
     "season": "2026",
     "status": "live",
     "week": 9,
@@ -2622,7 +2725,7 @@
     "draft_rounds": 5,
     "faab_budget": 100,
     "full_ppr": true,
-    "generated_at": "2026-11-15T17:22:26.087577+00:00",
+    "generated_at": "2026-11-15T18:49:09.037939+00:00",
     "league_id": "1312115903088852992",
     "league_median_match": true,
     "name": "715 Dynasty",
@@ -2727,10 +2830,10 @@
         "manager": "NolanFarts",
         "pick_count": 7,
         "position_counts": {
-          "QB": 6,
+          "QB": 5,
           "RB": 8,
           "TE": 4,
-          "WR": 9
+          "WR": 10
         },
         "record": {
           "fpts": 1470,
@@ -2887,7 +2990,7 @@
   },
   "lineup_efficiency": {
     "all_time": {
-      "generated_at": "2026-11-15T17:22:26.139919+00:00",
+      "generated_at": "2026-11-15T18:49:09.078267+00:00",
       "latest_completed_week": 9,
       "latest_season": "2026",
       "latest_week": {
@@ -4031,7 +4134,7 @@
       "status": "live"
     },
     "current": {
-      "generated_at": "2026-11-15T17:22:26.136119+00:00",
+      "generated_at": "2026-11-15T18:49:09.075486+00:00",
       "latest_completed_week": 9,
       "latest_season": "2026",
       "latest_week": {
@@ -5222,7 +5325,7 @@
       {
         "label": "thin",
         "position": "WR",
-        "strength": 2.0
+        "strength": 2.08
       }
     ],
     "pick_summary": {
@@ -5247,15 +5350,15 @@
     "positions": {
       "QB": {
         "count": 6,
-        "delta_vs_average": 1.08,
+        "delta_vs_average": 1.17,
         "label": "above avg",
-        "league_average": 4.92,
+        "league_average": 4.83,
         "market_score": 60.3,
         "market_value": 23433,
         "need_strength": 0.0,
         "quality_label": "market-balanced",
         "starters": 2,
-        "surplus_strength": 1.08,
+        "surplus_strength": 1.17,
         "target": 4
       },
       "RB": {
@@ -5286,12 +5389,12 @@
       },
       "WR": {
         "count": 9,
-        "delta_vs_average": -2.0,
+        "delta_vs_average": -2.08,
         "label": "thin",
-        "league_average": 11.0,
+        "league_average": 11.08,
         "market_score": 48.3,
         "market_value": 35310,
-        "need_strength": 2.0,
+        "need_strength": 2.08,
         "quality_label": "market-balanced",
         "starters": 3,
         "surplus_strength": 0.0,
@@ -5308,7 +5411,7 @@
       {
         "label": "above avg",
         "position": "QB",
-        "strength": 1.08
+        "strength": 1.17
       }
     ],
     "team_name": "Beef Cylinder"
@@ -21653,7 +21756,7 @@
           },
           {
             "faab_spent": 230,
-            "failed_waiver_attempts": 18,
+            "failed_waiver_attempts": 19,
             "firsts_acquired": 0,
             "firsts_sent": 4,
             "free_agent_moves": 7,
@@ -21663,11 +21766,11 @@
             "picks_acquired": 3,
             "picks_sent": 16,
             "players_acquired_trade": 15,
-            "players_added": 31,
-            "players_dropped": 33,
+            "players_added": 32,
+            "players_dropped": 34,
             "players_sent_trade": 14,
             "primary_tendency": "FAAB Burner",
-            "roster_moves": 38,
+            "roster_moves": 39,
             "seasons": [
               "2025",
               "2026"
@@ -21693,9 +21796,9 @@
             ],
             "trades": 14,
             "trades_initiated": 7,
-            "waiver_attempts": 49,
-            "waiver_success_rate": 63.3,
-            "waiver_successes": 31
+            "waiver_attempts": 51,
+            "waiver_success_rate": 62.7,
+            "waiver_successes": 32
           },
           {
             "faab_spent": 45,
@@ -22243,7 +22346,7 @@
           },
           {
             "faab_spent": 130,
-            "failed_waiver_attempts": 12,
+            "failed_waiver_attempts": 13,
             "firsts_acquired": 0,
             "firsts_sent": 1,
             "free_agent_moves": 3,
@@ -22253,11 +22356,11 @@
             "picks_acquired": 2,
             "picks_sent": 6,
             "players_acquired_trade": 6,
-            "players_added": 15,
-            "players_dropped": 16,
+            "players_added": 16,
+            "players_dropped": 17,
             "players_sent_trade": 7,
             "primary_tendency": "FAAB Burner",
-            "roster_moves": 18,
+            "roster_moves": 19,
             "seasons": [
               "2026"
             ],
@@ -22281,9 +22384,9 @@
             ],
             "trades": 8,
             "trades_initiated": 4,
-            "waiver_attempts": 27,
-            "waiver_success_rate": 55.6,
-            "waiver_successes": 15
+            "waiver_attempts": 29,
+            "waiver_success_rate": 55.2,
+            "waiver_successes": 16
           },
           {
             "faab_spent": 73,
@@ -22661,8 +22764,8 @@
           "current_sd": 33.06,
           "current_weeks": 9,
           "manager": "NolanFarts",
-          "market_model_mean": 125.56,
-          "market_strength": 87.0,
+          "market_model_mean": 125.58,
+          "market_strength": 87.1,
           "market_weight": 0.15,
           "model_mean": 157.74,
           "model_sd": 33.06,
@@ -22969,19 +23072,19 @@
     },
     "team_profiles": [
       {
-        "average_roster_age": 27.2,
+        "average_roster_age": 27.4,
         "early_picks": 1,
         "first_round_picks": 0,
-        "franchise_score": 69.0,
+        "franchise_score": 68.3,
         "manager": "NolanFarts",
         "metrics": {
           "draft_capital": 0.0,
           "lineup_management": 99.2,
-          "market_value": 87.0,
+          "market_value": 87.1,
           "performance_prior": 100.0,
           "roster_balance": 100.0,
           "stability": 18.5,
-          "youth": 13.3
+          "youth": 6.7
         },
         "model_mean": 157.74,
         "model_sd": 33.06,
@@ -23000,7 +23103,7 @@
         "team_name": "Puka Nachewa",
         "title_odds": 53.0,
         "window": "Contender",
-        "young_player_share": 33.3
+        "young_player_share": 29.6
       },
       {
         "average_roster_age": 25.3,
@@ -23396,7 +23499,7 @@
   },
   "power_rankings": {
     "all_time": {
-      "generated_at": "2026-11-15T17:22:26.136800+00:00",
+      "generated_at": "2026-11-15T18:49:09.075963+00:00",
       "latest_completed_week": 9,
       "latest_season": "2026",
       "methodology": "35% career average scoring, 25% all-play, 15% median record, 15% lineup efficiency, 10% head-to-head record. Career scoring is normalized across all loaded regular-season weeks.",
@@ -23982,7 +24085,7 @@
     },
     "current": {
       "basis": "inseason_enriched",
-      "generated_at": "2026-11-15T17:22:26.250875+00:00",
+      "generated_at": "2026-11-15T18:49:09.160108+00:00",
       "latest_completed_week": 9,
       "latest_season": "2026",
       "market_attribution": "Values by Dynasty Dealer — https://www.dynastydealer.com/",
@@ -23999,7 +24102,7 @@
           "components": {
             "current_performance": 94.6,
             "historical_prior": 89.6,
-            "roster_market": 87.0
+            "roster_market": 87.1
           },
           "h2h": {
             "losses": 0,
@@ -24014,7 +24117,7 @@
           "live_performance_score": 94.6,
           "luck_index": 14.1,
           "manager": "NolanFarts",
-          "market_strength": 87.0,
+          "market_strength": 87.1,
           "median": {
             "losses": 0,
             "pct": 1.0,
@@ -24025,7 +24128,7 @@
           "owner_id": "988277931761786880",
           "points_for": 1470.75,
           "points_left_on_bench": 210.8,
-          "power_score": 92.3,
+          "power_score": 92.4,
           "previous_rank": 1,
           "rank": 1,
           "recent_3_average": 156.5,
@@ -24035,7 +24138,7 @@
           ],
           "starter_market_value": 63311,
           "team_name": "Puka Nachewa",
-          "total_market_value": 108793,
+          "total_market_value": 108830,
           "weeks": 9
         },
         {
@@ -25033,6 +25136,100 @@
       "transaction_id": "1427537019768164352",
       "type": "trade",
       "waiver_budget": null,
+      "week": 10
+    },
+    {
+      "adds": [
+        {
+          "manager": "NolanFarts",
+          "player": {
+            "age": 32,
+            "depth_chart_order": 3,
+            "depth_chart_position": "LWR",
+            "fantasy_positions": [
+              "WR"
+            ],
+            "injury_body_part": null,
+            "injury_notes": null,
+            "injury_status": null,
+            "name": "Demarcus Robinson",
+            "player_id": "3286",
+            "position": "WR",
+            "status": "Active",
+            "team": "SF",
+            "years_exp": 10
+          },
+          "roster_id": 2
+        }
+      ],
+      "created": 1794703240215,
+      "draft_picks": [],
+      "drops": [],
+      "roster_ids": [
+        2
+      ],
+      "status": "failed",
+      "transaction_id": "1427492489031335936",
+      "type": "waiver",
+      "waiver_budget": 0,
+      "week": 10
+    },
+    {
+      "adds": [
+        {
+          "manager": "NolanFarts",
+          "player": {
+            "age": 32,
+            "depth_chart_order": 3,
+            "depth_chart_position": "LWR",
+            "fantasy_positions": [
+              "WR"
+            ],
+            "injury_body_part": null,
+            "injury_notes": null,
+            "injury_status": null,
+            "name": "Demarcus Robinson",
+            "player_id": "3286",
+            "position": "WR",
+            "status": "Active",
+            "team": "SF",
+            "years_exp": 10
+          },
+          "roster_id": 2
+        }
+      ],
+      "created": 1794703224798,
+      "draft_picks": [],
+      "drops": [
+        {
+          "manager": "NolanFarts",
+          "player": {
+            "age": 25,
+            "depth_chart_order": 6,
+            "depth_chart_position": "QB",
+            "fantasy_positions": [
+              "QB"
+            ],
+            "injury_body_part": null,
+            "injury_notes": null,
+            "injury_status": null,
+            "name": "Joe Fagnano",
+            "player_id": "13350",
+            "position": "QB",
+            "status": "Active",
+            "team": "BAL",
+            "years_exp": 0
+          },
+          "roster_id": 2
+        }
+      ],
+      "roster_ids": [
+        2
+      ],
+      "status": "complete",
+      "transaction_id": "1427492424367755264",
+      "type": "waiver",
+      "waiver_budget": 0,
       "week": 10
     },
     {
@@ -26066,105 +26263,11 @@
       "type": "waiver",
       "waiver_budget": 0,
       "week": 9
-    },
-    {
-      "adds": [
-        {
-          "manager": "NolanFarts",
-          "player": {
-            "age": 31,
-            "depth_chart_order": 1,
-            "depth_chart_position": "TE",
-            "fantasy_positions": [
-              "TE"
-            ],
-            "injury_body_part": null,
-            "injury_notes": null,
-            "injury_status": null,
-            "name": "Mike Gesicki",
-            "player_id": "4993",
-            "position": "TE",
-            "status": "Active",
-            "team": "CIN",
-            "years_exp": 8
-          },
-          "roster_id": 2
-        }
-      ],
-      "created": 1794346894904,
-      "draft_picks": [],
-      "drops": [
-        {
-          "manager": "NolanFarts",
-          "player": {
-            "age": 30,
-            "depth_chart_order": 3,
-            "depth_chart_position": "TE",
-            "fantasy_positions": [
-              "TE"
-            ],
-            "injury_body_part": "Lower Leg",
-            "injury_notes": null,
-            "injury_status": "IR",
-            "name": "David Njoku",
-            "player_id": "4033",
-            "position": "TE",
-            "status": "Inactive",
-            "team": "LAC",
-            "years_exp": 9
-          },
-          "roster_id": 2
-        }
-      ],
-      "roster_ids": [
-        2
-      ],
-      "status": "complete",
-      "transaction_id": "1425997868468027392",
-      "type": "waiver",
-      "waiver_budget": 0,
-      "week": 9
-    },
-    {
-      "adds": [
-        {
-          "manager": "NolanFarts",
-          "player": {
-            "age": 22,
-            "depth_chart_order": 1,
-            "depth_chart_position": "RWR",
-            "fantasy_positions": [
-              "WR"
-            ],
-            "injury_body_part": null,
-            "injury_notes": null,
-            "injury_status": null,
-            "name": "Reggie Virgil",
-            "player_id": "13297",
-            "position": "WR",
-            "status": "Active",
-            "team": "ARI",
-            "years_exp": 0
-          },
-          "roster_id": 2
-        }
-      ],
-      "created": 1794346869912,
-      "draft_picks": [],
-      "drops": [],
-      "roster_ids": [
-        2
-      ],
-      "status": "failed",
-      "transaction_id": "1425997763648176128",
-      "type": "waiver",
-      "waiver_budget": 0,
-      "week": 9
     }
   ],
   "standings_plus": {
     "all_time": {
-      "generated_at": "2026-11-15T17:22:26.138935+00:00",
+      "generated_at": "2026-11-15T18:49:09.077542+00:00",
       "latest_completed_week": 9,
       "latest_season": "2026",
       "status": "live",
@@ -26616,7 +26719,7 @@
       ]
     },
     "current": {
-      "generated_at": "2026-11-15T17:22:26.134600+00:00",
+      "generated_at": "2026-11-15T18:49:09.074368+00:00",
       "latest_completed_week": 9,
       "latest_season": "2026",
       "status": "live",
@@ -27200,7 +27303,7 @@
         "market_rank": 313,
         "market_value": 2029,
         "name": "Carson Wentz",
-        "opportunity_score": 69.7,
+        "opportunity_score": 69.6,
         "performance": {
           "air_yards_share": 0.0,
           "basis": "current",
@@ -27303,18 +27406,18 @@
           "Currently on an NFL roster (MIN).",
           "Depth-chart No. 2: direct contingent path to usage.",
           "Superflex format raises the value of any QB with a path to starts.",
-          "Market headwind: 33,990 drops in the 24h trend window.",
+          "Market headwind: 38,730 drops in the 24h trend window.",
           "Recently dropped by ryansorensen8; worth checking for a league-specific market reset."
         ],
         "recent_715_drop": {
-          "age_days": 4.6,
+          "age_days": 4.7,
           "manager": "ryansorensen8"
         },
         "status": "Active",
         "team": "MIN",
         "tier": "Strong stash",
         "trending_adds_24h": 0,
-        "trending_drops_24h": 33990,
+        "trending_drops_24h": 38730,
         "years_exp": 10
       },
       {
@@ -27519,7 +27622,7 @@
           "Recently dropped by nathanhoglund; worth checking for a league-specific market reset."
         ],
         "recent_715_drop": {
-          "age_days": 4.6,
+          "age_days": 4.7,
           "manager": "nathanhoglund"
         },
         "status": "Active",
@@ -27528,6 +27631,113 @@
         "trending_adds_24h": 0,
         "trending_drops_24h": 0,
         "years_exp": 3
+      },
+      {
+        "age": 25,
+        "depth": 6,
+        "depth_chart_order": 6,
+        "depth_chart_position": "QB",
+        "fantasy_positions": [
+          "QB"
+        ],
+        "injury_body_part": null,
+        "injury_notes": null,
+        "injury_status": null,
+        "market_position_rank": 60,
+        "market_rank": 319,
+        "market_value": 1997,
+        "name": "Joe Fagnano",
+        "opportunity_score": 62.0,
+        "performance": {
+          "air_yards_share": 0.0,
+          "basis": "current",
+          "basis_label": "2026",
+          "carries_per_game": 3.0,
+          "fantasy_points_715": 1.15,
+          "games": 2,
+          "gsis_id": "00-0040981",
+          "last3_opportunities_per_game": 22.5,
+          "last3_ppg_715": 0.57,
+          "name": "Joe Fagnano",
+          "offense_snap_pct": 70.0,
+          "opportunities": 45.0,
+          "opportunities_per_game": 22.5,
+          "pfr_id": "FagnJo00",
+          "position": "QB",
+          "ppg_715": 0.57,
+          "season": 2026,
+          "sleeper_id": "13350",
+          "target_share": 0.0,
+          "targets_per_game": 0.0,
+          "touches_per_game": 3.0,
+          "weekly": [
+            {
+              "air_yards_share": 0.0,
+              "attempts": 21.0,
+              "carries": 3.0,
+              "fantasy_points_715": 0.85,
+              "offense_snap_pct": 40.0,
+              "offense_snaps": 3.0,
+              "opponent": "BUF",
+              "opportunities": 24.0,
+              "passing_interceptions": 1.0,
+              "passing_tds": 0.0,
+              "passing_yards": 91.0,
+              "receiving_tds": 0.0,
+              "receiving_yards": 0.0,
+              "receptions": 0.0,
+              "rushing_tds": 0.0,
+              "rushing_yards": 3.0,
+              "target_share": 0.0,
+              "targets": 0.0,
+              "team": "BAL",
+              "touches": 3.0,
+              "week": 8
+            },
+            {
+              "air_yards_share": 0.0,
+              "attempts": 18.0,
+              "carries": 3.0,
+              "fantasy_points_715": 0.3,
+              "offense_snap_pct": 100.0,
+              "offense_snaps": 56.0,
+              "opponent": "JAX",
+              "opportunities": 21.0,
+              "passing_interceptions": 2.0,
+              "passing_tds": 0.0,
+              "passing_yards": 60.0,
+              "receiving_tds": 0.0,
+              "receiving_yards": 0.0,
+              "receptions": 0.0,
+              "rushing_tds": 0.0,
+              "rushing_yards": 13.0,
+              "target_share": 0.0,
+              "targets": 0.0,
+              "team": "BAL",
+              "touches": 3.0,
+              "week": 9
+            }
+          ]
+        },
+        "player_id": "13350",
+        "position": "QB",
+        "reasons": [
+          "Dynasty Dealer market value 1,997 adds insulation/upside signal.",
+          "current-season usage: 22.5 opportunities/game, 70% offensive snaps, 0.6 715 PPG.",
+          "Currently on an NFL roster (BAL).",
+          "Superflex format raises the value of any QB with a path to starts.",
+          "Recently dropped by NolanFarts; worth checking for a league-specific market reset."
+        ],
+        "recent_715_drop": {
+          "age_days": 0.8,
+          "manager": "NolanFarts"
+        },
+        "status": "Active",
+        "team": "BAL",
+        "tier": "Strong stash",
+        "trending_adds_24h": 0,
+        "trending_drops_24h": 0,
+        "years_exp": 0
       },
       {
         "age": 24,
@@ -29212,86 +29422,6 @@
         "trending_adds_24h": 0,
         "trending_drops_24h": 0,
         "years_exp": 7
-      },
-      {
-        "age": 31,
-        "depth": 2,
-        "depth_chart_order": 2,
-        "depth_chart_position": "QB",
-        "fantasy_positions": [
-          "QB"
-        ],
-        "injury_body_part": null,
-        "injury_notes": null,
-        "injury_status": null,
-        "market_position_rank": 77,
-        "market_rank": 429,
-        "market_value": 410,
-        "name": "Joshua Dobbs",
-        "opportunity_score": 46.0,
-        "performance": {
-          "air_yards_share": 0.0,
-          "basis": "current",
-          "basis_label": "2026",
-          "carries_per_game": 0.0,
-          "fantasy_points_715": 0.0,
-          "games": 1,
-          "gsis_id": "00-0033949",
-          "last3_opportunities_per_game": 0.0,
-          "last3_ppg_715": 0.0,
-          "name": "Joshua Dobbs",
-          "offense_snap_pct": 5.0,
-          "opportunities": 0.0,
-          "opportunities_per_game": 0.0,
-          "pfr_id": "DobbJo00",
-          "position": "QB",
-          "ppg_715": 0.0,
-          "season": 2026,
-          "sleeper_id": "4179",
-          "target_share": 0.0,
-          "targets_per_game": 0.0,
-          "touches_per_game": 0.0,
-          "weekly": [
-            {
-              "air_yards_share": 0.0,
-              "attempts": 0.0,
-              "carries": 0.0,
-              "fantasy_points_715": 0.0,
-              "offense_snap_pct": 5.0,
-              "offense_snaps": 3.0,
-              "opponent": "ARI",
-              "opportunities": 0.0,
-              "passing_interceptions": 0.0,
-              "passing_tds": 0.0,
-              "passing_yards": 0.0,
-              "receiving_tds": 0.0,
-              "receiving_yards": 0.0,
-              "receptions": 0.0,
-              "rushing_tds": 0.0,
-              "rushing_yards": 0.0,
-              "target_share": 0.0,
-              "targets": 0.0,
-              "team": "DET",
-              "touches": 0.0,
-              "week": 5
-            }
-          ]
-        },
-        "player_id": "4179",
-        "position": "QB",
-        "reasons": [
-          "current-season usage: 0.0 opportunities/game, 5% offensive snaps, 0.0 715 PPG.",
-          "Currently on an NFL roster (DET).",
-          "Depth-chart No. 2: direct contingent path to usage.",
-          "Superflex format raises the value of any QB with a path to starts."
-        ],
-        "recent_715_drop": null,
-        "status": "Active",
-        "team": "DET",
-        "tier": "Watch",
-        "trending_adds_24h": 0,
-        "trending_drops_24h": 0,
-        "years_exp": 9
       }
     ],
     "RB": [
@@ -29310,7 +29440,7 @@
         "market_rank": 370,
         "market_value": 1704,
         "name": "Austin Ekeler",
-        "opportunity_score": 90.1,
+        "opportunity_score": 90.8,
         "performance": {
           "air_yards_share": -0.2,
           "basis": "current",
@@ -29483,17 +29613,17 @@
           "Currently on an NFL roster (WAS).",
           "Depth-chart No. 2: direct contingent path to usage.",
           "RB contingent value can rise quickly with one depth-chart change.",
-          "Sleeper market heat: 15,740 adds in the 24h trend window.",
+          "Sleeper market heat: 17,680 adds in the 24h trend window.",
           "Recently dropped by MayaHuskies; worth checking for a league-specific market reset."
         ],
         "recent_715_drop": {
-          "age_days": 4.5,
+          "age_days": 4.6,
           "manager": "MayaHuskies"
         },
         "status": "Active",
         "team": "WAS",
         "tier": "Priority",
-        "trending_adds_24h": 15740,
+        "trending_adds_24h": 17680,
         "trending_drops_24h": 0,
         "years_exp": 9
       },
@@ -29907,7 +30037,7 @@
         "injury_notes": null,
         "injury_status": null,
         "name": "Nate Carter",
-        "opportunity_score": 65.4,
+        "opportunity_score": 66.5,
         "performance": {
           "air_yards_share": 0.0,
           "basis": "prior",
@@ -29987,13 +30117,13 @@
           "Depth-chart No. 3: plausible contingent upside.",
           "Age supports long-term value growth.",
           "RB contingent value can rise quickly with one depth-chart change.",
-          "Sleeper market heat: 18,543 adds in the 24h trend window."
+          "Sleeper market heat: 25,242 adds in the 24h trend window."
         ],
         "recent_715_drop": null,
         "status": "Active",
         "team": "KC",
         "tier": "Strong stash",
-        "trending_adds_24h": 18543,
+        "trending_adds_24h": 25242,
         "trending_drops_24h": 0,
         "years_exp": 1
       },
@@ -30012,7 +30142,7 @@
         "market_rank": 373,
         "market_value": 1632,
         "name": "Roschon Johnson",
-        "opportunity_score": 59.7,
+        "opportunity_score": 59.5,
         "performance": {
           "air_yards_share": 1.8,
           "basis": "current",
@@ -30184,18 +30314,18 @@
           "Currently on an NFL roster (CHI).",
           "Depth-chart No. 2: direct contingent path to usage.",
           "RB contingent value can rise quickly with one depth-chart change.",
-          "Market headwind: 34,232 drops in the 24h trend window.",
+          "Market headwind: 42,352 drops in the 24h trend window.",
           "Recently dropped by MayaHuskies; worth checking for a league-specific market reset."
         ],
         "recent_715_drop": {
-          "age_days": 7.5,
+          "age_days": 7.6,
           "manager": "MayaHuskies"
         },
         "status": "Active",
         "team": "CHI",
         "tier": "Strong stash",
         "trending_adds_24h": 0,
-        "trending_drops_24h": 34232,
+        "trending_drops_24h": 42352,
         "years_exp": 3
       },
       {
@@ -31900,7 +32030,7 @@
         "market_rank": 196,
         "market_value": 2642,
         "name": "Darnell Washington",
-        "opportunity_score": 83.6,
+        "opportunity_score": 84.5,
         "performance": {
           "air_yards_share": 8.5,
           "basis": "current",
@@ -32117,13 +32247,13 @@
           "current-season usage: 3.5 opportunities/game, 65% offensive snaps, 7.8 715 PPG.",
           "Currently on an NFL roster (PIT).",
           "Depth-chart No. 2: direct contingent path to usage.",
-          "Sleeper market heat: 65,430 adds in the 24h trend window."
+          "Sleeper market heat: 77,130 adds in the 24h trend window."
         ],
         "recent_715_drop": null,
         "status": "Active",
         "team": "PIT",
         "tier": "Priority",
-        "trending_adds_24h": 65430,
+        "trending_adds_24h": 77130,
         "trending_drops_24h": 0,
         "years_exp": 3
       },
@@ -32142,7 +32272,7 @@
         "market_rank": 242,
         "market_value": 2333,
         "name": "Colby Parkinson",
-        "opportunity_score": 79.2,
+        "opportunity_score": 80.2,
         "performance": {
           "air_yards_share": 2.8,
           "basis": "current",
@@ -32337,13 +32467,13 @@
           "current-season usage: 3.3 opportunities/game, 66% offensive snaps, 5.1 715 PPG.",
           "Currently on an NFL roster (LAR).",
           "Depth-chart No. 2: direct contingent path to usage.",
-          "Sleeper market heat: 53,286 adds in the 24h trend window."
+          "Sleeper market heat: 64,986 adds in the 24h trend window."
         ],
         "recent_715_drop": null,
         "status": "Active",
         "team": "LAR",
         "tier": "Priority",
-        "trending_adds_24h": 53286,
+        "trending_adds_24h": 64986,
         "trending_drops_24h": 0,
         "years_exp": 6
       },
@@ -32582,7 +32712,7 @@
           "Recently dropped by ryansorensen8; worth checking for a league-specific market reset."
         ],
         "recent_715_drop": {
-          "age_days": 4.6,
+          "age_days": 4.7,
           "manager": "ryansorensen8"
         },
         "status": "Active",
@@ -32607,7 +32737,7 @@
         "market_rank": 489,
         "market_value": 22,
         "name": "Gavin Bartholomew",
-        "opportunity_score": 72.9,
+        "opportunity_score": 73.8,
         "performance": {
           "air_yards_share": 2.5,
           "basis": "current",
@@ -32778,13 +32908,13 @@
           "Currently on an NFL roster (MIN).",
           "Listed first on the Sleeper depth chart.",
           "Age supports long-term value growth.",
-          "Sleeper market heat: 77,346 adds in the 24h trend window."
+          "Sleeper market heat: 87,885 adds in the 24h trend window."
         ],
         "recent_715_drop": null,
         "status": "Active",
         "team": "MIN",
         "tier": "Priority",
-        "trending_adds_24h": 77346,
+        "trending_adds_24h": 87885,
         "trending_drops_24h": 0,
         "years_exp": 1
       },
@@ -32803,7 +32933,7 @@
         "market_rank": 390,
         "market_value": 1417,
         "name": "Elijah Higgins",
-        "opportunity_score": 70.0,
+        "opportunity_score": 70.3,
         "performance": {
           "air_yards_share": 1.6,
           "basis": "current",
@@ -33043,162 +33173,15 @@
           "current-season usage: 2.2 opportunities/game, 41% offensive snaps, 4.5 715 PPG.",
           "Currently on an NFL roster (ARI).",
           "Depth-chart No. 2: direct contingent path to usage.",
-          "Sleeper market heat: 14,930 adds in the 24h trend window."
+          "Sleeper market heat: 13,530 adds in the 24h trend window."
         ],
         "recent_715_drop": null,
         "status": "Active",
         "team": "ARI",
         "tier": "Priority",
-        "trending_adds_24h": 14930,
+        "trending_adds_24h": 13530,
         "trending_drops_24h": 0,
         "years_exp": 3
-      },
-      {
-        "age": 24,
-        "depth": 2,
-        "depth_chart_order": 2,
-        "depth_chart_position": "TE",
-        "fantasy_positions": [
-          "TE"
-        ],
-        "injury_body_part": null,
-        "injury_notes": null,
-        "injury_status": null,
-        "name": "Ben Yurosek",
-        "opportunity_score": 67.5,
-        "performance": {
-          "air_yards_share": 2.6,
-          "basis": "current",
-          "basis_label": "2026",
-          "carries_per_game": 0.0,
-          "fantasy_points_715": 5.4,
-          "games": 4,
-          "gsis_id": "00-0040509",
-          "last3_opportunities_per_game": 0.67,
-          "last3_ppg_715": 1.13,
-          "name": "Ben Yurosek",
-          "offense_snap_pct": 42.5,
-          "opportunities": 3.0,
-          "opportunities_per_game": 0.75,
-          "pfr_id": "YuroBe00",
-          "position": "TE",
-          "ppg_715": 1.35,
-          "season": 2026,
-          "sleeper_id": "13121",
-          "target_share": 2.6,
-          "targets_per_game": 0.75,
-          "touches_per_game": 0.5,
-          "weekly": [
-            {
-              "air_yards_share": 0.029585798816568,
-              "attempts": 0.0,
-              "carries": 0.0,
-              "fantasy_points_715": 2.0,
-              "offense_snap_pct": 55.0,
-              "offense_snaps": 39.0,
-              "opponent": "NO",
-              "opportunities": 1.0,
-              "passing_interceptions": 0.0,
-              "passing_tds": 0.0,
-              "passing_yards": 0.0,
-              "receiving_tds": 0.0,
-              "receiving_yards": 10.0,
-              "receptions": 1.0,
-              "rushing_tds": 0.0,
-              "rushing_yards": 0.0,
-              "target_share": 0.0344827586206897,
-              "targets": 1.0,
-              "team": "MIN",
-              "touches": 1.0,
-              "week": 5
-            },
-            {
-              "air_yards_share": 0.0,
-              "attempts": 0.0,
-              "carries": 0.0,
-              "fantasy_points_715": 0.0,
-              "offense_snap_pct": 51.0,
-              "offense_snaps": 30.0,
-              "opponent": "IND",
-              "opportunities": 0.0,
-              "passing_interceptions": 0.0,
-              "passing_tds": 0.0,
-              "passing_yards": 0.0,
-              "receiving_tds": 0.0,
-              "receiving_yards": 0.0,
-              "receptions": 0.0,
-              "rushing_tds": 0.0,
-              "rushing_yards": 0.0,
-              "target_share": 0.0,
-              "targets": 0.0,
-              "team": "MIN",
-              "touches": 0.0,
-              "week": 7
-            },
-            {
-              "air_yards_share": 0.0743034055727554,
-              "attempts": 0.0,
-              "carries": 0.0,
-              "fantasy_points_715": 3.4,
-              "offense_snap_pct": 43.0,
-              "offense_snaps": 23.0,
-              "opponent": "DET",
-              "opportunities": 2.0,
-              "passing_interceptions": 0.0,
-              "passing_tds": 0.0,
-              "passing_yards": 0.0,
-              "receiving_tds": 0.0,
-              "receiving_yards": 24.0,
-              "receptions": 1.0,
-              "rushing_tds": 0.0,
-              "rushing_yards": 0.0,
-              "target_share": 0.0714285714285714,
-              "targets": 2.0,
-              "team": "MIN",
-              "touches": 1.0,
-              "week": 8
-            },
-            {
-              "air_yards_share": 0.0,
-              "attempts": 0.0,
-              "carries": 0.0,
-              "fantasy_points_715": 0.0,
-              "offense_snap_pct": 21.0,
-              "offense_snaps": 10.0,
-              "opponent": "BUF",
-              "opportunities": 0.0,
-              "passing_interceptions": 0.0,
-              "passing_tds": 0.0,
-              "passing_yards": 0.0,
-              "receiving_tds": 0.0,
-              "receiving_yards": 0.0,
-              "receptions": 0.0,
-              "rushing_tds": 0.0,
-              "rushing_yards": 0.0,
-              "target_share": 0.0,
-              "targets": 0.0,
-              "team": "MIN",
-              "touches": 0.0,
-              "week": 9
-            }
-          ]
-        },
-        "player_id": "13121",
-        "position": "TE",
-        "reasons": [
-          "current-season usage: 0.8 opportunities/game, 42% offensive snaps, 1.4 715 PPG.",
-          "Currently on an NFL roster (MIN).",
-          "Depth-chart No. 2: direct contingent path to usage.",
-          "Age supports long-term value growth.",
-          "Sleeper market heat: 11,272 adds in the 24h trend window."
-        ],
-        "recent_715_drop": null,
-        "status": "Active",
-        "team": "MIN",
-        "tier": "Strong stash",
-        "trending_adds_24h": 11272,
-        "trending_drops_24h": 0,
-        "years_exp": 1
       },
       {
         "age": 27,
@@ -35984,6 +35967,152 @@
         "years_exp": 0
       },
       {
+        "age": 24,
+        "depth": 2,
+        "depth_chart_order": 2,
+        "depth_chart_position": "TE",
+        "fantasy_positions": [
+          "TE"
+        ],
+        "injury_body_part": null,
+        "injury_notes": null,
+        "injury_status": null,
+        "name": "Ben Yurosek",
+        "opportunity_score": 51.0,
+        "performance": {
+          "air_yards_share": 2.6,
+          "basis": "current",
+          "basis_label": "2026",
+          "carries_per_game": 0.0,
+          "fantasy_points_715": 5.4,
+          "games": 4,
+          "gsis_id": "00-0040509",
+          "last3_opportunities_per_game": 0.67,
+          "last3_ppg_715": 1.13,
+          "name": "Ben Yurosek",
+          "offense_snap_pct": 42.5,
+          "opportunities": 3.0,
+          "opportunities_per_game": 0.75,
+          "pfr_id": "YuroBe00",
+          "position": "TE",
+          "ppg_715": 1.35,
+          "season": 2026,
+          "sleeper_id": "13121",
+          "target_share": 2.6,
+          "targets_per_game": 0.75,
+          "touches_per_game": 0.5,
+          "weekly": [
+            {
+              "air_yards_share": 0.029585798816568,
+              "attempts": 0.0,
+              "carries": 0.0,
+              "fantasy_points_715": 2.0,
+              "offense_snap_pct": 55.0,
+              "offense_snaps": 39.0,
+              "opponent": "NO",
+              "opportunities": 1.0,
+              "passing_interceptions": 0.0,
+              "passing_tds": 0.0,
+              "passing_yards": 0.0,
+              "receiving_tds": 0.0,
+              "receiving_yards": 10.0,
+              "receptions": 1.0,
+              "rushing_tds": 0.0,
+              "rushing_yards": 0.0,
+              "target_share": 0.0344827586206897,
+              "targets": 1.0,
+              "team": "MIN",
+              "touches": 1.0,
+              "week": 5
+            },
+            {
+              "air_yards_share": 0.0,
+              "attempts": 0.0,
+              "carries": 0.0,
+              "fantasy_points_715": 0.0,
+              "offense_snap_pct": 51.0,
+              "offense_snaps": 30.0,
+              "opponent": "IND",
+              "opportunities": 0.0,
+              "passing_interceptions": 0.0,
+              "passing_tds": 0.0,
+              "passing_yards": 0.0,
+              "receiving_tds": 0.0,
+              "receiving_yards": 0.0,
+              "receptions": 0.0,
+              "rushing_tds": 0.0,
+              "rushing_yards": 0.0,
+              "target_share": 0.0,
+              "targets": 0.0,
+              "team": "MIN",
+              "touches": 0.0,
+              "week": 7
+            },
+            {
+              "air_yards_share": 0.0743034055727554,
+              "attempts": 0.0,
+              "carries": 0.0,
+              "fantasy_points_715": 3.4,
+              "offense_snap_pct": 43.0,
+              "offense_snaps": 23.0,
+              "opponent": "DET",
+              "opportunities": 2.0,
+              "passing_interceptions": 0.0,
+              "passing_tds": 0.0,
+              "passing_yards": 0.0,
+              "receiving_tds": 0.0,
+              "receiving_yards": 24.0,
+              "receptions": 1.0,
+              "rushing_tds": 0.0,
+              "rushing_yards": 0.0,
+              "target_share": 0.0714285714285714,
+              "targets": 2.0,
+              "team": "MIN",
+              "touches": 1.0,
+              "week": 8
+            },
+            {
+              "air_yards_share": 0.0,
+              "attempts": 0.0,
+              "carries": 0.0,
+              "fantasy_points_715": 0.0,
+              "offense_snap_pct": 21.0,
+              "offense_snaps": 10.0,
+              "opponent": "BUF",
+              "opportunities": 0.0,
+              "passing_interceptions": 0.0,
+              "passing_tds": 0.0,
+              "passing_yards": 0.0,
+              "receiving_tds": 0.0,
+              "receiving_yards": 0.0,
+              "receptions": 0.0,
+              "rushing_tds": 0.0,
+              "rushing_yards": 0.0,
+              "target_share": 0.0,
+              "targets": 0.0,
+              "team": "MIN",
+              "touches": 0.0,
+              "week": 9
+            }
+          ]
+        },
+        "player_id": "13121",
+        "position": "TE",
+        "reasons": [
+          "current-season usage: 0.8 opportunities/game, 42% offensive snaps, 1.4 715 PPG.",
+          "Currently on an NFL roster (MIN).",
+          "Depth-chart No. 2: direct contingent path to usage.",
+          "Age supports long-term value growth."
+        ],
+        "recent_715_drop": null,
+        "status": "Active",
+        "team": "MIN",
+        "tier": "Watch",
+        "trending_adds_24h": 0,
+        "trending_drops_24h": 0,
+        "years_exp": 1
+      },
+      {
         "age": 32,
         "depth": 2,
         "depth_chart_order": 2,
@@ -36459,7 +36588,7 @@
         "market_rank": 342,
         "market_value": 1868,
         "name": "Laquon Treadwell",
-        "opportunity_score": 88.5,
+        "opportunity_score": 89.3,
         "performance": {
           "air_yards_share": 15.9,
           "basis": "current",
@@ -36699,7 +36828,7 @@
           "current-season usage: 3.2 opportunities/game, 75% offensive snaps, 4.2 715 PPG.",
           "Currently on an NFL roster (IND).",
           "Listed first on the Sleeper depth chart.",
-          "Sleeper market heat: 19,855 adds in the 24h trend window.",
+          "Sleeper market heat: 22,355 adds in the 24h trend window.",
           "Recently dropped by Waldo23; worth checking for a league-specific market reset."
         ],
         "recent_715_drop": {
@@ -36709,7 +36838,7 @@
         "status": "Active",
         "team": "IND",
         "tier": "Priority",
-        "trending_adds_24h": 19855,
+        "trending_adds_24h": 22355,
         "trending_drops_24h": 0,
         "years_exp": 10
       },
@@ -36728,7 +36857,7 @@
         "market_rank": 325,
         "market_value": 1975,
         "name": "Mack Hollins",
-        "opportunity_score": 76.5,
+        "opportunity_score": 76.8,
         "performance": {
           "air_yards_share": 23.0,
           "basis": "current",
@@ -36876,17 +37005,17 @@
           "current-season usage: 5.2 opportunities/game, 65% offensive snaps, 9.7 715 PPG.",
           "Currently on an NFL roster (NE).",
           "Depth-chart No. 3: plausible contingent upside.",
-          "Sleeper market heat: 35,490 adds in the 24h trend window.",
+          "Sleeper market heat: 29,745 adds in the 24h trend window.",
           "Recently dropped by Waldo23; worth checking for a league-specific market reset."
         ],
         "recent_715_drop": {
-          "age_days": 7.3,
+          "age_days": 7.4,
           "manager": "Waldo23"
         },
         "status": "Active",
         "team": "NE",
         "tier": "Priority",
-        "trending_adds_24h": 35490,
+        "trending_adds_24h": 29745,
         "trending_drops_24h": 0,
         "years_exp": 9
       },
@@ -36905,7 +37034,7 @@
         "market_rank": 306,
         "market_value": 2061,
         "name": "Xavier Hutchinson",
-        "opportunity_score": 73.5,
+        "opportunity_score": 74.5,
         "performance": {
           "air_yards_share": 18.2,
           "basis": "current",
@@ -37122,13 +37251,13 @@
           "current-season usage: 6.1 opportunities/game, 57% offensive snaps, 8.3 715 PPG.",
           "Currently on an NFL roster (HOU).",
           "Depth-chart No. 3: plausible contingent upside.",
-          "Sleeper market heat: 20,293 adds in the 24h trend window."
+          "Sleeper market heat: 25,515 adds in the 24h trend window."
         ],
         "recent_715_drop": null,
         "status": "Active",
         "team": "HOU",
         "tier": "Priority",
-        "trending_adds_24h": 20293,
+        "trending_adds_24h": 25515,
         "trending_drops_24h": 0,
         "years_exp": 3
       },
@@ -37147,7 +37276,7 @@
         "market_rank": 282,
         "market_value": 2155,
         "name": "Darius Cooper",
-        "opportunity_score": 64.4,
+        "opportunity_score": 64.1,
         "performance": {
           "air_yards_share": 18.2,
           "basis": "current",
@@ -37389,7 +37518,7 @@
           "Currently on an NFL roster (PHI).",
           "Depth-chart No. 2: direct contingent path to usage.",
           "Age supports long-term value growth.",
-          "Market headwind: 46,963 drops in the 24h trend window.",
+          "Market headwind: 58,079 drops in the 24h trend window.",
           "Recently dropped by Waldo23; worth checking for a league-specific market reset."
         ],
         "recent_715_drop": {
@@ -37400,358 +37529,8 @@
         "team": "PHI",
         "tier": "Strong stash",
         "trending_adds_24h": 0,
-        "trending_drops_24h": 46963,
+        "trending_drops_24h": 58079,
         "years_exp": 1
-      },
-      {
-        "age": 32,
-        "depth": 3,
-        "depth_chart_order": 3,
-        "depth_chart_position": "LWR",
-        "fantasy_positions": [
-          "WR"
-        ],
-        "injury_body_part": null,
-        "injury_notes": null,
-        "injury_status": null,
-        "market_position_rank": 124,
-        "market_rank": 312,
-        "market_value": 2034,
-        "name": "Demarcus Robinson",
-        "opportunity_score": 59.3,
-        "performance": {
-          "air_yards_share": 20.1,
-          "basis": "current",
-          "basis_label": "2026",
-          "carries_per_game": 0.0,
-          "fantasy_points_715": 24.6,
-          "games": 3,
-          "gsis_id": "00-0032775",
-          "last3_opportunities_per_game": 3.33,
-          "last3_ppg_715": 8.2,
-          "name": "Demarcus Robinson",
-          "offense_snap_pct": 48.3,
-          "opportunities": 10.0,
-          "opportunities_per_game": 3.33,
-          "pfr_id": "RobiDe01",
-          "position": "WR",
-          "ppg_715": 8.2,
-          "season": 2026,
-          "sleeper_id": "3286",
-          "target_share": 13.5,
-          "targets_per_game": 3.33,
-          "touches_per_game": 2.67,
-          "weekly": [
-            {
-              "air_yards_share": 0.302013422818792,
-              "attempts": 0.0,
-              "carries": 0.0,
-              "fantasy_points_715": 13.0,
-              "offense_snap_pct": 63.0,
-              "offense_snaps": 41.0,
-              "opponent": "LA",
-              "opportunities": 3.0,
-              "passing_interceptions": 0.0,
-              "passing_tds": 0.0,
-              "passing_yards": 0.0,
-              "receiving_tds": 1.0,
-              "receiving_yards": 50.0,
-              "receptions": 2.0,
-              "rushing_tds": 0.0,
-              "rushing_yards": 0.0,
-              "target_share": 0.0882352941176471,
-              "targets": 3.0,
-              "team": "SF",
-              "touches": 2.0,
-              "week": 1
-            },
-            {
-              "air_yards_share": 0.15,
-              "attempts": 0.0,
-              "carries": 0.0,
-              "fantasy_points_715": 6.4,
-              "offense_snap_pct": 31.0,
-              "offense_snaps": 16.0,
-              "opponent": "MIA",
-              "opportunities": 3.0,
-              "passing_interceptions": 0.0,
-              "passing_tds": 0.0,
-              "passing_yards": 0.0,
-              "receiving_tds": 0.0,
-              "receiving_yards": 34.0,
-              "receptions": 3.0,
-              "rushing_tds": 0.0,
-              "rushing_yards": 0.0,
-              "target_share": 0.142857142857143,
-              "targets": 3.0,
-              "team": "SF",
-              "touches": 3.0,
-              "week": 2
-            },
-            {
-              "air_yards_share": 0.14957264957265,
-              "attempts": 0.0,
-              "carries": 0.0,
-              "fantasy_points_715": 5.2,
-              "offense_snap_pct": 51.0,
-              "offense_snaps": 37.0,
-              "opponent": "LV",
-              "opportunities": 4.0,
-              "passing_interceptions": 0.0,
-              "passing_tds": 0.0,
-              "passing_yards": 0.0,
-              "receiving_tds": 0.0,
-              "receiving_yards": 22.0,
-              "receptions": 3.0,
-              "rushing_tds": 0.0,
-              "rushing_yards": 0.0,
-              "target_share": 0.173913043478261,
-              "targets": 4.0,
-              "team": "SF",
-              "touches": 3.0,
-              "week": 9
-            }
-          ]
-        },
-        "player_id": "3286",
-        "position": "WR",
-        "reasons": [
-          "Dynasty Dealer market value 2,034 adds insulation/upside signal.",
-          "current-season usage: 3.3 opportunities/game, 48% offensive snaps, 8.2 715 PPG.",
-          "Currently on an NFL roster (SF).",
-          "Depth-chart No. 3: plausible contingent upside.",
-          "Sleeper market heat: 18,228 adds in the 24h trend window.",
-          "Market headwind: 65,442 drops in the 24h trend window.",
-          "Recently dropped by Waldo23; worth checking for a league-specific market reset."
-        ],
-        "recent_715_drop": {
-          "age_days": 4.2,
-          "manager": "Waldo23"
-        },
-        "status": "Active",
-        "team": "SF",
-        "tier": "Strong stash",
-        "trending_adds_24h": 18228,
-        "trending_drops_24h": 65442,
-        "years_exp": 10
-      },
-      {
-        "age": 29,
-        "depth": 2,
-        "depth_chart_order": 2,
-        "depth_chart_position": "SWR",
-        "fantasy_positions": [
-          "WR"
-        ],
-        "injury_body_part": null,
-        "injury_notes": null,
-        "injury_status": null,
-        "market_position_rank": 182,
-        "market_rank": 481,
-        "market_value": 27,
-        "name": "Simi Fehoko",
-        "opportunity_score": 58.1,
-        "performance": {
-          "air_yards_share": 2.3,
-          "basis": "current",
-          "basis_label": "2026",
-          "carries_per_game": 0.0,
-          "fantasy_points_715": 2.7,
-          "games": 7,
-          "gsis_id": "00-0036646",
-          "last3_opportunities_per_game": 0.67,
-          "last3_ppg_715": 0.9,
-          "name": "Simi Fehoko",
-          "offense_snap_pct": 19.9,
-          "opportunities": 2.0,
-          "opportunities_per_game": 0.29,
-          "pfr_id": "FehoSi00",
-          "position": "WR",
-          "ppg_715": 0.39,
-          "season": 2026,
-          "sleeper_id": "7812",
-          "target_share": 0.8,
-          "targets_per_game": 0.29,
-          "touches_per_game": 0.14,
-          "weekly": [
-            {
-              "air_yards_share": 0.0,
-              "attempts": 0.0,
-              "carries": 0.0,
-              "fantasy_points_715": 0.0,
-              "offense_snap_pct": 8.0,
-              "offense_snaps": 6.0,
-              "opponent": "LAC",
-              "opportunities": 0.0,
-              "passing_interceptions": 0.0,
-              "passing_tds": 0.0,
-              "passing_yards": 0.0,
-              "receiving_tds": 0.0,
-              "receiving_yards": 0.0,
-              "receptions": 0.0,
-              "rushing_tds": 0.0,
-              "rushing_yards": 0.0,
-              "target_share": 0.0,
-              "targets": 0.0,
-              "team": "ARI",
-              "touches": 0.0,
-              "week": 1
-            },
-            {
-              "air_yards_share": 0.0,
-              "attempts": 0.0,
-              "carries": 0.0,
-              "fantasy_points_715": 0.0,
-              "offense_snap_pct": 12.0,
-              "offense_snaps": 6.0,
-              "opponent": "SEA",
-              "opportunities": 0.0,
-              "passing_interceptions": 0.0,
-              "passing_tds": 0.0,
-              "passing_yards": 0.0,
-              "receiving_tds": 0.0,
-              "receiving_yards": 0.0,
-              "receptions": 0.0,
-              "rushing_tds": 0.0,
-              "rushing_yards": 0.0,
-              "target_share": 0.0,
-              "targets": 0.0,
-              "team": "ARI",
-              "touches": 0.0,
-              "week": 2
-            },
-            {
-              "air_yards_share": 0.0,
-              "attempts": 0.0,
-              "carries": 0.0,
-              "fantasy_points_715": 0.0,
-              "offense_snap_pct": 4.0,
-              "offense_snaps": 3.0,
-              "opponent": "DET",
-              "opportunities": 0.0,
-              "passing_interceptions": 0.0,
-              "passing_tds": 0.0,
-              "passing_yards": 0.0,
-              "receiving_tds": 0.0,
-              "receiving_yards": 0.0,
-              "receptions": 0.0,
-              "rushing_tds": 0.0,
-              "rushing_yards": 0.0,
-              "target_share": 0.0,
-              "targets": 0.0,
-              "team": "ARI",
-              "touches": 0.0,
-              "week": 5
-            },
-            {
-              "air_yards_share": 0.0,
-              "attempts": 0.0,
-              "carries": 0.0,
-              "fantasy_points_715": 0.0,
-              "offense_snap_pct": 8.0,
-              "offense_snaps": 6.0,
-              "opponent": "LA",
-              "opportunities": 0.0,
-              "passing_interceptions": 0.0,
-              "passing_tds": 0.0,
-              "passing_yards": 0.0,
-              "receiving_tds": 0.0,
-              "receiving_yards": 0.0,
-              "receptions": 0.0,
-              "rushing_tds": 0.0,
-              "rushing_yards": 0.0,
-              "target_share": 0.0,
-              "targets": 0.0,
-              "team": "ARI",
-              "touches": 0.0,
-              "week": 6
-            },
-            {
-              "air_yards_share": 0.0,
-              "attempts": 0.0,
-              "carries": 0.0,
-              "fantasy_points_715": 0.0,
-              "offense_snap_pct": 9.0,
-              "offense_snaps": 7.0,
-              "opponent": "DEN",
-              "opportunities": 0.0,
-              "passing_interceptions": 0.0,
-              "passing_tds": 0.0,
-              "passing_yards": 0.0,
-              "receiving_tds": 0.0,
-              "receiving_yards": 0.0,
-              "receptions": 0.0,
-              "rushing_tds": 0.0,
-              "rushing_yards": 0.0,
-              "target_share": 0.0,
-              "targets": 0.0,
-              "team": "ARI",
-              "touches": 0.0,
-              "week": 7
-            },
-            {
-              "air_yards_share": 0.0425,
-              "attempts": 0.0,
-              "carries": 0.0,
-              "fantasy_points_715": 2.7,
-              "offense_snap_pct": 49.0,
-              "offense_snaps": 40.0,
-              "opponent": "DAL",
-              "opportunities": 1.0,
-              "passing_interceptions": 0.0,
-              "passing_tds": 0.0,
-              "passing_yards": 0.0,
-              "receiving_tds": 0.0,
-              "receiving_yards": 17.0,
-              "receptions": 1.0,
-              "rushing_tds": 0.0,
-              "rushing_yards": 0.0,
-              "target_share": 0.024390243902439,
-              "targets": 1.0,
-              "team": "ARI",
-              "touches": 1.0,
-              "week": 8
-            },
-            {
-              "air_yards_share": 0.121359223300971,
-              "attempts": 0.0,
-              "carries": 0.0,
-              "fantasy_points_715": 0.0,
-              "offense_snap_pct": 49.0,
-              "offense_snaps": 26.0,
-              "opponent": "SEA",
-              "opportunities": 1.0,
-              "passing_interceptions": 0.0,
-              "passing_tds": 0.0,
-              "passing_yards": 0.0,
-              "receiving_tds": 0.0,
-              "receiving_yards": 0.0,
-              "receptions": 0.0,
-              "rushing_tds": 0.0,
-              "rushing_yards": 0.0,
-              "target_share": 0.0344827586206897,
-              "targets": 1.0,
-              "team": "ARI",
-              "touches": 0.0,
-              "week": 9
-            }
-          ]
-        },
-        "player_id": "7812",
-        "position": "WR",
-        "reasons": [
-          "current-season usage: 0.3 opportunities/game, 20% offensive snaps, 0.4 715 PPG.",
-          "Currently on an NFL roster (ARI).",
-          "Depth-chart No. 2: direct contingent path to usage.",
-          "Sleeper market heat: 15,936 adds in the 24h trend window."
-        ],
-        "recent_715_drop": null,
-        "status": "Active",
-        "team": "ARI",
-        "tier": "Strong stash",
-        "trending_adds_24h": 15936,
-        "trending_drops_24h": 0,
-        "years_exp": 5
       },
       {
         "age": 27,
@@ -38009,7 +37788,7 @@
         "market_rank": 388,
         "market_value": 1477,
         "name": "Ashton Dulin",
-        "opportunity_score": 54.8,
+        "opportunity_score": 55.4,
         "performance": {
           "air_yards_share": 10.1,
           "basis": "current",
@@ -38157,15 +37936,15 @@
           "current-season usage: 2.2 opportunities/game, 22% offensive snaps, 3.8 715 PPG.",
           "Currently on an NFL roster (IND).",
           "Depth-chart No. 2: direct contingent path to usage.",
-          "Sleeper market heat: 72,459 adds in the 24h trend window.",
-          "Market headwind: 26,235 drops in the 24h trend window."
+          "Sleeper market heat: 74,997 adds in the 24h trend window.",
+          "Market headwind: 27,864 drops in the 24h trend window."
         ],
         "recent_715_drop": null,
         "status": "Active",
         "team": "IND",
-        "tier": "Watch",
-        "trending_adds_24h": 72459,
-        "trending_drops_24h": 26235,
+        "tier": "Strong stash",
+        "trending_adds_24h": 74997,
+        "trending_drops_24h": 27864,
         "years_exp": 7
       },
       {
@@ -38689,7 +38468,7 @@
         "market_rank": 447,
         "market_value": 193,
         "name": "Anthony Gould",
-        "opportunity_score": 46.2,
+        "opportunity_score": 46.8,
         "performance": {
           "air_yards_share": 2.8,
           "basis": "current",
@@ -38767,13 +38546,13 @@
           "current-season usage: 0.5 opportunities/game, 2% offensive snaps, 1.3 715 PPG.",
           "Currently on an NFL roster (IND).",
           "Depth-chart No. 4: deeper path to touches.",
-          "Sleeper market heat: 29,876 adds in the 24h trend window."
+          "Sleeper market heat: 29,911 adds in the 24h trend window."
         ],
         "recent_715_drop": null,
         "status": "Active",
         "team": "IND",
         "tier": "Watch",
-        "trending_adds_24h": 29876,
+        "trending_adds_24h": 29911,
         "trending_drops_24h": 0,
         "years_exp": 2
       },
@@ -38989,7 +38768,7 @@
           "Recently dropped by Amelse; worth checking for a league-specific market reset."
         ],
         "recent_715_drop": {
-          "age_days": 10.9,
+          "age_days": 11.0,
           "manager": "Amelse"
         },
         "status": "Active",
@@ -39431,7 +39210,7 @@
           "Recently dropped by Amelse; worth checking for a league-specific market reset."
         ],
         "recent_715_drop": {
-          "age_days": 5.0,
+          "age_days": 5.1,
           "manager": "Amelse"
         },
         "status": "Active",
@@ -39440,6 +39219,223 @@
         "trending_adds_24h": 0,
         "trending_drops_24h": 0,
         "years_exp": 1
+      },
+      {
+        "age": 29,
+        "depth": 2,
+        "depth_chart_order": 2,
+        "depth_chart_position": "SWR",
+        "fantasy_positions": [
+          "WR"
+        ],
+        "injury_body_part": null,
+        "injury_notes": null,
+        "injury_status": null,
+        "market_position_rank": 182,
+        "market_rank": 481,
+        "market_value": 27,
+        "name": "Simi Fehoko",
+        "opportunity_score": 41.0,
+        "performance": {
+          "air_yards_share": 2.3,
+          "basis": "current",
+          "basis_label": "2026",
+          "carries_per_game": 0.0,
+          "fantasy_points_715": 2.7,
+          "games": 7,
+          "gsis_id": "00-0036646",
+          "last3_opportunities_per_game": 0.67,
+          "last3_ppg_715": 0.9,
+          "name": "Simi Fehoko",
+          "offense_snap_pct": 19.9,
+          "opportunities": 2.0,
+          "opportunities_per_game": 0.29,
+          "pfr_id": "FehoSi00",
+          "position": "WR",
+          "ppg_715": 0.39,
+          "season": 2026,
+          "sleeper_id": "7812",
+          "target_share": 0.8,
+          "targets_per_game": 0.29,
+          "touches_per_game": 0.14,
+          "weekly": [
+            {
+              "air_yards_share": 0.0,
+              "attempts": 0.0,
+              "carries": 0.0,
+              "fantasy_points_715": 0.0,
+              "offense_snap_pct": 8.0,
+              "offense_snaps": 6.0,
+              "opponent": "LAC",
+              "opportunities": 0.0,
+              "passing_interceptions": 0.0,
+              "passing_tds": 0.0,
+              "passing_yards": 0.0,
+              "receiving_tds": 0.0,
+              "receiving_yards": 0.0,
+              "receptions": 0.0,
+              "rushing_tds": 0.0,
+              "rushing_yards": 0.0,
+              "target_share": 0.0,
+              "targets": 0.0,
+              "team": "ARI",
+              "touches": 0.0,
+              "week": 1
+            },
+            {
+              "air_yards_share": 0.0,
+              "attempts": 0.0,
+              "carries": 0.0,
+              "fantasy_points_715": 0.0,
+              "offense_snap_pct": 12.0,
+              "offense_snaps": 6.0,
+              "opponent": "SEA",
+              "opportunities": 0.0,
+              "passing_interceptions": 0.0,
+              "passing_tds": 0.0,
+              "passing_yards": 0.0,
+              "receiving_tds": 0.0,
+              "receiving_yards": 0.0,
+              "receptions": 0.0,
+              "rushing_tds": 0.0,
+              "rushing_yards": 0.0,
+              "target_share": 0.0,
+              "targets": 0.0,
+              "team": "ARI",
+              "touches": 0.0,
+              "week": 2
+            },
+            {
+              "air_yards_share": 0.0,
+              "attempts": 0.0,
+              "carries": 0.0,
+              "fantasy_points_715": 0.0,
+              "offense_snap_pct": 4.0,
+              "offense_snaps": 3.0,
+              "opponent": "DET",
+              "opportunities": 0.0,
+              "passing_interceptions": 0.0,
+              "passing_tds": 0.0,
+              "passing_yards": 0.0,
+              "receiving_tds": 0.0,
+              "receiving_yards": 0.0,
+              "receptions": 0.0,
+              "rushing_tds": 0.0,
+              "rushing_yards": 0.0,
+              "target_share": 0.0,
+              "targets": 0.0,
+              "team": "ARI",
+              "touches": 0.0,
+              "week": 5
+            },
+            {
+              "air_yards_share": 0.0,
+              "attempts": 0.0,
+              "carries": 0.0,
+              "fantasy_points_715": 0.0,
+              "offense_snap_pct": 8.0,
+              "offense_snaps": 6.0,
+              "opponent": "LA",
+              "opportunities": 0.0,
+              "passing_interceptions": 0.0,
+              "passing_tds": 0.0,
+              "passing_yards": 0.0,
+              "receiving_tds": 0.0,
+              "receiving_yards": 0.0,
+              "receptions": 0.0,
+              "rushing_tds": 0.0,
+              "rushing_yards": 0.0,
+              "target_share": 0.0,
+              "targets": 0.0,
+              "team": "ARI",
+              "touches": 0.0,
+              "week": 6
+            },
+            {
+              "air_yards_share": 0.0,
+              "attempts": 0.0,
+              "carries": 0.0,
+              "fantasy_points_715": 0.0,
+              "offense_snap_pct": 9.0,
+              "offense_snaps": 7.0,
+              "opponent": "DEN",
+              "opportunities": 0.0,
+              "passing_interceptions": 0.0,
+              "passing_tds": 0.0,
+              "passing_yards": 0.0,
+              "receiving_tds": 0.0,
+              "receiving_yards": 0.0,
+              "receptions": 0.0,
+              "rushing_tds": 0.0,
+              "rushing_yards": 0.0,
+              "target_share": 0.0,
+              "targets": 0.0,
+              "team": "ARI",
+              "touches": 0.0,
+              "week": 7
+            },
+            {
+              "air_yards_share": 0.0425,
+              "attempts": 0.0,
+              "carries": 0.0,
+              "fantasy_points_715": 2.7,
+              "offense_snap_pct": 49.0,
+              "offense_snaps": 40.0,
+              "opponent": "DAL",
+              "opportunities": 1.0,
+              "passing_interceptions": 0.0,
+              "passing_tds": 0.0,
+              "passing_yards": 0.0,
+              "receiving_tds": 0.0,
+              "receiving_yards": 17.0,
+              "receptions": 1.0,
+              "rushing_tds": 0.0,
+              "rushing_yards": 0.0,
+              "target_share": 0.024390243902439,
+              "targets": 1.0,
+              "team": "ARI",
+              "touches": 1.0,
+              "week": 8
+            },
+            {
+              "air_yards_share": 0.121359223300971,
+              "attempts": 0.0,
+              "carries": 0.0,
+              "fantasy_points_715": 0.0,
+              "offense_snap_pct": 49.0,
+              "offense_snaps": 26.0,
+              "opponent": "SEA",
+              "opportunities": 1.0,
+              "passing_interceptions": 0.0,
+              "passing_tds": 0.0,
+              "passing_yards": 0.0,
+              "receiving_tds": 0.0,
+              "receiving_yards": 0.0,
+              "receptions": 0.0,
+              "rushing_tds": 0.0,
+              "rushing_yards": 0.0,
+              "target_share": 0.0344827586206897,
+              "targets": 1.0,
+              "team": "ARI",
+              "touches": 0.0,
+              "week": 9
+            }
+          ]
+        },
+        "player_id": "7812",
+        "position": "WR",
+        "reasons": [
+          "current-season usage: 0.3 opportunities/game, 20% offensive snaps, 0.4 715 PPG.",
+          "Currently on an NFL roster (ARI).",
+          "Depth-chart No. 2: direct contingent path to usage."
+        ],
+        "recent_715_drop": null,
+        "status": "Active",
+        "team": "ARI",
+        "tier": "Watch",
+        "trending_adds_24h": 0,
+        "trending_drops_24h": 0,
+        "years_exp": 5
       },
       {
         "age": 31,
@@ -39973,7 +39969,7 @@
           "Recently dropped by Ebro51; worth checking for a league-specific market reset."
         ],
         "recent_715_drop": {
-          "age_days": 10.9,
+          "age_days": 11.0,
           "manager": "Ebro51"
         },
         "status": "Active",
@@ -40497,6 +40493,220 @@
         "trending_adds_24h": 0,
         "trending_drops_24h": 0,
         "years_exp": 6
+      },
+      {
+        "age": 26,
+        "depth": 3,
+        "depth_chart_order": 3,
+        "depth_chart_position": "LWR",
+        "fantasy_positions": [
+          "WR"
+        ],
+        "injury_body_part": null,
+        "injury_notes": null,
+        "injury_status": null,
+        "name": "Elijah Moore",
+        "opportunity_score": 36.0,
+        "performance": {
+          "air_yards_share": 2.1,
+          "basis": "current",
+          "basis_label": "2026",
+          "carries_per_game": 0.0,
+          "fantasy_points_715": 5.7,
+          "games": 7,
+          "gsis_id": "00-0036980",
+          "last3_opportunities_per_game": 1.33,
+          "last3_ppg_715": 1.43,
+          "name": "Elijah Moore",
+          "offense_snap_pct": 22.1,
+          "opportunities": 6.0,
+          "opportunities_per_game": 0.86,
+          "pfr_id": "MoorEl00",
+          "position": "WR",
+          "ppg_715": 0.81,
+          "season": 2026,
+          "sleeper_id": "7596",
+          "target_share": 2.4,
+          "targets_per_game": 0.86,
+          "touches_per_game": 0.57,
+          "weekly": [
+            {
+              "air_yards_share": 0.0,
+              "attempts": 0.0,
+              "carries": 0.0,
+              "fantasy_points_715": 0.0,
+              "offense_snap_pct": 12.0,
+              "offense_snaps": 6.0,
+              "opponent": "CHI",
+              "opportunities": 0.0,
+              "passing_interceptions": 0.0,
+              "passing_tds": 0.0,
+              "passing_yards": 0.0,
+              "receiving_tds": 0.0,
+              "receiving_yards": 0.0,
+              "receptions": 0.0,
+              "rushing_tds": 0.0,
+              "rushing_yards": 0.0,
+              "target_share": 0.0,
+              "targets": 0.0,
+              "team": "PHI",
+              "touches": 0.0,
+              "week": 3
+            },
+            {
+              "air_yards_share": 0.0,
+              "attempts": 0.0,
+              "carries": 0.0,
+              "fantasy_points_715": 0.0,
+              "offense_snap_pct": 16.0,
+              "offense_snaps": 10.0,
+              "opponent": "LA",
+              "opportunities": 0.0,
+              "passing_interceptions": 0.0,
+              "passing_tds": 0.0,
+              "passing_yards": 0.0,
+              "receiving_tds": 0.0,
+              "receiving_yards": 0.0,
+              "receptions": 0.0,
+              "rushing_tds": 0.0,
+              "rushing_yards": 0.0,
+              "target_share": 0.0,
+              "targets": 0.0,
+              "team": "PHI",
+              "touches": 0.0,
+              "week": 4
+            },
+            {
+              "air_yards_share": 0.0,
+              "attempts": 0.0,
+              "carries": 0.0,
+              "fantasy_points_715": 0.0,
+              "offense_snap_pct": 19.0,
+              "offense_snaps": 12.0,
+              "opponent": "JAX",
+              "opportunities": 0.0,
+              "passing_interceptions": 0.0,
+              "passing_tds": 0.0,
+              "passing_yards": 0.0,
+              "receiving_tds": 0.0,
+              "receiving_yards": 0.0,
+              "receptions": 0.0,
+              "rushing_tds": 0.0,
+              "rushing_yards": 0.0,
+              "target_share": 0.0,
+              "targets": 0.0,
+              "team": "PHI",
+              "touches": 0.0,
+              "week": 5
+            },
+            {
+              "air_yards_share": 0.0335195530726257,
+              "attempts": 0.0,
+              "carries": 0.0,
+              "fantasy_points_715": 1.4,
+              "offense_snap_pct": 12.0,
+              "offense_snaps": 8.0,
+              "opponent": "CAR",
+              "opportunities": 2.0,
+              "passing_interceptions": 0.0,
+              "passing_tds": 0.0,
+              "passing_yards": 0.0,
+              "receiving_tds": 0.0,
+              "receiving_yards": 4.0,
+              "receptions": 1.0,
+              "rushing_tds": 0.0,
+              "rushing_yards": 0.0,
+              "target_share": 0.0454545454545455,
+              "targets": 2.0,
+              "team": "PHI",
+              "touches": 1.0,
+              "week": 6
+            },
+            {
+              "air_yards_share": 0.0888888888888889,
+              "attempts": 0.0,
+              "carries": 0.0,
+              "fantasy_points_715": 3.6,
+              "offense_snap_pct": 33.0,
+              "offense_snaps": 22.0,
+              "opponent": "DAL",
+              "opportunities": 2.0,
+              "passing_interceptions": 0.0,
+              "passing_tds": 0.0,
+              "passing_yards": 0.0,
+              "receiving_tds": 0.0,
+              "receiving_yards": 16.0,
+              "receptions": 2.0,
+              "rushing_tds": 0.0,
+              "rushing_yards": 0.0,
+              "target_share": 0.0606060606060606,
+              "targets": 2.0,
+              "team": "PHI",
+              "touches": 2.0,
+              "week": 7
+            },
+            {
+              "air_yards_share": 0.0,
+              "attempts": 0.0,
+              "carries": 0.0,
+              "fantasy_points_715": 0.0,
+              "offense_snap_pct": 26.0,
+              "offense_snaps": 18.0,
+              "opponent": "WAS",
+              "opportunities": 0.0,
+              "passing_interceptions": 0.0,
+              "passing_tds": 0.0,
+              "passing_yards": 0.0,
+              "receiving_tds": 0.0,
+              "receiving_yards": 0.0,
+              "receptions": 0.0,
+              "rushing_tds": 0.0,
+              "rushing_yards": 0.0,
+              "target_share": 0.0,
+              "targets": 0.0,
+              "team": "PHI",
+              "touches": 0.0,
+              "week": 8
+            },
+            {
+              "air_yards_share": 0.0229007633587786,
+              "attempts": 0.0,
+              "carries": 0.0,
+              "fantasy_points_715": 0.7,
+              "offense_snap_pct": 37.0,
+              "offense_snaps": 26.0,
+              "opponent": "NYG",
+              "opportunities": 2.0,
+              "passing_interceptions": 0.0,
+              "passing_tds": 0.0,
+              "passing_yards": 0.0,
+              "receiving_tds": 0.0,
+              "receiving_yards": -3.0,
+              "receptions": 1.0,
+              "rushing_tds": 0.0,
+              "rushing_yards": 0.0,
+              "target_share": 0.0606060606060606,
+              "targets": 2.0,
+              "team": "PHI",
+              "touches": 1.0,
+              "week": 9
+            }
+          ]
+        },
+        "player_id": "7596",
+        "position": "WR",
+        "reasons": [
+          "current-season usage: 0.9 opportunities/game, 22% offensive snaps, 0.8 715 PPG.",
+          "Currently on an NFL roster (PHI).",
+          "Depth-chart No. 3: plausible contingent upside."
+        ],
+        "recent_715_drop": null,
+        "status": "Active",
+        "team": "PHI",
+        "tier": "Deep",
+        "trending_adds_24h": 0,
+        "trending_drops_24h": 0,
+        "years_exp": 5
       }
     ]
   },
@@ -40555,14 +40765,14 @@
         {
           "label": "below avg",
           "position": "QB",
-          "strength": 0.92
+          "strength": 0.83
         }
       ],
       "their_surpluses": [
         {
           "label": "deep",
           "position": "WR",
-          "strength": 4.0
+          "strength": 3.92
         }
       ]
     },
@@ -40619,14 +40829,14 @@
         {
           "label": "below avg",
           "position": "QB",
-          "strength": 0.92
+          "strength": 0.83
         }
       ],
       "their_surpluses": [
         {
           "label": "deep",
           "position": "WR",
-          "strength": 2.0
+          "strength": 1.92
         }
       ]
     },
@@ -40678,7 +40888,7 @@
         {
           "label": "thin",
           "position": "QB",
-          "strength": 1.92
+          "strength": 1.83
         },
         {
           "label": "thin",
@@ -40690,7 +40900,7 @@
         {
           "label": "deep",
           "position": "WR",
-          "strength": 4.0
+          "strength": 3.92
         }
       ]
     },
@@ -40749,20 +40959,20 @@
         {
           "label": "below avg",
           "position": "QB",
-          "strength": 0.92
+          "strength": 0.83
         }
       ],
       "their_surpluses": [
         {
           "label": "deep",
           "position": "WR",
-          "strength": 4.0
+          "strength": 3.92
         }
       ]
     },
     {
-      "count_fit_score": 4.7,
-      "fit_score": 3.2,
+      "count_fit_score": 4.6,
+      "fit_score": 3.1,
       "manager": "Butler2142",
       "market": {
         "position_scores": {
@@ -40805,7 +41015,7 @@
         {
           "label": "thin",
           "position": "QB",
-          "strength": 1.92
+          "strength": 1.83
         }
       ],
       "their_surpluses": [
@@ -40817,7 +41027,7 @@
         {
           "label": "above avg",
           "position": "WR",
-          "strength": 1.0
+          "strength": 0.92
         }
       ]
     },
@@ -40866,14 +41076,14 @@
         {
           "label": "thin",
           "position": "WR",
-          "strength": 4.0
+          "strength": 4.08
         }
       ],
       "their_surpluses": [
         {
           "label": "deep",
           "position": "QB",
-          "strength": 2.08
+          "strength": 2.17
         },
         {
           "label": "deep",
@@ -40927,7 +41137,7 @@
         {
           "label": "thin",
           "position": "WR",
-          "strength": 1.0
+          "strength": 1.08
         }
       ],
       "their_surpluses": []
@@ -40976,7 +41186,7 @@
         {
           "label": "thin",
           "position": "WR",
-          "strength": 4.0
+          "strength": 4.08
         }
       ],
       "their_surpluses": []
@@ -40987,14 +41197,14 @@
       "manager": "NolanFarts",
       "market": {
         "position_scores": {
-          "QB": 40.4,
+          "QB": 30.6,
           "RB": 90.7,
           "TE": 82.8,
-          "WR": 71.2
+          "WR": 78.9
         },
         "their_market_rank": 1,
         "their_starter_value": 63311,
-        "their_total_value": 108793
+        "their_total_value": 108830
       },
       "market_fit_score": 0.0,
       "pick_summary": {
@@ -41025,16 +41235,10 @@
         {
           "label": "thin",
           "position": "WR",
-          "strength": 2.0
-        }
-      ],
-      "their_surpluses": [
-        {
-          "label": "above avg",
-          "position": "QB",
           "strength": 1.08
         }
-      ]
+      ],
+      "their_surpluses": []
     },
     {
       "count_fit_score": 0.0,
@@ -41079,7 +41283,7 @@
         {
           "label": "above avg",
           "position": "QB",
-          "strength": 1.08
+          "strength": 1.17
         }
       ]
     },
@@ -41127,14 +41331,14 @@
         {
           "label": "thin",
           "position": "WR",
-          "strength": 2.0
+          "strength": 2.08
         }
       ],
       "their_surpluses": [
         {
           "label": "above avg",
           "position": "QB",
-          "strength": 1.08
+          "strength": 1.17
         }
       ]
     }
