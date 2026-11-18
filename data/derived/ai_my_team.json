@@ -549,7 +549,7 @@
     "total_market_value": 103400,
     "weeks": 10
   },
-  "generated_at": "2026-11-18T19:00:27.703832+00:00",
+  "generated_at": "2026-11-18T20:28:46.191223+00:00",
   "lineup": [
     {
       "player": {
@@ -891,7 +891,7 @@
       {
         "label": "thin",
         "position": "WR",
-        "strength": 2.08
+        "strength": 1.92
       }
     ],
     "pick_summary": {
@@ -916,28 +916,28 @@
     "positions": {
       "QB": {
         "count": 6,
-        "delta_vs_average": 1.17,
+        "delta_vs_average": 1.08,
         "label": "above avg",
-        "league_average": 4.83,
+        "league_average": 4.92,
         "market_score": 59.8,
         "market_value": 23323,
         "need_strength": 0.0,
         "quality_label": "market-balanced",
         "starters": 2,
-        "surplus_strength": 1.17,
+        "surplus_strength": 1.08,
         "target": 4
       },
       "RB": {
         "count": 9,
-        "delta_vs_average": 1.67,
+        "delta_vs_average": 1.58,
         "label": "deep",
-        "league_average": 7.33,
+        "league_average": 7.42,
         "market_score": 80.8,
         "market_value": 31990,
         "need_strength": 0.0,
         "quality_label": "market-deep",
         "starters": 2,
-        "surplus_strength": 1.67,
+        "surplus_strength": 1.58,
         "target": 5
       },
       "TE": {
@@ -955,12 +955,12 @@
       },
       "WR": {
         "count": 9,
-        "delta_vs_average": -2.08,
+        "delta_vs_average": -1.92,
         "label": "thin",
-        "league_average": 11.08,
+        "league_average": 10.92,
         "market_score": 51.0,
         "market_value": 34847,
-        "need_strength": 2.08,
+        "need_strength": 1.92,
         "quality_label": "market-balanced",
         "starters": 3,
         "surplus_strength": 0.0,
@@ -977,7 +977,7 @@
       {
         "label": "above avg",
         "position": "QB",
-        "strength": 1.17
+        "strength": 1.08
       }
     ],
     "team_name": "Beef Cylinder"
@@ -1186,7 +1186,284 @@
     "window": "Retool Needed",
     "young_player_share": 37.0
   },
-  "recent_changes": [],
+  "recent_changes": [
+    {
+      "detected_at": "2026-11-18T20:28:44.012164+00:00",
+      "manager": "NolanFarts",
+      "player": {
+        "age": 27,
+        "depth_chart_order": 3,
+        "depth_chart_position": "RB",
+        "fantasy_positions": [
+          "RB"
+        ],
+        "injury_body_part": null,
+        "injury_notes": null,
+        "injury_status": null,
+        "name": "Emari Demercado",
+        "player_id": "11199",
+        "position": "RB",
+        "status": "Active",
+        "team": "HOU",
+        "years_exp": 3
+      },
+      "roster_id": 2,
+      "type": "roster_add"
+    },
+    {
+      "detected_at": "2026-11-18T20:28:44.012164+00:00",
+      "manager": "NolanFarts",
+      "player": {
+        "age": 25,
+        "depth_chart_order": 4,
+        "depth_chart_position": "SWR",
+        "fantasy_positions": [
+          "WR"
+        ],
+        "injury_body_part": "Ribs",
+        "injury_notes": null,
+        "injury_status": "Questionable",
+        "name": "Isaiah Williams",
+        "player_id": "11608",
+        "position": "WR",
+        "status": "Active",
+        "team": "NYJ",
+        "years_exp": 2
+      },
+      "roster_id": 2,
+      "type": "roster_drop"
+    },
+    {
+      "detected_at": "2026-11-18T20:28:44.012164+00:00",
+      "manager": "MayaHuskies",
+      "player": {
+        "age": 26,
+        "depth_chart_order": 2,
+        "depth_chart_position": "LWR",
+        "fantasy_positions": [
+          "WR"
+        ],
+        "injury_body_part": null,
+        "injury_notes": null,
+        "injury_status": null,
+        "name": "Xavier Hutchinson",
+        "player_id": "10218",
+        "position": "WR",
+        "status": "Active",
+        "team": "HOU",
+        "years_exp": 3
+      },
+      "roster_id": 4,
+      "type": "roster_add"
+    },
+    {
+      "detected_at": "2026-11-18T20:28:44.012164+00:00",
+      "manager": "MayaHuskies",
+      "player": {
+        "age": 22,
+        "depth_chart_order": 2,
+        "depth_chart_position": "RWR",
+        "fantasy_positions": [
+          "WR"
+        ],
+        "injury_body_part": null,
+        "injury_notes": null,
+        "injury_status": null,
+        "name": "Reggie Virgil",
+        "player_id": "13297",
+        "position": "WR",
+        "status": "Active",
+        "team": "ARI",
+        "years_exp": 0
+      },
+      "roster_id": 4,
+      "type": "roster_drop"
+    },
+    {
+      "detected_at": "2026-11-18T20:28:44.012164+00:00",
+      "manager": "nathanhoglund",
+      "player": {
+        "age": 23,
+        "depth_chart_order": 4,
+        "depth_chart_position": "LWR",
+        "fantasy_positions": [
+          "WR"
+        ],
+        "injury_body_part": null,
+        "injury_notes": null,
+        "injury_status": null,
+        "name": "Tai Felton",
+        "player_id": "12496",
+        "position": "WR",
+        "status": "Active",
+        "team": "MIN",
+        "years_exp": 1
+      },
+      "roster_id": 5,
+      "type": "roster_add"
+    },
+    {
+      "detected_at": "2026-11-18T20:28:44.012164+00:00",
+      "manager": "nathanhoglund",
+      "player": {
+        "age": 31,
+        "depth_chart_order": 2,
+        "depth_chart_position": "RB",
+        "fantasy_positions": [
+          "RB"
+        ],
+        "injury_body_part": null,
+        "injury_notes": null,
+        "injury_status": null,
+        "name": "Austin Ekeler",
+        "player_id": "4663",
+        "position": "RB",
+        "status": "Active",
+        "team": "WAS",
+        "years_exp": 9
+      },
+      "roster_id": 5,
+      "type": "roster_add"
+    },
+    {
+      "detected_at": "2026-11-18T20:28:44.012164+00:00",
+      "manager": "nathanhoglund",
+      "player": {
+        "age": 23,
+        "depth_chart_order": 3,
+        "depth_chart_position": "LWR",
+        "fantasy_positions": [
+          "WR"
+        ],
+        "injury_body_part": null,
+        "injury_notes": null,
+        "injury_status": null,
+        "name": "Deion Burks",
+        "player_id": "13333",
+        "position": "WR",
+        "status": "Active",
+        "team": "IND",
+        "years_exp": 0
+      },
+      "roster_id": 5,
+      "type": "roster_drop"
+    },
+    {
+      "detected_at": "2026-11-18T20:28:44.012164+00:00",
+      "manager": "nathanhoglund",
+      "player": {
+        "age": 26,
+        "depth_chart_order": null,
+        "depth_chart_position": null,
+        "fantasy_positions": [
+          "RB"
+        ],
+        "injury_body_part": "Undisclosed",
+        "injury_notes": null,
+        "injury_status": "Questionable",
+        "name": "Dameon Pierce",
+        "player_id": "8129",
+        "position": "RB",
+        "status": "Inactive",
+        "team": null,
+        "years_exp": 4
+      },
+      "roster_id": 5,
+      "type": "roster_drop"
+    },
+    {
+      "detected_at": "2026-11-18T20:28:44.012164+00:00",
+      "manager": "ryansorensen8",
+      "player": {
+        "age": 23,
+        "depth_chart_order": 2,
+        "depth_chart_position": "TE",
+        "fantasy_positions": [
+          "TE"
+        ],
+        "injury_body_part": null,
+        "injury_notes": null,
+        "injury_status": null,
+        "name": "Sam Roush",
+        "player_id": "13322",
+        "position": "TE",
+        "status": "Active",
+        "team": "CHI",
+        "years_exp": 0
+      },
+      "roster_id": 9,
+      "type": "roster_add"
+    },
+    {
+      "detected_at": "2026-11-18T20:28:44.012164+00:00",
+      "manager": "ryansorensen8",
+      "player": {
+        "age": 30,
+        "depth_chart_order": 2,
+        "depth_chart_position": "QB",
+        "fantasy_positions": [
+          "QB"
+        ],
+        "injury_body_part": null,
+        "injury_notes": null,
+        "injury_status": null,
+        "name": "Kyle Allen",
+        "player_id": "5127",
+        "position": "QB",
+        "status": "Active",
+        "team": "BUF",
+        "years_exp": 8
+      },
+      "roster_id": 9,
+      "type": "roster_add"
+    },
+    {
+      "detected_at": "2026-11-18T20:28:44.012164+00:00",
+      "manager": "ryansorensen8",
+      "player": {
+        "age": 34,
+        "depth_chart_order": 1,
+        "depth_chart_position": "TE",
+        "fantasy_positions": [
+          "TE"
+        ],
+        "injury_body_part": null,
+        "injury_notes": null,
+        "injury_status": null,
+        "name": "Darren Waller",
+        "player_id": "2505",
+        "position": "TE",
+        "status": "Active",
+        "team": "CAR",
+        "years_exp": 11
+      },
+      "roster_id": 9,
+      "type": "roster_drop"
+    },
+    {
+      "detected_at": "2026-11-18T20:28:44.012164+00:00",
+      "manager": "ryansorensen8",
+      "player": {
+        "age": 27,
+        "depth_chart_order": 2,
+        "depth_chart_position": "RWR",
+        "fantasy_positions": [
+          "WR"
+        ],
+        "injury_body_part": null,
+        "injury_notes": null,
+        "injury_status": null,
+        "name": "Tutu Atwell",
+        "player_id": "7562",
+        "position": "WR",
+        "status": "Active",
+        "team": "LAR",
+        "years_exp": 5
+      },
+      "roster_id": 9,
+      "type": "roster_drop"
+    }
+  ],
   "record": {
     "fpts": 1223,
     "fpts_decimal": 70,
@@ -1246,19 +1523,19 @@
         {
           "label": "thin",
           "position": "RB",
-          "strength": 5.33
+          "strength": 5.42
         },
         {
           "label": "below avg",
           "position": "QB",
-          "strength": 0.83
+          "strength": 0.92
         }
       ],
       "their_surpluses": [
         {
           "label": "deep",
           "position": "WR",
-          "strength": 4.92
+          "strength": 5.08
         }
       ]
     },
@@ -1310,19 +1587,19 @@
         {
           "label": "thin",
           "position": "RB",
-          "strength": 1.33
+          "strength": 1.42
         },
         {
           "label": "below avg",
           "position": "QB",
-          "strength": 0.83
+          "strength": 0.92
         }
       ],
       "their_surpluses": [
         {
           "label": "deep",
           "position": "WR",
-          "strength": 1.92
+          "strength": 2.08
         }
       ]
     },
@@ -1335,11 +1612,11 @@
           "QB": 16.3,
           "RB": 44.6,
           "TE": 0.0,
-          "WR": 90.2
+          "WR": 90.6
         },
         "their_market_rank": 10,
         "their_starter_value": 43532,
-        "their_total_value": 87286
+        "their_total_value": 87379
       },
       "market_fit_score": 0.0,
       "pick_summary": {
@@ -1374,36 +1651,36 @@
         {
           "label": "thin",
           "position": "QB",
-          "strength": 1.83
+          "strength": 1.92
         },
         {
           "label": "thin",
           "position": "RB",
-          "strength": 1.33
+          "strength": 1.42
         }
       ],
       "their_surpluses": [
         {
           "label": "deep",
           "position": "WR",
-          "strength": 3.92
+          "strength": 4.08
         }
       ]
     },
     {
-      "count_fit_score": 9.5,
-      "fit_score": 6.5,
+      "count_fit_score": 7.6,
+      "fit_score": 5.2,
       "manager": "ryansorensen8",
       "market": {
         "position_scores": {
-          "QB": 46.0,
+          "QB": 46.1,
           "RB": 67.1,
-          "TE": 8.9,
-          "WR": 96.1
+          "TE": 11.6,
+          "WR": 90.6
         },
         "their_market_rank": 4,
         "their_starter_value": 55121,
-        "their_total_value": 104272
+        "their_total_value": 103002
       },
       "market_fit_score": 0.0,
       "pick_summary": {
@@ -1425,7 +1702,6 @@
         "total": 6
       },
       "reasons": [
-        "You have relative QB depth that matches one of their needs.",
         "You have relative RB depth that matches one of their needs.",
         "They are deep at WR, where you are comparatively thin."
       ],
@@ -1440,25 +1716,20 @@
         {
           "label": "thin",
           "position": "RB",
-          "strength": 1.33
-        },
-        {
-          "label": "below avg",
-          "position": "QB",
-          "strength": 0.83
+          "strength": 1.42
         }
       ],
       "their_surpluses": [
         {
           "label": "deep",
           "position": "WR",
-          "strength": 3.92
+          "strength": 3.08
         }
       ]
     },
     {
-      "count_fit_score": 4.6,
-      "fit_score": 3.1,
+      "count_fit_score": 4.9,
+      "fit_score": 3.3,
       "manager": "Butler2142",
       "market": {
         "position_scores": {
@@ -1501,19 +1772,19 @@
         {
           "label": "thin",
           "position": "QB",
-          "strength": 1.83
+          "strength": 1.92
         }
       ],
       "their_surpluses": [
         {
           "label": "deep",
           "position": "RB",
-          "strength": 1.67
+          "strength": 1.58
         },
         {
           "label": "above avg",
           "position": "WR",
-          "strength": 0.92
+          "strength": 1.08
         }
       ]
     },
@@ -1562,19 +1833,19 @@
         {
           "label": "thin",
           "position": "WR",
-          "strength": 4.08
+          "strength": 3.92
         }
       ],
       "their_surpluses": [
         {
           "label": "deep",
           "position": "QB",
-          "strength": 2.17
+          "strength": 2.08
         },
         {
           "label": "deep",
           "position": "RB",
-          "strength": 1.67
+          "strength": 1.58
         }
       ]
     },
@@ -1585,13 +1856,13 @@
       "market": {
         "position_scores": {
           "QB": 15.1,
-          "RB": 51.6,
+          "RB": 50.5,
           "TE": 22.7,
-          "WR": 48.5
+          "WR": 43.0
         },
         "their_market_rank": 11,
         "their_starter_value": 39894,
-        "their_total_value": 79894
+        "their_total_value": 77916
       },
       "market_fit_score": 0.0,
       "pick_summary": {
@@ -1621,9 +1892,9 @@
       "team_name": "Michael Trigg Sucks Ass",
       "their_needs": [
         {
-          "label": "thin",
+          "label": "below avg",
           "position": "WR",
-          "strength": 1.08
+          "strength": 0.92
         }
       ],
       "their_surpluses": []
@@ -1672,14 +1943,14 @@
         {
           "label": "thin",
           "position": "WR",
-          "strength": 5.08
+          "strength": 4.92
         }
       ],
       "their_surpluses": [
         {
           "label": "deep",
           "position": "RB",
-          "strength": 2.67
+          "strength": 2.58
         },
         {
           "label": "deep",
@@ -1695,13 +1966,13 @@
       "market": {
         "position_scores": {
           "QB": 32.1,
-          "RB": 80.7,
+          "RB": 85.3,
           "TE": 69.5,
-          "WR": 77.9
+          "WR": 71.1
         },
         "their_market_rank": 1,
         "their_starter_value": 63335,
-        "their_total_value": 107919
+        "their_total_value": 107557
       },
       "market_fit_score": 0.0,
       "pick_summary": {
@@ -1732,10 +2003,16 @@
         {
           "label": "thin",
           "position": "WR",
-          "strength": 1.08
+          "strength": 1.92
         }
       ],
-      "their_surpluses": []
+      "their_surpluses": [
+        {
+          "label": "deep",
+          "position": "RB",
+          "strength": 1.58
+        }
+      ]
     },
     {
       "count_fit_score": 0.0,
@@ -1780,7 +2057,7 @@
         {
           "label": "above avg",
           "position": "QB",
-          "strength": 1.17
+          "strength": 1.08
         }
       ]
     },
@@ -1828,14 +2105,14 @@
         {
           "label": "thin",
           "position": "WR",
-          "strength": 2.08
+          "strength": 1.92
         }
       ],
       "their_surpluses": [
         {
           "label": "above avg",
           "position": "QB",
-          "strength": 1.17
+          "strength": 1.08
         }
       ]
     }
