@@ -1,6 +1,6 @@
 {
   "context_methodology": "Time-decayed, source-weighted context. Narrative effects are capped at ±8%, combined workload context at ±12%, and availability remains a separate guardrail. Every adjustment retains its source and explanation.",
-  "generated_at": "2026-11-20T07:31:43.952112+00:00",
+  "generated_at": "2026-11-20T17:03:22.171210+00:00",
   "market_attribution": "Values by Dynasty Dealer — https://www.dynastydealer.com/",
   "methodology": "Signal score, not dynasty market value. Uses confirmed league availability, NFL roster status, depth chart, age, league format, Sleeper 24h add/drop trends, recent 715 drops, and injury/IR-slot context. Phase 4.6 adds Dynasty Dealer market value plus nflverse offensive snap share, opportunities, 715-scoring production, and current usage trend. Prior-season performance is deliberately discounted until current-season data exists.",
   "performance_attribution": "NFL performance data via nflverse — https://nflverse.com/",
@@ -287,7 +287,7 @@
         "Recently dropped by Waldo23; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 5.2,
+        "age_days": 5.6,
         "manager": "Waldo23"
       },
       "status": "Active",
@@ -418,7 +418,7 @@
         "Recently dropped by ryansorensen8; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 9.2,
+        "age_days": 9.6,
         "manager": "ryansorensen8"
       },
       "status": "Active",
@@ -1171,7 +1171,7 @@
         "Recently dropped by ryansorensen8; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 1.2,
+        "age_days": 1.6,
         "manager": "ryansorensen8"
       },
       "status": "Active",
@@ -1183,6 +1183,82 @@
     },
     {
       "age": 34,
+      "base_opportunity_score": 76.7,
+      "context": {
+        "actionable_signal_count": 3,
+        "availability_probability": 0.85,
+        "confidence": "medium",
+        "net_direction": "negative",
+        "opportunity_score_adjustment": 3.6,
+        "player_id": "2505",
+        "research_mention_count": 1,
+        "signal_count": 4,
+        "signals": [
+          {
+            "corroboration_count": 1,
+            "direction": 1.0,
+            "event_date": null,
+            "impact": "availability",
+            "magnitude": 4.0,
+            "origin": "curated_report",
+            "player_id": "2505",
+            "player_name": "Darren Waller",
+            "published_at": "2026-11-20T16:30:18+00:00",
+            "reliability": 0.45,
+            "scored": true,
+            "signal_id": "8f15dfb0df295d27a9f2",
+            "source": "FantasyPros",
+            "source_type": "aggregator",
+            "summary": "Darren Waller (knee) practicing again Friday",
+            "ttl_days": 4,
+            "type": "practice",
+            "url": "https://www.fantasypros.com/nfl/news/621376/darren-waller-knee-practicing-again-friday.php",
+            "weighted_score": 0.3579
+          },
+          {
+            "corroboration_count": 1,
+            "direction": -1,
+            "event_date": null,
+            "impact": "availability",
+            "magnitude": 2,
+            "origin": "sleeper",
+            "player_id": "2505",
+            "player_name": "Darren Waller",
+            "published_at": "2026-11-20T17:03:23.663657+00:00",
+            "reliability": 0.82,
+            "signal_id": "sleeper-injury-2505",
+            "source": "Sleeper player status",
+            "source_type": "official",
+            "summary": "Sleeper lists Darren Waller as Questionable.",
+            "ttl_days": 2,
+            "type": "injury",
+            "url": null,
+            "weighted_score": -0.328
+          },
+          {
+            "corroboration_count": 1,
+            "direction": 1,
+            "event_date": null,
+            "impact": "workload",
+            "magnitude": 2,
+            "origin": "sleeper",
+            "player_id": "2505",
+            "player_name": "Darren Waller",
+            "published_at": "2026-11-20T17:03:23.663657+00:00",
+            "reliability": 0.65,
+            "signal_id": "sleeper-depth-2505",
+            "source": "Sleeper depth chart",
+            "source_type": "team",
+            "summary": "Current Sleeper depth-chart order is 1.",
+            "ttl_days": 3,
+            "type": "depth_chart",
+            "url": null,
+            "weighted_score": 0.26
+          }
+        ],
+        "weekly_multiplier": 0.872
+      },
+      "context_adjustment": 3.6,
       "depth": 1,
       "depth_chart_order": 1,
       "depth_chart_position": "TE",
@@ -1196,7 +1272,7 @@
       "market_rank": 250,
       "market_value": 2290,
       "name": "Darren Waller",
-      "opportunity_score": 76.7,
+      "opportunity_score": 80.3,
       "performance": {
         "air_yards_share": 16.0,
         "basis": "current",
@@ -1432,6 +1508,7 @@
       "player_id": "2505",
       "position": "TE",
       "reasons": [
+        "Current context adjusts the opportunity score +3.6.",
         "Dynasty Dealer market value 2,290 adds insulation/upside signal.",
         "current-season usage: 4.3 opportunities/game, 50% offensive snaps, 9.0 715 PPG.",
         "Currently on an NFL roster (CAR).",
@@ -1441,7 +1518,7 @@
         "Recently dropped by ryansorensen8; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 2.2,
+        "age_days": 2.6,
         "manager": "ryansorensen8"
       },
       "status": "Active",
@@ -1836,7 +1913,7 @@
         "Recently dropped by ryansorensen8; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 9.2,
+        "age_days": 9.6,
         "manager": "ryansorensen8"
       },
       "status": "Active",
@@ -2036,7 +2113,7 @@
         "Recently dropped by MayaHuskies; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 2.2,
+        "age_days": 2.6,
         "manager": "MayaHuskies"
       },
       "status": "Active",
@@ -2826,7 +2903,7 @@
         "Recently dropped by NolanFarts; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 11.6,
+        "age_days": 12.0,
         "manager": "NolanFarts"
       },
       "status": "Active",
@@ -3038,7 +3115,7 @@
         "Recently dropped by nathanhoglund; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 9.2,
+        "age_days": 9.6,
         "manager": "nathanhoglund"
       },
       "status": "Active",
@@ -3145,7 +3222,7 @@
         "Recently dropped by NolanFarts; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 5.3,
+        "age_days": 5.7,
         "manager": "NolanFarts"
       },
       "status": "Active",
@@ -5331,7 +5408,7 @@
         "Recently dropped by Waldo23; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 11.9,
+        "age_days": 12.3,
         "manager": "Waldo23"
       },
       "status": "Active",
@@ -5750,7 +5827,7 @@
         "Recently dropped by nathanhoglund; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 2.1,
+        "age_days": 2.5,
         "manager": "nathanhoglund"
       },
       "status": "Active",
@@ -8297,7 +8374,7 @@
         "Recently dropped by NolanFarts; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 9.4,
+        "age_days": 9.8,
         "manager": "NolanFarts"
       },
       "status": "Active",
@@ -9247,7 +9324,7 @@
         "Recently dropped by MayaHuskies; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 12.1,
+        "age_days": 12.5,
         "manager": "MayaHuskies"
       },
       "status": "Active",
@@ -9448,7 +9525,7 @@
             "origin": "sleeper",
             "player_id": "11370",
             "player_name": "Chris Brooks",
-            "published_at": "2026-11-20T07:31:45.389599+00:00",
+            "published_at": "2026-11-20T17:03:23.663657+00:00",
             "reliability": 0.65,
             "signal_id": "sleeper-depth-11370",
             "source": "Sleeper depth chart",
@@ -9468,7 +9545,7 @@
             "origin": "measured_usage",
             "player_id": "11370",
             "player_name": "Chris Brooks",
-            "published_at": "2026-11-20T07:31:45.389599+00:00",
+            "published_at": "2026-11-20T17:03:23.663657+00:00",
             "reliability": 0.9,
             "signal_id": "usage-trend-11370",
             "source": "nflverse play-by-play",
@@ -9846,7 +9923,7 @@
             "origin": "sleeper",
             "player_id": "13150",
             "player_name": "Darius Cooper",
-            "published_at": "2026-11-20T07:31:45.389599+00:00",
+            "published_at": "2026-11-20T17:03:23.663657+00:00",
             "reliability": 0.65,
             "signal_id": "sleeper-depth-13150",
             "source": "Sleeper depth chart",
@@ -9866,7 +9943,7 @@
             "origin": "measured_usage",
             "player_id": "13150",
             "player_name": "Darius Cooper",
-            "published_at": "2026-11-20T07:31:45.389599+00:00",
+            "published_at": "2026-11-20T17:03:23.663657+00:00",
             "reliability": 0.9,
             "signal_id": "usage-trend-13150",
             "source": "nflverse play-by-play",
@@ -10141,7 +10218,7 @@
         "Recently dropped by Waldo23; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 5.2,
+        "age_days": 5.6,
         "manager": "Waldo23"
       },
       "status": "Active",
@@ -10206,7 +10283,7 @@
             "origin": "measured_usage",
             "player_id": "7562",
             "player_name": "Tutu Atwell",
-            "published_at": "2026-11-20T07:31:45.389599+00:00",
+            "published_at": "2026-11-20T17:03:23.663657+00:00",
             "reliability": 0.9,
             "signal_id": "usage-trend-7562",
             "source": "nflverse play-by-play",
@@ -10226,7 +10303,7 @@
             "origin": "sleeper",
             "player_id": "7562",
             "player_name": "Tutu Atwell",
-            "published_at": "2026-11-20T07:31:45.389599+00:00",
+            "published_at": "2026-11-20T17:03:23.663657+00:00",
             "reliability": 0.65,
             "signal_id": "sleeper-depth-7562",
             "source": "Sleeper depth chart",
@@ -10453,7 +10530,7 @@
         "Recently dropped by ryansorensen8; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 2.2,
+        "age_days": 2.6,
         "manager": "ryansorensen8"
       },
       "status": "Active",
@@ -10485,7 +10562,7 @@
             "origin": "sleeper",
             "player_id": "11575",
             "player_name": "Ray Davis",
-            "published_at": "2026-11-20T07:31:45.389599+00:00",
+            "published_at": "2026-11-20T17:03:23.663657+00:00",
             "reliability": 0.82,
             "signal_id": "sleeper-injury-11575",
             "source": "Sleeper player status",
@@ -10505,7 +10582,7 @@
             "origin": "sleeper",
             "player_id": "11575",
             "player_name": "Ray Davis",
-            "published_at": "2026-11-20T07:31:45.389599+00:00",
+            "published_at": "2026-11-20T17:03:23.663657+00:00",
             "reliability": 0.65,
             "signal_id": "sleeper-depth-11575",
             "source": "Sleeper depth chart",
@@ -10525,7 +10602,7 @@
             "origin": "measured_usage",
             "player_id": "11575",
             "player_name": "Ray Davis",
-            "published_at": "2026-11-20T07:31:45.389599+00:00",
+            "published_at": "2026-11-20T17:03:23.663657+00:00",
             "reliability": 0.9,
             "signal_id": "usage-trend-11575",
             "source": "nflverse play-by-play",
@@ -11085,7 +11162,7 @@
         "Recently dropped by NolanFarts; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 2.1,
+        "age_days": 2.5,
         "manager": "NolanFarts"
       },
       "status": "Active",
@@ -17961,7 +18038,7 @@
             "origin": "measured_usage",
             "player_id": "5985",
             "player_name": "Foster Moreau",
-            "published_at": "2026-11-20T07:31:45.389599+00:00",
+            "published_at": "2026-11-20T17:03:23.663657+00:00",
             "reliability": 0.9,
             "signal_id": "usage-trend-5985",
             "source": "nflverse play-by-play",
@@ -17981,7 +18058,7 @@
             "origin": "sleeper",
             "player_id": "5985",
             "player_name": "Foster Moreau",
-            "published_at": "2026-11-20T07:31:45.389599+00:00",
+            "published_at": "2026-11-20T17:03:23.663657+00:00",
             "reliability": 0.65,
             "signal_id": "sleeper-depth-5985",
             "source": "Sleeper depth chart",
