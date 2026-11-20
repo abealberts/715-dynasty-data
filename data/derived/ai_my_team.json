@@ -102,34 +102,6 @@
     ],
     "RB": [
       {
-        "age": 23,
-        "depth_chart_order": 1,
-        "injury_status": null,
-        "market_position_rank": 17,
-        "market_rank": 70,
-        "market_value": 5189,
-        "name": "Jonah Coleman",
-        "performance": {
-          "air_yards_share": -5.6,
-          "basis": "current",
-          "basis_label": "2026",
-          "carries_per_game": 9.4,
-          "games": 5,
-          "last3_opportunities_per_game": 16.0,
-          "last3_ppg_715": 16.03,
-          "offense_snap_pct": 47.6,
-          "opportunities_per_game": 12.2,
-          "ppg_715": 12.58,
-          "target_share": 9.5,
-          "targets_per_game": 2.8,
-          "touches_per_game": 12.0
-        },
-        "player_id": "13345",
-        "position": "RB",
-        "starter": false,
-        "team": "DEN"
-      },
-      {
         "age": 25,
         "depth_chart_order": 6,
         "injury_status": "Out",
@@ -299,6 +271,34 @@
       }
     ],
     "TE": [
+      {
+        "age": 22,
+        "depth_chart_order": 1,
+        "injury_status": null,
+        "market_position_rank": 6,
+        "market_rank": 57,
+        "market_value": 5593,
+        "name": "Harold Fannin Jr.",
+        "performance": {
+          "air_yards_share": 17.2,
+          "basis": "current",
+          "basis_label": "2026",
+          "carries_per_game": 0.0,
+          "games": 10,
+          "last3_opportunities_per_game": 7.67,
+          "last3_ppg_715": 17.23,
+          "offense_snap_pct": 86.5,
+          "opportunities_per_game": 6.2,
+          "ppg_715": 11.84,
+          "target_share": 18.8,
+          "targets_per_game": 6.2,
+          "touches_per_game": 4.4
+        },
+        "player_id": "12506",
+        "position": "TE",
+        "starter": false,
+        "team": "CLE"
+      },
       {
         "age": 23,
         "depth_chart_order": 5,
@@ -549,7 +549,7 @@
     "total_market_value": 102735,
     "weeks": 10
   },
-  "generated_at": "2026-11-19T23:07:35.484378+00:00",
+  "generated_at": "2026-11-20T07:12:15.047929+00:00",
   "lineup": [
     {
       "player": {
@@ -770,32 +770,32 @@
     },
     {
       "player": {
-        "age": 22,
+        "age": 23,
         "depth_chart_order": 1,
         "injury_status": null,
-        "market_position_rank": 6,
-        "market_rank": 57,
-        "market_value": 5593,
-        "name": "Harold Fannin Jr.",
+        "market_position_rank": 17,
+        "market_rank": 70,
+        "market_value": 5189,
+        "name": "Jonah Coleman",
         "performance": {
-          "air_yards_share": 17.2,
+          "air_yards_share": -5.6,
           "basis": "current",
           "basis_label": "2026",
-          "carries_per_game": 0.0,
-          "games": 10,
-          "last3_opportunities_per_game": 7.67,
-          "last3_ppg_715": 17.23,
-          "offense_snap_pct": 86.5,
-          "opportunities_per_game": 6.2,
-          "ppg_715": 11.84,
-          "target_share": 18.8,
-          "targets_per_game": 6.2,
-          "touches_per_game": 4.4
+          "carries_per_game": 9.4,
+          "games": 5,
+          "last3_opportunities_per_game": 16.0,
+          "last3_ppg_715": 16.03,
+          "offense_snap_pct": 47.6,
+          "opportunities_per_game": 12.2,
+          "ppg_715": 12.58,
+          "target_share": 9.5,
+          "targets_per_game": 2.8,
+          "touches_per_game": 12.0
         },
-        "player_id": "12506",
-        "position": "TE",
+        "player_id": "13345",
+        "position": "RB",
         "starter": true,
-        "team": "CLE"
+        "team": "DEN"
       },
       "slot": "FLEX"
     },
@@ -853,7 +853,7 @@
     "roster_id": 3,
     "roster_market_score": 63.0,
     "starter_market_score": 60.5,
-    "submitted_starter_market_value": 51832,
+    "submitted_starter_market_value": 51428,
     "team_name": "Beef Cylinder",
     "total_market_score": 71.7,
     "total_market_value": 102735
@@ -882,7 +882,7 @@
       "roster_id": 3,
       "roster_market_score": 63.0,
       "starter_market_score": 60.5,
-      "submitted_starter_market_value": 51832,
+      "submitted_starter_market_value": 51428,
       "team_name": "Beef Cylinder",
       "total_market_score": 71.7,
       "total_market_value": 102735
@@ -936,7 +936,7 @@
         "market_value": 31765,
         "need_strength": 0.0,
         "quality_label": "market-deep",
-        "starters": 2,
+        "starters": 3,
         "surplus_strength": 1.58,
         "target": 5
       },
@@ -949,7 +949,7 @@
         "market_value": 13255,
         "need_strength": 0.58,
         "quality_label": "market-balanced",
-        "starters": 2,
+        "starters": 1,
         "surplus_strength": 0.0,
         "target": 2
       },
@@ -1186,7 +1186,64 @@
     "window": "Retool Needed",
     "young_player_share": 37.0
   },
-  "recent_changes": [],
+  "recent_changes": [
+    {
+      "detected_at": "2026-11-20T07:12:13.309152+00:00",
+      "manager": "abewav",
+      "new_starters": [
+        "11566",
+        "8228",
+        "8138",
+        "6794",
+        "7569",
+        "11646",
+        "10859",
+        "13345",
+        "96"
+      ],
+      "old_starters": [
+        "11566",
+        "8228",
+        "8138",
+        "6794",
+        "7569",
+        "11646",
+        "10859",
+        "12506",
+        "96"
+      ],
+      "roster_id": 3,
+      "type": "starter_change"
+    },
+    {
+      "detected_at": "2026-11-20T07:12:13.309152+00:00",
+      "manager": "Butler2142",
+      "new_starters": [
+        "7523",
+        "6790",
+        "3198",
+        "5872",
+        "7564",
+        "7547",
+        "1466",
+        "12534",
+        "3294"
+      ],
+      "old_starters": [
+        "7523",
+        "6790",
+        "3198",
+        "5872",
+        "7564",
+        "7547",
+        "1466",
+        "8134",
+        "3294"
+      ],
+      "roster_id": 12,
+      "type": "starter_change"
+    }
+  ],
   "record": {
     "fpts": 1223,
     "fpts_decimal": 70,
