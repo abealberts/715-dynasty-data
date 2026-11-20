@@ -549,7 +549,7 @@
     "total_market_value": 103015,
     "weeks": 10
   },
-  "generated_at": "2026-11-20T18:46:36.032398+00:00",
+  "generated_at": "2026-11-20T20:13:27.443664+00:00",
   "lineup": [
     {
       "player": {
@@ -584,37 +584,6 @@
     },
     {
       "player": {
-        "age": 28,
-        "depth_chart_order": 1,
-        "injury_status": null,
-        "market_position_rank": 23,
-        "market_rank": 79,
-        "market_value": 4788,
-        "name": "Jaylen Warren",
-        "performance": {
-          "air_yards_share": -3.5,
-          "basis": "current",
-          "basis_label": "2026",
-          "carries_per_game": 14.0,
-          "games": 9,
-          "last3_opportunities_per_game": 18.0,
-          "last3_ppg_715": 15.7,
-          "offense_snap_pct": 68.3,
-          "opportunities_per_game": 18.67,
-          "ppg_715": 16.66,
-          "target_share": 14.3,
-          "targets_per_game": 4.67,
-          "touches_per_game": 17.33
-        },
-        "player_id": "8228",
-        "position": "RB",
-        "starter": true,
-        "team": "PIT"
-      },
-      "slot": "RB1"
-    },
-    {
-      "player": {
         "age": 27,
         "depth_chart_order": 1,
         "injury_status": null,
@@ -641,6 +610,37 @@
         "position": "RB",
         "starter": true,
         "team": "BUF"
+      },
+      "slot": "RB1"
+    },
+    {
+      "player": {
+        "age": 23,
+        "depth_chart_order": 1,
+        "injury_status": null,
+        "market_position_rank": 16,
+        "market_rank": 69,
+        "market_value": 5218,
+        "name": "Jonah Coleman",
+        "performance": {
+          "air_yards_share": -5.6,
+          "basis": "current",
+          "basis_label": "2026",
+          "carries_per_game": 9.4,
+          "games": 5,
+          "last3_opportunities_per_game": 16.0,
+          "last3_ppg_715": 16.03,
+          "offense_snap_pct": 47.6,
+          "opportunities_per_game": 12.2,
+          "ppg_715": 12.58,
+          "target_share": 9.5,
+          "targets_per_game": 2.8,
+          "touches_per_game": 12.0
+        },
+        "player_id": "13345",
+        "position": "RB",
+        "starter": true,
+        "team": "DEN"
       },
       "slot": "RB2"
     },
@@ -770,32 +770,32 @@
     },
     {
       "player": {
-        "age": 23,
+        "age": 28,
         "depth_chart_order": 1,
         "injury_status": null,
-        "market_position_rank": 16,
-        "market_rank": 69,
-        "market_value": 5218,
-        "name": "Jonah Coleman",
+        "market_position_rank": 23,
+        "market_rank": 79,
+        "market_value": 4788,
+        "name": "Jaylen Warren",
         "performance": {
-          "air_yards_share": -5.6,
+          "air_yards_share": -3.5,
           "basis": "current",
           "basis_label": "2026",
-          "carries_per_game": 9.4,
-          "games": 5,
-          "last3_opportunities_per_game": 16.0,
-          "last3_ppg_715": 16.03,
-          "offense_snap_pct": 47.6,
-          "opportunities_per_game": 12.2,
-          "ppg_715": 12.58,
-          "target_share": 9.5,
-          "targets_per_game": 2.8,
-          "touches_per_game": 12.0
+          "carries_per_game": 14.0,
+          "games": 9,
+          "last3_opportunities_per_game": 18.0,
+          "last3_ppg_715": 15.7,
+          "offense_snap_pct": 68.3,
+          "opportunities_per_game": 18.67,
+          "ppg_715": 16.66,
+          "target_share": 14.3,
+          "targets_per_game": 4.67,
+          "touches_per_game": 17.33
         },
-        "player_id": "13345",
+        "player_id": "8228",
         "position": "RB",
         "starter": true,
-        "team": "DEN"
+        "team": "PIT"
       },
       "slot": "FLEX"
     },
@@ -1186,7 +1186,36 @@
     "window": "Retool Needed",
     "young_player_share": 37.0
   },
-  "recent_changes": [],
+  "recent_changes": [
+    {
+      "detected_at": "2026-11-20T20:13:24.923620+00:00",
+      "manager": "abewav",
+      "new_starters": [
+        "11566",
+        "8138",
+        "13345",
+        "6794",
+        "7569",
+        "11646",
+        "10859",
+        "8228",
+        "96"
+      ],
+      "old_starters": [
+        "11566",
+        "8228",
+        "8138",
+        "6794",
+        "7569",
+        "11646",
+        "10859",
+        "13345",
+        "96"
+      ],
+      "roster_id": 3,
+      "type": "starter_change"
+    }
+  ],
   "record": {
     "fpts": 1223,
     "fpts_decimal": 70,
