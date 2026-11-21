@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-11-20T17:03:10.557635+00:00",
+  "generated_at": "2026-11-21T01:36:24.688187+00:00",
   "methodology": "Every player on roster 3 receives exact-name targeted research. Only Priority opportunity players receive lighter targeted research. Explicit availability/workload reports may be scored; matched roster analysis without an actionable phrase is retained as unscored context and cannot change projections.",
   "priority_opportunity_targets": 8,
   "relevant_players": 35,
   "roster_targets": 27,
-  "signals_retained": 351,
+  "signals_retained": 344,
   "sources": [
     {
-      "accepted": 0,
+      "accepted": 1,
       "id": "rotowire_nfl_rss",
       "items": 5,
       "scored": 0,
       "status": "ok",
       "target_errors": 0,
-      "unscored_mentions": 0
+      "unscored_mentions": 1
     },
     {
       "accepted": 1,
@@ -42,7 +42,7 @@
     {
       "accepted": 93,
       "id": "google_news_roster",
-      "items": 785,
+      "items": 796,
       "scored": 0,
       "status": "ok",
       "target_errors": 0,
@@ -51,20 +51,20 @@
     {
       "accepted": 8,
       "id": "google_news_priority_opportunities",
-      "items": 159,
+      "items": 141,
       "scored": 0,
       "status": "ok",
       "target_errors": 0,
       "unscored_mentions": 8
     },
     {
-      "accepted": 2,
+      "accepted": 1,
       "id": "fantasypros_api",
       "items": 10,
       "scored": 1,
       "status": "ok",
       "target_errors": 0,
-      "unscored_mentions": 1
+      "unscored_mentions": 0
     }
   ]
 }
