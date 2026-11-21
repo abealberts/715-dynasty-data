@@ -11,7 +11,7 @@
       "components": {
         "current_performance": 93.3,
         "historical_prior": 89.7,
-        "roster_market": 89.9
+        "roster_market": 89.7
       },
       "h2h": {
         "losses": 0,
@@ -26,7 +26,7 @@
       "live_performance_score": 93.3,
       "luck_index": 15.5,
       "manager": "NolanFarts",
-      "market_strength": 89.9,
+      "market_strength": 89.7,
       "median": {
         "losses": 0,
         "pct": 1.0,
@@ -37,7 +37,7 @@
       "owner_id": "988277931761786880",
       "points_for": 1628.85,
       "points_left_on_bench": 219.5,
-      "power_score": 92.3,
+      "power_score": 92.2,
       "previous_rank": 1,
       "rank": 1,
       "recent_3_average": 153.27,
@@ -47,7 +47,7 @@
       ],
       "starter_market_value": 62287,
       "team_name": "Puka Nachewa",
-      "total_market_value": 106151,
+      "total_market_value": 105972,
       "weeks": 10
     },
     {
@@ -2445,7 +2445,7 @@
       }
     }
   ],
-  "generated_at": "2026-11-21T17:44:55.446127+00:00",
+  "generated_at": "2026-11-21T19:12:48.904734+00:00",
   "manager_tendencies": {
     "managers": [
       {
@@ -2554,11 +2554,11 @@
         "picks_acquired": 3,
         "picks_sent": 16,
         "players_acquired_trade": 15,
-        "players_added": 33,
-        "players_dropped": 35,
+        "players_added": 34,
+        "players_dropped": 36,
         "players_sent_trade": 14,
         "primary_tendency": "FAAB Burner",
-        "roster_moves": 40,
+        "roster_moves": 41,
         "seasons": [
           "2025",
           "2026"
@@ -2584,9 +2584,9 @@
         ],
         "trades": 14,
         "trades_initiated": 7,
-        "waiver_attempts": 54,
-        "waiver_success_rate": 61.1,
-        "waiver_successes": 33
+        "waiver_attempts": 55,
+        "waiver_success_rate": 61.8,
+        "waiver_successes": 34
       },
       {
         "faab_spent": 45,
@@ -3512,11 +3512,11 @@
           "QB": 28.5,
           "RB": 86.0,
           "TE": 69.7,
-          "WR": 73.5
+          "WR": 72.9
         },
         "their_market_rank": 1,
         "their_starter_value": 62287,
-        "their_total_value": 106151
+        "their_total_value": 105972
       },
       "market_fit_score": 0.0,
       "pick_summary": {
@@ -3663,7 +3663,7 @@
   ],
   "profiles": [
     {
-      "average_roster_age": 27.5,
+      "average_roster_age": 27.3,
       "early_picks": 1,
       "first_round_picks": 0,
       "franchise_score": 68.5,
@@ -3671,7 +3671,7 @@
       "metrics": {
         "draft_capital": 0.0,
         "lineup_management": 100.0,
-        "market_value": 89.9,
+        "market_value": 89.7,
         "performance_prior": 100.0,
         "roster_balance": 100.0,
         "stability": 20.8,
@@ -4072,6 +4072,64 @@
     }
   ],
   "recent_transactions": [
+    {
+      "adds": [
+        {
+          "manager": "NolanFarts",
+          "player": {
+            "age": 26,
+            "depth_chart_order": 3,
+            "depth_chart_position": "RWR",
+            "fantasy_positions": [
+              "WR"
+            ],
+            "injury_body_part": "Foot",
+            "injury_notes": null,
+            "injury_status": "Questionable",
+            "name": "Treylon Burks",
+            "player_id": "8135",
+            "position": "WR",
+            "status": "Active",
+            "team": "WAS",
+            "years_exp": 4
+          },
+          "roster_id": 2
+        }
+      ],
+      "created": 1795226920971,
+      "draft_picks": [],
+      "drops": [
+        {
+          "manager": "NolanFarts",
+          "player": {
+            "age": 32,
+            "depth_chart_order": 5,
+            "depth_chart_position": "LWR",
+            "fantasy_positions": [
+              "WR"
+            ],
+            "injury_body_part": null,
+            "injury_notes": null,
+            "injury_status": null,
+            "name": "Demarcus Robinson",
+            "player_id": "3286",
+            "position": "WR",
+            "status": "Active",
+            "team": "SF",
+            "years_exp": 10
+          },
+          "roster_id": 2
+        }
+      ],
+      "roster_ids": [
+        2
+      ],
+      "status": "complete",
+      "transaction_id": "1429688965325148160",
+      "type": "waiver",
+      "waiver_budget": 0,
+      "week": 11
+    },
     {
       "adds": [
         {
@@ -6269,47 +6327,11 @@
       "type": "waiver",
       "waiver_budget": 0,
       "week": 9
-    },
-    {
-      "adds": [
-        {
-          "manager": "nathanhoglund",
-          "player": {
-            "age": 22,
-            "depth_chart_order": 2,
-            "depth_chart_position": "RWR",
-            "fantasy_positions": [
-              "WR"
-            ],
-            "injury_body_part": null,
-            "injury_notes": null,
-            "injury_status": null,
-            "name": "Reggie Virgil",
-            "player_id": "13297",
-            "position": "WR",
-            "status": "Active",
-            "team": "ARI",
-            "years_exp": 0
-          },
-          "roster_id": 5
-        }
-      ],
-      "created": 1794363491779,
-      "draft_picks": [],
-      "drops": [],
-      "roster_ids": [
-        5
-      ],
-      "status": "failed",
-      "transaction_id": "1426067480807219200",
-      "type": "waiver",
-      "waiver_budget": 0,
-      "week": 9
     }
   ],
   "teams": [
     {
-      "depth_market_value": 43864,
+      "depth_market_value": 43685,
       "manager": "NolanFarts",
       "market_rank": 1,
       "optimal_starter_market_value": 62287,
@@ -6317,17 +6339,17 @@
         "QB": 28.5,
         "RB": 86.0,
         "TE": 69.7,
-        "WR": 73.5
+        "WR": 72.9
       },
       "position_values": {
         "QB": 16926,
         "RB": 33337,
         "TE": 15519,
-        "WR": 40369
+        "WR": 40190
       },
       "roster_id": 2,
       "team_name": "Puka Nachewa",
-      "total_market_value": 106151
+      "total_market_value": 105972
     },
     {
       "depth_market_value": 54790,
