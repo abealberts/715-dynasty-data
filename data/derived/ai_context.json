@@ -1,7 +1,7 @@
 {
   "data_health": {
     "derived": {
-      "generated_at": "2026-11-22T18:00:06.881630+00:00",
+      "generated_at": "2026-11-22T19:35:48.108528+00:00",
       "status": "ok"
     },
     "dynasty_dealer": {
@@ -9,7 +9,7 @@
       "players": 964,
       "status": "ok"
     },
-    "generated_at": "2026-11-22T18:00:08.055185+00:00",
+    "generated_at": "2026-11-22T19:35:50.254404+00:00",
     "latest_completed_week": 10,
     "nflverse": {
       "current_season_snaps": "ok",
@@ -37,7 +37,7 @@
           "status": "ok"
         },
         "matchups.json": {
-          "bytes": 329657,
+          "bytes": 329488,
           "status": "ok"
         },
         "nfl_state.json": {
@@ -53,15 +53,15 @@
           "status": "ok"
         },
         "roster_index.json": {
-          "bytes": 12238,
+          "bytes": 12207,
           "status": "ok"
         },
         "rosters.json": {
-          "bytes": 12057,
+          "bytes": 12026,
           "status": "ok"
         },
         "transactions.json": {
-          "bytes": 255128,
+          "bytes": 255761,
           "status": "ok"
         }
       },
@@ -69,7 +69,7 @@
     },
     "warnings": []
   },
-  "generated_at": "2026-11-22T18:00:08.253672+00:00",
+  "generated_at": "2026-11-22T19:35:50.602855+00:00",
   "history": {
     "first_date": "2026-08-31",
     "latest_date": "2026-11-22",
@@ -438,7 +438,7 @@
         ],
         "starter_market_value": 58709,
         "team_name": "Henry given sunday",
-        "total_market_value": 112028,
+        "total_market_value": 112018,
         "weeks": 10
       },
       {
@@ -647,7 +647,7 @@
       },
       {
         "depth_market_score": 92.8,
-        "depth_market_value": 53319,
+        "depth_market_value": 53309,
         "manager": "Butler2142",
         "market_rank": 3,
         "optimal_starter_market_value": 58709,
@@ -661,15 +661,15 @@
           "QB": 21799,
           "RB": 35012,
           "TE": 7803,
-          "WR": 47414
+          "WR": 47404
         },
         "roster_id": 12,
         "roster_market_score": 85.7,
         "starter_market_score": 83.3,
         "submitted_starter_market_value": 51390,
         "team_name": "Henry given sunday",
-        "total_market_score": 96.0,
-        "total_market_value": 112028
+        "total_market_score": 95.9,
+        "total_market_value": 112018
       },
       {
         "depth_market_score": 70.2,
@@ -926,6 +926,40 @@
         "young_player_share": 66.7
       },
       {
+        "average_roster_age": 27.0,
+        "early_picks": 3,
+        "first_round_picks": 0,
+        "franchise_score": 67.2,
+        "manager": "Butler2142",
+        "metrics": {
+          "draft_capital": 11.5,
+          "lineup_management": 88.2,
+          "market_value": 85.7,
+          "performance_prior": 94.3,
+          "roster_balance": 66.7,
+          "stability": 38.0,
+          "youth": 27.4
+        },
+        "model_mean": 149.38,
+        "model_sd": 27.02,
+        "owner_id": "1136159156404502528",
+        "pick_count": 15,
+        "playoff_odds": 95.3,
+        "risks": [
+          "Draft Capital",
+          "Youth"
+        ],
+        "roster_id": 12,
+        "strengths": [
+          "Performance Prior",
+          "Lineup Management"
+        ],
+        "team_name": "Henry given sunday",
+        "title_odds": 26.8,
+        "window": "Contender",
+        "young_player_share": 40.7
+      },
+      {
         "average_roster_age": 25.7,
         "early_picks": 1,
         "first_round_picks": 1,
@@ -958,40 +992,6 @@
         "title_odds": 12.7,
         "window": "Contender",
         "young_player_share": 63.0
-      },
-      {
-        "average_roster_age": 27.3,
-        "early_picks": 3,
-        "first_round_picks": 0,
-        "franchise_score": 66.5,
-        "manager": "Butler2142",
-        "metrics": {
-          "draft_capital": 11.5,
-          "lineup_management": 88.2,
-          "market_value": 85.7,
-          "performance_prior": 94.3,
-          "roster_balance": 66.7,
-          "stability": 38.0,
-          "youth": 20.5
-        },
-        "model_mean": 149.38,
-        "model_sd": 27.02,
-        "owner_id": "1136159156404502528",
-        "pick_count": 15,
-        "playoff_odds": 95.3,
-        "risks": [
-          "Draft Capital",
-          "Youth"
-        ],
-        "roster_id": 12,
-        "strengths": [
-          "Performance Prior",
-          "Lineup Management"
-        ],
-        "team_name": "Henry given sunday",
-        "title_odds": 26.8,
-        "window": "Contender",
-        "young_player_share": 37.0
       },
       {
         "average_roster_age": 26.9,
@@ -1303,7 +1303,7 @@
       "market_rank": 362,
       "market_value": 1691,
       "name": "Josh Johnson",
-      "opportunity_score": 85.5,
+      "opportunity_score": 85.0,
       "performance": {
         "air_yards_share": 0.0,
         "basis": "prior",
@@ -1330,7 +1330,7 @@
       ],
       "team": "ARI",
       "tier": "Priority",
-      "trending_adds_24h": 32809
+      "trending_adds_24h": 38425
     },
     {
       "age": 27,
@@ -1340,7 +1340,7 @@
       "market_rank": 236,
       "market_value": 2258,
       "name": "Cade Otton",
-      "opportunity_score": 82.6,
+      "opportunity_score": 83.0,
       "performance": {
         "air_yards_share": 15.8,
         "basis": "current",
@@ -1363,11 +1363,11 @@
         "current-season usage: 4.2 opportunities/game, 95% offensive snaps, 4.9 715 PPG.",
         "Currently on an NFL roster (TB).",
         "Listed first on the Sleeper depth chart.",
-        "Sleeper market heat: 20,412 adds in the 24h trend window."
+        "Sleeper market heat: 35,814 adds in the 24h trend window."
       ],
       "team": "TB",
       "tier": "Priority",
-      "trending_adds_24h": 20412
+      "trending_adds_24h": 35814
     },
     {
       "age": 23,
@@ -1377,7 +1377,7 @@
       "market_rank": 408,
       "market_value": 1066,
       "name": "Jaydn Ott",
-      "opportunity_score": 82.1,
+      "opportunity_score": 82.2,
       "performance": {
         "air_yards_share": 0.0,
         "basis": "current",
@@ -1404,7 +1404,7 @@
       ],
       "team": "KC",
       "tier": "Priority",
-      "trending_adds_24h": 26379
+      "trending_adds_24h": 39531
     },
     {
       "age": 33,
@@ -1444,6 +1444,43 @@
       "trending_adds_24h": 0
     },
     {
+      "age": 25,
+      "depth": 2,
+      "injury_status": null,
+      "market_position_rank": 26,
+      "market_rank": 186,
+      "market_value": 2679,
+      "name": "Darnell Washington",
+      "opportunity_score": 81.8,
+      "performance": {
+        "air_yards_share": 8.6,
+        "basis": "current",
+        "basis_label": "2026",
+        "carries_per_game": 0.0,
+        "games": 9,
+        "last3_opportunities_per_game": 3.0,
+        "last3_ppg_715": 7.1,
+        "offense_snap_pct": 62.9,
+        "opportunities_per_game": 3.44,
+        "ppg_715": 7.1,
+        "target_share": 10.8,
+        "targets_per_game": 3.44,
+        "touches_per_game": 2.22
+      },
+      "player_id": "9479",
+      "position": "TE",
+      "reasons": [
+        "Dynasty Dealer market value 2,679 adds insulation/upside signal.",
+        "current-season usage: 3.4 opportunities/game, 63% offensive snaps, 7.1 715 PPG.",
+        "Currently on an NFL roster (PIT).",
+        "Depth-chart No. 2: direct contingent path to usage.",
+        "Sleeper market heat: 11,330 adds in the 24h trend window."
+      ],
+      "team": "PIT",
+      "tier": "Priority",
+      "trending_adds_24h": 11330
+    },
+    {
       "age": 34,
       "depth": 1,
       "injury_status": "Questionable",
@@ -1451,7 +1488,7 @@
       "market_rank": 244,
       "market_value": 2239,
       "name": "Darren Waller",
-      "opportunity_score": 80.0,
+      "opportunity_score": 80.7,
       "performance": {
         "air_yards_share": 16.0,
         "basis": "current",
@@ -1478,7 +1515,7 @@
       ],
       "team": "CAR",
       "tier": "Priority",
-      "trending_adds_24h": 62982
+      "trending_adds_24h": 145062
     },
     {
       "age": 32,
@@ -1488,7 +1525,7 @@
       "market_rank": 391,
       "market_value": 1427,
       "name": "Evan Engram",
-      "opportunity_score": 76.4,
+      "opportunity_score": 77.8,
       "performance": {
         "air_yards_share": 10.8,
         "basis": "current",
@@ -1511,11 +1548,11 @@
         "current-season usage: 3.3 opportunities/game, 53% offensive snaps, 4.4 715 PPG.",
         "Currently on an NFL roster (DEN).",
         "Listed first on the Sleeper depth chart.",
-        "Sleeper market heat: 10,720 adds in the 24h trend window."
+        "Sleeper market heat: 33,232 adds in the 24h trend window."
       ],
       "team": "DEN",
       "tier": "Priority",
-      "trending_adds_24h": 10720
+      "trending_adds_24h": 33232
     },
     {
       "age": 33,
@@ -1659,11 +1696,11 @@
         "current-season usage: 2.3 opportunities/game, 70% offensive snaps, 3.2 715 PPG.",
         "Currently on an NFL roster (BUF).",
         "Depth-chart No. 2: direct contingent path to usage.",
-        "Sleeper market heat: 189,012 adds in the 24h trend window."
+        "Sleeper market heat: 425,712 adds in the 24h trend window."
       ],
       "team": "BUF",
       "tier": "Strong stash",
-      "trending_adds_24h": 189012
+      "trending_adds_24h": 425712
     },
     {
       "age": 22,
@@ -1777,6 +1814,42 @@
       "trending_adds_24h": 0
     },
     {
+      "age": 30,
+      "depth": 2,
+      "injury_status": null,
+      "market_position_rank": null,
+      "market_rank": null,
+      "market_value": null,
+      "name": "Drew Sample",
+      "opportunity_score": 65.2,
+      "performance": {
+        "air_yards_share": 0.3,
+        "basis": "current",
+        "basis_label": "2026",
+        "carries_per_game": 0.0,
+        "games": 9,
+        "last3_opportunities_per_game": 1.0,
+        "last3_ppg_715": 3.5,
+        "offense_snap_pct": 53.3,
+        "opportunities_per_game": 1.22,
+        "ppg_715": 3.14,
+        "target_share": 3.5,
+        "targets_per_game": 1.22,
+        "touches_per_game": 1.11
+      },
+      "player_id": "6001",
+      "position": "TE",
+      "reasons": [
+        "current-season usage: 1.2 opportunities/game, 53% offensive snaps, 3.1 715 PPG.",
+        "Currently on an NFL roster (CIN).",
+        "Depth-chart No. 2: direct contingent path to usage.",
+        "Sleeper market heat: 13,635 adds in the 24h trend window."
+      ],
+      "team": "CIN",
+      "tier": "Strong stash",
+      "trending_adds_24h": 13635
+    },
+    {
       "age": 26,
       "depth": 3,
       "injury_status": null,
@@ -1810,42 +1883,6 @@
         "Superflex format raises the value of any QB with a path to starts."
       ],
       "team": "CHI",
-      "tier": "Strong stash",
-      "trending_adds_24h": 0
-    },
-    {
-      "age": 25,
-      "depth": 2,
-      "injury_status": null,
-      "market_position_rank": 26,
-      "market_rank": 186,
-      "market_value": 2679,
-      "name": "Darnell Washington",
-      "opportunity_score": 64.0,
-      "performance": {
-        "air_yards_share": 8.6,
-        "basis": "current",
-        "basis_label": "2026",
-        "carries_per_game": 0.0,
-        "games": 9,
-        "last3_opportunities_per_game": 3.0,
-        "last3_ppg_715": 7.1,
-        "offense_snap_pct": 62.9,
-        "opportunities_per_game": 3.44,
-        "ppg_715": 7.1,
-        "target_share": 10.8,
-        "targets_per_game": 3.44,
-        "touches_per_game": 2.22
-      },
-      "player_id": "9479",
-      "position": "TE",
-      "reasons": [
-        "Dynasty Dealer market value 2,679 adds insulation/upside signal.",
-        "current-season usage: 3.4 opportunities/game, 63% offensive snaps, 7.1 715 PPG.",
-        "Currently on an NFL roster (PIT).",
-        "Depth-chart No. 2: direct contingent path to usage."
-      ],
-      "team": "PIT",
       "tier": "Strong stash",
       "trending_adds_24h": 0
     },
@@ -1993,43 +2030,6 @@
         "Listed first on the Sleeper depth chart."
       ],
       "team": "DAL",
-      "tier": "Strong stash",
-      "trending_adds_24h": 0
-    },
-    {
-      "age": 30,
-      "depth": 2,
-      "injury_status": null,
-      "market_position_rank": 60,
-      "market_rank": 365,
-      "market_value": 1662,
-      "name": "David Njoku",
-      "opportunity_score": 61.0,
-      "performance": {
-        "air_yards_share": 6.5,
-        "basis": "current",
-        "basis_label": "2026",
-        "carries_per_game": 0.0,
-        "games": 3,
-        "last3_opportunities_per_game": 2.67,
-        "last3_ppg_715": 4.23,
-        "offense_snap_pct": 34.7,
-        "opportunities_per_game": 2.67,
-        "ppg_715": 4.23,
-        "target_share": 10.0,
-        "targets_per_game": 2.67,
-        "touches_per_game": 2.0
-      },
-      "player_id": "4033",
-      "position": "TE",
-      "reasons": [
-        "Dynasty Dealer market value 1,662 adds insulation/upside signal.",
-        "current-season usage: 2.7 opportunities/game, 35% offensive snaps, 4.2 715 PPG.",
-        "Currently on an NFL roster (LAC).",
-        "Depth-chart No. 2: direct contingent path to usage.",
-        "Recently dropped by NolanFarts; worth checking for a league-specific market reset."
-      ],
-      "team": "LAC",
       "tier": "Strong stash",
       "trending_adds_24h": 0
     }
