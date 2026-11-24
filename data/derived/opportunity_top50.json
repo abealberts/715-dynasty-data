@@ -1,6 +1,6 @@
 {
   "context_methodology": "Time-decayed, source-weighted context. Narrative effects are capped at ±8%, combined workload context at ±12%, and availability remains a separate guardrail. Every adjustment retains its source and explanation.",
-  "generated_at": "2026-11-24T09:51:00.252108+00:00",
+  "generated_at": "2026-11-24T15:01:32.694338+00:00",
   "methodology": "Signal score, not dynasty market value. Uses confirmed league availability, NFL roster status, depth chart, age, league format, Sleeper 24h add/drop trends, recent 715 drops, and injury/IR-slot context. Phase 4.6 adds Dynasty Dealer market value plus nflverse offensive snap share, opportunities, 715-scoring production, and current usage trend. Prior-season performance is deliberately discounted until current-season data exists.",
   "players": [
     {
@@ -25,7 +25,7 @@
             "origin": "sleeper",
             "player_id": "4066",
             "player_name": "Evan Engram",
-            "published_at": "2026-11-24T09:51:01.371217+00:00",
+            "published_at": "2026-11-24T15:01:33.668712+00:00",
             "reliability": 0.65,
             "signal_id": "sleeper-depth-4066",
             "source": "Sleeper depth chart",
@@ -45,7 +45,7 @@
             "origin": "measured_usage",
             "player_id": "4066",
             "player_name": "Evan Engram",
-            "published_at": "2026-11-24T09:51:01.371217+00:00",
+            "published_at": "2026-11-24T15:01:33.668712+00:00",
             "reliability": 0.9,
             "signal_id": "usage-trend-4066",
             "source": "nflverse play-by-play",
@@ -669,7 +669,7 @@
             "origin": "measured_usage",
             "player_id": "3161",
             "player_name": "Carson Wentz",
-            "published_at": "2026-11-24T09:51:01.371217+00:00",
+            "published_at": "2026-11-24T15:01:33.668712+00:00",
             "reliability": 0.9,
             "signal_id": "usage-trend-3161",
             "source": "nflverse play-by-play",
@@ -689,7 +689,7 @@
             "origin": "sleeper",
             "player_id": "3161",
             "player_name": "Carson Wentz",
-            "published_at": "2026-11-24T09:51:01.371217+00:00",
+            "published_at": "2026-11-24T15:01:33.668712+00:00",
             "reliability": 0.65,
             "signal_id": "sleeper-depth-3161",
             "source": "Sleeper depth chart",
@@ -868,7 +868,7 @@
         "Recently dropped by ryansorensen8; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 13.3,
+        "age_days": 13.5,
         "manager": "ryansorensen8"
       },
       "status": "Active",
@@ -886,7 +886,7 @@
         "availability_probability": 1.0,
         "confidence": "medium",
         "net_direction": "positive",
-        "opportunity_score_adjustment": 0.2,
+        "opportunity_score_adjustment": 0.1,
         "player_id": "2505",
         "research_mention_count": 4,
         "signal_count": 6,
@@ -900,7 +900,7 @@
             "origin": "sleeper",
             "player_id": "2505",
             "player_name": "Darren Waller",
-            "published_at": "2026-11-24T09:51:01.371217+00:00",
+            "published_at": "2026-11-24T15:01:33.668712+00:00",
             "reliability": 0.65,
             "signal_id": "sleeper-depth-2505",
             "source": "Sleeper depth chart",
@@ -930,7 +930,7 @@
             "ttl_days": 4,
             "type": "practice",
             "url": "https://www.fantasypros.com/nfl/news/621376/darren-waller-knee-practicing-again-friday.php",
-            "weighted_score": 0.025
+            "weighted_score": 0.0055
           },
           {
             "corroboration_count": 1,
@@ -956,7 +956,7 @@
         ],
         "weekly_multiplier": 1.026
       },
-      "context_adjustment": 0.2,
+      "context_adjustment": 0.1,
       "depth": 1,
       "depth_chart_order": 1,
       "depth_chart_position": "TE",
@@ -970,7 +970,7 @@
       "market_rank": 242,
       "market_value": 2219,
       "name": "Darren Waller",
-      "opportunity_score": 75.8,
+      "opportunity_score": 75.7,
       "performance": {
         "air_yards_share": 15.8,
         "basis": "current",
@@ -1229,7 +1229,7 @@
       "player_id": "2505",
       "position": "TE",
       "reasons": [
-        "Current context adjusts the opportunity score +0.2.",
+        "Current context adjusts the opportunity score +0.1.",
         "Dynasty Dealer market value 2,219 adds insulation/upside signal.",
         "current-season usage: 4.2 opportunities/game, 50% offensive snaps, 8.8 715 PPG.",
         "Currently on an NFL roster (CAR).",
@@ -1239,7 +1239,7 @@
         "Recently dropped by ryansorensen8; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 6.3,
+        "age_days": 6.5,
         "manager": "ryansorensen8"
       },
       "status": "Active",
@@ -1977,7 +1977,7 @@
         "Recently dropped by ryansorensen8; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 13.3,
+        "age_days": 13.5,
         "manager": "ryansorensen8"
       },
       "status": "Active",
@@ -2200,7 +2200,7 @@
         "Recently dropped by MayaHuskies; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 6.3,
+        "age_days": 6.5,
         "manager": "MayaHuskies"
       },
       "status": "Active",
@@ -3597,7 +3597,7 @@
         "Recently dropped by nathanhoglund; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 13.3,
+        "age_days": 13.5,
         "manager": "nathanhoglund"
       },
       "status": "Active",
@@ -3809,7 +3809,7 @@
         "Recently dropped by NolanFarts; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 9.4,
+        "age_days": 9.6,
         "manager": "NolanFarts"
       },
       "status": "Active",
@@ -4919,7 +4919,7 @@
         "Recently dropped by Waldo23; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 9.3,
+        "age_days": 9.5,
         "manager": "Waldo23"
       },
       "status": "Active",
@@ -5438,7 +5438,7 @@
         "Recently dropped by NolanFarts; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 13.5,
+        "age_days": 13.7,
         "manager": "NolanFarts"
       },
       "status": "Active",
@@ -6102,7 +6102,7 @@
         "Recently dropped by nathanhoglund; worth checking for a league-specific market reset."
       ],
       "recent_715_drop": {
-        "age_days": 6.2,
+        "age_days": 6.4,
         "manager": "nathanhoglund"
       },
       "status": "Active",
@@ -7226,7 +7226,7 @@
             "origin": "sleeper",
             "player_id": "7812",
             "player_name": "Simi Fehoko",
-            "published_at": "2026-11-24T09:51:01.371217+00:00",
+            "published_at": "2026-11-24T15:01:33.668712+00:00",
             "reliability": 0.65,
             "signal_id": "sleeper-depth-7812",
             "source": "Sleeper depth chart",
@@ -7246,7 +7246,7 @@
             "origin": "measured_usage",
             "player_id": "7812",
             "player_name": "Simi Fehoko",
-            "published_at": "2026-11-24T09:51:01.371217+00:00",
+            "published_at": "2026-11-24T15:01:33.668712+00:00",
             "reliability": 0.9,
             "signal_id": "usage-trend-7812",
             "source": "nflverse play-by-play",
@@ -8239,7 +8239,7 @@
             "origin": "sleeper",
             "player_id": "11370",
             "player_name": "Chris Brooks",
-            "published_at": "2026-11-24T09:51:01.371217+00:00",
+            "published_at": "2026-11-24T15:01:33.668712+00:00",
             "reliability": 0.65,
             "signal_id": "sleeper-depth-11370",
             "source": "Sleeper depth chart",
@@ -8259,7 +8259,7 @@
             "origin": "measured_usage",
             "player_id": "11370",
             "player_name": "Chris Brooks",
-            "published_at": "2026-11-24T09:51:01.371217+00:00",
+            "published_at": "2026-11-24T15:01:33.668712+00:00",
             "reliability": 0.9,
             "signal_id": "usage-trend-11370",
             "source": "nflverse play-by-play",
