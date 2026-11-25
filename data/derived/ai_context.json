@@ -1,7 +1,7 @@
 {
   "data_health": {
     "derived": {
-      "generated_at": "2026-11-25T14:41:35.893473+00:00",
+      "generated_at": "2026-11-25T18:49:06.642686+00:00",
       "status": "ok"
     },
     "dynasty_dealer": {
@@ -9,7 +9,7 @@
       "players": 964,
       "status": "ok"
     },
-    "generated_at": "2026-11-25T14:41:37.959669+00:00",
+    "generated_at": "2026-11-25T18:49:07.969214+00:00",
     "latest_completed_week": 11,
     "nflverse": {
       "current_season_snaps": "ok",
@@ -29,7 +29,7 @@
       "authoritative": true,
       "files": {
         "free_agents.json": {
-          "bytes": 1235689,
+          "bytes": 1235269,
           "status": "ok"
         },
         "league.json": {
@@ -49,7 +49,7 @@
           "status": "ok"
         },
         "players_active.json": {
-          "bytes": 1378070,
+          "bytes": 1377439,
           "status": "ok"
         },
         "roster_index.json": {
@@ -69,7 +69,7 @@
     },
     "warnings": []
   },
-  "generated_at": "2026-11-25T14:41:38.328059+00:00",
+  "generated_at": "2026-11-25T18:49:08.204670+00:00",
   "history": {
     "first_date": "2026-08-31",
     "latest_date": "2026-11-25",
@@ -997,7 +997,7 @@
         "average_roster_age": 26.9,
         "early_picks": 4,
         "first_round_picks": 1,
-        "franchise_score": 65.4,
+        "franchise_score": 64.7,
         "manager": "Waldo23",
         "metrics": {
           "draft_capital": 13.1,
@@ -1006,7 +1006,7 @@
           "performance_prior": 88.6,
           "roster_balance": 100.0,
           "stability": 0.0,
-          "youth": 13.7
+          "youth": 6.8
         },
         "model_mean": 138.73,
         "model_sd": 34.93,
@@ -1015,7 +1015,7 @@
         "playoff_odds": 18.6,
         "risks": [
           "Stability",
-          "Draft Capital"
+          "Youth"
         ],
         "roster_id": 11,
         "strengths": [
@@ -1025,7 +1025,7 @@
         "team_name": "I Cam, I Saw, I Conquered",
         "title_odds": 2.5,
         "window": "Retool Needed",
-        "young_player_share": 33.3
+        "young_player_share": 29.6
       }
     ]
   },
@@ -1303,7 +1303,7 @@
       "market_rank": 349,
       "market_value": 1761,
       "name": "Tommy DeVito",
-      "opportunity_score": 87.6,
+      "opportunity_score": 87.8,
       "performance": {
         "air_yards_share": 0.0,
         "basis": "current",
@@ -1330,54 +1330,17 @@
       ],
       "team": "NE",
       "tier": "Priority",
-      "trending_adds_24h": 40953
-    },
-    {
-      "age": 32,
-      "depth": 1,
-      "injury_status": null,
-      "market_position_rank": 57,
-      "market_rank": 367,
-      "market_value": 1641,
-      "name": "Evan Engram",
-      "opportunity_score": 83.5,
-      "performance": {
-        "air_yards_share": 11.8,
-        "basis": "current",
-        "basis_label": "2026",
-        "carries_per_game": 0.0,
-        "games": 10,
-        "last3_opportunities_per_game": 5.33,
-        "last3_ppg_715": 6.9,
-        "offense_snap_pct": 52.5,
-        "opportunities_per_game": 3.8,
-        "ppg_715": 5.33,
-        "target_share": 13.0,
-        "targets_per_game": 3.8,
-        "touches_per_game": 2.3
-      },
-      "player_id": "4066",
-      "position": "TE",
-      "reasons": [
-        "Current context adjusts the opportunity score +1.8.",
-        "Dynasty Dealer market value 1,641 adds insulation/upside signal.",
-        "current-season usage: 3.8 opportunities/game, 52% offensive snaps, 5.3 715 PPG.",
-        "Currently on an NFL roster (DEN).",
-        "Listed first on the Sleeper depth chart."
-      ],
-      "team": "DEN",
-      "tier": "Priority",
-      "trending_adds_24h": 132968
+      "trending_adds_24h": 39438
     },
     {
       "age": 24,
       "depth": 2,
-      "injury_status": "Questionable",
+      "injury_status": null,
       "market_position_rank": 108,
       "market_rank": 408,
       "market_value": 1102,
       "name": "Will Shipley",
-      "opportunity_score": 82.5,
+      "opportunity_score": 84.6,
       "performance": {
         "air_yards_share": 1.5,
         "basis": "current",
@@ -1404,7 +1367,44 @@
       ],
       "team": "PHI",
       "tier": "Priority",
-      "trending_adds_24h": 66510
+      "trending_adds_24h": 61226
+    },
+    {
+      "age": 32,
+      "depth": 1,
+      "injury_status": null,
+      "market_position_rank": 57,
+      "market_rank": 367,
+      "market_value": 1641,
+      "name": "Evan Engram",
+      "opportunity_score": 83.6,
+      "performance": {
+        "air_yards_share": 11.8,
+        "basis": "current",
+        "basis_label": "2026",
+        "carries_per_game": 0.0,
+        "games": 10,
+        "last3_opportunities_per_game": 5.33,
+        "last3_ppg_715": 6.9,
+        "offense_snap_pct": 52.5,
+        "opportunities_per_game": 3.8,
+        "ppg_715": 5.33,
+        "target_share": 13.0,
+        "targets_per_game": 3.8,
+        "touches_per_game": 2.3
+      },
+      "player_id": "4066",
+      "position": "TE",
+      "reasons": [
+        "Current context adjusts the opportunity score +1.8.",
+        "Dynasty Dealer market value 1,641 adds insulation/upside signal.",
+        "current-season usage: 3.8 opportunities/game, 52% offensive snaps, 5.3 715 PPG.",
+        "Currently on an NFL roster (DEN).",
+        "Listed first on the Sleeper depth chart."
+      ],
+      "team": "DEN",
+      "tier": "Priority",
+      "trending_adds_24h": 123424
     },
     {
       "age": 25,
@@ -1414,7 +1414,7 @@
       "market_rank": 372,
       "market_value": 1633,
       "name": "DJ Uiagalelei",
-      "opportunity_score": 80.8,
+      "opportunity_score": 81.0,
       "performance": {
         "air_yards_share": 0.0,
         "basis": "current",
@@ -1441,7 +1441,7 @@
       ],
       "team": "LAC",
       "tier": "Priority",
-      "trending_adds_24h": 79326
+      "trending_adds_24h": 79101
     },
     {
       "age": 40,
@@ -1481,43 +1481,6 @@
       "trending_adds_24h": 0
     },
     {
-      "age": 34,
-      "depth": 1,
-      "injury_status": null,
-      "market_position_rank": 36,
-      "market_rank": 255,
-      "market_value": 2199,
-      "name": "Darren Waller",
-      "opportunity_score": 75.5,
-      "performance": {
-        "air_yards_share": 15.8,
-        "basis": "current",
-        "basis_label": "2026",
-        "carries_per_game": 0.0,
-        "games": 10,
-        "last3_opportunities_per_game": 5.67,
-        "last3_ppg_715": 11.53,
-        "offense_snap_pct": 49.6,
-        "opportunities_per_game": 4.2,
-        "ppg_715": 8.85,
-        "target_share": 11.9,
-        "targets_per_game": 4.2,
-        "touches_per_game": 2.8
-      },
-      "player_id": "2505",
-      "position": "TE",
-      "reasons": [
-        "Dynasty Dealer market value 2,199 adds insulation/upside signal.",
-        "current-season usage: 4.2 opportunities/game, 50% offensive snaps, 8.8 715 PPG.",
-        "Currently on an NFL roster (CAR).",
-        "Listed first on the Sleeper depth chart.",
-        "Sleeper market heat: 71,964 adds in the 24h trend window."
-      ],
-      "team": "CAR",
-      "tier": "Priority",
-      "trending_adds_24h": 71964
-    },
-    {
       "age": 33,
       "depth": 2,
       "injury_status": null,
@@ -1525,7 +1488,7 @@
       "market_rank": 239,
       "market_value": 2250,
       "name": "Mack Hollins",
-      "opportunity_score": 75.0,
+      "opportunity_score": 76.8,
       "performance": {
         "air_yards_share": 23.2,
         "basis": "current",
@@ -1548,11 +1511,48 @@
         "current-season usage: 5.3 opportunities/game, 70% offensive snaps, 9.7 715 PPG.",
         "Currently on an NFL roster (NE).",
         "Depth-chart No. 2: direct contingent path to usage.",
-        "Sleeper market heat: 16,725 adds in the 24h trend window."
+        "Sleeper market heat: 39,297 adds in the 24h trend window."
       ],
       "team": "NE",
       "tier": "Priority",
-      "trending_adds_24h": 16725
+      "trending_adds_24h": 39297
+    },
+    {
+      "age": 34,
+      "depth": 1,
+      "injury_status": null,
+      "market_position_rank": 36,
+      "market_rank": 255,
+      "market_value": 2199,
+      "name": "Darren Waller",
+      "opportunity_score": 75.7,
+      "performance": {
+        "air_yards_share": 15.8,
+        "basis": "current",
+        "basis_label": "2026",
+        "carries_per_game": 0.0,
+        "games": 10,
+        "last3_opportunities_per_game": 5.67,
+        "last3_ppg_715": 11.53,
+        "offense_snap_pct": 49.6,
+        "opportunities_per_game": 4.2,
+        "ppg_715": 8.85,
+        "target_share": 11.9,
+        "targets_per_game": 4.2,
+        "touches_per_game": 2.8
+      },
+      "player_id": "2505",
+      "position": "TE",
+      "reasons": [
+        "Dynasty Dealer market value 2,199 adds insulation/upside signal.",
+        "current-season usage: 4.2 opportunities/game, 50% offensive snaps, 8.8 715 PPG.",
+        "Currently on an NFL roster (CAR).",
+        "Listed first on the Sleeper depth chart.",
+        "Sleeper market heat: 77,436 adds in the 24h trend window."
+      ],
+      "team": "CAR",
+      "tier": "Priority",
+      "trending_adds_24h": 77436
     },
     {
       "age": 33,
@@ -1599,7 +1599,7 @@
       "market_rank": 283,
       "market_value": 2065,
       "name": "Colby Parkinson",
-      "opportunity_score": 74.1,
+      "opportunity_score": 74.3,
       "performance": {
         "air_yards_share": 3.1,
         "basis": "current",
@@ -1622,85 +1622,48 @@
         "current-season usage: 3.1 opportunities/game, 66% offensive snaps, 4.8 715 PPG.",
         "Currently on an NFL roster (LAR).",
         "Depth-chart No. 2: direct contingent path to usage.",
-        "Sleeper market heat: 31,140 adds in the 24h trend window."
+        "Sleeper market heat: 29,106 adds in the 24h trend window."
       ],
       "team": "LAR",
       "tier": "Priority",
-      "trending_adds_24h": 31140
+      "trending_adds_24h": 29106
     },
     {
-      "age": 29,
+      "age": 31,
       "depth": 1,
       "injury_status": null,
-      "market_position_rank": 171,
-      "market_rank": 450,
-      "market_value": 133,
-      "name": "Simi Fehoko",
-      "opportunity_score": 72.3,
+      "market_position_rank": 89,
+      "market_rank": 470,
+      "market_value": 55,
+      "name": "Mason Rudolph",
+      "opportunity_score": 73.0,
       "performance": {
-        "air_yards_share": 7.8,
+        "air_yards_share": 0.0,
         "basis": "current",
         "basis_label": "2026",
-        "carries_per_game": 0.33,
-        "games": 9,
-        "last3_opportunities_per_game": 3.67,
-        "last3_ppg_715": 3.67,
-        "offense_snap_pct": 34.0,
-        "opportunities_per_game": 1.33,
-        "ppg_715": 1.52,
-        "target_share": 3.7,
-        "targets_per_game": 1.0,
-        "touches_per_game": 0.67
-      },
-      "player_id": "7812",
-      "position": "WR",
-      "reasons": [
-        "Current context adjusts the opportunity score +2.1.",
-        "Recent opportunity volume is running above the season baseline.",
-        "current-season usage: 1.3 opportunities/game, 34% offensive snaps, 1.5 715 PPG.",
-        "Currently on an NFL roster (ARI).",
-        "Listed first on the Sleeper depth chart."
-      ],
-      "team": "ARI",
-      "tier": "Priority",
-      "trending_adds_24h": 18272
-    },
-    {
-      "age": 28,
-      "depth": 2,
-      "injury_status": null,
-      "market_position_rank": 105,
-      "market_rank": 396,
-      "market_value": 1313,
-      "name": "Khalil Herbert",
-      "opportunity_score": 72.1,
-      "performance": {
-        "air_yards_share": -1.2,
-        "basis": "current",
-        "basis_label": "2026",
-        "carries_per_game": 1.75,
+        "carries_per_game": 1.0,
         "games": 4,
-        "last3_opportunities_per_game": 4.0,
-        "last3_ppg_715": 2.7,
-        "offense_snap_pct": 20.5,
-        "opportunities_per_game": 3.75,
-        "ppg_715": 2.98,
-        "target_share": 6.4,
-        "targets_per_game": 2.0,
-        "touches_per_game": 3.25
+        "last3_opportunities_per_game": 2.0,
+        "last3_ppg_715": 0.27,
+        "offense_snap_pct": 7.5,
+        "opportunities_per_game": 2.0,
+        "ppg_715": 0.28,
+        "target_share": 0.0,
+        "targets_per_game": 0.0,
+        "touches_per_game": 1.0
       },
-      "player_id": "7608",
-      "position": "RB",
+      "player_id": "4972",
+      "position": "QB",
       "reasons": [
-        "Dynasty Dealer market value 1,313 adds insulation/upside signal.",
-        "current-season usage: 3.8 opportunities/game, 20% offensive snaps, 3.0 715 PPG.",
-        "Currently on an NFL roster (ATL).",
-        "Depth-chart No. 2: direct contingent path to usage.",
-        "RB contingent value can rise quickly with one depth-chart change."
+        "current-season usage: 2.0 opportunities/game, 8% offensive snaps, 0.3 715 PPG.",
+        "Currently on an NFL roster (PIT).",
+        "Listed first on the Sleeper depth chart.",
+        "Superflex format raises the value of any QB with a path to starts.",
+        "Sleeper market heat: 238,914 adds in the 24h trend window."
       ],
-      "team": "ATL",
+      "team": "PIT",
       "tier": "Priority",
-      "trending_adds_24h": 17208
+      "trending_adds_24h": 238914
     },
     {
       "age": 33,
@@ -1737,6 +1700,43 @@
       ],
       "team": "MIN",
       "tier": "Priority",
+      "trending_adds_24h": 0
+    },
+    {
+      "age": 38,
+      "depth": 2,
+      "injury_status": null,
+      "market_position_rank": 68,
+      "market_rank": 357,
+      "market_value": 1691,
+      "name": "Case Keenum",
+      "opportunity_score": 69.0,
+      "performance": {
+        "air_yards_share": 0.0,
+        "basis": "current",
+        "basis_label": "2026",
+        "carries_per_game": 1.67,
+        "games": 3,
+        "last3_opportunities_per_game": 19.33,
+        "last3_ppg_715": 9.58,
+        "offense_snap_pct": 44.7,
+        "opportunities_per_game": 19.33,
+        "ppg_715": 9.58,
+        "target_share": 0.0,
+        "targets_per_game": 0.0,
+        "touches_per_game": 1.67
+      },
+      "player_id": "1737",
+      "position": "QB",
+      "reasons": [
+        "Dynasty Dealer market value 1,691 adds insulation/upside signal.",
+        "current-season usage: 19.3 opportunities/game, 45% offensive snaps, 9.6 715 PPG.",
+        "Currently on an NFL roster (CHI).",
+        "Depth-chart No. 2: direct contingent path to usage.",
+        "Superflex format raises the value of any QB with a path to starts."
+      ],
+      "team": "CHI",
+      "tier": "Strong stash",
       "trending_adds_24h": 0
     },
     {
@@ -1777,41 +1777,41 @@
       "trending_adds_24h": 0
     },
     {
-      "age": 31,
+      "age": 25,
       "depth": 2,
       "injury_status": null,
-      "market_position_rank": 89,
-      "market_rank": 470,
-      "market_value": 55,
-      "name": "Mason Rudolph",
-      "opportunity_score": 66.8,
+      "market_position_rank": 71,
+      "market_rank": 371,
+      "market_value": 1634,
+      "name": "Dillon Gabriel",
+      "opportunity_score": 67.3,
       "performance": {
         "air_yards_share": 0.0,
-        "basis": "current",
-        "basis_label": "2026",
-        "carries_per_game": 1.0,
-        "games": 4,
-        "last3_opportunities_per_game": 2.0,
-        "last3_ppg_715": 0.27,
-        "offense_snap_pct": 7.5,
-        "opportunities_per_game": 2.0,
-        "ppg_715": 0.28,
+        "basis": "prior",
+        "basis_label": "2025",
+        "carries_per_game": 1.4,
+        "games": 10,
+        "last3_opportunities_per_game": 4.33,
+        "last3_ppg_715": 1.2,
+        "offense_snap_pct": 56.2,
+        "opportunities_per_game": 19.9,
+        "ppg_715": 7.95,
         "target_share": 0.0,
         "targets_per_game": 0.0,
-        "touches_per_game": 1.0
+        "touches_per_game": 1.4
       },
-      "player_id": "4972",
+      "player_id": "12486",
       "position": "QB",
       "reasons": [
-        "current-season usage: 2.0 opportunities/game, 8% offensive snaps, 0.3 715 PPG.",
-        "Currently on an NFL roster (PIT).",
+        "Dynasty Dealer market value 1,634 adds insulation/upside signal.",
+        "2025 prior usage: 19.9 opportunities/game, 56% offensive snaps, 8.0 715 PPG.",
+        "Currently on an NFL roster (CLE).",
         "Depth-chart No. 2: direct contingent path to usage.",
-        "Superflex format raises the value of any QB with a path to starts.",
-        "Sleeper market heat: 142,474 adds in the 24h trend window."
+        "Superflex format raises the value of any QB with a path to starts."
       ],
-      "team": "PIT",
+      "team": "CLE",
       "tier": "Strong stash",
-      "trending_adds_24h": 142474
+      "trending_adds_24h": 0
     },
     {
       "age": 26,
@@ -1847,6 +1847,42 @@
         "Superflex format raises the value of any QB with a path to starts."
       ],
       "team": "CHI",
+      "tier": "Strong stash",
+      "trending_adds_24h": 0
+    },
+    {
+      "age": 26,
+      "depth": 1,
+      "injury_status": null,
+      "market_position_rank": 53,
+      "market_rank": 355,
+      "market_value": 1726,
+      "name": "Brevyn Spann-Ford",
+      "opportunity_score": 64.0,
+      "performance": {
+        "air_yards_share": 2.7,
+        "basis": "current",
+        "basis_label": "2026",
+        "carries_per_game": 0.0,
+        "games": 11,
+        "last3_opportunities_per_game": 2.67,
+        "last3_ppg_715": 5.37,
+        "offense_snap_pct": 51.1,
+        "opportunities_per_game": 2.36,
+        "ppg_715": 3.65,
+        "target_share": 6.6,
+        "targets_per_game": 2.36,
+        "touches_per_game": 1.64
+      },
+      "player_id": "11593",
+      "position": "TE",
+      "reasons": [
+        "Dynasty Dealer market value 1,726 adds insulation/upside signal.",
+        "current-season usage: 2.4 opportunities/game, 51% offensive snaps, 3.6 715 PPG.",
+        "Currently on an NFL roster (DAL).",
+        "Listed first on the Sleeper depth chart."
+      ],
+      "team": "DAL",
       "tier": "Strong stash",
       "trending_adds_24h": 0
     },
@@ -1961,44 +1997,7 @@
     },
     {
       "age": 25,
-      "depth": 3,
-      "injury_status": null,
-      "market_position_rank": 133,
-      "market_rank": 334,
-      "market_value": 1856,
-      "name": "Anthony Gould",
-      "opportunity_score": 62.5,
-      "performance": {
-        "air_yards_share": 9.2,
-        "basis": "current",
-        "basis_label": "2026",
-        "carries_per_game": 0.0,
-        "games": 4,
-        "last3_opportunities_per_game": 2.67,
-        "last3_ppg_715": 4.73,
-        "offense_snap_pct": 28.8,
-        "opportunities_per_game": 2.0,
-        "ppg_715": 3.55,
-        "target_share": 8.4,
-        "targets_per_game": 2.0,
-        "touches_per_game": 1.25
-      },
-      "player_id": "11762",
-      "position": "WR",
-      "reasons": [
-        "Dynasty Dealer market value 1,856 adds insulation/upside signal.",
-        "current-season usage: 2.0 opportunities/game, 29% offensive snaps, 3.5 715 PPG.",
-        "Currently on an NFL roster (IND).",
-        "Depth-chart No. 3: plausible contingent upside.",
-        "Sleeper market heat: 21,609 adds in the 24h trend window."
-      ],
-      "team": "IND",
-      "tier": "Strong stash",
-      "trending_adds_24h": 21609
-    },
-    {
-      "age": 25,
-      "depth": 6,
+      "depth": 5,
       "injury_status": null,
       "market_position_rank": 63,
       "market_rank": 331,
